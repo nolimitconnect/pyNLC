@@ -1,4 +1,4 @@
-# No Limit Connect Release Notes
+# pyNLC Release Notes
 
 Website: https://nolimitconnect.org
 
