@@ -1,19 +1,19 @@
-# pyNLC
+﻿# pyNLC
 
-A python based fork of the upstream repo https://github.com/nolimitconnect/NoLimitConnect
+pyNLC is a Python-based fork of the C++ upstream repository:
+[https://github.com/nolimitconnect/NoLimitConnect](https://github.com/nolimitconnect/NoLimitConnect)
+
+To learn more about NoLimitConnect, including what it is and how it works, visit:
+[https://nolimitconnect.org](https://nolimitconnect.org)
 
 ## Summary
-forked from v1.1.3 of https://github.com/nolimitconnect/NoLimitConnect
 
-Replace Qt Widgets and libraries with PySide6.
+This project is forked from v1.1.3 of:
+[https://github.com/nolimitconnect/NoLimitConnect](https://github.com/nolimitconnect/NoLimitConnect)
 
-Should be functional equivelent of NoLimitConnect but python main and gui.
+The goal is to replace Qt Widgets and related libraries with PySide6.
 
-A intermediate step towards the goal of a NLC plugin for kodi at
+pyNLC is intended to be the functional equivalent of NoLimitConnect, but with a Python main application and GUI.
 
-https://github.com/nolimitconnect/kodi-addon-nolimitconnect
-
-
----
-
-
+It is an intermediate step toward the goal of an NLC plugin for Kodi:
+[https://github.com/nolimitconnect/kodi-addon-nolimitconnect](https://github.com/nolimitconnect/kodi-addon-nolimitconnect)
