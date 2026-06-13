@@ -2,6 +2,52 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Windows Debug pyNLC (Python + C++)",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "preLaunchTask": "Build Windows Debug",
+            // 1. Launch the Python interpreter instead of the old C++ exe
+            "program": "python.exe", 
+            // 2. Pass your python main script file as an argument
+            "args": [
+                "${workspaceFolder}/pyNLC/main.py"
+            ],
+            // 3. Set the working directory to the new pyNLC app folder
+            "cwd": "${workspaceFolder}/pyNLC",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "F:/Qt/6.9.3/msvc2022_64/bin;F:/Qt/6.7.3/msvc2022_64/bin;${env:PATH}"
+                },
+                {
+                    "name": "PYTHONPATH",
+                    // 4. Force Python to find your new compiled C++ pybind11 modules
+                    "value": "${workspaceFolder}/build/windows-debug/py_wrapper;${env:PYTHONPATH}"
+                }
+            ]
+        },
+        {
+            "name": "Windows Release pyNLC (Python + C++)",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "preLaunchTask": "Build Windows Release",
+            "program": "python.exe",
+            "args": [
+                "${workspaceFolder}/pyNLC/main.py"
+            ],
+            "cwd": "${workspaceFolder}/pyNLC",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "F:/Qt/6.9.3/msvc2022_64/bin;F:/Qt/6.7.3/msvc2022_64/bin;${env:PATH}"
+                },
+                {
+                    "name": "PYTHONPATH",
+                    "value": "${workspaceFolder}/build/windows-release/py_wrapper;${env:PYTHONPATH}"
+                }
+            ]
+        },
+        {
             "name": "Linux Debug nolimitconnect",
             "type": "cppdbg",
             "request": "launch",
