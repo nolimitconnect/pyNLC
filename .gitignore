@@ -49,6 +49,10 @@ CMakeUserPresets.json
 !/.vscode/*.json
 !/CMakePresets.json
 
+__pycache__/
+*.pyc
+
+
 
 
 
