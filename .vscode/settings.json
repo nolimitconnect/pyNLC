@@ -1,5 +1,14 @@
 {
     "extensions.ignoreRecommendations": true,
+    "cmake.environment": {
+        "NLC_ENABLE_VSCODE_PRESETS": "1"
+    },
+    "cmake.configureEnvironment": {
+        "NLC_ENABLE_VSCODE_PRESETS": "1"
+    },
+    "cmake.buildEnvironment": {
+        "NLC_ENABLE_VSCODE_PRESETS": "1"
+    },
     "cmake.configureSettings": {
         // This variable can be used in your CMakeLists.txt to conditionally include Visual Studio Code specific code or settings
         "USING_VISUAL_CODE": true

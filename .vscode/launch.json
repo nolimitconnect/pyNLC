@@ -5,7 +5,7 @@
             "name": "Windows Debug pyNLC (Python + C++)",
             "type": "cppvsdbg",
             "request": "launch",
-            "preLaunchTask": "Build Windows Debug",
+            "preLaunchTask": "Build Windows Debug pyNLC",
             // 1. Launch the Python interpreter instead of the old C++ exe
             "program": "python.exe", 
             // 2. Pass your python main script file as an argument
@@ -30,7 +30,7 @@
             "name": "Windows Release pyNLC (Python + C++)",
             "type": "cppvsdbg",
             "request": "launch",
-            "preLaunchTask": "Build Windows Release",
+            "preLaunchTask": "Build Windows Release pyNLC",
             "program": "python.exe",
             "args": [
                 "${workspaceFolder}/pyNLC/main.py"
@@ -48,18 +48,24 @@
             ]
         },
         {
-            "name": "Linux Debug nolimitconnect",
+            "name": "Linux Debug pyNLC (Python + C++)",
             "type": "cppdbg",
             "request": "launch",
             "preLaunchTask": "Build Linux Debug",
-            "program": "${workspaceFolder}/nolimitgui/bin-Linux/nolimitconnect",
-            "args": [],
+            "program": "python3",
+            "args": [
+                "${workspaceFolder}/pyNLC/main.py"
+            ],
             "stopAtEntry": false,
-            "cwd": "${workspaceFolder}/nolimitgui/bin-Linux",
+            "cwd": "${workspaceFolder}/pyNLC",
             "environment": [
                 {
                     "name": "DEBUGINFOD_URLS",
                     "value": ""
+                },
+                {
+                    "name": "PYTHONPATH",
+                    "value": "${workspaceFolder}/out/build/linux-x64-debug/py_wrapper:${env:PYTHONPATH}"
                 }
             ],
             "externalConsole": false,
@@ -90,18 +96,24 @@
             ]
         },
         {
-            "name": "Linux Release nolimitconnect",
+            "name": "Linux Release pyNLC (Python + C++)",
             "type": "cppdbg",
             "request": "launch",
             "preLaunchTask": "Build Linux Release",
-            "program": "${workspaceFolder}/nolimitgui/bin-Linux/nolimitconnect",
-            "args": [],
+            "program": "python3",
+            "args": [
+                "${workspaceFolder}/pyNLC/main.py"
+            ],
             "stopAtEntry": false,
-            "cwd": "${workspaceFolder}/nolimitgui/bin-Linux",
+            "cwd": "${workspaceFolder}/pyNLC",
             "environment": [
                 {
                     "name": "DEBUGINFOD_URLS",
                     "value": ""
+                },
+                {
+                    "name": "PYTHONPATH",
+                    "value": "${workspaceFolder}/out/build/linux-x64-release/py_wrapper:${env:PYTHONPATH}"
                 }
             ],
             "externalConsole": false,
@@ -127,30 +139,44 @@
             ]
         },
         {
-            "name": "Windows Debug nolimitconnect",
+            "name": "Windows Debug pyNLC (Legacy Slot)",
             "type": "cppvsdbg",
             "request": "launch",
-            "preLaunchTask": "Build Windows Debug",
-            "program": "${workspaceFolder}/build/windows-debug/nolimitgui/nolimitconnect.exe",
-            "cwd": "${workspaceFolder}/build/windows-debug/nolimitgui",
+            "preLaunchTask": "Build Windows Debug pyNLC",
+            "program": "python.exe",
+            "args": [
+                "${workspaceFolder}/pyNLC/main.py"
+            ],
+            "cwd": "${workspaceFolder}/pyNLC",
             "environment": [
                 {
                     "name": "PATH",
                     "value": "F:/Qt/6.9.3/msvc2022_64/bin;F:/Qt/6.7.3/msvc2022_64/bin;${env:PATH}"
+                },
+                {
+                    "name": "PYTHONPATH",
+                    "value": "${workspaceFolder}/build/windows-debug/py_wrapper;${env:PYTHONPATH}"
                 }
             ]
         },
         {
-            "name": "Windows Release nolimitconnect",
+            "name": "Windows Release pyNLC (Legacy Slot)",
             "type": "cppvsdbg",
             "request": "launch",
-            "preLaunchTask": "Build Windows Release",
-            "program": "${workspaceFolder}/build/windows-release/nolimitgui/nolimitconnect.exe",
-            "cwd": "${workspaceFolder}/build/windows-release/nolimitgui",
+            "preLaunchTask": "Build Windows Release pyNLC",
+            "program": "python.exe",
+            "args": [
+                "${workspaceFolder}/pyNLC/main.py"
+            ],
+            "cwd": "${workspaceFolder}/pyNLC",
             "environment": [
                 {
                     "name": "PATH",
                     "value": "F:/Qt/6.9.3/msvc2022_64/bin;F:/Qt/6.7.3/msvc2022_64/bin;${env:PATH}"
+                },
+                {
+                    "name": "PYTHONPATH",
+                    "value": "${workspaceFolder}/build/windows-release/py_wrapper;${env:PYTHONPATH}"
                 }
             ]
         },

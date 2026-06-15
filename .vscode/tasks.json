@@ -308,7 +308,7 @@
                 "--preset",
                 "windows-debug",
                 "--target",
-                "nolimitconnect"
+                "nlc_engine"
             ],
             "problemMatcher": []
         },
@@ -330,7 +330,51 @@
                 "--preset",
                 "windows-release",
                 "--target",
-                "nolimitconnect"
+                "nlc_engine"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Build Windows Debug pyNLC",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "Configure Windows Debug"
+            ],
+            "type": "process",
+            "command": "powershell",
+            "args": [
+                "-NoProfile",
+                "-ExecutionPolicy",
+                "Bypass",
+                "-File",
+                "${workspaceFolder}\\.vscode\\cmake-with-msvc-env.ps1",
+                "--build",
+                "--preset",
+                "windows-debug",
+                "--target",
+                "nlc_engine"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Build Windows Release pyNLC",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "Configure Windows Release"
+            ],
+            "type": "process",
+            "command": "powershell",
+            "args": [
+                "-NoProfile",
+                "-ExecutionPolicy",
+                "Bypass",
+                "-File",
+                "${workspaceFolder}\\.vscode\\cmake-with-msvc-env.ps1",
+                "--build",
+                "--preset",
+                "windows-release",
+                "--target",
+                "nlc_engine"
             ],
             "problemMatcher": []
         },
@@ -341,10 +385,14 @@
                 "Build Windows Debug"
             ],
             "type": "process",
-            "command": "${workspaceFolder}/build/windows-debug/nolimitgui/nolimitconnect.exe",
+            "command": "python",
+            "args": [
+                "${workspaceFolder}/pyNLC/main.py"
+            ],
             "options": {
                 "env": {
-                    "PATH": "F:/Qt/6.9.3/msvc2022_64/bin;F:/Qt/6.7.3/msvc2022_64/bin;${env:PATH}"
+                    "PATH": "F:/Qt/6.9.3/msvc2022_64/bin;F:/Qt/6.7.3/msvc2022_64/bin;${env:PATH}",
+                    "PYTHONPATH": "${workspaceFolder}/build/windows-debug/py_wrapper;${env:PYTHONPATH}"
                 }
             },
             "problemMatcher": []
@@ -356,10 +404,14 @@
                 "Build Windows Release"
             ],
             "type": "process",
-            "command": "${workspaceFolder}/build/windows-release/nolimitgui/nolimitconnect.exe",
+            "command": "python",
+            "args": [
+                "${workspaceFolder}/pyNLC/main.py"
+            ],
             "options": {
                 "env": {
-                    "PATH": "F:/Qt/6.9.3/msvc2022_64/bin;F:/Qt/6.7.3/msvc2022_64/bin;${env:PATH}"
+                    "PATH": "F:/Qt/6.9.3/msvc2022_64/bin;F:/Qt/6.7.3/msvc2022_64/bin;${env:PATH}",
+                    "PYTHONPATH": "${workspaceFolder}/build/windows-release/py_wrapper;${env:PYTHONPATH}"
                 }
             },
             "problemMatcher": []
@@ -382,7 +434,7 @@
                 "--preset",
                 "windows-release",
                 "--target",
-                "package_nolimitconnect"
+                "nlc_engine"
             ],
             "problemMatcher": []
         },
@@ -494,7 +546,7 @@
                     "--preset",
                     "android-arm64-debug-windows",
                     "--target",
-                    "nolimitconnect"
+                    "nlc_engine"
                 ]
             },
             "options": {
@@ -507,7 +559,7 @@
                 "--preset",
                 "android-arm64-debug",
                 "--target",
-                "nolimitconnect"
+                "nlc_engine"
             ],
             "problemMatcher": []
         },
@@ -556,7 +608,7 @@
                     "--preset",
                     "android-arm64-debug-windows",
                     "--target",
-                    "package_nolimitconnect"
+                    "nlc_engine"
                 ]
             },
             "options": {
@@ -569,7 +621,7 @@
                 "--preset",
                 "android-arm64-debug",
                 "--target",
-                "package_nolimitconnect"
+                "nlc_engine"
             ],
             "problemMatcher": []
         },
@@ -587,7 +639,7 @@
                     "--preset",
                     "android-arm64-release-windows",
                     "--target",
-                    "nolimitconnect"
+                    "nlc_engine"
                 ]
             },
             "options": {
@@ -600,7 +652,7 @@
                 "--preset",
                 "android-arm64-release",
                 "--target",
-                "nolimitconnect"
+                "nlc_engine"
             ],
             "problemMatcher": []
         },
@@ -619,7 +671,7 @@
                     "--preset",
                     "android-arm64-release-windows",
                     "--target",
-                    "package_nolimitconnect"
+                    "nlc_engine"
                 ]
             },
             "options": {
@@ -632,7 +684,7 @@
                 "--preset",
                 "android-arm64-release",
                 "--target",
-                "package_nolimitconnect"
+                "nlc_engine"
             ],
             "problemMatcher": []
         },
@@ -807,7 +859,7 @@
                 "--preset",
                 "linux-x64-debug",
                 "--target",
-                "nolimitconnect"
+                "nlc_engine"
             ],
             "problemMatcher": []
         },
@@ -824,7 +876,7 @@
                 "--preset",
                 "linux-x64-release",
                 "--target",
-                "nolimitconnect"
+                "nlc_engine"
             ],
             "problemMatcher": []
         },
@@ -841,7 +893,7 @@
                 "--preset",
                 "linux-x64-release",
                 "--target",
-                "package_nolimitconnect"
+                "nlc_engine"
             ],
             "problemMatcher": []
         },
@@ -852,7 +904,15 @@
                 "Build Linux Debug"
             ],
             "type": "process",
-            "command": "${workspaceFolder}/out/build/linux-x64-debug/nolimitgui/nolimitconnect",
+            "command": "python3",
+            "args": [
+                "${workspaceFolder}/pyNLC/main.py"
+            ],
+            "options": {
+                "env": {
+                    "PYTHONPATH": "${workspaceFolder}/out/build/linux-x64-debug/py_wrapper:${env:PYTHONPATH}"
+                }
+            },
             "problemMatcher": []
         },
         {
@@ -862,7 +922,15 @@
                 "Build Linux Release"
             ],
             "type": "process",
-            "command": "${workspaceFolder}/nolimitgui/bin-Linux/nolimitconnect",
+            "command": "python3",
+            "args": [
+                "${workspaceFolder}/pyNLC/main.py"
+            ],
+            "options": {
+                "env": {
+                    "PYTHONPATH": "${workspaceFolder}/out/build/linux-x64-release/py_wrapper:${env:PYTHONPATH}"
+                }
+            },
             "problemMatcher": []
         },
         {
