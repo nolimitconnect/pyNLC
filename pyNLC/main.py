@@ -23,11 +23,11 @@ except ImportError:  # The bridge is still under active migration.
     nlc_engine = None
 
 
-APP_NAME = "nolimitconnect"
-APP_TITLE = "No Limit Connect"
-APP_VERSION = "0.0.0"
+APP_NAME = "pyNLC"
+APP_TITLE = "pyNLC"
+APP_VERSION = "1.0.0"
 APP_ORGANIZATION = ""
-APP_DOMAIN = "nolimitconnect.com"
+APP_DOMAIN = "nolimitconnect.org"
 TRANSLATION_FILES = [
     "nolimitconnect_ar_SA.qm",
     "nolimitconnect_de_DE.qm",
