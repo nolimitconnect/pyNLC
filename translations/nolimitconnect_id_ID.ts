@@ -4,7 +4,7 @@
     <context>
         <name>AcceptCancelWidgetClass</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AcceptCancelWidget.ui" line="38" />
+            <location filename="../resources/Forms/AcceptCancelWidget.ui" line="38" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
@@ -12,7 +12,7 @@
     <context>
         <name>ActionWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActionWidget.ui" line="20" />
+            <location filename="../resources/Forms/ActionWidget.ui" line="20" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
@@ -20,7 +20,7 @@
     <context>
         <name>ActivityGenerateHashUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityGenerateHash.ui" line="17" />
+            <location filename="../resources/Forms/ActivityGenerateHash.ui" line="17" />
             <source>Generate Hash</source>
             <translation>Hasilkan Hash</translation>
         </message>
@@ -28,37 +28,37 @@
     <context>
         <name>AppletAboutAppUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutApp.ui" line="32" />
+            <location filename="../resources/Forms/AppletAboutApp.ui" line="32" />
             <source>About NoLimitConnect</source>
             <translation>Tentang NoLimitConnect</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutApp.ui" line="92" />
+            <location filename="../resources/Forms/AppletAboutApp.ui" line="92" />
             <source>No Limit Connect</source>
             <translation>Koneksi Tanpa Batas</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutApp.ui" line="102" />
+            <location filename="../resources/Forms/AppletAboutApp.ui" line="102" />
             <source>(c) Brett R. Jones 2013,2025</source>
             <translation>(c) Brett R.Jones 2013,2025</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutApp.ui" line="117" />
+            <location filename="../resources/Forms/AppletAboutApp.ui" line="117" />
             <source>Version 1.0.12</source>
             <translation>Versi 1.0.12</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutApp.ui" line="130" />
+            <location filename="../resources/Forms/AppletAboutApp.ui" line="130" />
             <source>Device Information</source>
             <translation>Informasi Perangkat</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutApp.ui" line="143" />
+            <location filename="../resources/Forms/AppletAboutApp.ui" line="143" />
             <source>Connection Information</source>
             <translation>Informasi Koneksi</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutApp.ui" line="156" />
+            <location filename="../resources/Forms/AppletAboutApp.ui" line="156" />
             <source>Show Application Information</source>
             <translation>Tampilkan Informasi Aplikasi</translation>
         </message>
@@ -66,27 +66,27 @@
     <context>
         <name>AppletAboutFileUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutFile.ui" line="26" />
+            <location filename="../resources/Forms/AppletAboutFile.ui" line="26" />
             <source>About User</source>
             <translation>Tentang Pengguna</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutFile.ui" line="64" />
+            <location filename="../resources/Forms/AppletAboutFile.ui" line="64" />
             <source>Size</source>
             <translation>Ukuran</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutFile.ui" line="107" />
+            <location filename="../resources/Forms/AppletAboutFile.ui" line="107" />
             <source>Path</source>
             <translation>Jalan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutFile.ui" line="182" />
+            <location filename="../resources/Forms/AppletAboutFile.ui" line="182" />
             <source>Info</source>
             <translation>Informasi</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutFile.ui" line="230" />
+            <location filename="../resources/Forms/AppletAboutFile.ui" line="230" />
             <source>Thumbnail ID</source>
             <translation>ID gambar mini</translation>
         </message>
@@ -94,7 +94,7 @@
     <context>
         <name>AppletAboutMeClientUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutMeClient.ui" line="20" />
+            <location filename="../resources/Forms/AppletAboutMeClient.ui" line="20" />
             <source>Edit Storyboard</source>
             <translation>Sunting Papan Cerita</translation>
         </message>
@@ -102,57 +102,57 @@
     <context>
         <name>AppletAboutUserUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutUser.ui" line="26" />
+            <location filename="../resources/Forms/AppletAboutUser.ui" line="26" />
             <source>About User</source>
             <translation>Tentang Pengguna</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutUser.ui" line="67" />
+            <location filename="../resources/Forms/AppletAboutUser.ui" line="67" />
             <source>User Message</source>
             <translation>Pesan Pengguna</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutUser.ui" line="85" />
+            <location filename="../resources/Forms/AppletAboutUser.ui" line="85" />
             <source>My Friendship To User:</source>
             <translation>Persahabatan Saya Dengan Pengguna:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutUser.ui" line="120" />
+            <location filename="../resources/Forms/AppletAboutUser.ui" line="120" />
             <source>Users Friendship To Me:</source>
             <translation>Persahabatan Pengguna Dengan Saya:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutUser.ui" line="153" />
+            <location filename="../resources/Forms/AppletAboutUser.ui" line="153" />
             <source>Age:</source>
             <translation>Usia:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutUser.ui" line="182" />
+            <location filename="../resources/Forms/AppletAboutUser.ui" line="182" />
             <source>Gender</source>
             <translation>Jenis Kelamin</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutUser.ui" line="215" />
+            <location filename="../resources/Forms/AppletAboutUser.ui" line="215" />
             <source>Primary Language:</source>
             <translation>Bahasa Utama:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutUser.ui" line="244" />
+            <location filename="../resources/Forms/AppletAboutUser.ui" line="244" />
             <source>Preffered Content:</source>
             <translation>Konten Pilihan:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutUser.ui" line="277" />
+            <location filename="../resources/Forms/AppletAboutUser.ui" line="277" />
             <source>Truths:</source>
             <translation>Kebenaran:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutUser.ui" line="306" />
+            <location filename="../resources/Forms/AppletAboutUser.ui" line="306" />
             <source>Dares:</source>
             <translation>tantangan:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutUser.ui" line="333" />
+            <location filename="../resources/Forms/AppletAboutUser.ui" line="333" />
             <source>URL:</source>
             <translation>URL:</translation>
         </message>
@@ -160,17 +160,17 @@
     <context>
         <name>AppletApplicationInfoUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletApplicationInfo.ui" line="32" />
+            <location filename="../resources/Forms/AppletApplicationInfo.ui" line="32" />
             <source>App Information</source>
             <translation>Informasi Aplikasi</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletApplicationInfo.ui" line="89" />
+            <location filename="../resources/Forms/AppletApplicationInfo.ui" line="89" />
             <source>Browse App Storage (Do Not Delete)</source>
             <translation>Telusuri Penyimpanan Aplikasi (Jangan Hapus)</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletApplicationInfo.ui" line="99" />
+            <location filename="../resources/Forms/AppletApplicationInfo.ui" line="99" />
             <source>Log</source>
             <translation>Catatan</translation>
         </message>
@@ -178,27 +178,27 @@
     <context>
         <name>AppletBrowseFilesUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletBrowseFiles.ui" line="14" />
+            <location filename="../resources/Forms/AppletBrowseFiles.ui" line="14" />
             <source>Browse Files</source>
             <translation>Jelajahi File</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletBrowseFiles.ui" line="141" />
+            <location filename="../resources/Forms/AppletBrowseFiles.ui" line="141" />
             <source>Click File Icon or Double Click File Item to Select The File</source>
             <translation>Klik Ikon File atau Klik Dua Kali Item File untuk Memilih File</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletBrowseFiles.ui" line="194" />
+            <location filename="../resources/Forms/AppletBrowseFiles.ui" line="194" />
             <source>Move Up A Folder</source>
             <translation>Pindahkan Folder ke Atas</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletBrowseFiles.ui" line="226" />
+            <location filename="../resources/Forms/AppletBrowseFiles.ui" line="226" />
             <source>Selected A Folder</source>
             <translation>Folder yang Dipilih</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletBrowseFiles.ui" line="282" />
+            <location filename="../resources/Forms/AppletBrowseFiles.ui" line="282" />
             <source>Add All Files To Library</source>
             <translation>Tambahkan Semua File Ke Perpustakaan</translation>
         </message>
@@ -206,7 +206,7 @@
     <context>
         <name>AppletCamClientUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletCamClient.ui" line="23" />
+            <location filename="../resources/Forms/AppletCamClient.ui" line="23" />
             <source>Web Cam Client</source>
             <translation>Klien Kamera Web</translation>
         </message>
@@ -214,17 +214,17 @@
     <context>
         <name>AppletCamClipPlayerUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPlayerCamClip.ui" line="23" />
+            <location filename="../resources/Forms/AppletPlayerCamClip.ui" line="23" />
             <source>Cam Video Player</source>
             <translation>Pemutar Video Kamera</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPlayerCamClip.ui" line="327" />
+            <location filename="../resources/Forms/AppletPlayerCamClip.ui" line="327" />
             <source>Tag:</source>
             <translation>Menandai:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPlayerCamClip.ui" line="388" />
+            <location filename="../resources/Forms/AppletPlayerCamClip.ui" line="388" />
             <source>File Name:</source>
             <translation>Nama File:</translation>
         </message>
@@ -232,17 +232,17 @@
     <context>
         <name>AppletCamSettingsUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletCamSettings.ui" line="23" />
+            <location filename="../resources/Forms/AppletCamSettings.ui" line="23" />
             <source>Web Cam Client</source>
             <translation>Klien Kamera Web</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletCamSettings.ui" line="60" />
+            <location filename="../resources/Forms/AppletCamSettings.ui" line="60" />
             <source>Apply Video In Device As Default</source>
             <translation>Terapkan Video Di Perangkat Sebagai Default</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletCamSettings.ui" line="69" />
+            <location filename="../resources/Forms/AppletCamSettings.ui" line="69" />
             <source>Cam Device</source>
             <translation>Perangkat Kamera</translation>
         </message>
@@ -250,7 +250,7 @@
     <context>
         <name>AppletChatRoomJoinSearchUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletChatRoomJoinSearch.ui" line="20" />
+            <location filename="../resources/Forms/AppletChatRoomJoinSearch.ui" line="20" />
             <source>Search</source>
             <translation>Cari</translation>
         </message>
@@ -258,12 +258,12 @@
     <context>
         <name>AppletChatRoomListLocalViewUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletChatRoomListLocalView.ui" line="20" />
+            <location filename="../resources/Forms/AppletChatRoomListLocalView.ui" line="20" />
             <source>Search</source>
             <translation>Cari</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletChatRoomListLocalView.ui" line="106" />
+            <location filename="../resources/Forms/AppletChatRoomListLocalView.ui" line="106" />
             <source>Refresh list of announced hosts</source>
             <translation>Segarkan daftar host yang diumumkan</translation>
         </message>
@@ -271,7 +271,7 @@
     <context>
         <name>AppletChooseThumbnailUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletChooseThumbnail.ui" line="26" />
+            <location filename="../resources/Forms/AppletChooseThumbnail.ui" line="26" />
             <source>Choose Thumbnail</source>
             <translation>Pilih Gambar Kecil</translation>
         </message>
@@ -279,72 +279,72 @@
     <context>
         <name>AppletEditAboutMeUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditAboutMe.ui" line="20" />
+            <location filename="../resources/Forms/AppletEditAboutMe.ui" line="20" />
             <source>Edit About Me</source>
             <translation>Sunting Tentang Saya</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditAboutMe.ui" line="71" />
+            <location filename="../resources/Forms/AppletEditAboutMe.ui" line="71" />
             <source>View My About Me Page</source>
             <translation>Lihat Halaman Tentang Saya Saya</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditAboutMe.ui" line="111" />
+            <location filename="../resources/Forms/AppletEditAboutMe.ui" line="111" />
             <source>Apply About Me Changes</source>
             <translation>Terapkan Perubahan Tentang Saya</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditAboutMe.ui" line="118" />
+            <location filename="../resources/Forms/AppletEditAboutMe.ui" line="118" />
             <source>Greeting:</source>
             <translation>Salam:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditAboutMe.ui" line="125" />
+            <location filename="../resources/Forms/AppletEditAboutMe.ui" line="125" />
             <source>Hi There!</source>
             <translation>Halo!</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditAboutMe.ui" line="132" />
+            <location filename="../resources/Forms/AppletEditAboutMe.ui" line="132" />
             <source>About Me:</source>
             <translation>Tentang Saya:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditAboutMe.ui" line="151" />
+            <location filename="../resources/Forms/AppletEditAboutMe.ui" line="151" />
             <source>I'm Wonderfull!</source>
             <translation>Saya Luar Biasa!</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditAboutMe.ui" line="158" />
+            <location filename="../resources/Forms/AppletEditAboutMe.ui" line="158" />
             <source>My Picture</source>
             <translation>Gambar saya</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditAboutMe.ui" line="182" />
+            <location filename="../resources/Forms/AppletEditAboutMe.ui" line="182" />
             <source>Browse</source>
             <translation>Jelajahi</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditAboutMe.ui" line="189" />
+            <location filename="../resources/Forms/AppletEditAboutMe.ui" line="189" />
             <source>Take Snapshot</source>
             <translation>Ambil Potret</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditAboutMe.ui" line="211" />
+            <location filename="../resources/Forms/AppletEditAboutMe.ui" line="211" />
             <source>My Favorite Websites</source>
             <translation>Situs Web Favorit Saya</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditAboutMe.ui" line="221" />
+            <location filename="../resources/Forms/AppletEditAboutMe.ui" line="221" />
             <source>https://donate.doctorswithoutborders.org</source>
             <translation>https://donate.doctorswithoutborders.org</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditAboutMe.ui" line="228" />
+            <location filename="../resources/Forms/AppletEditAboutMe.ui" line="228" />
             <source>https://nolimitconnect.org</source>
             <translation>https://nolimitconnect.org</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditAboutMe.ui" line="235" />
+            <location filename="../resources/Forms/AppletEditAboutMe.ui" line="235" />
             <source>Donation Information</source>
             <translation>Informasi Donasi</translation>
         </message>
@@ -352,32 +352,32 @@
     <context>
         <name>AppletEditAvatarImageUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditAvatarImage.ui" line="14" />
+            <location filename="../resources/Forms/AppletEditAvatarImage.ui" line="14" />
             <source>Edit My Avatar Imae</source>
             <translation>Edit Gambar Avatar Saya</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditAvatarImage.ui" line="51" />
+            <location filename="../resources/Forms/AppletEditAvatarImage.ui" line="51" />
             <source>Edit My Avatar Image</source>
             <translation>Edit Gambar Avatar Saya</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditAvatarImage.ui" line="84" />
+            <location filename="../resources/Forms/AppletEditAvatarImage.ui" line="84" />
             <source>Apply Avatar Image</source>
             <translation>Terapkan Gambar Avatar</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditAvatarImage.ui" line="91" />
+            <location filename="../resources/Forms/AppletEditAvatarImage.ui" line="91" />
             <source>Remove Avatar Image</source>
             <translation>Hapus Gambar Avatar</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditAvatarImage.ui" line="100" />
+            <location filename="../resources/Forms/AppletEditAvatarImage.ui" line="100" />
             <source>My Avatar Image</source>
             <translation>Gambar Avatar Saya</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditAvatarImage.ui" line="161" />
+            <location filename="../resources/Forms/AppletEditAvatarImage.ui" line="161" />
             <source>Delete Image Permenantly</source>
             <translation>Hapus Gambar Secara Permen</translation>
         </message>
@@ -385,12 +385,12 @@
     <context>
         <name>AppletEditStoryboardUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditStoryBoard.ui" line="20" />
+            <location filename="../resources/Forms/AppletEditStoryBoard.ui" line="20" />
             <source>Edit Storyboard</source>
             <translation>Sunting Papan Cerita</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditStoryBoard.ui" line="80" />
+            <location filename="../resources/Forms/AppletEditStoryBoard.ui" line="80" />
             <source>View My Storyboard Page</source>
             <translation>Lihat Halaman Papan Cerita Saya</translation>
         </message>
@@ -398,27 +398,27 @@
     <context>
         <name>AppletFileOfferSelectUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletFileOfferSelect.ui" line="23" />
+            <location filename="../resources/Forms/AppletFileOfferSelect.ui" line="23" />
             <source>Select File Offer</source>
             <translation>Pilih Penawaran File</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletFileOfferSelect.ui" line="98" />
+            <location filename="../resources/Forms/AppletFileOfferSelect.ui" line="98" />
             <source>Status:</source>
             <translation>Status:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletFileOfferSelect.ui" line="137" />
+            <location filename="../resources/Forms/AppletFileOfferSelect.ui" line="137" />
             <source>File</source>
             <translation>Mengajukan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletFileOfferSelect.ui" line="173" />
+            <location filename="../resources/Forms/AppletFileOfferSelect.ui" line="173" />
             <source>Path</source>
             <translation>Jalan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletFileOfferSelect.ui" line="199" />
+            <location filename="../resources/Forms/AppletFileOfferSelect.ui" line="199" />
             <source>Open Folder</source>
             <translation>Buka Folder</translation>
         </message>
@@ -426,12 +426,12 @@
     <context>
         <name>AppletFileShareClientViewUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletFileShareClientView.ui" line="23" />
+            <location filename="../resources/Forms/AppletFileShareClientView.ui" line="23" />
             <source>Browse Files</source>
             <translation>Jelajahi File</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletFileShareClientView.ui" line="101" />
+            <location filename="../resources/Forms/AppletFileShareClientView.ui" line="101" />
             <source>Status:</source>
             <translation>Status:</translation>
         </message>
@@ -439,22 +439,22 @@
     <context>
         <name>AppletFriendListUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletFriendList.ui" line="20" />
+            <location filename="../resources/Forms/AppletFriendList.ui" line="20" />
             <source>Search</source>
             <translation>Cari</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletFriendList.ui" line="95" />
+            <location filename="../resources/Forms/AppletFriendList.ui" line="95" />
             <source>Online</source>
             <translation>Daring</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletFriendList.ui" line="141" />
+            <location filename="../resources/Forms/AppletFriendList.ui" line="141" />
             <source>Blocked</source>
             <translation>Diblokir</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletFriendList.ui" line="187" />
+            <location filename="../resources/Forms/AppletFriendList.ui" line="187" />
             <source>Offline</source>
             <translation>Luring</translation>
         </message>
@@ -462,7 +462,7 @@
     <context>
         <name>AppletFriendRequestListUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletFriendRequestList.ui" line="20" />
+            <location filename="../resources/Forms/AppletFriendRequestList.ui" line="20" />
             <source>Search</source>
             <translation>Cari</translation>
         </message>
@@ -470,32 +470,32 @@
     <context>
         <name>AppletFriendRequestUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletFriendRequest.ui" line="32" />
+            <location filename="../resources/Forms/AppletFriendRequest.ui" line="32" />
             <source>Friend Request</source>
             <translation>Permintaan Pertemanan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletFriendRequest.ui" line="50" />
+            <location filename="../resources/Forms/AppletFriendRequest.ui" line="50" />
             <source>Reason Text</source>
             <translation>Teks Alasan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletFriendRequest.ui" line="103" />
+            <location filename="../resources/Forms/AppletFriendRequest.ui" line="103" />
             <source>Accept Friend Request</source>
             <translation>Terima Permintaan Pertemanan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletFriendRequest.ui" line="123" />
+            <location filename="../resources/Forms/AppletFriendRequest.ui" line="123" />
             <source>Reject Friend Request</source>
             <translation>Tolak Permintaan Pertemanan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletFriendRequest.ui" line="176" />
+            <location filename="../resources/Forms/AppletFriendRequest.ui" line="176" />
             <source>Send Friend Request</source>
             <translation>Kirim Permintaan Pertemanan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletFriendRequest.ui" line="196" />
+            <location filename="../resources/Forms/AppletFriendRequest.ui" line="196" />
             <source>Cancel Friend Request</source>
             <translation>Batalkan Permintaan Pertemanan</translation>
         </message>
@@ -503,7 +503,7 @@
     <context>
         <name>AppletGalleryEmoticonUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGalleryEmoticon.ui" line="26" />
+            <location filename="../resources/Forms/AppletGalleryEmoticon.ui" line="26" />
             <source>Thumbnail Gallery</source>
             <translation>Galeri Gambar Kecil</translation>
         </message>
@@ -511,7 +511,7 @@
     <context>
         <name>AppletGalleryImageUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGalleryImage.ui" line="26" />
+            <location filename="../resources/Forms/AppletGalleryImage.ui" line="26" />
             <source>Image Gallery</source>
             <translation>Galeri Gambar</translation>
         </message>
@@ -519,12 +519,12 @@
     <context>
         <name>AppletGalleryThumbUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGalleryThumb.ui" line="26" />
+            <location filename="../resources/Forms/AppletGalleryThumb.ui" line="26" />
             <source>Thumbnail Gallery</source>
             <translation>Galeri Gambar Kecil</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGalleryThumb.ui" line="58" />
+            <location filename="../resources/Forms/AppletGalleryThumb.ui" line="58" />
             <source>Thumb Dir:</source>
             <translation>Direktur Jempol:</translation>
         </message>
@@ -532,111 +532,111 @@
     <context>
         <name>AppletGetStartedUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="32" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="32" />
             <source>Information</source>
             <translation>Informasi</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="74" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="74" />
             <source>Navigation</source>
             <translation>Navigasi</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="89" />
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="150" />
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="205" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="89" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="150" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="205" />
             <source>Use the </source>
-            <translation>Gunakan</translation>
+            <translation>Gunakan </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="133" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="133" />
             <source>button to return to previous page</source>
             <translation>tombol untuk kembali ke halaman sebelumnya</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="188" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="188" />
             <source>button to expand page to full size of application</source>
             <translation>tombol untuk memperluas halaman ke ukuran penuh aplikasi</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="243" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="243" />
             <source>button to return to dual page display</source>
             <translation>tombol untuk kembali ke tampilan halaman ganda</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="252" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="252" />
             <source>Join</source>
             <translation>Bergabunglah</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="267" />
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="322" />
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="377" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="267" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="322" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="377" />
             <source>Click</source>
             <translation>Klik</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="305" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="305" />
             <source>to join a group</source>
             <translation>untuk bergabung dengan grup</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="360" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="360" />
             <source>to join a chat room</source>
             <translation>untuk bergabung dengan ruang obrolan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="415" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="415" />
             <source>to join random connect</source>
             <translation>untuk bergabung dengan koneksi acak</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="430" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="430" />
             <source>Personal</source>
             <translation>Pribadi</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="470" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="470" />
             <source>Personal notes and recordings</source>
             <translation>Catatan dan rekaman pribadi</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="512" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="512" />
             <source>Add media to your library</source>
             <translation>Tambahkan media ke perpustakaan Anda</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="527" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="527" />
             <source>Publish</source>
             <translation>Publikasikan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="567" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="567" />
             <source>Change your avatar icon</source>
             <translation>Ubah ikon avatar Anda</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="609" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="609" />
             <source>Set up your about me page</source>
             <translation>Siapkan halaman tentang saya</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="651" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="651" />
             <source>Add stories to your storyboard page</source>
             <translation>Tambahkan cerita ke halaman storyboard Anda</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="666" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="666" />
             <source>Share</source>
             <translation>Bagikan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="706" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="706" />
             <source>Share your camera as web cam server</source>
             <translation>Bagikan kamera Anda sebagai server kamera web</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="721" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="721" />
             <source>Visit No Limit Connect website for more information</source>
             <translation>Kunjungi situs web No Limit Connect untuk informasi lebih lanjut</translation>
         </message>
@@ -644,22 +644,22 @@
     <context>
         <name>AppletGroupHostSettingsUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGroupHostSettings.ui" line="20" />
+            <location filename="../resources/Forms/AppletGroupHostSettings.ui" line="20" />
             <source>Host A Group</source>
             <translation>Tuan Rumah Grup</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGroupHostSettings.ui" line="53" />
+            <location filename="../resources/Forms/AppletGroupHostSettings.ui" line="53" />
             <source>View Hosting Requirements</source>
             <translation>Lihat Persyaratan Hosting</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGroupHostSettings.ui" line="63" />
+            <location filename="../resources/Forms/AppletGroupHostSettings.ui" line="63" />
             <source>Other Services Required To Host A Group</source>
             <translation>Layanan Lain yang Diperlukan Untuk Menjadi Tuan Rumah Grup</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGroupHostSettings.ui" line="70" />
+            <location filename="../resources/Forms/AppletGroupHostSettings.ui" line="70" />
             <source>Recommend Anybody permission level</source>
             <translation>Rekomendasikan tingkat izin Siapa Saja</translation>
         </message>
@@ -667,7 +667,7 @@
     <context>
         <name>AppletGroupJoinSearchUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGroupJoinSearch.ui" line="20" />
+            <location filename="../resources/Forms/AppletGroupJoinSearch.ui" line="20" />
             <source>Search</source>
             <translation>Cari</translation>
         </message>
@@ -675,7 +675,7 @@
     <context>
         <name>AppletGroupListClientUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGroupListClient.ui" line="20" />
+            <location filename="../resources/Forms/AppletGroupListClient.ui" line="20" />
             <source>Search</source>
             <translation>Cari</translation>
         </message>
@@ -683,12 +683,12 @@
     <context>
         <name>AppletGroupListLocalViewUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGroupListLocalView.ui" line="20" />
+            <location filename="../resources/Forms/AppletGroupListLocalView.ui" line="20" />
             <source>Group List Local View</source>
             <translation>Tampilan Lokal Daftar Grup</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGroupListLocalView.ui" line="106" />
+            <location filename="../resources/Forms/AppletGroupListLocalView.ui" line="106" />
             <source>Refresh list of announced hosts</source>
             <translation>Segarkan daftar host yang diumumkan</translation>
         </message>
@@ -696,12 +696,12 @@
     <context>
         <name>AppletHackerListUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHackerList.ui" line="32" />
+            <location filename="../resources/Forms/AppletHackerList.ui" line="32" />
             <source>Hacker List</source>
             <translation>Daftar Peretas</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHackerList.ui" line="88" />
+            <location filename="../resources/Forms/AppletHackerList.ui" line="88" />
             <source>Copy To Clipboard</source>
             <translation>Salin Ke Papan Klip</translation>
         </message>
@@ -709,52 +709,52 @@
     <context>
         <name>AppletHelpNetSignalBarsUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHelpNetSignalBars.ui" line="32" />
+            <location filename="../resources/Forms/AppletHelpNetSignalBars.ui" line="32" />
             <source>Information</source>
             <translation>Informasi</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHelpNetSignalBars.ui" line="71" />
+            <location filename="../resources/Forms/AppletHelpNetSignalBars.ui" line="71" />
             <source>Information: What do the signal bars indicate?</source>
             <translation>Informasi: Apa yang ditunjukkan oleh bilah sinyal?</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHelpNetSignalBars.ui" line="117" />
+            <location filename="../resources/Forms/AppletHelpNetSignalBars.ui" line="117" />
             <source>Connected To Internet</source>
             <translation>Terhubung ke Internet</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHelpNetSignalBars.ui" line="165" />
+            <location filename="../resources/Forms/AppletHelpNetSignalBars.ui" line="165" />
             <source>Connection Test Available</source>
             <translation>Tes Koneksi Tersedia</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHelpNetSignalBars.ui" line="213" />
+            <location filename="../resources/Forms/AppletHelpNetSignalBars.ui" line="213" />
             <source>Network Host Available</source>
             <translation>Host Jaringan Tersedia</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHelpNetSignalBars.ui" line="261" />
+            <location filename="../resources/Forms/AppletHelpNetSignalBars.ui" line="261" />
             <source>Searching For Relay</source>
             <translation>Mencari Relay</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHelpNetSignalBars.ui" line="309" />
+            <location filename="../resources/Forms/AppletHelpNetSignalBars.ui" line="309" />
             <source>Connected With Relay</source>
             <translation>Terhubung Dengan Relay</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHelpNetSignalBars.ui" line="357" />
+            <location filename="../resources/Forms/AppletHelpNetSignalBars.ui" line="357" />
             <source>Direct Connection</source>
             <translation>Koneksi Langsung</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHelpNetSignalBars.ui" line="411" />
+            <location filename="../resources/Forms/AppletHelpNetSignalBars.ui" line="411" />
             <source>Directly Connected To Host</source>
             <translation>Terhubung Langsung Ke Host</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHelpNetSignalBars.ui" line="459" />
+            <location filename="../resources/Forms/AppletHelpNetSignalBars.ui" line="459" />
             <source>Connected To Host With Relay</source>
             <translation>Terhubung Ke Host Dengan Relay</translation>
         </message>
@@ -780,7 +780,7 @@
     <context>
         <name>AppletHostClientUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostClient.ui" line="20" />
+            <location filename="../resources/Forms/AppletHostClient.ui" line="20" />
             <source>Host Client</source>
             <translation>Klien Tuan Rumah</translation>
         </message>
@@ -788,27 +788,27 @@
     <context>
         <name>AppletHostJoinChooseUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostJoinChoose.ui" line="20" />
+            <location filename="../resources/Forms/AppletHostJoinChoose.ui" line="20" />
             <source>Choose User</source>
             <translation>Pilih Pengguna</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostJoinChoose.ui" line="63" />
+            <location filename="../resources/Forms/AppletHostJoinChoose.ui" line="63" />
             <source>View Current Host</source>
             <translation>Lihat Host Saat Ini</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostJoinChoose.ui" line="110" />
+            <location filename="../resources/Forms/AppletHostJoinChoose.ui" line="110" />
             <source>Leave Current Host</source>
             <translation>Tinggalkan Host Saat Ini</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostJoinChoose.ui" line="157" />
+            <location filename="../resources/Forms/AppletHostJoinChoose.ui" line="157" />
             <source>Rejoin last joined Host</source>
             <translation>Bergabunglah kembali dengan Host yang terakhir bergabung</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostJoinChoose.ui" line="204" />
+            <location filename="../resources/Forms/AppletHostJoinChoose.ui" line="204" />
             <source>Search for a different host to join</source>
             <translation>Cari host lain untuk bergabung</translation>
         </message>
@@ -816,22 +816,22 @@
     <context>
         <name>AppletHostJoinConnectUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostJoinConnect.ui" line="20" />
+            <location filename="../resources/Forms/AppletHostJoinConnect.ui" line="20" />
             <source>Choose User</source>
             <translation>Pilih Pengguna</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostJoinConnect.ui" line="73" />
+            <location filename="../resources/Forms/AppletHostJoinConnect.ui" line="73" />
             <source>View Current Host</source>
             <translation>Lihat Host Saat Ini</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostJoinConnect.ui" line="120" />
+            <location filename="../resources/Forms/AppletHostJoinConnect.ui" line="120" />
             <source>Rejoin last joined Host</source>
             <translation>Bergabunglah kembali dengan Host yang terakhir bergabung</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostJoinConnect.ui" line="167" />
+            <location filename="../resources/Forms/AppletHostJoinConnect.ui" line="167" />
             <source>Search for a different host to join</source>
             <translation>Cari host lain untuk bergabung</translation>
         </message>
@@ -839,17 +839,17 @@
     <context>
         <name>AppletHostJoinRequestListUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostJoinRequestList.ui" line="110" />
+            <location filename="../resources/Forms/AppletHostJoinRequestList.ui" line="110" />
             <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Create Invite&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
             <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Buat Undangan&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostJoinRequestList.ui" line="136" />
+            <location filename="../resources/Forms/AppletHostJoinRequestList.ui" line="136" />
             <source>Accept Invite</source>
             <translation>Terima Undangan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostJoinRequestList.ui" line="176" />
+            <location filename="../resources/Forms/AppletHostJoinRequestList.ui" line="176" />
             <source>Accept All</source>
             <translation>Terima Semua</translation>
         </message>
@@ -857,32 +857,32 @@
     <context>
         <name>AppletHostLeaveUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostLeave.ui" line="20" />
+            <location filename="../resources/Forms/AppletHostLeave.ui" line="20" />
             <source>Host Leave</source>
             <translation>Cuti Tuan Rumah</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostLeave.ui" line="34" />
+            <location filename="../resources/Forms/AppletHostLeave.ui" line="34" />
             <source>Admin</source>
             <translation>Admin</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostLeave.ui" line="133" />
+            <location filename="../resources/Forms/AppletHostLeave.ui" line="133" />
             <source>Leave</source>
             <translation>Pergi</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostLeave.ui" line="186" />
+            <location filename="../resources/Forms/AppletHostLeave.ui" line="186" />
             <source>Remove Membership And Leave</source>
             <translation>Hapus Keanggotaan Dan Keluar</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostLeave.ui" line="245" />
+            <location filename="../resources/Forms/AppletHostLeave.ui" line="245" />
             <source>Block Host</source>
             <translation>Blokir Tuan Rumah</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostLeave.ui" line="302" />
+            <location filename="../resources/Forms/AppletHostLeave.ui" line="302" />
             <source>Cancel</source>
             <translation>Batalkan</translation>
         </message>
@@ -890,57 +890,57 @@
     <context>
         <name>AppletHostNetworkStatusUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostNetworkStatus.ui" line="20" />
+            <location filename="../resources/Forms/AppletHostNetworkStatus.ui" line="20" />
             <source>Hosting Requirements Status</source>
             <translation>Status Persyaratan Hosting</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostNetworkStatus.ui" line="68" />
+            <location filename="../resources/Forms/AppletHostNetworkStatus.ui" line="68" />
             <source>View Hosting Requirements</source>
             <translation>Lihat Persyaratan Hosting</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostNetworkStatus.ui" line="78" />
+            <location filename="../resources/Forms/AppletHostNetworkStatus.ui" line="78" />
             <source>Optional Services That May Be Provided By Host</source>
             <translation>Layanan Opsional Yang Mungkin Disediakan Oleh Tuan Rumah</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostNetworkStatus.ui" line="85" />
+            <location filename="../resources/Forms/AppletHostNetworkStatus.ui" line="85" />
             <source>Recommend Connection Test Permission Anybody</source>
             <translation>Rekomendasikan Izin Tes Koneksi Siapa Saja</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostNetworkStatus.ui" line="95" />
+            <location filename="../resources/Forms/AppletHostNetworkStatus.ui" line="95" />
             <source>Has open port to recieve connections</source>
             <translation>Memiliki port terbuka untuk menerima koneksi</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostNetworkStatus.ui" line="102" />
+            <location filename="../resources/Forms/AppletHostNetworkStatus.ui" line="102" />
             <source>Host Permission Is Enabled</source>
             <translation>Izin Host Diaktifkan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostNetworkStatus.ui" line="109" />
+            <location filename="../resources/Forms/AppletHostNetworkStatus.ui" line="109" />
             <source>Connection Test Is Enabled</source>
             <translation>Tes Koneksi Diaktifkan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostNetworkStatus.ui" line="118" />
+            <location filename="../resources/Forms/AppletHostNetworkStatus.ui" line="118" />
             <source>Url:</source>
             <translation>URL:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostNetworkStatus.ui" line="148" />
+            <location filename="../resources/Forms/AppletHostNetworkStatus.ui" line="148" />
             <source>Status:  </source>
-            <translation>Status:</translation>
+            <translation>Status:  </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostNetworkStatus.ui" line="201" />
+            <location filename="../resources/Forms/AppletHostNetworkStatus.ui" line="201" />
             <source>For author of NLC evaluation of VPNs that can open a port </source>
-            <translation>Untuk penulis evaluasi NLC terhadap VPN yang dapat membuka port</translation>
+            <translation>Untuk penulis evaluasi NLC terhadap VPN yang dapat membuka port </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostNetworkStatus.ui" line="213" />
+            <location filename="../resources/Forms/AppletHostNetworkStatus.ui" line="213" />
             <source>Members Count:</source>
             <translation>Jumlah Anggota:</translation>
         </message>
@@ -948,12 +948,12 @@
     <context>
         <name>AppletIgnoredHostsUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletIgnoredHosts.ui" line="14" />
+            <location filename="../resources/Forms/AppletIgnoredHosts.ui" line="14" />
             <source>Test Host Clent</source>
             <translation>Klien Tuan Rumah Uji</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletIgnoredHosts.ui" line="69" />
+            <location filename="../resources/Forms/AppletIgnoredHosts.ui" line="69" />
             <source>Ignored Host List</source>
             <translation>Daftar Host yang Diabaikan</translation>
         </message>
@@ -961,41 +961,41 @@
     <context>
         <name>AppletInviteAcceptUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletInviteAccept.ui" line="32" />
-            <location filename="../nolimitgui/src/Forms/AppletInviteAccept.ui" line="146" />
+            <location filename="../resources/Forms/AppletInviteAccept.ui" line="32" />
+            <location filename="../resources/Forms/AppletInviteAccept.ui" line="146" />
             <source>Accept Invite</source>
             <translation>Terima Undangan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletInviteAccept.ui" line="113" />
+            <location filename="../resources/Forms/AppletInviteAccept.ui" line="113" />
             <source>What is a invite?</source>
             <translation>Apa itu undangan?</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletInviteAccept.ui" line="191" />
-            <source>Invite to accept text</source>
-            <translation>Undang untuk menerima teks</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/Forms/AppletInviteAccept.ui" line="166" />
+            <location filename="../resources/Forms/AppletInviteAccept.ui" line="166" />
             <source>Reject Invite</source>
             <translation>Tolak Undangan</translation>
+        </message>
+        <message>
+            <location filename="../resources/Forms/AppletInviteAccept.ui" line="191" />
+            <source>Invite to accept text</source>
+            <translation>Undang untuk menerima teks</translation>
         </message>
     </context>
     <context>
         <name>AppletInviteCreateUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletInviteCreate.ui" line="32" />
+            <location filename="../resources/Forms/AppletInviteCreate.ui" line="32" />
             <source>Create Invite</source>
             <translation>Buat Undangan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletInviteCreate.ui" line="113" />
+            <location filename="../resources/Forms/AppletInviteCreate.ui" line="113" />
             <source>What is a invite?</source>
             <translation>Apa itu undangan?</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletInviteCreate.ui" line="135" />
+            <location filename="../resources/Forms/AppletInviteCreate.ui" line="135" />
             <source>Invite Message (Optional)</source>
             <translation>Pesan Undangan (Opsional)</translation>
         </message>
@@ -1003,33 +1003,33 @@
     <context>
         <name>AppletInvitesUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletInvites.ui" line="32" />
-            <location filename="../nolimitgui/src/Forms/AppletInvites.ui" line="173" />
+            <location filename="../resources/Forms/AppletInvites.ui" line="32" />
+            <location filename="../resources/Forms/AppletInvites.ui" line="173" />
             <source>Accept Invite</source>
             <translation>Terima Undangan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletInvites.ui" line="107" />
+            <location filename="../resources/Forms/AppletInvites.ui" line="107" />
             <source>Paste Invite From Clipboard</source>
             <translation>Tempel Undangan Dari Papan Klip</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletInvites.ui" line="121" />
+            <location filename="../resources/Forms/AppletInvites.ui" line="121" />
             <source>Person URL:</source>
             <translation>URL Orang:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletInvites.ui" line="139" />
+            <location filename="../resources/Forms/AppletInvites.ui" line="139" />
             <source>Group  URL:</source>
             <translation>URL grup:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletInvites.ui" line="193" />
+            <location filename="../resources/Forms/AppletInvites.ui" line="193" />
             <source>Reject Invite</source>
             <translation>Tolak Undangan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletInvites.ui" line="218" />
+            <location filename="../resources/Forms/AppletInvites.ui" line="218" />
             <source>Invite Text</source>
             <translation>Teks Undangan</translation>
         </message>
@@ -1037,12 +1037,12 @@
     <context>
         <name>AppletIsPortOpenTestUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletIsPortOpenTest.ui" line="17" />
+            <location filename="../resources/Forms/AppletIsPortOpenTest.ui" line="17" />
             <source>Net Service Test</source>
             <translation>Tes Layanan Bersih</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletIsPortOpenTest.ui" line="81" />
+            <location filename="../resources/Forms/AppletIsPortOpenTest.ui" line="81" />
             <source>Test Log:</source>
             <translation>Log Tes:</translation>
         </message>
@@ -1050,27 +1050,27 @@
     <context>
         <name>AppletJoinHostListUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletJoinHostList.ui" line="14" />
+            <location filename="../resources/Forms/AppletJoinHostList.ui" line="14" />
             <source>Test Host Clent</source>
             <translation>Klien Tuan Rumah Uji</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletJoinHostList.ui" line="71" />
+            <location filename="../resources/Forms/AppletJoinHostList.ui" line="71" />
             <source>Host Administrator</source>
             <translation>Administrator Tuan Rumah</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletJoinHostList.ui" line="78" />
+            <location filename="../resources/Forms/AppletJoinHostList.ui" line="78" />
             <source>Show Ignored Hosts</source>
             <translation>Tampilkan Host yang Diabaikan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletJoinHostList.ui" line="90" />
+            <location filename="../resources/Forms/AppletJoinHostList.ui" line="90" />
             <source>Choose An Different Host</source>
             <translation>Pilih Host yang Berbeda</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletJoinHostList.ui" line="97" />
+            <location filename="../resources/Forms/AppletJoinHostList.ui" line="97" />
             <source>Group Host List</source>
             <translation>Daftar Tuan Rumah Grup</translation>
         </message>
@@ -1078,7 +1078,7 @@
     <context>
         <name>AppletLibraryUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLibrary.ui" line="35" />
+            <location filename="../resources/Forms/AppletLibrary.ui" line="35" />
             <source>Library</source>
             <translation>Perpustakaan</translation>
         </message>
@@ -1086,95 +1086,95 @@
     <context>
         <name>AppletLogSettingsWidget</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="14" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="14" />
             <source>Log Settings</source>
             <translation>Pengaturan Log</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="100" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="100" />
             <source>Save Log Settings</source>
             <translation>Simpan Pengaturan Log</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="107" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="107" />
             <source>Cancel</source>
             <translation>Batalkan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="134" />
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="309" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="134" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="309" />
             <source>Check All</source>
             <translation>Periksa Semua</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="141" />
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="316" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="141" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="316" />
             <source>Uncheck All</source>
             <translation>Hapus centang Semua</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="148" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="148" />
             <source>Log Level Setting</source>
             <translation>Pengaturan Tingkat Log</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="160" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="160" />
             <source>Enable Logging</source>
             <translation>Aktifkan Pencatatan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="180" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="180" />
             <source>Log Fatal</source>
             <translation>Catatan Fatal</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="193" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="193" />
             <source>Log Assert</source>
             <translation>Log Menegaskan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="206" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="206" />
             <source>Log Severe</source>
             <translation>Log Parah</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="219" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="219" />
             <source>Log Error</source>
             <translation>Kesalahan Catatan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="232" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="232" />
             <source>Log Warn</source>
             <translation>Log Peringatan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="245" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="245" />
             <source>Log Debug</source>
             <translation>Log Debug</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="258" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="258" />
             <source>Log Info</source>
             <translation>Info Catatan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="271" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="271" />
             <source>Log Status</source>
             <translation>Status Catatan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="284" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="284" />
             <source>Log Verbose</source>
             <translation>Catat Verbose</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="323" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="323" />
             <source>Log Modules Setting</source>
             <translation>Pengaturan Modul Log</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="699" />
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="706" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="699" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="706" />
             <source>CheckBox</source>
             <translation>Kotak Centang</translation>
         </message>
@@ -1182,17 +1182,17 @@
     <context>
         <name>AppletLogUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLog.ui" line="32" />
+            <location filename="../resources/Forms/AppletLog.ui" line="32" />
             <source>Application Log</source>
             <translation>Catatan Aplikasi</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLog.ui" line="91" />
+            <location filename="../resources/Forms/AppletLog.ui" line="91" />
             <source>Show Log Settings</source>
             <translation>Tampilkan Pengaturan Log</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLog.ui" line="98" />
+            <location filename="../resources/Forms/AppletLog.ui" line="98" />
             <source>Show App Info</source>
             <translation>Tampilkan Info Aplikasi</translation>
         </message>
@@ -1200,7 +1200,7 @@
     <context>
         <name>AppletMultiMessengerUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletMultiMessenger.ui" line="32" />
+            <location filename="../resources/Forms/AppletMultiMessenger.ui" line="32" />
             <source>Dialog</source>
             <translation>Dialog</translation>
         </message>
@@ -1208,7 +1208,7 @@
     <context>
         <name>AppletNetworkKeyWidget</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletNetworkKey.ui" line="20" />
+            <location filename="../resources/Forms/AppletNetworkKey.ui" line="20" />
             <source>Applete Network Key</source>
             <translation>Kunci Jaringan Applete</translation>
         </message>
@@ -1216,12 +1216,12 @@
     <context>
         <name>AppletNetworkSettings</name>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="611" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="583" />
             <source>Network Settings</source>
             <translation>Pengaturan Jaringan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="611" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="583" />
             <source>You cannot delete the last network setting.</source>
             <translation>Anda tidak dapat menghapus pengaturan jaringan terakhir.</translation>
         </message>
@@ -1229,97 +1229,92 @@
     <context>
         <name>AppletNetworkSettingsUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletNetworkSettings.ui" line="14" />
+            <location filename="../resources/Forms/AppletNetworkSettings.ui" line="14" />
             <source>Network Settings</source>
             <translation>Pengaturan Jaringan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletNetworkSettings.ui" line="64" />
+            <location filename="../resources/Forms/AppletNetworkSettings.ui" line="64" />
             <source>Select Network Setting</source>
             <translation>Pilih Pengaturan Jaringan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletNetworkSettings.ui" line="119" />
+            <location filename="../resources/Forms/AppletNetworkSettings.ui" line="119" />
             <source>Save Network Setting</source>
             <translation>Simpan Pengaturan Jaringan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletNetworkSettings.ui" line="151" />
+            <location filename="../resources/Forms/AppletNetworkSettings.ui" line="151" />
             <source>Delete Network Setting</source>
             <translation>Hapus Pengaturan Jaringan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletNetworkSettings.ui" line="162" />
+            <location filename="../resources/Forms/AppletNetworkSettings.ui" line="162" />
             <source>Incomming Connections Listen Port:</source>
             <translation>Port Dengar Koneksi Masuk:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletNetworkSettings.ui" line="172" />
+            <location filename="../resources/Forms/AppletNetworkSettings.ui" line="172" />
             <source>Ramdomize Port</source>
             <translation>Ramdomisasi Pelabuhan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletNetworkSettings.ui" line="398" />
-            <source>Use IPv6 Network</source>
-            <translation>Gunakan Jaringan IPv6</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/Forms/AppletNetworkSettings.ui" line="191" />
+            <location filename="../resources/Forms/AppletNetworkSettings.ui" line="191" />
             <source>Network Host URL</source>
             <translation>URL Host Jaringan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletNetworkSettings.ui" line="244" />
+            <location filename="../resources/Forms/AppletNetworkSettings.ui" line="244" />
             <source>Network Key</source>
             <translation>Kunci Jaringan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletNetworkSettings.ui" line="331" />
+            <location filename="../resources/Forms/AppletNetworkSettings.ui" line="331" />
             <source>Connection Test Service URL</source>
             <translation>URL Layanan Tes Koneksi</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletNetworkSettings.ui" line="440" />
-            <source>Assume Users Can Connect Directly (Port Is Always Open)</source>
-            <translation>Asumsikan Pengguna Dapat Terhubung Langsung (Port Selalu Terbuka)</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/Forms/AppletNetworkSettings.ui" line="385" />
+            <location filename="../resources/Forms/AppletNetworkSettings.ui" line="385" />
             <source>Enable UPNP port forward</source>
             <translation>Aktifkan port UPNP maju</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletNetworkSettings.ui" line="407" />
+            <location filename="../resources/Forms/AppletNetworkSettings.ui" line="398" />
+            <source>Use IPv6 Network</source>
+            <translation>Gunakan Jaringan IPv6</translation>
+        </message>
+        <message>
+            <location filename="../resources/Forms/AppletNetworkSettings.ui" line="407" />
             <source>How To Determine If Can Direct Connect ( Is Port Open? )</source>
             <translation>Bagaimana Cara Menentukan Apakah Dapat Terhubung Langsung (Apakah Port Terbuka?)</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletNetworkSettings.ui" line="433" />
+            <location filename="../resources/Forms/AppletNetworkSettings.ui" line="433" />
             <source>Use Connection Test Service To Test Is Port Open (Recommended)</source>
             <translation>Gunakan Layanan Tes Koneksi Untuk Menguji Apakah Port Terbuka (Disarankan)</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletNetworkSettings.ui" line="458" />
+            <location filename="../resources/Forms/AppletNetworkSettings.ui" line="440" />
+            <source>Assume Users Can Connect Directly (Port Is Always Open)</source>
+            <translation>Asumsikan Pengguna Dapat Terhubung Langsung (Port Selalu Terbuka)</translation>
+        </message>
+        <message>
+            <location filename="../resources/Forms/AppletNetworkSettings.ui" line="458" />
             <source>External IP</source>
             <translation>IP eksternal</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletNetworkSettings.ui" line="474" />
-            <source>Assume Relay Service Is Required ( Device Is Behind Firewall ).</source>
-            <translation>Asumsikan Layanan Relai Diperlukan (Perangkat Dibalik Firewall).</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/Forms/AppletNetworkSettings.ui" line="513" />
+            <location filename="../resources/Forms/AppletNetworkSettings.ui" line="506" />
             <source>My URL:</source>
             <translation>URL saya:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletNetworkSettings.ui" line="584" />
+            <location filename="../resources/Forms/AppletNetworkSettings.ui" line="577" />
             <source>Test Is My Port Open</source>
             <translation>Tes Apakah Port Saya Terbuka</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletNetworkSettings.ui" line="591" />
+            <location filename="../resources/Forms/AppletNetworkSettings.ui" line="584" />
             <source>Test UPNP</source>
             <translation>Uji UPNP</translation>
         </message>
@@ -1327,47 +1322,47 @@
     <context>
         <name>AppletOfferInfoUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferInfo.ui" line="23" />
+            <location filename="../resources/Forms/AppletOfferInfo.ui" line="23" />
             <source>Offer Info</source>
             <translation>Info Penawaran</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferInfo.ui" line="58" />
+            <location filename="../resources/Forms/AppletOfferInfo.ui" line="58" />
             <source>Offer Status:</source>
             <translation>Status Penawaran:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferInfo.ui" line="88" />
+            <location filename="../resources/Forms/AppletOfferInfo.ui" line="88" />
             <source>Offer Time:</source>
             <translation>Waktu Penawaran:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferInfo.ui" line="120" />
+            <location filename="../resources/Forms/AppletOfferInfo.ui" line="120" />
             <source>Offer Message (if any)</source>
             <translation>Pesan Penawaran (jika ada)</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferInfo.ui" line="138" />
+            <location filename="../resources/Forms/AppletOfferInfo.ui" line="138" />
             <source>Expires</source>
             <translation>Kedaluwarsa</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferInfo.ui" line="151" />
+            <location filename="../resources/Forms/AppletOfferInfo.ui" line="151" />
             <source>When Offer Response Recieved</source>
             <translation>Ketika Respon Penawaran Diterima</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferInfo.ui" line="160" />
+            <location filename="../resources/Forms/AppletOfferInfo.ui" line="160" />
             <source>File Info</source>
             <translation>Informasi Berkas</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferInfo.ui" line="217" />
+            <location filename="../resources/Forms/AppletOfferInfo.ui" line="217" />
             <source>File Name:</source>
             <translation>Nama File:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferInfo.ui" line="259" />
+            <location filename="../resources/Forms/AppletOfferInfo.ui" line="259" />
             <source>File Size:</source>
             <translation>Ukuran Berkas:</translation>
         </message>
@@ -1375,17 +1370,17 @@
     <context>
         <name>AppletOfferListUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferList.ui" line="20" />
+            <location filename="../resources/Forms/AppletOfferList.ui" line="20" />
             <source>Offer List</source>
             <translation>Daftar Penawaran</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferList.ui" line="110" />
+            <location filename="../resources/Forms/AppletOfferList.ui" line="110" />
             <source>Active Offers</source>
             <translation>Penawaran Aktif</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferList.ui" line="143" />
+            <location filename="../resources/Forms/AppletOfferList.ui" line="143" />
             <source>Offer History</source>
             <translation>Riwayat Penawaran</translation>
         </message>
@@ -1393,32 +1388,32 @@
     <context>
         <name>AppletOfferRandSessionUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferRandSession.ui" line="23" />
+            <location filename="../resources/Forms/AppletOfferRandSession.ui" line="23" />
             <source>Offer Send</source>
             <translation>Penawaran Kirim</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferRandSession.ui" line="88" />
+            <location filename="../resources/Forms/AppletOfferRandSession.ui" line="88" />
             <source>Status:</source>
             <translation>Status:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferRandSession.ui" line="154" />
+            <location filename="../resources/Forms/AppletOfferRandSession.ui" line="154" />
             <source>Offer Voice Phone Session</source>
             <translation>Tawarkan Sesi Telepon Suara</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferRandSession.ui" line="198" />
+            <location filename="../resources/Forms/AppletOfferRandSession.ui" line="198" />
             <source>Offer Video Chat Session</source>
             <translation>Tawarkan Sesi Obrolan Video</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferRandSession.ui" line="242" />
+            <location filename="../resources/Forms/AppletOfferRandSession.ui" line="242" />
             <source>Offer Play Truth Or Dare</source>
             <translation>Tawarkan Mainkan Kebenaran Atau Tantangan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferRandSession.ui" line="291" />
+            <location filename="../resources/Forms/AppletOfferRandSession.ui" line="291" />
             <source>Send</source>
             <translation>Kirim</translation>
         </message>
@@ -1426,42 +1421,42 @@
     <context>
         <name>AppletOfferResponseAcceptUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferResponseAccept.ui" line="23" />
+            <location filename="../resources/Forms/AppletOfferResponseAccept.ui" line="23" />
             <source>Offer Accept Response</source>
             <translation>Tawaran Terima Tanggapan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferResponseAccept.ui" line="88" />
+            <location filename="../resources/Forms/AppletOfferResponseAccept.ui" line="88" />
             <source>Status:</source>
             <translation>Status:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferResponseAccept.ui" line="122" />
+            <location filename="../resources/Forms/AppletOfferResponseAccept.ui" line="122" />
             <source>Expires</source>
             <translation>Kedaluwarsa</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferResponseAccept.ui" line="135" />
+            <location filename="../resources/Forms/AppletOfferResponseAccept.ui" line="135" />
             <source>When Offer Response Recieved</source>
             <translation>Ketika Respon Penawaran Diterima</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferResponseAccept.ui" line="144" />
+            <location filename="../resources/Forms/AppletOfferResponseAccept.ui" line="144" />
             <source>Response</source>
             <translation>Respon</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferResponseAccept.ui" line="163" />
+            <location filename="../resources/Forms/AppletOfferResponseAccept.ui" line="163" />
             <source>File Info</source>
             <translation>Informasi Berkas</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferResponseAccept.ui" line="201" />
+            <location filename="../resources/Forms/AppletOfferResponseAccept.ui" line="201" />
             <source>File:</source>
             <translation>Berkas:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferResponseAccept.ui" line="243" />
+            <location filename="../resources/Forms/AppletOfferResponseAccept.ui" line="243" />
             <source>Path:</source>
             <translation>Jalur:</translation>
         </message>
@@ -1469,42 +1464,42 @@
     <context>
         <name>AppletOfferResponseUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferResponse.ui" line="23" />
+            <location filename="../resources/Forms/AppletOfferResponse.ui" line="23" />
             <source>Offer Response</source>
             <translation>Respon Tawaran</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferResponse.ui" line="88" />
+            <location filename="../resources/Forms/AppletOfferResponse.ui" line="88" />
             <source>Status:</source>
             <translation>Status:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferResponse.ui" line="122" />
+            <location filename="../resources/Forms/AppletOfferResponse.ui" line="122" />
             <source>Expires</source>
             <translation>Kedaluwarsa</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferResponse.ui" line="135" />
+            <location filename="../resources/Forms/AppletOfferResponse.ui" line="135" />
             <source>When Offer Response Recieved</source>
             <translation>Ketika Respon Penawaran Diterima</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferResponse.ui" line="144" />
+            <location filename="../resources/Forms/AppletOfferResponse.ui" line="144" />
             <source>Response</source>
             <translation>Respon</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferResponse.ui" line="163" />
+            <location filename="../resources/Forms/AppletOfferResponse.ui" line="163" />
             <source>File Info</source>
             <translation>Informasi Berkas</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferResponse.ui" line="201" />
+            <location filename="../resources/Forms/AppletOfferResponse.ui" line="201" />
             <source>File:</source>
             <translation>Berkas:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferResponse.ui" line="243" />
+            <location filename="../resources/Forms/AppletOfferResponse.ui" line="243" />
             <source>Path:</source>
             <translation>Jalur:</translation>
         </message>
@@ -1512,17 +1507,17 @@
     <context>
         <name>AppletOfferSendUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferSend.ui" line="23" />
+            <location filename="../resources/Forms/AppletOfferSend.ui" line="23" />
             <source>Offer Send</source>
             <translation>Penawaran Kirim</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferSend.ui" line="88" />
+            <location filename="../resources/Forms/AppletOfferSend.ui" line="88" />
             <source>Status:</source>
             <translation>Status:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferSend.ui" line="120" />
+            <location filename="../resources/Forms/AppletOfferSend.ui" line="120" />
             <source>Send</source>
             <translation>Kirim</translation>
         </message>
@@ -1530,47 +1525,47 @@
     <context>
         <name>AppletOfferViewUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferView.ui" line="23" />
+            <location filename="../resources/Forms/AppletOfferView.ui" line="23" />
             <source>Offer Details</source>
             <translation>Detail Penawaran</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferView.ui" line="88" />
+            <location filename="../resources/Forms/AppletOfferView.ui" line="88" />
             <source>Status:</source>
             <translation>Status:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferView.ui" line="122" />
+            <location filename="../resources/Forms/AppletOfferView.ui" line="122" />
             <source>Expires</source>
             <translation>Kedaluwarsa</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferView.ui" line="135" />
+            <location filename="../resources/Forms/AppletOfferView.ui" line="135" />
             <source>When Offer Response Recieved</source>
             <translation>Ketika Respon Penawaran Diterima</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferView.ui" line="144" />
+            <location filename="../resources/Forms/AppletOfferView.ui" line="144" />
             <source>Send</source>
             <translation>Kirim</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferView.ui" line="156" />
+            <location filename="../resources/Forms/AppletOfferView.ui" line="156" />
             <source>Response</source>
             <translation>Respon</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferView.ui" line="175" />
+            <location filename="../resources/Forms/AppletOfferView.ui" line="175" />
             <source>File Info</source>
             <translation>Informasi Berkas</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferView.ui" line="213" />
+            <location filename="../resources/Forms/AppletOfferView.ui" line="213" />
             <source>File:</source>
             <translation>Berkas:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferView.ui" line="255" />
+            <location filename="../resources/Forms/AppletOfferView.ui" line="255" />
             <source>Path:</source>
             <translation>Jalur:</translation>
         </message>
@@ -1578,79 +1573,79 @@
     <context>
         <name>AppletPeerChangeFriendshipUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerChangeFriendship.ui" line="26" />
+            <location filename="../resources/Forms/AppletPeerChangeFriendship.ui" line="26" />
             <source>Dialog</source>
             <translation>Dialog</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerChangeFriendship.ui" line="101" />
+            <location filename="../resources/Forms/AppletPeerChangeFriendship.ui" line="101" />
             <source>Age:</source>
             <translation>Usia:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerChangeFriendship.ui" line="131" />
+            <location filename="../resources/Forms/AppletPeerChangeFriendship.ui" line="131" />
             <source>Gender:</source>
             <translation>Jenis Kelamin:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerChangeFriendship.ui" line="168" />
+            <location filename="../resources/Forms/AppletPeerChangeFriendship.ui" line="168" />
             <source>Preferred Content:</source>
             <translation>Konten Pilihan:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerChangeFriendship.ui" line="198" />
+            <location filename="../resources/Forms/AppletPeerChangeFriendship.ui" line="198" />
             <source>Language:</source>
             <translation>Bahasa:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerChangeFriendship.ui" line="273" />
+            <location filename="../resources/Forms/AppletPeerChangeFriendship.ui" line="273" />
             <source>Make Friend</source>
             <translation>Berteman</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerChangeFriendship.ui" line="312" />
+            <location filename="../resources/Forms/AppletPeerChangeFriendship.ui" line="312" />
             <source>Ignore</source>
             <translation>Abaikan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerChangeFriendship.ui" line="380" />
-            <location filename="../nolimitgui/src/Forms/AppletPeerChangeFriendship.ui" line="428" />
-            <location filename="../nolimitgui/src/Forms/AppletPeerChangeFriendship.ui" line="686" />
+            <location filename="../resources/Forms/AppletPeerChangeFriendship.ui" line="380" />
+            <location filename="../resources/Forms/AppletPeerChangeFriendship.ui" line="428" />
+            <location filename="../resources/Forms/AppletPeerChangeFriendship.ui" line="686" />
             <source>TextLabel</source>
             <translation>Label Teks</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerChangeFriendship.ui" line="470" />
+            <location filename="../resources/Forms/AppletPeerChangeFriendship.ui" line="470" />
             <source>Set To Administrator Permission</source>
             <translation>Setel Ke Izin Administrator</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerChangeFriendship.ui" line="512" />
+            <location filename="../resources/Forms/AppletPeerChangeFriendship.ui" line="512" />
             <source>Set To Friend Permission</source>
             <translation>Setel Ke Izin Teman</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerChangeFriendship.ui" line="554" />
+            <location filename="../resources/Forms/AppletPeerChangeFriendship.ui" line="554" />
             <source>Set To Guest Permission</source>
             <translation>Setel ke Izin Tamu</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerChangeFriendship.ui" line="596" />
+            <location filename="../resources/Forms/AppletPeerChangeFriendship.ui" line="596" />
             <source>Set To Anybody Permission</source>
             <translation>Setel Izin Kepada Siapa Saja</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerChangeFriendship.ui" line="638" />
+            <location filename="../resources/Forms/AppletPeerChangeFriendship.ui" line="638" />
             <source>Ignore This Person</source>
             <translation>Abaikan Orang Ini</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerChangeFriendship.ui" line="729" />
+            <location filename="../resources/Forms/AppletPeerChangeFriendship.ui" line="729" />
             <source>OK</source>
             <translation>Oke</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerChangeFriendship.ui" line="762" />
+            <location filename="../resources/Forms/AppletPeerChangeFriendship.ui" line="762" />
             <source>Cancel</source>
             <translation>Batalkan</translation>
         </message>
@@ -1658,17 +1653,17 @@
     <context>
         <name>AppletPeerReplyFileOfferUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerReplyOfferFile.ui" line="20" />
+            <location filename="../resources/Forms/AppletPeerReplyOfferFile.ui" line="20" />
             <source>Offer Session</source>
             <translation>Sesi Penawaran</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerReplyOfferFile.ui" line="123" />
+            <location filename="../resources/Forms/AppletPeerReplyOfferFile.ui" line="123" />
             <source>Offer A File</source>
             <translation>Tawarkan File</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerReplyOfferFile.ui" line="199" />
+            <location filename="../resources/Forms/AppletPeerReplyOfferFile.ui" line="199" />
             <source>View Uploads</source>
             <translation>Lihat Unggahan</translation>
         </message>
@@ -1676,22 +1671,22 @@
     <context>
         <name>AppletPeerSessionFileOfferUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerSessionFileOffer.ui" line="20" />
+            <location filename="../resources/Forms/AppletPeerSessionFileOffer.ui" line="20" />
             <source>Accept File Offer</source>
             <translation>Terima Penawaran File</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerSessionFileOffer.ui" line="100" />
+            <location filename="../resources/Forms/AppletPeerSessionFileOffer.ui" line="100" />
             <source>File Transfer</source>
             <translation>Pemindahan Berkas</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerSessionFileOffer.ui" line="122" />
+            <location filename="../resources/Forms/AppletPeerSessionFileOffer.ui" line="122" />
             <source>File:</source>
             <translation>Berkas:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerSessionFileOffer.ui" line="152" />
+            <location filename="../resources/Forms/AppletPeerSessionFileOffer.ui" line="152" />
             <source>Progress:</source>
             <translation>Kemajuan:</translation>
         </message>
@@ -1707,17 +1702,17 @@
     <context>
         <name>AppletPeerTodGameUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerTodGame.ui" line="20" />
+            <location filename="../resources/Forms/AppletPeerTodGame.ui" line="20" />
             <source>Dialog</source>
             <translation>Dialog</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerTodGame.ui" line="135" />
+            <location filename="../resources/Forms/AppletPeerTodGame.ui" line="135" />
             <source>Truth Or Dare</source>
             <translation>Kebenaran Atau Tantangan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerTodGame.ui" line="195" />
+            <location filename="../resources/Forms/AppletPeerTodGame.ui" line="195" />
             <source>End Call</source>
             <translation>Akhiri Panggilan</translation>
         </message>
@@ -1725,17 +1720,17 @@
     <context>
         <name>AppletPeerVideoPhoneUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerVideoPhone.ui" line="20" />
+            <location filename="../resources/Forms/AppletPeerVideoPhone.ui" line="20" />
             <source>Dialog</source>
             <translation>Dialog</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerVideoPhone.ui" line="129" />
+            <location filename="../resources/Forms/AppletPeerVideoPhone.ui" line="129" />
             <source>Video Phone </source>
-            <translation>Telepon Video</translation>
+            <translation>Telepon Video </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerVideoPhone.ui" line="189" />
+            <location filename="../resources/Forms/AppletPeerVideoPhone.ui" line="189" />
             <source>End Call</source>
             <translation>Akhiri Panggilan</translation>
         </message>
@@ -1743,27 +1738,27 @@
     <context>
         <name>AppletPeerVoicePhoneUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerVoicePhone.ui" line="32" />
+            <location filename="../resources/Forms/AppletPeerVoicePhone.ui" line="32" />
             <source>Dialog</source>
             <translation>Dialog</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerVoicePhone.ui" line="151" />
+            <location filename="../resources/Forms/AppletPeerVoicePhone.ui" line="151" />
             <source>Voice Phone </source>
-            <translation>Telepon Suara</translation>
+            <translation>Telepon Suara </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerVoicePhone.ui" line="211" />
+            <location filename="../resources/Forms/AppletPeerVoicePhone.ui" line="211" />
             <source>End Call</source>
             <translation>Akhiri Panggilan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerVoicePhone.ui" line="226" />
+            <location filename="../resources/Forms/AppletPeerVoicePhone.ui" line="226" />
             <source>Show Audio In Waveforms</source>
             <translation>Tampilkan Audio Dalam Bentuk Gelombang</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerVoicePhone.ui" line="246" />
+            <location filename="../resources/Forms/AppletPeerVoicePhone.ui" line="246" />
             <source>Show Audio Out Waveform</source>
             <translation>Tampilkan Bentuk Gelombang Audio Out</translation>
         </message>
@@ -1771,17 +1766,17 @@
     <context>
         <name>AppletPermissionListtUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPermissionList.ui" line="14" />
+            <location filename="../resources/Forms/AppletPermissionList.ui" line="14" />
             <source>Permission List</source>
             <translation>Daftar Izin</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPermissionList.ui" line="47" />
+            <location filename="../resources/Forms/AppletPermissionList.ui" line="47" />
             <source>Services Permission List For Convenience</source>
             <translation>Daftar Izin Layanan Untuk Kenyamanan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPermissionList.ui" line="60" />
+            <location filename="../resources/Forms/AppletPermissionList.ui" line="60" />
             <source>Permission Can Also Be Set In The Service Settings</source>
             <translation>Izin Juga Dapat Diatur Dalam Pengaturan Layanan</translation>
         </message>
@@ -1789,8 +1784,8 @@
     <context>
         <name>AppletPersonOfferListUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPersonOfferList.ui" line="117" />
-            <location filename="../nolimitgui/src/Forms/AppletPersonOfferList.ui" line="124" />
+            <location filename="../resources/Forms/AppletPersonOfferList.ui" line="117" />
+            <location filename="../resources/Forms/AppletPersonOfferList.ui" line="124" />
             <source>PushButton</source>
             <translation>Tombol Tekan</translation>
         </message>
@@ -1798,7 +1793,7 @@
     <context>
         <name>AppletPlayerNlcUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPlayerNlc.ui" line="32" />
+            <location filename="../resources/Forms/AppletPlayerNlc.ui" line="32" />
             <source>Applet Player</source>
             <translation>Pemain Applet</translation>
         </message>
@@ -1806,7 +1801,7 @@
     <context>
         <name>AppletPlayerPhotoUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPlayerPhoto.ui" line="32" />
+            <location filename="../resources/Forms/AppletPlayerPhoto.ui" line="32" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
@@ -1814,7 +1809,7 @@
     <context>
         <name>AppletPlayerVideoUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPlayerVideo.ui" line="32" />
+            <location filename="../resources/Forms/AppletPlayerVideo.ui" line="32" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
@@ -1822,7 +1817,7 @@
     <context>
         <name>AppletRandomConnectJoinSearchUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletRandomConnectJoinSearch.ui" line="20" />
+            <location filename="../resources/Forms/AppletRandomConnectJoinSearch.ui" line="20" />
             <source>Search</source>
             <translation>Cari</translation>
         </message>
@@ -1830,12 +1825,12 @@
     <context>
         <name>AppletRandomConnectListLocalViewUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletRandomConnectListLocalView.ui" line="20" />
+            <location filename="../resources/Forms/AppletRandomConnectListLocalView.ui" line="20" />
             <source>Random Connect Local List</source>
             <translation>Daftar Lokal Sambungan Acak</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletRandomConnectListLocalView.ui" line="106" />
+            <location filename="../resources/Forms/AppletRandomConnectListLocalView.ui" line="106" />
             <source>Refresh list of announced hosts</source>
             <translation>Segarkan daftar host yang diumumkan</translation>
         </message>
@@ -1843,42 +1838,42 @@
     <context>
         <name>AppletServiceBaseSettingsUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBaseSettings.ui" line="14" />
+            <location filename="../resources/Forms/AppletServiceBaseSettings.ui" line="14" />
             <source>Applet Service Base Settings</source>
             <translation>Pengaturan Basis Layanan Applet</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBaseSettings.ui" line="20" />
+            <location filename="../resources/Forms/AppletServiceBaseSettings.ui" line="20" />
             <source>Service Title</source>
             <translation>Judul Layanan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBaseSettings.ui" line="39" />
+            <location filename="../resources/Forms/AppletServiceBaseSettings.ui" line="39" />
             <source>Apply Changes</source>
             <translation>Terapkan Perubahan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBaseSettings.ui" line="46" />
+            <location filename="../resources/Forms/AppletServiceBaseSettings.ui" line="46" />
             <source>Permission Level Required To Use Service</source>
             <translation>Tingkat Izin Diperlukan Untuk Menggunakan Layanan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBaseSettings.ui" line="63" />
+            <location filename="../resources/Forms/AppletServiceBaseSettings.ui" line="63" />
             <source>Optional Image For Detail Information</source>
             <translation>Gambar Opsional Untuk Informasi Detail</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBaseSettings.ui" line="80" />
+            <location filename="../resources/Forms/AppletServiceBaseSettings.ui" line="80" />
             <source>Service URL or IP Address</source>
             <translation>URL Layanan atau Alamat IP</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBaseSettings.ui" line="94" />
+            <location filename="../resources/Forms/AppletServiceBaseSettings.ui" line="94" />
             <source>Name Of Service (optional), max length 63</source>
             <translation>Nama Layanan (opsional), panjang maks 63</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBaseSettings.ui" line="108" />
+            <location filename="../resources/Forms/AppletServiceBaseSettings.ui" line="108" />
             <source>Description Of Service (optional), max length 511</source>
             <translation>Deskripsi Layanan (opsional), panjang maks 511</translation>
         </message>
@@ -1886,67 +1881,67 @@
     <context>
         <name>AppletServiceBaseUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBase.ui" line="14" />
+            <location filename="../resources/Forms/AppletServiceBase.ui" line="14" />
             <source>Service</source>
             <translation>Layanan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBase.ui" line="35" />
+            <location filename="../resources/Forms/AppletServiceBase.ui" line="35" />
             <source>Service Title</source>
             <translation>Judul Layanan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBase.ui" line="48" />
+            <location filename="../resources/Forms/AppletServiceBase.ui" line="48" />
             <source>Permission Level Required To Use Service</source>
             <translation>Tingkat Izin Diperlukan Untuk Menggunakan Layanan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBase.ui" line="58" />
+            <location filename="../resources/Forms/AppletServiceBase.ui" line="58" />
             <source>Run Service On Application Startup</source>
             <translation>Jalankan Layanan Pada Startup Aplikasi</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBase.ui" line="67" />
+            <location filename="../resources/Forms/AppletServiceBase.ui" line="67" />
             <source>Start Service</source>
             <translation>Mulai Layanan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBase.ui" line="86" />
+            <location filename="../resources/Forms/AppletServiceBase.ui" line="86" />
             <source>Stop Service</source>
             <translation>Hentikan Layanan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBase.ui" line="95" />
+            <location filename="../resources/Forms/AppletServiceBase.ui" line="95" />
             <source>Apply Service Settings</source>
             <translation>Terapkan Pengaturan Layanan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBase.ui" line="104" />
+            <location filename="../resources/Forms/AppletServiceBase.ui" line="104" />
             <source>Rating</source>
             <translation>Peringkat</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBase.ui" line="124" />
+            <location filename="../resources/Forms/AppletServiceBase.ui" line="124" />
             <source>Language</source>
             <translation>Bahasa</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBase.ui" line="143" />
+            <location filename="../resources/Forms/AppletServiceBase.ui" line="143" />
             <source>Service URL or IP Address </source>
-            <translation>URL Layanan atau Alamat IP</translation>
+            <translation>URL Layanan atau Alamat IP </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBase.ui" line="157" />
+            <location filename="../resources/Forms/AppletServiceBase.ui" line="157" />
             <source>Title Of Service ( Optional For Detail Information )</source>
             <translation>Judul Layanan (Opsional Untuk Informasi Detail)</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBase.ui" line="177" />
+            <location filename="../resources/Forms/AppletServiceBase.ui" line="177" />
             <source>Comma Delimited Key Words ( Optional For Searches )</source>
             <translation>Kata Kunci Dibatasi Koma (Opsional Untuk Pencarian)</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBase.ui" line="191" />
+            <location filename="../resources/Forms/AppletServiceBase.ui" line="191" />
             <source>Description Of Service ( Optional For Detail Information )
 ( max 511 characters )</source>
             <translation>Deskripsi Layanan (Opsional Untuk Informasi Detail)
@@ -1956,17 +1951,17 @@
     <context>
         <name>AppletSettingsHostBaseUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSettingsHostBase.ui" line="20" />
+            <location filename="../resources/Forms/AppletSettingsHostBase.ui" line="20" />
             <source>Host Settings</source>
             <translation>Pengaturan Tuan Rumah</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSettingsHostBase.ui" line="73" />
+            <location filename="../resources/Forms/AppletSettingsHostBase.ui" line="73" />
             <source>View Hosting Requirements</source>
             <translation>Lihat Persyaratan Hosting</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSettingsHostBase.ui" line="80" />
+            <location filename="../resources/Forms/AppletSettingsHostBase.ui" line="80" />
             <source>View My Host</source>
             <translation>Lihat Host Saya</translation>
         </message>
@@ -1974,17 +1969,17 @@
     <context>
         <name>AppletSettingsNoUserSettingsUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSettingsNoUserSettings.ui" line="20" />
+            <location filename="../resources/Forms/AppletSettingsNoUserSettings.ui" line="20" />
             <source>Offer Session</source>
             <translation>Sesi Penawaran</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSettingsNoUserSettings.ui" line="74" />
+            <location filename="../resources/Forms/AppletSettingsNoUserSettings.ui" line="74" />
             <source>There Are No User Settings For This Service Except Permission Level</source>
             <translation>Tidak Ada Pengaturan Pengguna Untuk Layanan Ini Kecuali Tingkat Izin</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSettingsNoUserSettings.ui" line="81" />
+            <location filename="../resources/Forms/AppletSettingsNoUserSettings.ui" line="81" />
             <source>Please vist https://nolimitconnect.org for more information.</source>
             <translation>Silakan kunjungi https://nolimitconnect.org untuk informasi lebih lanjut.</translation>
         </message>
@@ -1992,17 +1987,17 @@
     <context>
         <name>AppletSnapshotUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSnapshot.ui" line="20" />
+            <location filename="../resources/Forms/AppletSnapshot.ui" line="20" />
             <source>Take Snapshot</source>
             <translation>Ambil Potret</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSnapshot.ui" line="312" />
+            <location filename="../resources/Forms/AppletSnapshot.ui" line="312" />
             <source>Take Snap Shot</source>
             <translation>Ambil Bidikan Jepretan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSnapshot.ui" line="319" />
+            <location filename="../resources/Forms/AppletSnapshot.ui" line="319" />
             <source>Done</source>
             <translation>Selesai</translation>
         </message>
@@ -2010,12 +2005,12 @@
     <context>
         <name>AppletSocketListUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSocketList.ui" line="32" />
+            <location filename="../resources/Forms/AppletSocketList.ui" line="32" />
             <source>Connected Socket List</source>
             <translation>Daftar Soket Terhubung</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSocketList.ui" line="88" />
+            <location filename="../resources/Forms/AppletSocketList.ui" line="88" />
             <source>Copy To Clipboard</source>
             <translation>Salin Ke Papan Klip</translation>
         </message>
@@ -2023,125 +2018,125 @@
     <context>
         <name>AppletSoundSettingsUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="23" />
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="23" />
             <source>Sound Settings</source>
             <translation>Pengaturan Suara</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="74" />
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="74" />
             <source>No AEC Loopback</source>
             <translation>Tidak ada Loopback MEA</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="81" />
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="81" />
             <source>With AEC Loopback</source>
             <translation>Dengan Loopback MEA</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="104" />
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="104" />
             <source>Show Audio In Waveforms</source>
             <translation>Tampilkan Audio Dalam Bentuk Gelombang</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="124" />
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="124" />
             <source>Show Audio Out Waveform</source>
             <translation>Tampilkan Bentuk Gelombang Audio Out</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="147" />
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="147" />
             <source>Show Sound In Settings</source>
             <translation>Tampilkan Suara Di Pengaturan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="154" />
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="154" />
             <source>Sound Input</source>
             <translation>Masukan Suara</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="175" />
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="175" />
             <source>Apply Sound In Device As Default</source>
             <translation>Terapkan Suara Di Perangkat Sebagai Default</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="184" />
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="184" />
             <source>Sound In Device</source>
             <translation>Suara di Perangkat</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="211" />
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="211" />
             <source>Enable Noise Reduction</source>
             <translation>Aktifkan Pengurangan Kebisingan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="224" />
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="224" />
             <source>Enable AGC ( Automatic Gain Control )</source>
             <translation>Aktifkan AGC (Kontrol Penguatan Otomatis)</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="235" />
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="235" />
             <source>Microphone Peak Level: </source>
-            <translation>Tingkat Puncak Mikrofon:</translation>
+            <translation>Tingkat Puncak Mikrofon: </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="254" />
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="254" />
             <source>Show Sound Out Settings</source>
             <translation>Tampilkan Pengaturan Keluaran Suara</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="318" />
-            <source>Generate 400Hz tone for speakers</source>
-            <translation>Menghasilkan nada 400Hz untuk speaker</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="422" />
-            <source>Play Test File</source>
-            <translation>Putar File Uji</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="442" />
-            <source>Show Log</source>
-            <translation>Tampilkan Log</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="261" />
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="261" />
             <source>Sound Output</source>
             <translation>Keluaran Suara</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="282" />
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="282" />
             <source>Apply Sound Out Device As Default</source>
             <translation>Terapkan Perangkat Keluaran Suara Sebagai Default</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="291" />
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="291" />
             <source>Sound Out Device</source>
             <translation>Perangkat Keluaran Suara</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="329" />
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="318" />
+            <source>Generate 400Hz tone for speakers</source>
+            <translation>Menghasilkan nada 400Hz untuk speaker</translation>
+        </message>
+        <message>
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="329" />
             <source>Test Sound Delay For Echo Cancel</source>
             <translation>Uji Penundaan Suara Untuk Pembatalan Gema</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="342" />
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="342" />
             <source>Test result ms:</source>
             <translation>Hasil tes ms:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="369" />
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="369" />
             <source>Echo delay ms:</source>
             <translation>Penundaan gema ms:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="386" />
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="386" />
             <source>Save Echo Delay To Echo Canceler</source>
             <translation>Simpan Penundaan Gema Ke Pembatalan Gema</translation>
+        </message>
+        <message>
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="422" />
+            <source>Play Test File</source>
+            <translation>Putar File Uji</translation>
+        </message>
+        <message>
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="442" />
+            <source>Show Log</source>
+            <translation>Tampilkan Log</translation>
         </message>
     </context>
     <context>
         <name>AppletStoryboardClientUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletStoryBoardClient.ui" line="20" />
+            <location filename="../resources/Forms/AppletStoryBoardClient.ui" line="20" />
             <source>Edit Storyboard</source>
             <translation>Sunting Papan Cerita</translation>
         </message>
@@ -2149,27 +2144,27 @@
     <context>
         <name>AppletTestAndDebugUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTestAndDebug.ui" line="32" />
+            <location filename="../resources/Forms/AppletTestAndDebug.ui" line="32" />
             <source>Test And Debug</source>
             <translation>Uji Dan Debug</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTestAndDebug.ui" line="105" />
+            <location filename="../resources/Forms/AppletTestAndDebug.ui" line="105" />
             <source>1 minute Host Announce interval (NOT Recommended)</source>
             <translation>Interval Pengumuman Host 1 menit (TIDAK Direkomendasikan)</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTestAndDebug.ui" line="118" />
+            <location filename="../resources/Forms/AppletTestAndDebug.ui" line="118" />
             <source>Allow delete user from database</source>
             <translation>Izinkan menghapus pengguna dari database</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTestAndDebug.ui" line="244" />
+            <location filename="../resources/Forms/AppletTestAndDebug.ui" line="244" />
             <source>Reset Truth Or Dare Count</source>
             <translation>Setel Ulang Hitungan Kebenaran Atau Tantangan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTestAndDebug.ui" line="269" />
+            <location filename="../resources/Forms/AppletTestAndDebug.ui" line="269" />
             <source>4512448476bf2836979cf61b7c88f8fc70099NoLimitNet172.94.58.10345124</source>
             <translation>4512448476bf2836979cf61b7c88f8fc70099NoLimitNet172.94.58.10345124</translation>
         </message>
@@ -2177,57 +2172,57 @@
     <context>
         <name>AppletTestUpnpUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTestUpnp.ui" line="32" />
+            <location filename="../resources/Forms/AppletTestUpnp.ui" line="32" />
             <source>Test UPNP Port Forward</source>
             <translation>Uji UPNP Port Maju</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTestUpnp.ui" line="55" />
+            <location filename="../resources/Forms/AppletTestUpnp.ui" line="55" />
             <source>Test Port Forward IP</source>
             <translation>Uji IP Port Forward</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTestUpnp.ui" line="75" />
+            <location filename="../resources/Forms/AppletTestUpnp.ui" line="75" />
             <source>Test Port Forward Port</source>
             <translation>Port Uji Port Maju</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTestUpnp.ui" line="89" />
+            <location filename="../resources/Forms/AppletTestUpnp.ui" line="89" />
             <source>Add Port Forward</source>
             <translation>Tambahkan Port Maju</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTestUpnp.ui" line="96" />
+            <location filename="../resources/Forms/AppletTestUpnp.ui" line="96" />
             <source>Remove Port Forward</source>
             <translation>Hapus Port Maju</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTestUpnp.ui" line="107" />
+            <location filename="../resources/Forms/AppletTestUpnp.ui" line="107" />
             <source>List Port Forward</source>
             <translation>Daftar Port Maju</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTestUpnp.ui" line="114" />
+            <location filename="../resources/Forms/AppletTestUpnp.ui" line="114" />
             <source>Copy Log To Clipboard</source>
             <translation>Salin Log Ke Papan Klip</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTestUpnp.ui" line="125" />
+            <location filename="../resources/Forms/AppletTestUpnp.ui" line="125" />
             <source>Log</source>
             <translation>Catatan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTestUpnp.ui" line="132" />
+            <location filename="../resources/Forms/AppletTestUpnp.ui" line="132" />
             <source>Verbose</source>
             <translation>Bertele-tele</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTestUpnp.ui" line="139" />
+            <location filename="../resources/Forms/AppletTestUpnp.ui" line="139" />
             <source>Debug</source>
             <translation>Men-debug</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTestUpnp.ui" line="146" />
+            <location filename="../resources/Forms/AppletTestUpnp.ui" line="146" />
             <source>Error</source>
             <translation>Kesalahan</translation>
         </message>
@@ -2235,7 +2230,7 @@
     <context>
         <name>AppletUploadsUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUploads.ui" line="35" />
+            <location filename="../resources/Forms/AppletUploads.ui" line="35" />
             <source>Menu</source>
             <translation>Tidak bisa</translation>
         </message>
@@ -2243,12 +2238,12 @@
     <context>
         <name>AppletUserConnectionsUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserConnections.ui" line="20" />
+            <location filename="../resources/Forms/AppletUserConnections.ui" line="20" />
             <source>User Connections</source>
             <translation>Koneksi Pengguna</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserConnections.ui" line="34" />
+            <location filename="../resources/Forms/AppletUserConnections.ui" line="34" />
             <source>List View Type</source>
             <translation>Jenis Tampilan Daftar</translation>
         </message>
@@ -2256,104 +2251,104 @@
     <context>
         <name>AppletUserIdentityUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="20" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="20" />
             <source>User Identity</source>
             <translation>Identitas Pengguna</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="76" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="76" />
             <source>Delete Account</source>
             <translation>Hapus Akun</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="85" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="85" />
             <source>Online Identity</source>
             <translation>Identitas Daring</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="113" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="113" />
             <source>Select Account</source>
             <translation>Pilih Akun</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="134" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="134" />
             <source>Mood Message: ( Up to 27 characters )</source>
             <translation>Pesan Suasana Hati: (Hingga 27 karakter)</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="147" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="147" />
             <source>Let's Communicate!</source>
             <translation>Mari Berkomunikasi!</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="156" />
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="201" />
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="246" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="156" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="201" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="246" />
             <source>Apply</source>
             <translation>Terapkan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="167" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="167" />
             <source>Age:</source>
             <translation>Usia:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="184" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="184" />
             <source>Language:</source>
             <translation>Bahasa:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="212" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="212" />
             <source>Gender:</source>
             <translation>Jenis Kelamin:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="229" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="229" />
             <source>Preferred Content:</source>
             <translation>Konten Pilihan:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="264" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="264" />
             <source>Avatar Image</source>
             <translation>Gambar Avatar</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="310" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="310" />
             <source>Edit My Avatar Image</source>
             <translation>Edit Gambar Avatar Saya</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="351" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="351" />
             <source>About Me Page</source>
             <translation>Tentang Saya Halaman</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="382" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="382" />
             <source>Edit My About Me Page</source>
             <translation>Edit Halaman Tentang Saya Saya</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="414" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="414" />
             <source>View My About Me Page</source>
             <translation>Lihat Halaman Tentang Saya Saya</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="430" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="430" />
             <source>Story Board Page (Blog)</source>
             <translation>Halaman Papan Cerita (Blog)</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="461" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="461" />
             <source>Edit My Story Board Page</source>
             <translation>Edit Halaman Papan Cerita Saya</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="493" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="493" />
             <source>View My Story Board Page</source>
             <translation>Lihat Halaman Papan Cerita Saya</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="503" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="503" />
             <source>Create New Account</source>
             <translation>Buat Akun Baru</translation>
         </message>
@@ -2361,72 +2356,72 @@
     <context>
         <name>AppletUserPreferencesUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserPreferences.ui" line="14" />
+            <location filename="../resources/Forms/AppletUserPreferences.ui" line="14" />
             <source>Log Settings</source>
             <translation>Pengaturan Log</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserPreferences.ui" line="49" />
+            <location filename="../resources/Forms/AppletUserPreferences.ui" line="49" />
             <source>Save User Settings</source>
             <translation>Simpan Pengaturan Pengguna</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserPreferences.ui" line="56" />
+            <location filename="../resources/Forms/AppletUserPreferences.ui" line="56" />
             <source>Cancel</source>
             <translation>Batalkan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserPreferences.ui" line="81" />
+            <location filename="../resources/Forms/AppletUserPreferences.ui" line="81" />
             <source>Use system player for media instead of NLC player</source>
             <translation>Gunakan pemutar sistem untuk media, bukan pemutar NLC</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserPreferences.ui" line="88" />
+            <location filename="../resources/Forms/AppletUserPreferences.ui" line="88" />
             <source>Unattended host (Disable Offers, Messages Etc.)</source>
             <translation>Host tanpa pengawasan (Nonaktifkan Penawaran, Pesan, Dll.)</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserPreferences.ui" line="95" />
+            <location filename="../resources/Forms/AppletUserPreferences.ui" line="95" />
             <source>When unchecked, joining a new host automatically leaves other active Group, Chat Room, or Random Connect hosts.</source>
             <translation>Jika tidak dicentang, bergabung dengan host baru secara otomatis meninggalkan host Grup, Ruang Obrolan, atau Random Connect aktif lainnya.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserPreferences.ui" line="98" />
+            <location filename="../resources/Forms/AppletUserPreferences.ui" line="98" />
             <source>Allow Join Multiple Hosts</source>
             <translation>Izinkan Bergabung dengan Banyak Host</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserPreferences.ui" line="111" />
+            <location filename="../resources/Forms/AppletUserPreferences.ui" line="111" />
             <source>Use 24 hour (military) time format</source>
             <translation>Gunakan format waktu 24 jam (militer).</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserPreferences.ui" line="133" />
+            <location filename="../resources/Forms/AppletUserPreferences.ui" line="133" />
             <source>Max Message History Retained</source>
             <translation>Riwayat Pesan Maks Dipertahankan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserPreferences.ui" line="162" />
+            <location filename="../resources/Forms/AppletUserPreferences.ui" line="162" />
             <source>Diable All Sound Effects (Key Click, Notify, Etc.)</source>
             <translation>Nonaktifkan Semua Efek Suara (Klik Tombol, Beritahu, Dll)</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserPreferences.ui" line="193" />
+            <location filename="../resources/Forms/AppletUserPreferences.ui" line="193" />
             <source>Disable Trash Sound Effect</source>
             <translation>Nonaktifkan Efek Suara Sampah</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserPreferences.ui" line="200" />
+            <location filename="../resources/Forms/AppletUserPreferences.ui" line="200" />
             <source>Disable Button Press Sound</source>
             <translation>Nonaktifkan Suara Tekan Tombol</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserPreferences.ui" line="207" />
+            <location filename="../resources/Forms/AppletUserPreferences.ui" line="207" />
             <source>Dsiable Notify Sound</source>
             <translation>Suara Beritahu yang Dapat Dilakukan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserPreferences.ui" line="214" />
+            <location filename="../resources/Forms/AppletUserPreferences.ui" line="214" />
             <source>Disable Message Received Sound</source>
             <translation>Nonaktifkan Pesan yang Diterima Suara</translation>
         </message>
@@ -2434,7 +2429,7 @@
     <context>
         <name>AssetFaceWidget</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AssetFaceWidget.ui" line="32" />
+            <location filename="../resources/Forms/AssetFaceWidget.ui" line="32" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
@@ -2442,12 +2437,12 @@
     <context>
         <name>AssetPhotoWidget</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AssetPhotoWidget.ui" line="32" />
+            <location filename="../resources/Forms/AssetPhotoWidget.ui" line="32" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AssetPhotoWidget.ui" line="397" />
+            <location filename="../resources/Forms/AssetPhotoWidget.ui" line="397" />
             <source>File Name:</source>
             <translation>Nama File:</translation>
         </message>
@@ -2455,12 +2450,12 @@
     <context>
         <name>AssetTextWidget</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AssetTextWidget.ui" line="32" />
+            <location filename="../resources/Forms/AssetTextWidget.ui" line="32" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AssetTextWidget.ui" line="369" />
+            <location filename="../resources/Forms/AssetTextWidget.ui" line="369" />
             <source>Copy Text</source>
             <translation>Salin Teks</translation>
         </message>
@@ -2468,12 +2463,12 @@
     <context>
         <name>AssetVideoWidget</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AssetVideoWidget.ui" line="32" />
+            <location filename="../resources/Forms/AssetVideoWidget.ui" line="32" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AssetVideoWidget.ui" line="416" />
+            <location filename="../resources/Forms/AssetVideoWidget.ui" line="416" />
             <source>File Name:</source>
             <translation>Nama File:</translation>
         </message>
@@ -2481,12 +2476,12 @@
     <context>
         <name>AssetVoiceWidget</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AssetVoiceWidget.ui" line="32" />
+            <location filename="../resources/Forms/AssetVoiceWidget.ui" line="32" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AssetVoiceWidget.ui" line="341" />
+            <location filename="../resources/Forms/AssetVoiceWidget.ui" line="341" />
             <source>File Name:</source>
             <translation>Nama File:</translation>
         </message>
@@ -2494,7 +2489,7 @@
     <context>
         <name>AvatarBarWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AvatarBarWidget.ui" line="32" />
+            <location filename="../resources/Forms/AvatarBarWidget.ui" line="32" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
@@ -2502,50 +2497,50 @@
     <context>
         <name>BrowseFilesWidget</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityBrowseFiles.ui" line="23" />
+            <location filename="../resources/Forms/ActivityBrowseFiles.ui" line="23" />
             <source>Browse Files</source>
             <translation>Jelajahi File</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityBrowseFiles.ui" line="151" />
+            <location filename="../resources/Forms/ActivityBrowseFiles.ui" line="151" />
             <source>Move Up A Folder</source>
             <translation>Pindahkan Folder ke Atas</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityBrowseFiles.ui" line="183" />
+            <location filename="../resources/Forms/ActivityBrowseFiles.ui" line="183" />
             <source>Select A Folder</source>
             <translation>Pilih Folder</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityBrowseFiles.ui" line="267" />
+            <location filename="../resources/Forms/ActivityBrowseFiles.ui" line="242" />
+            <source>Add All Files To Library</source>
+            <translation>Tambahkan Semua File Ke Perpustakaan</translation>
+        </message>
+        <message>
+            <location filename="../resources/Forms/ActivityBrowseFiles.ui" line="267" />
             <source>Folder:</source>
             <translation>Map:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityBrowseFiles.ui" line="316" />
+            <location filename="../resources/Forms/ActivityBrowseFiles.ui" line="316" />
             <source>Double Click File Item to Select The File</source>
             <translation>Klik Dua Kali Item File untuk Memilih File</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/Forms/ActivityBrowseFiles.ui" line="242" />
-            <source>Add All Files To Library</source>
-            <translation>Tambahkan Semua File Ke Perpustakaan</translation>
         </message>
     </context>
     <context>
         <name>CancelDownloadDialog</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityDownloadItemMenu.ui" line="14" />
+            <location filename="../resources/Forms/ActivityDownloadItemMenu.ui" line="14" />
             <source>Cancel Download</source>
             <translation>Batalkan Unduhan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityDownloadItemMenu.ui" line="133" />
+            <location filename="../resources/Forms/ActivityDownloadItemMenu.ui" line="133" />
             <source>Recieve File</source>
             <translation>Terima File</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityDownloadItemMenu.ui" line="154" />
+            <location filename="../resources/Forms/ActivityDownloadItemMenu.ui" line="154" />
             <source>File:</source>
             <translation>Berkas:</translation>
         </message>
@@ -2553,8 +2548,8 @@
     <context>
         <name>CentralFrame</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/CentralFrame.ui" line="14" />
-            <location filename="../nolimitgui/src/Forms/CentralWidget.ui" line="14" />
+            <location filename="../resources/Forms/CentralFrame.ui" line="14" />
+            <location filename="../resources/Forms/CentralWidget.ui" line="14" />
             <source>Frame</source>
             <translation>Bingkai</translation>
         </message>
@@ -2562,7 +2557,7 @@
     <context>
         <name>ChatEntryWidget</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ChatEntryWidget.ui" line="32" />
+            <location filename="../resources/Forms/ChatEntryWidget.ui" line="32" />
             <source>Chat Entry</source>
             <translation>Entri Obrolan</translation>
         </message>
@@ -2570,43 +2565,43 @@
     <context>
         <name>ConfirmRemoveMessageClass</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/DialogConfirmRemoveMessage.ui" line="23" />
-            <location filename="../nolimitgui/src/Forms/DialogConfirmRemoveMessage.ui" line="113" />
+            <location filename="../resources/Forms/DialogConfirmRemoveMessage.ui" line="23" />
+            <location filename="../resources/Forms/DialogConfirmRemoveMessage.ui" line="113" />
             <source>Confirm Remove</source>
             <translation>Konfirmasi Hapus</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/DialogConfirmRemoveMessage.ui" line="157" />
+            <location filename="../resources/Forms/DialogConfirmRemoveMessage.ui" line="157" />
             <source>X</source>
             <translation>X</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/DialogConfirmRemoveMessage.ui" line="194" />
+            <location filename="../resources/Forms/DialogConfirmRemoveMessage.ui" line="194" />
             <source>Click trash can to just remove message from chat history</source>
             <translation>Klik tempat sampah untuk menghapus pesan dari riwayat obrolan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/DialogConfirmRemoveMessage.ui" line="240" />
+            <location filename="../resources/Forms/DialogConfirmRemoveMessage.ui" line="240" />
             <source>Remove Message</source>
             <translation>Hapus Pesan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/DialogConfirmRemoveMessage.ui" line="255" />
+            <location filename="../resources/Forms/DialogConfirmRemoveMessage.ui" line="255" />
             <source>Click shredder to write random data to the file and PERMENENTLY delete the file</source>
             <translation>Klik penghancur untuk menulis data acak ke file dan menghapus file secara PERMENEN</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/DialogConfirmRemoveMessage.ui" line="301" />
+            <location filename="../resources/Forms/DialogConfirmRemoveMessage.ui" line="301" />
             <source>Shred File And Remove</source>
             <translation>Rusak File Dan Hapus</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/DialogConfirmRemoveMessage.ui" line="316" />
+            <location filename="../resources/Forms/DialogConfirmRemoveMessage.ui" line="316" />
             <source>Cancel - Do nothing</source>
             <translation>Batal - Tidak melakukan apa pun</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/DialogConfirmRemoveMessage.ui" line="362" />
+            <location filename="../resources/Forms/DialogConfirmRemoveMessage.ui" line="362" />
             <source>Cancel</source>
             <translation>Batalkan</translation>
         </message>
@@ -2614,67 +2609,67 @@
     <context>
         <name>CreateAccountUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletCreateAccount.ui" line="26" />
+            <location filename="../resources/Forms/AppletCreateAccount.ui" line="26" />
             <source>Create New Account</source>
             <translation>Buat Akun Baru</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletCreateAccount.ui" line="53" />
+            <location filename="../resources/Forms/AppletCreateAccount.ui" line="53" />
             <source>No Registration Required.</source>
             <translation>Tidak Perlu Registrasi.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletCreateAccount.ui" line="66" />
+            <location filename="../resources/Forms/AppletCreateAccount.ui" line="66" />
             <source>Enter A User Name and Log In!</source>
             <translation>Masukkan Nama Pengguna dan Masuk!</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletCreateAccount.ui" line="79" />
+            <location filename="../resources/Forms/AppletCreateAccount.ui" line="79" />
             <source>User Name: (4 to 31 characters)</source>
             <translation>Nama Pengguna: (4 hingga 31 karakter)</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletCreateAccount.ui" line="105" />
+            <location filename="../resources/Forms/AppletCreateAccount.ui" line="105" />
             <source>Mood Message: (Up to 31 characters)</source>
             <translation>Pesan Suasana Hati: (Hingga 31 karakter)</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletCreateAccount.ui" line="118" />
+            <location filename="../resources/Forms/AppletCreateAccount.ui" line="118" />
             <source>Let's Communicate!</source>
             <translation>Mari Berkomunikasi!</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletCreateAccount.ui" line="139" />
+            <location filename="../resources/Forms/AppletCreateAccount.ui" line="139" />
             <source>Age</source>
             <translation>Usia</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletCreateAccount.ui" line="162" />
+            <location filename="../resources/Forms/AppletCreateAccount.ui" line="162" />
             <source>Content</source>
             <translation>Konten</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletCreateAccount.ui" line="195" />
+            <location filename="../resources/Forms/AppletCreateAccount.ui" line="195" />
             <source>Gender</source>
             <translation>Jenis Kelamin</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletCreateAccount.ui" line="218" />
+            <location filename="../resources/Forms/AppletCreateAccount.ui" line="218" />
             <source>Language</source>
             <translation>Bahasa</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletCreateAccount.ui" line="243" />
+            <location filename="../resources/Forms/AppletCreateAccount.ui" line="243" />
             <source>Login!</source>
             <translation>Masuk!</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletCreateAccount.ui" line="271" />
+            <location filename="../resources/Forms/AppletCreateAccount.ui" line="271" />
             <source>Space Available:</source>
             <translation>Tempat Tersedia:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletCreateAccount.ui" line="298" />
+            <location filename="../resources/Forms/AppletCreateAccount.ui" line="298" />
             <source>Path:</source>
             <translation>Jalur:</translation>
         </message>
@@ -2682,13 +2677,13 @@
     <context>
         <name>DialogAddCommentUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/DialogAddComment.ui" line="23" />
-            <location filename="../nolimitgui/src/Forms/DialogAddComment.ui" line="119" />
+            <location filename="../resources/Forms/DialogAddComment.ui" line="23" />
+            <location filename="../resources/Forms/DialogAddComment.ui" line="119" />
             <source>Add Comment</source>
             <translation>Tambahkan Komentar</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/DialogAddComment.ui" line="203" />
+            <location filename="../resources/Forms/DialogAddComment.ui" line="203" />
             <source>Optional Add Comment</source>
             <translation>Opsional Tambahkan Komentar</translation>
         </message>
@@ -2696,122 +2691,122 @@
     <context>
         <name>EchoCancelTestMainWindowUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/EchoCancelTestMainWindow.ui" line="20" />
-            <location filename="../nolimitgui/src/Forms/MiniAudioLibTestMainWindow.ui" line="20" />
+            <location filename="../resources/Forms/EchoCancelTestMainWindow.ui" line="20" />
+            <location filename="../resources/Forms/MiniAudioLibTestMainWindow.ui" line="20" />
             <source>MainWindow</source>
             <translation>Jendela Utama</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/EchoCancelTestMainWindow.ui" line="97" />
-            <location filename="../nolimitgui/src/Forms/MiniAudioLibTestMainWindow.ui" line="97" />
+            <location filename="../resources/Forms/EchoCancelTestMainWindow.ui" line="97" />
+            <location filename="../resources/Forms/MiniAudioLibTestMainWindow.ui" line="97" />
             <source>Sound Input</source>
             <translation>Masukan Suara</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/EchoCancelTestMainWindow.ui" line="118" />
-            <location filename="../nolimitgui/src/Forms/MiniAudioLibTestMainWindow.ui" line="118" />
+            <location filename="../resources/Forms/EchoCancelTestMainWindow.ui" line="118" />
+            <location filename="../resources/Forms/MiniAudioLibTestMainWindow.ui" line="118" />
             <source>Apply Sound In Device As Default</source>
             <translation>Terapkan Suara Di Perangkat Sebagai Default</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/EchoCancelTestMainWindow.ui" line="127" />
-            <location filename="../nolimitgui/src/Forms/MiniAudioLibTestMainWindow.ui" line="127" />
+            <location filename="../resources/Forms/EchoCancelTestMainWindow.ui" line="127" />
+            <location filename="../resources/Forms/MiniAudioLibTestMainWindow.ui" line="127" />
             <source>Sound In Device</source>
             <translation>Suara di Perangkat</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/EchoCancelTestMainWindow.ui" line="146" />
-            <location filename="../nolimitgui/src/Forms/MiniAudioLibTestMainWindow.ui" line="146" />
+            <location filename="../resources/Forms/EchoCancelTestMainWindow.ui" line="146" />
+            <location filename="../resources/Forms/MiniAudioLibTestMainWindow.ui" line="146" />
             <source>Want Microphone Input</source>
             <translation>Ingin Input Mikrofon</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/EchoCancelTestMainWindow.ui" line="153" />
-            <location filename="../nolimitgui/src/Forms/MiniAudioLibTestMainWindow.ui" line="153" />
+            <location filename="../resources/Forms/EchoCancelTestMainWindow.ui" line="153" />
+            <location filename="../resources/Forms/MiniAudioLibTestMainWindow.ui" line="153" />
             <source>Mute Microphone</source>
             <translation>Bisukan Mikrofon</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/EchoCancelTestMainWindow.ui" line="160" />
-            <location filename="../nolimitgui/src/Forms/MiniAudioLibTestMainWindow.ui" line="160" />
+            <location filename="../resources/Forms/EchoCancelTestMainWindow.ui" line="160" />
+            <location filename="../resources/Forms/MiniAudioLibTestMainWindow.ui" line="160" />
             <source>Send Microphone Input To Speakers</source>
             <translation>Kirim Input Mikrofon Ke Speaker</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/EchoCancelTestMainWindow.ui" line="169" />
-            <location filename="../nolimitgui/src/Forms/MiniAudioLibTestMainWindow.ui" line="169" />
+            <location filename="../resources/Forms/EchoCancelTestMainWindow.ui" line="169" />
+            <location filename="../resources/Forms/MiniAudioLibTestMainWindow.ui" line="169" />
             <source>Microphone Input Peak Level</source>
             <translation>Tingkat Puncak Input Mikrofon</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/EchoCancelTestMainWindow.ui" line="194" />
-            <location filename="../nolimitgui/src/Forms/MiniAudioLibTestMainWindow.ui" line="194" />
+            <location filename="../resources/Forms/EchoCancelTestMainWindow.ui" line="194" />
+            <location filename="../resources/Forms/MiniAudioLibTestMainWindow.ui" line="194" />
             <source>Sound Output</source>
             <translation>Keluaran Suara</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/EchoCancelTestMainWindow.ui" line="215" />
-            <location filename="../nolimitgui/src/Forms/MiniAudioLibTestMainWindow.ui" line="215" />
+            <location filename="../resources/Forms/EchoCancelTestMainWindow.ui" line="215" />
+            <location filename="../resources/Forms/MiniAudioLibTestMainWindow.ui" line="215" />
             <source>Apply Sound Out Device As Default</source>
             <translation>Terapkan Perangkat Keluaran Suara Sebagai Default</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/EchoCancelTestMainWindow.ui" line="224" />
-            <location filename="../nolimitgui/src/Forms/MiniAudioLibTestMainWindow.ui" line="224" />
+            <location filename="../resources/Forms/EchoCancelTestMainWindow.ui" line="224" />
+            <location filename="../resources/Forms/MiniAudioLibTestMainWindow.ui" line="224" />
             <source>Sound Out Device</source>
             <translation>Perangkat Keluaran Suara</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/EchoCancelTestMainWindow.ui" line="243" />
-            <location filename="../nolimitgui/src/Forms/MiniAudioLibTestMainWindow.ui" line="243" />
+            <location filename="../resources/Forms/EchoCancelTestMainWindow.ui" line="243" />
+            <location filename="../resources/Forms/MiniAudioLibTestMainWindow.ui" line="243" />
             <source>Want Speaker Output</source>
             <translation>Ingin Keluaran Speaker</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/EchoCancelTestMainWindow.ui" line="250" />
-            <location filename="../nolimitgui/src/Forms/MiniAudioLibTestMainWindow.ui" line="250" />
+            <location filename="../resources/Forms/EchoCancelTestMainWindow.ui" line="250" />
+            <location filename="../resources/Forms/MiniAudioLibTestMainWindow.ui" line="250" />
             <source>Mute Speakers</source>
             <translation>Bisukan Speaker</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/EchoCancelTestMainWindow.ui" line="257" />
-            <location filename="../nolimitgui/src/Forms/MiniAudioLibTestMainWindow.ui" line="257" />
+            <location filename="../resources/Forms/EchoCancelTestMainWindow.ui" line="257" />
+            <location filename="../resources/Forms/MiniAudioLibTestMainWindow.ui" line="257" />
             <source>Generate 400Hz tone Mono Channel PCM </source>
-            <translation>Menghasilkan nada 400Hz Mono Channel PCM</translation>
+            <translation>Menghasilkan nada 400Hz Mono Channel PCM </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/EchoCancelTestMainWindow.ui" line="266" />
-            <location filename="../nolimitgui/src/Forms/MiniAudioLibTestMainWindow.ui" line="266" />
+            <location filename="../resources/Forms/EchoCancelTestMainWindow.ui" line="266" />
+            <location filename="../resources/Forms/MiniAudioLibTestMainWindow.ui" line="266" />
             <source>Speaker Output Peak Level</source>
             <translation>Tingkat Puncak Keluaran Speaker</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/EchoCancelTestMainWindow.ui" line="282" />
-            <location filename="../nolimitgui/src/Forms/MiniAudioLibTestMainWindow.ui" line="282" />
+            <location filename="../resources/Forms/EchoCancelTestMainWindow.ui" line="282" />
+            <location filename="../resources/Forms/MiniAudioLibTestMainWindow.ui" line="282" />
             <source> Enable Echo Cancel</source>
-            <translation>Aktifkan Pembatalan Gema</translation>
+            <translation> Aktifkan Pembatalan Gema</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/EchoCancelTestMainWindow.ui" line="291" />
-            <location filename="../nolimitgui/src/Forms/MiniAudioLibTestMainWindow.ui" line="291" />
+            <location filename="../resources/Forms/EchoCancelTestMainWindow.ui" line="291" />
+            <location filename="../resources/Forms/MiniAudioLibTestMainWindow.ui" line="291" />
             <source>Test Sound Delay For Echo Cancel</source>
             <translation>Uji Penundaan Suara Untuk Pembatalan Gema</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/EchoCancelTestMainWindow.ui" line="304" />
-            <location filename="../nolimitgui/src/Forms/MiniAudioLibTestMainWindow.ui" line="304" />
+            <location filename="../resources/Forms/EchoCancelTestMainWindow.ui" line="304" />
+            <location filename="../resources/Forms/MiniAudioLibTestMainWindow.ui" line="304" />
             <source>Test result ms:</source>
             <translation>Hasil tes ms:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/EchoCancelTestMainWindow.ui" line="331" />
-            <location filename="../nolimitgui/src/Forms/MiniAudioLibTestMainWindow.ui" line="331" />
+            <location filename="../resources/Forms/EchoCancelTestMainWindow.ui" line="331" />
+            <location filename="../resources/Forms/MiniAudioLibTestMainWindow.ui" line="331" />
             <source>Echo delay ms:</source>
             <translation>Penundaan gema ms:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/EchoCancelTestMainWindow.ui" line="348" />
-            <location filename="../nolimitgui/src/Forms/MiniAudioLibTestMainWindow.ui" line="348" />
+            <location filename="../resources/Forms/EchoCancelTestMainWindow.ui" line="348" />
+            <location filename="../resources/Forms/MiniAudioLibTestMainWindow.ui" line="348" />
             <source>Save Echo Delay To Echo Canceler</source>
             <translation>Simpan Penundaan Gema Ke Pembatalan Gema</translation>
         </message>
@@ -2819,7 +2814,7 @@
     <context>
         <name>FileActionBarWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileActionBarWidget.ui" line="26" />
+            <location filename="../resources/Forms/FileActionBarWidget.ui" line="26" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
@@ -2827,27 +2822,27 @@
     <context>
         <name>FileActionMenuClass</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileActionMenu.ui" line="17" />
+            <location filename="../resources/Forms/FileActionMenu.ui" line="17" />
             <source>Menu</source>
             <translation>Tidak bisa</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileActionMenu.ui" line="93" />
+            <location filename="../resources/Forms/FileActionMenu.ui" line="93" />
             <source>File Action Menu</source>
             <translation>Menu Tindakan File</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileActionMenu.ui" line="261" />
+            <location filename="../resources/Forms/FileActionMenu.ui" line="261" />
             <source>TextLabel</source>
             <translation>Label Teks</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileActionMenu.ui" line="281" />
+            <location filename="../resources/Forms/FileActionMenu.ui" line="281" />
             <source>Size</source>
             <translation>Ukuran</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileActionMenu.ui" line="299" />
+            <location filename="../resources/Forms/FileActionMenu.ui" line="299" />
             <source>FilePath</source>
             <translation>Jalur File</translation>
         </message>
@@ -2855,17 +2850,17 @@
     <context>
         <name>FileDisplayWidget</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileDisplayWidget.ui" line="26" />
+            <location filename="../resources/Forms/FileDisplayWidget.ui" line="26" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileDisplayWidget.ui" line="107" />
+            <location filename="../resources/Forms/FileDisplayWidget.ui" line="107" />
             <source>TextLabel</source>
             <translation>Label Teks</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileDisplayWidget.ui" line="129" />
+            <location filename="../resources/Forms/FileDisplayWidget.ui" line="129" />
             <source>FileSize</source>
             <translation>Ukuran File</translation>
         </message>
@@ -2873,32 +2868,32 @@
     <context>
         <name>FileFilterSelectWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileFilterSelectWidget.ui" line="26" />
+            <location filename="../resources/Forms/FileFilterSelectWidget.ui" line="26" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileFilterSelectWidget.ui" line="56" />
+            <location filename="../resources/Forms/FileFilterSelectWidget.ui" line="56" />
             <source>Filter By</source>
             <translation>Saring Berdasarkan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileFilterSelectWidget.ui" line="88" />
+            <location filename="../resources/Forms/FileFilterSelectWidget.ui" line="88" />
             <source>Video</source>
             <translation>Video</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileFilterSelectWidget.ui" line="120" />
+            <location filename="../resources/Forms/FileFilterSelectWidget.ui" line="120" />
             <source>Audio</source>
             <translation>Audio</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileFilterSelectWidget.ui" line="152" />
+            <location filename="../resources/Forms/FileFilterSelectWidget.ui" line="152" />
             <source>Image</source>
             <translation>Gambar</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileFilterSelectWidget.ui" line="184" />
+            <location filename="../resources/Forms/FileFilterSelectWidget.ui" line="184" />
             <source>All</source>
             <translation>Semua</translation>
         </message>
@@ -2906,32 +2901,32 @@
     <context>
         <name>FileMediaSelectWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileMediaSelectWidget.ui" line="26" />
+            <location filename="../resources/Forms/FileMediaSelectWidget.ui" line="26" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileMediaSelectWidget.ui" line="56" />
+            <location filename="../resources/Forms/FileMediaSelectWidget.ui" line="56" />
             <source>Add Media</source>
             <translation>Tambahkan Media</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileMediaSelectWidget.ui" line="88" />
+            <location filename="../resources/Forms/FileMediaSelectWidget.ui" line="88" />
             <source>Video</source>
             <translation>Video</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileMediaSelectWidget.ui" line="120" />
+            <location filename="../resources/Forms/FileMediaSelectWidget.ui" line="120" />
             <source>Audio</source>
             <translation>Audio</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileMediaSelectWidget.ui" line="152" />
+            <location filename="../resources/Forms/FileMediaSelectWidget.ui" line="152" />
             <source>Image</source>
             <translation>Gambar</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileMediaSelectWidget.ui" line="184" />
+            <location filename="../resources/Forms/FileMediaSelectWidget.ui" line="184" />
             <source>Scan folder for media</source>
             <translation>Pindai folder untuk mencari media</translation>
         </message>
@@ -2939,7 +2934,7 @@
     <context>
         <name>FileSearchDialog</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityFileSearch.ui" line="17" />
+            <location filename="../resources/Forms/ActivityFileSearch.ui" line="17" />
             <source>Menu</source>
             <translation>Tidak bisa</translation>
         </message>
@@ -2947,12 +2942,12 @@
     <context>
         <name>FileShareItemWidget</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileShareItemWidget.ui" line="26" />
+            <location filename="../resources/Forms/FileShareItemWidget.ui" line="26" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileShareItemWidget.ui" line="145" />
+            <location filename="../resources/Forms/FileShareItemWidget.ui" line="145" />
             <source>Size</source>
             <translation>Ukuran</translation>
         </message>
@@ -2960,27 +2955,27 @@
     <context>
         <name>FileTypeSelectWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileTypeSelectWidget.ui" line="26" />
+            <location filename="../resources/Forms/FileTypeSelectWidget.ui" line="26" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileTypeSelectWidget.ui" line="75" />
+            <location filename="../resources/Forms/FileTypeSelectWidget.ui" line="75" />
             <source>Video</source>
             <translation>Video</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileTypeSelectWidget.ui" line="107" />
+            <location filename="../resources/Forms/FileTypeSelectWidget.ui" line="107" />
             <source>Audio</source>
             <translation>Audio</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileTypeSelectWidget.ui" line="139" />
+            <location filename="../resources/Forms/FileTypeSelectWidget.ui" line="139" />
             <source>Image</source>
             <translation>Gambar</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileTypeSelectWidget.ui" line="171" />
+            <location filename="../resources/Forms/FileTypeSelectWidget.ui" line="171" />
             <source>All</source>
             <translation>Semua</translation>
         </message>
@@ -2988,22 +2983,22 @@
     <context>
         <name>FileViewSharedActionBarUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileViewSharedActionBar.ui" line="26" />
+            <location filename="../resources/Forms/FileViewSharedActionBar.ui" line="26" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileViewSharedActionBar.ui" line="87" />
+            <location filename="../resources/Forms/FileViewSharedActionBar.ui" line="87" />
             <source>Stream</source>
             <translation>Aliran</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileViewSharedActionBar.ui" line="119" />
+            <location filename="../resources/Forms/FileViewSharedActionBar.ui" line="119" />
             <source>Download</source>
             <translation>Unduh</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileViewSharedActionBar.ui" line="151" />
+            <location filename="../resources/Forms/FileViewSharedActionBar.ui" line="151" />
             <source>About</source>
             <translation>Tentang</translation>
         </message>
@@ -3011,17 +3006,17 @@
     <context>
         <name>FileXferWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileXferWidget.ui" line="26" />
+            <location filename="../resources/Forms/FileXferWidget.ui" line="26" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileXferWidget.ui" line="155" />
+            <location filename="../resources/Forms/FileXferWidget.ui" line="155" />
             <source>FileSize</source>
             <translation>Ukuran File</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileXferWidget.ui" line="202" />
+            <location filename="../resources/Forms/FileXferWidget.ui" line="202" />
             <source>Status:</source>
             <translation>Status:</translation>
         </message>
@@ -3029,49 +3024,49 @@
     <context>
         <name>GroupHostServiceClass</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceGroupListingHost.ui" line="14" />
+            <location filename="../resources/Forms/AppletServiceGroupListingHost.ui" line="14" />
             <source>Group Listing Host Service</source>
             <translation>Layanan Host Daftar Grup</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceGroupListingHost.ui" line="54" />
+            <location filename="../resources/Forms/AppletServiceGroupListingHost.ui" line="54" />
             <source>Host Group Listing Service</source>
             <translation>Layanan Daftar Grup Tuan Rumah</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceGroupListingHost.ui" line="67" />
+            <location filename="../resources/Forms/AppletServiceGroupListingHost.ui" line="67" />
             <source>Start Service When App Is Launched</source>
             <translation>Mulai Layanan Saat Aplikasi Diluncurkan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceGroupListingHost.ui" line="74" />
+            <location filename="../resources/Forms/AppletServiceGroupListingHost.ui" line="74" />
             <source>Permission Level Required To Use Service</source>
             <translation>Tingkat Izin Diperlukan Untuk Menggunakan Layanan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceGroupListingHost.ui" line="84" />
+            <location filename="../resources/Forms/AppletServiceGroupListingHost.ui" line="84" />
             <source>This Service  URL or IP Address</source>
             <translation>URL Layanan atau Alamat IP ini</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceGroupListingHost.ui" line="94" />
+            <location filename="../resources/Forms/AppletServiceGroupListingHost.ui" line="94" />
             <source>Name Service</source>
             <translation>Layanan Nama</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceGroupListingHost.ui" line="104" />
+            <location filename="../resources/Forms/AppletServiceGroupListingHost.ui" line="104" />
             <source>Description Of Service  
 ( maximum 512 characters )</source>
             <translation>Deskripsi Layanan  
 (maksimum 512 karakter)</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceGroupListingHost.ui" line="122" />
+            <location filename="../resources/Forms/AppletServiceGroupListingHost.ui" line="122" />
             <source>Start Service</source>
             <translation>Mulai Layanan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceGroupListingHost.ui" line="141" />
+            <location filename="../resources/Forms/AppletServiceGroupListingHost.ui" line="141" />
             <source>Stop Service</source>
             <translation>Hentikan Layanan</translation>
         </message>
@@ -3079,22 +3074,22 @@
     <context>
         <name>GuiFriendRequestWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/GuiFriendRequestWidget.ui" line="37" />
+            <location filename="../resources/Forms/GuiFriendRequestWidget.ui" line="37" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/GuiFriendRequestWidget.ui" line="190" />
+            <location filename="../resources/Forms/GuiFriendRequestWidget.ui" line="190" />
             <source>User Details</source>
             <translation>Detail Pengguna</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/GuiFriendRequestWidget.ui" line="210" />
+            <location filename="../resources/Forms/GuiFriendRequestWidget.ui" line="210" />
             <source>Accept</source>
             <translation>Terima</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/GuiFriendRequestWidget.ui" line="230" />
+            <location filename="../resources/Forms/GuiFriendRequestWidget.ui" line="230" />
             <source>Reject</source>
             <translation>Tolak</translation>
         </message>
@@ -3102,17 +3097,17 @@
     <context>
         <name>GuiGroupieListItemUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/GuiGroupieListItem.ui" line="37" />
+            <location filename="../resources/Forms/GuiGroupieListItem.ui" line="37" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/GuiGroupieListItem.ui" line="249" />
+            <location filename="../resources/Forms/GuiGroupieListItem.ui" line="249" />
             <source>Join</source>
             <translation>Bergabunglah</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/GuiGroupieListItem.ui" line="269" />
+            <location filename="../resources/Forms/GuiGroupieListItem.ui" line="269" />
             <source>Connect</source>
             <translation>Hubungkan</translation>
         </message>
@@ -3120,22 +3115,22 @@
     <context>
         <name>GuiHostedListItemUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/GuiHostedListItem.ui" line="264" />
+            <location filename="../resources/Forms/GuiHostedListItem.ui" line="264" />
             <source>Join</source>
             <translation>Bergabunglah</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/GuiHostedListItem.ui" line="284" />
+            <location filename="../resources/Forms/GuiHostedListItem.ui" line="284" />
             <source>Connect</source>
             <translation>Hubungkan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/GuiHostedListItem.ui" line="304" />
+            <location filename="../resources/Forms/GuiHostedListItem.ui" line="304" />
             <source>Revoke Join</source>
             <translation>Cabut Gabung</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/GuiHostedListItem.ui" line="324" />
+            <location filename="../resources/Forms/GuiHostedListItem.ui" line="324" />
             <source>Ignore</source>
             <translation>Abaikan</translation>
         </message>
@@ -3143,47 +3138,47 @@
     <context>
         <name>GuiUserMultiListWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/GuiUserMultiListWidget.ui" line="32" />
+            <location filename="../resources/Forms/GuiUserMultiListWidget.ui" line="32" />
             <source>Dialog</source>
             <translation>Dialog</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/GuiUserMultiListWidget.ui" line="96" />
+            <location filename="../resources/Forms/GuiUserMultiListWidget.ui" line="96" />
             <source>Everyone</source>
             <translation>Semuanya</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/GuiUserMultiListWidget.ui" line="134" />
+            <location filename="../resources/Forms/GuiUserMultiListWidget.ui" line="134" />
             <source>Friends</source>
             <translation>Teman</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/GuiUserMultiListWidget.ui" line="172" />
+            <location filename="../resources/Forms/GuiUserMultiListWidget.ui" line="172" />
             <source>Group Members</source>
             <translation>Anggota Grup</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/GuiUserMultiListWidget.ui" line="210" />
+            <location filename="../resources/Forms/GuiUserMultiListWidget.ui" line="210" />
             <source>Chat Room Members</source>
             <translation>Anggota Ruang Obrolan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/GuiUserMultiListWidget.ui" line="248" />
+            <location filename="../resources/Forms/GuiUserMultiListWidget.ui" line="248" />
             <source>Random Connect Members</source>
             <translation>Anggota Koneksi Acak</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/GuiUserMultiListWidget.ui" line="351" />
+            <location filename="../resources/Forms/GuiUserMultiListWidget.ui" line="351" />
             <source>Admin</source>
             <translation>Admin</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/GuiUserMultiListWidget.ui" line="408" />
+            <location filename="../resources/Forms/GuiUserMultiListWidget.ui" line="408" />
             <source>Send To:</source>
             <translation>Kirim Ke:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/GuiUserMultiListWidget.ui" line="434" />
+            <location filename="../resources/Forms/GuiUserMultiListWidget.ui" line="434" />
             <source>All Members</source>
             <translation>Semua Anggota</translation>
         </message>
@@ -3191,7 +3186,7 @@
     <context>
         <name>HistoryEntryWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/HistoryEntryWidget.ui" line="32" />
+            <location filename="../resources/Forms/HistoryEntryWidget.ui" line="32" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
@@ -3199,17 +3194,17 @@
     <context>
         <name>HostJoinRequestListItemUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/HostJoinRequestListItem.ui" line="37" />
+            <location filename="../resources/Forms/HostJoinRequestListItem.ui" line="37" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/HostJoinRequestListItem.ui" line="273" />
+            <location filename="../resources/Forms/HostJoinRequestListItem.ui" line="273" />
             <source>Accept</source>
             <translation>Terima</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/HostJoinRequestListItem.ui" line="293" />
+            <location filename="../resources/Forms/HostJoinRequestListItem.ui" line="293" />
             <source>Reject</source>
             <translation>Tolak</translation>
         </message>
@@ -3217,7 +3212,7 @@
     <context>
         <name>ImageListEntryUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ImageListEntry.ui" line="14" />
+            <location filename="../resources/Forms/ImageListEntry.ui" line="14" />
             <source>ImageListEntry</source>
             <translation>Entri Daftar Gambar</translation>
         </message>
@@ -3225,7 +3220,7 @@
     <context>
         <name>ImageListRowUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ImageListRow.ui" line="26" />
+            <location filename="../resources/Forms/ImageListRow.ui" line="26" />
             <source>ImageListRow</source>
             <translation>BarisDaftar Gambar</translation>
         </message>
@@ -3233,7 +3228,7 @@
     <context>
         <name>ImageListWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ImageListWidget.ui" line="14" />
+            <location filename="../resources/Forms/ImageListWidget.ui" line="14" />
             <source>ImageListWidget</source>
             <translation>Widget Daftar Gambar</translation>
         </message>
@@ -3241,7 +3236,7 @@
     <context>
         <name>ImagePickBarClass</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ImagePickBar.ui" line="14" />
+            <location filename="../resources/Forms/ImagePickBar.ui" line="14" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
@@ -3249,8 +3244,8 @@
     <context>
         <name>InformationUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletInformation.ui" line="32" />
-            <location filename="../nolimitgui/src/Forms/AppletInformation.ui" line="121" />
+            <location filename="../resources/Forms/AppletInformation.ui" line="32" />
+            <location filename="../resources/Forms/AppletInformation.ui" line="121" />
             <source>Information</source>
             <translation>Informasi</translation>
         </message>
@@ -3258,8 +3253,8 @@
     <context>
         <name>InformationWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/InformationWidget.ui" line="14" />
-            <location filename="../nolimitgui/src/Forms/InformationWidget.ui" line="103" />
+            <location filename="../resources/Forms/InformationWidget.ui" line="14" />
+            <location filename="../resources/Forms/InformationWidget.ui" line="103" />
             <source>Information</source>
             <translation>Informasi</translation>
         </message>
@@ -3267,12 +3262,12 @@
     <context>
         <name>InputAllWidget</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/InputAllWidget.ui" line="32" />
+            <location filename="../resources/Forms/InputAllWidget.ui" line="32" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/InputAllWidget.ui" line="110" />
+            <location filename="../resources/Forms/InputAllWidget.ui" line="110" />
             <source>Enter Text</source>
             <translation>Masukkan Teks</translation>
         </message>
@@ -3280,7 +3275,7 @@
     <context>
         <name>InputFaceWidgetClass</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/InputFaceWidget.ui" line="20" />
+            <location filename="../resources/Forms/InputFaceWidget.ui" line="20" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
@@ -3288,7 +3283,7 @@
     <context>
         <name>InputPhotoWidget</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/InputPhotoWidget.ui" line="32" />
+            <location filename="../resources/Forms/InputPhotoWidget.ui" line="32" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
@@ -3296,7 +3291,7 @@
     <context>
         <name>InputTextWidgetClass</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/InputTextWidget.ui" line="32" />
+            <location filename="../resources/Forms/InputTextWidget.ui" line="32" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
@@ -3304,7 +3299,7 @@
     <context>
         <name>InputVideoWidget</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/InputVideoWidget.ui" line="32" />
+            <location filename="../resources/Forms/InputVideoWidget.ui" line="32" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
@@ -3312,12 +3307,12 @@
     <context>
         <name>InputVoiceWidget</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/InputVoiceWidget.ui" line="32" />
+            <location filename="../resources/Forms/InputVoiceWidget.ui" line="32" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/InputVoiceWidget.ui" line="224" />
+            <location filename="../resources/Forms/InputVoiceWidget.ui" line="224" />
             <source>Click Microphone To Finish Or X To Cancel</source>
             <translation>Klik Mikrofon Untuk Menyelesaikan Atau X Untuk Membatalkan</translation>
         </message>
@@ -3325,7 +3320,7 @@
     <context>
         <name>InstMsgWidgetClass</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/InstMsgWidget.ui" line="32" />
+            <location filename="../resources/Forms/InstMsgWidget.ui" line="32" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
@@ -3333,42 +3328,42 @@
     <context>
         <name>InviteUrlWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/InviteUrlWidget.ui" line="32" />
+            <location filename="../resources/Forms/InviteUrlWidget.ui" line="32" />
             <source>Create Invite</source>
             <translation>Buat Undangan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/InviteUrlWidget.ui" line="53" />
+            <location filename="../resources/Forms/InviteUrlWidget.ui" line="53" />
             <source>Check desired invites</source>
             <translation>Periksa undangan yang diinginkan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/InviteUrlWidget.ui" line="78" />
+            <location filename="../resources/Forms/InviteUrlWidget.ui" line="78" />
             <source>Personal</source>
             <translation>Pribadi</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/InviteUrlWidget.ui" line="116" />
+            <location filename="../resources/Forms/InviteUrlWidget.ui" line="116" />
             <source>Group</source>
             <translation>Kelompok</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/InviteUrlWidget.ui" line="154" />
+            <location filename="../resources/Forms/InviteUrlWidget.ui" line="154" />
             <source>Chat Room</source>
             <translation>Ruang Obrolan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/InviteUrlWidget.ui" line="192" />
+            <location filename="../resources/Forms/InviteUrlWidget.ui" line="192" />
             <source>Random Connect</source>
             <translation>Koneksi Acak</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/InviteUrlWidget.ui" line="230" />
+            <location filename="../resources/Forms/InviteUrlWidget.ui" line="230" />
             <source>Network Settings (Only for network invites)</source>
             <translation>Pengaturan Jaringan (Hanya untuk undangan jaringan)</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/InviteUrlWidget.ui" line="267" />
+            <location filename="../resources/Forms/InviteUrlWidget.ui" line="267" />
             <source>Invite Text</source>
             <translation>Teks Undangan</translation>
         </message>
@@ -3376,17 +3371,17 @@
     <context>
         <name>LanguageSelectUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLanguageSelect.ui" line="26" />
+            <location filename="../resources/Forms/AppletLanguageSelect.ui" line="26" />
             <source>Create New Account</source>
             <translation>Buat Akun Baru</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLanguageSelect.ui" line="38" />
+            <location filename="../resources/Forms/AppletLanguageSelect.ui" line="38" />
             <source>Select Language.</source>
             <translation>Pilih Bahasa.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLanguageSelect.ui" line="61" />
+            <location filename="../resources/Forms/AppletLanguageSelect.ui" line="61" />
             <source>Apply</source>
             <translation>Terapkan</translation>
         </message>
@@ -3394,7 +3389,7 @@
     <context>
         <name>LaunchWidgetClass</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLaunchWidget.ui" line="14" />
+            <location filename="../resources/Forms/AppletLaunchWidget.ui" line="14" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
@@ -3402,22 +3397,22 @@
     <context>
         <name>LogWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/LogWidget.ui" line="20" />
+            <location filename="../resources/Forms/LogWidget.ui" line="20" />
             <source>Log Widget</source>
             <translation>Widget Catatan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/LogWidget.ui" line="43" />
+            <location filename="../resources/Forms/LogWidget.ui" line="43" />
             <source>Verbose Log</source>
             <translation>Log Bertele-tele</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/LogWidget.ui" line="50" />
+            <location filename="../resources/Forms/LogWidget.ui" line="50" />
             <source>Clear Log</source>
             <translation>Hapus Catatan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/LogWidget.ui" line="57" />
+            <location filename="../resources/Forms/LogWidget.ui" line="57" />
             <source>Copy Log To Clipboard</source>
             <translation>Salin Log Ke Papan Klip</translation>
         </message>
@@ -3425,7 +3420,7 @@
     <context>
         <name>MessageBoxDialogClass</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityMessageBox.ui" line="32" />
+            <location filename="../resources/Forms/ActivityMessageBox.ui" line="32" />
             <source>Dialog</source>
             <translation>Dialog</translation>
         </message>
@@ -3496,49 +3491,49 @@
     <context>
         <name>NetworkHostServiceClass</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceNetworkHost.ui" line="14" />
+            <location filename="../resources/Forms/AppletServiceNetworkHost.ui" line="14" />
             <source>Network Host Service</source>
             <translation>Layanan Host Jaringan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceNetworkHost.ui" line="54" />
+            <location filename="../resources/Forms/AppletServiceNetworkHost.ui" line="54" />
             <source>Network Host  Service</source>
             <translation>Layanan Host Jaringan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceNetworkHost.ui" line="67" />
+            <location filename="../resources/Forms/AppletServiceNetworkHost.ui" line="67" />
             <source>Start Service When App Is Launched</source>
             <translation>Mulai Layanan Saat Aplikasi Diluncurkan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceNetworkHost.ui" line="74" />
+            <location filename="../resources/Forms/AppletServiceNetworkHost.ui" line="74" />
             <source>Permission Level Required To Use Service</source>
             <translation>Tingkat Izin Diperlukan Untuk Menggunakan Layanan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceNetworkHost.ui" line="84" />
+            <location filename="../resources/Forms/AppletServiceNetworkHost.ui" line="84" />
             <source>This Service  URL or IP Address</source>
             <translation>URL Layanan atau Alamat IP ini</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceNetworkHost.ui" line="94" />
+            <location filename="../resources/Forms/AppletServiceNetworkHost.ui" line="94" />
             <source>Name Service</source>
             <translation>Layanan Nama</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceNetworkHost.ui" line="104" />
+            <location filename="../resources/Forms/AppletServiceNetworkHost.ui" line="104" />
             <source>Description Of Service  
 ( maximum 512 characters )</source>
             <translation>Deskripsi Layanan  
 (maksimum 512 karakter)</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceNetworkHost.ui" line="122" />
+            <location filename="../resources/Forms/AppletServiceNetworkHost.ui" line="122" />
             <source>Start Service</source>
             <translation>Mulai Layanan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceNetworkHost.ui" line="141" />
+            <location filename="../resources/Forms/AppletServiceNetworkHost.ui" line="141" />
             <source>Stop Service</source>
             <translation>Hentikan Layanan</translation>
         </message>
@@ -3546,37 +3541,37 @@
     <context>
         <name>NetworkTestDlg</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityNetworkTest.ui" line="17" />
+            <location filename="../resources/Forms/ActivityNetworkTest.ui" line="17" />
             <source>Connection Test</source>
             <translation>Tes Koneksi</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityNetworkTest.ui" line="110" />
+            <location filename="../resources/Forms/ActivityNetworkTest.ui" line="110" />
             <source>Network Test Log:</source>
             <translation>Log Uji Jaringan:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityNetworkTest.ui" line="117" />
+            <location filename="../resources/Forms/ActivityNetworkTest.ui" line="117" />
             <source>Run Full Network Test</source>
             <translation>Jalankan Tes Jaringan Penuh</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityNetworkTest.ui" line="127" />
+            <location filename="../resources/Forms/ActivityNetworkTest.ui" line="127" />
             <source>Verbose Test Log</source>
             <translation>Log Tes Verbose</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityNetworkTest.ui" line="134" />
+            <location filename="../resources/Forms/ActivityNetworkTest.ui" line="134" />
             <source>Network Test</source>
             <translation>Tes Jaringan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityNetworkTest.ui" line="141" />
+            <location filename="../resources/Forms/ActivityNetworkTest.ui" line="141" />
             <source>Is My Port Open</source>
             <translation>Apakah Port Saya Terbuka</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityNetworkTest.ui" line="148" />
+            <location filename="../resources/Forms/ActivityNetworkTest.ui" line="148" />
             <source>What Is My IP Address</source>
             <translation>Apa Alamat IP Saya</translation>
         </message>
@@ -3584,12 +3579,12 @@
     <context>
         <name>NetworkTestStartupDlg</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityNetworkStartupTest.ui" line="17" />
+            <location filename="../resources/Forms/ActivityNetworkStartupTest.ui" line="17" />
             <source>Connection Test</source>
             <translation>Tes Koneksi</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityNetworkStartupTest.ui" line="93" />
+            <location filename="../resources/Forms/ActivityNetworkStartupTest.ui" line="93" />
             <source>Network Test Log:</source>
             <translation>Log Uji Jaringan:</translation>
         </message>
@@ -3597,49 +3592,49 @@
     <context>
         <name>NoLimitConnectNetworkDlgClass</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceConnectionTest.ui" line="14" />
+            <location filename="../resources/Forms/AppletServiceConnectionTest.ui" line="14" />
             <source>NoLimitConnect Network Host</source>
             <translation>Host Jaringan NoLimitConnect</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceConnectionTest.ui" line="54" />
+            <location filename="../resources/Forms/AppletServiceConnectionTest.ui" line="54" />
             <source>Host A NoLimitConnect Network ( Global Network Service )</source>
             <translation>Host Jaringan NoLimitConnect (Layanan Jaringan Global)</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceConnectionTest.ui" line="67" />
+            <location filename="../resources/Forms/AppletServiceConnectionTest.ui" line="67" />
             <source>Start Service When App Is Launched</source>
             <translation>Mulai Layanan Saat Aplikasi Diluncurkan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceConnectionTest.ui" line="74" />
+            <location filename="../resources/Forms/AppletServiceConnectionTest.ui" line="74" />
             <source>Permission Level Required To Use Service</source>
             <translation>Tingkat Izin Diperlukan Untuk Menggunakan Layanan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceConnectionTest.ui" line="84" />
+            <location filename="../resources/Forms/AppletServiceConnectionTest.ui" line="84" />
             <source>This NoLimitConnect Network URL or IP Address</source>
             <translation>URL Jaringan atau Alamat IP NoLimitConnect ini</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceConnectionTest.ui" line="94" />
+            <location filename="../resources/Forms/AppletServiceConnectionTest.ui" line="94" />
             <source>Name Of NoLimitConnect Network</source>
             <translation>Nama Jaringan NoLimitConnect</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceConnectionTest.ui" line="104" />
+            <location filename="../resources/Forms/AppletServiceConnectionTest.ui" line="104" />
             <source>Description Of NoLimitConnect Network 
 ( maximum 512 characters )</source>
             <translation>Deskripsi Jaringan NoLimitConnect 
 (maksimum 512 karakter)</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceConnectionTest.ui" line="122" />
+            <location filename="../resources/Forms/AppletServiceConnectionTest.ui" line="122" />
             <source>Start NoLimitConnect Network Service</source>
             <translation>Mulai Layanan Jaringan NoLimitConnect</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceConnectionTest.ui" line="141" />
+            <location filename="../resources/Forms/AppletServiceConnectionTest.ui" line="141" />
             <source>Stop NoLimitConnect Network Service</source>
             <translation>Hentikan Layanan Jaringan NoLimitConnect</translation>
         </message>
@@ -3647,28 +3642,28 @@
     <context>
         <name>OfferBarWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/OfferBarWidget.ui" line="241" />
-            <location filename="../nolimitgui/src/Forms/OfferBarWidget.ui" line="335" />
+            <location filename="../resources/Forms/OfferBarWidget.ui" line="241" />
+            <location filename="../resources/Forms/OfferBarWidget.ui" line="335" />
             <source>TextLabel</source>
             <translation>Label Teks</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/OfferBarWidget.ui" line="254" />
+            <location filename="../resources/Forms/OfferBarWidget.ui" line="254" />
             <source> - </source>
-            <translation>-</translation>
+            <translation> - </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/OfferBarWidget.ui" line="267" />
+            <location filename="../resources/Forms/OfferBarWidget.ui" line="267" />
             <source>Guest</source>
             <translation>Tamu</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/OfferBarWidget.ui" line="303" />
+            <location filename="../resources/Forms/OfferBarWidget.ui" line="303" />
             <source>Missed Calls -</source>
             <translation>Panggilan Tak Terjawab -</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/OfferBarWidget.ui" line="316" />
+            <location filename="../resources/Forms/OfferBarWidget.ui" line="316" />
             <source>1</source>
             <translation>1</translation>
         </message>
@@ -3676,27 +3671,27 @@
     <context>
         <name>OfferSendWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/OfferSendWidget.ui" line="20" />
+            <location filename="../resources/Forms/OfferSendWidget.ui" line="20" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/OfferSendWidget.ui" line="104" />
+            <location filename="../resources/Forms/OfferSendWidget.ui" line="104" />
             <source>Offer Expires</source>
             <translation>Penawaran Kedaluwarsa</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/OfferSendWidget.ui" line="137" />
+            <location filename="../resources/Forms/OfferSendWidget.ui" line="137" />
             <source>Offer Message (Optional):</source>
             <translation>Pesan Penawaran (Opsional):</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/OfferSendWidget.ui" line="234" />
+            <location filename="../resources/Forms/OfferSendWidget.ui" line="234" />
             <source>Send Offer</source>
             <translation>Kirim Penawaran</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/OfferSendWidget.ui" line="275" />
+            <location filename="../resources/Forms/OfferSendWidget.ui" line="275" />
             <source>Cancel</source>
             <translation>Batalkan</translation>
         </message>
@@ -3704,12 +3699,12 @@
     <context>
         <name>PermissionListItemUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/PermissionListItemWidget.ui" line="26" />
+            <location filename="../resources/Forms/PermissionListItemWidget.ui" line="26" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/PermissionListItemWidget.ui" line="136" />
+            <location filename="../resources/Forms/PermissionListItemWidget.ui" line="136" />
             <source>Permission:</source>
             <translation>Izin:</translation>
         </message>
@@ -3717,12 +3712,12 @@
     <context>
         <name>PermissionWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/PermissionWidget.ui" line="14" />
+            <location filename="../resources/Forms/PermissionWidget.ui" line="14" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/PermissionWidget.ui" line="113" />
+            <location filename="../resources/Forms/PermissionWidget.ui" line="113" />
             <source>Permission</source>
             <translation>Izin</translation>
         </message>
@@ -3730,17 +3725,17 @@
     <context>
         <name>PersonOfferListItemUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/PersonOfferListItem.ui" line="37" />
+            <location filename="../resources/Forms/PersonOfferListItem.ui" line="37" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/PersonOfferListItem.ui" line="233" />
+            <location filename="../resources/Forms/PersonOfferListItem.ui" line="233" />
             <source>Accept</source>
             <translation>Terima</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/PersonOfferListItem.ui" line="271" />
+            <location filename="../resources/Forms/PersonOfferListItem.ui" line="271" />
             <source>Block</source>
             <translation>Blokir</translation>
         </message>
@@ -3748,7 +3743,7 @@
     <context>
         <name>PersonalRecorderDialog</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityPersonalRecorder.ui" line="26" />
+            <location filename="../resources/Forms/ActivityPersonalRecorder.ui" line="26" />
             <source>Dialog</source>
             <translation>Dialog</translation>
         </message>
@@ -3756,7 +3751,7 @@
     <context>
         <name>PersonalRecorderUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPersonalRecorder.ui" line="32" />
+            <location filename="../resources/Forms/AppletPersonalRecorder.ui" line="32" />
             <source>Dialog</source>
             <translation>Dialog</translation>
         </message>
@@ -3764,17 +3759,17 @@
     <context>
         <name>PhoneShakeDlgClass</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityPhoneShake.ui" line="14" />
+            <location filename="../resources/Forms/ActivityPhoneShake.ui" line="14" />
             <source>Search</source>
             <translation>Cari</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityPhoneShake.ui" line="95" />
+            <location filename="../resources/Forms/ActivityPhoneShake.ui" line="95" />
             <source>Shake Phone At Same Time As Friend To Get Connected</source>
             <translation>Goyangkan Ponsel Sekaligus Dengan Teman Agar Terhubung</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityPhoneShake.ui" line="111" />
+            <location filename="../resources/Forms/ActivityPhoneShake.ui" line="111" />
             <source>Simulate Phone Shake</source>
             <translation>Simulasikan Goyangan Telepon</translation>
         </message>
@@ -3782,72 +3777,72 @@
     <context>
         <name>PluginSettingsUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/PluginSettingsWidget.ui" line="20" />
+            <location filename="../resources/Forms/PluginSettingsWidget.ui" line="20" />
             <source>Service</source>
             <translation>Layanan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/PluginSettingsWidget.ui" line="49" />
+            <location filename="../resources/Forms/PluginSettingsWidget.ui" line="49" />
             <source>Start Service</source>
             <translation>Mulai Layanan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/PluginSettingsWidget.ui" line="68" />
+            <location filename="../resources/Forms/PluginSettingsWidget.ui" line="68" />
             <source>Stop Service</source>
             <translation>Hentikan Layanan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/PluginSettingsWidget.ui" line="77" />
+            <location filename="../resources/Forms/PluginSettingsWidget.ui" line="77" />
             <source>Apply Host Settings</source>
             <translation>Terapkan Pengaturan Host</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/PluginSettingsWidget.ui" line="87" />
+            <location filename="../resources/Forms/PluginSettingsWidget.ui" line="87" />
             <source>Run service when application is started.</source>
             <translation>Jalankan layanan saat aplikasi dimulai.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/PluginSettingsWidget.ui" line="96" />
+            <location filename="../resources/Forms/PluginSettingsWidget.ui" line="96" />
             <source>Age</source>
             <translation>Usia</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/PluginSettingsWidget.ui" line="116" />
+            <location filename="../resources/Forms/PluginSettingsWidget.ui" line="116" />
             <source>Content Rating</source>
             <translation>Peringkat Konten</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/PluginSettingsWidget.ui" line="140" />
+            <location filename="../resources/Forms/PluginSettingsWidget.ui" line="140" />
             <source>Gender:</source>
             <translation>Jenis Kelamin:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/PluginSettingsWidget.ui" line="157" />
+            <location filename="../resources/Forms/PluginSettingsWidget.ui" line="157" />
             <source>Language</source>
             <translation>Bahasa</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/PluginSettingsWidget.ui" line="176" />
+            <location filename="../resources/Forms/PluginSettingsWidget.ui" line="176" />
             <source>Service URL or IP Address</source>
             <translation>URL Layanan atau Alamat IP</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/PluginSettingsWidget.ui" line="190" />
+            <location filename="../resources/Forms/PluginSettingsWidget.ui" line="190" />
             <source>Title Of Service (Required)</source>
             <translation>Judul Layanan (Wajib)</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/PluginSettingsWidget.ui" line="204" />
+            <location filename="../resources/Forms/PluginSettingsWidget.ui" line="204" />
             <source>Description Of Service (Optional)</source>
             <translation>Deskripsi Layanan (Opsional)</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/PluginSettingsWidget.ui" line="224" />
+            <location filename="../resources/Forms/PluginSettingsWidget.ui" line="224" />
             <source>Greeting When Joined (Optional)</source>
             <translation>Salam Saat Bergabung (Opsional)</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/PluginSettingsWidget.ui" line="241" />
+            <location filename="../resources/Forms/PluginSettingsWidget.ui" line="241" />
             <source>Message If Rejected (Optional)</source>
             <translation>Pesan Jika Ditolak (Opsional)</translation>
         </message>
@@ -3855,45 +3850,9 @@
     <context>
         <name>QObject</name>
         <message>
-            <location filename="../nolimitgui/src/GuiThreadMainLoader.cpp" line="58" />
-            <source>No Writable Location for user data</source>
-            <translation>Tidak Ada Lokasi yang Dapat Ditulis untuk data pengguna</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiThreadMainLoader.cpp" line="59" />
-            <source>No location found to store user data.
- Application will exit</source>
-            <translation>Tidak ditemukan lokasi untuk menyimpan data pengguna.
- Aplikasi akan keluar</translation>
-        </message>
-        <message>
             <location filename="../nolimitgui/src/ActivityBase.cpp" line="404" />
             <source>Session End Message</source>
             <translation>Pesan Akhir Sesi</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletPeerViewSharedFiles.cpp" line="466" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2601" />
-            <source>Confirm Shred File</source>
-            <translation>Konfirmasikan File Rusak</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletPeerViewSharedFiles.cpp" line="466" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2601" />
-            <source>Confirm Delete File</source>
-            <translation>Konfirmasi Hapus File</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletPeerViewSharedFiles.cpp" line="470" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2605" />
-            <source>Are You Sure You Want To Write Random Data Into The File Then Delete From The Device?</source>
-            <translation>Apakah Anda Yakin Ingin Menulis Data Acak Ke Dalam File Lalu Menghapusnya Dari Perangkat?</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletPeerViewSharedFiles.cpp" line="474" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2609" />
-            <source>Are You Sure To Delete The File From The Device?</source>
-            <translation>Apakah Anda Yakin Akan Menghapus File Dari Perangkat?</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/ActivityBrowseFiles.cpp" line="49" />
@@ -3917,35 +3876,7 @@
             <location filename="../nolimitgui/src/ActivityBrowseFiles.cpp" line="658" />
             <location filename="../nolimitgui/src/AppletLibrary.cpp" line="602" />
             <source>Storage Space Available: </source>
-            <translation>Ruang Penyimpanan Tersedia:</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="242" />
-            <source>Create Account</source>
-            <translation>Buat Akun</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletCreateAccount.cpp" line="96" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1444" />
-            <source>Application</source>
-            <translation>Aplikasi</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletCreateAccount.cpp" line="96" />
-            <source>Insert New User into Database failed.</source>
-            <translation>Gagal memasukkan Pengguna Baru ke dalam Basis Data.</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletCreateAccount.cpp" line="126" />
-            <source>Create an account or exit</source>
-            <translation>Buat akun atau keluar</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletCreateAccount.cpp" line="127" />
-            <source>User must create an account or exit
-Do you want to exit the application?</source>
-            <translation>Pengguna harus membuat akun atau keluar
-Apakah Anda ingin keluar dari aplikasi?</translation>
+            <translation>Ruang Penyimpanan Tersedia: </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/ActivityDownloadItemMenu.cpp" line="32" />
@@ -3971,6 +3902,11 @@ This message will disappear when generate hash is completed.</source>
 Pesan ini akan hilang ketika pembuatan hash selesai.</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/ActivityMessageBox.cpp" line="94" />
+            <source>Message</source>
+            <translation>Pesan</translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/ActivityMessageBox.cpp" line="145" />
             <location filename="../nolimitgui/src/AppletInformation.cpp" line="48" />
             <location filename="../nolimitgui/src/AssetTextWidget.cpp" line="221" />
@@ -3983,6 +3919,1423 @@ Pesan ini akan hilang ketika pembuatan hash selesai.</translation>
             <location filename="../nolimitgui/src/AssetTextWidget.cpp" line="221" />
             <source>Text was copied to clipboard</source>
             <translation>Teks disalin ke papan klip</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/ActivityMessageBox.cpp" line="163" />
+            <source>Invalid Offer Manager</source>
+            <translation>Manajer Penawaran Tidak Valid</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/ActivityMessageBox.cpp" line="170" />
+            <source>Unknown User</source>
+            <translation>Pengguna Tidak Dikenal</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/ActivityMessageBox.cpp" line="176" />
+            <source>Offer: </source>
+            <translation>Penawaran: </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/ActivityMessageBox.cpp" line="179" />
+            <source>
+File: </source>
+            <translation>Berkas: </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/ActivityMessageBox.cpp" line="180" />
+            <source>
+File Length: </source>
+            <translation>Panjang Berkas: </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/ActivityMessageBox.cpp" line="181" />
+            <source>
+File Type: </source>
+            <translation>Jenis Berkas: </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="104" />
+            <location filename="../nolimitgui/src/AppTranslate.cpp" line="346" />
+            <source>No Limit Connect</source>
+            <translation>Koneksi Tanpa Batas</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="756" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2379" />
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="1388" />
+            <source>Unknown Error</source>
+            <translation>Kesalahan Tidak Diketahui</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="757" />
+            <source>ERROR:
+</source>
+            <translation>KESALAHAN:</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="761" />
+            <source>Failed to connect to Network host</source>
+            <translation>Gagal menyambung ke host Jaringan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="764" />
+            <source>Failed to connect to Connection Test host</source>
+            <translation>Gagal menyambung ke host Uji Koneksi</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="767" />
+            <location filename="../nolimitgui/src/AssetVideoWidget.cpp" line="250" />
+            <source>Video Play Failed</source>
+            <translation>Pemutaran Video Gagal</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="770" />
+            <location filename="../nolimitgui/src/AssetVoiceWidget.cpp" line="223" />
+            <source>Audio Play Failed</source>
+            <translation>Pemutaran Audio Gagal</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="1244" />
+            <source>Close Application</source>
+            <translation>Tutup Aplikasi</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="1245" />
+            <source>Are you sure you want to exit?</source>
+            <translation>Apakah Anda yakin ingin keluar?</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="1351" />
+            <location filename="../nolimitgui/src/ChatEntryWidget.cpp" line="363" />
+            <source>Application Error</source>
+            <translation>Kesalahan Aplikasi</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommonMedia.cpp" line="123" />
+            <source>Web Cam Video</source>
+            <translation>Video Kamera Web</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommonMedia.cpp" line="123" />
+            <source>No Video Capture Devices Found</source>
+            <translation>Tidak Ada Perangkat Pengambil Video yang Ditemukan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="205" />
+            <source>Edit My About Me Page</source>
+            <translation>Edit Halaman Tentang Saya Saya</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="206" />
+            <source>Edit My Avatar Image</source>
+            <translation>Edit Gambar Avatar Saya</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="207" />
+            <source>Edit My Story Board (Blog)</source>
+            <translation>Edit Papan Cerita Saya (Blog)</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="208" />
+            <source>View Story Page (Blog)</source>
+            <translation>Lihat Halaman Cerita (Blog)</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="209" />
+            <source>View My Story Page (Blog)</source>
+            <translation>Lihat Halaman Cerita Saya (Blog)</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="210" />
+            <source>Sound Settings</source>
+            <translation>Pengaturan Suara</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="211" />
+            <source>About File</source>
+            <translation>Tentang Berkas</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="212" />
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="459" />
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="1068" />
+            <source>View About Me Page</source>
+            <translation>Lihat Halaman Tentang Saya</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="213" />
+            <source>View My About Me Page</source>
+            <translation>Lihat Halaman Tentang Saya Saya</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="214" />
+            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1111" />
+            <source>User Details</source>
+            <translation>Detail Pengguna</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="216" />
+            <location filename="../nolimitgui/src/AppletLaunchPage.cpp" line="32" />
+            <source>Home</source>
+            <translation>Rumah</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="217" />
+            <source>About No Limit Connect</source>
+            <translation>Tentang Koneksi Tanpa Batas</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="218" />
+            <source>Application Information</source>
+            <translation>Informasi Aplikasi</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="219" />
+            <source>Browse Files</source>
+            <translation>Jelajahi File</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="220" />
+            <source>Offer List</source>
+            <translation>Daftar Penawaran</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="222" />
+            <source>Cam Video Player</source>
+            <translation>Pemutar Video Kamera</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="223" />
+            <source>Photo Viewer</source>
+            <translation>Penampil Foto</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="224" />
+            <source>Media Player</source>
+            <translation>Pemutar Media</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="226" />
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="598" />
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="1202" />
+            <source>View Shared Web Cam</source>
+            <translation>Lihat Kamera Web Bersama</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="227" />
+            <source>View My Shared Web Cam</source>
+            <translation>Lihat Kamera Web Bersama Saya</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="228" />
+            <source>Cam Settings</source>
+            <translation>Pengaturan Kamera</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="229" />
+            <source>Join Chat Room</source>
+            <translation>Bergabunglah dengan Ruang Obrolan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="230" />
+            <location filename="../nolimitgui/src/AppletChatRoomJoinSearch.cpp" line="67" />
+            <source>Search For Chat Room To Join</source>
+            <translation>Cari Ruang Obrolan Untuk Bergabung</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="231" />
+            <source>Chat Room Hosts Announced To Network</source>
+            <translation>Host Ruang Obrolan Diumumkan Ke Jaringan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="233" />
+            <source>Choose Thumbnail</source>
+            <translation>Pilih Gambar Kecil</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="235" />
+            <source>Choose Host</source>
+            <translation>Pilih Tuan Rumah</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="236" />
+            <source>Join Host Connect</source>
+            <translation>Bergabunglah dengan Host Connect</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="237" />
+            <source>Leave Host</source>
+            <translation>Tinggalkan Tuan Rumah</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="239" />
+            <source>Chat Room</source>
+            <translation>Ruang Obrolan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="240" />
+            <source>Random Person Connect</source>
+            <translation>Koneksi Orang Acak</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="241" />
+            <source>Get Persons Avatar Image For Contact List</source>
+            <translation>Dapatkan Gambar Avatar Orang Untuk Daftar Kontak</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="242" />
+            <source>Create Account</source>
+            <translation>Buat Akun</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="243" />
+            <source>Friend List</source>
+            <translation>Daftar Teman</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="244" />
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="344" />
+            <location filename="../nolimitgui/src/AppletFriendRequest.cpp" line="117" />
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="1048" />
+            <source>Friend Request</source>
+            <translation>Permintaan Pertemanan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="245" />
+            <source>Friend Request List</source>
+            <translation>Daftar Permintaan Pertemanan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="246" />
+            <source>Emoticon Gallery</source>
+            <translation>Galeri Emotikon</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="247" />
+            <source>Image Gallery</source>
+            <translation>Galeri Gambar</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="248" />
+            <source>Thumbnail Gallery</source>
+            <translation>Galeri Gambar Kecil</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="249" />
+            <source>Get Started</source>
+            <translation>Memulai</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="251" />
+            <source>Group Client</source>
+            <translation>Klien Grup</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="252" />
+            <source>Group Host Admin</source>
+            <translation>Admin Tuan Rumah Grup</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="253" />
+            <source>Join Group</source>
+            <translation>Bergabunglah dengan Grup</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="254" />
+            <source>Search For Group To Join</source>
+            <translation>Cari Grup Untuk Bergabung</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="255" />
+            <source>Group List</source>
+            <translation>Daftar Grup</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="256" />
+            <source>Group Hosts Announced To Network</source>
+            <translation>Host Grup Diumumkan Ke Jaringan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="258" />
+            <source>Network Signal Bars</source>
+            <translation>Bilah Sinyal Jaringan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="260" />
+            <source>Chat Room Host Admin</source>
+            <translation>Admin Tuan Rumah Ruang Obrolan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="261" />
+            <source>Chat Room Host Status</source>
+            <translation>Status Penyelenggara Ruang Obrolan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="262" />
+            <source>Group Host Status</source>
+            <translation>Status Tuan Rumah Grup</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="263" />
+            <source>Network Host Status</source>
+            <translation>Status Host Jaringan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="264" />
+            <source>Random Connect Host Status</source>
+            <translation>Status Host Koneksi Acak</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="266" />
+            <source>Ignored Hosts List</source>
+            <translation>Daftar Host yang Diabaikan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="268" />
+            <source>Accept Invite</source>
+            <translation>Terima Undangan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="269" />
+            <source>Create Invite</source>
+            <translation>Buat Undangan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="271" />
+            <source>Select Language</source>
+            <translation>Pilih Bahasa</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="272" />
+            <source>My Library Of Media</source>
+            <translation>Perpustakaan Media Saya</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="273" />
+            <source>Application Log</source>
+            <translation>Catatan Aplikasi</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="274" />
+            <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="93" />
+            <source>Log Settings</source>
+            <translation>Pengaturan Log</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="276" />
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="277" />
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="976" />
+            <source>Messenger</source>
+            <translation>Utusan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="278" />
+            <source>Network Settings</source>
+            <translation>Pengaturan Jaringan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="279" />
+            <source>Join Host Requests</source>
+            <translation>Bergabunglah dengan Permintaan Tuan Rumah</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="281" />
+            <source>Persons Offers</source>
+            <translation>Penawaran Orang</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="282" />
+            <source>Video Player</source>
+            <translation>Pemutar Video</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="283" />
+            <source>Personal Notes And Records</source>
+            <translation>Catatan dan Catatan Pribadi</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="285" />
+            <source>Random Connect Host Admin</source>
+            <translation>Admin Host Koneksi Acak</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="286" />
+            <source>Join Random Connect</source>
+            <translation>Bergabunglah dengan Koneksi Acak</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="287" />
+            <location filename="../nolimitgui/src/AppletRandomConnectJoinSearch.cpp" line="67" />
+            <source>Search For Random Connect Host To Join</source>
+            <translation>Cari Host Koneksi Acak Untuk Bergabung</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="288" />
+            <source>Random Connect Announced Hosts</source>
+            <translation>Random Connect Mengumumkan Host</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="290" />
+            <source>Take Snapshot</source>
+            <translation>Ambil Potret</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="292" />
+            <source>Test And Debug</source>
+            <translation>Uji Dan Debug</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="293" />
+            <source>Test UPNP Port Forward</source>
+            <translation>Uji UPNP Port Maju</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="294" />
+            <source>Theme</source>
+            <translation>Tema</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="296" />
+            <source>User Connections</source>
+            <translation>Koneksi Pengguna</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="297" />
+            <source>User Identity</source>
+            <translation>Identitas Pengguna</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="298" />
+            <source>User Prefernces</source>
+            <translation>Preferensi Pengguna</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="300" />
+            <location filename="../nolimitgui/src/ServiceSettingsWidget.cpp" line="69" />
+            <source>Settings</source>
+            <translation>Pengaturan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="302" />
+            <source>Search</source>
+            <translation>Cari</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="303" />
+            <source>Search Group For Person Name</source>
+            <translation>Grup Pencarian Untuk Nama Orang</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="304" />
+            <source>Search Group For Mood Message</source>
+            <translation>Grup Pencarian Untuk Pesan Suasana Hati</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="305" />
+            <source>Search Group For About Me Pictures</source>
+            <translation>Grup Pencarian Untuk Gambar Tentang Saya</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="306" />
+            <source>Search Group For Story Boards</source>
+            <translation>Grup Pencarian Untuk Papan Cerita</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="307" />
+            <source>Search Group For Shared Files</source>
+            <translation>Grup Pencarian Untuk File Bersama</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="308" />
+            <source>Search Group For Shared Web Cams</source>
+            <translation>Grup Pencarian Untuk Kamera Web Bersama</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="310" />
+            <source>Hosting Services</source>
+            <translation>Layanan Hosting</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="311" />
+            <source>Share Permission List</source>
+            <translation>Bagikan Daftar Izin</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="313" />
+            <source>Share With Others Services</source>
+            <translation>Berbagi Dengan Layanan Lain</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="314" />
+            <source>Share About Me Page</source>
+            <translation>Bagikan Tentang Saya Halaman</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="316" />
+            <source>Service Connection Test</source>
+            <translation>Tes Koneksi Layanan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="317" />
+            <source>Host A NoLimitConnect Network</source>
+            <translation>Tuan Rumah Jaringan NoLimitConnect</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="318" />
+            <source>Share Media Files</source>
+            <translation>Bagikan File Media</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="319" />
+            <source>Share your web cam</source>
+            <translation>Bagikan kamera web Anda</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="320" />
+            <source>Share Story Page (Blog)</source>
+            <translation>Bagikan Halaman Cerita (Blog)</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="322" />
+            <location filename="../nolimitgui/src/AppletServiceBase.cpp" line="195" />
+            <location filename="../nolimitgui/src/AppletSettingsBase.cpp" line="91" />
+            <source>Service Settings</source>
+            <translation>Pengaturan Layanan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="324" />
+            <source>About Me Page Settings</source>
+            <translation>Pengaturan Halaman Tentang Saya</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="325" />
+            <source>Avatar Image Settings</source>
+            <translation>Pengaturan Gambar Avatar</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="326" />
+            <source>Shared Web Cam Settings</source>
+            <translation>Pengaturan Kamera Web Bersama</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="327" />
+            <source>Connection Test Service Settings</source>
+            <translation>Pengaturan Layanan Tes Koneksi</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="328" />
+            <source>Shared Files Settings</source>
+            <translation>Pengaturan File Bersama</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="329" />
+            <source>Person To Person File Xfer Settings</source>
+            <translation>Pengaturan Xfer File Orang Ke Orang</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="331" />
+            <source>Chat Room Host Settings</source>
+            <translation>Pengaturan Host Ruang Obrolan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="332" />
+            <source>Group Host Settings</source>
+            <translation>Pengaturan Host Grup</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="333" />
+            <source>Network Host Settings</source>
+            <translation>Pengaturan Host Jaringan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="334" />
+            <source>Random Connect Host Settings</source>
+            <translation>Pengaturan Host Koneksi Acak</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="336" />
+            <source>Messenger Settings</source>
+            <translation>Pengaturan Messenger</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="337" />
+            <source>Push To Talk Settings</source>
+            <translation>Pengaturan Dorong Untuk Bicara</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="338" />
+            <source>Random Connect Service Settings</source>
+            <translation>Pengaturan Layanan Koneksi Acak</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="339" />
+            <source>Shared Story (Blog) Settings</source>
+            <translation>Pengaturan Cerita Bersama (Blog).</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="340" />
+            <source>Truth Or Dare Video Chat Game Settings</source>
+            <translation>Pengaturan Game Obrolan Video Kebenaran Atau Tantangan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="341" />
+            <source>Video Chat Settings</source>
+            <translation>Pengaturan Obrolan Video</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="342" />
+            <source>Voice Only Phone Call Settings</source>
+            <translation>Pengaturan Panggilan Telepon Hanya Suara</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="346" />
+            <source>Provide Cam Stream</source>
+            <translation>Menyediakan Aliran Cam</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="347" />
+            <source>Manage Station</source>
+            <translation>Kelola Stasiun</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="348" />
+            <source>Manage Station Network Host</source>
+            <translation>Kelola Host Jaringan Stasiun</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="350" />
+            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1055" />
+            <source>Change Friendship</source>
+            <translation>Ubah Persahabatan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="351" />
+            <source>Reply Offer File</source>
+            <translation>File Penawaran Balasan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="352" />
+            <source>Truth Or Dare Game</source>
+            <translation>Permainan Kebenaran Atau Tantangan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="353" />
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="988" />
+            <source>Video Chat</source>
+            <translation>Obrolan Video</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="354" />
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="564" />
+            <source>View Shared Files</source>
+            <translation>Lihat File Bersama</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="355" />
+            <source>Offer File</source>
+            <translation>Berkas Penawaran</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="357" />
+            <source>Offer Information</source>
+            <translation>Informasi Penawaran</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="358" />
+            <source>Random Connect Session</source>
+            <translation>Sesi Koneksi Acak</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="359" />
+            <source>Send Offer</source>
+            <translation>Kirim Penawaran</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="360" />
+            <source>Respond To Offer</source>
+            <translation>Menanggapi Penawaran</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="361" />
+            <source>Accept Offer Response</source>
+            <translation>Terima Tanggapan Penawaran</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="362" />
+            <source>Offer Details</source>
+            <translation>Detail Penawaran</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="363" />
+            <source>Voice Phone (VOIP)</source>
+            <translation>Telepon Suara (VOIP)</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="365" />
+            <source>File Offer</source>
+            <translation>Penawaran Berkas</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="367" />
+            <source>Downloads</source>
+            <translation>Unduhan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="368" />
+            <source>Uploads</source>
+            <translation>Unggahan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="370" />
+            <source>View My Shared Files</source>
+            <translation>Lihat File Saya yang Dibagikan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="372" />
+            <source>Menu</source>
+            <translation>Tidak bisa</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="374" />
+            <source>Blocked Hackers</source>
+            <translation>Peretas yang Diblokir</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="375" />
+            <source>Socket Connections</source>
+            <translation>Koneksi Soket</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="376" />
+            <source>Test Connection</source>
+            <translation>Uji Koneksi</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="379" />
+            <source>Information</source>
+            <translation>Informasi</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="384" />
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="151" />
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="231" />
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="254" />
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="289" />
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="800" />
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="869" />
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="1667" />
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="1773" />
+            <source>Unknown</source>
+            <translation>Tidak diketahui</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletAboutApp.cpp" line="61" />
+            <source>Copy device info to clipboard (For Bug Report)</source>
+            <translation>Salin info perangkat ke clipboard (Untuk Laporan Bug)</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletAboutApp.cpp" line="63" />
+            <source> Version </source>
+            <translation> Versi </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletAboutApp.cpp" line="106" />
+            <source>Copy connection info to clipboard (NOT RECOMMENDED)</source>
+            <translation>Salin info koneksi ke clipboard (TIDAK DIANJURKAN)</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletAboutFile.cpp" line="129" />
+            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="116" />
+            <source> : Yes</source>
+            <translation> : Ya</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletAboutFile.cpp" line="130" />
+            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="117" />
+            <source> : No</source>
+            <translation> : Tidak</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletAboutFile.cpp" line="132" />
+            <source>Is Stream</source>
+            <translation>Adalah Aliran</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="108" />
+            <source>Requires Relay</source>
+            <translation>Membutuhkan Relai</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="112" />
+            <source>Can Direct Connect</source>
+            <translation>Bisa Sambung Langsung</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="115" />
+            <source>Is member of </source>
+            <translation>Apakah anggota </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="140" />
+            <source>no shared files</source>
+            <translation>tidak ada file bersama</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="153" />
+            <source> -- has about me content</source>
+            <translation> -- memiliki konten tentang saya</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="157" />
+            <source> -- no about me content</source>
+            <translation> -- tidak ada konten tentang saya</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="164" />
+            <source> -- has storyboard content</source>
+            <translation> -- memiliki konten papan cerita</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="168" />
+            <source> -- no storyboard content</source>
+            <translation> -- tidak ada konten papan cerita</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="175" />
+            <source> -- has shared web cam</source>
+            <translation> -- telah berbagi kamera web</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="179" />
+            <source> -- no shared web cam</source>
+            <translation> -- tidak ada kamera web bersama</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="186" />
+            <source>=== Disabled Plugins ===</source>
+            <translation>=== Plugin yang Dinonaktifkan ===</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="40" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="158" />
+            <location filename="../nolimitgui/src/AppletSnapshot.cpp" line="86" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="176" />
+            <source>Camera Capture</source>
+            <translation>Pengambilan Kamera</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="40" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="158" />
+            <location filename="../nolimitgui/src/AppletSnapshot.cpp" line="86" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="176" />
+            <source>No Camera Source Available.</source>
+            <translation>Tidak Ada Sumber Kamera yang Tersedia.</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="217" />
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="260" />
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="265" />
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="271" />
+            <source>Video In Device</source>
+            <translation>Video Di Perangkat</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="217" />
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="265" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="264" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="289" />
+            <source> failed to initialize</source>
+            <translation>gagal diinisialisasi</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="260" />
+            <source> device is saved as preferred Video In Device</source>
+            <translation> perangkat disimpan sebagai Video Dalam Perangkat pilihan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="271" />
+            <source>No Video In Device Is Available</source>
+            <translation>Tidak Ada Video Di Perangkat Yang Tersedia</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletChatRoomJoinSearch.cpp" line="126" />
+            <location filename="../nolimitgui/src/AppletGroupJoinSearch.cpp" line="127" />
+            <location filename="../nolimitgui/src/AppletGroupListClient.cpp" line="130" />
+            <location filename="../nolimitgui/src/AppletRandomConnectJoinSearch.cpp" line="126" />
+            <source>Search must have at least 3 characters</source>
+            <translation>Pencarian harus memiliki minimal 3 karakter</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletChatRoomJoinSearch.cpp" line="137" />
+            <location filename="../nolimitgui/src/AppletGroupJoinSearch.cpp" line="138" />
+            <location filename="../nolimitgui/src/AppletGroupListClient.cpp" line="141" />
+            <location filename="../nolimitgui/src/AppletRandomConnectJoinSearch.cpp" line="137" />
+            <source>Search Started</source>
+            <translation>Pencarian Dimulai</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletChatRoomJoinSearch.cpp" line="150" />
+            <location filename="../nolimitgui/src/AppletGroupJoinSearch.cpp" line="151" />
+            <location filename="../nolimitgui/src/AppletGroupListClient.cpp" line="155" />
+            <location filename="../nolimitgui/src/AppletRandomConnectJoinSearch.cpp" line="150" />
+            <source>Search Params Invalid</source>
+            <translation>Param Pencarian Tidak Valid</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletChatRoomJoinSearch.cpp" line="158" />
+            <location filename="../nolimitgui/src/AppletGroupJoinSearch.cpp" line="159" />
+            <location filename="../nolimitgui/src/AppletGroupListClient.cpp" line="163" />
+            <location filename="../nolimitgui/src/AppletRandomConnectJoinSearch.cpp" line="158" />
+            <source>Search Stopped</source>
+            <translation>Pencarian Dihentikan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletChatRoomJoinSearch.cpp" line="207" />
+            <location filename="../nolimitgui/src/AppletChatRoomListLocalView.cpp" line="230" />
+            <location filename="../nolimitgui/src/AppletGroupJoinSearch.cpp" line="208" />
+            <location filename="../nolimitgui/src/AppletGroupListClient.cpp" line="212" />
+            <location filename="../nolimitgui/src/AppletGroupListLocalView.cpp" line="233" />
+            <location filename="../nolimitgui/src/AppletRandomConnectJoinSearch.cpp" line="207" />
+            <location filename="../nolimitgui/src/AppletRandomConnectListLocalView.cpp" line="230" />
+            <source>Match found: </source>
+            <translation>Kecocokan ditemukan: </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletChatRoomListLocalView.cpp" line="66" />
+            <location filename="../nolimitgui/src/AppletChatRoomListLocalView.cpp" line="67" />
+            <source>Chat Room Hosts Announced To Network Host</source>
+            <translation>Host Ruang Obrolan Diumumkan ke Host Jaringan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletChatRoomListLocalView.cpp" line="73" />
+            <location filename="../nolimitgui/src/AppletGroupListLocalView.cpp" line="76" />
+            <location filename="../nolimitgui/src/AppletRandomConnectListLocalView.cpp" line="73" />
+            <source>Service Unavailable</source>
+            <translation>Layanan Tidak Tersedia</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletChatRoomListLocalView.cpp" line="73" />
+            <source>Network Host Service Is Not Enabled. You can not view chat rooms announced to this device because the service is not enabled</source>
+            <translation>Layanan Host Jaringan Tidak Diaktifkan. Anda tidak dapat melihat ruang obrolan yang diumumkan ke perangkat ini karena layanan tidak diaktifkan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletChatRoomListLocalView.cpp" line="80" />
+            <location filename="../nolimitgui/src/AppletGroupListLocalView.cpp" line="83" />
+            <location filename="../nolimitgui/src/AppletRandomConnectListLocalView.cpp" line="80" />
+            <source>Service Disabled</source>
+            <translation>Layanan Dinonaktifkan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletChatRoomListLocalView.cpp" line="80" />
+            <location filename="../nolimitgui/src/AppletGroupListLocalView.cpp" line="83" />
+            <location filename="../nolimitgui/src/AppletRandomConnectListLocalView.cpp" line="80" />
+            <source>Network Host Service is not enabled because it requires an open port.</source>
+            <translation>Layanan Host Jaringan tidak diaktifkan karena memerlukan port terbuka.</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletChooseThumbnail.cpp" line="43" />
+            <source>Image for thumbnail will be resized to width </source>
+            <translation>Gambar untuk thumbnail akan diubah ukurannya menjadi lebar </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletChooseThumbnail.cpp" line="45" />
+            <source> height </source>
+            <translation> tinggi </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletChooseThumbnail.cpp" line="47" />
+            <source> pixels. </source>
+            <translation> piksel. </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletCreateAccount.cpp" line="96" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1444" />
+            <source>Application</source>
+            <translation>Aplikasi</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletCreateAccount.cpp" line="96" />
+            <source>Insert New User into Database failed.</source>
+            <translation>Gagal memasukkan Pengguna Baru ke dalam Basis Data.</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletCreateAccount.cpp" line="126" />
+            <source>Create an account or exit</source>
+            <translation>Buat akun atau keluar</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletCreateAccount.cpp" line="127" />
+            <source>User must create an account or exit
+Do you want to exit the application?</source>
+            <translation>Pengguna harus membuat akun atau keluar
+Apakah Anda ingin keluar dari aplikasi?</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="67" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="81" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="125" />
+            <location filename="../nolimitgui/src/ChatEntryWidget.cpp" line="198" />
+            <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="208" />
+            <source>Failed To Read Image File </source>
+            <translation>Gagal Membaca File Gambar </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="68" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="82" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="126" />
+            <location filename="../nolimitgui/src/ChatEntryWidget.cpp" line="199" />
+            <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="209" />
+            <source>Error Reading Image</source>
+            <translation>Kesalahan Membaca Gambar</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="117" />
+            <location filename="../nolimitgui/src/ChatEntryWidget.cpp" line="189" />
+            <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="200" />
+            <source>Open Image</source>
+            <translation>Buka Gambar</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="175" />
+            <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="113" />
+            <source>Failed to read snapshot </source>
+            <translation>Gagal membaca cuplikan </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="176" />
+            <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="114" />
+            <source>Error Reading snapshot</source>
+            <translation>Kesalahan Membaca cuplikan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="202" />
+            <source>Failed to write into </source>
+            <translation>Gagal menulis ke dalam </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="203" />
+            <source>Error Writing</source>
+            <translation>Kesalahan Penulisan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="227" />
+            <source>About Me Change</source>
+            <translation>Tentang Saya Berubah</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="228" />
+            <source>Applied About Me Changes </source>
+            <translation>Perubahan Tentang Saya yang Diterapkan </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="229" />
+            <source>Failed</source>
+            <translation>Gagal</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="229" />
+            <source>Success</source>
+            <translation>Sukses</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="98" />
+            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="125" />
+            <source>Applied Avatar Image Changes </source>
+            <translation>Perubahan Gambar Avatar yang Diterapkan </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="99" />
+            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="126" />
+            <source>Applied Avatar Image Success</source>
+            <translation>Keberhasilan Gambar Avatar Terapan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="145" />
+            <source>Cannot Delete Avatar Image</source>
+            <translation>Tidak Dapat Menghapus Gambar Avatar</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="146" />
+            <source>Cannot remove image that is a emoticon</source>
+            <translation>Tidak dapat menghapus gambar yang merupakan emotikon</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="150" />
+            <source>Are you sure you want to remove your avatar image?</source>
+            <translation>Apakah Anda yakin ingin menghapus gambar avatar Anda?</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="151" />
+            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="156" />
+            <source>Remove Avatar Image</source>
+            <translation>Hapus Gambar Avatar</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="155" />
+            <source>Remove Avatar Image Success</source>
+            <translation>Hapus Gambar Avatar Berhasil</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="161" />
+            <source>Remove Avatar Image canceled </source>
+            <translation>Hapus Gambar Avatar dibatalkan </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="208" />
+            <source>Cannot shred image </source>
+            <translation>Tidak dapat merusak gambar </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletFileOfferSelect.cpp" line="289" />
+            <location filename="../nolimitgui/src/AppletFileOfferSelect.cpp" line="323" />
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="359" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2390" />
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="1358" />
+            <source>File Not Found</source>
+            <translation>Berkas Tidak Ditemukan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletFileShareClientView.cpp" line="489" />
+            <source>Failed to play stream </source>
+            <translation>Gagal memutar streaming </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletFriendList.cpp" line="136" />
+            <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="126" />
+            <location filename="../nolimitgui/src/AppletOfferList.cpp" line="125" />
+            <source>List</source>
+            <translation>Daftar</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletFriendRequest.cpp" line="64" />
+            <source>User not found</source>
+            <translation>Pengguna tidak ditemukan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletFriendRequest.cpp" line="64" />
+            <source>No user found with id </source>
+            <translation>Tidak ada pengguna yang ditemukan dengan id </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletFriendRequest.cpp" line="117" />
+            <source>Friend Request requires a message with request reason</source>
+            <translation>Permintaan Pertemanan memerlukan pesan dengan alasan permintaan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletFriendRequest.cpp" line="123" />
+            <source>Friend Request Send Failed</source>
+            <translation>Pengiriman Permintaan Pertemanan Gagal</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletFriendRequest.cpp" line="127" />
+            <source>Friend Request Sent</source>
+            <translation>Permintaan Pertemanan Terkirim</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletFriendRequest.cpp" line="127" />
+            <source>Friend Request was sent</source>
+            <translation>Permintaan Pertemanan telah dikirim</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletFriendRequestList.cpp" line="79" />
+            <source>No Friend Requests Available</source>
+            <translation>Tidak Ada Permintaan Pertemanan yang Tersedia</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletGroupJoinSearch.cpp" line="68" />
+            <source>Search For Group Host To Join</source>
+            <translation>Cari Host Grup Untuk Bergabung</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletGroupListClient.cpp" line="67" />
+            <source>Fetch Group Host List</source>
+            <translation>Ambil Daftar Host Grup</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletGroupListLocalView.cpp" line="69" />
+            <source>Group Hosts Announced To Network Host</source>
+            <translation>Host Grup Diumumkan Ke Host Jaringan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletGroupListLocalView.cpp" line="70" />
+            <source>Groups Announced To Network Host</source>
+            <translation>Grup Diumumkan Menjadi Host Jaringan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletGroupListLocalView.cpp" line="76" />
+            <source>Network Host Service Is Not Enabled. You can not view groups announced to this device because the service is not enabled</source>
+            <translation>Layanan Host Jaringan Tidak Diaktifkan. Anda tidak dapat melihat grup yang diumumkan ke perangkat ini karena layanan tidak diaktifkan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHackerList.cpp" line="53" />
+            <source>Count</source>
+            <translation>Hitung</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHackerList.cpp" line="54" />
+            <location filename="../nolimitgui/src/AppletSocketList.cpp" line="63" />
+            <source>IP Address</source>
+            <translation>Alamat IP</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHackerList.cpp" line="55" />
+            <source>Level</source>
+            <translation>Tingkat</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHackerList.cpp" line="56" />
+            <source>Offense</source>
+            <translation>Pelanggaran</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHackerList.cpp" line="57" />
+            <source>Signature</source>
+            <translation>Tanda tangan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostBase.cpp" line="93" />
+            <source>Cannot join our host as user</source>
+            <translation>Tidak dapat bergabung dengan host kami sebagai pengguna</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostBase.cpp" line="94" />
+            <source>Cannot join our host as user.
+ You can join host from host admin page instead.</source>
+            <translation>Tidak dapat bergabung dengan host kami sebagai pengguna.
+ Anda dapat bergabung dengan host dari halaman admin host.</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostChatRoomStatus.cpp" line="96" />
+            <source>Open Port Required. Check ChatRoom Settings</source>
+            <translation>Diperlukan Port Terbuka. Periksa Pengaturan Ruang Obrolan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostChatRoomStatus.cpp" line="100" />
+            <source>Chat Room Hosting Permission is disabled</source>
+            <translation>Izin Hosting Ruang Obrolan dinonaktifkan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostChatRoomStatus.cpp" line="104" />
+            <source>Chat Room Hosting Conditions Are Met</source>
+            <translation>Ketentuan Hosting Ruang Obrolan Terpenuhi</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostClientBase.cpp" line="274" />
+            <source>Sending to: %1</source>
+            <translation>Mengirim ke: %1</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostClientBase.cpp" line="293" />
+            <source>Sent to %1 member(s)</source>
+            <translation>Dikirim ke %1 anggota</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostClientBase.cpp" line="297" />
+            <source>Sent: %1 success, %2 failed</source>
+            <translation>Terkirim: %1 sukses, %2 gagal</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostGroupStatus.cpp" line="93" />
+            <location filename="../nolimitgui/src/AppletHostNetworkStatus.cpp" line="89" />
+            <source>Open Port Required. Check Network Settings</source>
+            <translation>Diperlukan Port Terbuka. Periksa Pengaturan Jaringan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostGroupStatus.cpp" line="97" />
+            <source>Group Hosting Permission is disabled</source>
+            <translation>Izin Hosting Grup dinonaktifkan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostGroupStatus.cpp" line="101" />
+            <source>Group Hosting Conditions Are Met</source>
+            <translation>Ketentuan Hosting Grup Terpenuhi</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostJoinChoose.cpp" line="73" />
+            <source>Choose Chat Room Host</source>
+            <translation>Pilih Host Ruang Obrolan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostJoinChoose.cpp" line="81" />
+            <source>Choose Group Host</source>
+            <translation>Pilih Tuan Rumah Grup</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostJoinChoose.cpp" line="88" />
+            <source>Choose Random Connect Host</source>
+            <translation>Pilih Host Koneksi Acak</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostJoinChoose.cpp" line="95" />
+            <location filename="../nolimitgui/src/AppletHostLeave.cpp" line="97" />
+            <source>Unknown Host Type</source>
+            <translation>Jenis Host Tidak Dikenal</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostJoinConnect.cpp" line="63" />
+            <source>Host URL is not valid</source>
+            <translation>URL host tidak valid</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostJoinConnect.cpp" line="68" />
+            <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="55" />
+            <source>Failed to resolve into valid ptop url</source>
+            <translation>Gagal menyelesaikan ke dalam url ptop yang valid</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostJoinConnect.cpp" line="72" />
+            <source>Host Type Invalid</source>
+            <translation>Jenis Host Tidak Valid</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostLeave.cpp" line="78" />
+            <source>Leave Chat Room</source>
+            <translation>Keluar dari Ruang Obrolan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostLeave.cpp" line="85" />
+            <source>Leave Group</source>
+            <translation>Keluar dari Grup</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostLeave.cpp" line="91" />
+            <source>Leave Random Connect</source>
+            <translation>Tinggalkan Koneksi Acak</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostNetworkStatus.cpp" line="47" />
+            <source>Hosts announced to network count:</source>
+            <translation>Host diumumkan ke jumlah jaringan:</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostNetworkStatus.cpp" line="93" />
+            <source>Network Hosting Permission is disabled</source>
+            <translation>Izin Hosting Jaringan dinonaktifkan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostNetworkStatus.cpp" line="97" />
+            <source>Connection Test Permission is disabled</source>
+            <translation>Izin Tes Koneksi dinonaktifkan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostNetworkStatus.cpp" line="101" />
+            <source>Network Hosting Conditions Are Met</source>
+            <translation>Kondisi Hosting Jaringan Terpenuhi</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostRandomConnectStatus.cpp" line="95" />
+            <source>Open Port Required. Check RandomConnect Settings</source>
+            <translation>Diperlukan Port Terbuka. Periksa Pengaturan RandomConnect</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostRandomConnectStatus.cpp" line="99" />
+            <source>Random Connect Hosting Permission is disabled</source>
+            <translation>Izin Hosting Random Connect dinonaktifkan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostRandomConnectStatus.cpp" line="103" />
+            <source>Random Connect Hosting Conditions Are Met</source>
+            <translation>Kondisi Hosting Random Connect Terpenuhi</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletInformation.cpp" line="113" />
@@ -4350,6 +5703,34 @@ Peringatan: Jika menerima host jaringan, pastikan Anda memiliki kunci jaringan y
 Jika Anda tidak memiliki kunci jaringan yang benar, Anda akan diblokir sebagai peretas</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/AppletInformation.cpp" line="325" />
+            <source>=== Friends List ===
+A list showing users set to friend or administrator permission level.
+</source>
+            <translation>=== Daftar Teman ===
+Daftar yang memperlihatkan pengguna yang disetel ke tingkat izin teman atau administrator.</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletInformation.cpp" line="330" />
+            <source>=== Ignored List ===
+A list showing ignored (blocked) users.
+You can unblock a user by clicking the friendship icon or select Change Friendship from the menu button on right side of list entry.
+</source>
+            <translation>=== Daftar Diabaikan ===
+Daftar yang menampilkan pengguna yang diabaikan (diblokir).
+Anda dapat membuka blokir pengguna dengan mengklik ikon pertemanan atau memilih Ubah Persahabatan dari tombol menu di sisi kanan entri daftar.</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletInformation.cpp" line="336" />
+            <source>=== Offline Friends List ===
+A list showing offline friends and admins.
+You can change friendship even when offline (Set to anonymouse or guest so network no longer tries to stay connected).
+</source>
+            <translation>=== Daftar Teman Offline ===
+Daftar yang menampilkan teman dan admin offline.
+Anda dapat mengubah pertemanan bahkan saat offline (Disetel ke anonim atau tamu sehingga jaringan tidak lagi mencoba untuk tetap terhubung).</translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/AppletInformation.cpp" line="342" />
             <source>=== Hosting Requirements any of these host services Chat Room, Group, Random Connect ===
 You will need to port forward the listen port you specified in Network Settings
@@ -4365,7 +5746,15 @@ Penulis No Limit Connect menggunakan https://hide.me VPN karena:
 1. hide.me memahami protokol UPNP yang memungkinkan No Limit Connect membuka port secara otomatis.
 2. hide.me dapat diinstal pada hampir semua OS termasuk Windows, Linux, Android dan Raspberry Pi.
 3. hide.me memiliki versi gratis namun relatif murah untuk dibeli.
-Artikel tentang port forwarding dapat ditemukan di mesin pencari atau di https://www.jguru.com/vpn-port-forwarding</translation>
+Artikel tentang port forwarding dapat ditemukan di mesin pencari atau di https://www.jguru.com/vpn-port-forwarding </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletInformation.cpp" line="352" />
+            <source>=== Hosting Requirements Network Host ===
+If you want to host your own network the network host must have port forwarding and also a fixed ip address.
+</source>
+            <translation>=== Persyaratan Hosting Host Jaringan ===
+Jika Anda ingin menghosting jaringan Anda sendiri, host jaringan harus memiliki penerusan porta dan juga alamat ip tetap.</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletInformation.cpp" line="357" />
@@ -4424,1300 +5813,6 @@ Dalam kasus undangan pribadi, pengguna dapat langsung terhubung ke pengguna lain
 Jika pengguna adalah teman dengan port terbuka, upaya untuk menyambung kembali akan terjadi bahkan setelah restart</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletInformation.cpp" line="325" />
-            <source>=== Friends List ===
-A list showing users set to friend or administrator permission level.
-</source>
-            <translation>=== Daftar Teman ===
-Daftar yang memperlihatkan pengguna yang disetel ke tingkat izin teman atau administrator.</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletInformation.cpp" line="330" />
-            <source>=== Ignored List ===
-A list showing ignored (blocked) users.
-You can unblock a user by clicking the friendship icon or select Change Friendship from the menu button on right side of list entry.
-</source>
-            <translation>=== Daftar Diabaikan ===
-Daftar yang menampilkan pengguna yang diabaikan (diblokir).
-Anda dapat membuka blokir pengguna dengan mengklik ikon pertemanan atau memilih Ubah Persahabatan dari tombol menu di sisi kanan entri daftar.</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletInformation.cpp" line="336" />
-            <source>=== Offline Friends List ===
-A list showing offline friends and admins.
-You can change friendship even when offline (Set to anonymouse or guest so network no longer tries to stay connected).
-</source>
-            <translation>=== Daftar Teman Offline ===
-Daftar yang menampilkan teman dan admin offline.
-Anda dapat mengubah pertemanan bahkan saat offline (Disetel ke anonim atau tamu sehingga jaringan tidak lagi mencoba untuk tetap terhubung).</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletInformation.cpp" line="352" />
-            <source>=== Hosting Requirements Network Host ===
-If you want to host your own network the network host must have port forwarding and also a fixed ip address.
-</source>
-            <translation>=== Persyaratan Hosting Host Jaringan ===
-Jika Anda ingin menghosting jaringan Anda sendiri, host jaringan harus memiliki penerusan porta dan juga alamat ip tetap.</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/ActivityMessageBox.cpp" line="94" />
-            <source>Message</source>
-            <translation>Pesan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/ActivityMessageBox.cpp" line="163" />
-            <source>Invalid Offer Manager</source>
-            <translation>Manajer Penawaran Tidak Valid</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/ActivityMessageBox.cpp" line="170" />
-            <source>Unknown User</source>
-            <translation>Pengguna Tidak Dikenal</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/ActivityMessageBox.cpp" line="176" />
-            <source>Offer: </source>
-            <translation>Penawaran:</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/ActivityMessageBox.cpp" line="179" />
-            <source>
-File: </source>
-            <translation>Berkas:</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/ActivityMessageBox.cpp" line="180" />
-            <source>
-File Length: </source>
-            <translation>Panjang Berkas:</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/ActivityMessageBox.cpp" line="181" />
-            <source>
-File Type: </source>
-            <translation>Jenis Berkas:</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletChatRoomJoinSearch.cpp" line="126" />
-            <location filename="../nolimitgui/src/AppletGroupJoinSearch.cpp" line="127" />
-            <location filename="../nolimitgui/src/AppletGroupListClient.cpp" line="130" />
-            <location filename="../nolimitgui/src/AppletRandomConnectJoinSearch.cpp" line="126" />
-            <source>Search must have at least 3 characters</source>
-            <translation>Pencarian harus memiliki minimal 3 karakter</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletChatRoomJoinSearch.cpp" line="137" />
-            <location filename="../nolimitgui/src/AppletGroupJoinSearch.cpp" line="138" />
-            <location filename="../nolimitgui/src/AppletGroupListClient.cpp" line="141" />
-            <location filename="../nolimitgui/src/AppletRandomConnectJoinSearch.cpp" line="137" />
-            <source>Search Started</source>
-            <translation>Pencarian Dimulai</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletChatRoomJoinSearch.cpp" line="158" />
-            <location filename="../nolimitgui/src/AppletGroupJoinSearch.cpp" line="159" />
-            <location filename="../nolimitgui/src/AppletGroupListClient.cpp" line="163" />
-            <location filename="../nolimitgui/src/AppletRandomConnectJoinSearch.cpp" line="158" />
-            <source>Search Stopped</source>
-            <translation>Pencarian Dihentikan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="104" />
-            <location filename="../nolimitgui/src/AppTranslate.cpp" line="346" />
-            <source>No Limit Connect</source>
-            <translation>Koneksi Tanpa Batas</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="757" />
-            <source>ERROR:
-</source>
-            <translation>KESALAHAN:</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="761" />
-            <source>Failed to connect to Network host</source>
-            <translation>Gagal menyambung ke host Jaringan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="764" />
-            <source>Failed to connect to Connection Test host</source>
-            <translation>Gagal menyambung ke host Uji Koneksi</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="767" />
-            <location filename="../nolimitgui/src/AssetVideoWidget.cpp" line="250" />
-            <source>Video Play Failed</source>
-            <translation>Pemutaran Video Gagal</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="770" />
-            <location filename="../nolimitgui/src/AssetVoiceWidget.cpp" line="223" />
-            <source>Audio Play Failed</source>
-            <translation>Pemutaran Audio Gagal</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="1244" />
-            <source>Close Application</source>
-            <translation>Tutup Aplikasi</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="1245" />
-            <source>Are you sure you want to exit?</source>
-            <translation>Apakah Anda yakin ingin keluar?</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="1351" />
-            <location filename="../nolimitgui/src/ChatEntryWidget.cpp" line="363" />
-            <source>Application Error</source>
-            <translation>Kesalahan Aplikasi</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppCommonMedia.cpp" line="123" />
-            <source>Web Cam Video</source>
-            <translation>Video Kamera Web</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppCommonMedia.cpp" line="123" />
-            <source>No Video Capture Devices Found</source>
-            <translation>Tidak Ada Perangkat Pengambil Video yang Ditemukan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="205" />
-            <source>Edit My About Me Page</source>
-            <translation>Edit Halaman Tentang Saya Saya</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="206" />
-            <source>Edit My Avatar Image</source>
-            <translation>Edit Gambar Avatar Saya</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="207" />
-            <source>Edit My Story Board (Blog)</source>
-            <translation>Edit Papan Cerita Saya (Blog)</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="208" />
-            <source>View Story Page (Blog)</source>
-            <translation>Lihat Halaman Cerita (Blog)</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="209" />
-            <source>View My Story Page (Blog)</source>
-            <translation>Lihat Halaman Cerita Saya (Blog)</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="210" />
-            <source>Sound Settings</source>
-            <translation>Pengaturan Suara</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="211" />
-            <source>About File</source>
-            <translation>Tentang Berkas</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="212" />
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="459" />
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="1068" />
-            <source>View About Me Page</source>
-            <translation>Lihat Halaman Tentang Saya</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="213" />
-            <source>View My About Me Page</source>
-            <translation>Lihat Halaman Tentang Saya Saya</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="214" />
-            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1111" />
-            <source>User Details</source>
-            <translation>Detail Pengguna</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="216" />
-            <location filename="../nolimitgui/src/AppletLaunchPage.cpp" line="32" />
-            <source>Home</source>
-            <translation>Rumah</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="217" />
-            <source>About No Limit Connect</source>
-            <translation>Tentang Koneksi Tanpa Batas</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="218" />
-            <source>Application Information</source>
-            <translation>Informasi Aplikasi</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="219" />
-            <source>Browse Files</source>
-            <translation>Jelajahi File</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="220" />
-            <source>Offer List</source>
-            <translation>Daftar Penawaran</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="222" />
-            <source>Cam Video Player</source>
-            <translation>Pemutar Video Kamera</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="223" />
-            <source>Photo Viewer</source>
-            <translation>Penampil Foto</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="224" />
-            <source>Media Player</source>
-            <translation>Pemutar Media</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="226" />
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="598" />
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="1202" />
-            <source>View Shared Web Cam</source>
-            <translation>Lihat Kamera Web Bersama</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="227" />
-            <source>View My Shared Web Cam</source>
-            <translation>Lihat Kamera Web Bersama Saya</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="228" />
-            <source>Cam Settings</source>
-            <translation>Pengaturan Kamera</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="229" />
-            <source>Join Chat Room</source>
-            <translation>Bergabunglah dengan Ruang Obrolan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="230" />
-            <location filename="../nolimitgui/src/AppletChatRoomJoinSearch.cpp" line="67" />
-            <source>Search For Chat Room To Join</source>
-            <translation>Cari Ruang Obrolan Untuk Bergabung</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="231" />
-            <source>Chat Room Hosts Announced To Network</source>
-            <translation>Host Ruang Obrolan Diumumkan Ke Jaringan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="233" />
-            <source>Choose Thumbnail</source>
-            <translation>Pilih Gambar Kecil</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="239" />
-            <source>Chat Room</source>
-            <translation>Ruang Obrolan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="240" />
-            <source>Random Person Connect</source>
-            <translation>Koneksi Orang Acak</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="241" />
-            <source>Get Persons Avatar Image For Contact List</source>
-            <translation>Dapatkan Gambar Avatar Orang Untuk Daftar Kontak</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="243" />
-            <source>Friend List</source>
-            <translation>Daftar Teman</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="246" />
-            <source>Emoticon Gallery</source>
-            <translation>Galeri Emotikon</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="247" />
-            <source>Image Gallery</source>
-            <translation>Galeri Gambar</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="248" />
-            <source>Thumbnail Gallery</source>
-            <translation>Galeri Gambar Kecil</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="249" />
-            <source>Get Started</source>
-            <translation>Memulai</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="251" />
-            <source>Group Client</source>
-            <translation>Klien Grup</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="252" />
-            <source>Group Host Admin</source>
-            <translation>Admin Tuan Rumah Grup</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="253" />
-            <source>Join Group</source>
-            <translation>Bergabunglah dengan Grup</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="254" />
-            <source>Search For Group To Join</source>
-            <translation>Cari Grup Untuk Bergabung</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="255" />
-            <source>Group List</source>
-            <translation>Daftar Grup</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="256" />
-            <source>Group Hosts Announced To Network</source>
-            <translation>Host Grup Diumumkan Ke Jaringan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="258" />
-            <source>Network Signal Bars</source>
-            <translation>Bilah Sinyal Jaringan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="260" />
-            <source>Chat Room Host Admin</source>
-            <translation>Admin Tuan Rumah Ruang Obrolan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="261" />
-            <source>Chat Room Host Status</source>
-            <translation>Status Penyelenggara Ruang Obrolan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="262" />
-            <source>Group Host Status</source>
-            <translation>Status Tuan Rumah Grup</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="263" />
-            <source>Network Host Status</source>
-            <translation>Status Host Jaringan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="264" />
-            <source>Random Connect Host Status</source>
-            <translation>Status Host Koneksi Acak</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="266" />
-            <source>Ignored Hosts List</source>
-            <translation>Daftar Host yang Diabaikan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="269" />
-            <source>Create Invite</source>
-            <translation>Buat Undangan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="272" />
-            <source>My Library Of Media</source>
-            <translation>Perpustakaan Media Saya</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="273" />
-            <source>Application Log</source>
-            <translation>Catatan Aplikasi</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="274" />
-            <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="93" />
-            <source>Log Settings</source>
-            <translation>Pengaturan Log</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="276" />
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="277" />
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="976" />
-            <source>Messenger</source>
-            <translation>Utusan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="278" />
-            <source>Network Settings</source>
-            <translation>Pengaturan Jaringan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="279" />
-            <source>Join Host Requests</source>
-            <translation>Bergabunglah dengan Permintaan Tuan Rumah</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="281" />
-            <source>Persons Offers</source>
-            <translation>Penawaran Orang</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="283" />
-            <source>Personal Notes And Records</source>
-            <translation>Catatan dan Catatan Pribadi</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="285" />
-            <source>Random Connect Host Admin</source>
-            <translation>Admin Host Koneksi Acak</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="286" />
-            <source>Join Random Connect</source>
-            <translation>Bergabunglah dengan Koneksi Acak</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="287" />
-            <location filename="../nolimitgui/src/AppletRandomConnectJoinSearch.cpp" line="67" />
-            <source>Search For Random Connect Host To Join</source>
-            <translation>Cari Host Koneksi Acak Untuk Bergabung</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="288" />
-            <source>Random Connect Announced Hosts</source>
-            <translation>Random Connect Mengumumkan Host</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="290" />
-            <source>Take Snapshot</source>
-            <translation>Ambil Potret</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="292" />
-            <source>Test And Debug</source>
-            <translation>Uji Dan Debug</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="294" />
-            <source>Theme</source>
-            <translation>Tema</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="296" />
-            <source>User Connections</source>
-            <translation>Koneksi Pengguna</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="297" />
-            <source>User Identity</source>
-            <translation>Identitas Pengguna</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="300" />
-            <location filename="../nolimitgui/src/ServiceSettingsWidget.cpp" line="69" />
-            <source>Settings</source>
-            <translation>Pengaturan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="302" />
-            <source>Search</source>
-            <translation>Cari</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="303" />
-            <source>Search Group For Person Name</source>
-            <translation>Grup Pencarian Untuk Nama Orang</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="304" />
-            <source>Search Group For Mood Message</source>
-            <translation>Grup Pencarian Untuk Pesan Suasana Hati</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="305" />
-            <source>Search Group For About Me Pictures</source>
-            <translation>Grup Pencarian Untuk Gambar Tentang Saya</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="306" />
-            <source>Search Group For Story Boards</source>
-            <translation>Grup Pencarian Untuk Papan Cerita</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="307" />
-            <source>Search Group For Shared Files</source>
-            <translation>Grup Pencarian Untuk File Bersama</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="308" />
-            <source>Search Group For Shared Web Cams</source>
-            <translation>Grup Pencarian Untuk Kamera Web Bersama</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="310" />
-            <source>Hosting Services</source>
-            <translation>Layanan Hosting</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="311" />
-            <source>Share Permission List</source>
-            <translation>Bagikan Daftar Izin</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="313" />
-            <source>Share With Others Services</source>
-            <translation>Berbagi Dengan Layanan Lain</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="314" />
-            <source>Share About Me Page</source>
-            <translation>Bagikan Tentang Saya Halaman</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="235" />
-            <source>Choose Host</source>
-            <translation>Pilih Tuan Rumah</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="236" />
-            <source>Join Host Connect</source>
-            <translation>Bergabunglah dengan Host Connect</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="237" />
-            <source>Leave Host</source>
-            <translation>Tinggalkan Tuan Rumah</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="244" />
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="344" />
-            <location filename="../nolimitgui/src/AppletFriendRequest.cpp" line="117" />
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="1048" />
-            <source>Friend Request</source>
-            <translation>Permintaan Pertemanan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="245" />
-            <source>Friend Request List</source>
-            <translation>Daftar Permintaan Pertemanan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="268" />
-            <source>Accept Invite</source>
-            <translation>Terima Undangan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="271" />
-            <source>Select Language</source>
-            <translation>Pilih Bahasa</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="282" />
-            <source>Video Player</source>
-            <translation>Pemutar Video</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="293" />
-            <source>Test UPNP Port Forward</source>
-            <translation>Uji UPNP Port Maju</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="298" />
-            <source>User Prefernces</source>
-            <translation>Preferensi Pengguna</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="316" />
-            <source>Service Connection Test</source>
-            <translation>Tes Koneksi Layanan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="317" />
-            <source>Host A NoLimitConnect Network</source>
-            <translation>Tuan Rumah Jaringan NoLimitConnect</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="318" />
-            <source>Share Media Files</source>
-            <translation>Bagikan File Media</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="319" />
-            <source>Share your web cam</source>
-            <translation>Bagikan kamera web Anda</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="320" />
-            <source>Share Story Page (Blog)</source>
-            <translation>Bagikan Halaman Cerita (Blog)</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="322" />
-            <location filename="../nolimitgui/src/AppletServiceBase.cpp" line="195" />
-            <location filename="../nolimitgui/src/AppletSettingsBase.cpp" line="91" />
-            <source>Service Settings</source>
-            <translation>Pengaturan Layanan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="324" />
-            <source>About Me Page Settings</source>
-            <translation>Pengaturan Halaman Tentang Saya</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="325" />
-            <source>Avatar Image Settings</source>
-            <translation>Pengaturan Gambar Avatar</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="326" />
-            <source>Shared Web Cam Settings</source>
-            <translation>Pengaturan Kamera Web Bersama</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="327" />
-            <source>Connection Test Service Settings</source>
-            <translation>Pengaturan Layanan Tes Koneksi</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="328" />
-            <source>Shared Files Settings</source>
-            <translation>Pengaturan File Bersama</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="329" />
-            <source>Person To Person File Xfer Settings</source>
-            <translation>Pengaturan Xfer File Orang Ke Orang</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="331" />
-            <source>Chat Room Host Settings</source>
-            <translation>Pengaturan Host Ruang Obrolan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="332" />
-            <source>Group Host Settings</source>
-            <translation>Pengaturan Host Grup</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="333" />
-            <source>Network Host Settings</source>
-            <translation>Pengaturan Host Jaringan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="334" />
-            <source>Random Connect Host Settings</source>
-            <translation>Pengaturan Host Koneksi Acak</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="336" />
-            <source>Messenger Settings</source>
-            <translation>Pengaturan Messenger</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="337" />
-            <source>Push To Talk Settings</source>
-            <translation>Pengaturan Dorong Untuk Bicara</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="338" />
-            <source>Random Connect Service Settings</source>
-            <translation>Pengaturan Layanan Koneksi Acak</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="339" />
-            <source>Shared Story (Blog) Settings</source>
-            <translation>Pengaturan Cerita Bersama (Blog).</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="340" />
-            <source>Truth Or Dare Video Chat Game Settings</source>
-            <translation>Pengaturan Game Obrolan Video Kebenaran Atau Tantangan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="341" />
-            <source>Video Chat Settings</source>
-            <translation>Pengaturan Obrolan Video</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="342" />
-            <source>Voice Only Phone Call Settings</source>
-            <translation>Pengaturan Panggilan Telepon Hanya Suara</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="346" />
-            <source>Provide Cam Stream</source>
-            <translation>Menyediakan Aliran Cam</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="347" />
-            <source>Manage Station</source>
-            <translation>Kelola Stasiun</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="348" />
-            <source>Manage Station Network Host</source>
-            <translation>Kelola Host Jaringan Stasiun</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="350" />
-            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1055" />
-            <source>Change Friendship</source>
-            <translation>Ubah Persahabatan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="351" />
-            <source>Reply Offer File</source>
-            <translation>File Penawaran Balasan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="352" />
-            <source>Truth Or Dare Game</source>
-            <translation>Permainan Kebenaran Atau Tantangan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="353" />
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="988" />
-            <source>Video Chat</source>
-            <translation>Obrolan Video</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="354" />
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="564" />
-            <source>View Shared Files</source>
-            <translation>Lihat File Bersama</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="355" />
-            <source>Offer File</source>
-            <translation>Berkas Penawaran</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="357" />
-            <source>Offer Information</source>
-            <translation>Informasi Penawaran</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="358" />
-            <source>Random Connect Session</source>
-            <translation>Sesi Koneksi Acak</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="359" />
-            <source>Send Offer</source>
-            <translation>Kirim Penawaran</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="360" />
-            <source>Respond To Offer</source>
-            <translation>Menanggapi Penawaran</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="361" />
-            <source>Accept Offer Response</source>
-            <translation>Terima Tanggapan Penawaran</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="362" />
-            <source>Offer Details</source>
-            <translation>Detail Penawaran</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="363" />
-            <source>Voice Phone (VOIP)</source>
-            <translation>Telepon Suara (VOIP)</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="365" />
-            <source>File Offer</source>
-            <translation>Penawaran Berkas</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="367" />
-            <source>Downloads</source>
-            <translation>Unduhan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="368" />
-            <source>Uploads</source>
-            <translation>Unggahan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="370" />
-            <source>View My Shared Files</source>
-            <translation>Lihat File Saya yang Dibagikan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="372" />
-            <source>Menu</source>
-            <translation>Tidak bisa</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="374" />
-            <source>Blocked Hackers</source>
-            <translation>Peretas yang Diblokir</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="375" />
-            <source>Socket Connections</source>
-            <translation>Koneksi Soket</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="376" />
-            <source>Test Connection</source>
-            <translation>Uji Koneksi</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="379" />
-            <source>Information</source>
-            <translation>Informasi</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="384" />
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="151" />
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="231" />
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="254" />
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="289" />
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="800" />
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="869" />
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="1667" />
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="1773" />
-            <source>Unknown</source>
-            <translation>Tidak diketahui</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletAboutApp.cpp" line="61" />
-            <source>Copy device info to clipboard (For Bug Report)</source>
-            <translation>Salin info perangkat ke clipboard (Untuk Laporan Bug)</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletAboutApp.cpp" line="63" />
-            <source> Version </source>
-            <translation>Versi</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletAboutApp.cpp" line="106" />
-            <source>Copy connection info to clipboard (NOT RECOMMENDED)</source>
-            <translation>Salin info koneksi ke clipboard (TIDAK DIANJURKAN)</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2471" />
-            <source>Invalid Host Id</source>
-            <translation>Id Host Tidak Valid</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2472" />
-            <source>Host Id has not been set</source>
-            <translation>Id Host belum ditetapkan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2498" />
-            <source>No Members Online</source>
-            <translation>Tidak Ada Anggota Online</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2499" />
-            <source>There are no members online to send to</source>
-            <translation>Tidak ada anggota online yang dapat dikirimi</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2507" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2561" />
-            <source>Failed to add asset</source>
-            <translation>Gagal menambahkan aset</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2508" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2562" />
-            <source>Failed to add asset. Please check disk space</source>
-            <translation>Gagal menambahkan aset. Silakan periksa ruang disk</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2518" />
-            <source>Failed to send to </source>
-            <translation>Gagal mengirim ke</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="40" />
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="158" />
-            <location filename="../nolimitgui/src/AppletSnapshot.cpp" line="86" />
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="176" />
-            <source>Camera Capture</source>
-            <translation>Pengambilan Kamera</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="40" />
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="158" />
-            <location filename="../nolimitgui/src/AppletSnapshot.cpp" line="86" />
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="176" />
-            <source>No Camera Source Available.</source>
-            <translation>Tidak Ada Sumber Kamera yang Tersedia.</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="217" />
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="260" />
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="265" />
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="271" />
-            <source>Video In Device</source>
-            <translation>Video Di Perangkat</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="260" />
-            <source> device is saved as preferred Video In Device</source>
-            <translation>perangkat disimpan sebagai Video Dalam Perangkat pilihan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="271" />
-            <source>No Video In Device Is Available</source>
-            <translation>Tidak Ada Video Di Perangkat Yang Tersedia</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletChatRoomJoinSearch.cpp" line="150" />
-            <location filename="../nolimitgui/src/AppletGroupJoinSearch.cpp" line="151" />
-            <location filename="../nolimitgui/src/AppletGroupListClient.cpp" line="155" />
-            <location filename="../nolimitgui/src/AppletRandomConnectJoinSearch.cpp" line="150" />
-            <source>Search Params Invalid</source>
-            <translation>Param Pencarian Tidak Valid</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletChatRoomJoinSearch.cpp" line="207" />
-            <location filename="../nolimitgui/src/AppletChatRoomListLocalView.cpp" line="230" />
-            <location filename="../nolimitgui/src/AppletGroupJoinSearch.cpp" line="208" />
-            <location filename="../nolimitgui/src/AppletGroupListClient.cpp" line="212" />
-            <location filename="../nolimitgui/src/AppletGroupListLocalView.cpp" line="233" />
-            <location filename="../nolimitgui/src/AppletRandomConnectJoinSearch.cpp" line="207" />
-            <location filename="../nolimitgui/src/AppletRandomConnectListLocalView.cpp" line="230" />
-            <source>Match found: </source>
-            <translation>Kecocokan ditemukan:</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletChatRoomListLocalView.cpp" line="66" />
-            <location filename="../nolimitgui/src/AppletChatRoomListLocalView.cpp" line="67" />
-            <source>Chat Room Hosts Announced To Network Host</source>
-            <translation>Host Ruang Obrolan Diumumkan ke Host Jaringan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletChatRoomListLocalView.cpp" line="73" />
-            <location filename="../nolimitgui/src/AppletGroupListLocalView.cpp" line="76" />
-            <location filename="../nolimitgui/src/AppletRandomConnectListLocalView.cpp" line="73" />
-            <source>Service Unavailable</source>
-            <translation>Layanan Tidak Tersedia</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletChatRoomListLocalView.cpp" line="73" />
-            <source>Network Host Service Is Not Enabled. You can not view chat rooms announced to this device because the service is not enabled</source>
-            <translation>Layanan Host Jaringan Tidak Diaktifkan. Anda tidak dapat melihat ruang obrolan yang diumumkan ke perangkat ini karena layanan tidak diaktifkan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletChatRoomListLocalView.cpp" line="80" />
-            <location filename="../nolimitgui/src/AppletGroupListLocalView.cpp" line="83" />
-            <location filename="../nolimitgui/src/AppletRandomConnectListLocalView.cpp" line="80" />
-            <source>Service Disabled</source>
-            <translation>Layanan Dinonaktifkan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletChatRoomListLocalView.cpp" line="80" />
-            <location filename="../nolimitgui/src/AppletGroupListLocalView.cpp" line="83" />
-            <location filename="../nolimitgui/src/AppletRandomConnectListLocalView.cpp" line="80" />
-            <source>Network Host Service is not enabled because it requires an open port.</source>
-            <translation>Layanan Host Jaringan tidak diaktifkan karena memerlukan port terbuka.</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletChooseThumbnail.cpp" line="43" />
-            <source>Image for thumbnail will be resized to width </source>
-            <translation>Gambar untuk thumbnail akan diubah ukurannya menjadi lebar</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletChooseThumbnail.cpp" line="45" />
-            <source> height </source>
-            <translation>tinggi</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletChooseThumbnail.cpp" line="47" />
-            <source> pixels. </source>
-            <translation>piksel.</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostJoinChoose.cpp" line="73" />
-            <source>Choose Chat Room Host</source>
-            <translation>Pilih Host Ruang Obrolan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostJoinChoose.cpp" line="81" />
-            <source>Choose Group Host</source>
-            <translation>Pilih Tuan Rumah Grup</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostJoinChoose.cpp" line="88" />
-            <source>Choose Random Connect Host</source>
-            <translation>Pilih Host Koneksi Acak</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostJoinChoose.cpp" line="95" />
-            <location filename="../nolimitgui/src/AppletHostLeave.cpp" line="97" />
-            <source>Unknown Host Type</source>
-            <translation>Jenis Host Tidak Dikenal</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="67" />
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="81" />
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="125" />
-            <location filename="../nolimitgui/src/ChatEntryWidget.cpp" line="198" />
-            <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="208" />
-            <source>Failed To Read Image File </source>
-            <translation>Gagal Membaca File Gambar</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="68" />
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="82" />
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="126" />
-            <location filename="../nolimitgui/src/ChatEntryWidget.cpp" line="199" />
-            <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="209" />
-            <source>Error Reading Image</source>
-            <translation>Kesalahan Membaca Gambar</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="117" />
-            <location filename="../nolimitgui/src/ChatEntryWidget.cpp" line="189" />
-            <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="200" />
-            <source>Open Image</source>
-            <translation>Buka Gambar</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="175" />
-            <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="113" />
-            <source>Failed to read snapshot </source>
-            <translation>Gagal membaca cuplikan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="176" />
-            <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="114" />
-            <source>Error Reading snapshot</source>
-            <translation>Kesalahan Membaca cuplikan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="202" />
-            <source>Failed to write into </source>
-            <translation>Gagal menulis ke dalam</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="203" />
-            <source>Error Writing</source>
-            <translation>Kesalahan Penulisan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="227" />
-            <source>About Me Change</source>
-            <translation>Tentang Saya Berubah</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="228" />
-            <source>Applied About Me Changes </source>
-            <translation>Perubahan Tentang Saya yang Diterapkan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="229" />
-            <source>Failed</source>
-            <translation>Gagal</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="229" />
-            <source>Success</source>
-            <translation>Sukses</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="98" />
-            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="125" />
-            <source>Applied Avatar Image Changes </source>
-            <translation>Perubahan Gambar Avatar yang Diterapkan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="99" />
-            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="126" />
-            <source>Applied Avatar Image Success</source>
-            <translation>Keberhasilan Gambar Avatar Terapan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="145" />
-            <source>Cannot Delete Avatar Image</source>
-            <translation>Tidak Dapat Menghapus Gambar Avatar</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="146" />
-            <source>Cannot remove image that is a emoticon</source>
-            <translation>Tidak dapat menghapus gambar yang merupakan emotikon</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="150" />
-            <source>Are you sure you want to remove your avatar image?</source>
-            <translation>Apakah Anda yakin ingin menghapus gambar avatar Anda?</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="151" />
-            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="156" />
-            <source>Remove Avatar Image</source>
-            <translation>Hapus Gambar Avatar</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="155" />
-            <source>Remove Avatar Image Success</source>
-            <translation>Hapus Gambar Avatar Berhasil</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="161" />
-            <source>Remove Avatar Image canceled </source>
-            <translation>Hapus Gambar Avatar dibatalkan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="208" />
-            <source>Cannot shred image </source>
-            <translation>Tidak dapat merusak gambar</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletFileOfferSelect.cpp" line="289" />
-            <location filename="../nolimitgui/src/AppletFileOfferSelect.cpp" line="323" />
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="359" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2390" />
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="1358" />
-            <source>File Not Found</source>
-            <translation>Berkas Tidak Ditemukan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletFriendList.cpp" line="136" />
-            <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="126" />
-            <location filename="../nolimitgui/src/AppletOfferList.cpp" line="125" />
-            <source>List</source>
-            <translation>Daftar</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletGroupJoinSearch.cpp" line="68" />
-            <source>Search For Group Host To Join</source>
-            <translation>Cari Host Grup Untuk Bergabung</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletGroupListClient.cpp" line="67" />
-            <source>Fetch Group Host List</source>
-            <translation>Ambil Daftar Host Grup</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletGroupListLocalView.cpp" line="69" />
-            <source>Group Hosts Announced To Network Host</source>
-            <translation>Host Grup Diumumkan Ke Host Jaringan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletGroupListLocalView.cpp" line="70" />
-            <source>Groups Announced To Network Host</source>
-            <translation>Grup Diumumkan Menjadi Host Jaringan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletGroupListLocalView.cpp" line="76" />
-            <source>Network Host Service Is Not Enabled. You can not view groups announced to this device because the service is not enabled</source>
-            <translation>Layanan Host Jaringan Tidak Diaktifkan. Anda tidak dapat melihat grup yang diumumkan ke perangkat ini karena layanan tidak diaktifkan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHackerList.cpp" line="53" />
-            <source>Count</source>
-            <translation>Hitung</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHackerList.cpp" line="54" />
-            <location filename="../nolimitgui/src/AppletSocketList.cpp" line="63" />
-            <source>IP Address</source>
-            <translation>Alamat IP</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHackerList.cpp" line="55" />
-            <source>Level</source>
-            <translation>Tingkat</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHackerList.cpp" line="56" />
-            <source>Offense</source>
-            <translation>Pelanggaran</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHackerList.cpp" line="57" />
-            <source>Signature</source>
-            <translation>Tanda tangan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostBase.cpp" line="93" />
-            <source>Cannot join our host as user</source>
-            <translation>Tidak dapat bergabung dengan host kami sebagai pengguna</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostBase.cpp" line="94" />
-            <source>Cannot join our host as user.
- You can join host from host admin page instead.</source>
-            <translation>Tidak dapat bergabung dengan host kami sebagai pengguna.
- Anda dapat bergabung dengan host dari halaman admin host.</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostChatRoomStatus.cpp" line="96" />
-            <source>Open Port Required. Check ChatRoom Settings</source>
-            <translation>Diperlukan Port Terbuka. Periksa Pengaturan Ruang Obrolan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostChatRoomStatus.cpp" line="100" />
-            <source>Chat Room Hosting Permission is disabled</source>
-            <translation>Izin Hosting Ruang Obrolan dinonaktifkan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostChatRoomStatus.cpp" line="104" />
-            <source>Chat Room Hosting Conditions Are Met</source>
-            <translation>Ketentuan Hosting Ruang Obrolan Terpenuhi</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostGroupStatus.cpp" line="93" />
-            <location filename="../nolimitgui/src/AppletHostNetworkStatus.cpp" line="89" />
-            <source>Open Port Required. Check Network Settings</source>
-            <translation>Diperlukan Port Terbuka. Periksa Pengaturan Jaringan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostGroupStatus.cpp" line="97" />
-            <source>Group Hosting Permission is disabled</source>
-            <translation>Izin Hosting Grup dinonaktifkan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostGroupStatus.cpp" line="101" />
-            <source>Group Hosting Conditions Are Met</source>
-            <translation>Ketentuan Hosting Grup Terpenuhi</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostNetworkStatus.cpp" line="47" />
-            <source>Hosts announced to network count:</source>
-            <translation>Host diumumkan ke jumlah jaringan:</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostNetworkStatus.cpp" line="93" />
-            <source>Network Hosting Permission is disabled</source>
-            <translation>Izin Hosting Jaringan dinonaktifkan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostNetworkStatus.cpp" line="97" />
-            <source>Connection Test Permission is disabled</source>
-            <translation>Izin Tes Koneksi dinonaktifkan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostNetworkStatus.cpp" line="101" />
-            <source>Network Hosting Conditions Are Met</source>
-            <translation>Kondisi Hosting Jaringan Terpenuhi</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostRandomConnectStatus.cpp" line="95" />
-            <source>Open Port Required. Check RandomConnect Settings</source>
-            <translation>Diperlukan Port Terbuka. Periksa Pengaturan RandomConnect</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostRandomConnectStatus.cpp" line="99" />
-            <source>Random Connect Hosting Permission is disabled</source>
-            <translation>Izin Hosting Random Connect dinonaktifkan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostRandomConnectStatus.cpp" line="103" />
-            <source>Random Connect Hosting Conditions Are Met</source>
-            <translation>Kondisi Hosting Random Connect Terpenuhi</translation>
-        </message>
-        <message>
             <location filename="../nolimitgui/src/AppletInviteAccept.cpp" line="60" />
             <source>Paste invite from clipboard</source>
             <translation>Tempel undangan dari clipboard</translation>
@@ -5746,16 +5841,6 @@ File Type: </source>
             <translation>Papan klip tidak berisi undangan yang valid</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletInvites.cpp" line="99" />
-            <source>Clipboard Contained Invalid Invite Text</source>
-            <translation>Papan Klip Berisi Teks Undangan Tidak Valid</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletInvites.cpp" line="99" />
-            <source>Clipboard Has Text That Cannot Be Parsed Into An Invite</source>
-            <translation>Clipboard Memiliki Teks Yang Tidak Dapat Diurai Menjadi Undangan</translation>
-        </message>
-        <message>
             <location filename="../nolimitgui/src/AppletInviteCreate.cpp" line="60" />
             <source>Copy invite to clipboard</source>
             <translation>Salin undangan ke papan klip</translation>
@@ -5776,10 +5861,40 @@ File Type: </source>
             <translation>Tidak dapat membuat Undangan jika Undangan kosong</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/AppletInvites.cpp" line="99" />
+            <source>Clipboard Contained Invalid Invite Text</source>
+            <translation>Papan Klip Berisi Teks Undangan Tidak Valid</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletInvites.cpp" line="99" />
+            <source>Clipboard Has Text That Cannot Be Parsed Into An Invite</source>
+            <translation>Clipboard Memiliki Teks Yang Tidak Dapat Diurai Menjadi Undangan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="46" />
+            <source>Network Host URL was not resolved</source>
+            <translation>URL Host Jaringan tidak terselesaikan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="51" />
+            <source>Online Id query failed</source>
+            <translation>Permintaan ID online gagal</translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="116" />
             <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="174" />
             <source>User List</source>
             <translation>Daftar Pengguna</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="148" />
+            <source>Network Host list request is queued</source>
+            <translation>Permintaan daftar Host Jaringan dimasukkan dalam antrean</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="153" />
+            <source>Network Host list query failed</source>
+            <translation>Kueri daftar Host Jaringan gagal</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="158" />
@@ -5797,6 +5912,11 @@ File Type: </source>
             <translation>Daftar Tuan Rumah</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="260" />
+            <source>NO HOSTS FOUND</source>
+            <translation>TIDAK ADA HOST YANG DITEMUKAN</translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="264" />
             <source>Host list from network host completed</source>
             <translation>Daftar host dari host jaringan selesai</translation>
@@ -5807,36 +5927,6 @@ File Type: </source>
             <translation>Daftar pengguna dari host selesai</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2480" />
-            <source>Invalid URL</source>
-            <translation>URL tidak valid</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="46" />
-            <source>Network Host URL was not resolved</source>
-            <translation>URL Host Jaringan tidak terselesaikan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="51" />
-            <source>Online Id query failed</source>
-            <translation>Permintaan ID online gagal</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="148" />
-            <source>Network Host list request is queued</source>
-            <translation>Permintaan daftar Host Jaringan dimasukkan dalam antrean</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="153" />
-            <source>Network Host list query failed</source>
-            <translation>Kueri daftar Host Jaringan gagal</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="260" />
-            <source>NO HOSTS FOUND</source>
-            <translation>TIDAK ADA HOST YANG DITEMUKAN</translation>
-        </message>
-        <message>
             <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="371" />
             <source>Do you also want to disconnect from user?</source>
             <translation>Apakah Anda juga ingin memutuskan sambungan dari pengguna?</translation>
@@ -5844,7 +5934,7 @@ File Type: </source>
         <message>
             <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="372" />
             <source>Do you also want to disconnect from user </source>
-            <translation>Apakah Anda juga ingin memutuskan sambungan dari pengguna</translation>
+            <translation>Apakah Anda juga ingin memutuskan sambungan dari pengguna </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="374" />
@@ -5873,14 +5963,173 @@ File Type: </source>
             <translation>Daftar Host yang Diabaikan Kosong</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2408" />
-            <source>Application Not Ready</source>
-            <translation>Aplikasi Belum Siap</translation>
+            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="131" />
+            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="137" />
+            <source>Language</source>
+            <translation>Bahasa</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2409" />
-            <source>Cannot Launch Applet Until Application Has Initialized</source>
-            <translation>Tidak Dapat Meluncurkan Applet Sampai Aplikasi Telah Diinisialisasi</translation>
+            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="131" />
+            <source>Language updated.</source>
+            <translation>Bahasa diperbarui.</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="138" />
+            <source>Language updated, but no translation file was found in the translations folder.</source>
+            <translation>Bahasa diperbarui, tetapi tidak ada file terjemahan yang ditemukan di folder terjemahan.</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="199" />
+            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="212" />
+            <source>English</source>
+            <translation>bahasa Inggris</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="200" />
+            <source>German</source>
+            <translation>Jerman</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="201" />
+            <source>Chinese</source>
+            <translation>Cina</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="202" />
+            <source>Spanish</source>
+            <translation>Spanyol</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="203" />
+            <source>French</source>
+            <translation>Perancis</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="204" />
+            <source>Arabic</source>
+            <translation>Arab</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="205" />
+            <source>Hindi</source>
+            <translation>bahasa Hindi</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="206" />
+            <source>Portuguese</source>
+            <translation>Portugis</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="207" />
+            <source>Japanese</source>
+            <translation>Jepang</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="208" />
+            <source>Korean</source>
+            <translation>Korea</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="209" />
+            <source>Russian</source>
+            <translation>Rusia</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="210" />
+            <source>Thai</source>
+            <translation>Thailand</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="211" />
+            <source>Indonesian</source>
+            <translation>bahasa Indonesia</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="69" />
+            <source>Requesting Library File List </source>
+            <translation>Meminta Daftar File Perpustakaan </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="128" />
+            <source>List Get Completed</source>
+            <translation>Daftar Selesai</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="151" />
+            <source>Folder Scan Canceled</source>
+            <translation>Pemindaian Folder Dibatalkan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="155" />
+            <source>Folder Scan Completed</source>
+            <translation>Pemindaian Folder Selesai</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="356" />
+            <source>File was not found:
+%1
+
+Remove this item from My Library and asset database?</source>
+            <translation>Berkas tidak ditemukan:
+%1
+
+Hapus item ini dari Perpustakaan Saya dan database aset?</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="633" />
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="663" />
+            <source>Error</source>
+            <translation>Kesalahan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="633" />
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="663" />
+            <source>Unknown Media Type</source>
+            <translation>Jenis Media Tidak Diketahui</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="694" />
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="771" />
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="807" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2266" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="104" />
+            <source>Could not get thumbnail file info</source>
+            <translation>Tidak dapat memperoleh info file thumbnail</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="695" />
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="772" />
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="808" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2261" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2267" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="105" />
+            <source>Error occured creating thumbnail asset </source>
+            <translation>Terjadi kesalahan saat membuat aset thumbnail </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="732" />
+            <source>Scaning folder</source>
+            <translation>Memindai folder</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="753" />
+            <source>Already in library</source>
+            <translation>Sudah ada di perpustakaan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="753" />
+            <source>File is already in library </source>
+            <translation>File sudah ada di perpustakaan </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="828" />
+            <source>File Error</source>
+            <translation>Kesalahan Berkas</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="828" />
+            <source>Could not add file to library </source>
+            <translation>Tidak dapat menambahkan file ke perpustakaan</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="30" />
@@ -5888,9 +6137,19 @@ File Type: </source>
             <translation>Catat Tidak Ada</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="32" />
+            <source>Log File Xfer</source>
+            <translation>File Log Xfer</translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="33" />
             <source>Log Connect</source>
             <translation>Sambungan Log</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="34" />
+            <source>Log Offer</source>
+            <translation>Penawaran Log</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="35" />
@@ -5903,9 +6162,19 @@ File Type: </source>
             <translation>Catatan Skt</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="38" />
+            <source>Log Voice (VOIP)</source>
+            <translation>Log Suara (VOIP)</translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="39" />
             <source>Log Network State</source>
             <translation>Catat Status Jaringan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="40" />
+            <source>Log User Sessions</source>
+            <translation>Catat Sesi Pengguna</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="42" />
@@ -5916,6 +6185,11 @@ File Type: </source>
             <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="43" />
             <source>Log Thread</source>
             <translation>Utas Log</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="44" />
+            <source>Log Web Cam</source>
+            <translation>Catat Kamera Web</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="45" />
@@ -5936,6 +6210,26 @@ File Type: </source>
             <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="49" />
             <source>Log Pkt</source>
             <translation>Catatan Pkt</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="50" />
+            <source>Log Thumbnails</source>
+            <translation>Catat Thumbnail</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="52" />
+            <source>Log User Online Status</source>
+            <translation>Catat Status Online Pengguna</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="53" />
+            <source>Log Host Join From Client</source>
+            <translation>Log Host Bergabung Dari Klien</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="54" />
+            <source>Log Users</source>
+            <translation>Catat Pengguna</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="55" />
@@ -5961,51 +6255,6 @@ File Type: </source>
             <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="60" />
             <source>Log Host Connect</source>
             <translation>Log Koneksi Host</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="32" />
-            <source>Log File Xfer</source>
-            <translation>File Log Xfer</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="34" />
-            <source>Log Offer</source>
-            <translation>Penawaran Log</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="38" />
-            <source>Log Voice (VOIP)</source>
-            <translation>Log Suara (VOIP)</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="40" />
-            <source>Log User Sessions</source>
-            <translation>Catat Sesi Pengguna</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="44" />
-            <source>Log Web Cam</source>
-            <translation>Catat Kamera Web</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="50" />
-            <source>Log Thumbnails</source>
-            <translation>Catat Thumbnail</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="52" />
-            <source>Log User Online Status</source>
-            <translation>Catat Status Online Pengguna</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="53" />
-            <source>Log Host Join From Client</source>
-            <translation>Log Host Bergabung Dari Klien</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="54" />
-            <source>Log Users</source>
-            <translation>Catat Pengguna</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="62" />
@@ -6116,184 +6365,189 @@ File Type: </source>
         <message>
             <location filename="../nolimitgui/src/AppletMgr.cpp" line="704" />
             <source> Cannot be viewed when permission is disable</source>
-            <translation>Tidak dapat dilihat ketika izin dinonaktifkan</translation>
+            <translation> Tidak dapat dilihat ketika izin dinonaktifkan</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletMultiMessenger.cpp" line="188" />
             <source> with </source>
-            <translation>dengan</translation>
+            <translation> dengan </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletMultiMessenger.cpp" line="201" />
             <source> requires user be online </source>
-            <translation>mengharuskan pengguna online</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="2229" />
-            <source> is online</source>
-            <translation>sedang online</translation>
+            <translation> mengharuskan pengguna online </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletMultiMessenger.cpp" line="254" />
             <source>Requested Text Chat Session with </source>
-            <translation>Sesi Obrolan Teks yang Diminta dengan</translation>
+            <translation>Sesi Obrolan Teks yang Diminta dengan </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="428" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="404" />
             <source>TCP Listen Port Error</source>
             <translation>Kesalahan Port Dengar TCP</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="428" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="404" />
             <source>TCP Listen Port cannot be less that 10000.</source>
             <translation>TCP Listen Port tidak boleh kurang dari 10.000.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="512" />
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="770" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="484" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="742" />
             <source>IPv6 not detected</source>
             <translation>IPv6 tidak terdeteksi</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="512" />
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="770" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="484" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="742" />
             <source>The device does not seem to be IPv6 capable
  Please uncheck Use IPv6 Network</source>
             <translation>Perangkat ini tampaknya tidak berkemampuan IPv6
  Harap hapus centang Gunakan Jaringan IPv6</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="516" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="488" />
             <source>Confirm Use Of Experimental IPv6 Network?</source>
             <translation>Konfirmasikan Penggunaan Jaringan IPv6 Eksperimental?</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="517" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="489" />
             <source>IPv6 is experimental and the network for IPv6 is not visible on the IPv4 network</source>
             <translation>IPv6 bersifat eksperimental dan jaringan untuk IPv6 tidak terlihat di jaringan IPv4</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="540" />
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="548" />
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="554" />
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="565" />
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="574" />
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="586" />
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="594" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="512" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="520" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="526" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="537" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="546" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="558" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="566" />
             <source>Network Setting</source>
             <translation>Pengaturan Jaringan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="540" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="512" />
             <source>Network setting name cannot be blank.</source>
             <translation>Nama pengaturan jaringan tidak boleh kosong.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="548" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="520" />
             <source>Network host URL cannot be blank.</source>
             <translation>URL host jaringan tidak boleh kosong.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="554" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="526" />
             <source>Network key cannot be blank.</source>
             <translation>Kunci jaringan tidak boleh kosong.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="565" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="537" />
             <source>Connection Test URL cannot be blank.</source>
             <translation>URL Uji Koneksi tidak boleh kosong.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="575" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="547" />
             <source>Are you sure you want to overwrite existing network setting?.
  The network setting name can be changed in Select Network Setting.</source>
             <translation>Apakah Anda yakin ingin menimpa pengaturan jaringan yang ada?.
  Nama pengaturan jaringan dapat diubah di Pilih Pengaturan Jaringan.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="586" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="558" />
             <source>Private Network Key requires restart to avoid use of wrong network key.
  Quitting application so you can start it again.</source>
             <translation>Kunci Jaringan Pribadi memerlukan restart untuk menghindari penggunaan kunci jaringan yang salah.
  Keluar dari aplikasi agar Anda dapat memulainya lagi.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="594" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="566" />
             <source>Network setting was saved.</source>
             <translation>Pengaturan jaringan telah disimpan.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="687" />
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="695" />
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="701" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="659" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="667" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="673" />
             <source>Network Key</source>
             <translation>Kunci Jaringan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="687" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="659" />
             <source>Network Key must be at least 6 characters ( 8 or more characters recommended ).</source>
             <translation>Kunci Jaringan minimal harus 6 karakter (disarankan 8 karakter atau lebih).</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="695" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="667" />
             <source>Current Network Key is public, you must obtain and set the private network key associated with this network invit.</source>
             <translation>Kunci Jaringan saat ini bersifat publik, Anda harus mendapatkan dan mengatur kunci jaringan pribadi yang terkait dengan undangan jaringan ini.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="702" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="674" />
             <source>Are you sure you want to change the network key?
  All users of your network will need to have the same key or you will be banned as a hacker.</source>
             <translation>Apakah Anda yakin ingin mengubah kunci jaringan?
  Semua pengguna jaringan Anda harus memiliki kunci yang sama atau Anda akan diblokir sebagai peretas.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="719" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="691" />
             <source>Invalid External IP Address</source>
             <translation>Alamat IP Eksternal Tidak Valid</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="723" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="695" />
             <source>If assumed user can direct connect then external IP must be specified.</source>
             <translation>Jika diasumsikan pengguna dapat terhubung langsung maka IP eksternal harus ditentukan.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="731" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="703" />
             <source>External IP is invalid.</source>
             <translation>IP eksternal tidak valid.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="740" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="712" />
             <source>When using IPv4 network a IPv4 external IP must be specified.</source>
             <translation>Saat menggunakan jaringan IPv4, IP eksternal IPv4 harus ditentukan.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="748" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="720" />
             <source>When using IPv6 network a IPv6 external IP must be specified.</source>
             <translation>Saat menggunakan jaringan IPv6, IP eksternal IPv6 harus ditentukan.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="789" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="761" />
             <source>Your device does not seem to be capable of IPv6</source>
             <translation>Perangkat Anda tampaknya tidak mampu menggunakan IPv6</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="790" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="762" />
             <source>Your device does not seem to be capable of IPv6. Continue Anyway?</source>
             <translation>Perangkat Anda tampaknya tidak mampu menggunakan IPv6. Tetap Lanjutkan?</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="806" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="778" />
             <source>Accepting Network Invite</source>
             <translation>Menerima Undangan Jaringan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="807" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="779" />
             <source>You are accepting a network invite.
 Be sure the Network Key is correct before pressing save.
 If the Network Key is incorrect, you will probably be banned as a hacker.</source>
             <translation>Anda menerima undangan jaringan.
 Pastikan Kunci Jaringan sudah benar sebelum menekan simpan.
 Jika Kunci Jaringan salah, Anda mungkin akan diblokir sebagai peretas.</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletOfferInfo.cpp" line="107" />
+            <source>Invalid Offer. Please Decline Offer.</source>
+            <translation>Penawaran Tidak Valid. Harap Tolak Penawaran.</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletOfferRandSession.cpp" line="179" />
+            <source>No permitted session types are available for this Random Connect offer.</source>
+            <translation>Tidak ada jenis sesi yang diizinkan tersedia untuk penawaran Random Connect ini.</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletPeerChangeFriendship.cpp" line="115" />
@@ -6303,7 +6557,7 @@ Jika Kunci Jaringan salah, Anda mungkin akan diblokir sebagai peretas.</translat
         <message>
             <location filename="../nolimitgui/src/AppletPeerChangeFriendship.cpp" line="126" />
             <source>My Friendship To </source>
-            <translation>Persahabatanku Dengan</translation>
+            <translation>Persahabatanku Dengan </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletPeerChangeFriendship.cpp" line="298" />
@@ -6319,6 +6573,53 @@ Jika Kunci Jaringan salah, Anda mungkin akan diblokir sebagai peretas.</translat
             <location filename="../nolimitgui/src/AppletPeerReplyFileOffer.cpp" line="41" />
             <source>Receive File</source>
             <translation>Terima Berkas</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletPeerVideoPhone.cpp" line="50" />
+            <source>In Video Phone Session</source>
+            <translation>Dalam Sesi Telepon Video</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletPeerVideoPhone.cpp" line="54" />
+            <source>Video Phone Session Ended</source>
+            <translation>Sesi Telepon Video Berakhir</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletPeerVideoPhone.cpp" line="121" />
+            <location filename="../nolimitgui/src/AppletPeerVoicePhone.cpp" line="132" />
+            <source>Session Started</source>
+            <translation>Sesi Dimulai</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletPeerVideoPhone.cpp" line="135" />
+            <location filename="../nolimitgui/src/AppletPeerVoicePhone.cpp" line="146" />
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="1342" />
+            <source>Session Ended</source>
+            <translation>Sesi Berakhir</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletPeerViewSharedFiles.cpp" line="466" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2601" />
+            <source>Confirm Shred File</source>
+            <translation>Konfirmasikan File Rusak</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletPeerViewSharedFiles.cpp" line="466" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2601" />
+            <source>Confirm Delete File</source>
+            <translation>Konfirmasi Hapus File</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletPeerViewSharedFiles.cpp" line="470" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2605" />
+            <source>Are You Sure You Want To Write Random Data Into The File Then Delete From The Device?</source>
+            <translation>Apakah Anda Yakin Ingin Menulis Data Acak Ke Dalam File Lalu Menghapusnya Dari Perangkat?</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletPeerViewSharedFiles.cpp" line="474" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2609" />
+            <source>Are You Sure To Delete The File From The Device?</source>
+            <translation>Apakah Anda Yakin Akan Menghapus File Dari Perangkat?</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletPeerVoicePhone.cpp" line="65" />
@@ -6341,53 +6642,48 @@ Jika Kunci Jaringan salah, Anda mungkin akan diblokir sebagai peretas.</translat
             <translation>Jenis File Media Tidak Dikenal</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="286" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="292" />
             <source>Media Player empty file list</source>
             <translation>Daftar file kosong Pemutar Media</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="308" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="314" />
             <source>Media Player could not play file</source>
             <translation>Pemutar Media tidak dapat memutar file</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="313" />
-            <location filename="../nolimitgui/src/AppletPlayerNlcBase.cpp" line="185" />
-            <location filename="../nolimitgui/src/AppletPlayerNlcBase.cpp" line="335" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="319" />
+            <location filename="../nolimitgui/src/AppletPlayerNlcBase.cpp" line="204" />
+            <location filename="../nolimitgui/src/AppletPlayerNlcBase.cpp" line="360" />
             <source>File does not exist</source>
             <translation>Berkas tidak ada</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="320" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="326" />
             <source>Exception playing</source>
             <translation>Pengecualian bermain</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="360" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="366" />
             <source>Media Player not read</source>
             <translation>Pemutar Media tidak terbaca</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="360" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="366" />
             <source>Try again when Media Player is ready</source>
             <translation>Coba lagi ketika Media Player sudah siap</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="416" />
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="453" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="422" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="459" />
             <source>Could not read file</source>
             <translation>Tidak dapat membaca file</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="416" />
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="453" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="422" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="459" />
             <source>Failed to get file info</source>
             <translation>Gagal mendapatkan info file</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="863" />
-            <source>Anonymous</source>
-            <translation>Anonim</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="219" />
@@ -6398,62 +6694,6 @@ Jika Kunci Jaringan salah, Anda mungkin akan diblokir sebagai peretas.</translat
             <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="236" />
             <source>Block User</source>
             <translation>Blokir Pengguna</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1044" />
-            <source>Unset Preferred</source>
-            <translation>Batalkan Setelan Pilihan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1117" />
-            <source>Delete User From Database</source>
-            <translation>Hapus Pengguna Dari Database</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1152" />
-            <location filename="../nolimitgui/src/FriendListWidget.cpp" line="188" />
-            <location filename="../nolimitgui/src/PersonOfferListWidget.cpp" line="189" />
-            <source>Insufficient Permission Level</source>
-            <translation>Tingkat Izin Tidak Memadai</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1153" />
-            <source> Requires </source>
-            <translation>Membutuhkan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1154" />
-            <location filename="../nolimitgui/src/FriendListWidget.cpp" line="189" />
-            <location filename="../nolimitgui/src/PersonOfferListWidget.cpp" line="190" />
-            <source> To Access Plugin </source>
-            <translation>Untuk Mengakses Plugin</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/FriendListWidget.cpp" line="190" />
-            <location filename="../nolimitgui/src/PersonOfferListWidget.cpp" line="191" />
-            <source>Insufficient Permission Level </source>
-            <translation>Tingkat Izin Tidak Memadai</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="783" />
-            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="784" />
-            <source>Offer Friendship</source>
-            <translation>Tawarkan Persahabatan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="785" />
-            <source>Offer Join Group</source>
-            <translation>Tawaran Gabung Grup</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1048" />
-            <source>Set Preferred</source>
-            <translation>Tetapkan Pilihan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="875" />
-            <source>Applet Menu</source>
-            <translation>Menu Applet</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="278" />
@@ -6476,6 +6716,22 @@ Jika Kunci Jaringan salah, Anda mungkin akan diblokir sebagai peretas.</translat
             <translation>Batalkan Penawaran Koneksi Acak</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="783" />
+            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="784" />
+            <source>Offer Friendship</source>
+            <translation>Tawarkan Persahabatan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="785" />
+            <source>Offer Join Group</source>
+            <translation>Tawaran Gabung Grup</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="875" />
+            <source>Applet Menu</source>
+            <translation>Menu Applet</translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="998" />
             <source>Delete A Database</source>
             <translation>Hapus Basis Data</translation>
@@ -6489,12 +6745,12 @@ Jika Kunci Jaringan salah, Anda mungkin akan diblokir sebagai peretas.</translat
             <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1031" />
             <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1035" />
             <source>Database </source>
-            <translation>Basis data</translation>
+            <translation>Basis data </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1031" />
             <source> was deleted</source>
-            <translation>telah dihapus</translation>
+            <translation> telah dihapus</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1035" />
@@ -6504,7 +6760,17 @@ Jika Kunci Jaringan salah, Anda mungkin akan diblokir sebagai peretas.</translat
         <message>
             <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1035" />
             <source> could not be deleted</source>
-            <translation>tidak dapat dihapus</translation>
+            <translation> tidak dapat dihapus</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1044" />
+            <source>Unset Preferred</source>
+            <translation>Batalkan Setelan Pilihan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1048" />
+            <source>Set Preferred</source>
+            <translation>Tetapkan Pilihan</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1080" />
@@ -6515,12 +6781,36 @@ Jika Kunci Jaringan salah, Anda mungkin akan diblokir sebagai peretas.</translat
         <message>
             <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1096" />
             <source>To send a frienship request you must set </source>
-            <translation>Untuk mengirim permintaan pertemanan, Anda harus mengatur</translation>
+            <translation>Untuk mengirim permintaan pertemanan, Anda harus mengatur </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1096" />
             <source> as friend or higher first</source>
-            <translation>sebagai teman atau lebih tinggi dulu</translation>
+            <translation> sebagai teman atau lebih tinggi dulu</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1117" />
+            <source>Delete User From Database</source>
+            <translation>Hapus Pengguna Dari Database</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1152" />
+            <location filename="../nolimitgui/src/FriendListWidget.cpp" line="188" />
+            <location filename="../nolimitgui/src/PersonOfferListWidget.cpp" line="189" />
+            <source>Insufficient Permission Level</source>
+            <translation>Tingkat Izin Tidak Memadai</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1153" />
+            <source> Requires </source>
+            <translation> Membutuhkan </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1154" />
+            <location filename="../nolimitgui/src/FriendListWidget.cpp" line="189" />
+            <location filename="../nolimitgui/src/PersonOfferListWidget.cpp" line="190" />
+            <source> To Access Plugin </source>
+            <translation> Untuk Mengakses Plugin </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletRandomConnectListLocalView.cpp" line="66" />
@@ -6617,15 +6907,7 @@ Jika Kunci Jaringan salah, Anda mungkin akan diblokir sebagai peretas.</translat
         <message>
             <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="259" />
             <source> device is saved as preferred Sound In Device</source>
-            <translation>perangkat disimpan sebagai Suara Dalam Perangkat pilihan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="217" />
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="265" />
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="264" />
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="289" />
-            <source> failed to initialize</source>
-            <translation>gagal diinisialisasi</translation>
+            <translation> perangkat disimpan sebagai Suara Dalam Perangkat pilihan</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="270" />
@@ -6646,7 +6928,7 @@ Jika Kunci Jaringan salah, Anda mungkin akan diblokir sebagai peretas.</translat
         <message>
             <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="284" />
             <source> device is saved as preferred Sound Out Device</source>
-            <translation>perangkat disimpan sebagai Perangkat Sound Out pilihan</translation>
+            <translation> perangkat disimpan sebagai Perangkat Sound Out pilihan</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="295" />
@@ -6686,12 +6968,12 @@ Jika Kunci Jaringan salah, Anda mungkin akan diblokir sebagai peretas.</translat
         <message>
             <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="372" />
             <source>Echo Delays </source>
-            <translation>Penundaan Gema</translation>
+            <translation>Penundaan Gema </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="385" />
             <source>, </source>
-            <translation>,</translation>
+            <translation>, </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="399" />
@@ -6710,13 +6992,13 @@ Delay Test Is Invalid
         <message>
             <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="403" />
             <source>If you are having echo issues you may want to enter value </source>
-            <translation>Jika Anda mengalami masalah gema, Anda mungkin ingin memasukkan nilai</translation>
+            <translation>Jika Anda mengalami masalah gema, Anda mungkin ingin memasukkan nilai </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="405" />
             <source> into  Echo delay ms field and click Save Echo Delay To Echo Canceller button
 </source>
-            <translation>ke dalam kolom Echo delay ms dan klik tombol Save Echo Delay To Echo Canceller</translation>
+            <translation> ke dalam kolom Echo delay ms dan klik tombol Save Echo Delay To Echo Canceller</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="407" />
@@ -6739,11 +7021,6 @@ Delay Test Is Invalid
             <translation>Tidak ada file pengujian yang dipilih atau indeks file pengujian tidak valid</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="984" />
-            <source>Push To Talk</source>
-            <translation>Dorong Untuk Bicara</translation>
-        </message>
-        <message>
             <location filename="../nolimitgui/src/AppletTestAndDebug.cpp" line="461" />
             <source>Are you sure?</source>
             <translation>Apakah kamu yakin?</translation>
@@ -6756,7 +7033,27 @@ Delay Test Is Invalid
         <message>
             <location filename="../nolimitgui/src/AppletTestAndDebug.cpp" line="464" />
             <source> of disk space freed by deleting cached thumbnails</source>
-            <translation>ruang disk yang dibebaskan dengan menghapus thumbnail yang di-cache</translation>
+            <translation> ruang disk yang dibebaskan dengan menghapus thumbnail yang di-cache</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletTestUpnp.cpp" line="232" />
+            <source>Invalid Port</source>
+            <translation>Pelabuhan Tidak Valid</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletTestUpnp.cpp" line="232" />
+            <source>Port must be greater than 79</source>
+            <translation>Port harus lebih besar dari 79</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletTestUpnp.cpp" line="242" />
+            <source>Invalid IP Address</source>
+            <translation>Alamat IP tidak valid</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletTestUpnp.cpp" line="242" />
+            <source>IP Address is invalid</source>
+            <translation>Alamat IP tidak valid</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletTheme.cpp" line="36" />
@@ -6796,13 +7093,13 @@ Delay Test Is Invalid
         <message>
             <location filename="../nolimitgui/src/AppletUserIdentity.cpp" line="126" />
             <source>Are You Sure You Want To Login To Account </source>
-            <translation>Apakah Anda Yakin Ingin Masuk Ke Akun</translation>
+            <translation>Apakah Anda Yakin Ingin Masuk Ke Akun </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletUserIdentity.cpp" line="197" />
             <location filename="../nolimitgui/src/AppletUserIdentity.cpp" line="236" />
             <source>Applied Mood Message Change </source>
-            <translation>Perubahan Pesan Suasana Hati yang Diterapkan</translation>
+            <translation>Perubahan Pesan Suasana Hati yang Diterapkan </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletUserIdentity.cpp" line="198" />
@@ -6813,7 +7110,7 @@ Delay Test Is Invalid
         <message>
             <location filename="../nolimitgui/src/AppletUserIdentity.cpp" line="217" />
             <source>Applied Age and Preferred Content Change </source>
-            <translation>Usia yang Diterapkan dan Perubahan Konten Pilihan</translation>
+            <translation>Usia yang Diterapkan dan Perubahan Konten Pilihan </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletUserIdentity.cpp" line="218" />
@@ -6823,7 +7120,7 @@ Delay Test Is Invalid
         <message>
             <location filename="../nolimitgui/src/AppletUserIdentity.cpp" line="255" />
             <source>Applied Gender Change </source>
-            <translation>Perubahan Gender yang Diterapkan</translation>
+            <translation>Perubahan Gender yang Diterapkan </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletUserIdentity.cpp" line="256" />
@@ -6879,6 +7176,26 @@ Delay Test Is Invalid
             <translation>Tidak menghapus akun terakhir</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/AudioMgrDelayTest.cpp" line="155" />
+            <source>Sound Delay Not Detected. Check speaker volume and that microphone is on </source>
+            <translation>Penundaan Suara Tidak Terdeteksi. Periksa volume speaker dan mikrofon aktif </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AudioMgrDelayTest.cpp" line="159" />
+            <source>Sound Delay too short.. probably noise </source>
+            <translation>Penundaan Suara terlalu pendek.. mungkin berisik </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AudioMgrDelayTest.cpp" line="163" />
+            <source>Sound Delay too long.. probably mic level low </source>
+            <translation>Penundaan Suara terlalu lama.. mungkin level mikrofon rendah </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AudioMgrDelayTest.cpp" line="167" />
+            <source>Sound Delay is </source>
+            <translation>Penundaan Suara adalah </translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/AvatarBar.cpp" line="63" />
             <source>queued</source>
             <translation>mengantri</translation>
@@ -6892,6 +7209,31 @@ Delay Test Is Invalid
             <location filename="../nolimitgui/src/ChatEntryWidget.cpp" line="363" />
             <source>ChatEntryWidget client callback is not set</source>
             <translation>Panggilan balik klien ChatEntryWidget tidak disetel</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/ClipboardCopyWidget.cpp" line="23" />
+            <source>Copy to clipboard</source>
+            <translation>Salin ke papan klip</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/ClipboardCopyWidget.cpp" line="32" />
+            <source>Text Is Empty</source>
+            <translation>Teks Kosong</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/ClipboardCopyWidget.cpp" line="32" />
+            <source>Cannot copy empty text to clipboard</source>
+            <translation>Tidak dapat menyalin teks kosong ke papan klip</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/ClipboardPasteWidget.cpp" line="22" />
+            <source>Paste from clipboard</source>
+            <translation>Tempel dari papan klip</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/ClipboardPasteWidget.cpp" line="33" />
+            <source>Cannot paste empty clipboard</source>
+            <translation>Tidak dapat menempelkan papan klip kosong</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/FileActionMenu.cpp" line="84" />
@@ -6939,9 +7281,50 @@ Delay Test Is Invalid
             <translation>File Rusak</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/FileMediaSelectWidget.cpp" line="96" />
+            <source>Cancel scan</source>
+            <translation>Batalkan pemindaian</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/FileMediaSelectWidget.cpp" line="102" />
+            <source>Scan folder for media</source>
+            <translation>Pindai folder untuk mencari media</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/FriendListWidget.cpp" line="190" />
+            <location filename="../nolimitgui/src/PersonOfferListWidget.cpp" line="191" />
+            <source>Insufficient Permission Level </source>
+            <translation>Tingkat Izin Tidak Memadai </translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="62" />
             <source>Open Folder</source>
             <translation>Buka Folder</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="299" />
+            <source>Select Media File</source>
+            <translation>Pilih File Media</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="307" />
+            <source>Select Video File</source>
+            <translation>Pilih File Video</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="317" />
+            <source>Select Audio File</source>
+            <translation>Pilih File Audio</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="326" />
+            <source>Select Image File</source>
+            <translation>Pilih File Gambar</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="410" />
+            <source>Cannot Read File</source>
+            <translation>Tidak Dapat Membaca File</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1389" />
@@ -6980,9 +7363,19 @@ Delay Test Is Invalid
             <translation>Nama Pengguna tidak boleh memiliki garis miring karakter khusus.</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1419" />
+            <source>User Name is too long (maximum 31 chars).</source>
+            <translation>Nama Pengguna terlalu panjang (maksimum 31 karakter).</translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1425" />
             <source>User Name is too short (minimum 4 chars).</source>
             <translation>Nama Pengguna terlalu pendek (minimal 4 karakter).</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1444" />
+            <source>Mood Message is too long (maximum 31 chars)</source>
+            <translation>Pesan Suasana Hati terlalu panjang (maksimum 31 karakter)</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1456" />
@@ -7001,6 +7394,11 @@ Delay Test Is Invalid
             <translation>Usia Tidak boleh lebih dari 120 tahun</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2260" />
+            <source>Could not create thumbnail asset</source>
+            <translation>Tidak dapat membuat aset thumbnail</translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2319" />
             <source>User Unavailable</source>
             <translation>Pengguna Tidak Tersedia</translation>
@@ -7008,12 +7406,22 @@ Delay Test Is Invalid
         <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2320" />
             <source>User </source>
-            <translation>Pengguna</translation>
+            <translation>Pengguna </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2320" />
             <source> Is Unavailable</source>
-            <translation>Tidak Tersedia</translation>
+            <translation> Tidak Tersedia</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2324" />
+            <source>User is offline</source>
+            <translation>Pengguna sedang offline</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2325" />
+            <source>User is no longer connected</source>
+            <translation>Pengguna tidak lagi terhubung</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2329" />
@@ -7026,6 +7434,12 @@ Delay Test Is Invalid
             <translation>Sudah dalam sesi. Silakan tutup sesi yang ada dan coba lagi</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2334" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2335" />
+            <source>Session not found</source>
+            <translation>Sesi tidak ditemukan</translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2339" />
             <source>Sent User An Offer</source>
             <translation>Mengirimkan Penawaran kepada Pengguna</translation>
@@ -7033,7 +7447,7 @@ Delay Test Is Invalid
         <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2340" />
             <source>Offer Was Sent To  </source>
-            <translation>Penawaran Dikirim Ke</translation>
+            <translation>Penawaran Dikirim Ke  </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2344" />
@@ -7043,7 +7457,7 @@ Delay Test Is Invalid
         <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2345" />
             <source>Offer Send Failed  </source>
-            <translation>Pengiriman Penawaran Gagal</translation>
+            <translation>Pengiriman Penawaran Gagal  </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2349" />
@@ -7053,7 +7467,7 @@ Delay Test Is Invalid
         <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2350" />
             <source>You are not connected to host </source>
-            <translation>Anda tidak terhubung ke host</translation>
+            <translation>Anda tidak terhubung ke host </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2354" />
@@ -7063,58 +7477,7 @@ Delay Test Is Invalid
         <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2355" />
             <source>You must select a user to send to </source>
-            <translation>Anda harus memilih pengguna yang akan dikirimi</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2324" />
-            <source>User is offline</source>
-            <translation>Pengguna sedang offline</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="299" />
-            <source>Select Media File</source>
-            <translation>Pilih File Media</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="307" />
-            <source>Select Video File</source>
-            <translation>Pilih File Video</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="317" />
-            <source>Select Audio File</source>
-            <translation>Pilih File Audio</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="326" />
-            <source>Select Image File</source>
-            <translation>Pilih File Gambar</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="410" />
-            <source>Cannot Read File</source>
-            <translation>Tidak Dapat Membaca File</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1419" />
-            <source>User Name is too long (maximum 31 chars).</source>
-            <translation>Nama Pengguna terlalu panjang (maksimum 31 karakter).</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1444" />
-            <source>Mood Message is too long (maximum 31 chars)</source>
-            <translation>Pesan Suasana Hati terlalu panjang (maksimum 31 karakter)</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2325" />
-            <source>User is no longer connected</source>
-            <translation>Pengguna tidak lagi terhubung</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2334" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2335" />
-            <source>Session not found</source>
-            <translation>Sesi tidak ditemukan</translation>
+            <translation>Anda harus memilih pengguna yang akan dikirimi </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2359" />
@@ -7161,6 +7524,16 @@ Apakah Anda yakin ingin melanjutkan?</translation>
             <translation>Perekaman video gagal dimulai.</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2380" />
+            <source>Unknown Error </source>
+            <translation>Kesalahan Tidak Diketahui </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2380" />
+            <source> for user </source>
+            <translation> untuk pengguna </translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2391" />
             <source>File Name Is Empty</source>
             <translation>Nama File Kosong</translation>
@@ -7172,9 +7545,19 @@ Apakah Anda yakin ingin melanjutkan?</translation>
             <translation>Izin Akses File Ditolak Oleh Pengguna</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2408" />
+            <source>Application Not Ready</source>
+            <translation>Aplikasi Belum Siap</translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2409" />
             <source>Cannot launch applet until network is available</source>
             <translation>Tidak dapat meluncurkan applet sampai jaringan tersedia</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2409" />
+            <source>Cannot Launch Applet Until Application Has Initialized</source>
+            <translation>Tidak Dapat Meluncurkan Applet Sampai Aplikasi Telah Diinisialisasi</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2417" />
@@ -7233,6 +7616,21 @@ Apakah Anda yakin ingin melanjutkan?</translation>
             <translation>Membutuhkan persahabatan teman atau lebih tinggi</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2471" />
+            <source>Invalid Host Id</source>
+            <translation>Id Host Tidak Valid</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2472" />
+            <source>Host Id has not been set</source>
+            <translation>Id Host belum ditetapkan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2480" />
+            <source>Invalid URL</source>
+            <translation>URL tidak valid</translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2481" />
             <source>The host url is not valid</source>
             <translation>Url host tidak valid</translation>
@@ -7248,9 +7646,36 @@ Apakah Anda yakin ingin melanjutkan?</translation>
             <translation>Url host tidak memiliki tipe host yang valid</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2498" />
+            <source>No Members Online</source>
+            <translation>Tidak Ada Anggota Online</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2499" />
+            <source>There are no members online to send to</source>
+            <translation>Tidak ada anggota online yang dapat dikirimi</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2507" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2561" />
+            <source>Failed to add asset</source>
+            <translation>Gagal menambahkan aset</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2508" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2562" />
+            <source>Failed to add asset. Please check disk space</source>
+            <translation>Gagal menambahkan aset. Silakan periksa ruang disk</translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2517" />
             <source>Failed to send </source>
-            <translation>Gagal mengirim</translation>
+            <translation>Gagal mengirim </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2518" />
+            <source>Failed to send to </source>
+            <translation>Gagal mengirim ke </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2528" />
@@ -7280,36 +7705,19 @@ Apakah Anda yakin ingin melanjutkan?</translation>
         <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2552" />
             <source>Cannot send </source>
-            <translation>Tidak dapat mengirim</translation>
+            <translation>Tidak dapat mengirim </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2553" />
             <source>Cannot send reason: </source>
-            <translation>Tidak dapat mengirimkan alasan:</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="756" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2379" />
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="1388" />
-            <source>Unknown Error</source>
-            <translation>Kesalahan Tidak Diketahui</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2380" />
-            <source>Unknown Error </source>
-            <translation>Kesalahan Tidak Diketahui</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2380" />
-            <source> for user </source>
-            <translation>untuk pengguna</translation>
+            <translation>Tidak dapat mengirimkan alasan: </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiHostedListItem.cpp" line="152" />
             <location filename="../nolimitgui/src/HostedPluginWidget.cpp" line="113" />
             <location filename="../nolimitgui/src/HostJoinRequestListItem.cpp" line="133" />
             <source> Hosted By Me</source>
-            <translation>Diselenggarakan Oleh Saya</translation>
+            <translation> Diselenggarakan Oleh Saya</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiHostedListItem.cpp" line="207" />
@@ -7319,7 +7727,7 @@ Apakah Anda yakin ingin melanjutkan?</translation>
         <message>
             <location filename="../nolimitgui/src/GuiOfferMgrBase.cpp" line="502" />
             <source> Is Offline </source>
-            <translation>Sedang Offline</translation>
+            <translation> Sedang Offline </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiOfferMgrBase.cpp" line="948" />
@@ -7329,17 +7737,17 @@ Apakah Anda yakin ingin melanjutkan?</translation>
         <message>
             <location filename="../nolimitgui/src/GuiOfferMgrBase.cpp" line="949" />
             <source>Requires </source>
-            <translation>Membutuhkan</translation>
+            <translation>Membutuhkan </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiOfferMgrBase.cpp" line="949" />
             <source> but only </source>
-            <translation>tapi hanya</translation>
+            <translation> tapi hanya </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiOfferMgrBase.cpp" line="950" />
             <source> available </source>
-            <translation>tersedia</translation>
+            <translation> tersedia</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiOfferMgrBase.cpp" line="1042" />
@@ -7374,11 +7782,6 @@ Apakah Anda yakin ingin melanjutkan?</translation>
             <location filename="../nolimitgui/src/GuiOfferSession.cpp" line="108" />
             <source>User Uninitialized</source>
             <translation>Pengguna Tidak Diinisialisasi</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="1804" />
-            <source> </source>
-            <translation type="unfinished" />
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="145" />
@@ -7417,57 +7820,57 @@ Apakah Anda yakin ingin melanjutkan?</translation>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="186" />
             <source>No Error </source>
-            <translation>Tidak Ada Kesalahan</translation>
+            <translation>Tidak Ada Kesalahan </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="188" />
             <source>Comm Error Invalid Packet </source>
-            <translation>Paket Tidak Valid Kesalahan Komunikasi</translation>
+            <translation>Paket Tidak Valid Kesalahan Komunikasi </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="190" />
             <source>Comm Error User Offline </source>
-            <translation>Kesalahan Komunikasi Pengguna Offline</translation>
+            <translation>Kesalahan Komunikasi Pengguna Offline </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="192" />
             <source>Comm Error Search Text To Short </source>
-            <translation>Teks Pencarian Kesalahan Comm Menjadi Pendek</translation>
+            <translation>Teks Pencarian Kesalahan Comm Menjadi Pendek </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="194" />
             <source>Comm Error Search Text To Long </source>
-            <translation>Teks Pencarian Kesalahan Comm Terlalu Panjang</translation>
+            <translation>Teks Pencarian Kesalahan Comm Terlalu Panjang </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="196" />
             <source>Comm Error Search No Match </source>
-            <translation>Pencarian Kesalahan Komunikasi Tidak Cocok</translation>
+            <translation>Pencarian Kesalahan Komunikasi Tidak Cocok </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="198" />
             <source>Comm Error Invalid Host Type </source>
-            <translation>Kesalahan Komunikasi Jenis Host Tidak Valid</translation>
+            <translation>Kesalahan Komunikasi Jenis Host Tidak Valid </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="200" />
             <source>Comm Error Plugin Not Enabled </source>
-            <translation>Plugin Kesalahan Komunikasi Tidak Diaktifkan</translation>
+            <translation>Plugin Kesalahan Komunikasi Tidak Diaktifkan </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="202" />
             <source>Comm Error Plugin Permission Level </source>
-            <translation>Tingkat Izin Plugin Kesalahan Komunikasi</translation>
+            <translation>Tingkat Izin Plugin Kesalahan Komunikasi </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="204" />
             <source>Comm Error Invalid Param </source>
-            <translation>Kesalahan Komunikasi Param Tidak Valid</translation>
+            <translation>Kesalahan Komunikasi Param Tidak Valid </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="206" />
             <source>Comm Error Invalid </source>
-            <translation>Kesalahan Komunikasi Tidak Valid</translation>
+            <translation>Kesalahan Komunikasi Tidak Valid </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="218" />
@@ -7526,31 +7929,31 @@ Apakah Anda yakin ingin melanjutkan?</translation>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="265" />
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1864" />
             <source>Anonymous </source>
-            <translation>Anonim</translation>
+            <translation>Anonim </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="267" />
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1866" />
             <source>Guest </source>
-            <translation>Tamu</translation>
+            <translation>Tamu </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="269" />
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1868" />
             <source>Friend </source>
-            <translation>Teman</translation>
+            <translation>Teman </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="271" />
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1870" />
             <source>Administrator </source>
-            <translation>Administrator</translation>
+            <translation>Administrator </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="273" />
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1872" />
             <source>Ignore </source>
-            <translation>Abaikan</translation>
+            <translation>Abaikan </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="285" />
@@ -7565,113 +7968,113 @@ Apakah Anda yakin ingin melanjutkan?</translation>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="299" />
             <source>Group Host </source>
-            <translation>Tuan Rumah Grup</translation>
+            <translation>Tuan Rumah Grup </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="301" />
             <source>Chat Room Host </source>
-            <translation>Tuan Rumah Ruang Obrolan</translation>
+            <translation>Tuan Rumah Ruang Obrolan </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="303" />
             <source>Random Connect Host </source>
-            <translation>Host Koneksi Acak</translation>
+            <translation>Host Koneksi Acak </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="305" />
             <source>Peer User </source>
-            <translation>Pengguna Rekan</translation>
+            <translation>Pengguna Rekan </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="307" />
             <source>Network Host </source>
-            <translation>Tuan Rumah Jaringan</translation>
+            <translation>Tuan Rumah Jaringan </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="309" />
             <source>Connect Test Host </source>
-            <translation>Hubungkan Host Tes</translation>
+            <translation>Hubungkan Host Tes </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="311" />
             <source>Unknown Host Type </source>
-            <translation>Jenis Host Tidak Dikenal</translation>
+            <translation>Jenis Host Tidak Dikenal </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="353" />
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1554" />
             <source>Host Search Status Unknown </source>
-            <translation>Status Pencarian Host Tidak Diketahui</translation>
+            <translation>Status Pencarian Host Tidak Diketahui </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="355" />
             <source>Host Search Invalid Url </source>
-            <translation>Url Pencarian Host Tidak Valid</translation>
+            <translation>Url Pencarian Host Tidak Valid </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="357" />
             <source>Host Search Querying Id In Progress </source>
-            <translation>ID Permintaan Pencarian Host Sedang Berlangsung</translation>
+            <translation>ID Permintaan Pencarian Host Sedang Berlangsung </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="359" />
             <source>Host Search Querying Id Success </source>
-            <translation>Id Kueri Penelusuran Host Berhasil</translation>
+            <translation>Id Kueri Penelusuran Host Berhasil </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="361" />
             <source>Host Search Query Id Failed </source>
-            <translation>Id Permintaan Pencarian Host Gagal</translation>
+            <translation>Id Permintaan Pencarian Host Gagal </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="363" />
             <source>Host Search Connecting </source>
-            <translation>Koneksi Pencarian Host</translation>
+            <translation>Koneksi Pencarian Host </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="365" />
             <source>Host Search Connect Success </source>
-            <translation>Pencarian Host Hubungkan Sukses</translation>
+            <translation>Pencarian Host Hubungkan Sukses </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="367" />
             <source>Host Search Connect Failed </source>
-            <translation>Sambungan Pencarian Host Gagal</translation>
+            <translation>Sambungan Pencarian Host Gagal </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="369" />
             <source>Host Search Handshaking </source>
-            <translation>Jabat Tangan Pencarian Tuan Rumah</translation>
+            <translation>Jabat Tangan Pencarian Tuan Rumah </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="371" />
             <source>Host Search Handshake Timeout </source>
-            <translation>Batas Waktu Jabat Tangan Pencarian Host</translation>
+            <translation>Batas Waktu Jabat Tangan Pencarian Host </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="374" />
             <source>Host Search Sending Request </source>
-            <translation>Permintaan Pengiriman Pencarian Host</translation>
+            <translation>Permintaan Pengiriman Pencarian Host </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="376" />
             <source>Host Search Send Request Failed </source>
-            <translation>Permintaan Pengiriman Pencarian Host Gagal</translation>
+            <translation>Permintaan Pengiriman Pencarian Host Gagal </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="378" />
             <source>Host Search Success </source>
-            <translation>Pencarian Tuan Rumah Berhasil</translation>
+            <translation>Pencarian Tuan Rumah Berhasil </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="380" />
             <source>Host Search Failed </source>
-            <translation>Pencarian Host Gagal</translation>
+            <translation>Pencarian Host Gagal </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="383" />
             <source>Host Search Fail Permission </source>
-            <translation>Izin Gagal Pencarian Host</translation>
+            <translation>Izin Gagal Pencarian Host </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="385" />
@@ -7681,27 +8084,27 @@ Apakah Anda yakin ingin melanjutkan?</translation>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="387" />
             <source>Host Search Invalid Param </source>
-            <translation>Param Pencarian Host Tidak Valid</translation>
+            <translation>Param Pencarian Host Tidak Valid </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="389" />
             <source>Host Search Plugin Disabled </source>
-            <translation>Plugin Pencarian Host Dinonaktifkan</translation>
+            <translation>Plugin Pencarian Host Dinonaktifkan </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="391" />
             <source>Host Search No Matches </source>
-            <translation>Pencarian Host Tidak Ada yang Cocok</translation>
+            <translation>Pencarian Host Tidak Ada yang Cocok </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="393" />
             <source>Host Search Completed </source>
-            <translation>Pencarian Host Selesai</translation>
+            <translation>Pencarian Host Selesai </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="395" />
             <source>Invalid Host Search Param </source>
-            <translation>Param Pencarian Host tidak valid</translation>
+            <translation>Param Pencarian Host tidak valid </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="405" />
@@ -7756,7 +8159,7 @@ Apakah Anda yakin ingin melanjutkan?</translation>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="462" />
             <source>View About Me Requires </source>
-            <translation>Lihat Tentang Saya Membutuhkan</translation>
+            <translation>Lihat Tentang Saya Membutuhkan </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="464" />
@@ -7769,7 +8172,7 @@ Apakah Anda yakin ingin melanjutkan?</translation>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="705" />
             <location filename="../nolimitgui/src/GuiParams.cpp" line="740" />
             <source> permission</source>
-            <translation>izin</translation>
+            <translation> izin</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="469" />
@@ -7809,7 +8212,7 @@ Apakah Anda yakin ingin melanjutkan?</translation>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="496" />
             <source>View Story Board Requires </source>
-            <translation>Lihat Kebutuhan Papan Cerita</translation>
+            <translation>Lihat Kebutuhan Papan Cerita </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="503" />
@@ -7849,7 +8252,7 @@ Apakah Anda yakin ingin melanjutkan?</translation>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="532" />
             <source>Send A File Requires </source>
-            <translation>Diperlukan Pengiriman File</translation>
+            <translation>Diperlukan Pengiriman File </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="540" />
@@ -7885,7 +8288,7 @@ Apakah Anda yakin ingin melanjutkan?</translation>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="567" />
             <source>Shared Files Requires </source>
-            <translation>Membutuhkan File Bersama</translation>
+            <translation>Membutuhkan File Bersama </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="572" />
@@ -7915,7 +8318,7 @@ Apakah Anda yakin ingin melanjutkan?</translation>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="601" />
             <source>Shared Web Cam Requires </source>
-            <translation>Membutuhkan Kamera Web Bersama</translation>
+            <translation>Membutuhkan Kamera Web Bersama </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="608" />
@@ -7955,7 +8358,7 @@ Apakah Anda yakin ingin melanjutkan?</translation>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="635" />
             <source>Voice Call Requires </source>
-            <translation>Diperlukan Panggilan Suara</translation>
+            <translation>Diperlukan Panggilan Suara </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="642" />
@@ -7993,34 +8396,9 @@ Apakah Anda yakin ingin melanjutkan?</translation>
             <translation>Tawarkan Mainkan Kebenaran Atau Tantangan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="992" />
-            <source>Truth Or Dare</source>
-            <translation>Kebenaran Atau Tantangan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="1702" />
-            <source>Sending Offer</source>
-            <translation>Mengirim Penawaran</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="1744" />
-            <source>Offer: Join Chat Room</source>
-            <translation>Penawaran: Bergabunglah dengan Ruang Obrolan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="1760" />
-            <source>Offer: Random Connect Session</source>
-            <translation>Penawaran: Sesi Koneksi Acak</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="2229" />
-            <source> is offline</source>
-            <translation>sedang offline</translation>
-        </message>
-        <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="669" />
             <source>Truth Or Dare Requires </source>
-            <translation>Dibutuhkan Kebenaran Atau Tantangan</translation>
+            <translation>Dibutuhkan Kebenaran Atau Tantangan </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="676" />
@@ -8060,7 +8438,7 @@ Apakah Anda yakin ingin melanjutkan?</translation>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="703" />
             <source>Text Chat Requires </source>
-            <translation>Diperlukan Obrolan Teks</translation>
+            <translation>Diperlukan Obrolan Teks </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="710" />
@@ -8095,7 +8473,7 @@ Apakah Anda yakin ingin melanjutkan?</translation>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="738" />
             <source>Video Chat Requires </source>
-            <translation>Diperlukan Obrolan Video</translation>
+            <translation>Diperlukan Obrolan Video </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="745" />
@@ -8207,6 +8585,11 @@ Apakah Anda yakin ingin melanjutkan?</translation>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="861" />
             <source>Disabled</source>
             <translation>Dengan disabilitas</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="863" />
+            <source>Anonymous</source>
+            <translation>Anonim</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="867" />
@@ -8329,9 +8712,14 @@ Apakah Anda yakin ingin melanjutkan?</translation>
             <translation>Panggilan Suara</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/MultiSessionState.cpp" line="386" />
-            <source>Play Truth Or Dare</source>
-            <translation>Mainkan Kebenaran Atau Tantangan</translation>
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="984" />
+            <source>Push To Talk</source>
+            <translation>Dorong Untuk Bicara</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="992" />
+            <source>Truth Or Dare</source>
+            <translation>Kebenaran Atau Tantangan</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="996" />
@@ -8558,67 +8946,67 @@ Apakah Anda yakin ingin melanjutkan?</translation>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1220" />
             <source> About Me Page Service </source>
-            <translation>Tentang Saya Layanan Halaman</translation>
+            <translation> Tentang Saya Layanan Halaman </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1224" />
             <source> View About Me Page </source>
-            <translation>Lihat Halaman Tentang Saya</translation>
+            <translation> Lihat Halaman Tentang Saya </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1228" />
             <source> Receive A File </source>
-            <translation>Terima File</translation>
+            <translation> Terima File </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1232" />
             <source> View Shared Files </source>
-            <translation>Lihat File Bersama</translation>
+            <translation> Lihat File Bersama </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1236" />
             <source> Join Chat Session </source>
-            <translation>Bergabunglah dengan Sesi Obrolan</translation>
+            <translation> Bergabunglah dengan Sesi Obrolan </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1240" />
             <source> Voice Phone Call </source>
-            <translation>Panggilan Telepon Suara</translation>
+            <translation> Panggilan Telepon Suara </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1244" />
             <source> Video Chat Offer </source>
-            <translation>Penawaran Obrolan Video</translation>
+            <translation> Penawaran Obrolan Video </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1248" />
             <source> Play Truth Or Dare </source>
-            <translation>Mainkan Kebenaran Atau Tantangan</translation>
+            <translation> Mainkan Kebenaran Atau Tantangan </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1252" />
             <source> Story Board Service</source>
-            <translation>Layanan Papan Cerita</translation>
+            <translation> Layanan Papan Cerita</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1256" />
             <source> View Story Board </source>
-            <translation>Lihat Papan Cerita</translation>
+            <translation> Lihat Papan Cerita </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1260" />
             <source> Shared Files Client </source>
-            <translation>Klien File Bersama</translation>
+            <translation> Klien File Bersama </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1264" />
             <source> Web Cam Server Service</source>
-            <translation>Layanan Server Kamera Web</translation>
+            <translation> Layanan Server Kamera Web</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1268" />
             <source> View Shared Web Cam </source>
-            <translation>Lihat Kamera Web Bersama</translation>
+            <translation> Lihat Kamera Web Bersama </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1272" />
@@ -8628,32 +9016,32 @@ Apakah Anda yakin ingin melanjutkan?</translation>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1287" />
             <source> Invalid </source>
-            <translation>Tidak valid</translation>
+            <translation> Tidak valid </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1291" />
             <source> Not Active </source>
-            <translation>Tidak Aktif</translation>
+            <translation> Tidak Aktif </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1295" />
             <source> Tx Enabled </source>
-            <translation>Terima kasih Diaktifkan</translation>
+            <translation> Terima kasih Diaktifkan</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1299" />
             <source> Rx Enabled </source>
-            <translation>Rx Diaktifkan</translation>
+            <translation>Rx Diaktifkan </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1303" />
             <source> Duplex Enabled </source>
-            <translation>Dupleks Diaktifkan</translation>
+            <translation> Dupleks Diaktifkan </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1307" />
             <source> No Connection </source>
-            <translation>Tidak Ada Koneksi</translation>
+            <translation> Tidak Ada Koneksi </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1311" />
@@ -8694,29 +9082,6 @@ Apakah Anda yakin ingin melanjutkan?</translation>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1718" />
             <source>User Is Offline</source>
             <translation>Pengguna Sedang Offline</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletPeerVideoPhone.cpp" line="50" />
-            <source>In Video Phone Session</source>
-            <translation>Dalam Sesi Telepon Video</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletPeerVideoPhone.cpp" line="54" />
-            <source>Video Phone Session Ended</source>
-            <translation>Sesi Telepon Video Berakhir</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletPeerVideoPhone.cpp" line="121" />
-            <location filename="../nolimitgui/src/AppletPeerVoicePhone.cpp" line="132" />
-            <source>Session Started</source>
-            <translation>Sesi Dimulai</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletPeerVideoPhone.cpp" line="135" />
-            <location filename="../nolimitgui/src/AppletPeerVoicePhone.cpp" line="146" />
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="1342" />
-            <source>Session Ended</source>
-            <translation>Sesi Berakhir</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1352" />
@@ -8961,7 +9326,7 @@ Apakah Anda yakin ingin melanjutkan?</translation>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1487" />
             <source>Host Join Status Unknown </source>
-            <translation>Status Gabung Host Tidak Diketahui</translation>
+            <translation>Status Gabung Host Tidak Diketahui </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1489" />
@@ -9224,6 +9589,11 @@ Apakah Anda yakin ingin melanjutkan?</translation>
             <translation>Tidak Ada Penawaran</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="1702" />
+            <source>Sending Offer</source>
+            <translation>Mengirim Penawaran</translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1704" />
             <source>Offer Sent</source>
             <translation>Penawaran Terkirim</translation>
@@ -9290,6 +9660,11 @@ Apakah Anda yakin ingin melanjutkan?</translation>
             <translation>Penawaran: Bergabunglah dengan Grup</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="1744" />
+            <source>Offer: Join Chat Room</source>
+            <translation>Penawaran: Bergabunglah dengan Ruang Obrolan</translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1746" />
             <source>Offer: Join Random Connect</source>
             <translation>Penawaran: Bergabunglah dengan Random Connect</translation>
@@ -9325,6 +9700,11 @@ Apakah Anda yakin ingin melanjutkan?</translation>
             <translation>Penawaran: Panggilan Telepon Suara</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="1760" />
+            <source>Offer: Random Connect Session</source>
+            <translation>Penawaran: Sesi Koneksi Acak</translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1776" />
             <source>Accepted</source>
             <translation>Diterima</translation>
@@ -9352,7 +9732,12 @@ Apakah Anda yakin ingin melanjutkan?</translation>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1798" />
             <source>Expires </source>
-            <translation>Kedaluwarsa</translation>
+            <translation>Kedaluwarsa </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="1804" />
+            <source> </source>
+            <translation type="unfinished" />
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1816" />
@@ -9367,47 +9752,47 @@ Apakah Anda yakin ingin melanjutkan?</translation>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1829" />
             <source>Everybody </source>
-            <translation>Semuanya</translation>
+            <translation>Semuanya </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1831" />
             <source>Friends Online </source>
-            <translation>Teman Daring</translation>
+            <translation>Teman Daring </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1833" />
             <source>Friends Offline </source>
-            <translation>Teman Offline</translation>
+            <translation>Teman Offline </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1836" />
             <source>Group </source>
-            <translation>Kelompok</translation>
+            <translation>Kelompok </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1838" />
             <source>Chat Room </source>
-            <translation>Ruang Obrolan</translation>
+            <translation>Ruang Obrolan </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1840" />
             <source>Random Connect </source>
-            <translation>Koneksi Acak</translation>
+            <translation>Koneksi Acak </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1843" />
             <source>Ignored </source>
-            <translation>Diabaikan</translation>
+            <translation>Diabaikan </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1846" />
             <source>Online </source>
-            <translation>Daring</translation>
+            <translation>Daring </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1848" />
             <source>Direct Connect </source>
-            <translation>Sambungan Langsung</translation>
+            <translation>Sambungan Langsung </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1850" />
@@ -9417,92 +9802,92 @@ Apakah Anda yakin ingin melanjutkan?</translation>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1854" />
             <source>Unknown </source>
-            <translation>Tidak diketahui</translation>
+            <translation>Tidak diketahui </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1882" />
             <source>Sending Join Request </source>
-            <translation>Mengirim Permintaan Bergabung</translation>
+            <translation>Mengirim Permintaan Bergabung </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1884" />
             <source>Send Join Failed </source>
-            <translation>Kirim Gabung Gagal</translation>
+            <translation>Kirim Gabung Gagal </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1886" />
             <source>Send Join Acked </source>
-            <translation>Kirim Gabung Tercatat</translation>
+            <translation>Kirim Gabung Tercatat </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1888" />
             <source>Join Requested </source>
-            <translation>Bergabung Diminta</translation>
+            <translation>Bergabung Diminta </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1890" />
             <source>Join Was Accepted </source>
-            <translation>Bergabung Diterima</translation>
+            <translation>Bergabung Diterima </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1892" />
             <source>Join Is Accepted </source>
-            <translation>Bergabung Diterima</translation>
+            <translation>Bergabung Diterima </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1894" />
             <source>Join Denied </source>
-            <translation>Gabung Ditolak</translation>
+            <translation>Gabung Ditolak </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1896" />
             <source>Disconnected From Host </source>
-            <translation>Terputus Dari Host</translation>
+            <translation>Terputus Dari Host </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1898" />
             <source>Unknown Join State </source>
-            <translation>Status Gabungan Tidak Diketahui</translation>
+            <translation>Status Gabungan Tidak Diketahui </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1908" />
             <source>All Files </source>
-            <translation>Semua File</translation>
+            <translation>Semua File </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1910" />
             <source>Photo Files </source>
-            <translation>File Foto</translation>
+            <translation>File Foto </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1912" />
             <source>Audio Files </source>
-            <translation>File Audio</translation>
+            <translation>File Audio </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1914" />
             <source>Video Files </source>
-            <translation>File Video</translation>
+            <translation>File Video </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1916" />
             <source>Document Files </source>
-            <translation>File Dokumen</translation>
+            <translation>File Dokumen </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1918" />
             <source>Archive Files </source>
-            <translation>File Arsip</translation>
+            <translation>File Arsip </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1920" />
             <source>Other Files </source>
-            <translation>File Lainnya</translation>
+            <translation>File Lainnya </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1923" />
             <source>Unknown File Filter </source>
-            <translation>Filter File Tidak Dikenal</translation>
+            <translation>Filter File Tidak Dikenal </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2045" />
@@ -9552,12 +9937,12 @@ Apakah Anda yakin ingin melanjutkan?</translation>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2064" />
             <source>Unknown Expire Time </source>
-            <translation>Waktu Kedaluwarsa Tidak Diketahui</translation>
+            <translation>Waktu Kedaluwarsa Tidak Diketahui </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2103" />
             <source>Active Offers </source>
-            <translation>Penawaran Aktif</translation>
+            <translation>Penawaran Aktif </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2105" />
@@ -9567,97 +9952,97 @@ Apakah Anda yakin ingin melanjutkan?</translation>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2108" />
             <source>Unknown Offer View Type </source>
-            <translation>Jenis Tampilan Penawaran Tidak Diketahui</translation>
+            <translation>Jenis Tampilan Penawaran Tidak Diketahui </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2118" />
             <source>Any Connection </source>
-            <translation>Koneksi Apa Pun</translation>
+            <translation>Koneksi Apa Pun </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2120" />
             <source>Host Connection </source>
-            <translation>Koneksi Tuan Rumah</translation>
+            <translation>Koneksi Tuan Rumah </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2122" />
             <source>Client Connection </source>
-            <translation>Koneksi Klien</translation>
+            <translation>Koneksi Klien </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2124" />
             <source>Direct Connection </source>
-            <translation>Koneksi Langsung</translation>
+            <translation>Koneksi Langsung </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2126" />
             <source>Unknown Connect Type </source>
-            <translation>Jenis Sambungan Tidak Diketahui</translation>
+            <translation>Jenis Sambungan Tidak Diketahui </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2136" />
             <source>Connect Status Ready </source>
-            <translation>Hubungkan Status Siap</translation>
+            <translation>Hubungkan Status Siap </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2138" />
             <source>Connect Status Bad Param </source>
-            <translation>Hubungkan Status Param Buruk</translation>
+            <translation>Hubungkan Status Param Buruk </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2140" />
             <source>Connect Status Bad Address </source>
-            <translation>Hubungkan Status Alamat Buruk</translation>
+            <translation>Hubungkan Status Alamat Buruk </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2142" />
             <source>Connect Status Permission Denied </source>
-            <translation>Izin Status Sambungan Ditolak</translation>
+            <translation>Izin Status Sambungan Ditolak </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2144" />
             <source>Connect Status Connecting </source>
-            <translation>Hubungkan Status Menghubungkan</translation>
+            <translation>Hubungkan Status Menghubungkan </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2146" />
             <source>Connect Status Connect Failed </source>
-            <translation>Status Sambungan Sambungan Gagal</translation>
+            <translation>Status Sambungan Sambungan Gagal </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2148" />
             <source>Connect Status Send PktAnn Failed </source>
-            <translation>Status Sambung Kirim PktAnn Gagal</translation>
+            <translation>Status Sambung Kirim PktAnn Gagal </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2150" />
             <source>Connect Status Handshaking </source>
-            <translation>Hubungkan Status Jabat Tangan</translation>
+            <translation>Hubungkan Status Jabat Tangan </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2152" />
             <source>Connect Status Handshake Timed Out </source>
-            <translation>Waktu Jabat Tangan Status Sambungan Habis</translation>
+            <translation>Waktu Jabat Tangan Status Sambungan Habis </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2154" />
             <source>Connect Status Connect Success </source>
-            <translation>Hubungkan Status Hubungkan Sukses</translation>
+            <translation>Hubungkan Status Hubungkan Sukses </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2156" />
             <source>Connect Status Dropped </source>
-            <translation>Status Koneksi Terputus</translation>
+            <translation>Status Koneksi Terputus </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2158" />
             <source>Connect Status Rx PktAnn Timeout </source>
-            <translation>Hubungkan Status Rx PktAnn Batas Waktu</translation>
+            <translation>Hubungkan Status Rx PktAnn Batas Waktu </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2160" />
             <source>Connect Status Unknown </source>
-            <translation>Hubungkan Status Tidak Diketahui</translation>
+            <translation>Hubungkan Status Tidak Diketahui </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2200" />
@@ -9720,6 +10105,16 @@ Apakah Anda yakin ingin melanjutkan?</translation>
             <translation>Jenis Basis Data Tidak Diketahui</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="2229" />
+            <source> is online</source>
+            <translation> sedang online</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="2229" />
+            <source> is offline</source>
+            <translation> sedang offline</translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/GuiPlayerMgr.cpp" line="231" />
             <source>Attempted to play an executable which is not allowed</source>
             <translation>Mencoba memainkan executable yang tidak diizinkan</translation>
@@ -9730,26 +10125,32 @@ Apakah Anda yakin ingin melanjutkan?</translation>
             <translation>Mencoba membuka file arsip yang tidak diizinkan</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/GuiThreadMainLoader.cpp" line="58" />
+            <source>No Writable Location for user data</source>
+            <translation>Tidak Ada Lokasi yang Dapat Ditulis untuk data pengguna</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiThreadMainLoader.cpp" line="59" />
+            <source>No location found to store user data.
+ Application will exit</source>
+            <translation>Tidak ditemukan lokasi untuk menyimpan data pengguna.
+ Aplikasi akan keluar</translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/GuiThumbMgr.cpp" line="535" />
             <location filename="../nolimitgui/src/GuiThumbMgr.cpp" line="627" />
             <source>Invalid emoticon id</source>
             <translation>ID emotikon tidak valid</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiThumbMgr.cpp" line="677" />
-            <location filename="../nolimitgui/src/GuiThumbMgr.cpp" line="683" />
-            <source>Error occured creating emoticon file </source>
+            <location filename="../nolimitgui/src/GuiThumbMgr.cpp" line="571" />
+            <source>Error occured creating emoticon file</source>
             <translation>Terjadi kesalahan saat membuat file emotikon</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiThumbMgr.cpp" line="628" />
             <source>Invalid emoticon id </source>
-            <translation>ID emotikon tidak valid</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiThumbMgr.cpp" line="571" />
-            <source>Error occured creating emoticon file</source>
-            <translation>Terjadi kesalahan saat membuat file emotikon</translation>
+            <translation>ID emotikon tidak valid </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiThumbMgr.cpp" line="670" />
@@ -9759,12 +10160,18 @@ Apakah Anda yakin ingin melanjutkan?</translation>
         <message>
             <location filename="../nolimitgui/src/GuiThumbMgr.cpp" line="671" />
             <source>Error occured creating emoticon asset </source>
-            <translation>Terjadi kesalahan saat membuat aset emotikon</translation>
+            <translation>Terjadi kesalahan saat membuat aset emotikon </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiThumbMgr.cpp" line="676" />
             <source>Could not get file info of emoticon png file</source>
             <translation>Tidak dapat memperoleh info file file png emotikon</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiThumbMgr.cpp" line="677" />
+            <location filename="../nolimitgui/src/GuiThumbMgr.cpp" line="683" />
+            <source>Error occured creating emoticon file </source>
+            <translation>Terjadi kesalahan saat membuat file emotikon </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiThumbMgr.cpp" line="682" />
@@ -9810,12 +10217,12 @@ Apakah Anda yakin ingin melanjutkan?</translation>
         <message>
             <location filename="../nolimitgui/src/IdentLogicInterface.cpp" line="268" />
             <source>Truths: </source>
-            <translation>Kebenaran:</translation>
+            <translation>Kebenaran: </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/IdentLogicInterface.cpp" line="269" />
             <source> Dares: </source>
-            <translation>tantangan:</translation>
+            <translation> tantangan: </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="69" />
@@ -9831,7 +10238,7 @@ Apakah Anda yakin ingin melanjutkan?</translation>
         <message>
             <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="81" />
             <source>Failed to write photo to file </source>
-            <translation>Gagal menulis foto ke file</translation>
+            <translation>Gagal menulis foto ke file </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="82" />
@@ -9854,6 +10261,45 @@ Apakah Anda yakin ingin melanjutkan?</translation>
             <translation>Klik Mikrofon Untuk Mulai Merekam</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/InviteUrlWidget.cpp" line="86" />
+            <source>Pasted invite text</source>
+            <translation>Teks undangan yang ditempel</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/InviteUrlWidget.cpp" line="113" />
+            <source>Private Key Warning</source>
+            <translation>Peringatan Kunci Pribadi</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/InviteUrlWidget.cpp" line="114" />
+            <source>Be sure to get the Network Key for this Network before saving network settings.
+Wrong network key will cause you to be banned as a Hacker</source>
+            <translation>Pastikan untuk mendapatkan Kunci Jaringan untuk Jaringan ini sebelum menyimpan pengaturan jaringan.
+Kunci jaringan yang salah akan menyebabkan Anda diblokir sebagai Peretas</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/InviteUrlWidget.cpp" line="728" />
+            <source>Cannot create Invite</source>
+            <translation>Tidak dapat membuat Undangan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/InviteUrlWidget.cpp" line="728" />
+            <source>Do NOT create Invite without a open Network Port.
+No one can connect to you directly</source>
+            <translation>JANGAN membuat Undangan tanpa Port Jaringan terbuka.
+Tidak ada yang dapat terhubung dengan Anda secara langsung</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/InviteUrlWidget.cpp" line="746" />
+            <source>Hosting plugin not enabled</source>
+            <translation>Plugin hosting tidak diaktifkan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/InviteUrlWidget.cpp" line="746" />
+            <source> has permission level of disabled</source>
+            <translation> memiliki tingkat izin dinonaktifkan</translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/miniaudio/MiniAudioIn.cpp" line="63" />
             <source>No Sound Input Devices Avalable</source>
             <translation>Tidak Ada Perangkat Input Suara yang Tersedia</translation>
@@ -9866,27 +10312,7 @@ Apakah Anda yakin ingin melanjutkan?</translation>
         <message>
             <location filename="../nolimitgui/src/miniaudio/MiniAudioIn.cpp" line="101" />
             <source>Could not initialize sound in device </source>
-            <translation>Tidak dapat menginisialisasi suara di perangkat</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AudioMgrDelayTest.cpp" line="155" />
-            <source>Sound Delay Not Detected. Check speaker volume and that microphone is on </source>
-            <translation>Penundaan Suara Tidak Terdeteksi. Periksa volume speaker dan mikrofon aktif</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AudioMgrDelayTest.cpp" line="159" />
-            <source>Sound Delay too short.. probably noise </source>
-            <translation>Penundaan Suara terlalu pendek.. mungkin berisik</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AudioMgrDelayTest.cpp" line="163" />
-            <source>Sound Delay too long.. probably mic level low </source>
-            <translation>Penundaan Suara terlalu lama.. mungkin level mikrofon rendah</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AudioMgrDelayTest.cpp" line="167" />
-            <source>Sound Delay is </source>
-            <translation>Penundaan Suara adalah</translation>
+            <translation>Tidak dapat menginisialisasi suara di perangkat </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/miniaudio/MiniAudioOut.cpp" line="60" />
@@ -9906,7 +10332,7 @@ Apakah Anda yakin ingin melanjutkan?</translation>
         <message>
             <location filename="../nolimitgui/src/miniaudio/MiniAudioOut.cpp" line="104" />
             <source>Could not initialize sound out device </source>
-            <translation>Tidak dapat menginisialisasi perangkat keluaran suara</translation>
+            <translation>Tidak dapat menginisialisasi perangkat keluaran suara </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/MultiSessionState.cpp" line="378" />
@@ -9927,6 +10353,11 @@ Apakah Anda yakin ingin melanjutkan?</translation>
             <location filename="../nolimitgui/src/MultiSessionState.cpp" line="383" />
             <source>Reject Video Chat</source>
             <translation>Tolak Obrolan Video</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/MultiSessionState.cpp" line="386" />
+            <source>Play Truth Or Dare</source>
+            <translation>Mainkan Kebenaran Atau Tantangan</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/MultiSessionState.cpp" line="387" />
@@ -9956,7 +10387,7 @@ Apakah Anda yakin ingin melanjutkan?</translation>
         <message>
             <location filename="../nolimitgui/src/ServiceSettingsWidget.cpp" line="74" />
             <source>View </source>
-            <translation>Lihat</translation>
+            <translation>Lihat </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/ServiceSettingsWidget.cpp" line="108" />
@@ -9966,99 +10397,7 @@ Apakah Anda yakin ingin melanjutkan?</translation>
         <message>
             <location filename="../nolimitgui/src/ServiceSettingsWidget.cpp" line="114" />
             <source>Unknown Applet </source>
-            <translation>Applet Tidak Dikenal</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2260" />
-            <source>Could not create thumbnail asset</source>
-            <translation>Tidak dapat membuat aset thumbnail</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="69" />
-            <source>Requesting Library File List </source>
-            <translation>Meminta Daftar File Perpustakaan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="128" />
-            <source>List Get Completed</source>
-            <translation>Daftar Selesai</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="151" />
-            <source>Folder Scan Canceled</source>
-            <translation>Pemindaian Folder Dibatalkan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="155" />
-            <source>Folder Scan Completed</source>
-            <translation>Pemindaian Folder Selesai</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="356" />
-            <source>File was not found:
-%1
-
-Remove this item from My Library and asset database?</source>
-            <translation>Berkas tidak ditemukan:
-%1
-
-Hapus item ini dari Perpustakaan Saya dan database aset?</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="633" />
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="663" />
-            <source>Error</source>
-            <translation>Kesalahan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="633" />
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="663" />
-            <source>Unknown Media Type</source>
-            <translation>Jenis Media Tidak Dikenal</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="694" />
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="771" />
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="807" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2266" />
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="104" />
-            <source>Could not get thumbnail file info</source>
-            <translation>Tidak dapat memperoleh info file thumbnail</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="695" />
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="772" />
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="808" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2261" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2267" />
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="105" />
-            <source>Error occured creating thumbnail asset </source>
-            <translation>Terjadi kesalahan saat membuat aset thumbnail</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="732" />
-            <source>Scaning folder</source>
-            <translation>Memindai folder</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="753" />
-            <source>Already in library</source>
-            <translation>Sudah ada di perpustakaan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="753" />
-            <source>File is already in library </source>
-            <translation>File sudah ada di perpustakaan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="828" />
-            <source>File Error</source>
-            <translation>Kesalahan Berkas</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="828" />
-            <source>Could not add file to library </source>
-            <translation>Tidak dapat menambahkan file ke perpustakaan</translation>
+            <translation>Applet Tidak Diketahui </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="110" />
@@ -10069,7 +10408,7 @@ Hapus item ini dari Perpustakaan Saya dan database aset?</translation>
             <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="111" />
             <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="150" />
             <source>Error occured saving thumbnail to file </source>
-            <translation>Terjadi kesalahan saat menyimpan thumbnail ke file</translation>
+            <translation>Terjadi kesalahan saat menyimpan thumbnail ke file </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="143" />
@@ -10079,7 +10418,7 @@ Hapus item ini dari Perpustakaan Saya dan database aset?</translation>
         <message>
             <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="144" />
             <source>Error occured update thumbnail asset </source>
-            <translation>Terjadi kesalahan saat memperbarui aset thumbnail</translation>
+            <translation>Terjadi kesalahan saat memperbarui aset thumbnail </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="149" />
@@ -10094,12 +10433,12 @@ Hapus item ini dari Perpustakaan Saya dan database aset?</translation>
         <message>
             <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="156" />
             <source>Error occured updatin thumbnail </source>
-            <translation>Terjadi kesalahan saat memperbarui thumbnail</translation>
+            <translation>Terjadi kesalahan saat memperbarui thumbnail </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="95" />
             <source>Failed to create pixmap </source>
-            <translation>Gagal membuat peta pix</translation>
+            <translation>Gagal membuat peta pix </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="96" />
@@ -10109,7 +10448,7 @@ Hapus item ini dari Perpustakaan Saya dan database aset?</translation>
         <message>
             <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="175" />
             <source>Failed to scale and crop image </source>
-            <translation>Gagal menskalakan dan memotong gambar</translation>
+            <translation>Gagal menskalakan dan memotong gambar </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="176" />
@@ -10119,22 +10458,12 @@ Hapus item ini dari Perpustakaan Saya dan database aset?</translation>
         <message>
             <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="181" />
             <source>Null image </source>
-            <translation>Gambar nol</translation>
+            <translation>Gambar nol </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="182" />
             <source>Null image.</source>
             <translation>Gambar nol.</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/TodGameLogic.cpp" line="245" />
-            <source>Perform Dare</source>
-            <translation>Lakukan Berani</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/TodGameLogic.cpp" line="250" />
-            <source>Tell Truth</source>
-            <translation>Katakan yang sebenarnya</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/TodGameLogic.cpp" line="180" />
@@ -10187,6 +10516,16 @@ Hapus item ini dari Perpustakaan Saya dan database aset?</translation>
             <translation>Tekan Tombol Pilih Kebenaran Atau Tantangan</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/TodGameLogic.cpp" line="245" />
+            <source>Perform Dare</source>
+            <translation>Lakukan Berani</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/TodGameLogic.cpp" line="250" />
+            <source>Tell Truth</source>
+            <translation>Katakan yang sebenarnya</translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/TodGameLogic.cpp" line="259" />
             <source>Evaluate Dare</source>
             <translation>Evaluasi Berani</translation>
@@ -10236,370 +10575,26 @@ Hapus item ini dari Perpustakaan Saya dan database aset?</translation>
             <source>Cancel</source>
             <translation>Batalkan</translation>
         </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletAboutFile.cpp" line="129" />
-            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="116" />
-            <source> : Yes</source>
-            <translation>: Ya</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletAboutFile.cpp" line="130" />
-            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="117" />
-            <source> : No</source>
-            <translation>: Tidak</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletAboutFile.cpp" line="132" />
-            <source>Is Stream</source>
-            <translation>Adalah Aliran</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="108" />
-            <source>Requires Relay</source>
-            <translation>Membutuhkan Relai</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="112" />
-            <source>Can Direct Connect</source>
-            <translation>Bisa Sambung Langsung</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="115" />
-            <source>Is member of </source>
-            <translation>Apakah anggota</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="140" />
-            <source>no shared files</source>
-            <translation>tidak ada file bersama</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="153" />
-            <source> -- has about me content</source>
-            <translation>-- memiliki konten tentang saya</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="157" />
-            <source> -- no about me content</source>
-            <translation>-- tidak ada konten tentang saya</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="164" />
-            <source> -- has storyboard content</source>
-            <translation>-- memiliki konten papan cerita</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="168" />
-            <source> -- no storyboard content</source>
-            <translation>-- tidak ada konten papan cerita</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="175" />
-            <source> -- has shared web cam</source>
-            <translation>-- telah berbagi kamera web</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="179" />
-            <source> -- no shared web cam</source>
-            <translation>-- tidak ada kamera web bersama</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="186" />
-            <source>=== Disabled Plugins ===</source>
-            <translation>=== Plugin yang Dinonaktifkan ===</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletFileShareClientView.cpp" line="484" />
-            <source>Failed to play stream </source>
-            <translation>Gagal memutar streaming</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletFriendRequest.cpp" line="64" />
-            <source>User not found</source>
-            <translation>Pengguna tidak ditemukan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletFriendRequest.cpp" line="64" />
-            <source>No user found with id </source>
-            <translation>Tidak ada pengguna yang ditemukan dengan id</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletFriendRequest.cpp" line="117" />
-            <source>Friend Request requires a message with request reason</source>
-            <translation>Permintaan Pertemanan memerlukan pesan dengan alasan permintaan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletFriendRequest.cpp" line="123" />
-            <source>Friend Request Send Failed</source>
-            <translation>Pengiriman Permintaan Pertemanan Gagal</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletFriendRequest.cpp" line="127" />
-            <source>Friend Request Sent</source>
-            <translation>Permintaan Pertemanan Terkirim</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletFriendRequest.cpp" line="127" />
-            <source>Friend Request was sent</source>
-            <translation>Permintaan Pertemanan telah dikirim</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletFriendRequestList.cpp" line="79" />
-            <source>No Friend Requests Available</source>
-            <translation>Tidak Ada Permintaan Pertemanan yang Tersedia</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostJoinConnect.cpp" line="63" />
-            <source>Host URL is not valid</source>
-            <translation>URL host tidak valid</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostJoinConnect.cpp" line="68" />
-            <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="55" />
-            <source>Failed to resolve into valid ptop url</source>
-            <translation>Gagal menyelesaikan ke dalam url ptop yang valid</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostJoinConnect.cpp" line="72" />
-            <source>Host Type Invalid</source>
-            <translation>Jenis Host Tidak Valid</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostLeave.cpp" line="78" />
-            <source>Leave Chat Room</source>
-            <translation>Keluar dari Ruang Obrolan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostLeave.cpp" line="85" />
-            <source>Leave Group</source>
-            <translation>Keluar dari Grup</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostLeave.cpp" line="91" />
-            <source>Leave Random Connect</source>
-            <translation>Tinggalkan Koneksi Acak</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="131" />
-            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="137" />
-            <source>Language</source>
-            <translation>Bahasa</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="131" />
-            <source>Language updated.</source>
-            <translation>Bahasa diperbarui.</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="138" />
-            <source>Language updated, but no translation file was found in the translations folder.</source>
-            <translation>Bahasa diperbarui, tetapi tidak ada file terjemahan yang ditemukan di folder terjemahan.</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="199" />
-            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="212" />
-            <source>English</source>
-            <translation>bahasa Inggris</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="200" />
-            <source>German</source>
-            <translation>Jerman</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="201" />
-            <source>Chinese</source>
-            <translation>Cina</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="202" />
-            <source>Spanish</source>
-            <translation>Spanyol</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="203" />
-            <source>French</source>
-            <translation>Perancis</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="204" />
-            <source>Arabic</source>
-            <translation>Arab</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="205" />
-            <source>Hindi</source>
-            <translation>bahasa Hindi</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="206" />
-            <source>Portuguese</source>
-            <translation>Portugis</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="207" />
-            <source>Japanese</source>
-            <translation>Jepang</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="208" />
-            <source>Korean</source>
-            <translation>Korea</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="209" />
-            <source>Russian</source>
-            <translation>Rusia</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="210" />
-            <source>Thai</source>
-            <translation>Thailand</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="211" />
-            <source>Indonesian</source>
-            <translation>bahasa Indonesia</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletOfferInfo.cpp" line="107" />
-            <source>Invalid Offer. Please Decline Offer.</source>
-            <translation>Penawaran Tidak Valid. Harap Tolak Penawaran.</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletTestUpnp.cpp" line="232" />
-            <source>Invalid Port</source>
-            <translation>Pelabuhan Tidak Valid</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletTestUpnp.cpp" line="232" />
-            <source>Port must be greater than 79</source>
-            <translation>Port harus lebih besar dari 79</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletTestUpnp.cpp" line="242" />
-            <source>Invalid IP Address</source>
-            <translation>Alamat IP tidak valid</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletTestUpnp.cpp" line="242" />
-            <source>IP Address is invalid</source>
-            <translation>Alamat IP tidak valid</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/ClipboardCopyWidget.cpp" line="23" />
-            <source>Copy to clipboard</source>
-            <translation>Salin ke papan klip</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/ClipboardCopyWidget.cpp" line="32" />
-            <source>Text Is Empty</source>
-            <translation>Teks Kosong</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/ClipboardCopyWidget.cpp" line="32" />
-            <source>Cannot copy empty text to clipboard</source>
-            <translation>Tidak dapat menyalin teks kosong ke papan klip</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/ClipboardPasteWidget.cpp" line="22" />
-            <source>Paste from clipboard</source>
-            <translation>Tempel dari papan klip</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/ClipboardPasteWidget.cpp" line="33" />
-            <source>Cannot paste empty clipboard</source>
-            <translation>Tidak dapat menempelkan papan klip kosong</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/FileMediaSelectWidget.cpp" line="96" />
-            <source>Cancel scan</source>
-            <translation>Batalkan pemindaian</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/FileMediaSelectWidget.cpp" line="102" />
-            <source>Scan folder for media</source>
-            <translation>Pindai folder untuk mencari media</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/InviteUrlWidget.cpp" line="86" />
-            <source>Pasted invite text</source>
-            <translation>Teks undangan yang ditempel</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/InviteUrlWidget.cpp" line="113" />
-            <source>Private Key Warning</source>
-            <translation>Peringatan Kunci Pribadi</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/InviteUrlWidget.cpp" line="114" />
-            <source>Be sure to get the Network Key for this Network before saving network settings.
-Wrong network key will cause you to be banned as a Hacker</source>
-            <translation>Pastikan untuk mendapatkan Kunci Jaringan untuk Jaringan ini sebelum menyimpan pengaturan jaringan.
-Kunci jaringan yang salah akan menyebabkan Anda diblokir sebagai Peretas</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/InviteUrlWidget.cpp" line="728" />
-            <source>Cannot create Invite</source>
-            <translation>Tidak dapat membuat Undangan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/InviteUrlWidget.cpp" line="728" />
-            <source>Do NOT create Invite without a open Network Port.
-No one can connect to you directly</source>
-            <translation>JANGAN membuat Undangan tanpa Port Jaringan terbuka.
-Tidak ada yang dapat terhubung dengan Anda secara langsung</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/InviteUrlWidget.cpp" line="746" />
-            <source>Hosting plugin not enabled</source>
-            <translation>Plugin hosting tidak diaktifkan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/InviteUrlWidget.cpp" line="746" />
-            <source> has permission level of disabled</source>
-            <translation>memiliki tingkat izin dinonaktifkan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletOfferRandSession.cpp" line="179" />
-            <source>No permitted session types are available for this Random Connect offer.</source>
-            <translation>Tidak ada jenis sesi yang diizinkan tersedia untuk penawaran Random Connect ini.</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostClientBase.cpp" line="274" />
-            <source>Sending to: %1</source>
-            <translation>Mengirim ke: %1</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostClientBase.cpp" line="293" />
-            <source>Sent to %1 member(s)</source>
-            <translation>Dikirim ke %1 anggota</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostClientBase.cpp" line="297" />
-            <source>Sent: %1 success, %2 failed</source>
-            <translation>Terkirim: %1 sukses, %2 gagal</translation>
-        </message>
     </context>
     <context>
         <name>ReplyFileOfferDialog</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityReplyFileOffer.ui" line="26" />
+            <location filename="../resources/Forms/ActivityReplyFileOffer.ui" line="26" />
             <source>Accept File Offer</source>
             <translation>Terima Penawaran File</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityReplyFileOffer.ui" line="145" />
+            <location filename="../resources/Forms/ActivityReplyFileOffer.ui" line="145" />
             <source>Recieve File</source>
             <translation>Terima File</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityReplyFileOffer.ui" line="167" />
+            <location filename="../resources/Forms/ActivityReplyFileOffer.ui" line="167" />
             <source>File:</source>
             <translation>Berkas:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityReplyFileOffer.ui" line="197" />
+            <location filename="../resources/Forms/ActivityReplyFileOffer.ui" line="197" />
             <source>Message:</source>
             <translation>Pesan:</translation>
         </message>
@@ -10657,7 +10652,7 @@ Apakah Anda ingin menyimpan perubahan Anda?</translation>
     <context>
         <name>SearchBarWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/SearchBarWidget.ui" line="65" />
+            <location filename="../resources/Forms/SearchBarWidget.ui" line="65" />
             <source>Search</source>
             <translation>Cari</translation>
         </message>
@@ -10665,42 +10660,42 @@ Apakah Anda ingin menyimpan perubahan Anda?</translation>
     <context>
         <name>SearchParamsUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/SearchParamsWidget.ui" line="20" />
+            <location filename="../resources/Forms/SearchParamsWidget.ui" line="20" />
             <source>Service</source>
             <translation>Layanan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/SearchParamsWidget.ui" line="52" />
+            <location filename="../resources/Forms/SearchParamsWidget.ui" line="52" />
             <source>Start Search</source>
             <translation>Mulai Pencarian</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/SearchParamsWidget.ui" line="71" />
+            <location filename="../resources/Forms/SearchParamsWidget.ui" line="71" />
             <source>Stop Search</source>
             <translation>Hentikan Pencarian</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/SearchParamsWidget.ui" line="82" />
+            <location filename="../resources/Forms/SearchParamsWidget.ui" line="82" />
             <source>Search:</source>
             <translation>Pencarian:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/SearchParamsWidget.ui" line="100" />
+            <location filename="../resources/Forms/SearchParamsWidget.ui" line="100" />
             <source>Age</source>
             <translation>Usia</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/SearchParamsWidget.ui" line="120" />
+            <location filename="../resources/Forms/SearchParamsWidget.ui" line="120" />
             <source>Content Rating</source>
             <translation>Peringkat Konten</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/SearchParamsWidget.ui" line="144" />
+            <location filename="../resources/Forms/SearchParamsWidget.ui" line="144" />
             <source>Gender:</source>
             <translation>Jenis Kelamin:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/SearchParamsWidget.ui" line="161" />
+            <location filename="../resources/Forms/SearchParamsWidget.ui" line="161" />
             <source>Language</source>
             <translation>Bahasa</translation>
         </message>
@@ -10708,17 +10703,17 @@ Apakah Anda ingin menyimpan perubahan Anda?</translation>
     <context>
         <name>ServiceSettingsWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ServiceSettingsWidget.ui" line="20" />
+            <location filename="../resources/Forms/ServiceSettingsWidget.ui" line="20" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ServiceSettingsWidget.ui" line="78" />
+            <location filename="../resources/Forms/ServiceSettingsWidget.ui" line="78" />
             <source>Service Settings</source>
             <translation>Pengaturan Layanan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ServiceSettingsWidget.ui" line="116" />
+            <location filename="../resources/Forms/ServiceSettingsWidget.ui" line="116" />
             <source>View Service</source>
             <translation>Lihat Layanan</translation>
         </message>
@@ -10726,7 +10721,7 @@ Apakah Anda ingin menyimpan perubahan Anda?</translation>
     <context>
         <name>SessionOptionsDialog</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivitySessionOptions.ui" line="14" />
+            <location filename="../resources/Forms/ActivitySessionOptions.ui" line="14" />
             <source>Dialog</source>
             <translation>Dialog</translation>
         </message>
@@ -10734,12 +10729,12 @@ Apakah Anda ingin menyimpan perubahan Anda?</translation>
     <context>
         <name>SessionWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/SessionWidget.ui" line="20" />
+            <location filename="../resources/Forms/SessionWidget.ui" line="20" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/SessionWidget.ui" line="84" />
+            <location filename="../resources/Forms/SessionWidget.ui" line="84" />
             <source>Create Invite</source>
             <translation>Buat Undangan</translation>
         </message>
@@ -10747,27 +10742,27 @@ Apakah Anda ingin menyimpan perubahan Anda?</translation>
     <context>
         <name>ShareFilesDialog</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityAddRemoveLibraryFiles.ui" line="17" />
+            <location filename="../resources/Forms/ActivityAddRemoveLibraryFiles.ui" line="17" />
             <source>Browse Files</source>
             <translation>Jelajahi File</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityAddRemoveLibraryFiles.ui" line="112" />
+            <location filename="../resources/Forms/ActivityAddRemoveLibraryFiles.ui" line="112" />
             <source>Share Your Files</source>
             <translation>Bagikan File Anda</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityAddRemoveLibraryFiles.ui" line="200" />
+            <location filename="../resources/Forms/ActivityAddRemoveLibraryFiles.ui" line="200" />
             <source>Click A File Lock To Share Or UnShare</source>
             <translation>Klik Kunci File Untuk Membagikan Atau Membatalkan Berbagi</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityAddRemoveLibraryFiles.ui" line="221" />
+            <location filename="../resources/Forms/ActivityAddRemoveLibraryFiles.ui" line="221" />
             <source>If Locked then Not Shared.Else If Unlocked then Is Shared</source>
             <translation>Jika Terkunci maka Tidak Dibagikan. Lain Jika Tidak Terkunci maka Dibagikan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityAddRemoveLibraryFiles.ui" line="325" />
+            <location filename="../resources/Forms/ActivityAddRemoveLibraryFiles.ui" line="325" />
             <source>Move Up A Directory</source>
             <translation>Pindahkan Direktori ke Atas</translation>
         </message>
@@ -10775,7 +10770,7 @@ Apakah Anda ingin menyimpan perubahan Anda?</translation>
     <context>
         <name>ShowHelpDialog</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityShowHelp.ui" line="26" />
+            <location filename="../resources/Forms/ActivityShowHelp.ui" line="26" />
             <source>Debug Settings</source>
             <translation>Pengaturan Debug</translation>
         </message>
@@ -10885,108 +10880,108 @@ Apakah Anda ingin menyimpan perubahan Anda?</translation>
     <context>
         <name>StoryWidgetClass</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="26" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="26" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="107" />
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="141" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="107" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="141" />
             <source>New File</source>
             <translation>Berkas Baru</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="175" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="175" />
             <source>Open File</source>
             <translation>Buka Berkas</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="209" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="209" />
             <source>Save File As..</source>
             <translation>Simpan File Sebagai..</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="243" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="243" />
             <source>Export to PDF file</source>
             <translation>Ekspor ke file PDF</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="322" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="322" />
             <source>Save File</source>
             <translation>Simpan Berkas</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="356" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="356" />
             <source>Insert Picture</source>
             <translation>Sisipkan Gambar</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="390" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="390" />
             <source>Undo</source>
             <translation>Membatalkan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="424" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="424" />
             <source>Redo</source>
             <translation>Ulangi</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="458" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="458" />
             <source>Cut</source>
             <translation>Potong</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="492" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="492" />
             <source>Copy</source>
             <translation>Salin</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="526" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="526" />
             <source>Paste</source>
             <translation>Tempel</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="560" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="560" />
             <source>Print</source>
             <translation>Cetak</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="639" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="639" />
             <source>Bold</source>
             <translation>Berani</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="676" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="676" />
             <source>Italic</source>
             <translation>miring</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="713" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="713" />
             <source>Underline</source>
             <translation>Garis bawahi</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="750" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="750" />
             <source>Left Justify</source>
             <translation>Ratakan Kiri</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="784" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="784" />
             <source>Center Text</source>
             <translation>Teks Tengah</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="818" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="818" />
             <source>Right Justify</source>
             <translation>Benarkan Benar</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="852" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="852" />
             <source>Text Justify</source>
             <translation>Teks Justifikasi</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="886" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="886" />
             <source>Text Color</source>
             <translation>Warna Teks</translation>
         </message>
@@ -10994,12 +10989,12 @@ Apakah Anda ingin menyimpan perubahan Anda?</translation>
     <context>
         <name>TestWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/TestWidget.ui" line="38" />
+            <location filename="../resources/Forms/TestWidget.ui" line="38" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/TestWidget.ui" line="84" />
+            <location filename="../resources/Forms/TestWidget.ui" line="84" />
             <source>Some Text</source>
             <translation>Beberapa Teks</translation>
         </message>
@@ -11007,77 +11002,77 @@ Apakah Anda ingin menyimpan perubahan Anda?</translation>
     <context>
         <name>ThemeWidgetClass</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTheme.ui" line="20" />
+            <location filename="../resources/Forms/AppletTheme.ui" line="20" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTheme.ui" line="83" />
+            <location filename="../resources/Forms/AppletTheme.ui" line="83" />
             <source>Select A Theme</source>
             <translation>Pilih Tema</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTheme.ui" line="129" />
+            <location filename="../resources/Forms/AppletTheme.ui" line="129" />
             <source>Push Button Example</source>
             <translation>Contoh Tombol Tekan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTheme.ui" line="151" />
+            <location filename="../resources/Forms/AppletTheme.ui" line="151" />
             <source>Theme Appearence</source>
             <translation>Penampilan Tema</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTheme.ui" line="196" />
+            <location filename="../resources/Forms/AppletTheme.ui" line="196" />
             <source>Radio Button 1 Example</source>
             <translation>Contoh Tombol Radio 1</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTheme.ui" line="212" />
+            <location filename="../resources/Forms/AppletTheme.ui" line="212" />
             <source>Radio Button 2 Example</source>
             <translation>Contoh Tombol Radio 2</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTheme.ui" line="225" />
+            <location filename="../resources/Forms/AppletTheme.ui" line="225" />
             <source>Scroll Bar Example</source>
             <translation>Contoh Scroll Bar</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTheme.ui" line="251" />
+            <location filename="../resources/Forms/AppletTheme.ui" line="251" />
             <source>Slider Example</source>
             <translation>Contoh Penggeser</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTheme.ui" line="277" />
+            <location filename="../resources/Forms/AppletTheme.ui" line="277" />
             <source>Progress Bar Example</source>
             <translation>Contoh Bilah Kemajuan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTheme.ui" line="303" />
+            <location filename="../resources/Forms/AppletTheme.ui" line="303" />
             <source>Combo Box Example</source>
             <translation>Contoh Kotak Kombo</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTheme.ui" line="326" />
+            <location filename="../resources/Forms/AppletTheme.ui" line="326" />
             <source>Spin Box Example</source>
             <translation>Contoh Kotak Putar</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTheme.ui" line="349" />
+            <location filename="../resources/Forms/AppletTheme.ui" line="349" />
             <source>Check Box Example</source>
             <translation>Contoh Kotak Centang</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTheme.ui" line="356" />
+            <location filename="../resources/Forms/AppletTheme.ui" line="356" />
             <source>Line Edit Example</source>
             <translation>Contoh Edit Baris</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTheme.ui" line="399" />
+            <location filename="../resources/Forms/AppletTheme.ui" line="399" />
             <source>Some text example</source>
             <translation>Beberapa contoh teks</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTheme.ui" line="445" />
+            <location filename="../resources/Forms/AppletTheme.ui" line="445" />
             <source>Accept Or Cancel New Theme</source>
             <translation>Terima Atau Batalkan Tema Baru</translation>
         </message>
@@ -11085,12 +11080,12 @@ Apakah Anda ingin menyimpan perubahan Anda?</translation>
     <context>
         <name>ThumnailChooseWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ThumbnailChooseWidget.ui" line="20" />
+            <location filename="../resources/Forms/ThumbnailChooseWidget.ui" line="20" />
             <source>Thumbnail Choose Widget</source>
             <translation>Gambar Kecil Pilih Widget</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ThumbnailChooseWidget.ui" line="96" />
+            <location filename="../resources/Forms/ThumbnailChooseWidget.ui" line="96" />
             <source>Choose Image</source>
             <translation>Pilih Gambar</translation>
         </message>
@@ -11098,27 +11093,27 @@ Apakah Anda ingin menyimpan perubahan Anda?</translation>
     <context>
         <name>ThumnailEditWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ThumbnailEditWidget.ui" line="20" />
+            <location filename="../resources/Forms/ThumbnailEditWidget.ui" line="20" />
             <source>Thumbnail Edit Widget</source>
             <translation>Widget Pengeditan Gambar Kecil</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ThumbnailEditWidget.ui" line="122" />
-            <source>Thumbnail Gallery</source>
-            <translation>Galeri Gambar Kecil</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/Forms/ThumbnailEditWidget.ui" line="109" />
+            <location filename="../resources/Forms/ThumbnailEditWidget.ui" line="109" />
             <source>Emoticon Gallery</source>
             <translation>Galeri Emotikon</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ThumbnailEditWidget.ui" line="154" />
+            <location filename="../resources/Forms/ThumbnailEditWidget.ui" line="122" />
+            <source>Thumbnail Gallery</source>
+            <translation>Galeri Gambar Kecil</translation>
+        </message>
+        <message>
+            <location filename="../resources/Forms/ThumbnailEditWidget.ui" line="154" />
             <source>Take Snapshot</source>
             <translation>Ambil Potret</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ThumbnailEditWidget.ui" line="167" />
+            <location filename="../resources/Forms/ThumbnailEditWidget.ui" line="167" />
             <source>Browse</source>
             <translation>Jelajahi</translation>
         </message>
@@ -11126,12 +11121,12 @@ Apakah Anda ingin menyimpan perubahan Anda?</translation>
     <context>
         <name>TimedMessageDlg</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityTimedMessage.ui" line="17" />
+            <location filename="../resources/Forms/ActivityTimedMessage.ui" line="17" />
             <source>Message</source>
             <translation>Pesan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityTimedMessage.ui" line="90" />
+            <location filename="../resources/Forms/ActivityTimedMessage.ui" line="90" />
             <source>Message:</source>
             <translation>Pesan:</translation>
         </message>
@@ -11139,7 +11134,7 @@ Apakah Anda ingin menyimpan perubahan Anda?</translation>
     <context>
         <name>TitleBarWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/TitleBarWidget.ui" line="297" />
+            <location filename="../resources/Forms/TitleBarWidget.ui" line="297" />
             <source>Test</source>
             <translation>Tes</translation>
         </message>
@@ -11147,7 +11142,7 @@ Apakah Anda ingin menyimpan perubahan Anda?</translation>
     <context>
         <name>TodGameWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/TodGameWidget.ui" line="20" />
+            <location filename="../resources/Forms/TodGameWidget.ui" line="20" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
@@ -11155,34 +11150,34 @@ Apakah Anda ingin menyimpan perubahan Anda?</translation>
     <context>
         <name>TodStatsUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/TodStatsWidget.ui" line="14" />
+            <location filename="../resources/Forms/TodStatsWidget.ui" line="14" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/TodStatsWidget.ui" line="35" />
+            <location filename="../resources/Forms/TodStatsWidget.ui" line="35" />
             <source>Waiting</source>
             <translation>Menunggu</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/TodStatsWidget.ui" line="55" />
+            <location filename="../resources/Forms/TodStatsWidget.ui" line="55" />
             <source>Truths</source>
             <translation>Kebenaran</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/TodStatsWidget.ui" line="74" />
-            <location filename="../nolimitgui/src/Forms/TodStatsWidget.ui" line="143" />
+            <location filename="../resources/Forms/TodStatsWidget.ui" line="74" />
+            <location filename="../resources/Forms/TodStatsWidget.ui" line="143" />
             <source>Accepted</source>
             <translation>Diterima</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/TodStatsWidget.ui" line="98" />
-            <location filename="../nolimitgui/src/Forms/TodStatsWidget.ui" line="167" />
+            <location filename="../resources/Forms/TodStatsWidget.ui" line="98" />
+            <location filename="../resources/Forms/TodStatsWidget.ui" line="167" />
             <source>Rejected</source>
             <translation>Ditolak</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/TodStatsWidget.ui" line="124" />
+            <location filename="../resources/Forms/TodStatsWidget.ui" line="124" />
             <source>Dares</source>
             <translation>Berani</translation>
         </message>
@@ -11190,12 +11185,12 @@ Apakah Anda ingin menyimpan perubahan Anda?</translation>
     <context>
         <name>VidWidgetClass</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/VidWidget.ui" line="26" />
+            <location filename="../resources/Forms/VidWidget.ui" line="26" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/VidWidget.ui" line="567" />
+            <location filename="../resources/Forms/VidWidget.ui" line="567" />
             <source>Motion Sensitivity</source>
             <translation>Sensitivitas Gerakan</translation>
         </message>
@@ -11219,12 +11214,12 @@ Apakah Anda ingin menyimpan perubahan Anda?</translation>
     <context>
         <name>WebsiteWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/WebsiteWidget.ui" line="20" />
+            <location filename="../resources/Forms/WebsiteWidget.ui" line="20" />
             <source>Form</source>
             <translation>Formulir</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/WebsiteWidget.ui" line="71" />
+            <location filename="../resources/Forms/WebsiteWidget.ui" line="71" />
             <source>Click to visit website</source>
             <translation>Klik untuk mengunjungi situs web</translation>
         </message>
@@ -11232,12 +11227,12 @@ Apakah Anda ingin menyimpan perubahan Anda?</translation>
     <context>
         <name>YesNoMsgBoxClass</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityYesNo.ui" line="17" />
+            <location filename="../resources/Forms/ActivityYesNo.ui" line="17" />
             <source>Menu</source>
             <translation>Tidak bisa</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityYesNo.ui" line="130" />
+            <location filename="../resources/Forms/ActivityYesNo.ui" line="130" />
             <source>Never Show This Message Again</source>
             <translation>Jangan Pernah Tampilkan Pesan Ini Lagi</translation>
         </message>
@@ -11245,7 +11240,7 @@ Apakah Anda ingin menyimpan perubahan Anda?</translation>
     <context>
         <name>friendListDlg</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/FriendListDlg.ui" line="14" />
+            <location filename="../resources/Forms/FriendListDlg.ui" line="14" />
             <source>Friend List</source>
             <translation>Daftar Teman</translation>
         </message>

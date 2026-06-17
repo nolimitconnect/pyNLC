@@ -367,18 +367,18 @@
         <file>Resources/overlay-admin.svg</file>
         <file>Resources/user-leave.svg</file>
         <file>Resources/language-change.svg</file>
-        <file alias="translations/nolimitconnect_ar_SA.qm">../../translations/nolimitconnect_ar_SA.qm</file>
-        <file alias="translations/nolimitconnect_de_DE.qm">../../translations/nolimitconnect_de_DE.qm</file>
-        <file alias="translations/nolimitconnect_es_ES.qm">../../translations/nolimitconnect_es_ES.qm</file>
-        <file alias="translations/nolimitconnect_fr_FR.qm">../../translations/nolimitconnect_fr_FR.qm</file>
-        <file alias="translations/nolimitconnect_hi_IN.qm">../../translations/nolimitconnect_hi_IN.qm</file>
-        <file alias="translations/nolimitconnect_id_ID.qm">../../translations/nolimitconnect_id_ID.qm</file>
-        <file alias="translations/nolimitconnect_ja_JP.qm">../../translations/nolimitconnect_ja_JP.qm</file>
-        <file alias="translations/nolimitconnect_ko_KR.qm">../../translations/nolimitconnect_ko_KR.qm</file>
-        <file alias="translations/nolimitconnect_pt_PT.qm">../../translations/nolimitconnect_pt_PT.qm</file>
-        <file alias="translations/nolimitconnect_ru_RU.qm">../../translations/nolimitconnect_ru_RU.qm</file>
-        <file alias="translations/nolimitconnect_th_TH.qm">../../translations/nolimitconnect_th_TH.qm</file>
-        <file alias="translations/nolimitconnect_zh_CN.qm">../../translations/nolimitconnect_zh_CN.qm</file>
+        <file alias="translations/nolimitconnect_ar_SA.qm">../translations/nolimitconnect_ar_SA.qm</file>
+        <file alias="translations/nolimitconnect_de_DE.qm">../translations/nolimitconnect_de_DE.qm</file>
+        <file alias="translations/nolimitconnect_es_ES.qm">../translations/nolimitconnect_es_ES.qm</file>
+        <file alias="translations/nolimitconnect_fr_FR.qm">../translations/nolimitconnect_fr_FR.qm</file>
+        <file alias="translations/nolimitconnect_hi_IN.qm">../translations/nolimitconnect_hi_IN.qm</file>
+        <file alias="translations/nolimitconnect_id_ID.qm">../translations/nolimitconnect_id_ID.qm</file>
+        <file alias="translations/nolimitconnect_ja_JP.qm">../translations/nolimitconnect_ja_JP.qm</file>
+        <file alias="translations/nolimitconnect_ko_KR.qm">../translations/nolimitconnect_ko_KR.qm</file>
+        <file alias="translations/nolimitconnect_pt_PT.qm">../translations/nolimitconnect_pt_PT.qm</file>
+        <file alias="translations/nolimitconnect_ru_RU.qm">../translations/nolimitconnect_ru_RU.qm</file>
+        <file alias="translations/nolimitconnect_th_TH.qm">../translations/nolimitconnect_th_TH.qm</file>
+        <file alias="translations/nolimitconnect_zh_CN.qm">../translations/nolimitconnect_zh_CN.qm</file>
         <file>Resources/NlcTestAudio.wav</file>
     </qresource>
 </RCC>

@@ -44,7 +44,7 @@ endif()
 message(STATUS "nolimitconnect gui project prefix ${CMAKE_PREFIX_PATH}")
 # Add the forms directory to the AUOUIC search paths
 list(APPEND CMAKE_AUTOUIC_SEARCH_PATHS
-    src/Forms
+    ${CMAKE_SOURCE_DIR}/resources/Forms
     )
 
 # Add the executable
@@ -917,184 +917,184 @@ list(APPEND nlc_SOURCES
 
 set(nlc_FORMS)
 list(APPEND nlc_FORMS
-    src/Forms/ActionWidget.ui
-    src/Forms/ActivityBrowseFiles.ui
-    src/Forms/ActivityDownloadItemMenu.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/ActionWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/ActivityBrowseFiles.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/ActivityDownloadItemMenu.ui
 
-    src/Forms/ActivityGenerateHash.ui
-    src/Forms/ActivityMessageBox.ui
-    src/Forms/ActivityNetworkStartupTest.ui
-    src/Forms/ActivitySessionOptions.ui
-    src/Forms/ActivityShowHelp.ui
-    src/Forms/ActivityTimedMessage.ui
-    src/Forms/ActivityYesNo.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/ActivityGenerateHash.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/ActivityMessageBox.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/ActivityNetworkStartupTest.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/ActivitySessionOptions.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/ActivityShowHelp.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/ActivityTimedMessage.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/ActivityYesNo.ui
 
-    src/Forms/AcceptCancelWidget.ui
-    src/Forms/AppletAboutApp.ui
-    src/Forms/AppletAboutFile.ui
-    src/Forms/AppletAboutMeClient.ui
-    src/Forms/AppletAboutUser.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AcceptCancelWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletAboutApp.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletAboutFile.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletAboutMeClient.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletAboutUser.ui
 
-    src/Forms/AppletApplicationInfo.ui
-    src/Forms/AppletBrowseFiles.ui
-    src/Forms/AppletCamClient.ui
-    src/Forms/AppletCamSettings.ui
-    src/Forms/AppletChatRoomJoinSearch.ui
-    src/Forms/AppletChatRoomListLocalView.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletApplicationInfo.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletBrowseFiles.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletCamClient.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletCamSettings.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletChatRoomJoinSearch.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletChatRoomListLocalView.ui
 
-    src/Forms/AppletChooseThumbnail.ui
-    src/Forms/AppletCreateAccount.ui
-    src/Forms/AppletDownloads.ui
-    src/Forms/AppletEditAboutMe.ui
-    src/Forms/AppletEditAvatarImage.ui
-    src/Forms/AppletEditStoryBoard.ui
-    src/Forms/AppletFileOfferSelect.ui
-    src/Forms/AppletFileShareClientView.ui
-    src/Forms/AppletFriendList.ui
-    src/Forms/AppletFriendRequest.ui
-    src/Forms/AppletFriendRequestList.ui
-    src/Forms/AppletGalleryImage.ui
-    src/Forms/AppletGalleryEmoticon.ui
-    src/Forms/AppletGalleryThumb.ui
-    src/Forms/AppletGetStarted.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletChooseThumbnail.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletCreateAccount.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletDownloads.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletEditAboutMe.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletEditAvatarImage.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletEditStoryBoard.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletFileOfferSelect.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletFileShareClientView.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletFriendList.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletFriendRequest.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletFriendRequestList.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletGalleryImage.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletGalleryEmoticon.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletGalleryThumb.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletGetStarted.ui
 
-    src/Forms/AppletGroupJoinSearch.ui
-    src/Forms/AppletGroupListClient.ui
-    src/Forms/AppletGroupListLocalView.ui
-    src/Forms/AppletHackerList.ui
-    src/Forms/AppletHelpNetSignalBars.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletGroupJoinSearch.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletGroupListClient.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletGroupListLocalView.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletHackerList.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletHelpNetSignalBars.ui
 
-    src/Forms/AppletHostClient.ui
-    src/Forms/AppletHostJoinChoose.ui
-    src/Forms/AppletHostJoinConnect.ui
-    src/Forms/AppletHostJoinRequestList.ui
-    src/Forms/AppletHostLeave.ui
-    src/Forms/AppletHostNetworkStatus.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletHostClient.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletHostJoinChoose.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletHostJoinConnect.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletHostJoinRequestList.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletHostLeave.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletHostNetworkStatus.ui
 
-    src/Forms/AppletIgnoredHosts.ui
-    src/Forms/AppletInformation.ui
-    src/Forms/AppletInviteAccept.ui
-    src/Forms/AppletInviteCreate.ui
-    src/Forms/AppletIsPortOpenTest.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletIgnoredHosts.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletInformation.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletInviteAccept.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletInviteCreate.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletIsPortOpenTest.ui
 
-    src/Forms/AppletJoinHostList.ui
-    src/Forms/AppletLanguageSelect.ui
-    src/Forms/AppletLaunchWidget.ui
-    src/Forms/AppletLibrary.ui
-    src/Forms/AppletLog.ui
-    src/Forms/AppletLogSettings.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletJoinHostList.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletLanguageSelect.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletLaunchWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletLibrary.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletLog.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletLogSettings.ui
 
-    src/Forms/AppletMultiMessenger.ui
-    src/Forms/AppletNetworkKey.ui
-    src/Forms/AppletNetworkSettings.ui
-    src/Forms/AppletOfferInfo.ui
-    src/Forms/AppletOfferList.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletMultiMessenger.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletNetworkKey.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletNetworkSettings.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletOfferInfo.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletOfferList.ui
 
-    src/Forms/AppletOfferRandSession.ui
-    src/Forms/AppletOfferResponse.ui
-    src/Forms/AppletOfferResponseAccept.ui
-    src/Forms/AppletOfferSend.ui
-    src/Forms/AppletOfferView.ui
-    src/Forms/AppletPersonOfferList.ui
-    src/Forms/AppletPeerChangeFriendship.ui
-    src/Forms/AppletPeerReplyOfferFile.ui
-    src/Forms/AppletPeerSessionFileOffer.ui
-    src/Forms/AppletPeerTodGame.ui
-    src/Forms/AppletPeerVideoPhone.ui
-    src/Forms/AppletPeerVoicePhone.ui
-    src/Forms/AppletPermissionList.ui
-    src/Forms/AppletPersonalRecorder.ui
-    src/Forms/AppletPlayerCamClip.ui
-    src/Forms/AppletPlayerPhoto.ui
-    src/Forms/AppletPlayerNlc.ui
-    src/Forms/AppletPlayerVideo.ui
-    src/Forms/AppletPopupMenu.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletOfferRandSession.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletOfferResponse.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletOfferResponseAccept.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletOfferSend.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletOfferView.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletPersonOfferList.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletPeerChangeFriendship.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletPeerReplyOfferFile.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletPeerSessionFileOffer.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletPeerTodGame.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletPeerVideoPhone.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletPeerVoicePhone.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletPermissionList.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletPersonalRecorder.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletPlayerCamClip.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletPlayerPhoto.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletPlayerNlc.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletPlayerVideo.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletPopupMenu.ui
 
-    src/Forms/AppletRandomConnectJoinSearch.ui
-    src/Forms/AppletRandomConnectListLocalView.ui
-    src/Forms/AppletServiceBase.ui
-    src/Forms/AppletServiceBaseSettings.ui
-    src/Forms/AppletSettingsHostBase.ui
-    src/Forms/AppletSettingsNoUserSettings.ui
-    src/Forms/AppletSnapshot.ui
-    src/Forms/AppletSocketList.ui
-    src/Forms/AppletSoundSettings.ui
-    src/Forms/AppletStoryBoardClient.ui
-    src/Forms/AppletTestAndDebug.ui
-    src/Forms/AppletTestUpnp.ui
-    src/Forms/AppletTheme.ui
-    src/Forms/AppletUploads.ui
-    src/Forms/AppletUserConnections.ui
-    src/Forms/AppletUserIdentity.ui
-    src/Forms/AppletUserPreferences.ui
-    src/Forms/AssetFaceWidget.ui
-    src/Forms/AssetPhotoWidget.ui
-    src/Forms/AssetTextWidget.ui
-    src/Forms/AssetVideoWidget.ui
-    src/Forms/AssetVoiceWidget.ui
-    src/Forms/AvatarBarWidget.ui
-    src/Forms/BottomBarWidget.ui
-    src/Forms/CentralFrame.ui
-    src/Forms/CentralWidget.ui
-    src/Forms/ChatEntryWidget.ui
-    src/Forms/DialogAddComment.ui
-    src/Forms/DialogConfirmRemoveMessage.ui
-    src/Forms/FileActionBarWidget.ui
-    src/Forms/FileActionMenu.ui
-    src/Forms/FileDisplayWidget.ui
-    src/Forms/FileFilterSelectWidget.ui
-    src/Forms/FileMediaSelectWidget.ui
-    src/Forms/FileShareItemWidget.ui
-    #src/Forms/FileViewSharedActionBar.ui
-    src/Forms/FileXferWidget.ui
-    src/Forms/FriendListDlg.ui
-    src/Forms/GuiFriendRequestWidget.ui
-    src/Forms/GuiGroupieListItem.ui
-    src/Forms/GuiHostedListItem.ui
-    src/Forms/GuiUserMultiListWidget.ui
-    src/Forms/HostJoinRequestListItem.ui
-    src/Forms/HistoryEntryWidget.ui
-    src/Forms/IdentWidget.ui
-    src/Forms/ImageListEntry.ui
-    src/Forms/ImageListRow.ui
-    src/Forms/ImageListWidget.ui
-    src/Forms/ImagePickBar.ui
-    src/Forms/InformationWidget.ui
-    src/Forms/InputAllWidget.ui
-    src/Forms/InputFaceWidget.ui
-    src/Forms/InputPhotoWidget.ui
-    src/Forms/InputTextWidget.ui
-    src/Forms/InputVideoWidget.ui
-    src/Forms/InputVoiceWidget.ui
-    src/Forms/InstMsgWidget.ui
-    src/Forms/InviteUrlWidget.ui
-    src/Forms/LogWidget.ui
-    src/Forms/OfferBarWidget.ui
-    src/Forms/OfferSendWidget.ui
-    src/Forms/PermissionWidget.ui
-    src/Forms/PermissionListItemWidget.ui
-    src/Forms/PersonOfferListItem.ui
-    src/Forms/PlayControlWidget.ui
-    src/Forms/PluginSettingsWidget.ui
-    src/Forms/SearchBarWidget.ui
-    src/Forms/SearchParamsWidget.ui
-    src/Forms/ServiceSettingsWidget.ui
-    src/Forms/SessionWidget.ui
-    src/Forms/StoryWidget.ui
-    src/Forms/TestWidget.ui
-    src/Forms/ThumbnailEditWidget.ui
-    src/Forms/ThumbnailChooseWidget.ui
-    src/Forms/TitleBarWidget.ui
-    src/Forms/TodGameWidget.ui
-    src/Forms/TodStatsWidget.ui
-    src/Forms/VidWidget.ui
-    src/Forms/WebsiteWidget.ui
-    src/NoLimitConnect.qrc
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletRandomConnectJoinSearch.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletRandomConnectListLocalView.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletServiceBase.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletServiceBaseSettings.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletSettingsHostBase.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletSettingsNoUserSettings.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletSnapshot.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletSocketList.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletSoundSettings.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletStoryBoardClient.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletTestAndDebug.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletTestUpnp.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletTheme.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletUploads.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletUserConnections.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletUserIdentity.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AppletUserPreferences.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AssetFaceWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AssetPhotoWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AssetTextWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AssetVideoWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AssetVoiceWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/AvatarBarWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/BottomBarWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/CentralFrame.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/CentralWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/ChatEntryWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/DialogAddComment.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/DialogConfirmRemoveMessage.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/FileActionBarWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/FileActionMenu.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/FileDisplayWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/FileFilterSelectWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/FileMediaSelectWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/FileShareItemWidget.ui
+    #${CMAKE_SOURCE_DIR}/resources/Forms/FileViewSharedActionBar.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/FileXferWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/FriendListDlg.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/GuiFriendRequestWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/GuiGroupieListItem.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/GuiHostedListItem.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/GuiUserMultiListWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/HostJoinRequestListItem.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/HistoryEntryWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/IdentWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/ImageListEntry.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/ImageListRow.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/ImageListWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/ImagePickBar.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/InformationWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/InputAllWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/InputFaceWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/InputPhotoWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/InputTextWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/InputVideoWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/InputVoiceWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/InstMsgWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/InviteUrlWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/LogWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/OfferBarWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/OfferSendWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/PermissionWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/PermissionListItemWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/PersonOfferListItem.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/PlayControlWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/PluginSettingsWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/SearchBarWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/SearchParamsWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/ServiceSettingsWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/SessionWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/StoryWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/TestWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/ThumbnailEditWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/ThumbnailChooseWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/TitleBarWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/TodGameWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/TodStatsWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/VidWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/Forms/WebsiteWidget.ui
+    ${CMAKE_SOURCE_DIR}/resources/AppResources.qrc
     )
 
 if(DEFINED TARGET_OS_WINDOWS)
     # Define the path to your resource file
-    set(EXE_ICON_RESOURCE "src/Resources/resources.rc")
+    set(EXE_ICON_RESOURCE "${CMAKE_SOURCE_DIR}/resources/Resources/resources.rc")
     list(APPEND nlc_SOURCES ${EXE_ICON_RESOURCE})
 endif()
 
@@ -1105,15 +1105,17 @@ qt_add_executable(nolimitconnect
     ${nlc_HEADERS}
     )
 
+set(nlc_TRANSLATIONS_DIR "${CMAKE_SOURCE_DIR}/translations")
+
 file(GLOB nlc_TS_FILES CONFIGURE_DEPENDS
-    "${PROJECT_SRC_ROOT_DIR}/translations/*.ts"
-    "${CMAKE_SOURCE_DIR}/translations/*.ts"
+    "${nlc_TRANSLATIONS_DIR}/*.ts"
 )
 list(REMOVE_DUPLICATES nlc_TS_FILES)
 
 set(nlc_QM_FILES)
 set(nlc_LUPDATE_EXECUTABLE "")
 set(nlc_LRELEASE_EXECUTABLE "")
+set(nlc_BASE_TS_FILE "${nlc_TRANSLATIONS_DIR}/nolimitconnect_en_EN.ts")
 
 set(nlc_QT_BIN_HINTS)
 if(DEFINED Qt6_DIR)
@@ -1144,9 +1146,10 @@ endforeach()
 if(nlc_TS_FILES AND nlc_LUPDATE_EXECUTABLE AND nlc_LRELEASE_EXECUTABLE)
     foreach(tsFile IN LISTS nlc_TS_FILES)
         get_filename_component(tsFileName "${tsFile}" NAME_WE)
-        set(qmFile "${PROJECT_SRC_ROOT_DIR}/translations/${tsFileName}.qm")
+        set(qmFile "${nlc_TRANSLATIONS_DIR}/${tsFileName}.qm")
         add_custom_command(
             OUTPUT "${qmFile}"
+            COMMAND ${CMAKE_COMMAND} -E make_directory "${nlc_TRANSLATIONS_DIR}"
             COMMAND "${nlc_LRELEASE_EXECUTABLE}" "${tsFile}" -qm "${qmFile}"
             DEPENDS "${tsFile}"
             VERBATIM
@@ -1157,9 +1160,9 @@ if(nlc_TS_FILES AND nlc_LUPDATE_EXECUTABLE AND nlc_LRELEASE_EXECUTABLE)
     add_custom_target(nolimitconnect_lupdate
         COMMAND "${nlc_LUPDATE_EXECUTABLE}"
             "${CMAKE_CURRENT_SOURCE_DIR}/src"
-            "${CMAKE_CURRENT_SOURCE_DIR}/src/Forms"
+            "${CMAKE_SOURCE_DIR}/resources/Forms"
             -ts ${nlc_TS_FILES}
-        WORKING_DIRECTORY "${PROJECT_SRC_ROOT_DIR}"
+        WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}"
         VERBATIM
     )
 
@@ -1168,6 +1171,21 @@ if(nlc_TS_FILES AND nlc_LUPDATE_EXECUTABLE AND nlc_LRELEASE_EXECUTABLE)
     )
 
     add_dependencies(nolimitconnect nolimitconnect_translations)
+elseif(nlc_LUPDATE_EXECUTABLE)
+    add_custom_target(nolimitconnect_lupdate
+        COMMAND ${CMAKE_COMMAND} -E make_directory "${nlc_TRANSLATIONS_DIR}"
+        COMMAND "${nlc_LUPDATE_EXECUTABLE}"
+            "${CMAKE_CURRENT_SOURCE_DIR}/src"
+            "${CMAKE_SOURCE_DIR}/resources/Forms"
+            -ts "${nlc_BASE_TS_FILE}"
+        WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}"
+        VERBATIM
+    )
+else()
+    add_custom_target(nolimitconnect_lupdate
+        COMMAND ${CMAKE_COMMAND} -E echo "Qt lupdate executable not found; skipping translation update."
+        VERBATIM
+    )
 endif()
 
 target_include_directories(nolimitconnect PRIVATE

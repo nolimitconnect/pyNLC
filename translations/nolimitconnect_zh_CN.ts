@@ -4,7 +4,7 @@
     <context>
         <name>AcceptCancelWidgetClass</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AcceptCancelWidget.ui" line="38" />
+            <location filename="../resources/Forms/AcceptCancelWidget.ui" line="38" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
@@ -12,7 +12,7 @@
     <context>
         <name>ActionWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActionWidget.ui" line="20" />
+            <location filename="../resources/Forms/ActionWidget.ui" line="20" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
@@ -20,7 +20,7 @@
     <context>
         <name>ActivityGenerateHashUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityGenerateHash.ui" line="17" />
+            <location filename="../resources/Forms/ActivityGenerateHash.ui" line="17" />
             <source>Generate Hash</source>
             <translation>生成哈希</translation>
         </message>
@@ -28,37 +28,37 @@
     <context>
         <name>AppletAboutAppUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutApp.ui" line="32" />
+            <location filename="../resources/Forms/AppletAboutApp.ui" line="32" />
             <source>About NoLimitConnect</source>
             <translation>关于NoLimitConnect</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutApp.ui" line="92" />
+            <location filename="../resources/Forms/AppletAboutApp.ui" line="92" />
             <source>No Limit Connect</source>
             <translation>无限制连接</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutApp.ui" line="102" />
+            <location filename="../resources/Forms/AppletAboutApp.ui" line="102" />
             <source>(c) Brett R. Jones 2013,2025</source>
             <translation>(c) 布雷特·琼斯 2013,2025</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutApp.ui" line="117" />
+            <location filename="../resources/Forms/AppletAboutApp.ui" line="117" />
             <source>Version 1.0.12</source>
             <translation>版本1.0.12</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutApp.ui" line="130" />
+            <location filename="../resources/Forms/AppletAboutApp.ui" line="130" />
             <source>Device Information</source>
             <translation>设备信息</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutApp.ui" line="143" />
+            <location filename="../resources/Forms/AppletAboutApp.ui" line="143" />
             <source>Connection Information</source>
             <translation>连接信息</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutApp.ui" line="156" />
+            <location filename="../resources/Forms/AppletAboutApp.ui" line="156" />
             <source>Show Application Information</source>
             <translation>显示申请信息</translation>
         </message>
@@ -66,27 +66,27 @@
     <context>
         <name>AppletAboutFileUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutFile.ui" line="26" />
+            <location filename="../resources/Forms/AppletAboutFile.ui" line="26" />
             <source>About User</source>
             <translation>关于用户</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutFile.ui" line="64" />
+            <location filename="../resources/Forms/AppletAboutFile.ui" line="64" />
             <source>Size</source>
             <translation>尺寸</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutFile.ui" line="107" />
+            <location filename="../resources/Forms/AppletAboutFile.ui" line="107" />
             <source>Path</source>
             <translation>路径</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutFile.ui" line="182" />
+            <location filename="../resources/Forms/AppletAboutFile.ui" line="182" />
             <source>Info</source>
             <translation>信息</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutFile.ui" line="230" />
+            <location filename="../resources/Forms/AppletAboutFile.ui" line="230" />
             <source>Thumbnail ID</source>
             <translation>缩略图ID</translation>
         </message>
@@ -94,7 +94,7 @@
     <context>
         <name>AppletAboutMeClientUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutMeClient.ui" line="20" />
+            <location filename="../resources/Forms/AppletAboutMeClient.ui" line="20" />
             <source>Edit Storyboard</source>
             <translation>编辑故事板</translation>
         </message>
@@ -102,57 +102,57 @@
     <context>
         <name>AppletAboutUserUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutUser.ui" line="26" />
+            <location filename="../resources/Forms/AppletAboutUser.ui" line="26" />
             <source>About User</source>
             <translation>关于用户</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutUser.ui" line="67" />
+            <location filename="../resources/Forms/AppletAboutUser.ui" line="67" />
             <source>User Message</source>
             <translation>用户留言</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutUser.ui" line="85" />
+            <location filename="../resources/Forms/AppletAboutUser.ui" line="85" />
             <source>My Friendship To User:</source>
             <translation>我对用户的友谊：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutUser.ui" line="120" />
+            <location filename="../resources/Forms/AppletAboutUser.ui" line="120" />
             <source>Users Friendship To Me:</source>
             <translation>用户对我的友谊：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutUser.ui" line="153" />
+            <location filename="../resources/Forms/AppletAboutUser.ui" line="153" />
             <source>Age:</source>
             <translation>年龄：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutUser.ui" line="182" />
+            <location filename="../resources/Forms/AppletAboutUser.ui" line="182" />
             <source>Gender</source>
             <translation>性别</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutUser.ui" line="215" />
+            <location filename="../resources/Forms/AppletAboutUser.ui" line="215" />
             <source>Primary Language:</source>
             <translation>主要语言：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutUser.ui" line="244" />
+            <location filename="../resources/Forms/AppletAboutUser.ui" line="244" />
             <source>Preffered Content:</source>
             <translation>首选内容：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutUser.ui" line="277" />
+            <location filename="../resources/Forms/AppletAboutUser.ui" line="277" />
             <source>Truths:</source>
             <translation>真相：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutUser.ui" line="306" />
+            <location filename="../resources/Forms/AppletAboutUser.ui" line="306" />
             <source>Dares:</source>
             <translation>敢于：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletAboutUser.ui" line="333" />
+            <location filename="../resources/Forms/AppletAboutUser.ui" line="333" />
             <source>URL:</source>
             <translation>网址：</translation>
         </message>
@@ -160,17 +160,17 @@
     <context>
         <name>AppletApplicationInfoUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletApplicationInfo.ui" line="32" />
+            <location filename="../resources/Forms/AppletApplicationInfo.ui" line="32" />
             <source>App Information</source>
             <translation>应用信息</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletApplicationInfo.ui" line="89" />
+            <location filename="../resources/Forms/AppletApplicationInfo.ui" line="89" />
             <source>Browse App Storage (Do Not Delete)</source>
             <translation>浏览应用程序存储（请勿删除）</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletApplicationInfo.ui" line="99" />
+            <location filename="../resources/Forms/AppletApplicationInfo.ui" line="99" />
             <source>Log</source>
             <translation>日志</translation>
         </message>
@@ -178,27 +178,27 @@
     <context>
         <name>AppletBrowseFilesUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletBrowseFiles.ui" line="14" />
+            <location filename="../resources/Forms/AppletBrowseFiles.ui" line="14" />
             <source>Browse Files</source>
             <translation>浏览文件</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletBrowseFiles.ui" line="141" />
+            <location filename="../resources/Forms/AppletBrowseFiles.ui" line="141" />
             <source>Click File Icon or Double Click File Item to Select The File</source>
             <translation>单击文件图标或双击文件项选择文件</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletBrowseFiles.ui" line="194" />
+            <location filename="../resources/Forms/AppletBrowseFiles.ui" line="194" />
             <source>Move Up A Folder</source>
             <translation>上移文件夹</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletBrowseFiles.ui" line="226" />
+            <location filename="../resources/Forms/AppletBrowseFiles.ui" line="226" />
             <source>Selected A Folder</source>
             <translation>选定的文件夹</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletBrowseFiles.ui" line="282" />
+            <location filename="../resources/Forms/AppletBrowseFiles.ui" line="282" />
             <source>Add All Files To Library</source>
             <translation>将所有文件添加到库中</translation>
         </message>
@@ -206,7 +206,7 @@
     <context>
         <name>AppletCamClientUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletCamClient.ui" line="23" />
+            <location filename="../resources/Forms/AppletCamClient.ui" line="23" />
             <source>Web Cam Client</source>
             <translation>网络摄像头客户端</translation>
         </message>
@@ -214,17 +214,17 @@
     <context>
         <name>AppletCamClipPlayerUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPlayerCamClip.ui" line="23" />
+            <location filename="../resources/Forms/AppletPlayerCamClip.ui" line="23" />
             <source>Cam Video Player</source>
             <translation>凸轮视频播放器</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPlayerCamClip.ui" line="327" />
+            <location filename="../resources/Forms/AppletPlayerCamClip.ui" line="327" />
             <source>Tag:</source>
             <translation>标签：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPlayerCamClip.ui" line="388" />
+            <location filename="../resources/Forms/AppletPlayerCamClip.ui" line="388" />
             <source>File Name:</source>
             <translation>文件名：</translation>
         </message>
@@ -232,17 +232,17 @@
     <context>
         <name>AppletCamSettingsUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletCamSettings.ui" line="23" />
+            <location filename="../resources/Forms/AppletCamSettings.ui" line="23" />
             <source>Web Cam Client</source>
             <translation>网络摄像头客户端</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletCamSettings.ui" line="60" />
+            <location filename="../resources/Forms/AppletCamSettings.ui" line="60" />
             <source>Apply Video In Device As Default</source>
             <translation>将设备中的视频应用为默认值</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletCamSettings.ui" line="69" />
+            <location filename="../resources/Forms/AppletCamSettings.ui" line="69" />
             <source>Cam Device</source>
             <translation>凸轮装置</translation>
         </message>
@@ -250,7 +250,7 @@
     <context>
         <name>AppletChatRoomJoinSearchUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletChatRoomJoinSearch.ui" line="20" />
+            <location filename="../resources/Forms/AppletChatRoomJoinSearch.ui" line="20" />
             <source>Search</source>
             <translation>搜索</translation>
         </message>
@@ -258,12 +258,12 @@
     <context>
         <name>AppletChatRoomListLocalViewUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletChatRoomListLocalView.ui" line="20" />
+            <location filename="../resources/Forms/AppletChatRoomListLocalView.ui" line="20" />
             <source>Search</source>
             <translation>搜索</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletChatRoomListLocalView.ui" line="106" />
+            <location filename="../resources/Forms/AppletChatRoomListLocalView.ui" line="106" />
             <source>Refresh list of announced hosts</source>
             <translation>刷新已公布的主机列表</translation>
         </message>
@@ -271,7 +271,7 @@
     <context>
         <name>AppletChooseThumbnailUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletChooseThumbnail.ui" line="26" />
+            <location filename="../resources/Forms/AppletChooseThumbnail.ui" line="26" />
             <source>Choose Thumbnail</source>
             <translation>选择缩略图</translation>
         </message>
@@ -279,72 +279,72 @@
     <context>
         <name>AppletEditAboutMeUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditAboutMe.ui" line="20" />
+            <location filename="../resources/Forms/AppletEditAboutMe.ui" line="20" />
             <source>Edit About Me</source>
             <translation>编辑关于我</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditAboutMe.ui" line="71" />
+            <location filename="../resources/Forms/AppletEditAboutMe.ui" line="71" />
             <source>View My About Me Page</source>
             <translation>查看我的关于我页面</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditAboutMe.ui" line="111" />
+            <location filename="../resources/Forms/AppletEditAboutMe.ui" line="111" />
             <source>Apply About Me Changes</source>
             <translation>应用关于我的更改</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditAboutMe.ui" line="118" />
+            <location filename="../resources/Forms/AppletEditAboutMe.ui" line="118" />
             <source>Greeting:</source>
             <translation>问候语：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditAboutMe.ui" line="125" />
+            <location filename="../resources/Forms/AppletEditAboutMe.ui" line="125" />
             <source>Hi There!</source>
             <translation>你好！</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditAboutMe.ui" line="132" />
+            <location filename="../resources/Forms/AppletEditAboutMe.ui" line="132" />
             <source>About Me:</source>
             <translation>关于我：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditAboutMe.ui" line="151" />
+            <location filename="../resources/Forms/AppletEditAboutMe.ui" line="151" />
             <source>I'm Wonderfull!</source>
             <translation>我真是太棒了！</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditAboutMe.ui" line="158" />
+            <location filename="../resources/Forms/AppletEditAboutMe.ui" line="158" />
             <source>My Picture</source>
             <translation>我的照片</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditAboutMe.ui" line="182" />
+            <location filename="../resources/Forms/AppletEditAboutMe.ui" line="182" />
             <source>Browse</source>
             <translation>浏览</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditAboutMe.ui" line="189" />
+            <location filename="../resources/Forms/AppletEditAboutMe.ui" line="189" />
             <source>Take Snapshot</source>
             <translation>拍摄快照</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditAboutMe.ui" line="211" />
+            <location filename="../resources/Forms/AppletEditAboutMe.ui" line="211" />
             <source>My Favorite Websites</source>
             <translation>我最喜欢的网站</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditAboutMe.ui" line="221" />
+            <location filename="../resources/Forms/AppletEditAboutMe.ui" line="221" />
             <source>https://donate.doctorswithoutborders.org</source>
             <translation>https://donate.doctorswithoutborders.org</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditAboutMe.ui" line="228" />
+            <location filename="../resources/Forms/AppletEditAboutMe.ui" line="228" />
             <source>https://nolimitconnect.org</source>
             <translation>https://nolimitconnect.org</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditAboutMe.ui" line="235" />
+            <location filename="../resources/Forms/AppletEditAboutMe.ui" line="235" />
             <source>Donation Information</source>
             <translation>捐赠信息</translation>
         </message>
@@ -352,32 +352,32 @@
     <context>
         <name>AppletEditAvatarImageUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditAvatarImage.ui" line="14" />
+            <location filename="../resources/Forms/AppletEditAvatarImage.ui" line="14" />
             <source>Edit My Avatar Imae</source>
             <translation>编辑我的头像图片</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditAvatarImage.ui" line="51" />
+            <location filename="../resources/Forms/AppletEditAvatarImage.ui" line="51" />
             <source>Edit My Avatar Image</source>
             <translation>编辑我的头像图片</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditAvatarImage.ui" line="84" />
+            <location filename="../resources/Forms/AppletEditAvatarImage.ui" line="84" />
             <source>Apply Avatar Image</source>
             <translation>应用头像图片</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditAvatarImage.ui" line="91" />
+            <location filename="../resources/Forms/AppletEditAvatarImage.ui" line="91" />
             <source>Remove Avatar Image</source>
             <translation>删除头像图像</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditAvatarImage.ui" line="100" />
+            <location filename="../resources/Forms/AppletEditAvatarImage.ui" line="100" />
             <source>My Avatar Image</source>
             <translation>我的头像图片</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditAvatarImage.ui" line="161" />
+            <location filename="../resources/Forms/AppletEditAvatarImage.ui" line="161" />
             <source>Delete Image Permenantly</source>
             <translation>永久删除图像</translation>
         </message>
@@ -385,12 +385,12 @@
     <context>
         <name>AppletEditStoryboardUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditStoryBoard.ui" line="20" />
+            <location filename="../resources/Forms/AppletEditStoryBoard.ui" line="20" />
             <source>Edit Storyboard</source>
             <translation>编辑故事板</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletEditStoryBoard.ui" line="80" />
+            <location filename="../resources/Forms/AppletEditStoryBoard.ui" line="80" />
             <source>View My Storyboard Page</source>
             <translation>查看我的故事板页面</translation>
         </message>
@@ -398,27 +398,27 @@
     <context>
         <name>AppletFileOfferSelectUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletFileOfferSelect.ui" line="23" />
+            <location filename="../resources/Forms/AppletFileOfferSelect.ui" line="23" />
             <source>Select File Offer</source>
             <translation>选择文件报价</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletFileOfferSelect.ui" line="98" />
+            <location filename="../resources/Forms/AppletFileOfferSelect.ui" line="98" />
             <source>Status:</source>
             <translation>状态：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletFileOfferSelect.ui" line="137" />
+            <location filename="../resources/Forms/AppletFileOfferSelect.ui" line="137" />
             <source>File</source>
             <translation>文件</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletFileOfferSelect.ui" line="173" />
+            <location filename="../resources/Forms/AppletFileOfferSelect.ui" line="173" />
             <source>Path</source>
             <translation>路径</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletFileOfferSelect.ui" line="199" />
+            <location filename="../resources/Forms/AppletFileOfferSelect.ui" line="199" />
             <source>Open Folder</source>
             <translation>打开文件夹</translation>
         </message>
@@ -426,12 +426,12 @@
     <context>
         <name>AppletFileShareClientViewUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletFileShareClientView.ui" line="23" />
+            <location filename="../resources/Forms/AppletFileShareClientView.ui" line="23" />
             <source>Browse Files</source>
             <translation>浏览文件</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletFileShareClientView.ui" line="101" />
+            <location filename="../resources/Forms/AppletFileShareClientView.ui" line="101" />
             <source>Status:</source>
             <translation>状态：</translation>
         </message>
@@ -439,22 +439,22 @@
     <context>
         <name>AppletFriendListUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletFriendList.ui" line="20" />
+            <location filename="../resources/Forms/AppletFriendList.ui" line="20" />
             <source>Search</source>
             <translation>搜索</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletFriendList.ui" line="95" />
+            <location filename="../resources/Forms/AppletFriendList.ui" line="95" />
             <source>Online</source>
             <translation>在线</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletFriendList.ui" line="141" />
+            <location filename="../resources/Forms/AppletFriendList.ui" line="141" />
             <source>Blocked</source>
             <translation>被阻止</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletFriendList.ui" line="187" />
+            <location filename="../resources/Forms/AppletFriendList.ui" line="187" />
             <source>Offline</source>
             <translation>离线</translation>
         </message>
@@ -462,7 +462,7 @@
     <context>
         <name>AppletFriendRequestListUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletFriendRequestList.ui" line="20" />
+            <location filename="../resources/Forms/AppletFriendRequestList.ui" line="20" />
             <source>Search</source>
             <translation>搜索</translation>
         </message>
@@ -470,32 +470,32 @@
     <context>
         <name>AppletFriendRequestUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletFriendRequest.ui" line="32" />
+            <location filename="../resources/Forms/AppletFriendRequest.ui" line="32" />
             <source>Friend Request</source>
             <translation>好友请求</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletFriendRequest.ui" line="50" />
+            <location filename="../resources/Forms/AppletFriendRequest.ui" line="50" />
             <source>Reason Text</source>
             <translation>原因文字</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletFriendRequest.ui" line="103" />
+            <location filename="../resources/Forms/AppletFriendRequest.ui" line="103" />
             <source>Accept Friend Request</source>
             <translation>接受好友请求</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletFriendRequest.ui" line="123" />
+            <location filename="../resources/Forms/AppletFriendRequest.ui" line="123" />
             <source>Reject Friend Request</source>
             <translation>拒绝好友请求</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletFriendRequest.ui" line="176" />
+            <location filename="../resources/Forms/AppletFriendRequest.ui" line="176" />
             <source>Send Friend Request</source>
             <translation>发送好友请求</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletFriendRequest.ui" line="196" />
+            <location filename="../resources/Forms/AppletFriendRequest.ui" line="196" />
             <source>Cancel Friend Request</source>
             <translation>取消好友请求</translation>
         </message>
@@ -503,7 +503,7 @@
     <context>
         <name>AppletGalleryEmoticonUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGalleryEmoticon.ui" line="26" />
+            <location filename="../resources/Forms/AppletGalleryEmoticon.ui" line="26" />
             <source>Thumbnail Gallery</source>
             <translation>缩略图库</translation>
         </message>
@@ -511,7 +511,7 @@
     <context>
         <name>AppletGalleryImageUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGalleryImage.ui" line="26" />
+            <location filename="../resources/Forms/AppletGalleryImage.ui" line="26" />
             <source>Image Gallery</source>
             <translation>图片库</translation>
         </message>
@@ -519,12 +519,12 @@
     <context>
         <name>AppletGalleryThumbUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGalleryThumb.ui" line="26" />
+            <location filename="../resources/Forms/AppletGalleryThumb.ui" line="26" />
             <source>Thumbnail Gallery</source>
             <translation>缩略图库</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGalleryThumb.ui" line="58" />
+            <location filename="../resources/Forms/AppletGalleryThumb.ui" line="58" />
             <source>Thumb Dir:</source>
             <translation>拇指目录：</translation>
         </message>
@@ -532,111 +532,111 @@
     <context>
         <name>AppletGetStartedUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="32" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="32" />
             <source>Information</source>
             <translation>信息</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="74" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="74" />
             <source>Navigation</source>
             <translation>导航</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="89" />
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="150" />
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="205" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="89" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="150" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="205" />
             <source>Use the </source>
-            <translation>使用</translation>
+            <translation>使用 </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="133" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="133" />
             <source>button to return to previous page</source>
             <translation>返回上一页的按钮</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="188" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="188" />
             <source>button to expand page to full size of application</source>
             <translation>按钮将页面扩展到应用程序的完整尺寸</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="243" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="243" />
             <source>button to return to dual page display</source>
             <translation>按钮返回双页显示</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="252" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="252" />
             <source>Join</source>
             <translation>加入</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="267" />
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="322" />
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="377" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="267" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="322" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="377" />
             <source>Click</source>
             <translation>点击</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="305" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="305" />
             <source>to join a group</source>
             <translation>加入一个团体</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="360" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="360" />
             <source>to join a chat room</source>
             <translation>加入聊天室</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="415" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="415" />
             <source>to join random connect</source>
             <translation>加入随机连接</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="430" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="430" />
             <source>Personal</source>
             <translation>个人</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="470" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="470" />
             <source>Personal notes and recordings</source>
             <translation>个人笔记和录音</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="512" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="512" />
             <source>Add media to your library</source>
             <translation>将媒体添加到您的媒体库</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="527" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="527" />
             <source>Publish</source>
             <translation>发布</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="567" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="567" />
             <source>Change your avatar icon</source>
             <translation>更改您的头像图标</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="609" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="609" />
             <source>Set up your about me page</source>
             <translation>设置您的“关于我”页面</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="651" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="651" />
             <source>Add stories to your storyboard page</source>
             <translation>将故事添加到故事板页面</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="666" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="666" />
             <source>Share</source>
             <translation>分享</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="706" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="706" />
             <source>Share your camera as web cam server</source>
             <translation>将您的相机共享为网络摄像头服务器</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGetStarted.ui" line="721" />
+            <location filename="../resources/Forms/AppletGetStarted.ui" line="721" />
             <source>Visit No Limit Connect website for more information</source>
             <translation>访问 No Limit Connect 网站了解更多信息</translation>
         </message>
@@ -644,22 +644,22 @@
     <context>
         <name>AppletGroupHostSettingsUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGroupHostSettings.ui" line="20" />
+            <location filename="../resources/Forms/AppletGroupHostSettings.ui" line="20" />
             <source>Host A Group</source>
             <translation>主持A组</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGroupHostSettings.ui" line="53" />
+            <location filename="../resources/Forms/AppletGroupHostSettings.ui" line="53" />
             <source>View Hosting Requirements</source>
             <translation>查看托管要求</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGroupHostSettings.ui" line="63" />
+            <location filename="../resources/Forms/AppletGroupHostSettings.ui" line="63" />
             <source>Other Services Required To Host A Group</source>
             <translation>接待团体所需的其他服务</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGroupHostSettings.ui" line="70" />
+            <location filename="../resources/Forms/AppletGroupHostSettings.ui" line="70" />
             <source>Recommend Anybody permission level</source>
             <translation>推荐任何人权限级别</translation>
         </message>
@@ -667,7 +667,7 @@
     <context>
         <name>AppletGroupJoinSearchUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGroupJoinSearch.ui" line="20" />
+            <location filename="../resources/Forms/AppletGroupJoinSearch.ui" line="20" />
             <source>Search</source>
             <translation>搜索</translation>
         </message>
@@ -675,7 +675,7 @@
     <context>
         <name>AppletGroupListClientUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGroupListClient.ui" line="20" />
+            <location filename="../resources/Forms/AppletGroupListClient.ui" line="20" />
             <source>Search</source>
             <translation>搜索</translation>
         </message>
@@ -683,12 +683,12 @@
     <context>
         <name>AppletGroupListLocalViewUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGroupListLocalView.ui" line="20" />
+            <location filename="../resources/Forms/AppletGroupListLocalView.ui" line="20" />
             <source>Group List Local View</source>
             <translation>组列表本地视图</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletGroupListLocalView.ui" line="106" />
+            <location filename="../resources/Forms/AppletGroupListLocalView.ui" line="106" />
             <source>Refresh list of announced hosts</source>
             <translation>刷新已公布的主机列表</translation>
         </message>
@@ -696,12 +696,12 @@
     <context>
         <name>AppletHackerListUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHackerList.ui" line="32" />
+            <location filename="../resources/Forms/AppletHackerList.ui" line="32" />
             <source>Hacker List</source>
             <translation>黑客名单</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHackerList.ui" line="88" />
+            <location filename="../resources/Forms/AppletHackerList.ui" line="88" />
             <source>Copy To Clipboard</source>
             <translation>复制到剪贴板</translation>
         </message>
@@ -709,52 +709,52 @@
     <context>
         <name>AppletHelpNetSignalBarsUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHelpNetSignalBars.ui" line="32" />
+            <location filename="../resources/Forms/AppletHelpNetSignalBars.ui" line="32" />
             <source>Information</source>
             <translation>信息</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHelpNetSignalBars.ui" line="71" />
+            <location filename="../resources/Forms/AppletHelpNetSignalBars.ui" line="71" />
             <source>Information: What do the signal bars indicate?</source>
             <translation>信息： 信号条表示什么？</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHelpNetSignalBars.ui" line="117" />
+            <location filename="../resources/Forms/AppletHelpNetSignalBars.ui" line="117" />
             <source>Connected To Internet</source>
             <translation>连接到互联网</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHelpNetSignalBars.ui" line="165" />
+            <location filename="../resources/Forms/AppletHelpNetSignalBars.ui" line="165" />
             <source>Connection Test Available</source>
             <translation>可用连接测试</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHelpNetSignalBars.ui" line="213" />
+            <location filename="../resources/Forms/AppletHelpNetSignalBars.ui" line="213" />
             <source>Network Host Available</source>
             <translation>可用的网络主机</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHelpNetSignalBars.ui" line="261" />
+            <location filename="../resources/Forms/AppletHelpNetSignalBars.ui" line="261" />
             <source>Searching For Relay</source>
             <translation>寻找中继</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHelpNetSignalBars.ui" line="309" />
+            <location filename="../resources/Forms/AppletHelpNetSignalBars.ui" line="309" />
             <source>Connected With Relay</source>
             <translation>与继电器连接</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHelpNetSignalBars.ui" line="357" />
+            <location filename="../resources/Forms/AppletHelpNetSignalBars.ui" line="357" />
             <source>Direct Connection</source>
             <translation>直接连接</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHelpNetSignalBars.ui" line="411" />
+            <location filename="../resources/Forms/AppletHelpNetSignalBars.ui" line="411" />
             <source>Directly Connected To Host</source>
             <translation>直接连接到主机</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHelpNetSignalBars.ui" line="459" />
+            <location filename="../resources/Forms/AppletHelpNetSignalBars.ui" line="459" />
             <source>Connected To Host With Relay</source>
             <translation>通过中继连接到主机</translation>
         </message>
@@ -780,7 +780,7 @@
     <context>
         <name>AppletHostClientUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostClient.ui" line="20" />
+            <location filename="../resources/Forms/AppletHostClient.ui" line="20" />
             <source>Host Client</source>
             <translation>主机客户端</translation>
         </message>
@@ -788,27 +788,27 @@
     <context>
         <name>AppletHostJoinChooseUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostJoinChoose.ui" line="20" />
+            <location filename="../resources/Forms/AppletHostJoinChoose.ui" line="20" />
             <source>Choose User</source>
             <translation>选择用户</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostJoinChoose.ui" line="63" />
+            <location filename="../resources/Forms/AppletHostJoinChoose.ui" line="63" />
             <source>View Current Host</source>
             <translation>查看当前主机</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostJoinChoose.ui" line="110" />
+            <location filename="../resources/Forms/AppletHostJoinChoose.ui" line="110" />
             <source>Leave Current Host</source>
             <translation>离开当前主机</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostJoinChoose.ui" line="157" />
+            <location filename="../resources/Forms/AppletHostJoinChoose.ui" line="157" />
             <source>Rejoin last joined Host</source>
             <translation>重新加入上次加入的主机</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostJoinChoose.ui" line="204" />
+            <location filename="../resources/Forms/AppletHostJoinChoose.ui" line="204" />
             <source>Search for a different host to join</source>
             <translation>搜索其他主机加入</translation>
         </message>
@@ -816,22 +816,22 @@
     <context>
         <name>AppletHostJoinConnectUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostJoinConnect.ui" line="20" />
+            <location filename="../resources/Forms/AppletHostJoinConnect.ui" line="20" />
             <source>Choose User</source>
             <translation>选择用户</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostJoinConnect.ui" line="73" />
+            <location filename="../resources/Forms/AppletHostJoinConnect.ui" line="73" />
             <source>View Current Host</source>
             <translation>查看当前主机</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostJoinConnect.ui" line="120" />
+            <location filename="../resources/Forms/AppletHostJoinConnect.ui" line="120" />
             <source>Rejoin last joined Host</source>
             <translation>重新加入上次加入的主机</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostJoinConnect.ui" line="167" />
+            <location filename="../resources/Forms/AppletHostJoinConnect.ui" line="167" />
             <source>Search for a different host to join</source>
             <translation>搜索其他主机加入</translation>
         </message>
@@ -839,17 +839,17 @@
     <context>
         <name>AppletHostJoinRequestListUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostJoinRequestList.ui" line="110" />
+            <location filename="../resources/Forms/AppletHostJoinRequestList.ui" line="110" />
             <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Create Invite&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
             <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;创建邀请&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostJoinRequestList.ui" line="136" />
+            <location filename="../resources/Forms/AppletHostJoinRequestList.ui" line="136" />
             <source>Accept Invite</source>
             <translation>接受邀请</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostJoinRequestList.ui" line="176" />
+            <location filename="../resources/Forms/AppletHostJoinRequestList.ui" line="176" />
             <source>Accept All</source>
             <translation>全部接受</translation>
         </message>
@@ -857,32 +857,32 @@
     <context>
         <name>AppletHostLeaveUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostLeave.ui" line="20" />
+            <location filename="../resources/Forms/AppletHostLeave.ui" line="20" />
             <source>Host Leave</source>
             <translation>主持人离开</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostLeave.ui" line="34" />
+            <location filename="../resources/Forms/AppletHostLeave.ui" line="34" />
             <source>Admin</source>
             <translation>管理员</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostLeave.ui" line="133" />
+            <location filename="../resources/Forms/AppletHostLeave.ui" line="133" />
             <source>Leave</source>
             <translation>离开</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostLeave.ui" line="186" />
+            <location filename="../resources/Forms/AppletHostLeave.ui" line="186" />
             <source>Remove Membership And Leave</source>
             <translation>删除会员资格并离开</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostLeave.ui" line="245" />
+            <location filename="../resources/Forms/AppletHostLeave.ui" line="245" />
             <source>Block Host</source>
             <translation>区块主机</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostLeave.ui" line="302" />
+            <location filename="../resources/Forms/AppletHostLeave.ui" line="302" />
             <source>Cancel</source>
             <translation>取消</translation>
         </message>
@@ -890,57 +890,57 @@
     <context>
         <name>AppletHostNetworkStatusUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostNetworkStatus.ui" line="20" />
+            <location filename="../resources/Forms/AppletHostNetworkStatus.ui" line="20" />
             <source>Hosting Requirements Status</source>
             <translation>托管要求状态</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostNetworkStatus.ui" line="68" />
+            <location filename="../resources/Forms/AppletHostNetworkStatus.ui" line="68" />
             <source>View Hosting Requirements</source>
             <translation>查看托管要求</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostNetworkStatus.ui" line="78" />
+            <location filename="../resources/Forms/AppletHostNetworkStatus.ui" line="78" />
             <source>Optional Services That May Be Provided By Host</source>
             <translation>主机可能提供的可选服务</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostNetworkStatus.ui" line="85" />
+            <location filename="../resources/Forms/AppletHostNetworkStatus.ui" line="85" />
             <source>Recommend Connection Test Permission Anybody</source>
             <translation>推荐连接测试权限任何人</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostNetworkStatus.ui" line="95" />
+            <location filename="../resources/Forms/AppletHostNetworkStatus.ui" line="95" />
             <source>Has open port to recieve connections</source>
             <translation>具有开放端口来接收连接</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostNetworkStatus.ui" line="102" />
+            <location filename="../resources/Forms/AppletHostNetworkStatus.ui" line="102" />
             <source>Host Permission Is Enabled</source>
             <translation>主机权限已开启</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostNetworkStatus.ui" line="109" />
+            <location filename="../resources/Forms/AppletHostNetworkStatus.ui" line="109" />
             <source>Connection Test Is Enabled</source>
             <translation>连接测试已启用</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostNetworkStatus.ui" line="118" />
+            <location filename="../resources/Forms/AppletHostNetworkStatus.ui" line="118" />
             <source>Url:</source>
             <translation>网址：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostNetworkStatus.ui" line="148" />
+            <location filename="../resources/Forms/AppletHostNetworkStatus.ui" line="148" />
             <source>Status:  </source>
-            <translation>状态：</translation>
+            <translation>状态：  </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostNetworkStatus.ui" line="201" />
+            <location filename="../resources/Forms/AppletHostNetworkStatus.ui" line="201" />
             <source>For author of NLC evaluation of VPNs that can open a port </source>
-            <translation>致 NLC 评估可打开端口的 VPN 的作者</translation>
+            <translation>致 NLC 评估可打开端口的 VPN 的作者 </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletHostNetworkStatus.ui" line="213" />
+            <location filename="../resources/Forms/AppletHostNetworkStatus.ui" line="213" />
             <source>Members Count:</source>
             <translation>会员人数：</translation>
         </message>
@@ -948,12 +948,12 @@
     <context>
         <name>AppletIgnoredHostsUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletIgnoredHosts.ui" line="14" />
+            <location filename="../resources/Forms/AppletIgnoredHosts.ui" line="14" />
             <source>Test Host Clent</source>
             <translation>测试主机客户端</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletIgnoredHosts.ui" line="69" />
+            <location filename="../resources/Forms/AppletIgnoredHosts.ui" line="69" />
             <source>Ignored Host List</source>
             <translation>忽略的主机列表</translation>
         </message>
@@ -961,41 +961,41 @@
     <context>
         <name>AppletInviteAcceptUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletInviteAccept.ui" line="32" />
-            <location filename="../nolimitgui/src/Forms/AppletInviteAccept.ui" line="146" />
+            <location filename="../resources/Forms/AppletInviteAccept.ui" line="32" />
+            <location filename="../resources/Forms/AppletInviteAccept.ui" line="146" />
             <source>Accept Invite</source>
             <translation>接受邀请</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletInviteAccept.ui" line="113" />
+            <location filename="../resources/Forms/AppletInviteAccept.ui" line="113" />
             <source>What is a invite?</source>
             <translation>什么是邀请？</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletInviteAccept.ui" line="191" />
-            <source>Invite to accept text</source>
-            <translation>邀请接受文本</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/Forms/AppletInviteAccept.ui" line="166" />
+            <location filename="../resources/Forms/AppletInviteAccept.ui" line="166" />
             <source>Reject Invite</source>
             <translation>拒绝邀请</translation>
+        </message>
+        <message>
+            <location filename="../resources/Forms/AppletInviteAccept.ui" line="191" />
+            <source>Invite to accept text</source>
+            <translation>邀请接受文本</translation>
         </message>
     </context>
     <context>
         <name>AppletInviteCreateUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletInviteCreate.ui" line="32" />
+            <location filename="../resources/Forms/AppletInviteCreate.ui" line="32" />
             <source>Create Invite</source>
             <translation>创建邀请</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletInviteCreate.ui" line="113" />
+            <location filename="../resources/Forms/AppletInviteCreate.ui" line="113" />
             <source>What is a invite?</source>
             <translation>什么是邀请？</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletInviteCreate.ui" line="135" />
+            <location filename="../resources/Forms/AppletInviteCreate.ui" line="135" />
             <source>Invite Message (Optional)</source>
             <translation>邀请消息（可选）</translation>
         </message>
@@ -1003,33 +1003,33 @@
     <context>
         <name>AppletInvitesUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletInvites.ui" line="32" />
-            <location filename="../nolimitgui/src/Forms/AppletInvites.ui" line="173" />
+            <location filename="../resources/Forms/AppletInvites.ui" line="32" />
+            <location filename="../resources/Forms/AppletInvites.ui" line="173" />
             <source>Accept Invite</source>
             <translation>接受邀请</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletInvites.ui" line="107" />
+            <location filename="../resources/Forms/AppletInvites.ui" line="107" />
             <source>Paste Invite From Clipboard</source>
             <translation>从剪贴板粘贴邀请</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletInvites.ui" line="121" />
+            <location filename="../resources/Forms/AppletInvites.ui" line="121" />
             <source>Person URL:</source>
             <translation>人网址：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletInvites.ui" line="139" />
+            <location filename="../resources/Forms/AppletInvites.ui" line="139" />
             <source>Group  URL:</source>
             <translation>群组网址：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletInvites.ui" line="193" />
+            <location filename="../resources/Forms/AppletInvites.ui" line="193" />
             <source>Reject Invite</source>
             <translation>拒绝邀请</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletInvites.ui" line="218" />
+            <location filename="../resources/Forms/AppletInvites.ui" line="218" />
             <source>Invite Text</source>
             <translation>邀请文本</translation>
         </message>
@@ -1037,12 +1037,12 @@
     <context>
         <name>AppletIsPortOpenTestUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletIsPortOpenTest.ui" line="17" />
+            <location filename="../resources/Forms/AppletIsPortOpenTest.ui" line="17" />
             <source>Net Service Test</source>
             <translation>网络服务测试</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletIsPortOpenTest.ui" line="81" />
+            <location filename="../resources/Forms/AppletIsPortOpenTest.ui" line="81" />
             <source>Test Log:</source>
             <translation>测试日志：</translation>
         </message>
@@ -1050,27 +1050,27 @@
     <context>
         <name>AppletJoinHostListUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletJoinHostList.ui" line="14" />
+            <location filename="../resources/Forms/AppletJoinHostList.ui" line="14" />
             <source>Test Host Clent</source>
             <translation>测试主机客户端</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletJoinHostList.ui" line="71" />
+            <location filename="../resources/Forms/AppletJoinHostList.ui" line="71" />
             <source>Host Administrator</source>
             <translation>主机管理员</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletJoinHostList.ui" line="78" />
+            <location filename="../resources/Forms/AppletJoinHostList.ui" line="78" />
             <source>Show Ignored Hosts</source>
             <translation>显示忽略的主机</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletJoinHostList.ui" line="90" />
+            <location filename="../resources/Forms/AppletJoinHostList.ui" line="90" />
             <source>Choose An Different Host</source>
             <translation>选择不同的主机</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletJoinHostList.ui" line="97" />
+            <location filename="../resources/Forms/AppletJoinHostList.ui" line="97" />
             <source>Group Host List</source>
             <translation>群组主持人列表</translation>
         </message>
@@ -1078,7 +1078,7 @@
     <context>
         <name>AppletLibraryUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLibrary.ui" line="35" />
+            <location filename="../resources/Forms/AppletLibrary.ui" line="35" />
             <source>Library</source>
             <translation>图书馆</translation>
         </message>
@@ -1086,95 +1086,95 @@
     <context>
         <name>AppletLogSettingsWidget</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="14" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="14" />
             <source>Log Settings</source>
             <translation>日志设置</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="100" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="100" />
             <source>Save Log Settings</source>
             <translation>保存日志设置</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="107" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="107" />
             <source>Cancel</source>
             <translation>取消</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="134" />
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="309" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="134" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="309" />
             <source>Check All</source>
             <translation>检查全部</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="141" />
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="316" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="141" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="316" />
             <source>Uncheck All</source>
             <translation>取消选中全部</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="148" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="148" />
             <source>Log Level Setting</source>
             <translation>日志级别设置</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="160" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="160" />
             <source>Enable Logging</source>
             <translation>启用日志记录</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="180" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="180" />
             <source>Log Fatal</source>
             <translation>致命日志</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="193" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="193" />
             <source>Log Assert</source>
             <translation>日志断言</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="206" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="206" />
             <source>Log Severe</source>
             <translation>记录严重</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="219" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="219" />
             <source>Log Error</source>
             <translation>日志错误</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="232" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="232" />
             <source>Log Warn</source>
             <translation>日志警告</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="245" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="245" />
             <source>Log Debug</source>
             <translation>日志调试</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="258" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="258" />
             <source>Log Info</source>
             <translation>日志信息</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="271" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="271" />
             <source>Log Status</source>
             <translation>日志状态</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="284" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="284" />
             <source>Log Verbose</source>
             <translation>详细记录</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="323" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="323" />
             <source>Log Modules Setting</source>
             <translation>日志模块设置</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="699" />
-            <location filename="../nolimitgui/src/Forms/AppletLogSettings.ui" line="706" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="699" />
+            <location filename="../resources/Forms/AppletLogSettings.ui" line="706" />
             <source>CheckBox</source>
             <translation>复选框</translation>
         </message>
@@ -1182,17 +1182,17 @@
     <context>
         <name>AppletLogUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLog.ui" line="32" />
+            <location filename="../resources/Forms/AppletLog.ui" line="32" />
             <source>Application Log</source>
             <translation>应用日志</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLog.ui" line="91" />
+            <location filename="../resources/Forms/AppletLog.ui" line="91" />
             <source>Show Log Settings</source>
             <translation>显示日志设置</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLog.ui" line="98" />
+            <location filename="../resources/Forms/AppletLog.ui" line="98" />
             <source>Show App Info</source>
             <translation>显示应用程序信息</translation>
         </message>
@@ -1200,7 +1200,7 @@
     <context>
         <name>AppletMultiMessengerUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletMultiMessenger.ui" line="32" />
+            <location filename="../resources/Forms/AppletMultiMessenger.ui" line="32" />
             <source>Dialog</source>
             <translation>对话</translation>
         </message>
@@ -1208,7 +1208,7 @@
     <context>
         <name>AppletNetworkKeyWidget</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletNetworkKey.ui" line="20" />
+            <location filename="../resources/Forms/AppletNetworkKey.ui" line="20" />
             <source>Applete Network Key</source>
             <translation>小程序网络密钥</translation>
         </message>
@@ -1216,12 +1216,12 @@
     <context>
         <name>AppletNetworkSettings</name>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="611" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="583" />
             <source>Network Settings</source>
             <translation>网络设置</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="611" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="583" />
             <source>You cannot delete the last network setting.</source>
             <translation>您无法删除最后的网络设置。</translation>
         </message>
@@ -1229,97 +1229,92 @@
     <context>
         <name>AppletNetworkSettingsUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletNetworkSettings.ui" line="14" />
+            <location filename="../resources/Forms/AppletNetworkSettings.ui" line="14" />
             <source>Network Settings</source>
             <translation>网络设置</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletNetworkSettings.ui" line="64" />
+            <location filename="../resources/Forms/AppletNetworkSettings.ui" line="64" />
             <source>Select Network Setting</source>
             <translation>选择网络设置</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletNetworkSettings.ui" line="119" />
+            <location filename="../resources/Forms/AppletNetworkSettings.ui" line="119" />
             <source>Save Network Setting</source>
             <translation>保存网络设置</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletNetworkSettings.ui" line="151" />
+            <location filename="../resources/Forms/AppletNetworkSettings.ui" line="151" />
             <source>Delete Network Setting</source>
             <translation>删除网络设置</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletNetworkSettings.ui" line="162" />
+            <location filename="../resources/Forms/AppletNetworkSettings.ui" line="162" />
             <source>Incomming Connections Listen Port:</source>
             <translation>传入连接监听端口：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletNetworkSettings.ui" line="172" />
+            <location filename="../resources/Forms/AppletNetworkSettings.ui" line="172" />
             <source>Ramdomize Port</source>
             <translation>随机端口</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletNetworkSettings.ui" line="398" />
-            <source>Use IPv6 Network</source>
-            <translation>使用 IPv6 网络</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/Forms/AppletNetworkSettings.ui" line="191" />
+            <location filename="../resources/Forms/AppletNetworkSettings.ui" line="191" />
             <source>Network Host URL</source>
             <translation>网络主机 URL</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletNetworkSettings.ui" line="244" />
+            <location filename="../resources/Forms/AppletNetworkSettings.ui" line="244" />
             <source>Network Key</source>
             <translation>网络密钥</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletNetworkSettings.ui" line="331" />
+            <location filename="../resources/Forms/AppletNetworkSettings.ui" line="331" />
             <source>Connection Test Service URL</source>
             <translation>连接测试服务 URL</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletNetworkSettings.ui" line="440" />
-            <source>Assume Users Can Connect Directly (Port Is Always Open)</source>
-            <translation>假设用户可以直接连接（端口始终打开）</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/Forms/AppletNetworkSettings.ui" line="385" />
+            <location filename="../resources/Forms/AppletNetworkSettings.ui" line="385" />
             <source>Enable UPNP port forward</source>
             <translation>启用 UPNP 端口转发</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletNetworkSettings.ui" line="407" />
+            <location filename="../resources/Forms/AppletNetworkSettings.ui" line="398" />
+            <source>Use IPv6 Network</source>
+            <translation>使用 IPv6 网络</translation>
+        </message>
+        <message>
+            <location filename="../resources/Forms/AppletNetworkSettings.ui" line="407" />
             <source>How To Determine If Can Direct Connect ( Is Port Open? )</source>
             <translation>如何判断是否可以直连（端口是否开放？）</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletNetworkSettings.ui" line="433" />
+            <location filename="../resources/Forms/AppletNetworkSettings.ui" line="433" />
             <source>Use Connection Test Service To Test Is Port Open (Recommended)</source>
             <translation>使用连接测试服务测试端口是否打开（推荐）</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletNetworkSettings.ui" line="458" />
+            <location filename="../resources/Forms/AppletNetworkSettings.ui" line="440" />
+            <source>Assume Users Can Connect Directly (Port Is Always Open)</source>
+            <translation>假设用户可以直接连接（端口始终打开）</translation>
+        </message>
+        <message>
+            <location filename="../resources/Forms/AppletNetworkSettings.ui" line="458" />
             <source>External IP</source>
             <translation>外部IP</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletNetworkSettings.ui" line="474" />
-            <source>Assume Relay Service Is Required ( Device Is Behind Firewall ).</source>
-            <translation>假设需要中继服务（设备位于防火墙后面）。</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/Forms/AppletNetworkSettings.ui" line="513" />
+            <location filename="../resources/Forms/AppletNetworkSettings.ui" line="506" />
             <source>My URL:</source>
             <translation>我的网址：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletNetworkSettings.ui" line="584" />
+            <location filename="../resources/Forms/AppletNetworkSettings.ui" line="577" />
             <source>Test Is My Port Open</source>
             <translation>测试我的端口是否打开</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletNetworkSettings.ui" line="591" />
+            <location filename="../resources/Forms/AppletNetworkSettings.ui" line="584" />
             <source>Test UPNP</source>
             <translation>测试UPNP</translation>
         </message>
@@ -1327,47 +1322,47 @@
     <context>
         <name>AppletOfferInfoUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferInfo.ui" line="23" />
+            <location filename="../resources/Forms/AppletOfferInfo.ui" line="23" />
             <source>Offer Info</source>
             <translation>优惠信息</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferInfo.ui" line="58" />
+            <location filename="../resources/Forms/AppletOfferInfo.ui" line="58" />
             <source>Offer Status:</source>
             <translation>报价状态：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferInfo.ui" line="88" />
+            <location filename="../resources/Forms/AppletOfferInfo.ui" line="88" />
             <source>Offer Time:</source>
             <translation>优惠时间：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferInfo.ui" line="120" />
+            <location filename="../resources/Forms/AppletOfferInfo.ui" line="120" />
             <source>Offer Message (if any)</source>
             <translation>优惠信息（如有）</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferInfo.ui" line="138" />
+            <location filename="../resources/Forms/AppletOfferInfo.ui" line="138" />
             <source>Expires</source>
             <translation>过期</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferInfo.ui" line="151" />
+            <location filename="../resources/Forms/AppletOfferInfo.ui" line="151" />
             <source>When Offer Response Recieved</source>
             <translation>收到报价回复时</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferInfo.ui" line="160" />
+            <location filename="../resources/Forms/AppletOfferInfo.ui" line="160" />
             <source>File Info</source>
             <translation>文件信息</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferInfo.ui" line="217" />
+            <location filename="../resources/Forms/AppletOfferInfo.ui" line="217" />
             <source>File Name:</source>
             <translation>文件名：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferInfo.ui" line="259" />
+            <location filename="../resources/Forms/AppletOfferInfo.ui" line="259" />
             <source>File Size:</source>
             <translation>文件大小：</translation>
         </message>
@@ -1375,17 +1370,17 @@
     <context>
         <name>AppletOfferListUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferList.ui" line="20" />
+            <location filename="../resources/Forms/AppletOfferList.ui" line="20" />
             <source>Offer List</source>
             <translation>报价清单</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferList.ui" line="110" />
+            <location filename="../resources/Forms/AppletOfferList.ui" line="110" />
             <source>Active Offers</source>
             <translation>活跃优惠</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferList.ui" line="143" />
+            <location filename="../resources/Forms/AppletOfferList.ui" line="143" />
             <source>Offer History</source>
             <translation>优惠历史</translation>
         </message>
@@ -1393,32 +1388,32 @@
     <context>
         <name>AppletOfferRandSessionUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferRandSession.ui" line="23" />
+            <location filename="../resources/Forms/AppletOfferRandSession.ui" line="23" />
             <source>Offer Send</source>
             <translation>报价发送</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferRandSession.ui" line="88" />
+            <location filename="../resources/Forms/AppletOfferRandSession.ui" line="88" />
             <source>Status:</source>
             <translation>状态：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferRandSession.ui" line="154" />
+            <location filename="../resources/Forms/AppletOfferRandSession.ui" line="154" />
             <source>Offer Voice Phone Session</source>
             <translation>提供语音电话会话</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferRandSession.ui" line="198" />
+            <location filename="../resources/Forms/AppletOfferRandSession.ui" line="198" />
             <source>Offer Video Chat Session</source>
             <translation>提供视频聊天会话</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferRandSession.ui" line="242" />
+            <location filename="../resources/Forms/AppletOfferRandSession.ui" line="242" />
             <source>Offer Play Truth Or Dare</source>
             <translation>提供真心话大冒险游戏</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferRandSession.ui" line="291" />
+            <location filename="../resources/Forms/AppletOfferRandSession.ui" line="291" />
             <source>Send</source>
             <translation>发送</translation>
         </message>
@@ -1426,42 +1421,42 @@
     <context>
         <name>AppletOfferResponseAcceptUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferResponseAccept.ui" line="23" />
+            <location filename="../resources/Forms/AppletOfferResponseAccept.ui" line="23" />
             <source>Offer Accept Response</source>
             <translation>提供 接受 回应</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferResponseAccept.ui" line="88" />
+            <location filename="../resources/Forms/AppletOfferResponseAccept.ui" line="88" />
             <source>Status:</source>
             <translation>状态：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferResponseAccept.ui" line="122" />
+            <location filename="../resources/Forms/AppletOfferResponseAccept.ui" line="122" />
             <source>Expires</source>
             <translation>过期</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferResponseAccept.ui" line="135" />
+            <location filename="../resources/Forms/AppletOfferResponseAccept.ui" line="135" />
             <source>When Offer Response Recieved</source>
             <translation>收到报价回复时</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferResponseAccept.ui" line="144" />
+            <location filename="../resources/Forms/AppletOfferResponseAccept.ui" line="144" />
             <source>Response</source>
             <translation>回应</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferResponseAccept.ui" line="163" />
+            <location filename="../resources/Forms/AppletOfferResponseAccept.ui" line="163" />
             <source>File Info</source>
             <translation>文件信息</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferResponseAccept.ui" line="201" />
+            <location filename="../resources/Forms/AppletOfferResponseAccept.ui" line="201" />
             <source>File:</source>
             <translation>文件：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferResponseAccept.ui" line="243" />
+            <location filename="../resources/Forms/AppletOfferResponseAccept.ui" line="243" />
             <source>Path:</source>
             <translation>路径：</translation>
         </message>
@@ -1469,42 +1464,42 @@
     <context>
         <name>AppletOfferResponseUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferResponse.ui" line="23" />
+            <location filename="../resources/Forms/AppletOfferResponse.ui" line="23" />
             <source>Offer Response</source>
-            <translation>报价回应</translation>
+            <translation>报价响应</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferResponse.ui" line="88" />
+            <location filename="../resources/Forms/AppletOfferResponse.ui" line="88" />
             <source>Status:</source>
             <translation>状态：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferResponse.ui" line="122" />
+            <location filename="../resources/Forms/AppletOfferResponse.ui" line="122" />
             <source>Expires</source>
             <translation>过期</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferResponse.ui" line="135" />
+            <location filename="../resources/Forms/AppletOfferResponse.ui" line="135" />
             <source>When Offer Response Recieved</source>
             <translation>收到报价回复时</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferResponse.ui" line="144" />
+            <location filename="../resources/Forms/AppletOfferResponse.ui" line="144" />
             <source>Response</source>
             <translation>回应</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferResponse.ui" line="163" />
+            <location filename="../resources/Forms/AppletOfferResponse.ui" line="163" />
             <source>File Info</source>
             <translation>文件信息</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferResponse.ui" line="201" />
+            <location filename="../resources/Forms/AppletOfferResponse.ui" line="201" />
             <source>File:</source>
             <translation>文件：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferResponse.ui" line="243" />
+            <location filename="../resources/Forms/AppletOfferResponse.ui" line="243" />
             <source>Path:</source>
             <translation>路径：</translation>
         </message>
@@ -1512,17 +1507,17 @@
     <context>
         <name>AppletOfferSendUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferSend.ui" line="23" />
+            <location filename="../resources/Forms/AppletOfferSend.ui" line="23" />
             <source>Offer Send</source>
             <translation>报价发送</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferSend.ui" line="88" />
+            <location filename="../resources/Forms/AppletOfferSend.ui" line="88" />
             <source>Status:</source>
             <translation>状态：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferSend.ui" line="120" />
+            <location filename="../resources/Forms/AppletOfferSend.ui" line="120" />
             <source>Send</source>
             <translation>发送</translation>
         </message>
@@ -1530,47 +1525,47 @@
     <context>
         <name>AppletOfferViewUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferView.ui" line="23" />
+            <location filename="../resources/Forms/AppletOfferView.ui" line="23" />
             <source>Offer Details</source>
             <translation>优惠详情</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferView.ui" line="88" />
+            <location filename="../resources/Forms/AppletOfferView.ui" line="88" />
             <source>Status:</source>
             <translation>状态：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferView.ui" line="122" />
+            <location filename="../resources/Forms/AppletOfferView.ui" line="122" />
             <source>Expires</source>
             <translation>过期</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferView.ui" line="135" />
+            <location filename="../resources/Forms/AppletOfferView.ui" line="135" />
             <source>When Offer Response Recieved</source>
             <translation>收到报价回复时</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferView.ui" line="144" />
+            <location filename="../resources/Forms/AppletOfferView.ui" line="144" />
             <source>Send</source>
             <translation>发送</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferView.ui" line="156" />
+            <location filename="../resources/Forms/AppletOfferView.ui" line="156" />
             <source>Response</source>
             <translation>回应</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferView.ui" line="175" />
+            <location filename="../resources/Forms/AppletOfferView.ui" line="175" />
             <source>File Info</source>
             <translation>文件信息</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferView.ui" line="213" />
+            <location filename="../resources/Forms/AppletOfferView.ui" line="213" />
             <source>File:</source>
             <translation>文件：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletOfferView.ui" line="255" />
+            <location filename="../resources/Forms/AppletOfferView.ui" line="255" />
             <source>Path:</source>
             <translation>路径：</translation>
         </message>
@@ -1578,79 +1573,79 @@
     <context>
         <name>AppletPeerChangeFriendshipUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerChangeFriendship.ui" line="26" />
+            <location filename="../resources/Forms/AppletPeerChangeFriendship.ui" line="26" />
             <source>Dialog</source>
             <translation>对话</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerChangeFriendship.ui" line="101" />
+            <location filename="../resources/Forms/AppletPeerChangeFriendship.ui" line="101" />
             <source>Age:</source>
             <translation>年龄：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerChangeFriendship.ui" line="131" />
+            <location filename="../resources/Forms/AppletPeerChangeFriendship.ui" line="131" />
             <source>Gender:</source>
             <translation>性别：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerChangeFriendship.ui" line="168" />
+            <location filename="../resources/Forms/AppletPeerChangeFriendship.ui" line="168" />
             <source>Preferred Content:</source>
             <translation>首选内容：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerChangeFriendship.ui" line="198" />
+            <location filename="../resources/Forms/AppletPeerChangeFriendship.ui" line="198" />
             <source>Language:</source>
             <translation>语言：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerChangeFriendship.ui" line="273" />
+            <location filename="../resources/Forms/AppletPeerChangeFriendship.ui" line="273" />
             <source>Make Friend</source>
             <translation>交朋友</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerChangeFriendship.ui" line="312" />
+            <location filename="../resources/Forms/AppletPeerChangeFriendship.ui" line="312" />
             <source>Ignore</source>
             <translation>忽略</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerChangeFriendship.ui" line="380" />
-            <location filename="../nolimitgui/src/Forms/AppletPeerChangeFriendship.ui" line="428" />
-            <location filename="../nolimitgui/src/Forms/AppletPeerChangeFriendship.ui" line="686" />
+            <location filename="../resources/Forms/AppletPeerChangeFriendship.ui" line="380" />
+            <location filename="../resources/Forms/AppletPeerChangeFriendship.ui" line="428" />
+            <location filename="../resources/Forms/AppletPeerChangeFriendship.ui" line="686" />
             <source>TextLabel</source>
             <translation>文本标签</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerChangeFriendship.ui" line="470" />
+            <location filename="../resources/Forms/AppletPeerChangeFriendship.ui" line="470" />
             <source>Set To Administrator Permission</source>
             <translation>设置为管理员权限</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerChangeFriendship.ui" line="512" />
+            <location filename="../resources/Forms/AppletPeerChangeFriendship.ui" line="512" />
             <source>Set To Friend Permission</source>
             <translation>设置为好友权限</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerChangeFriendship.ui" line="554" />
+            <location filename="../resources/Forms/AppletPeerChangeFriendship.ui" line="554" />
             <source>Set To Guest Permission</source>
             <translation>设置为访客权限</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerChangeFriendship.ui" line="596" />
+            <location filename="../resources/Forms/AppletPeerChangeFriendship.ui" line="596" />
             <source>Set To Anybody Permission</source>
             <translation>设置为任何人权限</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerChangeFriendship.ui" line="638" />
+            <location filename="../resources/Forms/AppletPeerChangeFriendship.ui" line="638" />
             <source>Ignore This Person</source>
             <translation>忽略这个人</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerChangeFriendship.ui" line="729" />
+            <location filename="../resources/Forms/AppletPeerChangeFriendship.ui" line="729" />
             <source>OK</source>
             <translation>好的</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerChangeFriendship.ui" line="762" />
+            <location filename="../resources/Forms/AppletPeerChangeFriendship.ui" line="762" />
             <source>Cancel</source>
             <translation>取消</translation>
         </message>
@@ -1658,17 +1653,17 @@
     <context>
         <name>AppletPeerReplyFileOfferUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerReplyOfferFile.ui" line="20" />
+            <location filename="../resources/Forms/AppletPeerReplyOfferFile.ui" line="20" />
             <source>Offer Session</source>
             <translation>优惠时段</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerReplyOfferFile.ui" line="123" />
+            <location filename="../resources/Forms/AppletPeerReplyOfferFile.ui" line="123" />
             <source>Offer A File</source>
             <translation>提供文件</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerReplyOfferFile.ui" line="199" />
+            <location filename="../resources/Forms/AppletPeerReplyOfferFile.ui" line="199" />
             <source>View Uploads</source>
             <translation>查看上传内容</translation>
         </message>
@@ -1676,22 +1671,22 @@
     <context>
         <name>AppletPeerSessionFileOfferUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerSessionFileOffer.ui" line="20" />
+            <location filename="../resources/Forms/AppletPeerSessionFileOffer.ui" line="20" />
             <source>Accept File Offer</source>
             <translation>接受文件报价</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerSessionFileOffer.ui" line="100" />
+            <location filename="../resources/Forms/AppletPeerSessionFileOffer.ui" line="100" />
             <source>File Transfer</source>
             <translation>文件传输</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerSessionFileOffer.ui" line="122" />
+            <location filename="../resources/Forms/AppletPeerSessionFileOffer.ui" line="122" />
             <source>File:</source>
             <translation>文件：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerSessionFileOffer.ui" line="152" />
+            <location filename="../resources/Forms/AppletPeerSessionFileOffer.ui" line="152" />
             <source>Progress:</source>
             <translation>进展：</translation>
         </message>
@@ -1707,17 +1702,17 @@
     <context>
         <name>AppletPeerTodGameUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerTodGame.ui" line="20" />
+            <location filename="../resources/Forms/AppletPeerTodGame.ui" line="20" />
             <source>Dialog</source>
             <translation>对话</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerTodGame.ui" line="135" />
+            <location filename="../resources/Forms/AppletPeerTodGame.ui" line="135" />
             <source>Truth Or Dare</source>
             <translation>真心话大冒险</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerTodGame.ui" line="195" />
+            <location filename="../resources/Forms/AppletPeerTodGame.ui" line="195" />
             <source>End Call</source>
             <translation>结束通话</translation>
         </message>
@@ -1725,17 +1720,17 @@
     <context>
         <name>AppletPeerVideoPhoneUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerVideoPhone.ui" line="20" />
+            <location filename="../resources/Forms/AppletPeerVideoPhone.ui" line="20" />
             <source>Dialog</source>
             <translation>对话</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerVideoPhone.ui" line="129" />
+            <location filename="../resources/Forms/AppletPeerVideoPhone.ui" line="129" />
             <source>Video Phone </source>
-            <translation>可视电话</translation>
+            <translation>可视电话 </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerVideoPhone.ui" line="189" />
+            <location filename="../resources/Forms/AppletPeerVideoPhone.ui" line="189" />
             <source>End Call</source>
             <translation>结束通话</translation>
         </message>
@@ -1743,27 +1738,27 @@
     <context>
         <name>AppletPeerVoicePhoneUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerVoicePhone.ui" line="32" />
+            <location filename="../resources/Forms/AppletPeerVoicePhone.ui" line="32" />
             <source>Dialog</source>
             <translation>对话</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerVoicePhone.ui" line="151" />
+            <location filename="../resources/Forms/AppletPeerVoicePhone.ui" line="151" />
             <source>Voice Phone </source>
-            <translation>语音电话</translation>
+            <translation>语音电话 </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerVoicePhone.ui" line="211" />
+            <location filename="../resources/Forms/AppletPeerVoicePhone.ui" line="211" />
             <source>End Call</source>
             <translation>结束通话</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerVoicePhone.ui" line="226" />
+            <location filename="../resources/Forms/AppletPeerVoicePhone.ui" line="226" />
             <source>Show Audio In Waveforms</source>
             <translation>以波形显示音频</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPeerVoicePhone.ui" line="246" />
+            <location filename="../resources/Forms/AppletPeerVoicePhone.ui" line="246" />
             <source>Show Audio Out Waveform</source>
             <translation>显示音频输出波形</translation>
         </message>
@@ -1771,17 +1766,17 @@
     <context>
         <name>AppletPermissionListtUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPermissionList.ui" line="14" />
+            <location filename="../resources/Forms/AppletPermissionList.ui" line="14" />
             <source>Permission List</source>
             <translation>权限列表</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPermissionList.ui" line="47" />
+            <location filename="../resources/Forms/AppletPermissionList.ui" line="47" />
             <source>Services Permission List For Convenience</source>
             <translation>为方便起见的服务权限列表</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPermissionList.ui" line="60" />
+            <location filename="../resources/Forms/AppletPermissionList.ui" line="60" />
             <source>Permission Can Also Be Set In The Service Settings</source>
             <translation>权限也可以在服务设置中设置</translation>
         </message>
@@ -1789,8 +1784,8 @@
     <context>
         <name>AppletPersonOfferListUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPersonOfferList.ui" line="117" />
-            <location filename="../nolimitgui/src/Forms/AppletPersonOfferList.ui" line="124" />
+            <location filename="../resources/Forms/AppletPersonOfferList.ui" line="117" />
+            <location filename="../resources/Forms/AppletPersonOfferList.ui" line="124" />
             <source>PushButton</source>
             <translation>按钮</translation>
         </message>
@@ -1798,7 +1793,7 @@
     <context>
         <name>AppletPlayerNlcUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPlayerNlc.ui" line="32" />
+            <location filename="../resources/Forms/AppletPlayerNlc.ui" line="32" />
             <source>Applet Player</source>
             <translation>小程序播放器</translation>
         </message>
@@ -1806,7 +1801,7 @@
     <context>
         <name>AppletPlayerPhotoUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPlayerPhoto.ui" line="32" />
+            <location filename="../resources/Forms/AppletPlayerPhoto.ui" line="32" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
@@ -1814,7 +1809,7 @@
     <context>
         <name>AppletPlayerVideoUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPlayerVideo.ui" line="32" />
+            <location filename="../resources/Forms/AppletPlayerVideo.ui" line="32" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
@@ -1822,7 +1817,7 @@
     <context>
         <name>AppletRandomConnectJoinSearchUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletRandomConnectJoinSearch.ui" line="20" />
+            <location filename="../resources/Forms/AppletRandomConnectJoinSearch.ui" line="20" />
             <source>Search</source>
             <translation>搜索</translation>
         </message>
@@ -1830,12 +1825,12 @@
     <context>
         <name>AppletRandomConnectListLocalViewUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletRandomConnectListLocalView.ui" line="20" />
+            <location filename="../resources/Forms/AppletRandomConnectListLocalView.ui" line="20" />
             <source>Random Connect Local List</source>
             <translation>随机连接本地列表</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletRandomConnectListLocalView.ui" line="106" />
+            <location filename="../resources/Forms/AppletRandomConnectListLocalView.ui" line="106" />
             <source>Refresh list of announced hosts</source>
             <translation>刷新已公布的主机列表</translation>
         </message>
@@ -1843,42 +1838,42 @@
     <context>
         <name>AppletServiceBaseSettingsUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBaseSettings.ui" line="14" />
+            <location filename="../resources/Forms/AppletServiceBaseSettings.ui" line="14" />
             <source>Applet Service Base Settings</source>
             <translation>小程序服务基础设置</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBaseSettings.ui" line="20" />
+            <location filename="../resources/Forms/AppletServiceBaseSettings.ui" line="20" />
             <source>Service Title</source>
             <translation>服务名称</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBaseSettings.ui" line="39" />
+            <location filename="../resources/Forms/AppletServiceBaseSettings.ui" line="39" />
             <source>Apply Changes</source>
             <translation>应用更改</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBaseSettings.ui" line="46" />
+            <location filename="../resources/Forms/AppletServiceBaseSettings.ui" line="46" />
             <source>Permission Level Required To Use Service</source>
             <translation>使用服务所需的权限级别</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBaseSettings.ui" line="63" />
+            <location filename="../resources/Forms/AppletServiceBaseSettings.ui" line="63" />
             <source>Optional Image For Detail Information</source>
             <translation>可选图像以获取详细信息</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBaseSettings.ui" line="80" />
+            <location filename="../resources/Forms/AppletServiceBaseSettings.ui" line="80" />
             <source>Service URL or IP Address</source>
             <translation>服务 URL 或 IP 地址</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBaseSettings.ui" line="94" />
+            <location filename="../resources/Forms/AppletServiceBaseSettings.ui" line="94" />
             <source>Name Of Service (optional), max length 63</source>
             <translation>服务名称（可选），最大长度 63</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBaseSettings.ui" line="108" />
+            <location filename="../resources/Forms/AppletServiceBaseSettings.ui" line="108" />
             <source>Description Of Service (optional), max length 511</source>
             <translation>服务描述（可选），最大长度 511</translation>
         </message>
@@ -1886,67 +1881,67 @@
     <context>
         <name>AppletServiceBaseUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBase.ui" line="14" />
+            <location filename="../resources/Forms/AppletServiceBase.ui" line="14" />
             <source>Service</source>
             <translation>服务</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBase.ui" line="35" />
+            <location filename="../resources/Forms/AppletServiceBase.ui" line="35" />
             <source>Service Title</source>
             <translation>服务名称</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBase.ui" line="48" />
+            <location filename="../resources/Forms/AppletServiceBase.ui" line="48" />
             <source>Permission Level Required To Use Service</source>
             <translation>使用服务所需的权限级别</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBase.ui" line="58" />
+            <location filename="../resources/Forms/AppletServiceBase.ui" line="58" />
             <source>Run Service On Application Startup</source>
             <translation>在应用程序启动时运行服务</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBase.ui" line="67" />
+            <location filename="../resources/Forms/AppletServiceBase.ui" line="67" />
             <source>Start Service</source>
             <translation>启动服务</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBase.ui" line="86" />
+            <location filename="../resources/Forms/AppletServiceBase.ui" line="86" />
             <source>Stop Service</source>
             <translation>停止服务</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBase.ui" line="95" />
+            <location filename="../resources/Forms/AppletServiceBase.ui" line="95" />
             <source>Apply Service Settings</source>
             <translation>应用服务设置</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBase.ui" line="104" />
+            <location filename="../resources/Forms/AppletServiceBase.ui" line="104" />
             <source>Rating</source>
             <translation>评级</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBase.ui" line="124" />
+            <location filename="../resources/Forms/AppletServiceBase.ui" line="124" />
             <source>Language</source>
             <translation>语言</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBase.ui" line="143" />
+            <location filename="../resources/Forms/AppletServiceBase.ui" line="143" />
             <source>Service URL or IP Address </source>
-            <translation>服务 URL 或 IP 地址</translation>
+            <translation>服务 URL 或 IP 地址 </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBase.ui" line="157" />
+            <location filename="../resources/Forms/AppletServiceBase.ui" line="157" />
             <source>Title Of Service ( Optional For Detail Information )</source>
             <translation>服务名称（详细信息可选）</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBase.ui" line="177" />
+            <location filename="../resources/Forms/AppletServiceBase.ui" line="177" />
             <source>Comma Delimited Key Words ( Optional For Searches )</source>
             <translation>逗号分隔关键字（搜索时可选）</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceBase.ui" line="191" />
+            <location filename="../resources/Forms/AppletServiceBase.ui" line="191" />
             <source>Description Of Service ( Optional For Detail Information )
 ( max 511 characters )</source>
             <translation>服务描述（详细信息可选）
@@ -1956,17 +1951,17 @@
     <context>
         <name>AppletSettingsHostBaseUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSettingsHostBase.ui" line="20" />
+            <location filename="../resources/Forms/AppletSettingsHostBase.ui" line="20" />
             <source>Host Settings</source>
             <translation>主机设置</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSettingsHostBase.ui" line="73" />
+            <location filename="../resources/Forms/AppletSettingsHostBase.ui" line="73" />
             <source>View Hosting Requirements</source>
             <translation>查看托管要求</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSettingsHostBase.ui" line="80" />
+            <location filename="../resources/Forms/AppletSettingsHostBase.ui" line="80" />
             <source>View My Host</source>
             <translation>查看我的主机</translation>
         </message>
@@ -1974,17 +1969,17 @@
     <context>
         <name>AppletSettingsNoUserSettingsUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSettingsNoUserSettings.ui" line="20" />
+            <location filename="../resources/Forms/AppletSettingsNoUserSettings.ui" line="20" />
             <source>Offer Session</source>
             <translation>优惠时段</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSettingsNoUserSettings.ui" line="74" />
+            <location filename="../resources/Forms/AppletSettingsNoUserSettings.ui" line="74" />
             <source>There Are No User Settings For This Service Except Permission Level</source>
             <translation>除权限级别外，此服务没有任何用户设置</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSettingsNoUserSettings.ui" line="81" />
+            <location filename="../resources/Forms/AppletSettingsNoUserSettings.ui" line="81" />
             <source>Please vist https://nolimitconnect.org for more information.</source>
             <translation>请访问 https://nolimitconnect.org 了解更多信息。</translation>
         </message>
@@ -1992,17 +1987,17 @@
     <context>
         <name>AppletSnapshotUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSnapshot.ui" line="20" />
+            <location filename="../resources/Forms/AppletSnapshot.ui" line="20" />
             <source>Take Snapshot</source>
             <translation>拍摄快照</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSnapshot.ui" line="312" />
+            <location filename="../resources/Forms/AppletSnapshot.ui" line="312" />
             <source>Take Snap Shot</source>
             <translation>拍摄快照</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSnapshot.ui" line="319" />
+            <location filename="../resources/Forms/AppletSnapshot.ui" line="319" />
             <source>Done</source>
             <translation>完成</translation>
         </message>
@@ -2010,12 +2005,12 @@
     <context>
         <name>AppletSocketListUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSocketList.ui" line="32" />
+            <location filename="../resources/Forms/AppletSocketList.ui" line="32" />
             <source>Connected Socket List</source>
             <translation>连接的套接字列表</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSocketList.ui" line="88" />
+            <location filename="../resources/Forms/AppletSocketList.ui" line="88" />
             <source>Copy To Clipboard</source>
             <translation>复制到剪贴板</translation>
         </message>
@@ -2023,125 +2018,125 @@
     <context>
         <name>AppletSoundSettingsUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="23" />
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="23" />
             <source>Sound Settings</source>
             <translation>声音设置</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="74" />
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="74" />
             <source>No AEC Loopback</source>
             <translation>无 AEC 环回</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="81" />
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="81" />
             <source>With AEC Loopback</source>
             <translation>带 AEC 环回</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="104" />
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="104" />
             <source>Show Audio In Waveforms</source>
             <translation>以波形显示音频</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="124" />
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="124" />
             <source>Show Audio Out Waveform</source>
             <translation>显示音频输出波形</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="147" />
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="147" />
             <source>Show Sound In Settings</source>
             <translation>在设置中显示声音</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="154" />
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="154" />
             <source>Sound Input</source>
             <translation>声音输入</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="175" />
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="175" />
             <source>Apply Sound In Device As Default</source>
             <translation>将设备中的声音应用为默认值</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="184" />
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="184" />
             <source>Sound In Device</source>
             <translation>设备中的声音</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="211" />
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="211" />
             <source>Enable Noise Reduction</source>
             <translation>启用降噪</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="224" />
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="224" />
             <source>Enable AGC ( Automatic Gain Control )</source>
             <translation>启用 AGC（自动增益控制）</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="235" />
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="235" />
             <source>Microphone Peak Level: </source>
-            <translation>麦克风峰值电平：</translation>
+            <translation>麦克风峰值电平： </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="254" />
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="254" />
             <source>Show Sound Out Settings</source>
             <translation>显示声音输出设置</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="318" />
-            <source>Generate 400Hz tone for speakers</source>
-            <translation>为扬声器生成 400Hz 音调</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="422" />
-            <source>Play Test File</source>
-            <translation>播放测试文件</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="442" />
-            <source>Show Log</source>
-            <translation>显示日志</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="261" />
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="261" />
             <source>Sound Output</source>
             <translation>声音输出</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="282" />
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="282" />
             <source>Apply Sound Out Device As Default</source>
             <translation>将声音输出设备应用为默认值</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="291" />
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="291" />
             <source>Sound Out Device</source>
             <translation>声音输出装置</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="329" />
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="318" />
+            <source>Generate 400Hz tone for speakers</source>
+            <translation>为扬声器生成 400Hz 音调</translation>
+        </message>
+        <message>
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="329" />
             <source>Test Sound Delay For Echo Cancel</source>
             <translation>测试回声消除的声音延迟</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="342" />
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="342" />
             <source>Test result ms:</source>
             <translation>测试结果毫秒：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="369" />
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="369" />
             <source>Echo delay ms:</source>
             <translation>回声延迟毫秒：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletSoundSettings.ui" line="386" />
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="386" />
             <source>Save Echo Delay To Echo Canceler</source>
             <translation>将回声延迟保存到回声消除器</translation>
+        </message>
+        <message>
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="422" />
+            <source>Play Test File</source>
+            <translation>播放测试文件</translation>
+        </message>
+        <message>
+            <location filename="../resources/Forms/AppletSoundSettings.ui" line="442" />
+            <source>Show Log</source>
+            <translation>显示日志</translation>
         </message>
     </context>
     <context>
         <name>AppletStoryboardClientUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletStoryBoardClient.ui" line="20" />
+            <location filename="../resources/Forms/AppletStoryBoardClient.ui" line="20" />
             <source>Edit Storyboard</source>
             <translation>编辑故事板</translation>
         </message>
@@ -2149,27 +2144,27 @@
     <context>
         <name>AppletTestAndDebugUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTestAndDebug.ui" line="32" />
+            <location filename="../resources/Forms/AppletTestAndDebug.ui" line="32" />
             <source>Test And Debug</source>
             <translation>测试和调试</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTestAndDebug.ui" line="105" />
+            <location filename="../resources/Forms/AppletTestAndDebug.ui" line="105" />
             <source>1 minute Host Announce interval (NOT Recommended)</source>
             <translation>1 分钟主机公告间隔（不推荐）</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTestAndDebug.ui" line="118" />
+            <location filename="../resources/Forms/AppletTestAndDebug.ui" line="118" />
             <source>Allow delete user from database</source>
             <translation>允许从数据库中删除用户</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTestAndDebug.ui" line="244" />
+            <location filename="../resources/Forms/AppletTestAndDebug.ui" line="244" />
             <source>Reset Truth Or Dare Count</source>
             <translation>重置真心话大冒险计数</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTestAndDebug.ui" line="269" />
+            <location filename="../resources/Forms/AppletTestAndDebug.ui" line="269" />
             <source>4512448476bf2836979cf61b7c88f8fc70099NoLimitNet172.94.58.10345124</source>
             <translation>4512448476bf2836979cf61b7c88f8fc70099NoLimitNet172.94.58.10345124</translation>
         </message>
@@ -2177,57 +2172,57 @@
     <context>
         <name>AppletTestUpnpUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTestUpnp.ui" line="32" />
+            <location filename="../resources/Forms/AppletTestUpnp.ui" line="32" />
             <source>Test UPNP Port Forward</source>
             <translation>测试 UPNP 端口转发</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTestUpnp.ui" line="55" />
+            <location filename="../resources/Forms/AppletTestUpnp.ui" line="55" />
             <source>Test Port Forward IP</source>
             <translation>测试端口转发IP</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTestUpnp.ui" line="75" />
+            <location filename="../resources/Forms/AppletTestUpnp.ui" line="75" />
             <source>Test Port Forward Port</source>
             <translation>测试端口转发端口</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTestUpnp.ui" line="89" />
+            <location filename="../resources/Forms/AppletTestUpnp.ui" line="89" />
             <source>Add Port Forward</source>
             <translation>添加端口转发</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTestUpnp.ui" line="96" />
+            <location filename="../resources/Forms/AppletTestUpnp.ui" line="96" />
             <source>Remove Port Forward</source>
             <translation>删除端口转发</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTestUpnp.ui" line="107" />
+            <location filename="../resources/Forms/AppletTestUpnp.ui" line="107" />
             <source>List Port Forward</source>
             <translation>列出端口转发</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTestUpnp.ui" line="114" />
+            <location filename="../resources/Forms/AppletTestUpnp.ui" line="114" />
             <source>Copy Log To Clipboard</source>
             <translation>将日志复制到剪贴板</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTestUpnp.ui" line="125" />
+            <location filename="../resources/Forms/AppletTestUpnp.ui" line="125" />
             <source>Log</source>
             <translation>日志</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTestUpnp.ui" line="132" />
+            <location filename="../resources/Forms/AppletTestUpnp.ui" line="132" />
             <source>Verbose</source>
             <translation>冗长</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTestUpnp.ui" line="139" />
+            <location filename="../resources/Forms/AppletTestUpnp.ui" line="139" />
             <source>Debug</source>
             <translation>调试</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTestUpnp.ui" line="146" />
+            <location filename="../resources/Forms/AppletTestUpnp.ui" line="146" />
             <source>Error</source>
             <translation>错误</translation>
         </message>
@@ -2235,7 +2230,7 @@
     <context>
         <name>AppletUploadsUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUploads.ui" line="35" />
+            <location filename="../resources/Forms/AppletUploads.ui" line="35" />
             <source>Menu</source>
             <translation>菜单</translation>
         </message>
@@ -2243,12 +2238,12 @@
     <context>
         <name>AppletUserConnectionsUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserConnections.ui" line="20" />
+            <location filename="../resources/Forms/AppletUserConnections.ui" line="20" />
             <source>User Connections</source>
             <translation>用户连接</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserConnections.ui" line="34" />
+            <location filename="../resources/Forms/AppletUserConnections.ui" line="34" />
             <source>List View Type</source>
             <translation>列表视图类型</translation>
         </message>
@@ -2256,104 +2251,104 @@
     <context>
         <name>AppletUserIdentityUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="20" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="20" />
             <source>User Identity</source>
             <translation>用户身份</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="76" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="76" />
             <source>Delete Account</source>
             <translation>删除帐户</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="85" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="85" />
             <source>Online Identity</source>
             <translation>在线身份</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="113" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="113" />
             <source>Select Account</source>
             <translation>选择账户</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="134" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="134" />
             <source>Mood Message: ( Up to 27 characters )</source>
             <translation>心情信息：（最多 27 个字符）</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="147" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="147" />
             <source>Let's Communicate!</source>
             <translation>让我们交流一下吧！</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="156" />
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="201" />
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="246" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="156" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="201" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="246" />
             <source>Apply</source>
             <translation>申请</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="167" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="167" />
             <source>Age:</source>
             <translation>年龄：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="184" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="184" />
             <source>Language:</source>
             <translation>语言：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="212" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="212" />
             <source>Gender:</source>
             <translation>性别：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="229" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="229" />
             <source>Preferred Content:</source>
             <translation>首选内容：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="264" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="264" />
             <source>Avatar Image</source>
             <translation>头像图片</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="310" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="310" />
             <source>Edit My Avatar Image</source>
             <translation>编辑我的头像图片</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="351" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="351" />
             <source>About Me Page</source>
             <translation>关于我页面</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="382" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="382" />
             <source>Edit My About Me Page</source>
             <translation>编辑我的关于我页面</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="414" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="414" />
             <source>View My About Me Page</source>
             <translation>查看我的关于我页面</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="430" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="430" />
             <source>Story Board Page (Blog)</source>
             <translation>故事板页面（博客）</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="461" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="461" />
             <source>Edit My Story Board Page</source>
             <translation>编辑我的故事板页面</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="493" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="493" />
             <source>View My Story Board Page</source>
             <translation>查看我的故事板页面</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserIdentity.ui" line="503" />
+            <location filename="../resources/Forms/AppletUserIdentity.ui" line="503" />
             <source>Create New Account</source>
             <translation>创建新帐户</translation>
         </message>
@@ -2361,72 +2356,72 @@
     <context>
         <name>AppletUserPreferencesUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserPreferences.ui" line="14" />
+            <location filename="../resources/Forms/AppletUserPreferences.ui" line="14" />
             <source>Log Settings</source>
             <translation>日志设置</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserPreferences.ui" line="49" />
+            <location filename="../resources/Forms/AppletUserPreferences.ui" line="49" />
             <source>Save User Settings</source>
             <translation>保存用户设置</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserPreferences.ui" line="56" />
+            <location filename="../resources/Forms/AppletUserPreferences.ui" line="56" />
             <source>Cancel</source>
             <translation>取消</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserPreferences.ui" line="81" />
+            <location filename="../resources/Forms/AppletUserPreferences.ui" line="81" />
             <source>Use system player for media instead of NLC player</source>
             <translation>使用系统播放器播放媒体而不是 NLC 播放器</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserPreferences.ui" line="88" />
+            <location filename="../resources/Forms/AppletUserPreferences.ui" line="88" />
             <source>Unattended host (Disable Offers, Messages Etc.)</source>
             <translation>无人值守的主机（禁用优惠、消息等）</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserPreferences.ui" line="95" />
+            <location filename="../resources/Forms/AppletUserPreferences.ui" line="95" />
             <source>When unchecked, joining a new host automatically leaves other active Group, Chat Room, or Random Connect hosts.</source>
             <translation>未选中时，加入新主机会自动离开其他活动的群组、聊天室或随机连接主机。</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserPreferences.ui" line="98" />
+            <location filename="../resources/Forms/AppletUserPreferences.ui" line="98" />
             <source>Allow Join Multiple Hosts</source>
             <translation>允许加入多个主机</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserPreferences.ui" line="111" />
+            <location filename="../resources/Forms/AppletUserPreferences.ui" line="111" />
             <source>Use 24 hour (military) time format</source>
             <translation>使用 24 小时（军用）时间格式</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserPreferences.ui" line="133" />
+            <location filename="../resources/Forms/AppletUserPreferences.ui" line="133" />
             <source>Max Message History Retained</source>
             <translation>保留的最大消息历史记录</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserPreferences.ui" line="162" />
+            <location filename="../resources/Forms/AppletUserPreferences.ui" line="162" />
             <source>Diable All Sound Effects (Key Click, Notify, Etc.)</source>
             <translation>禁用所有音效（按键、通知等）</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserPreferences.ui" line="193" />
+            <location filename="../resources/Forms/AppletUserPreferences.ui" line="193" />
             <source>Disable Trash Sound Effect</source>
             <translation>禁用垃圾音效</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserPreferences.ui" line="200" />
+            <location filename="../resources/Forms/AppletUserPreferences.ui" line="200" />
             <source>Disable Button Press Sound</source>
             <translation>禁用按钮按下声音</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserPreferences.ui" line="207" />
+            <location filename="../resources/Forms/AppletUserPreferences.ui" line="207" />
             <source>Dsiable Notify Sound</source>
             <translation>禁用通知声音</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletUserPreferences.ui" line="214" />
+            <location filename="../resources/Forms/AppletUserPreferences.ui" line="214" />
             <source>Disable Message Received Sound</source>
             <translation>禁用消息接收声音</translation>
         </message>
@@ -2434,7 +2429,7 @@
     <context>
         <name>AssetFaceWidget</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AssetFaceWidget.ui" line="32" />
+            <location filename="../resources/Forms/AssetFaceWidget.ui" line="32" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
@@ -2442,12 +2437,12 @@
     <context>
         <name>AssetPhotoWidget</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AssetPhotoWidget.ui" line="32" />
+            <location filename="../resources/Forms/AssetPhotoWidget.ui" line="32" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AssetPhotoWidget.ui" line="397" />
+            <location filename="../resources/Forms/AssetPhotoWidget.ui" line="397" />
             <source>File Name:</source>
             <translation>文件名：</translation>
         </message>
@@ -2455,12 +2450,12 @@
     <context>
         <name>AssetTextWidget</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AssetTextWidget.ui" line="32" />
+            <location filename="../resources/Forms/AssetTextWidget.ui" line="32" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AssetTextWidget.ui" line="369" />
+            <location filename="../resources/Forms/AssetTextWidget.ui" line="369" />
             <source>Copy Text</source>
             <translation>复制文本</translation>
         </message>
@@ -2468,12 +2463,12 @@
     <context>
         <name>AssetVideoWidget</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AssetVideoWidget.ui" line="32" />
+            <location filename="../resources/Forms/AssetVideoWidget.ui" line="32" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AssetVideoWidget.ui" line="416" />
+            <location filename="../resources/Forms/AssetVideoWidget.ui" line="416" />
             <source>File Name:</source>
             <translation>文件名：</translation>
         </message>
@@ -2481,12 +2476,12 @@
     <context>
         <name>AssetVoiceWidget</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AssetVoiceWidget.ui" line="32" />
+            <location filename="../resources/Forms/AssetVoiceWidget.ui" line="32" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AssetVoiceWidget.ui" line="341" />
+            <location filename="../resources/Forms/AssetVoiceWidget.ui" line="341" />
             <source>File Name:</source>
             <translation>文件名：</translation>
         </message>
@@ -2494,7 +2489,7 @@
     <context>
         <name>AvatarBarWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AvatarBarWidget.ui" line="32" />
+            <location filename="../resources/Forms/AvatarBarWidget.ui" line="32" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
@@ -2502,50 +2497,50 @@
     <context>
         <name>BrowseFilesWidget</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityBrowseFiles.ui" line="23" />
+            <location filename="../resources/Forms/ActivityBrowseFiles.ui" line="23" />
             <source>Browse Files</source>
             <translation>浏览文件</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityBrowseFiles.ui" line="151" />
+            <location filename="../resources/Forms/ActivityBrowseFiles.ui" line="151" />
             <source>Move Up A Folder</source>
             <translation>上移文件夹</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityBrowseFiles.ui" line="183" />
+            <location filename="../resources/Forms/ActivityBrowseFiles.ui" line="183" />
             <source>Select A Folder</source>
             <translation>选择文件夹</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityBrowseFiles.ui" line="267" />
+            <location filename="../resources/Forms/ActivityBrowseFiles.ui" line="242" />
+            <source>Add All Files To Library</source>
+            <translation>将所有文件添加到库中</translation>
+        </message>
+        <message>
+            <location filename="../resources/Forms/ActivityBrowseFiles.ui" line="267" />
             <source>Folder:</source>
             <translation>文件夹：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityBrowseFiles.ui" line="316" />
+            <location filename="../resources/Forms/ActivityBrowseFiles.ui" line="316" />
             <source>Double Click File Item to Select The File</source>
             <translation>双击文件项选择文件</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/Forms/ActivityBrowseFiles.ui" line="242" />
-            <source>Add All Files To Library</source>
-            <translation>将所有文件添加到库中</translation>
         </message>
     </context>
     <context>
         <name>CancelDownloadDialog</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityDownloadItemMenu.ui" line="14" />
+            <location filename="../resources/Forms/ActivityDownloadItemMenu.ui" line="14" />
             <source>Cancel Download</source>
             <translation>取消下载</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityDownloadItemMenu.ui" line="133" />
+            <location filename="../resources/Forms/ActivityDownloadItemMenu.ui" line="133" />
             <source>Recieve File</source>
             <translation>接收文件</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityDownloadItemMenu.ui" line="154" />
+            <location filename="../resources/Forms/ActivityDownloadItemMenu.ui" line="154" />
             <source>File:</source>
             <translation>文件：</translation>
         </message>
@@ -2553,8 +2548,8 @@
     <context>
         <name>CentralFrame</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/CentralFrame.ui" line="14" />
-            <location filename="../nolimitgui/src/Forms/CentralWidget.ui" line="14" />
+            <location filename="../resources/Forms/CentralFrame.ui" line="14" />
+            <location filename="../resources/Forms/CentralWidget.ui" line="14" />
             <source>Frame</source>
             <translation>框架</translation>
         </message>
@@ -2562,7 +2557,7 @@
     <context>
         <name>ChatEntryWidget</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ChatEntryWidget.ui" line="32" />
+            <location filename="../resources/Forms/ChatEntryWidget.ui" line="32" />
             <source>Chat Entry</source>
             <translation>聊天入口</translation>
         </message>
@@ -2570,43 +2565,43 @@
     <context>
         <name>ConfirmRemoveMessageClass</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/DialogConfirmRemoveMessage.ui" line="23" />
-            <location filename="../nolimitgui/src/Forms/DialogConfirmRemoveMessage.ui" line="113" />
+            <location filename="../resources/Forms/DialogConfirmRemoveMessage.ui" line="23" />
+            <location filename="../resources/Forms/DialogConfirmRemoveMessage.ui" line="113" />
             <source>Confirm Remove</source>
             <translation>确认删除</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/DialogConfirmRemoveMessage.ui" line="157" />
+            <location filename="../resources/Forms/DialogConfirmRemoveMessage.ui" line="157" />
             <source>X</source>
             <translation>X</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/DialogConfirmRemoveMessage.ui" line="194" />
+            <location filename="../resources/Forms/DialogConfirmRemoveMessage.ui" line="194" />
             <source>Click trash can to just remove message from chat history</source>
             <translation>单击垃圾桶即可从聊天记录中删除消息</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/DialogConfirmRemoveMessage.ui" line="240" />
+            <location filename="../resources/Forms/DialogConfirmRemoveMessage.ui" line="240" />
             <source>Remove Message</source>
             <translation>删除消息</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/DialogConfirmRemoveMessage.ui" line="255" />
+            <location filename="../resources/Forms/DialogConfirmRemoveMessage.ui" line="255" />
             <source>Click shredder to write random data to the file and PERMENENTLY delete the file</source>
             <translation>单击粉碎机将随机数据写入文件并永久删除文件</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/DialogConfirmRemoveMessage.ui" line="301" />
+            <location filename="../resources/Forms/DialogConfirmRemoveMessage.ui" line="301" />
             <source>Shred File And Remove</source>
             <translation>粉碎文件并删除</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/DialogConfirmRemoveMessage.ui" line="316" />
+            <location filename="../resources/Forms/DialogConfirmRemoveMessage.ui" line="316" />
             <source>Cancel - Do nothing</source>
             <translation>取消 - 不执行任何操作</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/DialogConfirmRemoveMessage.ui" line="362" />
+            <location filename="../resources/Forms/DialogConfirmRemoveMessage.ui" line="362" />
             <source>Cancel</source>
             <translation>取消</translation>
         </message>
@@ -2614,67 +2609,67 @@
     <context>
         <name>CreateAccountUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletCreateAccount.ui" line="26" />
+            <location filename="../resources/Forms/AppletCreateAccount.ui" line="26" />
             <source>Create New Account</source>
             <translation>创建新帐户</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletCreateAccount.ui" line="53" />
+            <location filename="../resources/Forms/AppletCreateAccount.ui" line="53" />
             <source>No Registration Required.</source>
             <translation>无需注册。</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletCreateAccount.ui" line="66" />
+            <location filename="../resources/Forms/AppletCreateAccount.ui" line="66" />
             <source>Enter A User Name and Log In!</source>
             <translation>输入用户名并登录！</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletCreateAccount.ui" line="79" />
+            <location filename="../resources/Forms/AppletCreateAccount.ui" line="79" />
             <source>User Name: (4 to 31 characters)</source>
             <translation>用户名：（4 至 31 个字符）</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletCreateAccount.ui" line="105" />
+            <location filename="../resources/Forms/AppletCreateAccount.ui" line="105" />
             <source>Mood Message: (Up to 31 characters)</source>
             <translation>心情信息：（最多 31 个字符）</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletCreateAccount.ui" line="118" />
+            <location filename="../resources/Forms/AppletCreateAccount.ui" line="118" />
             <source>Let's Communicate!</source>
             <translation>让我们交流一下吧！</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletCreateAccount.ui" line="139" />
+            <location filename="../resources/Forms/AppletCreateAccount.ui" line="139" />
             <source>Age</source>
             <translation>年龄</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletCreateAccount.ui" line="162" />
+            <location filename="../resources/Forms/AppletCreateAccount.ui" line="162" />
             <source>Content</source>
             <translation>内容</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletCreateAccount.ui" line="195" />
+            <location filename="../resources/Forms/AppletCreateAccount.ui" line="195" />
             <source>Gender</source>
             <translation>性别</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletCreateAccount.ui" line="218" />
+            <location filename="../resources/Forms/AppletCreateAccount.ui" line="218" />
             <source>Language</source>
             <translation>语言</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletCreateAccount.ui" line="243" />
+            <location filename="../resources/Forms/AppletCreateAccount.ui" line="243" />
             <source>Login!</source>
             <translation>登录！</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletCreateAccount.ui" line="271" />
+            <location filename="../resources/Forms/AppletCreateAccount.ui" line="271" />
             <source>Space Available:</source>
             <translation>可用空间：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletCreateAccount.ui" line="298" />
+            <location filename="../resources/Forms/AppletCreateAccount.ui" line="298" />
             <source>Path:</source>
             <translation>路径：</translation>
         </message>
@@ -2682,13 +2677,13 @@
     <context>
         <name>DialogAddCommentUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/DialogAddComment.ui" line="23" />
-            <location filename="../nolimitgui/src/Forms/DialogAddComment.ui" line="119" />
+            <location filename="../resources/Forms/DialogAddComment.ui" line="23" />
+            <location filename="../resources/Forms/DialogAddComment.ui" line="119" />
             <source>Add Comment</source>
             <translation>添加评论</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/DialogAddComment.ui" line="203" />
+            <location filename="../resources/Forms/DialogAddComment.ui" line="203" />
             <source>Optional Add Comment</source>
             <translation>可选添加评论</translation>
         </message>
@@ -2696,122 +2691,122 @@
     <context>
         <name>EchoCancelTestMainWindowUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/EchoCancelTestMainWindow.ui" line="20" />
-            <location filename="../nolimitgui/src/Forms/MiniAudioLibTestMainWindow.ui" line="20" />
+            <location filename="../resources/Forms/EchoCancelTestMainWindow.ui" line="20" />
+            <location filename="../resources/Forms/MiniAudioLibTestMainWindow.ui" line="20" />
             <source>MainWindow</source>
             <translation>主窗口</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/EchoCancelTestMainWindow.ui" line="97" />
-            <location filename="../nolimitgui/src/Forms/MiniAudioLibTestMainWindow.ui" line="97" />
+            <location filename="../resources/Forms/EchoCancelTestMainWindow.ui" line="97" />
+            <location filename="../resources/Forms/MiniAudioLibTestMainWindow.ui" line="97" />
             <source>Sound Input</source>
             <translation>声音输入</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/EchoCancelTestMainWindow.ui" line="118" />
-            <location filename="../nolimitgui/src/Forms/MiniAudioLibTestMainWindow.ui" line="118" />
+            <location filename="../resources/Forms/EchoCancelTestMainWindow.ui" line="118" />
+            <location filename="../resources/Forms/MiniAudioLibTestMainWindow.ui" line="118" />
             <source>Apply Sound In Device As Default</source>
             <translation>将设备中的声音应用为默认值</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/EchoCancelTestMainWindow.ui" line="127" />
-            <location filename="../nolimitgui/src/Forms/MiniAudioLibTestMainWindow.ui" line="127" />
+            <location filename="../resources/Forms/EchoCancelTestMainWindow.ui" line="127" />
+            <location filename="../resources/Forms/MiniAudioLibTestMainWindow.ui" line="127" />
             <source>Sound In Device</source>
             <translation>设备中的声音</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/EchoCancelTestMainWindow.ui" line="146" />
-            <location filename="../nolimitgui/src/Forms/MiniAudioLibTestMainWindow.ui" line="146" />
+            <location filename="../resources/Forms/EchoCancelTestMainWindow.ui" line="146" />
+            <location filename="../resources/Forms/MiniAudioLibTestMainWindow.ui" line="146" />
             <source>Want Microphone Input</source>
             <translation>想要麦克风输入</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/EchoCancelTestMainWindow.ui" line="153" />
-            <location filename="../nolimitgui/src/Forms/MiniAudioLibTestMainWindow.ui" line="153" />
+            <location filename="../resources/Forms/EchoCancelTestMainWindow.ui" line="153" />
+            <location filename="../resources/Forms/MiniAudioLibTestMainWindow.ui" line="153" />
             <source>Mute Microphone</source>
             <translation>麦克风静音</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/EchoCancelTestMainWindow.ui" line="160" />
-            <location filename="../nolimitgui/src/Forms/MiniAudioLibTestMainWindow.ui" line="160" />
+            <location filename="../resources/Forms/EchoCancelTestMainWindow.ui" line="160" />
+            <location filename="../resources/Forms/MiniAudioLibTestMainWindow.ui" line="160" />
             <source>Send Microphone Input To Speakers</source>
             <translation>将麦克风输入发送到扬声器</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/EchoCancelTestMainWindow.ui" line="169" />
-            <location filename="../nolimitgui/src/Forms/MiniAudioLibTestMainWindow.ui" line="169" />
+            <location filename="../resources/Forms/EchoCancelTestMainWindow.ui" line="169" />
+            <location filename="../resources/Forms/MiniAudioLibTestMainWindow.ui" line="169" />
             <source>Microphone Input Peak Level</source>
             <translation>麦克风输入峰值电平</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/EchoCancelTestMainWindow.ui" line="194" />
-            <location filename="../nolimitgui/src/Forms/MiniAudioLibTestMainWindow.ui" line="194" />
+            <location filename="../resources/Forms/EchoCancelTestMainWindow.ui" line="194" />
+            <location filename="../resources/Forms/MiniAudioLibTestMainWindow.ui" line="194" />
             <source>Sound Output</source>
             <translation>声音输出</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/EchoCancelTestMainWindow.ui" line="215" />
-            <location filename="../nolimitgui/src/Forms/MiniAudioLibTestMainWindow.ui" line="215" />
+            <location filename="../resources/Forms/EchoCancelTestMainWindow.ui" line="215" />
+            <location filename="../resources/Forms/MiniAudioLibTestMainWindow.ui" line="215" />
             <source>Apply Sound Out Device As Default</source>
             <translation>将声音输出设备应用为默认值</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/EchoCancelTestMainWindow.ui" line="224" />
-            <location filename="../nolimitgui/src/Forms/MiniAudioLibTestMainWindow.ui" line="224" />
+            <location filename="../resources/Forms/EchoCancelTestMainWindow.ui" line="224" />
+            <location filename="../resources/Forms/MiniAudioLibTestMainWindow.ui" line="224" />
             <source>Sound Out Device</source>
             <translation>声音输出装置</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/EchoCancelTestMainWindow.ui" line="243" />
-            <location filename="../nolimitgui/src/Forms/MiniAudioLibTestMainWindow.ui" line="243" />
+            <location filename="../resources/Forms/EchoCancelTestMainWindow.ui" line="243" />
+            <location filename="../resources/Forms/MiniAudioLibTestMainWindow.ui" line="243" />
             <source>Want Speaker Output</source>
             <translation>想要扬声器输出</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/EchoCancelTestMainWindow.ui" line="250" />
-            <location filename="../nolimitgui/src/Forms/MiniAudioLibTestMainWindow.ui" line="250" />
+            <location filename="../resources/Forms/EchoCancelTestMainWindow.ui" line="250" />
+            <location filename="../resources/Forms/MiniAudioLibTestMainWindow.ui" line="250" />
             <source>Mute Speakers</source>
             <translation>将扬声器静音</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/EchoCancelTestMainWindow.ui" line="257" />
-            <location filename="../nolimitgui/src/Forms/MiniAudioLibTestMainWindow.ui" line="257" />
+            <location filename="../resources/Forms/EchoCancelTestMainWindow.ui" line="257" />
+            <location filename="../resources/Forms/MiniAudioLibTestMainWindow.ui" line="257" />
             <source>Generate 400Hz tone Mono Channel PCM </source>
-            <translation>生成 400Hz 音调单通道 PCM</translation>
+            <translation>生成 400Hz 音调单通道 PCM </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/EchoCancelTestMainWindow.ui" line="266" />
-            <location filename="../nolimitgui/src/Forms/MiniAudioLibTestMainWindow.ui" line="266" />
+            <location filename="../resources/Forms/EchoCancelTestMainWindow.ui" line="266" />
+            <location filename="../resources/Forms/MiniAudioLibTestMainWindow.ui" line="266" />
             <source>Speaker Output Peak Level</source>
             <translation>扬声器输出峰值电平</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/EchoCancelTestMainWindow.ui" line="282" />
-            <location filename="../nolimitgui/src/Forms/MiniAudioLibTestMainWindow.ui" line="282" />
+            <location filename="../resources/Forms/EchoCancelTestMainWindow.ui" line="282" />
+            <location filename="../resources/Forms/MiniAudioLibTestMainWindow.ui" line="282" />
             <source> Enable Echo Cancel</source>
-            <translation>启用回声消除</translation>
+            <translation> 启用回声消除</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/EchoCancelTestMainWindow.ui" line="291" />
-            <location filename="../nolimitgui/src/Forms/MiniAudioLibTestMainWindow.ui" line="291" />
+            <location filename="../resources/Forms/EchoCancelTestMainWindow.ui" line="291" />
+            <location filename="../resources/Forms/MiniAudioLibTestMainWindow.ui" line="291" />
             <source>Test Sound Delay For Echo Cancel</source>
             <translation>测试回声消除的声音延迟</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/EchoCancelTestMainWindow.ui" line="304" />
-            <location filename="../nolimitgui/src/Forms/MiniAudioLibTestMainWindow.ui" line="304" />
+            <location filename="../resources/Forms/EchoCancelTestMainWindow.ui" line="304" />
+            <location filename="../resources/Forms/MiniAudioLibTestMainWindow.ui" line="304" />
             <source>Test result ms:</source>
             <translation>测试结果毫秒：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/EchoCancelTestMainWindow.ui" line="331" />
-            <location filename="../nolimitgui/src/Forms/MiniAudioLibTestMainWindow.ui" line="331" />
+            <location filename="../resources/Forms/EchoCancelTestMainWindow.ui" line="331" />
+            <location filename="../resources/Forms/MiniAudioLibTestMainWindow.ui" line="331" />
             <source>Echo delay ms:</source>
             <translation>回声延迟毫秒：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/EchoCancelTestMainWindow.ui" line="348" />
-            <location filename="../nolimitgui/src/Forms/MiniAudioLibTestMainWindow.ui" line="348" />
+            <location filename="../resources/Forms/EchoCancelTestMainWindow.ui" line="348" />
+            <location filename="../resources/Forms/MiniAudioLibTestMainWindow.ui" line="348" />
             <source>Save Echo Delay To Echo Canceler</source>
             <translation>将回声延迟保存到回声消除器</translation>
         </message>
@@ -2819,7 +2814,7 @@
     <context>
         <name>FileActionBarWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileActionBarWidget.ui" line="26" />
+            <location filename="../resources/Forms/FileActionBarWidget.ui" line="26" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
@@ -2827,27 +2822,27 @@
     <context>
         <name>FileActionMenuClass</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileActionMenu.ui" line="17" />
+            <location filename="../resources/Forms/FileActionMenu.ui" line="17" />
             <source>Menu</source>
             <translation>菜单</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileActionMenu.ui" line="93" />
+            <location filename="../resources/Forms/FileActionMenu.ui" line="93" />
             <source>File Action Menu</source>
             <translation>文件操作菜单</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileActionMenu.ui" line="261" />
+            <location filename="../resources/Forms/FileActionMenu.ui" line="261" />
             <source>TextLabel</source>
             <translation>文本标签</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileActionMenu.ui" line="281" />
+            <location filename="../resources/Forms/FileActionMenu.ui" line="281" />
             <source>Size</source>
             <translation>尺寸</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileActionMenu.ui" line="299" />
+            <location filename="../resources/Forms/FileActionMenu.ui" line="299" />
             <source>FilePath</source>
             <translation>文件路径</translation>
         </message>
@@ -2855,17 +2850,17 @@
     <context>
         <name>FileDisplayWidget</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileDisplayWidget.ui" line="26" />
+            <location filename="../resources/Forms/FileDisplayWidget.ui" line="26" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileDisplayWidget.ui" line="107" />
+            <location filename="../resources/Forms/FileDisplayWidget.ui" line="107" />
             <source>TextLabel</source>
             <translation>文本标签</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileDisplayWidget.ui" line="129" />
+            <location filename="../resources/Forms/FileDisplayWidget.ui" line="129" />
             <source>FileSize</source>
             <translation>文件大小</translation>
         </message>
@@ -2873,32 +2868,32 @@
     <context>
         <name>FileFilterSelectWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileFilterSelectWidget.ui" line="26" />
+            <location filename="../resources/Forms/FileFilterSelectWidget.ui" line="26" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileFilterSelectWidget.ui" line="56" />
+            <location filename="../resources/Forms/FileFilterSelectWidget.ui" line="56" />
             <source>Filter By</source>
             <translation>过滤依据</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileFilterSelectWidget.ui" line="88" />
+            <location filename="../resources/Forms/FileFilterSelectWidget.ui" line="88" />
             <source>Video</source>
             <translation>视频</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileFilterSelectWidget.ui" line="120" />
+            <location filename="../resources/Forms/FileFilterSelectWidget.ui" line="120" />
             <source>Audio</source>
             <translation>音频</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileFilterSelectWidget.ui" line="152" />
+            <location filename="../resources/Forms/FileFilterSelectWidget.ui" line="152" />
             <source>Image</source>
             <translation>图片</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileFilterSelectWidget.ui" line="184" />
+            <location filename="../resources/Forms/FileFilterSelectWidget.ui" line="184" />
             <source>All</source>
             <translation>全部</translation>
         </message>
@@ -2906,32 +2901,32 @@
     <context>
         <name>FileMediaSelectWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileMediaSelectWidget.ui" line="26" />
+            <location filename="../resources/Forms/FileMediaSelectWidget.ui" line="26" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileMediaSelectWidget.ui" line="56" />
+            <location filename="../resources/Forms/FileMediaSelectWidget.ui" line="56" />
             <source>Add Media</source>
             <translation>添加媒体</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileMediaSelectWidget.ui" line="88" />
+            <location filename="../resources/Forms/FileMediaSelectWidget.ui" line="88" />
             <source>Video</source>
             <translation>视频</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileMediaSelectWidget.ui" line="120" />
+            <location filename="../resources/Forms/FileMediaSelectWidget.ui" line="120" />
             <source>Audio</source>
             <translation>音频</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileMediaSelectWidget.ui" line="152" />
+            <location filename="../resources/Forms/FileMediaSelectWidget.ui" line="152" />
             <source>Image</source>
             <translation>图片</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileMediaSelectWidget.ui" line="184" />
+            <location filename="../resources/Forms/FileMediaSelectWidget.ui" line="184" />
             <source>Scan folder for media</source>
             <translation>扫描文件夹中的媒体</translation>
         </message>
@@ -2939,7 +2934,7 @@
     <context>
         <name>FileSearchDialog</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityFileSearch.ui" line="17" />
+            <location filename="../resources/Forms/ActivityFileSearch.ui" line="17" />
             <source>Menu</source>
             <translation>菜单</translation>
         </message>
@@ -2947,12 +2942,12 @@
     <context>
         <name>FileShareItemWidget</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileShareItemWidget.ui" line="26" />
+            <location filename="../resources/Forms/FileShareItemWidget.ui" line="26" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileShareItemWidget.ui" line="145" />
+            <location filename="../resources/Forms/FileShareItemWidget.ui" line="145" />
             <source>Size</source>
             <translation>尺寸</translation>
         </message>
@@ -2960,27 +2955,27 @@
     <context>
         <name>FileTypeSelectWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileTypeSelectWidget.ui" line="26" />
+            <location filename="../resources/Forms/FileTypeSelectWidget.ui" line="26" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileTypeSelectWidget.ui" line="75" />
+            <location filename="../resources/Forms/FileTypeSelectWidget.ui" line="75" />
             <source>Video</source>
             <translation>视频</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileTypeSelectWidget.ui" line="107" />
+            <location filename="../resources/Forms/FileTypeSelectWidget.ui" line="107" />
             <source>Audio</source>
             <translation>音频</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileTypeSelectWidget.ui" line="139" />
+            <location filename="../resources/Forms/FileTypeSelectWidget.ui" line="139" />
             <source>Image</source>
             <translation>图片</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileTypeSelectWidget.ui" line="171" />
+            <location filename="../resources/Forms/FileTypeSelectWidget.ui" line="171" />
             <source>All</source>
             <translation>全部</translation>
         </message>
@@ -2988,22 +2983,22 @@
     <context>
         <name>FileViewSharedActionBarUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileViewSharedActionBar.ui" line="26" />
+            <location filename="../resources/Forms/FileViewSharedActionBar.ui" line="26" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileViewSharedActionBar.ui" line="87" />
+            <location filename="../resources/Forms/FileViewSharedActionBar.ui" line="87" />
             <source>Stream</source>
             <translation>串流</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileViewSharedActionBar.ui" line="119" />
+            <location filename="../resources/Forms/FileViewSharedActionBar.ui" line="119" />
             <source>Download</source>
             <translation>下载</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileViewSharedActionBar.ui" line="151" />
+            <location filename="../resources/Forms/FileViewSharedActionBar.ui" line="151" />
             <source>About</source>
             <translation>关于</translation>
         </message>
@@ -3011,17 +3006,17 @@
     <context>
         <name>FileXferWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileXferWidget.ui" line="26" />
+            <location filename="../resources/Forms/FileXferWidget.ui" line="26" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileXferWidget.ui" line="155" />
+            <location filename="../resources/Forms/FileXferWidget.ui" line="155" />
             <source>FileSize</source>
             <translation>文件大小</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/FileXferWidget.ui" line="202" />
+            <location filename="../resources/Forms/FileXferWidget.ui" line="202" />
             <source>Status:</source>
             <translation>状态：</translation>
         </message>
@@ -3029,49 +3024,49 @@
     <context>
         <name>GroupHostServiceClass</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceGroupListingHost.ui" line="14" />
+            <location filename="../resources/Forms/AppletServiceGroupListingHost.ui" line="14" />
             <source>Group Listing Host Service</source>
             <translation>群组列表托管服务</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceGroupListingHost.ui" line="54" />
+            <location filename="../resources/Forms/AppletServiceGroupListingHost.ui" line="54" />
             <source>Host Group Listing Service</source>
             <translation>主机组列表服务</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceGroupListingHost.ui" line="67" />
+            <location filename="../resources/Forms/AppletServiceGroupListingHost.ui" line="67" />
             <source>Start Service When App Is Launched</source>
             <translation>应用程序启动时启动服务</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceGroupListingHost.ui" line="74" />
+            <location filename="../resources/Forms/AppletServiceGroupListingHost.ui" line="74" />
             <source>Permission Level Required To Use Service</source>
             <translation>使用服务所需的权限级别</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceGroupListingHost.ui" line="84" />
+            <location filename="../resources/Forms/AppletServiceGroupListingHost.ui" line="84" />
             <source>This Service  URL or IP Address</source>
             <translation>该服务 URL 或 IP 地址</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceGroupListingHost.ui" line="94" />
+            <location filename="../resources/Forms/AppletServiceGroupListingHost.ui" line="94" />
             <source>Name Service</source>
             <translation>名称服务</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceGroupListingHost.ui" line="104" />
+            <location filename="../resources/Forms/AppletServiceGroupListingHost.ui" line="104" />
             <source>Description Of Service  
 ( maximum 512 characters )</source>
             <translation>服务说明  
 （最多 512 个字符）</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceGroupListingHost.ui" line="122" />
+            <location filename="../resources/Forms/AppletServiceGroupListingHost.ui" line="122" />
             <source>Start Service</source>
             <translation>启动服务</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceGroupListingHost.ui" line="141" />
+            <location filename="../resources/Forms/AppletServiceGroupListingHost.ui" line="141" />
             <source>Stop Service</source>
             <translation>停止服务</translation>
         </message>
@@ -3079,22 +3074,22 @@
     <context>
         <name>GuiFriendRequestWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/GuiFriendRequestWidget.ui" line="37" />
+            <location filename="../resources/Forms/GuiFriendRequestWidget.ui" line="37" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/GuiFriendRequestWidget.ui" line="190" />
+            <location filename="../resources/Forms/GuiFriendRequestWidget.ui" line="190" />
             <source>User Details</source>
             <translation>用户详细信息</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/GuiFriendRequestWidget.ui" line="210" />
+            <location filename="../resources/Forms/GuiFriendRequestWidget.ui" line="210" />
             <source>Accept</source>
             <translation>接受</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/GuiFriendRequestWidget.ui" line="230" />
+            <location filename="../resources/Forms/GuiFriendRequestWidget.ui" line="230" />
             <source>Reject</source>
             <translation>拒绝</translation>
         </message>
@@ -3102,17 +3097,17 @@
     <context>
         <name>GuiGroupieListItemUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/GuiGroupieListItem.ui" line="37" />
+            <location filename="../resources/Forms/GuiGroupieListItem.ui" line="37" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/GuiGroupieListItem.ui" line="249" />
+            <location filename="../resources/Forms/GuiGroupieListItem.ui" line="249" />
             <source>Join</source>
             <translation>加入</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/GuiGroupieListItem.ui" line="269" />
+            <location filename="../resources/Forms/GuiGroupieListItem.ui" line="269" />
             <source>Connect</source>
             <translation>连接</translation>
         </message>
@@ -3120,22 +3115,22 @@
     <context>
         <name>GuiHostedListItemUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/GuiHostedListItem.ui" line="264" />
+            <location filename="../resources/Forms/GuiHostedListItem.ui" line="264" />
             <source>Join</source>
             <translation>加入</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/GuiHostedListItem.ui" line="284" />
+            <location filename="../resources/Forms/GuiHostedListItem.ui" line="284" />
             <source>Connect</source>
             <translation>连接</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/GuiHostedListItem.ui" line="304" />
+            <location filename="../resources/Forms/GuiHostedListItem.ui" line="304" />
             <source>Revoke Join</source>
             <translation>撤销加入</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/GuiHostedListItem.ui" line="324" />
+            <location filename="../resources/Forms/GuiHostedListItem.ui" line="324" />
             <source>Ignore</source>
             <translation>忽略</translation>
         </message>
@@ -3143,47 +3138,47 @@
     <context>
         <name>GuiUserMultiListWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/GuiUserMultiListWidget.ui" line="32" />
+            <location filename="../resources/Forms/GuiUserMultiListWidget.ui" line="32" />
             <source>Dialog</source>
             <translation>对话</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/GuiUserMultiListWidget.ui" line="96" />
+            <location filename="../resources/Forms/GuiUserMultiListWidget.ui" line="96" />
             <source>Everyone</source>
             <translation>大家</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/GuiUserMultiListWidget.ui" line="134" />
+            <location filename="../resources/Forms/GuiUserMultiListWidget.ui" line="134" />
             <source>Friends</source>
             <translation>朋友</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/GuiUserMultiListWidget.ui" line="172" />
+            <location filename="../resources/Forms/GuiUserMultiListWidget.ui" line="172" />
             <source>Group Members</source>
             <translation>团体成员</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/GuiUserMultiListWidget.ui" line="210" />
+            <location filename="../resources/Forms/GuiUserMultiListWidget.ui" line="210" />
             <source>Chat Room Members</source>
             <translation>聊天室成员</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/GuiUserMultiListWidget.ui" line="248" />
+            <location filename="../resources/Forms/GuiUserMultiListWidget.ui" line="248" />
             <source>Random Connect Members</source>
             <translation>随机连接会员</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/GuiUserMultiListWidget.ui" line="351" />
+            <location filename="../resources/Forms/GuiUserMultiListWidget.ui" line="351" />
             <source>Admin</source>
             <translation>管理员</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/GuiUserMultiListWidget.ui" line="408" />
+            <location filename="../resources/Forms/GuiUserMultiListWidget.ui" line="408" />
             <source>Send To:</source>
             <translation>发送至：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/GuiUserMultiListWidget.ui" line="434" />
+            <location filename="../resources/Forms/GuiUserMultiListWidget.ui" line="434" />
             <source>All Members</source>
             <translation>所有会员</translation>
         </message>
@@ -3191,7 +3186,7 @@
     <context>
         <name>HistoryEntryWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/HistoryEntryWidget.ui" line="32" />
+            <location filename="../resources/Forms/HistoryEntryWidget.ui" line="32" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
@@ -3199,17 +3194,17 @@
     <context>
         <name>HostJoinRequestListItemUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/HostJoinRequestListItem.ui" line="37" />
+            <location filename="../resources/Forms/HostJoinRequestListItem.ui" line="37" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/HostJoinRequestListItem.ui" line="273" />
+            <location filename="../resources/Forms/HostJoinRequestListItem.ui" line="273" />
             <source>Accept</source>
             <translation>接受</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/HostJoinRequestListItem.ui" line="293" />
+            <location filename="../resources/Forms/HostJoinRequestListItem.ui" line="293" />
             <source>Reject</source>
             <translation>拒绝</translation>
         </message>
@@ -3217,7 +3212,7 @@
     <context>
         <name>ImageListEntryUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ImageListEntry.ui" line="14" />
+            <location filename="../resources/Forms/ImageListEntry.ui" line="14" />
             <source>ImageListEntry</source>
             <translation>图像列表条目</translation>
         </message>
@@ -3225,7 +3220,7 @@
     <context>
         <name>ImageListRowUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ImageListRow.ui" line="26" />
+            <location filename="../resources/Forms/ImageListRow.ui" line="26" />
             <source>ImageListRow</source>
             <translation>图像列表行</translation>
         </message>
@@ -3233,7 +3228,7 @@
     <context>
         <name>ImageListWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ImageListWidget.ui" line="14" />
+            <location filename="../resources/Forms/ImageListWidget.ui" line="14" />
             <source>ImageListWidget</source>
             <translation>图像列表控件</translation>
         </message>
@@ -3241,7 +3236,7 @@
     <context>
         <name>ImagePickBarClass</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ImagePickBar.ui" line="14" />
+            <location filename="../resources/Forms/ImagePickBar.ui" line="14" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
@@ -3249,8 +3244,8 @@
     <context>
         <name>InformationUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletInformation.ui" line="32" />
-            <location filename="../nolimitgui/src/Forms/AppletInformation.ui" line="121" />
+            <location filename="../resources/Forms/AppletInformation.ui" line="32" />
+            <location filename="../resources/Forms/AppletInformation.ui" line="121" />
             <source>Information</source>
             <translation>信息</translation>
         </message>
@@ -3258,8 +3253,8 @@
     <context>
         <name>InformationWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/InformationWidget.ui" line="14" />
-            <location filename="../nolimitgui/src/Forms/InformationWidget.ui" line="103" />
+            <location filename="../resources/Forms/InformationWidget.ui" line="14" />
+            <location filename="../resources/Forms/InformationWidget.ui" line="103" />
             <source>Information</source>
             <translation>信息</translation>
         </message>
@@ -3267,12 +3262,12 @@
     <context>
         <name>InputAllWidget</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/InputAllWidget.ui" line="32" />
+            <location filename="../resources/Forms/InputAllWidget.ui" line="32" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/InputAllWidget.ui" line="110" />
+            <location filename="../resources/Forms/InputAllWidget.ui" line="110" />
             <source>Enter Text</source>
             <translation>输入文字</translation>
         </message>
@@ -3280,7 +3275,7 @@
     <context>
         <name>InputFaceWidgetClass</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/InputFaceWidget.ui" line="20" />
+            <location filename="../resources/Forms/InputFaceWidget.ui" line="20" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
@@ -3288,7 +3283,7 @@
     <context>
         <name>InputPhotoWidget</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/InputPhotoWidget.ui" line="32" />
+            <location filename="../resources/Forms/InputPhotoWidget.ui" line="32" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
@@ -3296,7 +3291,7 @@
     <context>
         <name>InputTextWidgetClass</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/InputTextWidget.ui" line="32" />
+            <location filename="../resources/Forms/InputTextWidget.ui" line="32" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
@@ -3304,7 +3299,7 @@
     <context>
         <name>InputVideoWidget</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/InputVideoWidget.ui" line="32" />
+            <location filename="../resources/Forms/InputVideoWidget.ui" line="32" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
@@ -3312,12 +3307,12 @@
     <context>
         <name>InputVoiceWidget</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/InputVoiceWidget.ui" line="32" />
+            <location filename="../resources/Forms/InputVoiceWidget.ui" line="32" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/InputVoiceWidget.ui" line="224" />
+            <location filename="../resources/Forms/InputVoiceWidget.ui" line="224" />
             <source>Click Microphone To Finish Or X To Cancel</source>
             <translation>单击麦克风完成或单击 X 取消</translation>
         </message>
@@ -3325,7 +3320,7 @@
     <context>
         <name>InstMsgWidgetClass</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/InstMsgWidget.ui" line="32" />
+            <location filename="../resources/Forms/InstMsgWidget.ui" line="32" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
@@ -3333,42 +3328,42 @@
     <context>
         <name>InviteUrlWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/InviteUrlWidget.ui" line="32" />
+            <location filename="../resources/Forms/InviteUrlWidget.ui" line="32" />
             <source>Create Invite</source>
             <translation>创建邀请</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/InviteUrlWidget.ui" line="53" />
+            <location filename="../resources/Forms/InviteUrlWidget.ui" line="53" />
             <source>Check desired invites</source>
             <translation>检查所需的邀请</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/InviteUrlWidget.ui" line="78" />
+            <location filename="../resources/Forms/InviteUrlWidget.ui" line="78" />
             <source>Personal</source>
             <translation>个人</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/InviteUrlWidget.ui" line="116" />
+            <location filename="../resources/Forms/InviteUrlWidget.ui" line="116" />
             <source>Group</source>
             <translation>集团</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/InviteUrlWidget.ui" line="154" />
+            <location filename="../resources/Forms/InviteUrlWidget.ui" line="154" />
             <source>Chat Room</source>
             <translation>聊天室</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/InviteUrlWidget.ui" line="192" />
+            <location filename="../resources/Forms/InviteUrlWidget.ui" line="192" />
             <source>Random Connect</source>
             <translation>随机连接</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/InviteUrlWidget.ui" line="230" />
+            <location filename="../resources/Forms/InviteUrlWidget.ui" line="230" />
             <source>Network Settings (Only for network invites)</source>
             <translation>网络设置（仅适用于网络邀请）</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/InviteUrlWidget.ui" line="267" />
+            <location filename="../resources/Forms/InviteUrlWidget.ui" line="267" />
             <source>Invite Text</source>
             <translation>邀请文本</translation>
         </message>
@@ -3376,17 +3371,17 @@
     <context>
         <name>LanguageSelectUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLanguageSelect.ui" line="26" />
+            <location filename="../resources/Forms/AppletLanguageSelect.ui" line="26" />
             <source>Create New Account</source>
             <translation>创建新帐户</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLanguageSelect.ui" line="38" />
+            <location filename="../resources/Forms/AppletLanguageSelect.ui" line="38" />
             <source>Select Language.</source>
             <translation>选择语言。</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLanguageSelect.ui" line="61" />
+            <location filename="../resources/Forms/AppletLanguageSelect.ui" line="61" />
             <source>Apply</source>
             <translation>申请</translation>
         </message>
@@ -3394,7 +3389,7 @@
     <context>
         <name>LaunchWidgetClass</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletLaunchWidget.ui" line="14" />
+            <location filename="../resources/Forms/AppletLaunchWidget.ui" line="14" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
@@ -3402,22 +3397,22 @@
     <context>
         <name>LogWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/LogWidget.ui" line="20" />
+            <location filename="../resources/Forms/LogWidget.ui" line="20" />
             <source>Log Widget</source>
             <translation>日志小工具</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/LogWidget.ui" line="43" />
+            <location filename="../resources/Forms/LogWidget.ui" line="43" />
             <source>Verbose Log</source>
             <translation>详细日志</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/LogWidget.ui" line="50" />
+            <location filename="../resources/Forms/LogWidget.ui" line="50" />
             <source>Clear Log</source>
             <translation>清除日志</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/LogWidget.ui" line="57" />
+            <location filename="../resources/Forms/LogWidget.ui" line="57" />
             <source>Copy Log To Clipboard</source>
             <translation>将日志复制到剪贴板</translation>
         </message>
@@ -3425,7 +3420,7 @@
     <context>
         <name>MessageBoxDialogClass</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityMessageBox.ui" line="32" />
+            <location filename="../resources/Forms/ActivityMessageBox.ui" line="32" />
             <source>Dialog</source>
             <translation>对话</translation>
         </message>
@@ -3496,49 +3491,49 @@
     <context>
         <name>NetworkHostServiceClass</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceNetworkHost.ui" line="14" />
+            <location filename="../resources/Forms/AppletServiceNetworkHost.ui" line="14" />
             <source>Network Host Service</source>
             <translation>网络主机服务</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceNetworkHost.ui" line="54" />
+            <location filename="../resources/Forms/AppletServiceNetworkHost.ui" line="54" />
             <source>Network Host  Service</source>
             <translation>网络主机服务</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceNetworkHost.ui" line="67" />
+            <location filename="../resources/Forms/AppletServiceNetworkHost.ui" line="67" />
             <source>Start Service When App Is Launched</source>
             <translation>应用程序启动时启动服务</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceNetworkHost.ui" line="74" />
+            <location filename="../resources/Forms/AppletServiceNetworkHost.ui" line="74" />
             <source>Permission Level Required To Use Service</source>
             <translation>使用服务所需的权限级别</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceNetworkHost.ui" line="84" />
+            <location filename="../resources/Forms/AppletServiceNetworkHost.ui" line="84" />
             <source>This Service  URL or IP Address</source>
             <translation>该服务 URL 或 IP 地址</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceNetworkHost.ui" line="94" />
+            <location filename="../resources/Forms/AppletServiceNetworkHost.ui" line="94" />
             <source>Name Service</source>
             <translation>名称服务</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceNetworkHost.ui" line="104" />
+            <location filename="../resources/Forms/AppletServiceNetworkHost.ui" line="104" />
             <source>Description Of Service  
 ( maximum 512 characters )</source>
             <translation>服务说明  
 （最多 512 个字符）</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceNetworkHost.ui" line="122" />
+            <location filename="../resources/Forms/AppletServiceNetworkHost.ui" line="122" />
             <source>Start Service</source>
             <translation>启动服务</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceNetworkHost.ui" line="141" />
+            <location filename="../resources/Forms/AppletServiceNetworkHost.ui" line="141" />
             <source>Stop Service</source>
             <translation>停止服务</translation>
         </message>
@@ -3546,37 +3541,37 @@
     <context>
         <name>NetworkTestDlg</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityNetworkTest.ui" line="17" />
+            <location filename="../resources/Forms/ActivityNetworkTest.ui" line="17" />
             <source>Connection Test</source>
             <translation>连接测试</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityNetworkTest.ui" line="110" />
+            <location filename="../resources/Forms/ActivityNetworkTest.ui" line="110" />
             <source>Network Test Log:</source>
             <translation>网络测试日志：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityNetworkTest.ui" line="117" />
+            <location filename="../resources/Forms/ActivityNetworkTest.ui" line="117" />
             <source>Run Full Network Test</source>
             <translation>运行完整的网络测试</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityNetworkTest.ui" line="127" />
+            <location filename="../resources/Forms/ActivityNetworkTest.ui" line="127" />
             <source>Verbose Test Log</source>
             <translation>详细测试日志</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityNetworkTest.ui" line="134" />
+            <location filename="../resources/Forms/ActivityNetworkTest.ui" line="134" />
             <source>Network Test</source>
             <translation>网络测试</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityNetworkTest.ui" line="141" />
+            <location filename="../resources/Forms/ActivityNetworkTest.ui" line="141" />
             <source>Is My Port Open</source>
             <translation>我的端口开放吗</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityNetworkTest.ui" line="148" />
+            <location filename="../resources/Forms/ActivityNetworkTest.ui" line="148" />
             <source>What Is My IP Address</source>
             <translation>我的 IP 地址是多少</translation>
         </message>
@@ -3584,12 +3579,12 @@
     <context>
         <name>NetworkTestStartupDlg</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityNetworkStartupTest.ui" line="17" />
+            <location filename="../resources/Forms/ActivityNetworkStartupTest.ui" line="17" />
             <source>Connection Test</source>
             <translation>连接测试</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityNetworkStartupTest.ui" line="93" />
+            <location filename="../resources/Forms/ActivityNetworkStartupTest.ui" line="93" />
             <source>Network Test Log:</source>
             <translation>网络测试日志：</translation>
         </message>
@@ -3597,49 +3592,49 @@
     <context>
         <name>NoLimitConnectNetworkDlgClass</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceConnectionTest.ui" line="14" />
+            <location filename="../resources/Forms/AppletServiceConnectionTest.ui" line="14" />
             <source>NoLimitConnect Network Host</source>
             <translation>NoLimitConnect 网络主机</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceConnectionTest.ui" line="54" />
+            <location filename="../resources/Forms/AppletServiceConnectionTest.ui" line="54" />
             <source>Host A NoLimitConnect Network ( Global Network Service )</source>
             <translation>托管 NoLimitConnect 网络（全球网络服务）</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceConnectionTest.ui" line="67" />
+            <location filename="../resources/Forms/AppletServiceConnectionTest.ui" line="67" />
             <source>Start Service When App Is Launched</source>
             <translation>应用程序启动时启动服务</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceConnectionTest.ui" line="74" />
+            <location filename="../resources/Forms/AppletServiceConnectionTest.ui" line="74" />
             <source>Permission Level Required To Use Service</source>
             <translation>使用服务所需的权限级别</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceConnectionTest.ui" line="84" />
+            <location filename="../resources/Forms/AppletServiceConnectionTest.ui" line="84" />
             <source>This NoLimitConnect Network URL or IP Address</source>
             <translation>此 NoLimitConnect 网络 URL 或 IP 地址</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceConnectionTest.ui" line="94" />
+            <location filename="../resources/Forms/AppletServiceConnectionTest.ui" line="94" />
             <source>Name Of NoLimitConnect Network</source>
             <translation>NoLimitConnect 网络名称</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceConnectionTest.ui" line="104" />
+            <location filename="../resources/Forms/AppletServiceConnectionTest.ui" line="104" />
             <source>Description Of NoLimitConnect Network 
 ( maximum 512 characters )</source>
             <translation>NoLimitConnect 网络的描述 
 （最多 512 个字符）</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceConnectionTest.ui" line="122" />
+            <location filename="../resources/Forms/AppletServiceConnectionTest.ui" line="122" />
             <source>Start NoLimitConnect Network Service</source>
             <translation>启动NoLimitConnect网络服务</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletServiceConnectionTest.ui" line="141" />
+            <location filename="../resources/Forms/AppletServiceConnectionTest.ui" line="141" />
             <source>Stop NoLimitConnect Network Service</source>
             <translation>停止 NoLimitConnect 网络服务</translation>
         </message>
@@ -3647,28 +3642,28 @@
     <context>
         <name>OfferBarWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/OfferBarWidget.ui" line="241" />
-            <location filename="../nolimitgui/src/Forms/OfferBarWidget.ui" line="335" />
+            <location filename="../resources/Forms/OfferBarWidget.ui" line="241" />
+            <location filename="../resources/Forms/OfferBarWidget.ui" line="335" />
             <source>TextLabel</source>
             <translation>文本标签</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/OfferBarWidget.ui" line="254" />
+            <location filename="../resources/Forms/OfferBarWidget.ui" line="254" />
             <source> - </source>
-            <translation>-</translation>
+            <translation> - </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/OfferBarWidget.ui" line="267" />
+            <location filename="../resources/Forms/OfferBarWidget.ui" line="267" />
             <source>Guest</source>
             <translation>嘉宾</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/OfferBarWidget.ui" line="303" />
+            <location filename="../resources/Forms/OfferBarWidget.ui" line="303" />
             <source>Missed Calls -</source>
             <translation>未接来电 -</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/OfferBarWidget.ui" line="316" />
+            <location filename="../resources/Forms/OfferBarWidget.ui" line="316" />
             <source>1</source>
             <translation>1</translation>
         </message>
@@ -3676,27 +3671,27 @@
     <context>
         <name>OfferSendWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/OfferSendWidget.ui" line="20" />
+            <location filename="../resources/Forms/OfferSendWidget.ui" line="20" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/OfferSendWidget.ui" line="104" />
+            <location filename="../resources/Forms/OfferSendWidget.ui" line="104" />
             <source>Offer Expires</source>
             <translation>优惠到期</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/OfferSendWidget.ui" line="137" />
+            <location filename="../resources/Forms/OfferSendWidget.ui" line="137" />
             <source>Offer Message (Optional):</source>
             <translation>优惠信息（可选）：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/OfferSendWidget.ui" line="234" />
+            <location filename="../resources/Forms/OfferSendWidget.ui" line="234" />
             <source>Send Offer</source>
             <translation>发送报价</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/OfferSendWidget.ui" line="275" />
+            <location filename="../resources/Forms/OfferSendWidget.ui" line="275" />
             <source>Cancel</source>
             <translation>取消</translation>
         </message>
@@ -3704,12 +3699,12 @@
     <context>
         <name>PermissionListItemUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/PermissionListItemWidget.ui" line="26" />
+            <location filename="../resources/Forms/PermissionListItemWidget.ui" line="26" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/PermissionListItemWidget.ui" line="136" />
+            <location filename="../resources/Forms/PermissionListItemWidget.ui" line="136" />
             <source>Permission:</source>
             <translation>权限：</translation>
         </message>
@@ -3717,12 +3712,12 @@
     <context>
         <name>PermissionWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/PermissionWidget.ui" line="14" />
+            <location filename="../resources/Forms/PermissionWidget.ui" line="14" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/PermissionWidget.ui" line="113" />
+            <location filename="../resources/Forms/PermissionWidget.ui" line="113" />
             <source>Permission</source>
             <translation>许可</translation>
         </message>
@@ -3730,17 +3725,17 @@
     <context>
         <name>PersonOfferListItemUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/PersonOfferListItem.ui" line="37" />
+            <location filename="../resources/Forms/PersonOfferListItem.ui" line="37" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/PersonOfferListItem.ui" line="233" />
+            <location filename="../resources/Forms/PersonOfferListItem.ui" line="233" />
             <source>Accept</source>
             <translation>接受</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/PersonOfferListItem.ui" line="271" />
+            <location filename="../resources/Forms/PersonOfferListItem.ui" line="271" />
             <source>Block</source>
             <translation>块</translation>
         </message>
@@ -3748,7 +3743,7 @@
     <context>
         <name>PersonalRecorderDialog</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityPersonalRecorder.ui" line="26" />
+            <location filename="../resources/Forms/ActivityPersonalRecorder.ui" line="26" />
             <source>Dialog</source>
             <translation>对话</translation>
         </message>
@@ -3756,7 +3751,7 @@
     <context>
         <name>PersonalRecorderUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletPersonalRecorder.ui" line="32" />
+            <location filename="../resources/Forms/AppletPersonalRecorder.ui" line="32" />
             <source>Dialog</source>
             <translation>对话</translation>
         </message>
@@ -3764,17 +3759,17 @@
     <context>
         <name>PhoneShakeDlgClass</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityPhoneShake.ui" line="14" />
+            <location filename="../resources/Forms/ActivityPhoneShake.ui" line="14" />
             <source>Search</source>
             <translation>搜索</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityPhoneShake.ui" line="95" />
+            <location filename="../resources/Forms/ActivityPhoneShake.ui" line="95" />
             <source>Shake Phone At Same Time As Friend To Get Connected</source>
             <translation>与朋友同时摇动手机即可建立联系</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityPhoneShake.ui" line="111" />
+            <location filename="../resources/Forms/ActivityPhoneShake.ui" line="111" />
             <source>Simulate Phone Shake</source>
             <translation>模拟手机震动</translation>
         </message>
@@ -3782,72 +3777,72 @@
     <context>
         <name>PluginSettingsUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/PluginSettingsWidget.ui" line="20" />
+            <location filename="../resources/Forms/PluginSettingsWidget.ui" line="20" />
             <source>Service</source>
             <translation>服务</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/PluginSettingsWidget.ui" line="49" />
+            <location filename="../resources/Forms/PluginSettingsWidget.ui" line="49" />
             <source>Start Service</source>
             <translation>启动服务</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/PluginSettingsWidget.ui" line="68" />
+            <location filename="../resources/Forms/PluginSettingsWidget.ui" line="68" />
             <source>Stop Service</source>
             <translation>停止服务</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/PluginSettingsWidget.ui" line="77" />
+            <location filename="../resources/Forms/PluginSettingsWidget.ui" line="77" />
             <source>Apply Host Settings</source>
             <translation>应用主机设置</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/PluginSettingsWidget.ui" line="87" />
+            <location filename="../resources/Forms/PluginSettingsWidget.ui" line="87" />
             <source>Run service when application is started.</source>
             <translation>应用程序启动时运行服务。</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/PluginSettingsWidget.ui" line="96" />
+            <location filename="../resources/Forms/PluginSettingsWidget.ui" line="96" />
             <source>Age</source>
             <translation>年龄</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/PluginSettingsWidget.ui" line="116" />
+            <location filename="../resources/Forms/PluginSettingsWidget.ui" line="116" />
             <source>Content Rating</source>
             <translation>内容分级</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/PluginSettingsWidget.ui" line="140" />
+            <location filename="../resources/Forms/PluginSettingsWidget.ui" line="140" />
             <source>Gender:</source>
             <translation>性别：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/PluginSettingsWidget.ui" line="157" />
+            <location filename="../resources/Forms/PluginSettingsWidget.ui" line="157" />
             <source>Language</source>
             <translation>语言</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/PluginSettingsWidget.ui" line="176" />
+            <location filename="../resources/Forms/PluginSettingsWidget.ui" line="176" />
             <source>Service URL or IP Address</source>
             <translation>服务 URL 或 IP 地址</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/PluginSettingsWidget.ui" line="190" />
+            <location filename="../resources/Forms/PluginSettingsWidget.ui" line="190" />
             <source>Title Of Service (Required)</source>
             <translation>服务名称（必填）</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/PluginSettingsWidget.ui" line="204" />
+            <location filename="../resources/Forms/PluginSettingsWidget.ui" line="204" />
             <source>Description Of Service (Optional)</source>
             <translation>服务描述（可选）</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/PluginSettingsWidget.ui" line="224" />
+            <location filename="../resources/Forms/PluginSettingsWidget.ui" line="224" />
             <source>Greeting When Joined (Optional)</source>
             <translation>加入时的问候语（可选）</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/PluginSettingsWidget.ui" line="241" />
+            <location filename="../resources/Forms/PluginSettingsWidget.ui" line="241" />
             <source>Message If Rejected (Optional)</source>
             <translation>拒绝时的消息（可选）</translation>
         </message>
@@ -3855,45 +3850,9 @@
     <context>
         <name>QObject</name>
         <message>
-            <location filename="../nolimitgui/src/GuiThreadMainLoader.cpp" line="58" />
-            <source>No Writable Location for user data</source>
-            <translation>用户数据没有可写位置</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiThreadMainLoader.cpp" line="59" />
-            <source>No location found to store user data.
- Application will exit</source>
-            <translation>找不到存储用户数据的位置。
- 应用程序将退出</translation>
-        </message>
-        <message>
             <location filename="../nolimitgui/src/ActivityBase.cpp" line="404" />
             <source>Session End Message</source>
             <translation>会话结束消息</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletPeerViewSharedFiles.cpp" line="466" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2601" />
-            <source>Confirm Shred File</source>
-            <translation>确认粉碎文件</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletPeerViewSharedFiles.cpp" line="466" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2601" />
-            <source>Confirm Delete File</source>
-            <translation>确认删除文件</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletPeerViewSharedFiles.cpp" line="470" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2605" />
-            <source>Are You Sure You Want To Write Random Data Into The File Then Delete From The Device?</source>
-            <translation>您确定要将随机数据写入文件然后从设备中删除吗？</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletPeerViewSharedFiles.cpp" line="474" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2609" />
-            <source>Are You Sure To Delete The File From The Device?</source>
-            <translation>您确定要从设备中删除该文件吗？</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/ActivityBrowseFiles.cpp" line="49" />
@@ -3917,35 +3876,7 @@
             <location filename="../nolimitgui/src/ActivityBrowseFiles.cpp" line="658" />
             <location filename="../nolimitgui/src/AppletLibrary.cpp" line="602" />
             <source>Storage Space Available: </source>
-            <translation>可用存储空间：</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="242" />
-            <source>Create Account</source>
-            <translation>创建帐户</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletCreateAccount.cpp" line="96" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1444" />
-            <source>Application</source>
-            <translation>应用</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletCreateAccount.cpp" line="96" />
-            <source>Insert New User into Database failed.</source>
-            <translation>将新用户插入数据库失败。</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletCreateAccount.cpp" line="126" />
-            <source>Create an account or exit</source>
-            <translation>创建帐户或退出</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletCreateAccount.cpp" line="127" />
-            <source>User must create an account or exit
-Do you want to exit the application?</source>
-            <translation>用户必须创建帐户或退出
-您想退出应用程序吗？</translation>
+            <translation>可用存储空间： </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/ActivityDownloadItemMenu.cpp" line="32" />
@@ -3971,6 +3902,11 @@ This message will disappear when generate hash is completed.</source>
 当生成哈希完成后，此消息将消失。</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/ActivityMessageBox.cpp" line="94" />
+            <source>Message</source>
+            <translation>留言</translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/ActivityMessageBox.cpp" line="145" />
             <location filename="../nolimitgui/src/AppletInformation.cpp" line="48" />
             <location filename="../nolimitgui/src/AssetTextWidget.cpp" line="221" />
@@ -3983,6 +3919,1423 @@ This message will disappear when generate hash is completed.</source>
             <location filename="../nolimitgui/src/AssetTextWidget.cpp" line="221" />
             <source>Text was copied to clipboard</source>
             <translation>文本已复制到剪贴板</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/ActivityMessageBox.cpp" line="163" />
+            <source>Invalid Offer Manager</source>
+            <translation>优惠经理无效</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/ActivityMessageBox.cpp" line="170" />
+            <source>Unknown User</source>
+            <translation>未知用户</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/ActivityMessageBox.cpp" line="176" />
+            <source>Offer: </source>
+            <translation>优惠： </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/ActivityMessageBox.cpp" line="179" />
+            <source>
+File: </source>
+            <translation>文件： </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/ActivityMessageBox.cpp" line="180" />
+            <source>
+File Length: </source>
+            <translation>文件长度： </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/ActivityMessageBox.cpp" line="181" />
+            <source>
+File Type: </source>
+            <translation>文件类型： </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="104" />
+            <location filename="../nolimitgui/src/AppTranslate.cpp" line="346" />
+            <source>No Limit Connect</source>
+            <translation>无限制连接</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="756" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2379" />
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="1388" />
+            <source>Unknown Error</source>
+            <translation>未知错误</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="757" />
+            <source>ERROR:
+</source>
+            <translation>错误：</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="761" />
+            <source>Failed to connect to Network host</source>
+            <translation>无法连接到网络主机</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="764" />
+            <source>Failed to connect to Connection Test host</source>
+            <translation>无法连接到连接测试主机</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="767" />
+            <location filename="../nolimitgui/src/AssetVideoWidget.cpp" line="250" />
+            <source>Video Play Failed</source>
+            <translation>视频播放失败</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="770" />
+            <location filename="../nolimitgui/src/AssetVoiceWidget.cpp" line="223" />
+            <source>Audio Play Failed</source>
+            <translation>音频播放失败</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="1244" />
+            <source>Close Application</source>
+            <translation>关闭申请</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="1245" />
+            <source>Are you sure you want to exit?</source>
+            <translation>您确定要退出吗？</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="1351" />
+            <location filename="../nolimitgui/src/ChatEntryWidget.cpp" line="363" />
+            <source>Application Error</source>
+            <translation>应用程序错误</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommonMedia.cpp" line="123" />
+            <source>Web Cam Video</source>
+            <translation>网络摄像头视频</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommonMedia.cpp" line="123" />
+            <source>No Video Capture Devices Found</source>
+            <translation>未找到视频捕获设备</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="205" />
+            <source>Edit My About Me Page</source>
+            <translation>编辑我的关于我页面</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="206" />
+            <source>Edit My Avatar Image</source>
+            <translation>编辑我的头像图片</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="207" />
+            <source>Edit My Story Board (Blog)</source>
+            <translation>编辑我的故事板（博客）</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="208" />
+            <source>View Story Page (Blog)</source>
+            <translation>查看故事页面（博客）</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="209" />
+            <source>View My Story Page (Blog)</source>
+            <translation>查看我的故事页面（博客）</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="210" />
+            <source>Sound Settings</source>
+            <translation>声音设置</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="211" />
+            <source>About File</source>
+            <translation>关于文件</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="212" />
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="459" />
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="1068" />
+            <source>View About Me Page</source>
+            <translation>查看关于我的页面</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="213" />
+            <source>View My About Me Page</source>
+            <translation>查看我的关于我页面</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="214" />
+            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1111" />
+            <source>User Details</source>
+            <translation>用户详细信息</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="216" />
+            <location filename="../nolimitgui/src/AppletLaunchPage.cpp" line="32" />
+            <source>Home</source>
+            <translation>首页</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="217" />
+            <source>About No Limit Connect</source>
+            <translation>关于无限连接</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="218" />
+            <source>Application Information</source>
+            <translation>申请信息</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="219" />
+            <source>Browse Files</source>
+            <translation>浏览文件</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="220" />
+            <source>Offer List</source>
+            <translation>报价清单</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="222" />
+            <source>Cam Video Player</source>
+            <translation>凸轮视频播放器</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="223" />
+            <source>Photo Viewer</source>
+            <translation>照片浏览器</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="224" />
+            <source>Media Player</source>
+            <translation>媒体播放器</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="226" />
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="598" />
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="1202" />
+            <source>View Shared Web Cam</source>
+            <translation>查看共享网络摄像头</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="227" />
+            <source>View My Shared Web Cam</source>
+            <translation>查看我的共享网络摄像头</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="228" />
+            <source>Cam Settings</source>
+            <translation>凸轮设置</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="229" />
+            <source>Join Chat Room</source>
+            <translation>加入聊天室</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="230" />
+            <location filename="../nolimitgui/src/AppletChatRoomJoinSearch.cpp" line="67" />
+            <source>Search For Chat Room To Join</source>
+            <translation>搜索加入聊天室</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="231" />
+            <source>Chat Room Hosts Announced To Network</source>
+            <translation>聊天室主持人宣布加入网络</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="233" />
+            <source>Choose Thumbnail</source>
+            <translation>选择缩略图</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="235" />
+            <source>Choose Host</source>
+            <translation>选择主机</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="236" />
+            <source>Join Host Connect</source>
+            <translation>加入主机连接</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="237" />
+            <source>Leave Host</source>
+            <translation>离开主持人</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="239" />
+            <source>Chat Room</source>
+            <translation>聊天室</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="240" />
+            <source>Random Person Connect</source>
+            <translation>随机人连接</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="241" />
+            <source>Get Persons Avatar Image For Contact List</source>
+            <translation>获取联系人列表的人员头像图像</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="242" />
+            <source>Create Account</source>
+            <translation>创建帐户</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="243" />
+            <source>Friend List</source>
+            <translation>好友列表</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="244" />
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="344" />
+            <location filename="../nolimitgui/src/AppletFriendRequest.cpp" line="117" />
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="1048" />
+            <source>Friend Request</source>
+            <translation>好友请求</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="245" />
+            <source>Friend Request List</source>
+            <translation>好友请求列表</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="246" />
+            <source>Emoticon Gallery</source>
+            <translation>表情图库</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="247" />
+            <source>Image Gallery</source>
+            <translation>图片库</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="248" />
+            <source>Thumbnail Gallery</source>
+            <translation>缩略图库</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="249" />
+            <source>Get Started</source>
+            <translation>开始使用</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="251" />
+            <source>Group Client</source>
+            <translation>集团客户</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="252" />
+            <source>Group Host Admin</source>
+            <translation>群组主机管理员</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="253" />
+            <source>Join Group</source>
+            <translation>加入群组</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="254" />
+            <source>Search For Group To Join</source>
+            <translation>搜索要加入的群组</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="255" />
+            <source>Group List</source>
+            <translation>团体名单</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="256" />
+            <source>Group Hosts Announced To Network</source>
+            <translation>团体主持人宣布加入网络</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="258" />
+            <source>Network Signal Bars</source>
+            <translation>网络信号棒</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="260" />
+            <source>Chat Room Host Admin</source>
+            <translation>聊天室主持人管理员</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="261" />
+            <source>Chat Room Host Status</source>
+            <translation>聊天室主持人状态</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="262" />
+            <source>Group Host Status</source>
+            <translation>群组主持人状态</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="263" />
+            <source>Network Host Status</source>
+            <translation>网络主机状态</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="264" />
+            <source>Random Connect Host Status</source>
+            <translation>随机连接主机状态</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="266" />
+            <source>Ignored Hosts List</source>
+            <translation>忽略的主机列表</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="268" />
+            <source>Accept Invite</source>
+            <translation>接受邀请</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="269" />
+            <source>Create Invite</source>
+            <translation>创建邀请</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="271" />
+            <source>Select Language</source>
+            <translation>选择语言</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="272" />
+            <source>My Library Of Media</source>
+            <translation>我的媒体库</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="273" />
+            <source>Application Log</source>
+            <translation>应用日志</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="274" />
+            <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="93" />
+            <source>Log Settings</source>
+            <translation>日志设置</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="276" />
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="277" />
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="976" />
+            <source>Messenger</source>
+            <translation>使者</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="278" />
+            <source>Network Settings</source>
+            <translation>网络设置</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="279" />
+            <source>Join Host Requests</source>
+            <translation>加入主持人请求</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="281" />
+            <source>Persons Offers</source>
+            <translation>人员优惠</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="282" />
+            <source>Video Player</source>
+            <translation>视频播放器</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="283" />
+            <source>Personal Notes And Records</source>
+            <translation>个人笔记和记录</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="285" />
+            <source>Random Connect Host Admin</source>
+            <translation>随机连接主机管理员</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="286" />
+            <source>Join Random Connect</source>
+            <translation>加入随机连接</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="287" />
+            <location filename="../nolimitgui/src/AppletRandomConnectJoinSearch.cpp" line="67" />
+            <source>Search For Random Connect Host To Join</source>
+            <translation>搜索随机连接主机加入</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="288" />
+            <source>Random Connect Announced Hosts</source>
+            <translation>随机连接宣布的主机</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="290" />
+            <source>Take Snapshot</source>
+            <translation>拍摄快照</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="292" />
+            <source>Test And Debug</source>
+            <translation>测试和调试</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="293" />
+            <source>Test UPNP Port Forward</source>
+            <translation>测试 UPNP 端口转发</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="294" />
+            <source>Theme</source>
+            <translation>主题</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="296" />
+            <source>User Connections</source>
+            <translation>用户连接</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="297" />
+            <source>User Identity</source>
+            <translation>用户身份</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="298" />
+            <source>User Prefernces</source>
+            <translation>用户偏好</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="300" />
+            <location filename="../nolimitgui/src/ServiceSettingsWidget.cpp" line="69" />
+            <source>Settings</source>
+            <translation>设置</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="302" />
+            <source>Search</source>
+            <translation>搜索</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="303" />
+            <source>Search Group For Person Name</source>
+            <translation>在群组中搜索人名</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="304" />
+            <source>Search Group For Mood Message</source>
+            <translation>在群组中搜索心情消息</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="305" />
+            <source>Search Group For About Me Pictures</source>
+            <translation>在群组中搜索关于我的图片</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="306" />
+            <source>Search Group For Story Boards</source>
+            <translation>故事板搜索组</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="307" />
+            <source>Search Group For Shared Files</source>
+            <translation>搜索组中的共享文件</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="308" />
+            <source>Search Group For Shared Web Cams</source>
+            <translation>搜索共享网络摄像头组</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="310" />
+            <source>Hosting Services</source>
+            <translation>托管服务</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="311" />
+            <source>Share Permission List</source>
+            <translation>共享权限列表</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="313" />
+            <source>Share With Others Services</source>
+            <translation>与他人分享服务</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="314" />
+            <source>Share About Me Page</source>
+            <translation>分享关于我的页面</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="316" />
+            <source>Service Connection Test</source>
+            <translation>服务连接测试</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="317" />
+            <source>Host A NoLimitConnect Network</source>
+            <translation>托管 NoLimitConnect 网络</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="318" />
+            <source>Share Media Files</source>
+            <translation>共享媒体文件</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="319" />
+            <source>Share your web cam</source>
+            <translation>分享您的网络摄像头</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="320" />
+            <source>Share Story Page (Blog)</source>
+            <translation>分享故事页面（博客）</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="322" />
+            <location filename="../nolimitgui/src/AppletServiceBase.cpp" line="195" />
+            <location filename="../nolimitgui/src/AppletSettingsBase.cpp" line="91" />
+            <source>Service Settings</source>
+            <translation>服务设置</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="324" />
+            <source>About Me Page Settings</source>
+            <translation>关于我页面设置</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="325" />
+            <source>Avatar Image Settings</source>
+            <translation>头像图像设置</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="326" />
+            <source>Shared Web Cam Settings</source>
+            <translation>共享网络摄像头设置</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="327" />
+            <source>Connection Test Service Settings</source>
+            <translation>连接测试服务设置</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="328" />
+            <source>Shared Files Settings</source>
+            <translation>共享文件设置</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="329" />
+            <source>Person To Person File Xfer Settings</source>
+            <translation>个人对个人文件 Xfer 设置</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="331" />
+            <source>Chat Room Host Settings</source>
+            <translation>聊天室主持人设置</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="332" />
+            <source>Group Host Settings</source>
+            <translation>群组主机设置</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="333" />
+            <source>Network Host Settings</source>
+            <translation>网络主机设置</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="334" />
+            <source>Random Connect Host Settings</source>
+            <translation>随机连接主机设置</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="336" />
+            <source>Messenger Settings</source>
+            <translation>信使设置</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="337" />
+            <source>Push To Talk Settings</source>
+            <translation>一键通设置</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="338" />
+            <source>Random Connect Service Settings</source>
+            <translation>随机连接服务设置</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="339" />
+            <source>Shared Story (Blog) Settings</source>
+            <translation>共享故事（博客）设置</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="340" />
+            <source>Truth Or Dare Video Chat Game Settings</source>
+            <translation>真心话大冒险视频聊天游戏设置</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="341" />
+            <source>Video Chat Settings</source>
+            <translation>视频聊天设置</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="342" />
+            <source>Voice Only Phone Call Settings</source>
+            <translation>仅语音通话设置</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="346" />
+            <source>Provide Cam Stream</source>
+            <translation>提供视频流</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="347" />
+            <source>Manage Station</source>
+            <translation>管理站</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="348" />
+            <source>Manage Station Network Host</source>
+            <translation>管理站网络主机</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="350" />
+            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1055" />
+            <source>Change Friendship</source>
+            <translation>改变友谊</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="351" />
+            <source>Reply Offer File</source>
+            <translation>回复报价文件</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="352" />
+            <source>Truth Or Dare Game</source>
+            <translation>真心话大冒险游戏</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="353" />
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="988" />
+            <source>Video Chat</source>
+            <translation>视频聊天</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="354" />
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="564" />
+            <source>View Shared Files</source>
+            <translation>查看共享文件</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="355" />
+            <source>Offer File</source>
+            <translation>报价文件</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="357" />
+            <source>Offer Information</source>
+            <translation>优惠资讯</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="358" />
+            <source>Random Connect Session</source>
+            <translation>随机连接会话</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="359" />
+            <source>Send Offer</source>
+            <translation>发送报价</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="360" />
+            <source>Respond To Offer</source>
+            <translation>回应报价</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="361" />
+            <source>Accept Offer Response</source>
+            <translation>接受报价响应</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="362" />
+            <source>Offer Details</source>
+            <translation>优惠详情</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="363" />
+            <source>Voice Phone (VOIP)</source>
+            <translation>语音电话 (VOIP)</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="365" />
+            <source>File Offer</source>
+            <translation>文件报价</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="367" />
+            <source>Downloads</source>
+            <translation>下载</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="368" />
+            <source>Uploads</source>
+            <translation>上传</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="370" />
+            <source>View My Shared Files</source>
+            <translation>查看我的共享文件</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="372" />
+            <source>Menu</source>
+            <translation>菜单</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="374" />
+            <source>Blocked Hackers</source>
+            <translation>阻止黑客</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="375" />
+            <source>Socket Connections</source>
+            <translation>套接字连接</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="376" />
+            <source>Test Connection</source>
+            <translation>测试连接</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="379" />
+            <source>Information</source>
+            <translation>信息</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppDefs.cpp" line="384" />
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="151" />
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="231" />
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="254" />
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="289" />
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="800" />
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="869" />
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="1667" />
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="1773" />
+            <source>Unknown</source>
+            <translation>未知</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletAboutApp.cpp" line="61" />
+            <source>Copy device info to clipboard (For Bug Report)</source>
+            <translation>将设备信息复制到剪贴板（用于错误报告）</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletAboutApp.cpp" line="63" />
+            <source> Version </source>
+            <translation> 版本 </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletAboutApp.cpp" line="106" />
+            <source>Copy connection info to clipboard (NOT RECOMMENDED)</source>
+            <translation>将连接信息复制到剪贴板（不推荐）</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletAboutFile.cpp" line="129" />
+            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="116" />
+            <source> : Yes</source>
+            <translation> ： 是的</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletAboutFile.cpp" line="130" />
+            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="117" />
+            <source> : No</source>
+            <translation> : 没有</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletAboutFile.cpp" line="132" />
+            <source>Is Stream</source>
+            <translation>是流</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="108" />
+            <source>Requires Relay</source>
+            <translation>需要继电器</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="112" />
+            <source>Can Direct Connect</source>
+            <translation>可以直连</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="115" />
+            <source>Is member of </source>
+            <translation>是以下组织的成员 </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="140" />
+            <source>no shared files</source>
+            <translation>没有共享文件</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="153" />
+            <source> -- has about me content</source>
+            <translation> -- 有关于我的内容</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="157" />
+            <source> -- no about me content</source>
+            <translation> -- 没有关于我的内容</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="164" />
+            <source> -- has storyboard content</source>
+            <translation> -- 有故事板内容</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="168" />
+            <source> -- no storyboard content</source>
+            <translation> -- 没有故事板内容</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="175" />
+            <source> -- has shared web cam</source>
+            <translation> -- 共享网络摄像头</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="179" />
+            <source> -- no shared web cam</source>
+            <translation> -- 没有共享网络摄像头</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="186" />
+            <source>=== Disabled Plugins ===</source>
+            <translation>===禁用插件===</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="40" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="158" />
+            <location filename="../nolimitgui/src/AppletSnapshot.cpp" line="86" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="176" />
+            <source>Camera Capture</source>
+            <translation>相机捕捉</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="40" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="158" />
+            <location filename="../nolimitgui/src/AppletSnapshot.cpp" line="86" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="176" />
+            <source>No Camera Source Available.</source>
+            <translation>没有可用的相机源。</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="217" />
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="260" />
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="265" />
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="271" />
+            <source>Video In Device</source>
+            <translation>视频输入设备</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="217" />
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="265" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="264" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="289" />
+            <source> failed to initialize</source>
+            <translation>初始化失败</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="260" />
+            <source> device is saved as preferred Video In Device</source>
+            <translation> 设备保存为首选视频输入设备</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="271" />
+            <source>No Video In Device Is Available</source>
+            <translation>设备中没有可用的视频</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletChatRoomJoinSearch.cpp" line="126" />
+            <location filename="../nolimitgui/src/AppletGroupJoinSearch.cpp" line="127" />
+            <location filename="../nolimitgui/src/AppletGroupListClient.cpp" line="130" />
+            <location filename="../nolimitgui/src/AppletRandomConnectJoinSearch.cpp" line="126" />
+            <source>Search must have at least 3 characters</source>
+            <translation>搜索必须至少包含 3 个字符</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletChatRoomJoinSearch.cpp" line="137" />
+            <location filename="../nolimitgui/src/AppletGroupJoinSearch.cpp" line="138" />
+            <location filename="../nolimitgui/src/AppletGroupListClient.cpp" line="141" />
+            <location filename="../nolimitgui/src/AppletRandomConnectJoinSearch.cpp" line="137" />
+            <source>Search Started</source>
+            <translation>搜索开始</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletChatRoomJoinSearch.cpp" line="150" />
+            <location filename="../nolimitgui/src/AppletGroupJoinSearch.cpp" line="151" />
+            <location filename="../nolimitgui/src/AppletGroupListClient.cpp" line="155" />
+            <location filename="../nolimitgui/src/AppletRandomConnectJoinSearch.cpp" line="150" />
+            <source>Search Params Invalid</source>
+            <translation>搜索参数无效</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletChatRoomJoinSearch.cpp" line="158" />
+            <location filename="../nolimitgui/src/AppletGroupJoinSearch.cpp" line="159" />
+            <location filename="../nolimitgui/src/AppletGroupListClient.cpp" line="163" />
+            <location filename="../nolimitgui/src/AppletRandomConnectJoinSearch.cpp" line="158" />
+            <source>Search Stopped</source>
+            <translation>搜索已停止</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletChatRoomJoinSearch.cpp" line="207" />
+            <location filename="../nolimitgui/src/AppletChatRoomListLocalView.cpp" line="230" />
+            <location filename="../nolimitgui/src/AppletGroupJoinSearch.cpp" line="208" />
+            <location filename="../nolimitgui/src/AppletGroupListClient.cpp" line="212" />
+            <location filename="../nolimitgui/src/AppletGroupListLocalView.cpp" line="233" />
+            <location filename="../nolimitgui/src/AppletRandomConnectJoinSearch.cpp" line="207" />
+            <location filename="../nolimitgui/src/AppletRandomConnectListLocalView.cpp" line="230" />
+            <source>Match found: </source>
+            <translation>找到匹配项： </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletChatRoomListLocalView.cpp" line="66" />
+            <location filename="../nolimitgui/src/AppletChatRoomListLocalView.cpp" line="67" />
+            <source>Chat Room Hosts Announced To Network Host</source>
+            <translation>聊天室主持人宣布成为网络主持人</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletChatRoomListLocalView.cpp" line="73" />
+            <location filename="../nolimitgui/src/AppletGroupListLocalView.cpp" line="76" />
+            <location filename="../nolimitgui/src/AppletRandomConnectListLocalView.cpp" line="73" />
+            <source>Service Unavailable</source>
+            <translation>服务不可用</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletChatRoomListLocalView.cpp" line="73" />
+            <source>Network Host Service Is Not Enabled. You can not view chat rooms announced to this device because the service is not enabled</source>
+            <translation>网络主机服务未启用。您无法查看向该设备宣布的聊天室，因为该服务未启用</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletChatRoomListLocalView.cpp" line="80" />
+            <location filename="../nolimitgui/src/AppletGroupListLocalView.cpp" line="83" />
+            <location filename="../nolimitgui/src/AppletRandomConnectListLocalView.cpp" line="80" />
+            <source>Service Disabled</source>
+            <translation>服务已禁用</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletChatRoomListLocalView.cpp" line="80" />
+            <location filename="../nolimitgui/src/AppletGroupListLocalView.cpp" line="83" />
+            <location filename="../nolimitgui/src/AppletRandomConnectListLocalView.cpp" line="80" />
+            <source>Network Host Service is not enabled because it requires an open port.</source>
+            <translation>网络主机服务未启用，因为它需要开放端口。</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletChooseThumbnail.cpp" line="43" />
+            <source>Image for thumbnail will be resized to width </source>
+            <translation>缩略图的图像将调整为宽度 </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletChooseThumbnail.cpp" line="45" />
+            <source> height </source>
+            <translation> 高度 </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletChooseThumbnail.cpp" line="47" />
+            <source> pixels. </source>
+            <translation> 像素。 </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletCreateAccount.cpp" line="96" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1444" />
+            <source>Application</source>
+            <translation>应用</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletCreateAccount.cpp" line="96" />
+            <source>Insert New User into Database failed.</source>
+            <translation>将新用户插入数据库失败。</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletCreateAccount.cpp" line="126" />
+            <source>Create an account or exit</source>
+            <translation>创建帐户或退出</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletCreateAccount.cpp" line="127" />
+            <source>User must create an account or exit
+Do you want to exit the application?</source>
+            <translation>用户必须创建帐户或退出
+您想退出应用程序吗？</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="67" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="81" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="125" />
+            <location filename="../nolimitgui/src/ChatEntryWidget.cpp" line="198" />
+            <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="208" />
+            <source>Failed To Read Image File </source>
+            <translation>读取图像文件失败 </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="68" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="82" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="126" />
+            <location filename="../nolimitgui/src/ChatEntryWidget.cpp" line="199" />
+            <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="209" />
+            <source>Error Reading Image</source>
+            <translation>读取图像时出错</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="117" />
+            <location filename="../nolimitgui/src/ChatEntryWidget.cpp" line="189" />
+            <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="200" />
+            <source>Open Image</source>
+            <translation>打开图像</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="175" />
+            <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="113" />
+            <source>Failed to read snapshot </source>
+            <translation>读取快照失败 </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="176" />
+            <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="114" />
+            <source>Error Reading snapshot</source>
+            <translation>读取快照时出错</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="202" />
+            <source>Failed to write into </source>
+            <translation>写入失败 </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="203" />
+            <source>Error Writing</source>
+            <translation>写入错误</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="227" />
+            <source>About Me Change</source>
+            <translation>关于我 改变</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="228" />
+            <source>Applied About Me Changes </source>
+            <translation>已应用“关于我”的更改 </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="229" />
+            <source>Failed</source>
+            <translation>失败</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="229" />
+            <source>Success</source>
+            <translation>成功</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="98" />
+            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="125" />
+            <source>Applied Avatar Image Changes </source>
+            <translation>应用头像图像更改 </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="99" />
+            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="126" />
+            <source>Applied Avatar Image Success</source>
+            <translation>应用头像图像成功</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="145" />
+            <source>Cannot Delete Avatar Image</source>
+            <translation>无法删除头像图片</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="146" />
+            <source>Cannot remove image that is a emoticon</source>
+            <translation>无法删除属于表情符号的图像</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="150" />
+            <source>Are you sure you want to remove your avatar image?</source>
+            <translation>您确定要删除您的头像吗？</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="151" />
+            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="156" />
+            <source>Remove Avatar Image</source>
+            <translation>删除头像图像</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="155" />
+            <source>Remove Avatar Image Success</source>
+            <translation>删除头像图片成功</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="161" />
+            <source>Remove Avatar Image canceled </source>
+            <translation>删除头像图片已取消 </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="208" />
+            <source>Cannot shred image </source>
+            <translation>无法粉碎图像 </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletFileOfferSelect.cpp" line="289" />
+            <location filename="../nolimitgui/src/AppletFileOfferSelect.cpp" line="323" />
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="359" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2390" />
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="1358" />
+            <source>File Not Found</source>
+            <translation>找不到文件</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletFileShareClientView.cpp" line="489" />
+            <source>Failed to play stream </source>
+            <translation>播放流失败 </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletFriendList.cpp" line="136" />
+            <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="126" />
+            <location filename="../nolimitgui/src/AppletOfferList.cpp" line="125" />
+            <source>List</source>
+            <translation>列表</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletFriendRequest.cpp" line="64" />
+            <source>User not found</source>
+            <translation>未找到用户</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletFriendRequest.cpp" line="64" />
+            <source>No user found with id </source>
+            <translation>找不到具有 id 的用户 </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletFriendRequest.cpp" line="117" />
+            <source>Friend Request requires a message with request reason</source>
+            <translation>好友请求需要一条带有请求原因的消息</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletFriendRequest.cpp" line="123" />
+            <source>Friend Request Send Failed</source>
+            <translation>好友请求发送失败</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletFriendRequest.cpp" line="127" />
+            <source>Friend Request Sent</source>
+            <translation>好友请求已发送</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletFriendRequest.cpp" line="127" />
+            <source>Friend Request was sent</source>
+            <translation>好友请求已发送</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletFriendRequestList.cpp" line="79" />
+            <source>No Friend Requests Available</source>
+            <translation>没有可用的好友请求</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletGroupJoinSearch.cpp" line="68" />
+            <source>Search For Group Host To Join</source>
+            <translation>搜索群主加入</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletGroupListClient.cpp" line="67" />
+            <source>Fetch Group Host List</source>
+            <translation>获取组主机列表</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletGroupListLocalView.cpp" line="69" />
+            <source>Group Hosts Announced To Network Host</source>
+            <translation>组主机宣布为网络主机</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletGroupListLocalView.cpp" line="70" />
+            <source>Groups Announced To Network Host</source>
+            <translation>向网络主机宣布的组</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletGroupListLocalView.cpp" line="76" />
+            <source>Network Host Service Is Not Enabled. You can not view groups announced to this device because the service is not enabled</source>
+            <translation>网络主机服务未启用。您无法查看向该设备宣布的群组，因为该服务未启用</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHackerList.cpp" line="53" />
+            <source>Count</source>
+            <translation>计数</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHackerList.cpp" line="54" />
+            <location filename="../nolimitgui/src/AppletSocketList.cpp" line="63" />
+            <source>IP Address</source>
+            <translation>IP地址</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHackerList.cpp" line="55" />
+            <source>Level</source>
+            <translation>等级</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHackerList.cpp" line="56" />
+            <source>Offense</source>
+            <translation>进攻</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHackerList.cpp" line="57" />
+            <source>Signature</source>
+            <translation>签名</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostBase.cpp" line="93" />
+            <source>Cannot join our host as user</source>
+            <translation>无法以用户身份加入我们的主机</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostBase.cpp" line="94" />
+            <source>Cannot join our host as user.
+ You can join host from host admin page instead.</source>
+            <translation>无法以用户身份加入我们的主机。
+ 您可以从主机管理页面加入主机。</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostChatRoomStatus.cpp" line="96" />
+            <source>Open Port Required. Check ChatRoom Settings</source>
+            <translation>需要打开端口。检查聊天室设置</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostChatRoomStatus.cpp" line="100" />
+            <source>Chat Room Hosting Permission is disabled</source>
+            <translation>聊天室托管权限被禁用</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostChatRoomStatus.cpp" line="104" />
+            <source>Chat Room Hosting Conditions Are Met</source>
+            <translation>满足聊天室托管条件</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostClientBase.cpp" line="274" />
+            <source>Sending to: %1</source>
+            <translation>发送至：%1</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostClientBase.cpp" line="293" />
+            <source>Sent to %1 member(s)</source>
+            <translation>发送至 %1 会员</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostClientBase.cpp" line="297" />
+            <source>Sent: %1 success, %2 failed</source>
+            <translation>发送：%1 成功，%2 失败</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostGroupStatus.cpp" line="93" />
+            <location filename="../nolimitgui/src/AppletHostNetworkStatus.cpp" line="89" />
+            <source>Open Port Required. Check Network Settings</source>
+            <translation>需要打开端口。检查网络设置</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostGroupStatus.cpp" line="97" />
+            <source>Group Hosting Permission is disabled</source>
+            <translation>群组托管权限被禁用</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostGroupStatus.cpp" line="101" />
+            <source>Group Hosting Conditions Are Met</source>
+            <translation>符合团体主办条件</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostJoinChoose.cpp" line="73" />
+            <source>Choose Chat Room Host</source>
+            <translation>选择聊天室主持人</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostJoinChoose.cpp" line="81" />
+            <source>Choose Group Host</source>
+            <translation>选择群组主持人</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostJoinChoose.cpp" line="88" />
+            <source>Choose Random Connect Host</source>
+            <translation>选择随机连接主机</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostJoinChoose.cpp" line="95" />
+            <location filename="../nolimitgui/src/AppletHostLeave.cpp" line="97" />
+            <source>Unknown Host Type</source>
+            <translation>未知主机类型</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostJoinConnect.cpp" line="63" />
+            <source>Host URL is not valid</source>
+            <translation>主机 URL 无效</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostJoinConnect.cpp" line="68" />
+            <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="55" />
+            <source>Failed to resolve into valid ptop url</source>
+            <translation>无法解析为有效的 ptop url</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostJoinConnect.cpp" line="72" />
+            <source>Host Type Invalid</source>
+            <translation>主机类型无效</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostLeave.cpp" line="78" />
+            <source>Leave Chat Room</source>
+            <translation>离开聊天室</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostLeave.cpp" line="85" />
+            <source>Leave Group</source>
+            <translation>离开群组</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostLeave.cpp" line="91" />
+            <source>Leave Random Connect</source>
+            <translation>离开随机连接</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostNetworkStatus.cpp" line="47" />
+            <source>Hosts announced to network count:</source>
+            <translation>宣布网络数量的主机：</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostNetworkStatus.cpp" line="93" />
+            <source>Network Hosting Permission is disabled</source>
+            <translation>网络托管权限被禁用</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostNetworkStatus.cpp" line="97" />
+            <source>Connection Test Permission is disabled</source>
+            <translation>连接测试权限被禁用</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostNetworkStatus.cpp" line="101" />
+            <source>Network Hosting Conditions Are Met</source>
+            <translation>满足网络托管条件</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostRandomConnectStatus.cpp" line="95" />
+            <source>Open Port Required. Check RandomConnect Settings</source>
+            <translation>需要打开端口。检查随机连接设置</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostRandomConnectStatus.cpp" line="99" />
+            <source>Random Connect Hosting Permission is disabled</source>
+            <translation>随机连接托管权限已禁用</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletHostRandomConnectStatus.cpp" line="103" />
+            <source>Random Connect Hosting Conditions Are Met</source>
+            <translation>满足随机连接托管条件</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletInformation.cpp" line="113" />
@@ -4350,6 +5703,34 @@ If you do not have the correct network key you will get banned as a hacker
 如果您没有正确的网络密钥，您将被禁止作为黑客</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/AppletInformation.cpp" line="325" />
+            <source>=== Friends List ===
+A list showing users set to friend or administrator permission level.
+</source>
+            <translation>===好友列表===
+显示设置为好友或管理员权限级别的用户的列表。</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletInformation.cpp" line="330" />
+            <source>=== Ignored List ===
+A list showing ignored (blocked) users.
+You can unblock a user by clicking the friendship icon or select Change Friendship from the menu button on right side of list entry.
+</source>
+            <translation>=== 忽略列表 ===
+显示被忽略（阻止）的用户的列表。
+您可以通过单击好友图标或从列表条目右侧的菜单按钮中选择更改好友来取消阻止用户。</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletInformation.cpp" line="336" />
+            <source>=== Offline Friends List ===
+A list showing offline friends and admins.
+You can change friendship even when offline (Set to anonymouse or guest so network no longer tries to stay connected).
+</source>
+            <translation>===离线好友列表===
+显示离线好友和管理员的列表。
+即使在离线状态下，您也可以更改好友关系（设置为匿名或访客，以便网络不再尝试保持连接）。</translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/AppletInformation.cpp" line="342" />
             <source>=== Hosting Requirements any of these host services Chat Room, Group, Random Connect ===
 You will need to port forward the listen port you specified in Network Settings
@@ -4365,7 +5746,15 @@ No Limit Connect 的作者使用 https://hide.me VPN 是因为：
 1. hide.me 理解 UPNP 协议，该协议允许 No Limit Connect 自动打开端口。
 2. hide.me 几乎可以安装在任何操作系统上，包括 Windows、Linux、Android 和 Raspberry Pi。
 3. hide.me 有免费版本，但购买起来相对便宜。
-有关端口转发的文章可以通过搜索引擎或https://www.jguru.com/vpn-port-forwarding找到</translation>
+有关端口转发的文章可以通过搜索引擎或https://www.jguru.com/vpn-port-forwarding找到 </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletInformation.cpp" line="352" />
+            <source>=== Hosting Requirements Network Host ===
+If you want to host your own network the network host must have port forwarding and also a fixed ip address.
+</source>
+            <translation>=== 托管要求 网络主机 ===
+如果您想托管自己的网络，网络主机必须具有端口转发和固定的 IP 地址。</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletInformation.cpp" line="357" />
@@ -4424,1300 +5813,6 @@ If user is a friend with open port a attempt to reconnect will occur even after 
 如果用户是开放端口的朋友，即使重新启动后也会尝试重新连接</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletInformation.cpp" line="325" />
-            <source>=== Friends List ===
-A list showing users set to friend or administrator permission level.
-</source>
-            <translation>===好友列表===
-显示设置为好友或管理员权限级别的用户的列表。</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletInformation.cpp" line="330" />
-            <source>=== Ignored List ===
-A list showing ignored (blocked) users.
-You can unblock a user by clicking the friendship icon or select Change Friendship from the menu button on right side of list entry.
-</source>
-            <translation>=== 忽略列表 ===
-显示被忽略（阻止）的用户的列表。
-您可以通过单击好友图标或从列表条目右侧的菜单按钮中选择更改好友来取消阻止用户。</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletInformation.cpp" line="336" />
-            <source>=== Offline Friends List ===
-A list showing offline friends and admins.
-You can change friendship even when offline (Set to anonymouse or guest so network no longer tries to stay connected).
-</source>
-            <translation>===离线好友列表===
-显示离线好友和管理员的列表。
-即使在离线状态下，您也可以更改好友关系（设置为匿名或访客，以便网络不再尝试保持连接）。</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletInformation.cpp" line="352" />
-            <source>=== Hosting Requirements Network Host ===
-If you want to host your own network the network host must have port forwarding and also a fixed ip address.
-</source>
-            <translation>=== 托管要求 网络主机 ===
-如果您想托管自己的网络，网络主机必须具有端口转发和固定的 IP 地址。</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/ActivityMessageBox.cpp" line="94" />
-            <source>Message</source>
-            <translation>留言</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/ActivityMessageBox.cpp" line="163" />
-            <source>Invalid Offer Manager</source>
-            <translation>优惠经理无效</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/ActivityMessageBox.cpp" line="170" />
-            <source>Unknown User</source>
-            <translation>未知用户</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/ActivityMessageBox.cpp" line="176" />
-            <source>Offer: </source>
-            <translation>优惠：</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/ActivityMessageBox.cpp" line="179" />
-            <source>
-File: </source>
-            <translation>文件：</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/ActivityMessageBox.cpp" line="180" />
-            <source>
-File Length: </source>
-            <translation>文件长度：</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/ActivityMessageBox.cpp" line="181" />
-            <source>
-File Type: </source>
-            <translation>文件类型：</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletChatRoomJoinSearch.cpp" line="126" />
-            <location filename="../nolimitgui/src/AppletGroupJoinSearch.cpp" line="127" />
-            <location filename="../nolimitgui/src/AppletGroupListClient.cpp" line="130" />
-            <location filename="../nolimitgui/src/AppletRandomConnectJoinSearch.cpp" line="126" />
-            <source>Search must have at least 3 characters</source>
-            <translation>搜索必须至少包含 3 个字符</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletChatRoomJoinSearch.cpp" line="137" />
-            <location filename="../nolimitgui/src/AppletGroupJoinSearch.cpp" line="138" />
-            <location filename="../nolimitgui/src/AppletGroupListClient.cpp" line="141" />
-            <location filename="../nolimitgui/src/AppletRandomConnectJoinSearch.cpp" line="137" />
-            <source>Search Started</source>
-            <translation>搜索开始</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletChatRoomJoinSearch.cpp" line="158" />
-            <location filename="../nolimitgui/src/AppletGroupJoinSearch.cpp" line="159" />
-            <location filename="../nolimitgui/src/AppletGroupListClient.cpp" line="163" />
-            <location filename="../nolimitgui/src/AppletRandomConnectJoinSearch.cpp" line="158" />
-            <source>Search Stopped</source>
-            <translation>搜索已停止</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="104" />
-            <location filename="../nolimitgui/src/AppTranslate.cpp" line="346" />
-            <source>No Limit Connect</source>
-            <translation>无限制连接</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="757" />
-            <source>ERROR:
-</source>
-            <translation>错误：</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="761" />
-            <source>Failed to connect to Network host</source>
-            <translation>无法连接到网络主机</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="764" />
-            <source>Failed to connect to Connection Test host</source>
-            <translation>无法连接到连接测试主机</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="767" />
-            <location filename="../nolimitgui/src/AssetVideoWidget.cpp" line="250" />
-            <source>Video Play Failed</source>
-            <translation>视频播放失败</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="770" />
-            <location filename="../nolimitgui/src/AssetVoiceWidget.cpp" line="223" />
-            <source>Audio Play Failed</source>
-            <translation>音频播放失败</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="1244" />
-            <source>Close Application</source>
-            <translation>关闭申请</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="1245" />
-            <source>Are you sure you want to exit?</source>
-            <translation>您确定要退出吗？</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="1351" />
-            <location filename="../nolimitgui/src/ChatEntryWidget.cpp" line="363" />
-            <source>Application Error</source>
-            <translation>应用程序错误</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppCommonMedia.cpp" line="123" />
-            <source>Web Cam Video</source>
-            <translation>网络摄像头视频</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppCommonMedia.cpp" line="123" />
-            <source>No Video Capture Devices Found</source>
-            <translation>未找到视频捕获设备</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="205" />
-            <source>Edit My About Me Page</source>
-            <translation>编辑我的关于我页面</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="206" />
-            <source>Edit My Avatar Image</source>
-            <translation>编辑我的头像图片</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="207" />
-            <source>Edit My Story Board (Blog)</source>
-            <translation>编辑我的故事板（博客）</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="208" />
-            <source>View Story Page (Blog)</source>
-            <translation>查看故事页面（博客）</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="209" />
-            <source>View My Story Page (Blog)</source>
-            <translation>查看我的故事页面（博客）</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="210" />
-            <source>Sound Settings</source>
-            <translation>声音设置</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="211" />
-            <source>About File</source>
-            <translation>关于文件</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="212" />
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="459" />
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="1068" />
-            <source>View About Me Page</source>
-            <translation>查看关于我的页面</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="213" />
-            <source>View My About Me Page</source>
-            <translation>查看我的关于我页面</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="214" />
-            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1111" />
-            <source>User Details</source>
-            <translation>用户详细信息</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="216" />
-            <location filename="../nolimitgui/src/AppletLaunchPage.cpp" line="32" />
-            <source>Home</source>
-            <translation>首页</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="217" />
-            <source>About No Limit Connect</source>
-            <translation>关于无限连接</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="218" />
-            <source>Application Information</source>
-            <translation>申请信息</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="219" />
-            <source>Browse Files</source>
-            <translation>浏览文件</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="220" />
-            <source>Offer List</source>
-            <translation>报价清单</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="222" />
-            <source>Cam Video Player</source>
-            <translation>凸轮视频播放器</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="223" />
-            <source>Photo Viewer</source>
-            <translation>照片浏览器</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="224" />
-            <source>Media Player</source>
-            <translation>媒体播放器</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="226" />
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="598" />
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="1202" />
-            <source>View Shared Web Cam</source>
-            <translation>查看共享网络摄像头</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="227" />
-            <source>View My Shared Web Cam</source>
-            <translation>查看我的共享网络摄像头</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="228" />
-            <source>Cam Settings</source>
-            <translation>凸轮设置</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="229" />
-            <source>Join Chat Room</source>
-            <translation>加入聊天室</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="230" />
-            <location filename="../nolimitgui/src/AppletChatRoomJoinSearch.cpp" line="67" />
-            <source>Search For Chat Room To Join</source>
-            <translation>搜索加入聊天室</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="231" />
-            <source>Chat Room Hosts Announced To Network</source>
-            <translation>聊天室主持人宣布加入网络</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="233" />
-            <source>Choose Thumbnail</source>
-            <translation>选择缩略图</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="239" />
-            <source>Chat Room</source>
-            <translation>聊天室</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="240" />
-            <source>Random Person Connect</source>
-            <translation>随机人连接</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="241" />
-            <source>Get Persons Avatar Image For Contact List</source>
-            <translation>获取联系人列表的人员头像图像</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="243" />
-            <source>Friend List</source>
-            <translation>好友列表</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="246" />
-            <source>Emoticon Gallery</source>
-            <translation>表情图库</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="247" />
-            <source>Image Gallery</source>
-            <translation>图片库</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="248" />
-            <source>Thumbnail Gallery</source>
-            <translation>缩略图库</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="249" />
-            <source>Get Started</source>
-            <translation>开始使用</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="251" />
-            <source>Group Client</source>
-            <translation>集团客户</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="252" />
-            <source>Group Host Admin</source>
-            <translation>群组主机管理员</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="253" />
-            <source>Join Group</source>
-            <translation>加入群组</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="254" />
-            <source>Search For Group To Join</source>
-            <translation>搜索要加入的群组</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="255" />
-            <source>Group List</source>
-            <translation>团体名单</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="256" />
-            <source>Group Hosts Announced To Network</source>
-            <translation>团体主持人宣布加入网络</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="258" />
-            <source>Network Signal Bars</source>
-            <translation>网络信号棒</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="260" />
-            <source>Chat Room Host Admin</source>
-            <translation>聊天室主持人管理员</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="261" />
-            <source>Chat Room Host Status</source>
-            <translation>聊天室主持人状态</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="262" />
-            <source>Group Host Status</source>
-            <translation>群组主持人状态</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="263" />
-            <source>Network Host Status</source>
-            <translation>网络主机状态</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="264" />
-            <source>Random Connect Host Status</source>
-            <translation>随机连接主机状态</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="266" />
-            <source>Ignored Hosts List</source>
-            <translation>忽略的主机列表</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="269" />
-            <source>Create Invite</source>
-            <translation>创建邀请</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="272" />
-            <source>My Library Of Media</source>
-            <translation>我的媒体库</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="273" />
-            <source>Application Log</source>
-            <translation>应用日志</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="274" />
-            <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="93" />
-            <source>Log Settings</source>
-            <translation>日志设置</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="276" />
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="277" />
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="976" />
-            <source>Messenger</source>
-            <translation>使者</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="278" />
-            <source>Network Settings</source>
-            <translation>网络设置</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="279" />
-            <source>Join Host Requests</source>
-            <translation>加入主持人请求</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="281" />
-            <source>Persons Offers</source>
-            <translation>人员优惠</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="283" />
-            <source>Personal Notes And Records</source>
-            <translation>个人笔记和记录</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="285" />
-            <source>Random Connect Host Admin</source>
-            <translation>随机连接主机管理员</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="286" />
-            <source>Join Random Connect</source>
-            <translation>加入随机连接</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="287" />
-            <location filename="../nolimitgui/src/AppletRandomConnectJoinSearch.cpp" line="67" />
-            <source>Search For Random Connect Host To Join</source>
-            <translation>搜索随机连接主机加入</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="288" />
-            <source>Random Connect Announced Hosts</source>
-            <translation>随机连接宣布的主机</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="290" />
-            <source>Take Snapshot</source>
-            <translation>拍摄快照</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="292" />
-            <source>Test And Debug</source>
-            <translation>测试和调试</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="294" />
-            <source>Theme</source>
-            <translation>主题</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="296" />
-            <source>User Connections</source>
-            <translation>用户连接</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="297" />
-            <source>User Identity</source>
-            <translation>用户身份</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="300" />
-            <location filename="../nolimitgui/src/ServiceSettingsWidget.cpp" line="69" />
-            <source>Settings</source>
-            <translation>设置</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="302" />
-            <source>Search</source>
-            <translation>搜索</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="303" />
-            <source>Search Group For Person Name</source>
-            <translation>在群组中搜索人名</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="304" />
-            <source>Search Group For Mood Message</source>
-            <translation>在群组中搜索心情消息</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="305" />
-            <source>Search Group For About Me Pictures</source>
-            <translation>在群组中搜索关于我的图片</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="306" />
-            <source>Search Group For Story Boards</source>
-            <translation>故事板搜索组</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="307" />
-            <source>Search Group For Shared Files</source>
-            <translation>搜索组中的共享文件</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="308" />
-            <source>Search Group For Shared Web Cams</source>
-            <translation>搜索共享网络摄像头组</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="310" />
-            <source>Hosting Services</source>
-            <translation>托管服务</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="311" />
-            <source>Share Permission List</source>
-            <translation>共享权限列表</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="313" />
-            <source>Share With Others Services</source>
-            <translation>与他人分享服务</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="314" />
-            <source>Share About Me Page</source>
-            <translation>分享关于我的页面</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="235" />
-            <source>Choose Host</source>
-            <translation>选择主机</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="236" />
-            <source>Join Host Connect</source>
-            <translation>加入主机连接</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="237" />
-            <source>Leave Host</source>
-            <translation>离开主持人</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="244" />
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="344" />
-            <location filename="../nolimitgui/src/AppletFriendRequest.cpp" line="117" />
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="1048" />
-            <source>Friend Request</source>
-            <translation>好友请求</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="245" />
-            <source>Friend Request List</source>
-            <translation>好友请求列表</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="268" />
-            <source>Accept Invite</source>
-            <translation>接受邀请</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="271" />
-            <source>Select Language</source>
-            <translation>选择语言</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="282" />
-            <source>Video Player</source>
-            <translation>视频播放器</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="293" />
-            <source>Test UPNP Port Forward</source>
-            <translation>测试 UPNP 端口转发</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="298" />
-            <source>User Prefernces</source>
-            <translation>用户偏好</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="316" />
-            <source>Service Connection Test</source>
-            <translation>服务连接测试</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="317" />
-            <source>Host A NoLimitConnect Network</source>
-            <translation>托管 NoLimitConnect 网络</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="318" />
-            <source>Share Media Files</source>
-            <translation>共享媒体文件</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="319" />
-            <source>Share your web cam</source>
-            <translation>分享您的网络摄像头</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="320" />
-            <source>Share Story Page (Blog)</source>
-            <translation>分享故事页面（博客）</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="322" />
-            <location filename="../nolimitgui/src/AppletServiceBase.cpp" line="195" />
-            <location filename="../nolimitgui/src/AppletSettingsBase.cpp" line="91" />
-            <source>Service Settings</source>
-            <translation>服务设置</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="324" />
-            <source>About Me Page Settings</source>
-            <translation>关于我页面设置</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="325" />
-            <source>Avatar Image Settings</source>
-            <translation>头像图像设置</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="326" />
-            <source>Shared Web Cam Settings</source>
-            <translation>共享网络摄像头设置</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="327" />
-            <source>Connection Test Service Settings</source>
-            <translation>连接测试服务设置</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="328" />
-            <source>Shared Files Settings</source>
-            <translation>共享文件设置</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="329" />
-            <source>Person To Person File Xfer Settings</source>
-            <translation>个人对个人文件 Xfer 设置</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="331" />
-            <source>Chat Room Host Settings</source>
-            <translation>聊天室主持人设置</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="332" />
-            <source>Group Host Settings</source>
-            <translation>群组主机设置</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="333" />
-            <source>Network Host Settings</source>
-            <translation>网络主机设置</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="334" />
-            <source>Random Connect Host Settings</source>
-            <translation>随机连接主机设置</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="336" />
-            <source>Messenger Settings</source>
-            <translation>信使设置</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="337" />
-            <source>Push To Talk Settings</source>
-            <translation>一键通设置</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="338" />
-            <source>Random Connect Service Settings</source>
-            <translation>随机连接服务设置</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="339" />
-            <source>Shared Story (Blog) Settings</source>
-            <translation>共享故事（博客）设置</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="340" />
-            <source>Truth Or Dare Video Chat Game Settings</source>
-            <translation>真心话大冒险视频聊天游戏设置</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="341" />
-            <source>Video Chat Settings</source>
-            <translation>视频聊天设置</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="342" />
-            <source>Voice Only Phone Call Settings</source>
-            <translation>仅语音通话设置</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="346" />
-            <source>Provide Cam Stream</source>
-            <translation>提供视频流</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="347" />
-            <source>Manage Station</source>
-            <translation>管理站</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="348" />
-            <source>Manage Station Network Host</source>
-            <translation>管理站网络主机</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="350" />
-            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1055" />
-            <source>Change Friendship</source>
-            <translation>改变友谊</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="351" />
-            <source>Reply Offer File</source>
-            <translation>回复报价文件</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="352" />
-            <source>Truth Or Dare Game</source>
-            <translation>真心话大冒险游戏</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="353" />
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="988" />
-            <source>Video Chat</source>
-            <translation>视频聊天</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="354" />
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="564" />
-            <source>View Shared Files</source>
-            <translation>查看共享文件</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="355" />
-            <source>Offer File</source>
-            <translation>报价文件</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="357" />
-            <source>Offer Information</source>
-            <translation>优惠资讯</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="358" />
-            <source>Random Connect Session</source>
-            <translation>随机连接会话</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="359" />
-            <source>Send Offer</source>
-            <translation>发送报价</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="360" />
-            <source>Respond To Offer</source>
-            <translation>回应报价</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="361" />
-            <source>Accept Offer Response</source>
-            <translation>接受报价响应</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="362" />
-            <source>Offer Details</source>
-            <translation>优惠详情</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="363" />
-            <source>Voice Phone (VOIP)</source>
-            <translation>语音电话 (VOIP)</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="365" />
-            <source>File Offer</source>
-            <translation>文件报价</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="367" />
-            <source>Downloads</source>
-            <translation>下载</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="368" />
-            <source>Uploads</source>
-            <translation>上传</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="370" />
-            <source>View My Shared Files</source>
-            <translation>查看我的共享文件</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="372" />
-            <source>Menu</source>
-            <translation>菜单</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="374" />
-            <source>Blocked Hackers</source>
-            <translation>阻止黑客</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="375" />
-            <source>Socket Connections</source>
-            <translation>套接字连接</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="376" />
-            <source>Test Connection</source>
-            <translation>测试连接</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="379" />
-            <source>Information</source>
-            <translation>信息</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppDefs.cpp" line="384" />
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="151" />
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="231" />
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="254" />
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="289" />
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="800" />
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="869" />
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="1667" />
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="1773" />
-            <source>Unknown</source>
-            <translation>未知</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletAboutApp.cpp" line="61" />
-            <source>Copy device info to clipboard (For Bug Report)</source>
-            <translation>将设备信息复制到剪贴板（用于错误报告）</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletAboutApp.cpp" line="63" />
-            <source> Version </source>
-            <translation>版本</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletAboutApp.cpp" line="106" />
-            <source>Copy connection info to clipboard (NOT RECOMMENDED)</source>
-            <translation>将连接信息复制到剪贴板（不推荐）</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2471" />
-            <source>Invalid Host Id</source>
-            <translation>主机 ID 无效</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2472" />
-            <source>Host Id has not been set</source>
-            <translation>主机ID尚未设置</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2498" />
-            <source>No Members Online</source>
-            <translation>没有会员在线</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2499" />
-            <source>There are no members online to send to</source>
-            <translation>没有在线会员可发送至</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2507" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2561" />
-            <source>Failed to add asset</source>
-            <translation>添加资产失败</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2508" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2562" />
-            <source>Failed to add asset. Please check disk space</source>
-            <translation>添加资产失败。请检查磁盘空间</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2518" />
-            <source>Failed to send to </source>
-            <translation>发送失败</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="40" />
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="158" />
-            <location filename="../nolimitgui/src/AppletSnapshot.cpp" line="86" />
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="176" />
-            <source>Camera Capture</source>
-            <translation>相机捕捉</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="40" />
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="158" />
-            <location filename="../nolimitgui/src/AppletSnapshot.cpp" line="86" />
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="176" />
-            <source>No Camera Source Available.</source>
-            <translation>没有可用的相机源。</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="217" />
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="260" />
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="265" />
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="271" />
-            <source>Video In Device</source>
-            <translation>视频输入设备</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="260" />
-            <source> device is saved as preferred Video In Device</source>
-            <translation>设备保存为首选视频输入设备</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="271" />
-            <source>No Video In Device Is Available</source>
-            <translation>设备中没有可用的视频</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletChatRoomJoinSearch.cpp" line="150" />
-            <location filename="../nolimitgui/src/AppletGroupJoinSearch.cpp" line="151" />
-            <location filename="../nolimitgui/src/AppletGroupListClient.cpp" line="155" />
-            <location filename="../nolimitgui/src/AppletRandomConnectJoinSearch.cpp" line="150" />
-            <source>Search Params Invalid</source>
-            <translation>搜索参数无效</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletChatRoomJoinSearch.cpp" line="207" />
-            <location filename="../nolimitgui/src/AppletChatRoomListLocalView.cpp" line="230" />
-            <location filename="../nolimitgui/src/AppletGroupJoinSearch.cpp" line="208" />
-            <location filename="../nolimitgui/src/AppletGroupListClient.cpp" line="212" />
-            <location filename="../nolimitgui/src/AppletGroupListLocalView.cpp" line="233" />
-            <location filename="../nolimitgui/src/AppletRandomConnectJoinSearch.cpp" line="207" />
-            <location filename="../nolimitgui/src/AppletRandomConnectListLocalView.cpp" line="230" />
-            <source>Match found: </source>
-            <translation>找到匹配项：</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletChatRoomListLocalView.cpp" line="66" />
-            <location filename="../nolimitgui/src/AppletChatRoomListLocalView.cpp" line="67" />
-            <source>Chat Room Hosts Announced To Network Host</source>
-            <translation>聊天室主持人宣布成为网络主持人</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletChatRoomListLocalView.cpp" line="73" />
-            <location filename="../nolimitgui/src/AppletGroupListLocalView.cpp" line="76" />
-            <location filename="../nolimitgui/src/AppletRandomConnectListLocalView.cpp" line="73" />
-            <source>Service Unavailable</source>
-            <translation>服务不可用</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletChatRoomListLocalView.cpp" line="73" />
-            <source>Network Host Service Is Not Enabled. You can not view chat rooms announced to this device because the service is not enabled</source>
-            <translation>网络主机服务未启用。您无法查看向该设备宣布的聊天室，因为该服务未启用</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletChatRoomListLocalView.cpp" line="80" />
-            <location filename="../nolimitgui/src/AppletGroupListLocalView.cpp" line="83" />
-            <location filename="../nolimitgui/src/AppletRandomConnectListLocalView.cpp" line="80" />
-            <source>Service Disabled</source>
-            <translation>服务已禁用</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletChatRoomListLocalView.cpp" line="80" />
-            <location filename="../nolimitgui/src/AppletGroupListLocalView.cpp" line="83" />
-            <location filename="../nolimitgui/src/AppletRandomConnectListLocalView.cpp" line="80" />
-            <source>Network Host Service is not enabled because it requires an open port.</source>
-            <translation>网络主机服务未启用，因为它需要开放端口。</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletChooseThumbnail.cpp" line="43" />
-            <source>Image for thumbnail will be resized to width </source>
-            <translation>缩略图的图像将调整为宽度</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletChooseThumbnail.cpp" line="45" />
-            <source> height </source>
-            <translation>高度</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletChooseThumbnail.cpp" line="47" />
-            <source> pixels. </source>
-            <translation>像素。</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostJoinChoose.cpp" line="73" />
-            <source>Choose Chat Room Host</source>
-            <translation>选择聊天室主持人</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostJoinChoose.cpp" line="81" />
-            <source>Choose Group Host</source>
-            <translation>选择群组主持人</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostJoinChoose.cpp" line="88" />
-            <source>Choose Random Connect Host</source>
-            <translation>选择随机连接主机</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostJoinChoose.cpp" line="95" />
-            <location filename="../nolimitgui/src/AppletHostLeave.cpp" line="97" />
-            <source>Unknown Host Type</source>
-            <translation>未知主机类型</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="67" />
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="81" />
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="125" />
-            <location filename="../nolimitgui/src/ChatEntryWidget.cpp" line="198" />
-            <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="208" />
-            <source>Failed To Read Image File </source>
-            <translation>读取图像文件失败</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="68" />
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="82" />
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="126" />
-            <location filename="../nolimitgui/src/ChatEntryWidget.cpp" line="199" />
-            <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="209" />
-            <source>Error Reading Image</source>
-            <translation>读取图像时出错</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="117" />
-            <location filename="../nolimitgui/src/ChatEntryWidget.cpp" line="189" />
-            <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="200" />
-            <source>Open Image</source>
-            <translation>打开图像</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="175" />
-            <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="113" />
-            <source>Failed to read snapshot </source>
-            <translation>读取快照失败</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="176" />
-            <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="114" />
-            <source>Error Reading snapshot</source>
-            <translation>读取快照时出错</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="202" />
-            <source>Failed to write into </source>
-            <translation>写入失败</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="203" />
-            <source>Error Writing</source>
-            <translation>写入错误</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="227" />
-            <source>About Me Change</source>
-            <translation>关于我 改变</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="228" />
-            <source>Applied About Me Changes </source>
-            <translation>已应用“关于我”的更改</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="229" />
-            <source>Failed</source>
-            <translation>失败</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="229" />
-            <source>Success</source>
-            <translation>成功</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="98" />
-            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="125" />
-            <source>Applied Avatar Image Changes </source>
-            <translation>应用头像图像更改</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="99" />
-            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="126" />
-            <source>Applied Avatar Image Success</source>
-            <translation>应用头像图像成功</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="145" />
-            <source>Cannot Delete Avatar Image</source>
-            <translation>无法删除头像图片</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="146" />
-            <source>Cannot remove image that is a emoticon</source>
-            <translation>无法删除属于表情符号的图像</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="150" />
-            <source>Are you sure you want to remove your avatar image?</source>
-            <translation>您确定要删除您的头像吗？</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="151" />
-            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="156" />
-            <source>Remove Avatar Image</source>
-            <translation>删除头像图像</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="155" />
-            <source>Remove Avatar Image Success</source>
-            <translation>删除头像图片成功</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="161" />
-            <source>Remove Avatar Image canceled </source>
-            <translation>删除头像图片已取消</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletEditAvatarImage.cpp" line="208" />
-            <source>Cannot shred image </source>
-            <translation>无法粉碎图像</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletFileOfferSelect.cpp" line="289" />
-            <location filename="../nolimitgui/src/AppletFileOfferSelect.cpp" line="323" />
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="359" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2390" />
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="1358" />
-            <source>File Not Found</source>
-            <translation>找不到文件</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletFriendList.cpp" line="136" />
-            <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="126" />
-            <location filename="../nolimitgui/src/AppletOfferList.cpp" line="125" />
-            <source>List</source>
-            <translation>列表</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletGroupJoinSearch.cpp" line="68" />
-            <source>Search For Group Host To Join</source>
-            <translation>搜索群主加入</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletGroupListClient.cpp" line="67" />
-            <source>Fetch Group Host List</source>
-            <translation>获取组主机列表</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletGroupListLocalView.cpp" line="69" />
-            <source>Group Hosts Announced To Network Host</source>
-            <translation>组主机宣布为网络主机</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletGroupListLocalView.cpp" line="70" />
-            <source>Groups Announced To Network Host</source>
-            <translation>向网络主机宣布的组</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletGroupListLocalView.cpp" line="76" />
-            <source>Network Host Service Is Not Enabled. You can not view groups announced to this device because the service is not enabled</source>
-            <translation>网络主机服务未启用。您无法查看向该设备宣布的群组，因为该服务未启用</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHackerList.cpp" line="53" />
-            <source>Count</source>
-            <translation>计数</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHackerList.cpp" line="54" />
-            <location filename="../nolimitgui/src/AppletSocketList.cpp" line="63" />
-            <source>IP Address</source>
-            <translation>IP地址</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHackerList.cpp" line="55" />
-            <source>Level</source>
-            <translation>等级</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHackerList.cpp" line="56" />
-            <source>Offense</source>
-            <translation>进攻</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHackerList.cpp" line="57" />
-            <source>Signature</source>
-            <translation>签名</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostBase.cpp" line="93" />
-            <source>Cannot join our host as user</source>
-            <translation>无法以用户身份加入我们的主机</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostBase.cpp" line="94" />
-            <source>Cannot join our host as user.
- You can join host from host admin page instead.</source>
-            <translation>无法以用户身份加入我们的主机。
- 您可以从主机管理页面加入主机。</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostChatRoomStatus.cpp" line="96" />
-            <source>Open Port Required. Check ChatRoom Settings</source>
-            <translation>需要打开端口。检查聊天室设置</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostChatRoomStatus.cpp" line="100" />
-            <source>Chat Room Hosting Permission is disabled</source>
-            <translation>聊天室托管权限被禁用</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostChatRoomStatus.cpp" line="104" />
-            <source>Chat Room Hosting Conditions Are Met</source>
-            <translation>满足聊天室托管条件</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostGroupStatus.cpp" line="93" />
-            <location filename="../nolimitgui/src/AppletHostNetworkStatus.cpp" line="89" />
-            <source>Open Port Required. Check Network Settings</source>
-            <translation>需要打开端口。检查网络设置</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostGroupStatus.cpp" line="97" />
-            <source>Group Hosting Permission is disabled</source>
-            <translation>群组托管权限被禁用</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostGroupStatus.cpp" line="101" />
-            <source>Group Hosting Conditions Are Met</source>
-            <translation>符合团体主办条件</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostNetworkStatus.cpp" line="47" />
-            <source>Hosts announced to network count:</source>
-            <translation>宣布网络数量的主机：</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostNetworkStatus.cpp" line="93" />
-            <source>Network Hosting Permission is disabled</source>
-            <translation>网络托管权限被禁用</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostNetworkStatus.cpp" line="97" />
-            <source>Connection Test Permission is disabled</source>
-            <translation>连接测试权限被禁用</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostNetworkStatus.cpp" line="101" />
-            <source>Network Hosting Conditions Are Met</source>
-            <translation>满足网络托管条件</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostRandomConnectStatus.cpp" line="95" />
-            <source>Open Port Required. Check RandomConnect Settings</source>
-            <translation>需要打开端口。检查随机连接设置</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostRandomConnectStatus.cpp" line="99" />
-            <source>Random Connect Hosting Permission is disabled</source>
-            <translation>随机连接托管权限已禁用</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostRandomConnectStatus.cpp" line="103" />
-            <source>Random Connect Hosting Conditions Are Met</source>
-            <translation>满足随机连接托管条件</translation>
-        </message>
-        <message>
             <location filename="../nolimitgui/src/AppletInviteAccept.cpp" line="60" />
             <source>Paste invite from clipboard</source>
             <translation>从剪贴板粘贴邀请</translation>
@@ -5746,16 +5841,6 @@ File Type: </source>
             <translation>剪贴板不包含有效邀请</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletInvites.cpp" line="99" />
-            <source>Clipboard Contained Invalid Invite Text</source>
-            <translation>剪贴板包含无效的邀请文本</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletInvites.cpp" line="99" />
-            <source>Clipboard Has Text That Cannot Be Parsed Into An Invite</source>
-            <translation>剪贴板包含无法解析为邀请的文本</translation>
-        </message>
-        <message>
             <location filename="../nolimitgui/src/AppletInviteCreate.cpp" line="60" />
             <source>Copy invite to clipboard</source>
             <translation>将邀请复制到剪贴板</translation>
@@ -5776,10 +5861,40 @@ File Type: </source>
             <translation>如果邀请为空，则无法创建邀请</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/AppletInvites.cpp" line="99" />
+            <source>Clipboard Contained Invalid Invite Text</source>
+            <translation>剪贴板包含无效的邀请文本</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletInvites.cpp" line="99" />
+            <source>Clipboard Has Text That Cannot Be Parsed Into An Invite</source>
+            <translation>剪贴板包含无法解析为邀请的文本</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="46" />
+            <source>Network Host URL was not resolved</source>
+            <translation>网络主机 URL 未解析</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="51" />
+            <source>Online Id query failed</source>
+            <translation>在线Id查询失败</translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="116" />
             <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="174" />
             <source>User List</source>
             <translation>用户列表</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="148" />
+            <source>Network Host list request is queued</source>
+            <translation>网络主机列表请求已排队</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="153" />
+            <source>Network Host list query failed</source>
+            <translation>网络主机列表查询失败</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="158" />
@@ -5797,6 +5912,11 @@ File Type: </source>
             <translation>主机列表</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="260" />
+            <source>NO HOSTS FOUND</source>
+            <translation>未找到主机</translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="264" />
             <source>Host list from network host completed</source>
             <translation>网络主机的主机列表已完成</translation>
@@ -5807,36 +5927,6 @@ File Type: </source>
             <translation>主机的用户列表已完成</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2480" />
-            <source>Invalid URL</source>
-            <translation>无效网址</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="46" />
-            <source>Network Host URL was not resolved</source>
-            <translation>网络主机 URL 未解析</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="51" />
-            <source>Online Id query failed</source>
-            <translation>在线Id查询失败</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="148" />
-            <source>Network Host list request is queued</source>
-            <translation>网络主机列表请求已排队</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="153" />
-            <source>Network Host list query failed</source>
-            <translation>网络主机列表查询失败</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="260" />
-            <source>NO HOSTS FOUND</source>
-            <translation>未找到主机</translation>
-        </message>
-        <message>
             <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="371" />
             <source>Do you also want to disconnect from user?</source>
             <translation>您还想断开与用户的连接吗？</translation>
@@ -5844,7 +5934,7 @@ File Type: </source>
         <message>
             <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="372" />
             <source>Do you also want to disconnect from user </source>
-            <translation>您是否还想断开与用户的连接</translation>
+            <translation>您是否还想断开与用户的连接 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="374" />
@@ -5873,14 +5963,173 @@ File Type: </source>
             <translation>忽略的主机列表为空</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2408" />
-            <source>Application Not Ready</source>
-            <translation>申请未准备好</translation>
+            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="131" />
+            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="137" />
+            <source>Language</source>
+            <translation>语言</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2409" />
-            <source>Cannot Launch Applet Until Application Has Initialized</source>
-            <translation>在应用程序初始化之前无法启动小程序</translation>
+            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="131" />
+            <source>Language updated.</source>
+            <translation>语言已更新。</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="138" />
+            <source>Language updated, but no translation file was found in the translations folder.</source>
+            <translation>语言已更新，但在翻译文件夹中未找到翻译文件。</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="199" />
+            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="212" />
+            <source>English</source>
+            <translation>英语</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="200" />
+            <source>German</source>
+            <translation>德语</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="201" />
+            <source>Chinese</source>
+            <translation>中文</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="202" />
+            <source>Spanish</source>
+            <translation>西班牙语</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="203" />
+            <source>French</source>
+            <translation>法语</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="204" />
+            <source>Arabic</source>
+            <translation>阿拉伯语</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="205" />
+            <source>Hindi</source>
+            <translation>印地语</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="206" />
+            <source>Portuguese</source>
+            <translation>葡萄牙语</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="207" />
+            <source>Japanese</source>
+            <translation>日语</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="208" />
+            <source>Korean</source>
+            <translation>韩语</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="209" />
+            <source>Russian</source>
+            <translation>俄语</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="210" />
+            <source>Thai</source>
+            <translation>泰语</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="211" />
+            <source>Indonesian</source>
+            <translation>印度尼西亚语</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="69" />
+            <source>Requesting Library File List </source>
+            <translation>请求库文件列表 </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="128" />
+            <source>List Get Completed</source>
+            <translation>列表完成</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="151" />
+            <source>Folder Scan Canceled</source>
+            <translation>文件夹扫描已取消</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="155" />
+            <source>Folder Scan Completed</source>
+            <translation>文件夹扫描完成</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="356" />
+            <source>File was not found:
+%1
+
+Remove this item from My Library and asset database?</source>
+            <translation>未找到文件：
+%1
+
+从我的图书馆和资产数据库中删除该项目吗？</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="633" />
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="663" />
+            <source>Error</source>
+            <translation>错误</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="633" />
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="663" />
+            <source>Unknown Media Type</source>
+            <translation>未知媒体类型</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="694" />
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="771" />
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="807" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2266" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="104" />
+            <source>Could not get thumbnail file info</source>
+            <translation>无法获取缩略图文件信息</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="695" />
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="772" />
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="808" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2261" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2267" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="105" />
+            <source>Error occured creating thumbnail asset </source>
+            <translation>创建缩略图资源时发生错误 </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="732" />
+            <source>Scaning folder</source>
+            <translation>扫描文件夹</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="753" />
+            <source>Already in library</source>
+            <translation>已经在图书馆了</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="753" />
+            <source>File is already in library </source>
+            <translation>文件已在库中 </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="828" />
+            <source>File Error</source>
+            <translation>文件错误</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="828" />
+            <source>Could not add file to library </source>
+            <translation>无法将文件添加到库中</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="30" />
@@ -5888,9 +6137,19 @@ File Type: </source>
             <translation>无记录</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="32" />
+            <source>Log File Xfer</source>
+            <translation>日志文件传输</translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="33" />
             <source>Log Connect</source>
             <translation>日志连接</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="34" />
+            <source>Log Offer</source>
+            <translation>记录报价</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="35" />
@@ -5903,9 +6162,19 @@ File Type: </source>
             <translation>对数SKT</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="38" />
+            <source>Log Voice (VOIP)</source>
+            <translation>记录语音 (VOIP)</translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="39" />
             <source>Log Network State</source>
             <translation>记录网络状态</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="40" />
+            <source>Log User Sessions</source>
+            <translation>记录用户会话</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="42" />
@@ -5916,6 +6185,11 @@ File Type: </source>
             <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="43" />
             <source>Log Thread</source>
             <translation>日志线程</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="44" />
+            <source>Log Web Cam</source>
+            <translation>记录网络摄像头</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="45" />
@@ -5936,6 +6210,26 @@ File Type: </source>
             <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="49" />
             <source>Log Pkt</source>
             <translation>日志包</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="50" />
+            <source>Log Thumbnails</source>
+            <translation>日志缩略图</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="52" />
+            <source>Log User Online Status</source>
+            <translation>记录用户在线状态</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="53" />
+            <source>Log Host Join From Client</source>
+            <translation>记录主机从客户端加入</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="54" />
+            <source>Log Users</source>
+            <translation>记录用户</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="55" />
@@ -5961,51 +6255,6 @@ File Type: </source>
             <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="60" />
             <source>Log Host Connect</source>
             <translation>日志主机连接</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="32" />
-            <source>Log File Xfer</source>
-            <translation>日志文件传输</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="34" />
-            <source>Log Offer</source>
-            <translation>记录报价</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="38" />
-            <source>Log Voice (VOIP)</source>
-            <translation>记录语音 (VOIP)</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="40" />
-            <source>Log User Sessions</source>
-            <translation>记录用户会话</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="44" />
-            <source>Log Web Cam</source>
-            <translation>记录网络摄像头</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="50" />
-            <source>Log Thumbnails</source>
-            <translation>日志缩略图</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="52" />
-            <source>Log User Online Status</source>
-            <translation>记录用户在线状态</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="53" />
-            <source>Log Host Join From Client</source>
-            <translation>记录主机从客户端加入</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="54" />
-            <source>Log Users</source>
-            <translation>记录用户</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletLogSettings.cpp" line="62" />
@@ -6116,184 +6365,189 @@ File Type: </source>
         <message>
             <location filename="../nolimitgui/src/AppletMgr.cpp" line="704" />
             <source> Cannot be viewed when permission is disable</source>
-            <translation>权限关闭后无法查看</translation>
+            <translation> 权限关闭后无法查看</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletMultiMessenger.cpp" line="188" />
             <source> with </source>
-            <translation>与</translation>
+            <translation> 与 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletMultiMessenger.cpp" line="201" />
             <source> requires user be online </source>
-            <translation>要求用户在线</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="2229" />
-            <source> is online</source>
-            <translation>在线</translation>
+            <translation> 要求用户在线 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletMultiMessenger.cpp" line="254" />
             <source>Requested Text Chat Session with </source>
-            <translation>请求的文本聊天会话</translation>
+            <translation>请求的文本聊天会话 </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="428" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="404" />
             <source>TCP Listen Port Error</source>
             <translation>TCP 监听端口错误</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="428" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="404" />
             <source>TCP Listen Port cannot be less that 10000.</source>
             <translation>TCP 侦听端口不能小于 10000。</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="512" />
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="770" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="484" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="742" />
             <source>IPv6 not detected</source>
             <translation>未检测到 IPv6</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="512" />
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="770" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="484" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="742" />
             <source>The device does not seem to be IPv6 capable
  Please uncheck Use IPv6 Network</source>
             <translation>该设备似乎不支持 IPv6
  请取消选中“使用 IPv6 网络”</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="516" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="488" />
             <source>Confirm Use Of Experimental IPv6 Network?</source>
             <translation>确认使用实验性 IPv6 网络？</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="517" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="489" />
             <source>IPv6 is experimental and the network for IPv6 is not visible on the IPv4 network</source>
             <translation>IPv6 是实验性的，IPv6 的网络在 IPv4 网络上不可见</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="540" />
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="548" />
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="554" />
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="565" />
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="574" />
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="586" />
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="594" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="512" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="520" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="526" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="537" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="546" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="558" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="566" />
             <source>Network Setting</source>
             <translation>网络设置</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="540" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="512" />
             <source>Network setting name cannot be blank.</source>
             <translation>网络设置名称不能为空。</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="548" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="520" />
             <source>Network host URL cannot be blank.</source>
             <translation>网络主机 URL 不能为空。</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="554" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="526" />
             <source>Network key cannot be blank.</source>
             <translation>网络密钥不能为空。</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="565" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="537" />
             <source>Connection Test URL cannot be blank.</source>
             <translation>连接测试 URL 不能为空。</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="575" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="547" />
             <source>Are you sure you want to overwrite existing network setting?.
  The network setting name can be changed in Select Network Setting.</source>
             <translation>您确定要覆盖现有的网络设置吗？
  可以在选择网络设置中更改网络设置名称。</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="586" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="558" />
             <source>Private Network Key requires restart to avoid use of wrong network key.
  Quitting application so you can start it again.</source>
             <translation>私有网络密钥需要重新启动以避免使用错误的网络密钥。
  退出应用程序，以便您可以重新启动它。</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="594" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="566" />
             <source>Network setting was saved.</source>
             <translation>网络设置已保存。</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="687" />
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="695" />
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="701" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="659" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="667" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="673" />
             <source>Network Key</source>
             <translation>网络密钥</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="687" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="659" />
             <source>Network Key must be at least 6 characters ( 8 or more characters recommended ).</source>
             <translation>网络密钥必须至少为 6 个字符（建议为 8 个或更多字符）。</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="695" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="667" />
             <source>Current Network Key is public, you must obtain and set the private network key associated with this network invit.</source>
             <translation>当前网络密钥是公开的，您必须获取并设置与此网络邀请关联的私有网络密钥。</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="702" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="674" />
             <source>Are you sure you want to change the network key?
  All users of your network will need to have the same key or you will be banned as a hacker.</source>
             <translation>您确定要更改网络密钥吗？
  您网络的所有用户都需要拥有相同的密钥，否则您将被禁止作为黑客。</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="719" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="691" />
             <source>Invalid External IP Address</source>
             <translation>外部 IP 地址无效</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="723" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="695" />
             <source>If assumed user can direct connect then external IP must be specified.</source>
             <translation>如果假定用户可以直接连接，则必须指定外部 IP。</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="731" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="703" />
             <source>External IP is invalid.</source>
             <translation>外部IP无效。</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="740" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="712" />
             <source>When using IPv4 network a IPv4 external IP must be specified.</source>
             <translation>使用 IPv4 网络时，必须指定 IPv4 外部 IP。</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="748" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="720" />
             <source>When using IPv6 network a IPv6 external IP must be specified.</source>
             <translation>使用 IPv6 网络时，必须指定 IPv6 外部 IP。</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="789" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="761" />
             <source>Your device does not seem to be capable of IPv6</source>
             <translation>您的设备似乎不支持 IPv6</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="790" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="762" />
             <source>Your device does not seem to be capable of IPv6. Continue Anyway?</source>
             <translation>您的设备似乎不支持 IPv6。仍然继续吗？</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="806" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="778" />
             <source>Accepting Network Invite</source>
             <translation>接受网络邀请</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="807" />
+            <location filename="../nolimitgui/src/AppletNetworkSettings.cpp" line="779" />
             <source>You are accepting a network invite.
 Be sure the Network Key is correct before pressing save.
 If the Network Key is incorrect, you will probably be banned as a hacker.</source>
             <translation>您正在接受网络邀请。
 在按“保存”之前，请确保网络密钥正确。
 如果网络密钥不正确，您可能会被禁止作为黑客。</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletOfferInfo.cpp" line="107" />
+            <source>Invalid Offer. Please Decline Offer.</source>
+            <translation>报价无效。请拒绝报价。</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletOfferRandSession.cpp" line="179" />
+            <source>No permitted session types are available for this Random Connect offer.</source>
+            <translation>此随机连接优惠没有可用的允许会话类型。</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletPeerChangeFriendship.cpp" line="115" />
@@ -6303,7 +6557,7 @@ If the Network Key is incorrect, you will probably be banned as a hacker.</sourc
         <message>
             <location filename="../nolimitgui/src/AppletPeerChangeFriendship.cpp" line="126" />
             <source>My Friendship To </source>
-            <translation>我的友谊</translation>
+            <translation>我的友谊 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletPeerChangeFriendship.cpp" line="298" />
@@ -6319,6 +6573,53 @@ If the Network Key is incorrect, you will probably be banned as a hacker.</sourc
             <location filename="../nolimitgui/src/AppletPeerReplyFileOffer.cpp" line="41" />
             <source>Receive File</source>
             <translation>接收文件</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletPeerVideoPhone.cpp" line="50" />
+            <source>In Video Phone Session</source>
+            <translation>在视频电话会话中</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletPeerVideoPhone.cpp" line="54" />
+            <source>Video Phone Session Ended</source>
+            <translation>视频电话会话结束</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletPeerVideoPhone.cpp" line="121" />
+            <location filename="../nolimitgui/src/AppletPeerVoicePhone.cpp" line="132" />
+            <source>Session Started</source>
+            <translation>会话开始</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletPeerVideoPhone.cpp" line="135" />
+            <location filename="../nolimitgui/src/AppletPeerVoicePhone.cpp" line="146" />
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="1342" />
+            <source>Session Ended</source>
+            <translation>会议结束</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletPeerViewSharedFiles.cpp" line="466" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2601" />
+            <source>Confirm Shred File</source>
+            <translation>确认粉碎文件</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletPeerViewSharedFiles.cpp" line="466" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2601" />
+            <source>Confirm Delete File</source>
+            <translation>确认删除文件</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletPeerViewSharedFiles.cpp" line="470" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2605" />
+            <source>Are You Sure You Want To Write Random Data Into The File Then Delete From The Device?</source>
+            <translation>您确定要将随机数据写入文件然后从设备中删除吗？</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletPeerViewSharedFiles.cpp" line="474" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2609" />
+            <source>Are You Sure To Delete The File From The Device?</source>
+            <translation>您确定要从设备中删除该文件吗？</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletPeerVoicePhone.cpp" line="65" />
@@ -6341,53 +6642,48 @@ If the Network Key is incorrect, you will probably be banned as a hacker.</sourc
             <translation>未知媒体文件类型</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="286" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="292" />
             <source>Media Player empty file list</source>
             <translation>媒体播放器空文件列表</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="308" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="314" />
             <source>Media Player could not play file</source>
             <translation>媒体播放器无法播放文件</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="313" />
-            <location filename="../nolimitgui/src/AppletPlayerNlcBase.cpp" line="185" />
-            <location filename="../nolimitgui/src/AppletPlayerNlcBase.cpp" line="335" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="319" />
+            <location filename="../nolimitgui/src/AppletPlayerNlcBase.cpp" line="204" />
+            <location filename="../nolimitgui/src/AppletPlayerNlcBase.cpp" line="360" />
             <source>File does not exist</source>
             <translation>文件不存在</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="320" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="326" />
             <source>Exception playing</source>
             <translation>播放异常</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="360" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="366" />
             <source>Media Player not read</source>
             <translation>媒体播放器未读取</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="360" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="366" />
             <source>Try again when Media Player is ready</source>
             <translation>媒体播放器准备就绪后重试</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="416" />
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="453" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="422" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="459" />
             <source>Could not read file</source>
             <translation>无法读取文件</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="416" />
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="453" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="422" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="459" />
             <source>Failed to get file info</source>
             <translation>获取文件信息失败</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="863" />
-            <source>Anonymous</source>
-            <translation>匿名</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="219" />
@@ -6398,62 +6694,6 @@ If the Network Key is incorrect, you will probably be banned as a hacker.</sourc
             <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="236" />
             <source>Block User</source>
             <translation>阻止用户</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1044" />
-            <source>Unset Preferred</source>
-            <translation>取消设置首选</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1117" />
-            <source>Delete User From Database</source>
-            <translation>从数据库中删除用户</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1152" />
-            <location filename="../nolimitgui/src/FriendListWidget.cpp" line="188" />
-            <location filename="../nolimitgui/src/PersonOfferListWidget.cpp" line="189" />
-            <source>Insufficient Permission Level</source>
-            <translation>权限级别不足</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1153" />
-            <source> Requires </source>
-            <translation>需要</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1154" />
-            <location filename="../nolimitgui/src/FriendListWidget.cpp" line="189" />
-            <location filename="../nolimitgui/src/PersonOfferListWidget.cpp" line="190" />
-            <source> To Access Plugin </source>
-            <translation>访问插件</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/FriendListWidget.cpp" line="190" />
-            <location filename="../nolimitgui/src/PersonOfferListWidget.cpp" line="191" />
-            <source>Insufficient Permission Level </source>
-            <translation>权限级别不足</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="783" />
-            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="784" />
-            <source>Offer Friendship</source>
-            <translation>提供友谊</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="785" />
-            <source>Offer Join Group</source>
-            <translation>优惠加入群组</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1048" />
-            <source>Set Preferred</source>
-            <translation>设置首选</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="875" />
-            <source>Applet Menu</source>
-            <translation>小程序菜单</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="278" />
@@ -6476,6 +6716,22 @@ If the Network Key is incorrect, you will probably be banned as a hacker.</sourc
             <translation>取消随机连接优惠</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="783" />
+            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="784" />
+            <source>Offer Friendship</source>
+            <translation>提供友谊</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="785" />
+            <source>Offer Join Group</source>
+            <translation>优惠加入群组</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="875" />
+            <source>Applet Menu</source>
+            <translation>小程序菜单</translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="998" />
             <source>Delete A Database</source>
             <translation>删除数据库</translation>
@@ -6489,12 +6745,12 @@ If the Network Key is incorrect, you will probably be banned as a hacker.</sourc
             <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1031" />
             <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1035" />
             <source>Database </source>
-            <translation>数据库</translation>
+            <translation>数据库 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1031" />
             <source> was deleted</source>
-            <translation>被删除</translation>
+            <translation> 被删除</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1035" />
@@ -6504,7 +6760,17 @@ If the Network Key is incorrect, you will probably be banned as a hacker.</sourc
         <message>
             <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1035" />
             <source> could not be deleted</source>
-            <translation>无法删除</translation>
+            <translation> 无法删除</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1044" />
+            <source>Unset Preferred</source>
+            <translation>取消设置首选</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1048" />
+            <source>Set Preferred</source>
+            <translation>设置首选</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1080" />
@@ -6515,12 +6781,36 @@ If the Network Key is incorrect, you will probably be banned as a hacker.</sourc
         <message>
             <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1096" />
             <source>To send a frienship request you must set </source>
-            <translation>要发送好友请求，您必须设置</translation>
+            <translation>要发送好友请求，您必须设置 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1096" />
             <source> as friend or higher first</source>
-            <translation>首先作为朋友或更高级别</translation>
+            <translation> 首先作为朋友或更高级别</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1117" />
+            <source>Delete User From Database</source>
+            <translation>从数据库中删除用户</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1152" />
+            <location filename="../nolimitgui/src/FriendListWidget.cpp" line="188" />
+            <location filename="../nolimitgui/src/PersonOfferListWidget.cpp" line="189" />
+            <source>Insufficient Permission Level</source>
+            <translation>权限级别不足</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1153" />
+            <source> Requires </source>
+            <translation> 需要 </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletPopupMenu.cpp" line="1154" />
+            <location filename="../nolimitgui/src/FriendListWidget.cpp" line="189" />
+            <location filename="../nolimitgui/src/PersonOfferListWidget.cpp" line="190" />
+            <source> To Access Plugin </source>
+            <translation> 访问插件 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletRandomConnectListLocalView.cpp" line="66" />
@@ -6617,15 +6907,7 @@ If the Network Key is incorrect, you will probably be banned as a hacker.</sourc
         <message>
             <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="259" />
             <source> device is saved as preferred Sound In Device</source>
-            <translation>设备保存为首选声音设备</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="217" />
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="265" />
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="264" />
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="289" />
-            <source> failed to initialize</source>
-            <translation>初始化失败</translation>
+            <translation> 设备保存为首选声音设备</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="270" />
@@ -6646,7 +6928,7 @@ If the Network Key is incorrect, you will probably be banned as a hacker.</sourc
         <message>
             <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="284" />
             <source> device is saved as preferred Sound Out Device</source>
-            <translation>设备保存为首选声音输出设备</translation>
+            <translation> 设备保存为首选声音输出设备</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="295" />
@@ -6686,12 +6968,12 @@ If the Network Key is incorrect, you will probably be banned as a hacker.</sourc
         <message>
             <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="372" />
             <source>Echo Delays </source>
-            <translation>回声延迟</translation>
+            <translation>回声延迟 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="385" />
             <source>, </source>
-            <translation>,</translation>
+            <translation>, </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="399" />
@@ -6710,13 +6992,13 @@ Delay Test Is Invalid
         <message>
             <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="403" />
             <source>If you are having echo issues you may want to enter value </source>
-            <translation>如果您遇到回声问题，您可能需要输入值</translation>
+            <translation>如果您遇到回声问题，您可能需要输入值 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="405" />
             <source> into  Echo delay ms field and click Save Echo Delay To Echo Canceller button
 </source>
-            <translation>进入回声延迟毫秒字段，然后单击“将回声延迟保存到回声消除器”按钮</translation>
+            <translation> 进入回声延迟毫秒字段，然后单击“将回声延迟保存到回声消除器”按钮</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="407" />
@@ -6739,11 +7021,6 @@ Delay Test Is Invalid
             <translation>未选择测试文件或测试文件索引无效</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="984" />
-            <source>Push To Talk</source>
-            <translation>一键通</translation>
-        </message>
-        <message>
             <location filename="../nolimitgui/src/AppletTestAndDebug.cpp" line="461" />
             <source>Are you sure?</source>
             <translation>你确定吗？</translation>
@@ -6756,7 +7033,27 @@ Delay Test Is Invalid
         <message>
             <location filename="../nolimitgui/src/AppletTestAndDebug.cpp" line="464" />
             <source> of disk space freed by deleting cached thumbnails</source>
-            <translation>通过删除缓存的缩略图释放的磁盘空间</translation>
+            <translation> 通过删除缓存的缩略图释放的磁盘空间</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletTestUpnp.cpp" line="232" />
+            <source>Invalid Port</source>
+            <translation>端口无效</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletTestUpnp.cpp" line="232" />
+            <source>Port must be greater than 79</source>
+            <translation>端口必须大于79</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletTestUpnp.cpp" line="242" />
+            <source>Invalid IP Address</source>
+            <translation>IP 地址无效</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletTestUpnp.cpp" line="242" />
+            <source>IP Address is invalid</source>
+            <translation>IP 地址无效</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletTheme.cpp" line="36" />
@@ -6796,13 +7093,13 @@ Delay Test Is Invalid
         <message>
             <location filename="../nolimitgui/src/AppletUserIdentity.cpp" line="126" />
             <source>Are You Sure You Want To Login To Account </source>
-            <translation>您确定要登录帐户吗</translation>
+            <translation>您确定要登录帐户吗 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletUserIdentity.cpp" line="197" />
             <location filename="../nolimitgui/src/AppletUserIdentity.cpp" line="236" />
             <source>Applied Mood Message Change </source>
-            <translation>应用情绪信息变化</translation>
+            <translation>应用情绪信息变化 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletUserIdentity.cpp" line="198" />
@@ -6813,7 +7110,7 @@ Delay Test Is Invalid
         <message>
             <location filename="../nolimitgui/src/AppletUserIdentity.cpp" line="217" />
             <source>Applied Age and Preferred Content Change </source>
-            <translation>适用年龄和偏好内容变化</translation>
+            <translation>适用年龄和偏好内容变化 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletUserIdentity.cpp" line="218" />
@@ -6823,7 +7120,7 @@ Delay Test Is Invalid
         <message>
             <location filename="../nolimitgui/src/AppletUserIdentity.cpp" line="255" />
             <source>Applied Gender Change </source>
-            <translation>应用性别改变</translation>
+            <translation>应用性别改变 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletUserIdentity.cpp" line="256" />
@@ -6879,6 +7176,26 @@ Delay Test Is Invalid
             <translation>不能删除最后一个帐户</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/AudioMgrDelayTest.cpp" line="155" />
+            <source>Sound Delay Not Detected. Check speaker volume and that microphone is on </source>
+            <translation>未检测到声音延迟。检查扬声器音量以及麦克风是否打开 </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AudioMgrDelayTest.cpp" line="159" />
+            <source>Sound Delay too short.. probably noise </source>
+            <translation>声音延迟太短..可能是噪音 </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AudioMgrDelayTest.cpp" line="163" />
+            <source>Sound Delay too long.. probably mic level low </source>
+            <translation>声音延迟太长..可能麦克风电平低 </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AudioMgrDelayTest.cpp" line="167" />
+            <source>Sound Delay is </source>
+            <translation>声音延迟为 </translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/AvatarBar.cpp" line="63" />
             <source>queued</source>
             <translation>排队</translation>
@@ -6892,6 +7209,31 @@ Delay Test Is Invalid
             <location filename="../nolimitgui/src/ChatEntryWidget.cpp" line="363" />
             <source>ChatEntryWidget client callback is not set</source>
             <translation>ChatEntryWidget 客户端回调未设置</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/ClipboardCopyWidget.cpp" line="23" />
+            <source>Copy to clipboard</source>
+            <translation>复制到剪贴板</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/ClipboardCopyWidget.cpp" line="32" />
+            <source>Text Is Empty</source>
+            <translation>文本为空</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/ClipboardCopyWidget.cpp" line="32" />
+            <source>Cannot copy empty text to clipboard</source>
+            <translation>无法将空文本复制到剪贴板</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/ClipboardPasteWidget.cpp" line="22" />
+            <source>Paste from clipboard</source>
+            <translation>从剪贴板粘贴</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/ClipboardPasteWidget.cpp" line="33" />
+            <source>Cannot paste empty clipboard</source>
+            <translation>无法粘贴空剪贴板</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/FileActionMenu.cpp" line="84" />
@@ -6939,9 +7281,50 @@ Delay Test Is Invalid
             <translation>粉碎文件</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/FileMediaSelectWidget.cpp" line="96" />
+            <source>Cancel scan</source>
+            <translation>取消扫描</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/FileMediaSelectWidget.cpp" line="102" />
+            <source>Scan folder for media</source>
+            <translation>扫描文件夹中的媒体</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/FriendListWidget.cpp" line="190" />
+            <location filename="../nolimitgui/src/PersonOfferListWidget.cpp" line="191" />
+            <source>Insufficient Permission Level </source>
+            <translation>权限级别不足 </translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="62" />
             <source>Open Folder</source>
             <translation>打开文件夹</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="299" />
+            <source>Select Media File</source>
+            <translation>选择媒体文件</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="307" />
+            <source>Select Video File</source>
+            <translation>选择视频文件</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="317" />
+            <source>Select Audio File</source>
+            <translation>选择音频文件</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="326" />
+            <source>Select Image File</source>
+            <translation>选择图像文件</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="410" />
+            <source>Cannot Read File</source>
+            <translation>无法读取文件</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1389" />
@@ -6980,9 +7363,19 @@ Delay Test Is Invalid
             <translation>用户名不能有特殊字符斜杠。</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1419" />
+            <source>User Name is too long (maximum 31 chars).</source>
+            <translation>用户名太长（最多 31 个字符）。</translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1425" />
             <source>User Name is too short (minimum 4 chars).</source>
             <translation>用户名太短（至少 4 个字符）。</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1444" />
+            <source>Mood Message is too long (maximum 31 chars)</source>
+            <translation>心情消息太长（最多 31 个字符）</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1456" />
@@ -7001,6 +7394,11 @@ Delay Test Is Invalid
             <translation>年龄不能大于120岁</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2260" />
+            <source>Could not create thumbnail asset</source>
+            <translation>无法创建缩略图资源</translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2319" />
             <source>User Unavailable</source>
             <translation>用户不可用</translation>
@@ -7008,12 +7406,22 @@ Delay Test Is Invalid
         <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2320" />
             <source>User </source>
-            <translation>用户</translation>
+            <translation>用户 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2320" />
             <source> Is Unavailable</source>
-            <translation>不可用</translation>
+            <translation> 不可用</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2324" />
+            <source>User is offline</source>
+            <translation>用户离线</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2325" />
+            <source>User is no longer connected</source>
+            <translation>用户不再连接</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2329" />
@@ -7026,6 +7434,12 @@ Delay Test Is Invalid
             <translation>已经在开会了。请关闭现有会话并重试</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2334" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2335" />
+            <source>Session not found</source>
+            <translation>未找到会话</translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2339" />
             <source>Sent User An Offer</source>
             <translation>向用户发送报价</translation>
@@ -7033,7 +7447,7 @@ Delay Test Is Invalid
         <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2340" />
             <source>Offer Was Sent To  </source>
-            <translation>报价已发送至</translation>
+            <translation>报价已发送至  </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2344" />
@@ -7043,7 +7457,7 @@ Delay Test Is Invalid
         <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2345" />
             <source>Offer Send Failed  </source>
-            <translation>报价发送失败</translation>
+            <translation>报价发送失败  </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2349" />
@@ -7053,7 +7467,7 @@ Delay Test Is Invalid
         <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2350" />
             <source>You are not connected to host </source>
-            <translation>您未连接到主机</translation>
+            <translation>您未连接到主机 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2354" />
@@ -7063,58 +7477,7 @@ Delay Test Is Invalid
         <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2355" />
             <source>You must select a user to send to </source>
-            <translation>您必须选择要发送至的用户</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2324" />
-            <source>User is offline</source>
-            <translation>用户离线</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="299" />
-            <source>Select Media File</source>
-            <translation>选择媒体文件</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="307" />
-            <source>Select Video File</source>
-            <translation>选择视频文件</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="317" />
-            <source>Select Audio File</source>
-            <translation>选择音频文件</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="326" />
-            <source>Select Image File</source>
-            <translation>选择图像文件</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="410" />
-            <source>Cannot Read File</source>
-            <translation>无法读取文件</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1419" />
-            <source>User Name is too long (maximum 31 chars).</source>
-            <translation>用户名太长（最多 31 个字符）。</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1444" />
-            <source>Mood Message is too long (maximum 31 chars)</source>
-            <translation>心情消息太长（最多 31 个字符）</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2325" />
-            <source>User is no longer connected</source>
-            <translation>用户不再连接</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2334" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2335" />
-            <source>Session not found</source>
-            <translation>未找到会话</translation>
+            <translation>您必须选择要发送至的用户 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2359" />
@@ -7161,6 +7524,16 @@ Are you very sure you want to proceed?</source>
             <translation>视频录制无法开始。</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2380" />
+            <source>Unknown Error </source>
+            <translation>未知错误 </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2380" />
+            <source> for user </source>
+            <translation> 对于用户 </translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2391" />
             <source>File Name Is Empty</source>
             <translation>文件名为空</translation>
@@ -7172,9 +7545,19 @@ Are you very sure you want to proceed?</source>
             <translation>用户拒绝访问文件权限</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2408" />
+            <source>Application Not Ready</source>
+            <translation>申请未准备好</translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2409" />
             <source>Cannot launch applet until network is available</source>
             <translation>在网络可用之前无法启动小程序</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2409" />
+            <source>Cannot Launch Applet Until Application Has Initialized</source>
+            <translation>在应用程序初始化之前无法启动小程序</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2417" />
@@ -7233,6 +7616,21 @@ Are you very sure you want to proceed?</source>
             <translation>需要朋友或更高级别的友谊</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2471" />
+            <source>Invalid Host Id</source>
+            <translation>主机 ID 无效</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2472" />
+            <source>Host Id has not been set</source>
+            <translation>主机ID尚未设置</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2480" />
+            <source>Invalid URL</source>
+            <translation>无效网址</translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2481" />
             <source>The host url is not valid</source>
             <translation>主机 URL 无效</translation>
@@ -7248,9 +7646,36 @@ Are you very sure you want to proceed?</source>
             <translation>主机 URL 没有有效的主机类型</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2498" />
+            <source>No Members Online</source>
+            <translation>没有会员在线</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2499" />
+            <source>There are no members online to send to</source>
+            <translation>没有在线会员可发送至</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2507" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2561" />
+            <source>Failed to add asset</source>
+            <translation>添加资产失败</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2508" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2562" />
+            <source>Failed to add asset. Please check disk space</source>
+            <translation>添加资产失败。请检查磁盘空间</translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2517" />
             <source>Failed to send </source>
-            <translation>发送失败</translation>
+            <translation>发送失败 </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2518" />
+            <source>Failed to send to </source>
+            <translation>发送失败 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2528" />
@@ -7280,36 +7705,19 @@ Are you very sure you want to proceed?</source>
         <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2552" />
             <source>Cannot send </source>
-            <translation>无法发送</translation>
+            <translation>无法发送 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2553" />
             <source>Cannot send reason: </source>
-            <translation>无法发送原因：</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="756" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2379" />
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="1388" />
-            <source>Unknown Error</source>
-            <translation>未知错误</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2380" />
-            <source>Unknown Error </source>
-            <translation>未知错误</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2380" />
-            <source> for user </source>
-            <translation>对于用户</translation>
+            <translation>无法发送原因： </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiHostedListItem.cpp" line="152" />
             <location filename="../nolimitgui/src/HostedPluginWidget.cpp" line="113" />
             <location filename="../nolimitgui/src/HostJoinRequestListItem.cpp" line="133" />
             <source> Hosted By Me</source>
-            <translation>由我主持</translation>
+            <translation> 由我主持</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiHostedListItem.cpp" line="207" />
@@ -7319,7 +7727,7 @@ Are you very sure you want to proceed?</source>
         <message>
             <location filename="../nolimitgui/src/GuiOfferMgrBase.cpp" line="502" />
             <source> Is Offline </source>
-            <translation>离线</translation>
+            <translation> 离线 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiOfferMgrBase.cpp" line="948" />
@@ -7329,17 +7737,17 @@ Are you very sure you want to proceed?</source>
         <message>
             <location filename="../nolimitgui/src/GuiOfferMgrBase.cpp" line="949" />
             <source>Requires </source>
-            <translation>需要</translation>
+            <translation>需要 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiOfferMgrBase.cpp" line="949" />
             <source> but only </source>
-            <translation>但仅</translation>
+            <translation> 但仅 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiOfferMgrBase.cpp" line="950" />
             <source> available </source>
-            <translation>可用</translation>
+            <translation> 可用</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiOfferMgrBase.cpp" line="1042" />
@@ -7374,11 +7782,6 @@ Are you very sure you want to proceed?</source>
             <location filename="../nolimitgui/src/GuiOfferSession.cpp" line="108" />
             <source>User Uninitialized</source>
             <translation>用户未初始化</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="1804" />
-            <source> </source>
-            <translation type="unfinished" />
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="145" />
@@ -7417,57 +7820,57 @@ Are you very sure you want to proceed?</source>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="186" />
             <source>No Error </source>
-            <translation>没有错误</translation>
+            <translation>没有错误 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="188" />
             <source>Comm Error Invalid Packet </source>
-            <translation>通讯错误无效数据包</translation>
+            <translation>通讯错误无效数据包 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="190" />
             <source>Comm Error User Offline </source>
-            <translation>通讯错误 用户离线</translation>
+            <translation>通讯错误 用户离线 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="192" />
             <source>Comm Error Search Text To Short </source>
-            <translation>通讯错误搜索短文本</translation>
+            <translation>通讯错误搜索短文本 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="194" />
             <source>Comm Error Search Text To Long </source>
-            <translation>通讯错误搜索文本太长</translation>
+            <translation>通讯错误搜索文本太长 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="196" />
             <source>Comm Error Search No Match </source>
-            <translation>通讯错误 搜索不匹配</translation>
+            <translation>通讯错误 搜索不匹配 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="198" />
             <source>Comm Error Invalid Host Type </source>
-            <translation>通讯错误主机类型无效</translation>
+            <translation>通讯错误主机类型无效 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="200" />
             <source>Comm Error Plugin Not Enabled </source>
-            <translation>通讯错误插件未启用</translation>
+            <translation>通讯错误插件未启用 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="202" />
             <source>Comm Error Plugin Permission Level </source>
-            <translation>通讯错误插件权限级别</translation>
+            <translation>通讯错误插件权限级别 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="204" />
             <source>Comm Error Invalid Param </source>
-            <translation>通讯错误 参数无效</translation>
+            <translation>通讯错误 参数无效 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="206" />
             <source>Comm Error Invalid </source>
-            <translation>通讯错误无效</translation>
+            <translation>通讯错误无效 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="218" />
@@ -7526,31 +7929,31 @@ Are you very sure you want to proceed?</source>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="265" />
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1864" />
             <source>Anonymous </source>
-            <translation>匿名</translation>
+            <translation>匿名 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="267" />
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1866" />
             <source>Guest </source>
-            <translation>嘉宾</translation>
+            <translation>嘉宾 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="269" />
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1868" />
             <source>Friend </source>
-            <translation>朋友</translation>
+            <translation>朋友 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="271" />
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1870" />
             <source>Administrator </source>
-            <translation>管理员</translation>
+            <translation>管理员 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="273" />
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1872" />
             <source>Ignore </source>
-            <translation>忽略</translation>
+            <translation>忽略 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="285" />
@@ -7565,113 +7968,113 @@ Are you very sure you want to proceed?</source>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="299" />
             <source>Group Host </source>
-            <translation>团体主持人</translation>
+            <translation>团体主持人 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="301" />
             <source>Chat Room Host </source>
-            <translation>聊天室主持人</translation>
+            <translation>聊天室主持人 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="303" />
             <source>Random Connect Host </source>
-            <translation>随机连接主机</translation>
+            <translation>随机连接主机 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="305" />
             <source>Peer User </source>
-            <translation>对等用户</translation>
+            <translation>对等用户 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="307" />
             <source>Network Host </source>
-            <translation>网络主机</translation>
+            <translation>网络主机 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="309" />
             <source>Connect Test Host </source>
-            <translation>连接测试主机</translation>
+            <translation>连接测试主机 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="311" />
             <source>Unknown Host Type </source>
-            <translation>未知主机类型</translation>
+            <translation>未知主机类型 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="353" />
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1554" />
             <source>Host Search Status Unknown </source>
-            <translation>主机搜索状态未知</translation>
+            <translation>主机搜索状态未知 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="355" />
             <source>Host Search Invalid Url </source>
-            <translation>主机搜索无效 URL</translation>
+            <translation>主机搜索无效 URL </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="357" />
             <source>Host Search Querying Id In Progress </source>
-            <translation>主机搜索查询 ID 正在进行中</translation>
+            <translation>主机搜索查询 ID 正在进行中 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="359" />
             <source>Host Search Querying Id Success </source>
-            <translation>主机搜索查询Id成功</translation>
+            <translation>主机搜索查询Id成功 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="361" />
             <source>Host Search Query Id Failed </source>
-            <translation>主机搜索查询 ID 失败</translation>
+            <translation>主机搜索查询 ID 失败 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="363" />
             <source>Host Search Connecting </source>
-            <translation>主机搜索连接</translation>
+            <translation>主机搜索连接 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="365" />
             <source>Host Search Connect Success </source>
-            <translation>主机搜索连接成功</translation>
+            <translation>主机搜索连接成功 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="367" />
             <source>Host Search Connect Failed </source>
-            <translation>主机搜索连接失败</translation>
+            <translation>主机搜索连接失败 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="369" />
             <source>Host Search Handshaking </source>
-            <translation>主机搜索握手</translation>
+            <translation>主机搜索握手 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="371" />
             <source>Host Search Handshake Timeout </source>
-            <translation>主机搜索握手超时</translation>
+            <translation>主机搜索握手超时 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="374" />
             <source>Host Search Sending Request </source>
-            <translation>主机搜索发送请求</translation>
+            <translation>主机搜索发送请求 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="376" />
             <source>Host Search Send Request Failed </source>
-            <translation>主机搜索发送请求失败</translation>
+            <translation>主机搜索发送请求失败 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="378" />
             <source>Host Search Success </source>
-            <translation>主机搜索成功</translation>
+            <translation>主机搜索成功 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="380" />
             <source>Host Search Failed </source>
-            <translation>主机搜索失败</translation>
+            <translation>主机搜索失败 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="383" />
             <source>Host Search Fail Permission </source>
-            <translation>主机搜索失败权限</translation>
+            <translation>主机搜索失败权限 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="385" />
@@ -7681,27 +8084,27 @@ Are you very sure you want to proceed?</source>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="387" />
             <source>Host Search Invalid Param </source>
-            <translation>主机搜索参数无效</translation>
+            <translation>主机搜索参数无效 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="389" />
             <source>Host Search Plugin Disabled </source>
-            <translation>主机搜索插件已禁用</translation>
+            <translation>主机搜索插件已禁用 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="391" />
             <source>Host Search No Matches </source>
-            <translation>主机搜索无匹配项</translation>
+            <translation>主机搜索无匹配项 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="393" />
             <source>Host Search Completed </source>
-            <translation>主机搜索完成</translation>
+            <translation>主机搜索完成 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="395" />
             <source>Invalid Host Search Param </source>
-            <translation>主机搜索参数无效</translation>
+            <translation>主机搜索参数无效 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="405" />
@@ -7756,7 +8159,7 @@ Are you very sure you want to proceed?</source>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="462" />
             <source>View About Me Requires </source>
-            <translation>查看关于我 需要</translation>
+            <translation>查看关于我 需要 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="464" />
@@ -7769,7 +8172,7 @@ Are you very sure you want to proceed?</source>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="705" />
             <location filename="../nolimitgui/src/GuiParams.cpp" line="740" />
             <source> permission</source>
-            <translation>许可</translation>
+            <translation> 许可</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="469" />
@@ -7809,7 +8212,7 @@ Are you very sure you want to proceed?</source>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="496" />
             <source>View Story Board Requires </source>
-            <translation>查看故事板要求</translation>
+            <translation>查看故事板要求 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="503" />
@@ -7849,7 +8252,7 @@ Are you very sure you want to proceed?</source>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="532" />
             <source>Send A File Requires </source>
-            <translation>发送文件需要</translation>
+            <translation>发送文件需要 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="540" />
@@ -7885,7 +8288,7 @@ Are you very sure you want to proceed?</source>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="567" />
             <source>Shared Files Requires </source>
-            <translation>共享文件需要</translation>
+            <translation>共享文件需要 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="572" />
@@ -7915,7 +8318,7 @@ Are you very sure you want to proceed?</source>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="601" />
             <source>Shared Web Cam Requires </source>
-            <translation>共享网络摄像头需要</translation>
+            <translation>共享网络摄像头需要 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="608" />
@@ -7955,7 +8358,7 @@ Are you very sure you want to proceed?</source>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="635" />
             <source>Voice Call Requires </source>
-            <translation>语音通话需要</translation>
+            <translation>语音通话需要 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="642" />
@@ -7993,34 +8396,9 @@ Are you very sure you want to proceed?</source>
             <translation>提供真心话大冒险游戏</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="992" />
-            <source>Truth Or Dare</source>
-            <translation>真心话大冒险</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="1702" />
-            <source>Sending Offer</source>
-            <translation>发送报价</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="1744" />
-            <source>Offer: Join Chat Room</source>
-            <translation>优惠：加入聊天室</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="1760" />
-            <source>Offer: Random Connect Session</source>
-            <translation>优惠：随机连接会话</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="2229" />
-            <source> is offline</source>
-            <translation>离线</translation>
-        </message>
-        <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="669" />
             <source>Truth Or Dare Requires </source>
-            <translation>真心话大冒险 需要</translation>
+            <translation>真心话大冒险 需要 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="676" />
@@ -8060,7 +8438,7 @@ Are you very sure you want to proceed?</source>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="703" />
             <source>Text Chat Requires </source>
-            <translation>文字聊天需要</translation>
+            <translation>文字聊天需要 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="710" />
@@ -8095,7 +8473,7 @@ Are you very sure you want to proceed?</source>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="738" />
             <source>Video Chat Requires </source>
-            <translation>视频聊天需要</translation>
+            <translation>视频聊天需要 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="745" />
@@ -8207,6 +8585,11 @@ Are you very sure you want to proceed?</source>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="861" />
             <source>Disabled</source>
             <translation>残疾人</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="863" />
+            <source>Anonymous</source>
+            <translation>匿名</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="867" />
@@ -8329,9 +8712,14 @@ Are you very sure you want to proceed?</source>
             <translation>语音通话</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/MultiSessionState.cpp" line="386" />
-            <source>Play Truth Or Dare</source>
-            <translation>玩真心话大冒险</translation>
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="984" />
+            <source>Push To Talk</source>
+            <translation>一键通</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="992" />
+            <source>Truth Or Dare</source>
+            <translation>真心话大冒险</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="996" />
@@ -8558,67 +8946,67 @@ Are you very sure you want to proceed?</source>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1220" />
             <source> About Me Page Service </source>
-            <translation>关于我页面服务</translation>
+            <translation> 关于我页面服务 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1224" />
             <source> View About Me Page </source>
-            <translation>查看关于我的页面</translation>
+            <translation> 查看关于我的页面 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1228" />
             <source> Receive A File </source>
-            <translation>接收文件</translation>
+            <translation> 接收文件 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1232" />
             <source> View Shared Files </source>
-            <translation>查看共享文件</translation>
+            <translation> 查看共享文件 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1236" />
             <source> Join Chat Session </source>
-            <translation>加入聊天会话</translation>
+            <translation> 加入聊天会话 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1240" />
             <source> Voice Phone Call </source>
-            <translation>语音电话</translation>
+            <translation> 语音电话 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1244" />
             <source> Video Chat Offer </source>
-            <translation>视频聊天优惠</translation>
+            <translation> 视频聊天优惠 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1248" />
             <source> Play Truth Or Dare </source>
-            <translation>玩真心话大冒险</translation>
+            <translation> 玩真心话大冒险 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1252" />
             <source> Story Board Service</source>
-            <translation>故事板服务</translation>
+            <translation> 故事板服务</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1256" />
             <source> View Story Board </source>
-            <translation>查看故事板</translation>
+            <translation> 查看故事板 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1260" />
             <source> Shared Files Client </source>
-            <translation>共享文件客户端</translation>
+            <translation> 共享文件客户端 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1264" />
             <source> Web Cam Server Service</source>
-            <translation>网络摄像头服务器服务</translation>
+            <translation> 网络摄像头服务器服务</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1268" />
             <source> View Shared Web Cam </source>
-            <translation>查看共享网络摄像头</translation>
+            <translation> 查看共享网络摄像头 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1272" />
@@ -8628,32 +9016,32 @@ Are you very sure you want to proceed?</source>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1287" />
             <source> Invalid </source>
-            <translation>无效</translation>
+            <translation> 无效 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1291" />
             <source> Not Active </source>
-            <translation>不活跃</translation>
+            <translation> 不活跃 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1295" />
             <source> Tx Enabled </source>
-            <translation>发送启用</translation>
+            <translation> 发送启用</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1299" />
             <source> Rx Enabled </source>
-            <translation>接收启用</translation>
+            <translation>接收启用 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1303" />
             <source> Duplex Enabled </source>
-            <translation>启用双工</translation>
+            <translation> 启用双工 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1307" />
             <source> No Connection </source>
-            <translation>无连接</translation>
+            <translation> 无连接 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1311" />
@@ -8694,29 +9082,6 @@ Are you very sure you want to proceed?</source>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1718" />
             <source>User Is Offline</source>
             <translation>用户离线</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletPeerVideoPhone.cpp" line="50" />
-            <source>In Video Phone Session</source>
-            <translation>在视频电话会话中</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletPeerVideoPhone.cpp" line="54" />
-            <source>Video Phone Session Ended</source>
-            <translation>视频电话会话结束</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletPeerVideoPhone.cpp" line="121" />
-            <location filename="../nolimitgui/src/AppletPeerVoicePhone.cpp" line="132" />
-            <source>Session Started</source>
-            <translation>会话开始</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletPeerVideoPhone.cpp" line="135" />
-            <location filename="../nolimitgui/src/AppletPeerVoicePhone.cpp" line="146" />
-            <location filename="../nolimitgui/src/GuiParams.cpp" line="1342" />
-            <source>Session Ended</source>
-            <translation>会议结束</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1352" />
@@ -8961,7 +9326,7 @@ Are you very sure you want to proceed?</source>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1487" />
             <source>Host Join Status Unknown </source>
-            <translation>主机加入状态未知</translation>
+            <translation>主机加入状态未知 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1489" />
@@ -9224,6 +9589,11 @@ Are you very sure you want to proceed?</source>
             <translation>无优惠</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="1702" />
+            <source>Sending Offer</source>
+            <translation>发送报价</translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1704" />
             <source>Offer Sent</source>
             <translation>报价已发送</translation>
@@ -9282,12 +9652,17 @@ Are you very sure you want to proceed?</source>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1740" />
             <source>Unknonn Offer Type</source>
-            <translation>未知的报价类型</translation>
+            <translation>未知报价类型</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1742" />
             <source>Offer: Join Group</source>
             <translation>优惠：加入团体</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="1744" />
+            <source>Offer: Join Chat Room</source>
+            <translation>优惠：加入聊天室</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1746" />
@@ -9325,6 +9700,11 @@ Are you very sure you want to proceed?</source>
             <translation>优惠：语音电话</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="1760" />
+            <source>Offer: Random Connect Session</source>
+            <translation>优惠：随机连接会话</translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1776" />
             <source>Accepted</source>
             <translation>已接受</translation>
@@ -9352,7 +9732,12 @@ Are you very sure you want to proceed?</source>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1798" />
             <source>Expires </source>
-            <translation>过期</translation>
+            <translation>过期 </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="1804" />
+            <source> </source>
+            <translation type="unfinished" />
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1816" />
@@ -9367,47 +9752,47 @@ Are you very sure you want to proceed?</source>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1829" />
             <source>Everybody </source>
-            <translation>大家</translation>
+            <translation>大家 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1831" />
             <source>Friends Online </source>
-            <translation>朋友在线</translation>
+            <translation>朋友在线 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1833" />
             <source>Friends Offline </source>
-            <translation>好友离线</translation>
+            <translation>好友离线 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1836" />
             <source>Group </source>
-            <translation>集团</translation>
+            <translation>集团 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1838" />
             <source>Chat Room </source>
-            <translation>聊天室</translation>
+            <translation>聊天室 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1840" />
             <source>Random Connect </source>
-            <translation>随机连接</translation>
+            <translation>随机连接 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1843" />
             <source>Ignored </source>
-            <translation>被忽略</translation>
+            <translation>被忽略 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1846" />
             <source>Online </source>
-            <translation>在线</translation>
+            <translation>在线 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1848" />
             <source>Direct Connect </source>
-            <translation>直接连接</translation>
+            <translation>直接连接 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1850" />
@@ -9417,92 +9802,92 @@ Are you very sure you want to proceed?</source>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1854" />
             <source>Unknown </source>
-            <translation>未知</translation>
+            <translation>未知 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1882" />
             <source>Sending Join Request </source>
-            <translation>发送加入请求</translation>
+            <translation>发送加入请求 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1884" />
             <source>Send Join Failed </source>
-            <translation>发送加入失败</translation>
+            <translation>发送加入失败 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1886" />
             <source>Send Join Acked </source>
-            <translation>发送加入已确认</translation>
+            <translation>发送加入已确认 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1888" />
             <source>Join Requested </source>
-            <translation>已请求加入</translation>
+            <translation>已请求加入 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1890" />
             <source>Join Was Accepted </source>
-            <translation>已接受加入</translation>
+            <translation>已接受加入 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1892" />
             <source>Join Is Accepted </source>
-            <translation>接受加入</translation>
+            <translation>接受加入 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1894" />
             <source>Join Denied </source>
-            <translation>加入被拒绝</translation>
+            <translation>加入被拒绝 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1896" />
             <source>Disconnected From Host </source>
-            <translation>与主机断开连接</translation>
+            <translation>与主机断开连接 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1898" />
             <source>Unknown Join State </source>
-            <translation>未知的加入状态</translation>
+            <translation>未知的加入状态 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1908" />
             <source>All Files </source>
-            <translation>所有文件</translation>
+            <translation>所有文件 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1910" />
             <source>Photo Files </source>
-            <translation>照片文件</translation>
+            <translation>照片文件 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1912" />
             <source>Audio Files </source>
-            <translation>音频文件</translation>
+            <translation>音频文件 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1914" />
             <source>Video Files </source>
-            <translation>视频文件</translation>
+            <translation>视频文件 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1916" />
             <source>Document Files </source>
-            <translation>文档文件</translation>
+            <translation>文档文件 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1918" />
             <source>Archive Files </source>
-            <translation>存档文件</translation>
+            <translation>存档文件 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1920" />
             <source>Other Files </source>
-            <translation>其他文件</translation>
+            <translation>其他文件 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1923" />
             <source>Unknown File Filter </source>
-            <translation>未知文件过滤器</translation>
+            <translation>未知文件过滤器 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2045" />
@@ -9552,12 +9937,12 @@ Are you very sure you want to proceed?</source>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2064" />
             <source>Unknown Expire Time </source>
-            <translation>到期时间未知</translation>
+            <translation>到期时间未知 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2103" />
             <source>Active Offers </source>
-            <translation>活跃优惠</translation>
+            <translation>活跃优惠 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2105" />
@@ -9567,97 +9952,97 @@ Are you very sure you want to proceed?</source>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2108" />
             <source>Unknown Offer View Type </source>
-            <translation>未知优惠视图类型</translation>
+            <translation>未知优惠视图类型 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2118" />
             <source>Any Connection </source>
-            <translation>任意连接</translation>
+            <translation>任意连接 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2120" />
             <source>Host Connection </source>
-            <translation>主机连接</translation>
+            <translation>主机连接 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2122" />
             <source>Client Connection </source>
-            <translation>客户端连接</translation>
+            <translation>客户端连接 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2124" />
             <source>Direct Connection </source>
-            <translation>直接连接</translation>
+            <translation>直接连接 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2126" />
             <source>Unknown Connect Type </source>
-            <translation>未知连接类型</translation>
+            <translation>未知连接类型 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2136" />
             <source>Connect Status Ready </source>
-            <translation>连接状态就绪</translation>
+            <translation>连接状态就绪 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2138" />
             <source>Connect Status Bad Param </source>
-            <translation>连接状态错误参数</translation>
+            <translation>连接状态错误参数 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2140" />
             <source>Connect Status Bad Address </source>
-            <translation>连接状态错误地址</translation>
+            <translation>连接状态错误地址 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2142" />
             <source>Connect Status Permission Denied </source>
-            <translation>连接状态权限被拒绝</translation>
+            <translation>连接状态权限被拒绝 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2144" />
             <source>Connect Status Connecting </source>
-            <translation>连接状态 正在连接</translation>
+            <translation>连接状态 正在连接 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2146" />
             <source>Connect Status Connect Failed </source>
-            <translation>连接状态 连接失败</translation>
+            <translation>连接状态 连接失败 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2148" />
             <source>Connect Status Send PktAnn Failed </source>
-            <translation>连接状态发送 PktAnn 失败</translation>
+            <translation>连接状态发送 PktAnn 失败 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2150" />
             <source>Connect Status Handshaking </source>
-            <translation>连接状态握手</translation>
+            <translation>连接状态握手 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2152" />
             <source>Connect Status Handshake Timed Out </source>
-            <translation>连接状态握手超时</translation>
+            <translation>连接状态握手超时 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2154" />
             <source>Connect Status Connect Success </source>
-            <translation>连接状态 连接成功</translation>
+            <translation>连接状态 连接成功 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2156" />
             <source>Connect Status Dropped </source>
-            <translation>连接状态已断开</translation>
+            <translation>连接状态已断开 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2158" />
             <source>Connect Status Rx PktAnn Timeout </source>
-            <translation>连接状态 Rx PktAnn 超时</translation>
+            <translation>连接状态 Rx PktAnn 超时 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2160" />
             <source>Connect Status Unknown </source>
-            <translation>连接状态未知</translation>
+            <translation>连接状态未知 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiParams.cpp" line="2200" />
@@ -9720,6 +10105,16 @@ Are you very sure you want to proceed?</source>
             <translation>未知的数据库类型</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="2229" />
+            <source> is online</source>
+            <translation> 在线</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiParams.cpp" line="2229" />
+            <source> is offline</source>
+            <translation> 离线</translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/GuiPlayerMgr.cpp" line="231" />
             <source>Attempted to play an executable which is not allowed</source>
             <translation>试图播放不允许的可执行文件</translation>
@@ -9730,26 +10125,32 @@ Are you very sure you want to proceed?</source>
             <translation>试图打开不允许的存档文件</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/GuiThreadMainLoader.cpp" line="58" />
+            <source>No Writable Location for user data</source>
+            <translation>用户数据没有可写位置</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiThreadMainLoader.cpp" line="59" />
+            <source>No location found to store user data.
+ Application will exit</source>
+            <translation>找不到存储用户数据的位置。
+ 应用程序将退出</translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/GuiThumbMgr.cpp" line="535" />
             <location filename="../nolimitgui/src/GuiThumbMgr.cpp" line="627" />
             <source>Invalid emoticon id</source>
             <translation>表情符号 ID 无效</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiThumbMgr.cpp" line="677" />
-            <location filename="../nolimitgui/src/GuiThumbMgr.cpp" line="683" />
-            <source>Error occured creating emoticon file </source>
+            <location filename="../nolimitgui/src/GuiThumbMgr.cpp" line="571" />
+            <source>Error occured creating emoticon file</source>
             <translation>创建表情文件时出错</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiThumbMgr.cpp" line="628" />
             <source>Invalid emoticon id </source>
-            <translation>表情符号 ID 无效</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiThumbMgr.cpp" line="571" />
-            <source>Error occured creating emoticon file</source>
-            <translation>创建表情文件时出错</translation>
+            <translation>表情符号 ID 无效 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiThumbMgr.cpp" line="670" />
@@ -9759,12 +10160,18 @@ Are you very sure you want to proceed?</source>
         <message>
             <location filename="../nolimitgui/src/GuiThumbMgr.cpp" line="671" />
             <source>Error occured creating emoticon asset </source>
-            <translation>创建表情资源时发生错误</translation>
+            <translation>创建表情资源时发生错误 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiThumbMgr.cpp" line="676" />
             <source>Could not get file info of emoticon png file</source>
             <translation>无法获取表情png文件的文件信息</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/GuiThumbMgr.cpp" line="677" />
+            <location filename="../nolimitgui/src/GuiThumbMgr.cpp" line="683" />
+            <source>Error occured creating emoticon file </source>
+            <translation>创建表情文件时出错 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/GuiThumbMgr.cpp" line="682" />
@@ -9810,12 +10217,12 @@ Are you very sure you want to proceed?</source>
         <message>
             <location filename="../nolimitgui/src/IdentLogicInterface.cpp" line="268" />
             <source>Truths: </source>
-            <translation>真相：</translation>
+            <translation>真相： </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/IdentLogicInterface.cpp" line="269" />
             <source> Dares: </source>
-            <translation>敢于：</translation>
+            <translation> 敢于： </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="69" />
@@ -9831,7 +10238,7 @@ Are you very sure you want to proceed?</source>
         <message>
             <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="81" />
             <source>Failed to write photo to file </source>
-            <translation>无法将照片写入文件</translation>
+            <translation>无法将照片写入文件 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="82" />
@@ -9854,6 +10261,45 @@ Are you very sure you want to proceed?</source>
             <translation>单击麦克风开始录音</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/InviteUrlWidget.cpp" line="86" />
+            <source>Pasted invite text</source>
+            <translation>粘贴邀请文本</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/InviteUrlWidget.cpp" line="113" />
+            <source>Private Key Warning</source>
+            <translation>私钥警告</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/InviteUrlWidget.cpp" line="114" />
+            <source>Be sure to get the Network Key for this Network before saving network settings.
+Wrong network key will cause you to be banned as a Hacker</source>
+            <translation>在保存网络设置之前，请务必获取该网络的网络密钥。
+错误的网络密钥将导致您被禁止作为黑客</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/InviteUrlWidget.cpp" line="728" />
+            <source>Cannot create Invite</source>
+            <translation>无法创建邀请</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/InviteUrlWidget.cpp" line="728" />
+            <source>Do NOT create Invite without a open Network Port.
+No one can connect to you directly</source>
+            <translation>请勿在没有开放网络端口的情况下创建邀请。
+没有人可以直接与您联系</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/InviteUrlWidget.cpp" line="746" />
+            <source>Hosting plugin not enabled</source>
+            <translation>未启用托管插件</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/InviteUrlWidget.cpp" line="746" />
+            <source> has permission level of disabled</source>
+            <translation> 权限级别为禁用</translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/miniaudio/MiniAudioIn.cpp" line="63" />
             <source>No Sound Input Devices Avalable</source>
             <translation>没有可用的声音输入设备</translation>
@@ -9866,27 +10312,7 @@ Are you very sure you want to proceed?</source>
         <message>
             <location filename="../nolimitgui/src/miniaudio/MiniAudioIn.cpp" line="101" />
             <source>Could not initialize sound in device </source>
-            <translation>无法初始化设备中的声音</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AudioMgrDelayTest.cpp" line="155" />
-            <source>Sound Delay Not Detected. Check speaker volume and that microphone is on </source>
-            <translation>未检测到声音延迟。检查扬声器音量以及麦克风是否打开</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AudioMgrDelayTest.cpp" line="159" />
-            <source>Sound Delay too short.. probably noise </source>
-            <translation>声音延迟太短..可能是噪音</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AudioMgrDelayTest.cpp" line="163" />
-            <source>Sound Delay too long.. probably mic level low </source>
-            <translation>声音延迟太长..可能麦克风电平低</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AudioMgrDelayTest.cpp" line="167" />
-            <source>Sound Delay is </source>
-            <translation>声音延迟为</translation>
+            <translation>无法初始化设备中的声音 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/miniaudio/MiniAudioOut.cpp" line="60" />
@@ -9906,7 +10332,7 @@ Are you very sure you want to proceed?</source>
         <message>
             <location filename="../nolimitgui/src/miniaudio/MiniAudioOut.cpp" line="104" />
             <source>Could not initialize sound out device </source>
-            <translation>无法初始化声音输出设备</translation>
+            <translation>无法初始化声音输出设备 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/MultiSessionState.cpp" line="378" />
@@ -9927,6 +10353,11 @@ Are you very sure you want to proceed?</source>
             <location filename="../nolimitgui/src/MultiSessionState.cpp" line="383" />
             <source>Reject Video Chat</source>
             <translation>拒绝视频聊天</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/MultiSessionState.cpp" line="386" />
+            <source>Play Truth Or Dare</source>
+            <translation>玩真心话大冒险</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/MultiSessionState.cpp" line="387" />
@@ -9956,7 +10387,7 @@ Are you very sure you want to proceed?</source>
         <message>
             <location filename="../nolimitgui/src/ServiceSettingsWidget.cpp" line="74" />
             <source>View </source>
-            <translation>查看</translation>
+            <translation>查看 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/ServiceSettingsWidget.cpp" line="108" />
@@ -9966,99 +10397,7 @@ Are you very sure you want to proceed?</source>
         <message>
             <location filename="../nolimitgui/src/ServiceSettingsWidget.cpp" line="114" />
             <source>Unknown Applet </source>
-            <translation>未知小程序</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2260" />
-            <source>Could not create thumbnail asset</source>
-            <translation>无法创建缩略图资源</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="69" />
-            <source>Requesting Library File List </source>
-            <translation>请求库文件列表</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="128" />
-            <source>List Get Completed</source>
-            <translation>列表完成</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="151" />
-            <source>Folder Scan Canceled</source>
-            <translation>文件夹扫描已取消</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="155" />
-            <source>Folder Scan Completed</source>
-            <translation>文件夹扫描完成</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="356" />
-            <source>File was not found:
-%1
-
-Remove this item from My Library and asset database?</source>
-            <translation>未找到文件：
-%1
-
-从我的图书馆和资产数据库中删除该项目吗？</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="633" />
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="663" />
-            <source>Error</source>
-            <translation>错误</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="633" />
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="663" />
-            <source>Unknown Media Type</source>
-            <translation>未知媒体类型</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="694" />
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="771" />
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="807" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2266" />
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="104" />
-            <source>Could not get thumbnail file info</source>
-            <translation>无法获取缩略图文件信息</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="695" />
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="772" />
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="808" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2261" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2267" />
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="105" />
-            <source>Error occured creating thumbnail asset </source>
-            <translation>创建缩略图资源时发生错误</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="732" />
-            <source>Scaning folder</source>
-            <translation>扫描文件夹</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="753" />
-            <source>Already in library</source>
-            <translation>已经在图书馆了</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="753" />
-            <source>File is already in library </source>
-            <translation>文件已在库中</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="828" />
-            <source>File Error</source>
-            <translation>文件错误</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLibrary.cpp" line="828" />
-            <source>Could not add file to library </source>
-            <translation>无法将文件添加到库中</translation>
+            <translation>未知小程序 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="110" />
@@ -10069,7 +10408,7 @@ Remove this item from My Library and asset database?</source>
             <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="111" />
             <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="150" />
             <source>Error occured saving thumbnail to file </source>
-            <translation>将缩略图保存到文件时发生错误</translation>
+            <translation>将缩略图保存到文件时发生错误 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="143" />
@@ -10079,7 +10418,7 @@ Remove this item from My Library and asset database?</source>
         <message>
             <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="144" />
             <source>Error occured update thumbnail asset </source>
-            <translation>更新缩略图资源时发生错误</translation>
+            <translation>更新缩略图资源时发生错误 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="149" />
@@ -10094,12 +10433,12 @@ Remove this item from My Library and asset database?</source>
         <message>
             <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="156" />
             <source>Error occured updatin thumbnail </source>
-            <translation>更新缩略图时发生错误</translation>
+            <translation>更新缩略图时发生错误 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="95" />
             <source>Failed to create pixmap </source>
-            <translation>创建像素图失败</translation>
+            <translation>创建像素图失败 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="96" />
@@ -10109,7 +10448,7 @@ Remove this item from My Library and asset database?</source>
         <message>
             <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="175" />
             <source>Failed to scale and crop image </source>
-            <translation>无法缩放和裁剪图像</translation>
+            <translation>无法缩放和裁剪图像 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="176" />
@@ -10119,22 +10458,12 @@ Remove this item from My Library and asset database?</source>
         <message>
             <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="181" />
             <source>Null image </source>
-            <translation>空图像</translation>
+            <translation>空图像 </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="182" />
             <source>Null image.</source>
             <translation>空图像。</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/TodGameLogic.cpp" line="245" />
-            <source>Perform Dare</source>
-            <translation>敢于表演</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/TodGameLogic.cpp" line="250" />
-            <source>Tell Truth</source>
-            <translation>说实话</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/TodGameLogic.cpp" line="180" />
@@ -10187,6 +10516,16 @@ Remove this item from My Library and asset database?</source>
             <translation>按选择真心话大冒险按钮</translation>
         </message>
         <message>
+            <location filename="../nolimitgui/src/TodGameLogic.cpp" line="245" />
+            <source>Perform Dare</source>
+            <translation>敢于表演</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/TodGameLogic.cpp" line="250" />
+            <source>Tell Truth</source>
+            <translation>说实话</translation>
+        </message>
+        <message>
             <location filename="../nolimitgui/src/TodGameLogic.cpp" line="259" />
             <source>Evaluate Dare</source>
             <translation>评估敢于</translation>
@@ -10236,370 +10575,26 @@ Remove this item from My Library and asset database?</source>
             <source>Cancel</source>
             <translation>取消</translation>
         </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletAboutFile.cpp" line="129" />
-            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="116" />
-            <source> : Yes</source>
-            <translation>： 是的</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletAboutFile.cpp" line="130" />
-            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="117" />
-            <source> : No</source>
-            <translation>: 没有</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletAboutFile.cpp" line="132" />
-            <source>Is Stream</source>
-            <translation>是流</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="108" />
-            <source>Requires Relay</source>
-            <translation>需要继电器</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="112" />
-            <source>Can Direct Connect</source>
-            <translation>可以直连</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="115" />
-            <source>Is member of </source>
-            <translation>是以下组织的成员</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="140" />
-            <source>no shared files</source>
-            <translation>没有共享文件</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="153" />
-            <source> -- has about me content</source>
-            <translation>-- 有关于我的内容</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="157" />
-            <source> -- no about me content</source>
-            <translation>-- 没有关于我的内容</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="164" />
-            <source> -- has storyboard content</source>
-            <translation>-- 有故事板内容</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="168" />
-            <source> -- no storyboard content</source>
-            <translation>-- 没有故事板内容</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="175" />
-            <source> -- has shared web cam</source>
-            <translation>-- 共享网络摄像头</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="179" />
-            <source> -- no shared web cam</source>
-            <translation>-- 没有共享网络摄像头</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletAboutUser.cpp" line="186" />
-            <source>=== Disabled Plugins ===</source>
-            <translation>===禁用插件===</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletFileShareClientView.cpp" line="484" />
-            <source>Failed to play stream </source>
-            <translation>播放流失败</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletFriendRequest.cpp" line="64" />
-            <source>User not found</source>
-            <translation>未找到用户</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletFriendRequest.cpp" line="64" />
-            <source>No user found with id </source>
-            <translation>找不到具有 id 的用户</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletFriendRequest.cpp" line="117" />
-            <source>Friend Request requires a message with request reason</source>
-            <translation>好友请求需要一条带有请求原因的消息</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletFriendRequest.cpp" line="123" />
-            <source>Friend Request Send Failed</source>
-            <translation>好友请求发送失败</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletFriendRequest.cpp" line="127" />
-            <source>Friend Request Sent</source>
-            <translation>好友请求已发送</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletFriendRequest.cpp" line="127" />
-            <source>Friend Request was sent</source>
-            <translation>好友请求已发送</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletFriendRequestList.cpp" line="79" />
-            <source>No Friend Requests Available</source>
-            <translation>没有可用的好友请求</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostJoinConnect.cpp" line="63" />
-            <source>Host URL is not valid</source>
-            <translation>主机 URL 无效</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostJoinConnect.cpp" line="68" />
-            <location filename="../nolimitgui/src/AppletJoinBase.cpp" line="55" />
-            <source>Failed to resolve into valid ptop url</source>
-            <translation>无法解析为有效的 ptop url</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostJoinConnect.cpp" line="72" />
-            <source>Host Type Invalid</source>
-            <translation>主机类型无效</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostLeave.cpp" line="78" />
-            <source>Leave Chat Room</source>
-            <translation>离开聊天室</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostLeave.cpp" line="85" />
-            <source>Leave Group</source>
-            <translation>离开群组</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostLeave.cpp" line="91" />
-            <source>Leave Random Connect</source>
-            <translation>离开随机连接</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="131" />
-            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="137" />
-            <source>Language</source>
-            <translation>语言</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="131" />
-            <source>Language updated.</source>
-            <translation>语言已更新。</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="138" />
-            <source>Language updated, but no translation file was found in the translations folder.</source>
-            <translation>语言已更新，但在翻译文件夹中未找到翻译文件。</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="199" />
-            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="212" />
-            <source>English</source>
-            <translation>英语</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="200" />
-            <source>German</source>
-            <translation>德语</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="201" />
-            <source>Chinese</source>
-            <translation>中文</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="202" />
-            <source>Spanish</source>
-            <translation>西班牙语</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="203" />
-            <source>French</source>
-            <translation>法语</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="204" />
-            <source>Arabic</source>
-            <translation>阿拉伯语</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="205" />
-            <source>Hindi</source>
-            <translation>印地语</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="206" />
-            <source>Portuguese</source>
-            <translation>葡萄牙语</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="207" />
-            <source>Japanese</source>
-            <translation>日语</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="208" />
-            <source>Korean</source>
-            <translation>韩语</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="209" />
-            <source>Russian</source>
-            <translation>俄语</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="210" />
-            <source>Thai</source>
-            <translation>泰语</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletLanguageSelect.cpp" line="211" />
-            <source>Indonesian</source>
-            <translation>印度尼西亚语</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletOfferInfo.cpp" line="107" />
-            <source>Invalid Offer. Please Decline Offer.</source>
-            <translation>报价无效。请拒绝报价。</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletTestUpnp.cpp" line="232" />
-            <source>Invalid Port</source>
-            <translation>端口无效</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletTestUpnp.cpp" line="232" />
-            <source>Port must be greater than 79</source>
-            <translation>端口必须大于79</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletTestUpnp.cpp" line="242" />
-            <source>Invalid IP Address</source>
-            <translation>IP 地址无效</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletTestUpnp.cpp" line="242" />
-            <source>IP Address is invalid</source>
-            <translation>IP 地址无效</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/ClipboardCopyWidget.cpp" line="23" />
-            <source>Copy to clipboard</source>
-            <translation>复制到剪贴板</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/ClipboardCopyWidget.cpp" line="32" />
-            <source>Text Is Empty</source>
-            <translation>文本为空</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/ClipboardCopyWidget.cpp" line="32" />
-            <source>Cannot copy empty text to clipboard</source>
-            <translation>无法将空文本复制到剪贴板</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/ClipboardPasteWidget.cpp" line="22" />
-            <source>Paste from clipboard</source>
-            <translation>从剪贴板粘贴</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/ClipboardPasteWidget.cpp" line="33" />
-            <source>Cannot paste empty clipboard</source>
-            <translation>无法粘贴空剪贴板</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/FileMediaSelectWidget.cpp" line="96" />
-            <source>Cancel scan</source>
-            <translation>取消扫描</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/FileMediaSelectWidget.cpp" line="102" />
-            <source>Scan folder for media</source>
-            <translation>扫描文件夹中的媒体</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/InviteUrlWidget.cpp" line="86" />
-            <source>Pasted invite text</source>
-            <translation>粘贴邀请文本</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/InviteUrlWidget.cpp" line="113" />
-            <source>Private Key Warning</source>
-            <translation>私钥警告</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/InviteUrlWidget.cpp" line="114" />
-            <source>Be sure to get the Network Key for this Network before saving network settings.
-Wrong network key will cause you to be banned as a Hacker</source>
-            <translation>在保存网络设置之前，请务必获取该网络的网络密钥。
-错误的网络密钥将导致您被禁止作为黑客</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/InviteUrlWidget.cpp" line="728" />
-            <source>Cannot create Invite</source>
-            <translation>无法创建邀请</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/InviteUrlWidget.cpp" line="728" />
-            <source>Do NOT create Invite without a open Network Port.
-No one can connect to you directly</source>
-            <translation>请勿在没有开放网络端口的情况下创建邀请。
-没有人可以直接与您联系</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/InviteUrlWidget.cpp" line="746" />
-            <source>Hosting plugin not enabled</source>
-            <translation>未启用托管插件</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/InviteUrlWidget.cpp" line="746" />
-            <source> has permission level of disabled</source>
-            <translation>权限级别为禁用</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletOfferRandSession.cpp" line="179" />
-            <source>No permitted session types are available for this Random Connect offer.</source>
-            <translation>此随机连接优惠没有可用的允许会话类型。</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostClientBase.cpp" line="274" />
-            <source>Sending to: %1</source>
-            <translation>发送至：%1</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostClientBase.cpp" line="293" />
-            <source>Sent to %1 member(s)</source>
-            <translation>发送至 %1 会员</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletHostClientBase.cpp" line="297" />
-            <source>Sent: %1 success, %2 failed</source>
-            <translation>发送：%1 成功，%2 失败</translation>
-        </message>
     </context>
     <context>
         <name>ReplyFileOfferDialog</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityReplyFileOffer.ui" line="26" />
+            <location filename="../resources/Forms/ActivityReplyFileOffer.ui" line="26" />
             <source>Accept File Offer</source>
             <translation>接受文件报价</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityReplyFileOffer.ui" line="145" />
+            <location filename="../resources/Forms/ActivityReplyFileOffer.ui" line="145" />
             <source>Recieve File</source>
             <translation>接收文件</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityReplyFileOffer.ui" line="167" />
+            <location filename="../resources/Forms/ActivityReplyFileOffer.ui" line="167" />
             <source>File:</source>
             <translation>文件：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityReplyFileOffer.ui" line="197" />
+            <location filename="../resources/Forms/ActivityReplyFileOffer.ui" line="197" />
             <source>Message:</source>
             <translation>留言：</translation>
         </message>
@@ -10657,7 +10652,7 @@ Do you want to save your changes?</source>
     <context>
         <name>SearchBarWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/SearchBarWidget.ui" line="65" />
+            <location filename="../resources/Forms/SearchBarWidget.ui" line="65" />
             <source>Search</source>
             <translation>搜索</translation>
         </message>
@@ -10665,42 +10660,42 @@ Do you want to save your changes?</source>
     <context>
         <name>SearchParamsUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/SearchParamsWidget.ui" line="20" />
+            <location filename="../resources/Forms/SearchParamsWidget.ui" line="20" />
             <source>Service</source>
             <translation>服务</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/SearchParamsWidget.ui" line="52" />
+            <location filename="../resources/Forms/SearchParamsWidget.ui" line="52" />
             <source>Start Search</source>
             <translation>开始搜索</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/SearchParamsWidget.ui" line="71" />
+            <location filename="../resources/Forms/SearchParamsWidget.ui" line="71" />
             <source>Stop Search</source>
             <translation>停止搜索</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/SearchParamsWidget.ui" line="82" />
+            <location filename="../resources/Forms/SearchParamsWidget.ui" line="82" />
             <source>Search:</source>
             <translation>搜索：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/SearchParamsWidget.ui" line="100" />
+            <location filename="../resources/Forms/SearchParamsWidget.ui" line="100" />
             <source>Age</source>
             <translation>年龄</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/SearchParamsWidget.ui" line="120" />
+            <location filename="../resources/Forms/SearchParamsWidget.ui" line="120" />
             <source>Content Rating</source>
             <translation>内容分级</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/SearchParamsWidget.ui" line="144" />
+            <location filename="../resources/Forms/SearchParamsWidget.ui" line="144" />
             <source>Gender:</source>
             <translation>性别：</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/SearchParamsWidget.ui" line="161" />
+            <location filename="../resources/Forms/SearchParamsWidget.ui" line="161" />
             <source>Language</source>
             <translation>语言</translation>
         </message>
@@ -10708,17 +10703,17 @@ Do you want to save your changes?</source>
     <context>
         <name>ServiceSettingsWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ServiceSettingsWidget.ui" line="20" />
+            <location filename="../resources/Forms/ServiceSettingsWidget.ui" line="20" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ServiceSettingsWidget.ui" line="78" />
+            <location filename="../resources/Forms/ServiceSettingsWidget.ui" line="78" />
             <source>Service Settings</source>
             <translation>服务设置</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ServiceSettingsWidget.ui" line="116" />
+            <location filename="../resources/Forms/ServiceSettingsWidget.ui" line="116" />
             <source>View Service</source>
             <translation>查看服务</translation>
         </message>
@@ -10726,7 +10721,7 @@ Do you want to save your changes?</source>
     <context>
         <name>SessionOptionsDialog</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivitySessionOptions.ui" line="14" />
+            <location filename="../resources/Forms/ActivitySessionOptions.ui" line="14" />
             <source>Dialog</source>
             <translation>对话</translation>
         </message>
@@ -10734,12 +10729,12 @@ Do you want to save your changes?</source>
     <context>
         <name>SessionWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/SessionWidget.ui" line="20" />
+            <location filename="../resources/Forms/SessionWidget.ui" line="20" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/SessionWidget.ui" line="84" />
+            <location filename="../resources/Forms/SessionWidget.ui" line="84" />
             <source>Create Invite</source>
             <translation>创建邀请</translation>
         </message>
@@ -10747,27 +10742,27 @@ Do you want to save your changes?</source>
     <context>
         <name>ShareFilesDialog</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityAddRemoveLibraryFiles.ui" line="17" />
+            <location filename="../resources/Forms/ActivityAddRemoveLibraryFiles.ui" line="17" />
             <source>Browse Files</source>
             <translation>浏览文件</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityAddRemoveLibraryFiles.ui" line="112" />
+            <location filename="../resources/Forms/ActivityAddRemoveLibraryFiles.ui" line="112" />
             <source>Share Your Files</source>
             <translation>分享您的文件</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityAddRemoveLibraryFiles.ui" line="200" />
+            <location filename="../resources/Forms/ActivityAddRemoveLibraryFiles.ui" line="200" />
             <source>Click A File Lock To Share Or UnShare</source>
             <translation>单击文件锁定以共享或取消共享</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityAddRemoveLibraryFiles.ui" line="221" />
+            <location filename="../resources/Forms/ActivityAddRemoveLibraryFiles.ui" line="221" />
             <source>If Locked then Not Shared.Else If Unlocked then Is Shared</source>
             <translation>如果锁定则不共享。否则如果解锁则共享</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityAddRemoveLibraryFiles.ui" line="325" />
+            <location filename="../resources/Forms/ActivityAddRemoveLibraryFiles.ui" line="325" />
             <source>Move Up A Directory</source>
             <translation>上移目录</translation>
         </message>
@@ -10775,7 +10770,7 @@ Do you want to save your changes?</source>
     <context>
         <name>ShowHelpDialog</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityShowHelp.ui" line="26" />
+            <location filename="../resources/Forms/ActivityShowHelp.ui" line="26" />
             <source>Debug Settings</source>
             <translation>调试设置</translation>
         </message>
@@ -10885,108 +10880,108 @@ Do you want to save your changes?</source>
     <context>
         <name>StoryWidgetClass</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="26" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="26" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="107" />
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="141" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="107" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="141" />
             <source>New File</source>
             <translation>新文件</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="175" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="175" />
             <source>Open File</source>
             <translation>打开文件</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="209" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="209" />
             <source>Save File As..</source>
             <translation>文件另存为..</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="243" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="243" />
             <source>Export to PDF file</source>
             <translation>导出为 PDF 文件</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="322" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="322" />
             <source>Save File</source>
             <translation>保存文件</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="356" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="356" />
             <source>Insert Picture</source>
             <translation>插入图片</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="390" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="390" />
             <source>Undo</source>
             <translation>撤消</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="424" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="424" />
             <source>Redo</source>
             <translation>重做</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="458" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="458" />
             <source>Cut</source>
             <translation>切</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="492" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="492" />
             <source>Copy</source>
             <translation>复制</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="526" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="526" />
             <source>Paste</source>
             <translation>粘贴</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="560" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="560" />
             <source>Print</source>
             <translation>打印</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="639" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="639" />
             <source>Bold</source>
             <translation>大胆</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="676" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="676" />
             <source>Italic</source>
             <translation>斜体</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="713" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="713" />
             <source>Underline</source>
             <translation>下划线</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="750" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="750" />
             <source>Left Justify</source>
             <translation>左对齐</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="784" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="784" />
             <source>Center Text</source>
             <translation>中心文本</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="818" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="818" />
             <source>Right Justify</source>
             <translation>右对齐</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="852" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="852" />
             <source>Text Justify</source>
             <translation>文本对齐</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/StoryWidget.ui" line="886" />
+            <location filename="../resources/Forms/StoryWidget.ui" line="886" />
             <source>Text Color</source>
             <translation>文字颜色</translation>
         </message>
@@ -10994,12 +10989,12 @@ Do you want to save your changes?</source>
     <context>
         <name>TestWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/TestWidget.ui" line="38" />
+            <location filename="../resources/Forms/TestWidget.ui" line="38" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/TestWidget.ui" line="84" />
+            <location filename="../resources/Forms/TestWidget.ui" line="84" />
             <source>Some Text</source>
             <translation>一些文字</translation>
         </message>
@@ -11007,77 +11002,77 @@ Do you want to save your changes?</source>
     <context>
         <name>ThemeWidgetClass</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTheme.ui" line="20" />
+            <location filename="../resources/Forms/AppletTheme.ui" line="20" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTheme.ui" line="83" />
+            <location filename="../resources/Forms/AppletTheme.ui" line="83" />
             <source>Select A Theme</source>
             <translation>选择一个主题</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTheme.ui" line="129" />
+            <location filename="../resources/Forms/AppletTheme.ui" line="129" />
             <source>Push Button Example</source>
             <translation>按钮示例</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTheme.ui" line="151" />
+            <location filename="../resources/Forms/AppletTheme.ui" line="151" />
             <source>Theme Appearence</source>
             <translation>主题外观</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTheme.ui" line="196" />
+            <location filename="../resources/Forms/AppletTheme.ui" line="196" />
             <source>Radio Button 1 Example</source>
             <translation>单选按钮 1 示例</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTheme.ui" line="212" />
+            <location filename="../resources/Forms/AppletTheme.ui" line="212" />
             <source>Radio Button 2 Example</source>
             <translation>单选按钮 2 示例</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTheme.ui" line="225" />
+            <location filename="../resources/Forms/AppletTheme.ui" line="225" />
             <source>Scroll Bar Example</source>
             <translation>滚动条示例</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTheme.ui" line="251" />
+            <location filename="../resources/Forms/AppletTheme.ui" line="251" />
             <source>Slider Example</source>
             <translation>滑块示例</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTheme.ui" line="277" />
+            <location filename="../resources/Forms/AppletTheme.ui" line="277" />
             <source>Progress Bar Example</source>
             <translation>进度条示例</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTheme.ui" line="303" />
+            <location filename="../resources/Forms/AppletTheme.ui" line="303" />
             <source>Combo Box Example</source>
             <translation>组合框示例</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTheme.ui" line="326" />
+            <location filename="../resources/Forms/AppletTheme.ui" line="326" />
             <source>Spin Box Example</source>
             <translation>旋转盒示例</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTheme.ui" line="349" />
+            <location filename="../resources/Forms/AppletTheme.ui" line="349" />
             <source>Check Box Example</source>
             <translation>复选框示例</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTheme.ui" line="356" />
+            <location filename="../resources/Forms/AppletTheme.ui" line="356" />
             <source>Line Edit Example</source>
             <translation>行编辑示例</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTheme.ui" line="399" />
+            <location filename="../resources/Forms/AppletTheme.ui" line="399" />
             <source>Some text example</source>
             <translation>一些文本示例</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/AppletTheme.ui" line="445" />
+            <location filename="../resources/Forms/AppletTheme.ui" line="445" />
             <source>Accept Or Cancel New Theme</source>
             <translation>接受或取消新主题</translation>
         </message>
@@ -11085,12 +11080,12 @@ Do you want to save your changes?</source>
     <context>
         <name>ThumnailChooseWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ThumbnailChooseWidget.ui" line="20" />
+            <location filename="../resources/Forms/ThumbnailChooseWidget.ui" line="20" />
             <source>Thumbnail Choose Widget</source>
             <translation>缩略图选择小部件</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ThumbnailChooseWidget.ui" line="96" />
+            <location filename="../resources/Forms/ThumbnailChooseWidget.ui" line="96" />
             <source>Choose Image</source>
             <translation>选择图片</translation>
         </message>
@@ -11098,27 +11093,27 @@ Do you want to save your changes?</source>
     <context>
         <name>ThumnailEditWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ThumbnailEditWidget.ui" line="20" />
+            <location filename="../resources/Forms/ThumbnailEditWidget.ui" line="20" />
             <source>Thumbnail Edit Widget</source>
             <translation>缩略图编辑小部件</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ThumbnailEditWidget.ui" line="122" />
-            <source>Thumbnail Gallery</source>
-            <translation>缩略图库</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/Forms/ThumbnailEditWidget.ui" line="109" />
+            <location filename="../resources/Forms/ThumbnailEditWidget.ui" line="109" />
             <source>Emoticon Gallery</source>
             <translation>表情图库</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ThumbnailEditWidget.ui" line="154" />
+            <location filename="../resources/Forms/ThumbnailEditWidget.ui" line="122" />
+            <source>Thumbnail Gallery</source>
+            <translation>缩略图库</translation>
+        </message>
+        <message>
+            <location filename="../resources/Forms/ThumbnailEditWidget.ui" line="154" />
             <source>Take Snapshot</source>
             <translation>拍摄快照</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ThumbnailEditWidget.ui" line="167" />
+            <location filename="../resources/Forms/ThumbnailEditWidget.ui" line="167" />
             <source>Browse</source>
             <translation>浏览</translation>
         </message>
@@ -11126,12 +11121,12 @@ Do you want to save your changes?</source>
     <context>
         <name>TimedMessageDlg</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityTimedMessage.ui" line="17" />
+            <location filename="../resources/Forms/ActivityTimedMessage.ui" line="17" />
             <source>Message</source>
             <translation>留言</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityTimedMessage.ui" line="90" />
+            <location filename="../resources/Forms/ActivityTimedMessage.ui" line="90" />
             <source>Message:</source>
             <translation>留言：</translation>
         </message>
@@ -11139,7 +11134,7 @@ Do you want to save your changes?</source>
     <context>
         <name>TitleBarWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/TitleBarWidget.ui" line="297" />
+            <location filename="../resources/Forms/TitleBarWidget.ui" line="297" />
             <source>Test</source>
             <translation>测试</translation>
         </message>
@@ -11147,7 +11142,7 @@ Do you want to save your changes?</source>
     <context>
         <name>TodGameWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/TodGameWidget.ui" line="20" />
+            <location filename="../resources/Forms/TodGameWidget.ui" line="20" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
@@ -11155,34 +11150,34 @@ Do you want to save your changes?</source>
     <context>
         <name>TodStatsUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/TodStatsWidget.ui" line="14" />
+            <location filename="../resources/Forms/TodStatsWidget.ui" line="14" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/TodStatsWidget.ui" line="35" />
+            <location filename="../resources/Forms/TodStatsWidget.ui" line="35" />
             <source>Waiting</source>
             <translation>等待</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/TodStatsWidget.ui" line="55" />
+            <location filename="../resources/Forms/TodStatsWidget.ui" line="55" />
             <source>Truths</source>
             <translation>真相</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/TodStatsWidget.ui" line="74" />
-            <location filename="../nolimitgui/src/Forms/TodStatsWidget.ui" line="143" />
+            <location filename="../resources/Forms/TodStatsWidget.ui" line="74" />
+            <location filename="../resources/Forms/TodStatsWidget.ui" line="143" />
             <source>Accepted</source>
             <translation>已接受</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/TodStatsWidget.ui" line="98" />
-            <location filename="../nolimitgui/src/Forms/TodStatsWidget.ui" line="167" />
+            <location filename="../resources/Forms/TodStatsWidget.ui" line="98" />
+            <location filename="../resources/Forms/TodStatsWidget.ui" line="167" />
             <source>Rejected</source>
             <translation>被拒绝</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/TodStatsWidget.ui" line="124" />
+            <location filename="../resources/Forms/TodStatsWidget.ui" line="124" />
             <source>Dares</source>
             <translation>敢于</translation>
         </message>
@@ -11190,12 +11185,12 @@ Do you want to save your changes?</source>
     <context>
         <name>VidWidgetClass</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/VidWidget.ui" line="26" />
+            <location filename="../resources/Forms/VidWidget.ui" line="26" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/VidWidget.ui" line="567" />
+            <location filename="../resources/Forms/VidWidget.ui" line="567" />
             <source>Motion Sensitivity</source>
             <translation>运动灵敏度</translation>
         </message>
@@ -11219,12 +11214,12 @@ Do you want to save your changes?</source>
     <context>
         <name>WebsiteWidgetUi</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/WebsiteWidget.ui" line="20" />
+            <location filename="../resources/Forms/WebsiteWidget.ui" line="20" />
             <source>Form</source>
             <translation>形式</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/WebsiteWidget.ui" line="71" />
+            <location filename="../resources/Forms/WebsiteWidget.ui" line="71" />
             <source>Click to visit website</source>
             <translation>点击访问网站</translation>
         </message>
@@ -11232,12 +11227,12 @@ Do you want to save your changes?</source>
     <context>
         <name>YesNoMsgBoxClass</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityYesNo.ui" line="17" />
+            <location filename="../resources/Forms/ActivityYesNo.ui" line="17" />
             <source>Menu</source>
             <translation>菜单</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/Forms/ActivityYesNo.ui" line="130" />
+            <location filename="../resources/Forms/ActivityYesNo.ui" line="130" />
             <source>Never Show This Message Again</source>
             <translation>不再显示此消息</translation>
         </message>
@@ -11245,7 +11240,7 @@ Do you want to save your changes?</source>
     <context>
         <name>friendListDlg</name>
         <message>
-            <location filename="../nolimitgui/src/Forms/FriendListDlg.ui" line="14" />
+            <location filename="../resources/Forms/FriendListDlg.ui" line="14" />
             <source>Friend List</source>
             <translation>好友列表</translation>
         </message>
