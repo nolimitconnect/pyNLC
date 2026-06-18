@@ -11,8 +11,9 @@ ROOT_DIR = Path(__file__).resolve().parent.parent
 if str(ROOT_DIR) not in sys.path:
     sys.path.insert(0, str(ROOT_DIR))
 
-from PySide6.QtCore import QObject, QCoreApplication, QStandardPaths, Signal, Slot
-from PySide6.QtWidgets import QApplication, QMessageBox, QSettings
+from PySide6.QtCore import QObject, QCoreApplication, QStandardPaths, Signal, Slot, QSettings
+from PySide6.QtWidgets import QApplication, QMessageBox
+
 
 from py_wrapper import AppSettingsStub, MediaFeatureStub
 from pyNLC.home_window import HomeWindow
@@ -218,7 +219,7 @@ def configure_application_metadata() -> None:
     QCoreApplication.setOrganizationName(APP_ORGANIZATION)
     QCoreApplication.setApplicationName(APP_NAME)
     QCoreApplication.setApplicationVersion(APP_VERSION)
-    QCoreApplication.setApplicationDisplayName(APP_TITLE)
+    QApplication.setApplicationDisplayName(APP_TITLE)
     QCoreApplication.setOrganizationDomain(APP_DOMAIN)
 
 

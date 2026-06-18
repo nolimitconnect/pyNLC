@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING
 
-from PySide6.QtCore import Qt, pyqtSignal
+from PySide6.QtCore import Qt, Signal
 from PySide6.QtWidgets import (
     QWidget,
     QVBoxLayout,
@@ -21,8 +21,8 @@ if TYPE_CHECKING:
 class SettingsApplet(QWidget):
     """Settings applet for theme and language configuration."""
 
-    theme_changed = pyqtSignal(int)  # Emits theme ID
-    language_changed = pyqtSignal(int)  # Emits language ID
+    theme_changed = Signal(int)  # Emits theme ID
+    language_changed = Signal(int)  # Emits language ID
 
     def __init__(self, settings: AppSettingsStub | None = None, parent: QWidget | None = None) -> None:
         super().__init__(parent)

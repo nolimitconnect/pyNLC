@@ -51,6 +51,9 @@ CMakeUserPresets.json
 
 __pycache__/
 *.pyc
+AppResources_rc.py
+*_ui.py
+
 
 
 

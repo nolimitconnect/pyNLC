@@ -5,7 +5,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from pathlib import Path
 
-from PySide6.QtCore import Qt, pyqtSignal
+from PySide6.QtCore import Qt, Signal
 from PySide6.QtWidgets import (
     QWidget,
     QVBoxLayout,
@@ -31,8 +31,8 @@ class AccountInfo:
 class AccountSelector(QWidget):
     """Account selection/creation widget for login flow."""
 
-    account_selected = pyqtSignal(str)  # Emits account name
-    login_completed = pyqtSignal()
+    account_selected = Signal(str)  # Emits account name
+    login_completed = Signal()
 
     def __init__(self, app_data_dir: Path, parent: QWidget | None = None) -> None:
         super().__init__(parent)
