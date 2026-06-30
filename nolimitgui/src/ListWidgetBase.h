@@ -15,7 +15,7 @@
 
 #include <GuiInterface/IDefs.h>
 
-#include <CoreLib/VxTimer.h>
+#include <CoreLib/VxElapseTimer.h>
 #include <CoreLib/VxGUID.h>
 
 #include <QListWidget>
@@ -63,7 +63,7 @@ protected:
     bool                        m_IsIgnoredHostsView{ false };
     EHostType                   m_HostType{ eHostTypeUnknown };
 
-    VxTimer						m_ClickEventTimer; // avoid duplicate clicks
-    VxTimer						m_ListItemClickEventTimer; // avoid duplicate clicks
+    VxElapseTimer						m_ClickEventTimer; // avoid duplicate clicks
+    VxElapseTimer						m_ListItemClickEventTimer; // avoid duplicate clicks
 };
 

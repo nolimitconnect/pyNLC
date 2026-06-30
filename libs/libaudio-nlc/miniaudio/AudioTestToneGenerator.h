@@ -11,7 +11,7 @@
 
 #include <CoreLib/VxAudioFormat.h>
 
-#include <QByteArray>
+#include <vector>
 
 class AudioTestToneGenerator
 {
@@ -36,7 +36,7 @@ private:
     int64_t                     readData( char* data, int64_t len );
 
     int64_t                     m_pos = 0;
-    QByteArray                  m_buffer;
+    std::vector<int16_t>        m_buffer;
     VxAudioFormat               m_AudioFormat;
 };
 

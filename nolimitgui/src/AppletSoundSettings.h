@@ -21,6 +21,8 @@
 #include <GuiInterface/IDefs.h>
 #include <GuiInterface/IAudioDefs.h>
 
+#include <libaudio-nlc/AudioDelayTestCallback.h>
+
 #include <QString>
 #include <QDialog>
 #include <QIODevice>
@@ -32,18 +34,18 @@ namespace Ui {
 }
 QT_END_NAMESPACE
 
-class AudioMgr;
+class GuiAudioMgr;
 class AppSettings;
 
-class AppletSoundSettings : public AppletClientBase, public GuiAudioLevelCallback
+class AppletSoundSettings : public AppletClientBase, public GuiAudioLevelCallback, public AudioDelayTestCallback
 {
 	Q_OBJECT
 public:
 	AppletSoundSettings( AppCommon& app, QWidget* parent = nullptr );
 	virtual ~AppletSoundSettings() override;
 
-    AudioMgr&                   getAudioMgr( void );
-    TestFileWavMgr&             getTestFileMgr( void ) { return m_TestFileMgr; }
+    GuiAudioMgr&                getAudioMgr( void );
+
     AppSettings&                getAppSettings( void );
 
     void                        infoMsg( const char* infoMsg, ... );
@@ -52,15 +54,17 @@ public:
     void                        statusMsg( const char* errMsg, ... );
     void						setStatusLabel( QString strMsg );
 
-    void                        inDeviceChanged( int index );
     void                        updateInAudioDevices( void );
 
-    void                        outDeviceChanged( int index );
     void                        updateOutAudioDevices( void );
 
 signals:
     void                        signalAudioTestMsg( QString audioTestMsg );
     void                        signalInfoMsg( QString& infoStr );
+
+    void                        signalAudioDelayTestStarted( void );
+    void                        signalAudioDelayTestProgress( int delayMs, bool delayValueValid );
+    void                        signalAudioDelayTestFinished( int delayAverageMs, bool delayValueValid );
 
 protected slots:
     void                        slotApplyInDeviceChange( void );
@@ -68,11 +72,7 @@ protected slots:
 
     void                        slotStartTestSoundDelay( void );
     void                        slotEchoDelaySaveButtonClicked( void );
-    void                        slotTestedSoundDelayResult( int echoDelayMs );
-
-    void                        slotAudioTestState( EAudioTestState audioTestState );
-    void                        slotAudioTestMsg( QString audioTestMsg );
-
+ 
     void                        slotGenerateToneCheckBox( int checkedState );
 
     void                        slotPlayTestFileButtonClicked( void );
@@ -97,20 +97,27 @@ protected slots:
     void                        slotAgcEnable( int checkedState );
     void                        slotNoiseSuppressionEnable( int checkedState );
 
+    void                        slotAudioDelayTestStarted( void );
+    void                        slotAudioDelayTestProgress( int delayMs, bool delayValueValid );
+    void                        slotAudioDelayTestFinished( int delayAverageMs, bool delayValueValid );
+
 protected:
     void                        showEvent( QShowEvent* ev ) override;
     void                        hideEvent( QHideEvent* ev ) override;
-
-    void                        showEchoDelayTestResults( void );
 
     void						callbackGuiMicrophoneLevel( int micLevel ) override;
 
     void                        loadUiFromAppSettings( void );
 
+    void                        onAudioDelayTestStarted( void ) override;
+    void                        onAudioDelayTestProgress( int delayMs, bool delayValueValid ) override;
+    void                        onAudioDelayTestFinished( int delayAverageMs, bool delayValueValid ) override;
+
+    bool                        checkMicrophonePermission( void );
+
     //=== vars ===//
     Ui::AppletSoundSettingsUi&  ui;
 
-    TestFileWavMgr              m_TestFileMgr;
     EAudioTestState             m_AudioTestState{ eAudioTestStateNone };
     std::vector<int>            m_EchoDelayResultList;
 };

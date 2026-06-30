@@ -14,7 +14,7 @@
 #endif // defined(TARGET_OS_LINUX)
 
 #include <CoreLib/AssetDefs.h>
-#include <CoreLib/VxTimer.h>
+#include <CoreLib/VxElapseTimer.h>
 
 #include <QListWidget>
 
@@ -58,6 +58,6 @@ protected:
 	P2PEngine&					m_Engine;
     ThumbMgr&					m_ThumbMgr;
 
-	VxTimer						m_ClickEventTimer; // avoid duplicate clicks
+	VxElapseTimer						m_ClickEventTimer; // avoid duplicate clicks
 };
 

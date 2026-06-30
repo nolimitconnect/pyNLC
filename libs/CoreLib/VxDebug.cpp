@@ -30,7 +30,7 @@
 #include <string.h>
 #include <array>
 
-#include "VxTimer.h"
+#include "VxElapseTimer.h"
 
 #define MAX_ERR_MSG_SIZE 16384
 
@@ -233,7 +233,7 @@ uint64_t g_ModuleEnableLoggingFlags = (uint64_t)(
     }
 }
 
-VxTimer g_LogTimer;
+VxElapseTimer g_LogTimer;
 static bool g_enableLogTimer{ false };
 
 //============================================================================

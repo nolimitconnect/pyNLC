@@ -369,7 +369,7 @@ int32_t NetServicesMgr::handleNetCmdIsMyPortOpenReqContent( std::shared_ptr<VxSk
 	}
 
     LogModule( eLogIsPortOpenTest, LOG_ERROR, "handleNetCmdIsMyPortOpenReq: Attempting ping ip %s port %d", strRmtAddr.c_str(), u16Port );
-	VxTimer cmdTimer;
+	VxElapseTimer cmdTimer;
 	std::string retPong;
 	bool pingSuccess = doNetCmdPing( strRmtAddr.c_str(), u16Port, retPong, true );
 	if( false == pingSuccess )
@@ -398,7 +398,7 @@ bool NetServicesMgr::doNetCmdPing( const char* ipAddress, uint16_t u16Port, std:
 	if( INVALID_SOCKET != toClientConn.connectTo( ipAddress, u16Port, addrType, PORT_TEST_CONNECT_TO_CLIENT1_TIMEOUT ) )
 	{        
         double connectTime = GetGmtTimeSec() - pingStart;
-        VxTimer	pingTimer;
+        VxElapseTimer	pingTimer;
 		LogModule( eLogIsPortOpenTest, LOG_INFO, "##P NetServicesMgr::doNetCmdPing connected to %s:%d in %3.3f sec thread 0x%x", ipAddress, u16Port, connectTime, VxGetCurrentThreadId() );
 		bool sndPingResult = sendAndRecievePing( pingTimer, toClientConn, retPong, isClientPing, PONG_RX_TIMEOUT );
         double totalTime = GetGmtTimeSec() - pingStart;
@@ -420,7 +420,7 @@ bool NetServicesMgr::doNetCmdPing( const char* ipAddress, uint16_t u16Port, std:
 }
 
 //============================================================================
-bool NetServicesMgr::sendAndRecievePing( VxTimer& pingTimer, VxSktConnectSimple& toClientConn, std::string& retPong, bool isClientPing, int receiveTimeout )
+bool NetServicesMgr::sendAndRecievePing( VxElapseTimer& pingTimer, VxSktConnectSimple& toClientConn, std::string& retPong, bool isClientPing, int receiveTimeout )
 {	
 	std::string strNetCmd;
 	std::string strPing = "PING";
@@ -612,7 +612,7 @@ ENetCmdError NetServicesMgr::doIsMyPortOpen( std::string& retMyExternalIp, bool 
 	// for logging.. do not bind local ip
 	std::string lclIp = m_Engine.getNetStatusAccum().getLocalIpAddress();
 	
-	VxTimer portTestTimer;
+	VxElapseTimer portTestTimer;
 	m_IsPortOpenMutex.lock();
 
     EFirewallTestType testType = getEngineSettings().getFirewallTestSetting();
@@ -807,7 +807,7 @@ ENetCmdError NetServicesMgr::doIsMyPortOpen( std::string& retMyExternalIp, bool 
 bool NetServicesMgr::testLoobackPing( std::string localIP, uint16_t tcpListenPort )
 {
 	VxSktConnectSimple toClientConn;
-	VxTimer	pingTimer;
+	VxElapseTimer	pingTimer;
 	std::string ipAddress = localIP;
 
 	if( INVALID_SOCKET == toClientConn.connectTo( ipAddress.c_str(), tcpListenPort, VxGetIpAddrType( ipAddress.c_str() ), 2000 ) )
@@ -825,7 +825,7 @@ bool NetServicesMgr::testLoobackPing( std::string localIP, uint16_t tcpListenPor
 }
 
 //============================================================================
-ENetCmdError NetServicesMgr::sendAndRecieveIsMyPortOpen( VxTimer&				portTestTimer,
+ENetCmdError NetServicesMgr::sendAndRecieveIsMyPortOpen( VxElapseTimer&				portTestTimer,
 														VxSktConnectSimple *	netServConn, 
 														int						tcpListenPort,
 														std::string&			retMyExternalIp,
@@ -1005,7 +1005,7 @@ int32_t NetServicesMgr::handleNetCmdQueryHostIdReq( std::shared_ptr<VxSktBase>& 
 }
 
 //============================================================================
-ENetCmdError NetServicesMgr::sendAndRecieveQueryHostId( VxTimer&				testTimer,
+ENetCmdError NetServicesMgr::sendAndRecieveQueryHostId( VxElapseTimer&				testTimer,
 														VxSktConnectSimple *	netServConn,
 														VxGUID&					retHostId,
 														bool					sendMsgToUser )

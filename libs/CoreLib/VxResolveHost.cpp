@@ -13,7 +13,7 @@
 #include <CoreLib/VxParse.h>
 #include <CoreLib/VxGlobals.h>
 #include <CoreLib/VxDebug.h>
-#include <CoreLib/VxTimer.h>
+#include <CoreLib/VxElapseTimer.h>
 
 #include <stdio.h>
 #include <memory.h>

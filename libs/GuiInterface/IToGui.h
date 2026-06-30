@@ -11,7 +11,6 @@
 
 #include "IDefs.h"
 #include <GuiInterface/IAudioInterface.h>
-#include <GuiInterface/IToGui.h>
 
 #include <CoreLib/AppErr.h>
 #include <CoreLib/AssetDefs.h>
@@ -181,4 +180,11 @@ public:
 	virtual void				toGuiNetworkIsTested( bool requiresRelay, std::string& ipAddr, uint16_t ipPort ) = 0;
 
 	virtual void				toGuiAdminAvail( GroupieId& adminGroupieId, bool adminAvail ) = 0;
+
+	///============================================================================
+	/// Additional gui updates
+	///============================================================================
+    
+    virtual void                toGuiUpdateWantMicrophoneCount( int wantMicCnt ) = 0;
+    virtual void                toGuiUpdateWantSpeakerCount( int wantSpeakerCnt ) = 0;
 };

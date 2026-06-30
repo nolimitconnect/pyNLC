@@ -10,12 +10,11 @@
 
 #include "AudioMgr.h"
 
-#include "AppCommon.h"
-#include "GuiParams.h"
 #include "miniaudio/AudioUtils.h"
 
+#include <GuiInterface/IToGui.h>
+
 #include <P2PEngine/P2PEngine.h>
-#include <MediaProcessor/MediaProcessor.h>
 
 #include <CoreLib/VxDebug.h>
 #include <CoreLib/VxGlobals.h>
@@ -69,15 +68,15 @@ void AudioMgr::toGuiWantMicrophoneRecording( EMediaModule mediaModule, bool want
         if( !prevWantMicCnt && wantMicCnt )
         {
             // mic count went from 0 to 1, enable mic
-            emit signalEnableAudioIn( true );
+            enableAudioIn( true );
         }
         else if( prevWantMicCnt && !wantMicCnt )
         {
             // mic count went from 1 to 0, disable mic
-            emit signalEnableAudioIn( false );
+            enableAudioIn( false );
         }
 
-        emit signalUpdateWantMicrophoneCount( static_cast<int>(wantMicCnt) );
+        IToGui::getIToGui().toGuiUpdateWantMicrophoneCount( static_cast<int>(wantMicCnt) );
     }
 }
 
@@ -102,9 +101,9 @@ void AudioMgr::toGuiWantSpeakerOutput( EMediaModule mediaModule, bool wantSpeake
                 requestDeferredAudioOutDisable();
             }
 
-            if( !m_AudioOutDisableTimer->isActive() )
+            if( !m_AudioOutDisableTimer.isActive() )
             {
-                m_AudioOutDisableTimer->start();
+                m_AudioOutDisableTimer.start(10);
             }
 
             if( LogEnabled( eLogVoice ) ) LogModule( eLogVoice, LOG_DEBUG,
@@ -146,15 +145,15 @@ void AudioMgr::toGuiWantSpeakerOutput( EMediaModule mediaModule, bool wantSpeake
         if( !prevWantSpeakerCnt && wantSpeakerCnt )
         {
             // speaker count went from 0 to 1, enable speaker
-            emit signalEnableAudioOut( true );
+            enableAudioOut( true );
         }
         else if( prevWantSpeakerCnt && !wantSpeakerCnt )
         {
             // speaker count went from 1 to 0, disable speaker
-            emit signalEnableAudioOut( false );
+            enableAudioOut( false );
         }
 
-        emit signalUpdateSpeakerOutputCount( static_cast<int>(wantSpeakerCnt) );
+        IToGui::getIToGui().toGuiUpdateWantSpeakerCount( static_cast<int>(wantSpeakerCnt) );
     }
 
     if( LogEnabled( eLogVoice ) ) LogModule( eLogVoice, LOG_DEBUG, "AudioMgr::%s want speaker? %d module %s cnt %d", __func__, wantSpeakerOutput, DescribeMediaModule( mediaModule ), wantSpeakerCnt );

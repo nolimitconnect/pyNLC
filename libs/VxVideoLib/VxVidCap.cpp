@@ -153,8 +153,8 @@ bool VxVidCap::stopPreview( int iVidSrcNum )
 	return false;
 }
 
-//static VxTimer g_oSnapshotTimer;
-//static VxTimer g_oIntervalTimer;
+//static VxElapseTimer g_oSnapshotTimer;
+//static VxElapseTimer g_oIntervalTimer;
 //============================================================================
 //! take snap shot
 // NOTE 1: caller must delete the returned buffer

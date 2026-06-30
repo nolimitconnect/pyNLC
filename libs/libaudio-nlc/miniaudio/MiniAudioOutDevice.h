@@ -13,37 +13,28 @@
 
 #include <inttypes.h>
 
-#include <QObject>
-
 class AudioMgr;
-class MiniAudioInDevice : public QObject
+class MiniAudioOutDevice
 {
-	Q_OBJECT
 public:
-    MiniAudioInDevice( AudioMgr& maMgr );
-	~MiniAudioInDevice() = default;
+	MiniAudioOutDevice( AudioMgr& maMgr );
+	~MiniAudioOutDevice() = default;
 
-	virtual bool				initializeAudioInDevice( int& deviceIndex, int preferredRate, int& retActualRate );
+	virtual bool				initializeAudioOutDevice( int& deviceIndex, int preferredRate, int& retActualRate );
 
-	virtual bool				startAudioInDevice( void );
-	virtual void				stopAudioInDevice( void );
+	virtual bool				startAudioOutDevice( void );
+	virtual void				stopAudioOutDevice( void );
 
-	virtual int					callbackAudioWrite( int16_t* pcmData, int lenBytes ) = 0;
-
-signals:
-    void                        signalShowErrorFromThread( QString title, QString body );
-
-protected slots:
-    void                        slotShowErrorFromThread( QString title, QString body );
+	virtual int					callbackAudioRead( int16_t* pcmData, int lenBytes ) = 0;
 
 protected:
 	bool						initalizeDevice( int deviceIndex, int sampleRate );
 
-    AudioMgr&					m_AudioIoMgr;
+	AudioMgr&					m_AudioIoMgr;
 
 	ma_context					m_MaContext;
-	ma_device_info*				m_MaMicDeviceInfos{ nullptr };
-	ma_uint32					m_MaMicDeviceCount{ 0 };
+	ma_device_info*				m_MaSpeakerDeviceInfos{ nullptr };
+	ma_uint32					m_MaSpeakerDeviceCount{ 0 };
 	ma_device_config			m_MaDeviceConfig;
 	ma_device					m_MaDevice;
 

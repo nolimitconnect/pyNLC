@@ -9,12 +9,7 @@
 // https://nolimitconnect.com
 //============================================================================
 
-#include <QWidget>
-
 #include "TestFileWav.h"
-
-#include <QString>
-#include <QStringList>
 
 #include <vector>   
 
@@ -24,15 +19,17 @@ public:
     TestFileWavMgr() = default;
     ~TestFileWavMgr() = default;
 
-    void                        testFileMgrStartup( void );
+    static TestFileWavMgr&      getInstance( void )                         { static TestFileWavMgr instance; return instance; }
 
-    QStringList                 getTestFileList( void ) const { return m_TestFilesList; }
+    void                        addTestFile( std::string testFileWav );
+
+    std::vector<std::string>    getTestFileList( void ) const { return m_TestFilesList; }
     const std::vector<TestFileWav>& getTestFileWavList( void ) const { return m_TestFileWavList; }
     bool                        indexIsValid( int index ) const { return index >= 0 && index < m_TestFileWavList.size(); }
     TestFileWav&                getTestFileWav( int index ) { return m_TestFileWavList[index]; }
 
 
 protected:
-    QStringList                 m_TestFilesList;
+    std::vector<std::string>    m_TestFilesList;
     std::vector<TestFileWav>    m_TestFileWavList;
 };

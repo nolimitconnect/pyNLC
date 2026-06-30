@@ -13,13 +13,13 @@
 
 #include <CoreLib/VxAudioFormat.h>
 
-#include <QtEndian>
-
 #include <CoreLib/IsBigEndianCpu.h>
 #include <CoreLib/VxDebug.h>
 
+#include <cmath>
+
 //=============================================================================
-qint64 AudioUtils::audioDurationUs( const VxAudioFormat& format, qint64 bytes )
+int64_t AudioUtils::audioDurationUs( const VxAudioFormat& format, int64_t bytes )
 {
     return (bytes * 1000000) /
         (format.sampleRate() * format.channelCount() * format.bytesPerSample());
@@ -46,16 +46,16 @@ int64_t AudioUtils::audioDurationUs( int sampleRate, int sampleCnt )
 }
 
 //=============================================================================
-qint64 AudioUtils::audioLength(const VxAudioFormat &format, qint64 microSeconds)
+int64_t AudioUtils::audioLength(const VxAudioFormat &format, int64_t microSeconds)
 {
-    qint64 result = (format.sampleRate() * format.channelCount() * format.bytesPerSample())
+    int64_t result = (format.sampleRate() * format.channelCount() * format.bytesPerSample())
         * microSeconds / 1000000;
     result -= result % (format.channelCount() * format.bytesPerSample() * 8);
     return result;
 }
 
 //=============================================================================
-int AudioUtils::audioSamplesRequiredForGivenMs( const VxAudioFormat& format, qint64 milliSeconds )
+int AudioUtils::audioSamplesRequiredForGivenMs( const VxAudioFormat& format, int64_t milliSeconds )
 {
     return (int)((format.sampleRate() * format.channelCount()) * milliSeconds / 1000);
 }
@@ -67,58 +67,9 @@ int AudioUtils::audioSamplesRequiredForGivenMs( int sampleRate, int milliSeconds
 }
 
 //=============================================================================
-qreal AudioUtils::nyquistFrequency(const VxAudioFormat &format)
+double AudioUtils::nyquistFrequency(const VxAudioFormat &format)
 {
     return format.sampleRate() / 2;
-}
-
-//=============================================================================
-QString AudioUtils::formatToString(const VxAudioFormat &format)
-{
-    QString result;
-
-    vx_assert( format.sampleFormat() == VxAudioFormat::Int16 );
-
-    const QString formatEndian = !IsBigEndianCpu()
-        ? QString("LE") : QString("BE");
-    QString formatType;
-
-    switch (format.sampleFormat()) {
-    case VxAudioFormat::Int16:
-    case VxAudioFormat::Int32:
-        formatType = "signed";
-        break;
-    case VxAudioFormat::UInt8:
-        formatType = "unsigned";
-        break;
-    case VxAudioFormat::Float:
-        formatType = "float";
-        break;
-    case VxAudioFormat::Unknown:
-    default:
-        formatType = "unknown";
-        break;
-    }
-
-    QString formatChannels = QString("%1 channels").arg(format.channelCount());
-    switch (format.channelCount()) {
-    case 1:
-        formatChannels = "mono";
-        break;
-    case 2:
-        formatChannels = "stereo";
-        break;
-    }
-
-    result = QString("%1 Hz %2 bytes %3 %4 %5")
-        .arg(format.sampleRate())
-        .arg(format.bytesPerSample())
-        .arg(formatType)
-        .arg(formatEndian)
-        .arg(formatChannels);
-
-
-    return result;
 }
 
 //=============================================================================
@@ -133,13 +84,13 @@ bool AudioUtils::isPCMS16LE(const VxAudioFormat &format)
     return isPCM(format) && !IsBigEndianCpu();
 }
 
-const qint16  PCMS16MaxValue     =  32767;
-const quint16 PCMS16MaxAmplitude =  32768; // because minimum is -32768
+const int16_t  PCMS16MaxValue     =  32767;
+const uint16_t PCMS16MaxAmplitude =  32768; // because minimum is -32768
 
 //=============================================================================
-qreal AudioUtils::pcmToReal(qint16 pcm)
+double AudioUtils::pcmToReal(int16_t pcm)
 {
-    return qreal(pcm) / PCMS16MaxAmplitude;
+    return double(pcm) / PCMS16MaxAmplitude;
 }
 
 //=============================================================================
@@ -149,7 +100,7 @@ float AudioUtils::pcmToFloat( int16_t pcm )
 }
 
 //=============================================================================
-qint16 AudioUtils::realToPcm(qreal real)
+int16_t AudioUtils::realToPcm(double real)
 {
     return real * PCMS16MaxValue;
 }
@@ -317,20 +268,6 @@ void AudioUtils::dnsamplePcmAudio( int16_t* srcSamples, int resampledCnt, int dn
     else
     {
         memcpy( destSamples, srcSamples, resampledCnt * AUDIO_BYTES_PER_SAMPLE );
-    }
-}
-
-//============================================================================
-void AudioUtils::applyPcmVolume( float volume, uint8_t *data, int datalen )
-{
-    volume = volume / 100;
-    int samples = datalen / 2;
-    float mult = pow( 10.0, 0.05*volume );
-
-    for( int i = 0; i < samples; i++ ) 
-    {
-        qint16 val = qFromLittleEndian<qint16>( data + i * 2 )*mult;
-        qToLittleEndian<qint16>( val, data + i * 2 );
     }
 }
 

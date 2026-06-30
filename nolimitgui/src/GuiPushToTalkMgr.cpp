@@ -17,7 +17,7 @@
 #include "AppCommon.h"
 #include "GuiUserMgr.h"
 
-#include "AudioMgr.h"
+#include "GuiAudioMgr.h"
 #include "SoundFxMgr.h"
 
 #include <PushToTalk/PushToTalkMgr.h>

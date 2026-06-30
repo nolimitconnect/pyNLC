@@ -3995,17 +3995,83 @@ File Type: </source>
             <translation>Pemutaran Audio Gagal</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="1244" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="773" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="777" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="781" />
+            <source>Sound In Device Error</source>
+            <translation>Suara Dalam Kesalahan Perangkat</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="774" />
+            <source>No Microphone Devices Available</source>
+            <translation>Tidak Ada Perangkat Mikrofon yang Tersedia</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="778" />
+            <source>Microphone Device Out Of Range</source>
+            <translation>Perangkat Mikrofon Di Luar Jangkauan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="782" />
+            <source>Failed to Initialize Microphone Device</source>
+            <translation>Gagal Menginisialisasi Perangkat Mikrofon</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="785" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="789" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="793" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="797" />
+            <source>Sound Out Device Error</source>
+            <translation>Kesalahan Perangkat Keluaran Suara</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="786" />
+            <source>No Speaker Devices Available</source>
+            <translation>Tidak Ada Perangkat Speaker yang Tersedia</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="790" />
+            <source>Speaker Device Out Of Range</source>
+            <translation>Perangkat Speaker Di Luar Jangkauan</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="794" />
+            <source>Failed to Initialize Speaker Device</source>
+            <translation>Gagal Menginisialisasi Perangkat Speaker</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="798" />
+            <source>Speaker Device Invalid Format</source>
+            <translation>Format Perangkat Speaker Tidak Valid</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="802" />
+            <source>Echo Delay Test Error</source>
+            <translation>Kesalahan Tes Penundaan Gema</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="803" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="809" />
+            <source>Echo Delay Results (ms) </source>
+            <translation>Hasil Penundaan Gema (ms) </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="808" />
+            <source>Echo Delay Test Success</source>
+            <translation>Tes Penundaan Gema Berhasil</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="1285" />
             <source>Close Application</source>
             <translation>Tutup Aplikasi</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="1245" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="1286" />
             <source>Are you sure you want to exit?</source>
             <translation>Apakah Anda yakin ingin keluar?</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="1351" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="1392" />
             <location filename="../nolimitgui/src/ChatEntryWidget.cpp" line="363" />
             <source>Application Error</source>
             <translation>Kesalahan Aplikasi</translation>
@@ -4842,8 +4908,8 @@ File Type: </source>
         <message>
             <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="217" />
             <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="265" />
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="264" />
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="289" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="271" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="296" />
             <source> failed to initialize</source>
             <translation>gagal diinisialisasi</translation>
         </message>
@@ -6875,150 +6941,139 @@ Jika Kunci Jaringan salah, Anda mungkin akan diblokir sebagai peretas.</translat
             <translation>Suhu?</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="111" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="115" />
             <source>Speaker Device Unavailable</source>
             <translation>Perangkat Speaker Tidak Tersedia</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="111" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="115" />
             <source>No speaker device is available to enable</source>
             <translation>Tidak ada perangkat speaker yang tersedia untuk diaktifkan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="117" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="121" />
             <source>Microphone Device Unavailable</source>
             <translation>Perangkat Mikrofon Tidak Tersedia</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="117" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="121" />
             <source>No microphone device is available to enable</source>
             <translation>Tidak ada perangkat mikrofon yang tersedia untuk diaktifkan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="259" />
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="264" />
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="270" />
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioIn.cpp" line="63" />
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioIn.cpp" line="69" />
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioIn.cpp" line="101" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="137" />
+            <source>Microphone Permission Denied</source>
+            <translation>Izin Mikrofon Ditolak</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="137" />
+            <source>The application does not have permission to access the microphone</source>
+            <translation>Aplikasi tidak memiliki izin untuk mengakses mikrofon</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="266" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="271" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="277" />
             <source>Sound In Device</source>
             <translation>Suara di Perangkat</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="259" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="266" />
             <source> device is saved as preferred Sound In Device</source>
             <translation> perangkat disimpan sebagai Suara Dalam Perangkat pilihan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="270" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="277" />
             <source>No Sound In Device Is Available</source>
             <translation>Tidak Ada Suara di Perangkat yang Tersedia</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="284" />
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="289" />
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="295" />
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioOut.cpp" line="60" />
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioOut.cpp" line="66" />
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioOut.cpp" line="73" />
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioOut.cpp" line="104" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="291" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="296" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="302" />
             <source>Sound Out Device</source>
             <translation>Perangkat Keluaran Suara</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="284" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="291" />
             <source> device is saved as preferred Sound Out Device</source>
             <translation> perangkat disimpan sebagai Perangkat Sound Out pilihan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="295" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="302" />
             <source>No Sound Out Device Is Available</source>
             <translation>Tidak Ada Perangkat Keluaran Suara yang Tersedia</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="310" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="318" />
             <source>Echo delay test is running</source>
             <translation>Tes penundaan gema sedang berjalan</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="310" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="318" />
             <source>Echo delay test can not be run until the previous test finishes</source>
             <translation>Tes penundaan gema tidak dapat dijalankan sampai tes sebelumnya selesai</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="321" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="329" />
             <source>Echo Delay Value Invalid</source>
             <translation>Nilai Penundaan Gema Tidak Valid</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="321" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="329" />
             <source>Echo Delay value must be between 40 and 500 milliseconds</source>
             <translation>Nilai Echo Delay harus antara 40 dan 500 milidetik</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="327" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="335" />
             <source>Echo Delay Value Save</source>
             <translation>Penghematan Nilai Penundaan Gema</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="327" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="335" />
             <source>Echo Delay value has been saved for use by Echo Cancelation</source>
             <translation>Nilai Penundaan Gema telah disimpan untuk digunakan oleh Pembatalan Gema</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="372" />
-            <source>Echo Delays </source>
-            <translation>Penundaan Gema </translation>
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="363" />
+            <source>No test file is selected or test file is invalid</source>
+            <translation>Tidak ada file pengujian yang dipilih atau file pengujian tidak valid</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="385" />
-            <source>, </source>
-            <translation>, </translation>
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="590" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="596" />
+            <source>Delay: %1</source>
+            <translation>Penundaan: %1</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="399" />
-            <source>
-Delay Test Is Valid
-</source>
-            <translation>Tes Penundaan Valid</translation>
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="595" />
+            <source>Sound Delay Test Value Valid </source>
+            <translation>Nilai Uji Keterlambatan Suara Valid </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="399" />
-            <source>
-Delay Test Is Invalid
-</source>
-            <translation>Tes Penundaan Tidak Valid</translation>
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="606" />
+            <source>You can enter the measured delay. Average Delay: %1 ms</source>
+            <translation>Anda dapat memasukkan penundaan terukur. Penundaan Rata-rata: %1 ms</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="403" />
-            <source>If you are having echo issues you may want to enter value </source>
-            <translation>Jika Anda mengalami masalah gema, Anda mungkin ingin memasukkan nilai </translation>
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="607" />
+            <source>Audio Delay Test Success</source>
+            <translation>Tes Penundaan Audio Berhasil</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="405" />
-            <source> into  Echo delay ms field and click Save Echo Delay To Echo Canceller button
-</source>
-            <translation> ke dalam kolom Echo delay ms dan klik tombol Save Echo Delay To Echo Canceller</translation>
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="611" />
+            <source>Try turning up the volume or placing microphone closer to speaker</source>
+            <translation>Coba naikkan volume atau dekatkan mikrofon ke speaker</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="407" />
-            <source>Echo Delay Test Is Valid</source>
-            <translation>Tes Penundaan Gema Valid</translation>
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="612" />
+            <source>Audio Delay Test Failed</source>
+            <translation>Tes Penundaan Audio Gagal</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="411" />
-            <source>Echo Delay Test Is Invalid. Check microphone and speaker. Try turning up the volume or placing microphone closer to speaker</source>
-            <translation>Tes Penundaan Gema Tidak Valid. Periksa mikrofon dan speaker. Coba naikkan volume atau dekatkan mikrofon ke speaker</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="440" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="363" />
             <source>Play Test File</source>
             <translation>Putar File Uji</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="440" />
-            <source>No test file is selected or test file index is invalid</source>
-            <translation>Tidak ada file pengujian yang dipilih atau indeks file pengujian tidak valid</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletTestAndDebug.cpp" line="461" />
@@ -7176,24 +7231,19 @@ Delay Test Is Invalid
             <translation>Tidak menghapus akun terakhir</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AudioMgrDelayTest.cpp" line="155" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="579" />
             <source>Sound Delay Not Detected. Check speaker volume and that microphone is on </source>
             <translation>Penundaan Suara Tidak Terdeteksi. Periksa volume speaker dan mikrofon aktif </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AudioMgrDelayTest.cpp" line="159" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="583" />
             <source>Sound Delay too short.. probably noise </source>
             <translation>Penundaan Suara terlalu pendek.. mungkin berisik </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AudioMgrDelayTest.cpp" line="163" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="587" />
             <source>Sound Delay too long.. probably mic level low </source>
             <translation>Penundaan Suara terlalu lama.. mungkin level mikrofon rendah </translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AudioMgrDelayTest.cpp" line="167" />
-            <source>Sound Delay is </source>
-            <translation>Penundaan Suara adalah </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AvatarBar.cpp" line="63" />
@@ -10298,41 +10348,6 @@ Tidak ada yang dapat terhubung dengan Anda secara langsung</translation>
             <location filename="../nolimitgui/src/InviteUrlWidget.cpp" line="746" />
             <source> has permission level of disabled</source>
             <translation> memiliki tingkat izin dinonaktifkan</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioIn.cpp" line="63" />
-            <source>No Sound Input Devices Avalable</source>
-            <translation>Tidak Ada Perangkat Input Suara yang Tersedia</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioIn.cpp" line="69" />
-            <source>Sound Input Device Index Out Of Range. Will Use Default Device</source>
-            <translation>Indeks Perangkat Input Suara Di Luar Jangkauan. Akan Menggunakan Perangkat Default</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioIn.cpp" line="101" />
-            <source>Could not initialize sound in device </source>
-            <translation>Tidak dapat menginisialisasi suara di perangkat </translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioOut.cpp" line="60" />
-            <source>No Sound Output Devices Avalable</source>
-            <translation>Tidak Ada Perangkat Output Suara yang Tersedia</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioOut.cpp" line="66" />
-            <source>Sound Output Device Index Out Of Range. Will Use Default Device</source>
-            <translation>Indeks Perangkat Output Suara Di Luar Jangkauan. Akan Menggunakan Perangkat Default</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioOut.cpp" line="73" />
-            <source>Sound Output Device Invalid Format</source>
-            <translation>Format Perangkat Output Suara Tidak Valid</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioOut.cpp" line="104" />
-            <source>Could not initialize sound out device </source>
-            <translation>Tidak dapat menginisialisasi perangkat keluaran suara </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/MultiSessionState.cpp" line="378" />

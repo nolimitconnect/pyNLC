@@ -11,15 +11,12 @@
 #include "AudioMgr.h"
 #include "MiniAudioIn.h"
 #include "AudioMgr.h"
-
 #include "AudioUtils.h"
+
+#include <GuiInterface/IToGui.h>
 
 #include <CoreLib/VxDebug.h>
 #include <CoreLib/VxGlobals.h>
-
-#include <QDebug>
-#include <QtEndian>
-#include <QMessageBox>
 
 #include <math.h>
 
@@ -60,13 +57,13 @@ bool MiniAudioIn::soundInDeviceChanged( int deviceIndex )
     int deviceCount = m_AudioIoMgr.getAudioInDeviceCount();
     if( !deviceCount )
     {
-        emit signalShowErrorFromThread( QObject::tr( "Sound In Device" ), QObject::tr( "No Sound Input Devices Avalable" ) );
+        IToGui::getIToGui().toGuiAppPopupErr( eAppPopupErrNoMicDevices, "" );
         return false;
     }
 
     if( deviceIndex >= deviceCount )
     {
-        emit signalShowErrorFromThread( QObject::tr( "Sound In Device" ), QObject::tr( "Sound Input Device Index Out Of Range. Will Use Default Device" ) );
+        IToGui::getIToGui().toGuiAppPopupErr( eAppPopupErrMicDeviceOutOfRange, "" );
         deviceIndex = 0;
     }
 
@@ -98,7 +95,7 @@ bool MiniAudioIn::soundInDeviceChanged( int deviceIndex )
     }
     else
     {
-        emit signalShowErrorFromThread( QObject::tr( "Sound In Device" ), QObject::tr( "Could not initialize sound in device " ) + m_AudioIoMgr.getAudioInDeviceDesc( deviceIndex ).c_str() );
+        IToGui::getIToGui().toGuiAppPopupErr( eAppPopupErrMicDeviceFailedToInitialize, "" );
     }
 
     return m_initialized;

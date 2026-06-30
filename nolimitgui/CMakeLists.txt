@@ -240,11 +240,8 @@ list(APPEND nlc_HEADERS
     src/AssetBaseWidget.h
     src/AvatarBar.h
 
-    src/AudioMgr.h
     src/AudioInWaveformWidget.h
     src/AudioOutWaveformWidget.h
-
-    src/AudioMixerMgr.h
 
     src/BottomBarWidget.h
     src/CamTitleBarPreview.h
@@ -275,6 +272,8 @@ list(APPEND nlc_HEADERS
 
     src/FriendListEntryWidget.h
     src/FriendListWidget.h
+
+    src/GuiAudioMgr.h   
     src/GuiConnectIdListMgr.h
     src/GuiConnectIdListCallback.h
     src/GuiFileXferMgr.h
@@ -410,24 +409,9 @@ list(APPEND nlc_HEADERS
     src/SessionWidget.h
     src/StoryWidget.h
 
-    src/miniaudio/AudioFrameAecBuffer.h
-    src/miniaudio/AudioMixerBuf.h
-    src/miniaudio/AudioMixerInterface.h
-    src/miniaudio/AudioSampleBuf.h
-    src/miniaudio/AudioTestToneGenerator.h
-    src/miniaudio/AudioUtils.h
-
-    src/miniaudio/MiniAudioDevices.h
-    src/miniaudio/MiniAudioIn.h
-    src/miniaudio/MiniAudioInDevice.h
-    src/miniaudio/MiniAudioOut.h
-    src/miniaudio/MiniAudioOutDevice.h
-
-    src/miniaudio/TestFileWav.h
-    src/miniaudio/TestFileWavMgr.h
-
     src/SoundDefs.h
     src/SoundFxMgr.h
+
     src/TestWidget.h
     src/TextChatLogic.h
     src/ThumbnailEditWidget.h
@@ -683,14 +667,6 @@ list(APPEND nlc_SOURCES
     src/AssetVoiceWidget.cpp
     src/AvatarBar.cpp
 
-    src/AudioMgr.cpp
-    src/AudioMgrDelayTest.cpp
-    src/AudioMgrIn.cpp
-    src/AudioMgrOut.cpp
-    src/AudioMgrRequests.cpp
-
-    src/AudioMixerMgr.cpp
-
     src/AudioInWaveformWidget.cpp
     src/AudioOutWaveformWidget.cpp
 
@@ -721,6 +697,7 @@ list(APPEND nlc_SOURCES
     src/FriendListDelegate.cpp
     src/FriendListWidget.cpp
 
+    src/GuiAudioMgr.cpp
     src/GuiConnectIdListMgr.cpp
     src/GuiFileXferMgr.cpp
     src/GuiFileXferSession.cpp
@@ -815,21 +792,6 @@ list(APPEND nlc_SOURCES
     src/LogMgr.cpp
     src/LogWidget.cpp
     src/LogoRenderer.cpp
-
-    src/miniaudio/AudioMixerBuf.cpp
-    src/miniaudio/AudioSampleBuf.cpp
-    src/miniaudio/AudioTestToneGenerator.cpp
-    src/miniaudio/AudioUtils.cpp
-
-    src/miniaudio/MiniAudioDevices.cpp
-    src/miniaudio/MiniAudioIn.cpp
-    src/miniaudio/MiniAudioInDevice.cpp
-    src/miniaudio/MiniAudioOut.cpp
-    src/miniaudio/MiniAudioOutDevice.cpp
-    src/miniaudio/miniaudio-link.cpp
-
-    src/miniaudio/TestFileWav.cpp
-    src/miniaudio/TestFileWavMgr.cpp
 
     src/MessengerPage.cpp
     src/MultiSessionState.cpp
@@ -1258,6 +1220,7 @@ target_include_directories(nolimitconnect PUBLIC
     src
     ../nolimitlib
     ../libs
+    ../libs/libaudio-nlc
     ../libs/libplayer-nlc/xbmc
     ../libs/ffmpeg
     ../libs/libechocancel
@@ -1281,6 +1244,7 @@ target_link_libraries(nolimitconnect
     Qt::Widgets
 
     # static libraries
+    audio-nlc
     player-nlc
     avdevice
     avfilter

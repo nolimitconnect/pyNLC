@@ -3995,17 +3995,83 @@ File Type: </source>
             <translation>Audiowiedergabe fehlgeschlagen</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="1244" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="773" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="777" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="781" />
+            <source>Sound In Device Error</source>
+            <translation>Ton im Gerätefehler</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="774" />
+            <source>No Microphone Devices Available</source>
+            <translation>Keine Mikrofongeräte verfügbar</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="778" />
+            <source>Microphone Device Out Of Range</source>
+            <translation>Mikrofongerät außerhalb der Reichweite</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="782" />
+            <source>Failed to Initialize Microphone Device</source>
+            <translation>Das Mikrofongerät konnte nicht initialisiert werden</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="785" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="789" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="793" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="797" />
+            <source>Sound Out Device Error</source>
+            <translation>Fehler am Tonausgabegerät</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="786" />
+            <source>No Speaker Devices Available</source>
+            <translation>Keine Lautsprechergeräte verfügbar</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="790" />
+            <source>Speaker Device Out Of Range</source>
+            <translation>Lautsprechergerät außerhalb der Reichweite</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="794" />
+            <source>Failed to Initialize Speaker Device</source>
+            <translation>Lautsprechergerät konnte nicht initialisiert werden</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="798" />
+            <source>Speaker Device Invalid Format</source>
+            <translation>Ungültiges Format des Lautsprechergeräts</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="802" />
+            <source>Echo Delay Test Error</source>
+            <translation>Fehler beim Echoverzögerungstest</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="803" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="809" />
+            <source>Echo Delay Results (ms) </source>
+            <translation>Echoverzögerungsergebnisse (ms) </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="808" />
+            <source>Echo Delay Test Success</source>
+            <translation>Echoverzögerungstest erfolgreich</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="1285" />
             <source>Close Application</source>
             <translation>Anwendung schließen</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="1245" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="1286" />
             <source>Are you sure you want to exit?</source>
             <translation>Sind Sie sicher, dass Sie den Vorgang beenden möchten?</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="1351" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="1392" />
             <location filename="../nolimitgui/src/ChatEntryWidget.cpp" line="363" />
             <source>Application Error</source>
             <translation>Anwendungsfehler</translation>
@@ -4842,8 +4908,8 @@ File Type: </source>
         <message>
             <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="217" />
             <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="265" />
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="264" />
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="289" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="271" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="296" />
             <source> failed to initialize</source>
             <translation>Initialisierung fehlgeschlagen</translation>
         </message>
@@ -6875,150 +6941,139 @@ Wenn der Netzwerkschlüssel falsch ist, werden Sie wahrscheinlich als Hacker ges
             <translation>Temperatur?</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="111" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="115" />
             <source>Speaker Device Unavailable</source>
             <translation>Lautsprechergerät nicht verfügbar</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="111" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="115" />
             <source>No speaker device is available to enable</source>
             <translation>Es ist kein Lautsprechergerät zum Aktivieren verfügbar</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="117" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="121" />
             <source>Microphone Device Unavailable</source>
             <translation>Mikrofongerät nicht verfügbar</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="117" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="121" />
             <source>No microphone device is available to enable</source>
             <translation>Es ist kein Mikrofongerät zum Aktivieren verfügbar</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="259" />
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="264" />
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="270" />
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioIn.cpp" line="63" />
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioIn.cpp" line="69" />
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioIn.cpp" line="101" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="137" />
+            <source>Microphone Permission Denied</source>
+            <translation>Mikrofonberechtigung verweigert</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="137" />
+            <source>The application does not have permission to access the microphone</source>
+            <translation>Die Anwendung verfügt nicht über die Berechtigung, auf das Mikrofon zuzugreifen</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="266" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="271" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="277" />
             <source>Sound In Device</source>
             <translation>Ton im Gerät</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="259" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="266" />
             <source> device is saved as preferred Sound In Device</source>
             <translation> Das Gerät wird als bevorzugtes Sound-In-Gerät gespeichert</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="270" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="277" />
             <source>No Sound In Device Is Available</source>
             <translation>Es ist kein Ton im Gerät verfügbar</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="284" />
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="289" />
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="295" />
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioOut.cpp" line="60" />
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioOut.cpp" line="66" />
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioOut.cpp" line="73" />
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioOut.cpp" line="104" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="291" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="296" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="302" />
             <source>Sound Out Device</source>
             <translation>Sound-Out-Gerät</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="284" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="291" />
             <source> device is saved as preferred Sound Out Device</source>
             <translation> Das Gerät wird als bevorzugtes Tonausgabegerät gespeichert</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="295" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="302" />
             <source>No Sound Out Device Is Available</source>
             <translation>Es ist kein Tonausgabegerät verfügbar</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="310" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="318" />
             <source>Echo delay test is running</source>
             <translation>Der Echoverzögerungstest läuft</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="310" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="318" />
             <source>Echo delay test can not be run until the previous test finishes</source>
             <translation>Der Echoverzögerungstest kann erst ausgeführt werden, wenn der vorherige Test abgeschlossen ist</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="321" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="329" />
             <source>Echo Delay Value Invalid</source>
             <translation>Echoverzögerungswert ungültig</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="321" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="329" />
             <source>Echo Delay value must be between 40 and 500 milliseconds</source>
             <translation>Der Wert der Echoverzögerung muss zwischen 40 und 500 Millisekunden liegen</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="327" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="335" />
             <source>Echo Delay Value Save</source>
             <translation>Echoverzögerungswert speichern</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="327" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="335" />
             <source>Echo Delay value has been saved for use by Echo Cancelation</source>
             <translation>Der Wert für die Echoverzögerung wurde zur Verwendung durch die Echounterdrückung gespeichert</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="372" />
-            <source>Echo Delays </source>
-            <translation>Echoverzögerungen </translation>
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="363" />
+            <source>No test file is selected or test file is invalid</source>
+            <translation>Es ist keine Testdatei ausgewählt oder die Testdatei ist ungültig</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="385" />
-            <source>, </source>
-            <translation>, </translation>
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="590" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="596" />
+            <source>Delay: %1</source>
+            <translation>Verzögerung: %1</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="399" />
-            <source>
-Delay Test Is Valid
-</source>
-            <translation>Verzögerungstest ist gültig</translation>
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="595" />
+            <source>Sound Delay Test Value Valid </source>
+            <translation>Wert des Tonverzögerungstests gültig </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="399" />
-            <source>
-Delay Test Is Invalid
-</source>
-            <translation>Verzögerungstest ist ungültig</translation>
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="606" />
+            <source>You can enter the measured delay. Average Delay: %1 ms</source>
+            <translation>Sie können die gemessene Verzögerung eingeben. Durchschnittliche Verzögerung: %1 ms</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="403" />
-            <source>If you are having echo issues you may want to enter value </source>
-            <translation>Wenn Sie Echoprobleme haben, können Sie einen Wert eingeben </translation>
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="607" />
+            <source>Audio Delay Test Success</source>
+            <translation>Erfolgreicher Audioverzögerungstest</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="405" />
-            <source> into  Echo delay ms field and click Save Echo Delay To Echo Canceller button
-</source>
-            <translation> in das Feld „Echoverzögerung ms“ und klicken Sie auf die Schaltfläche „Echoverzögerung in Echounterdrückung speichern“.</translation>
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="611" />
+            <source>Try turning up the volume or placing microphone closer to speaker</source>
+            <translation>Erhöhen Sie die Lautstärke oder platzieren Sie das Mikrofon näher am Lautsprecher</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="407" />
-            <source>Echo Delay Test Is Valid</source>
-            <translation>Der Echoverzögerungstest ist gültig</translation>
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="612" />
+            <source>Audio Delay Test Failed</source>
+            <translation>Audioverzögerungstest fehlgeschlagen</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="411" />
-            <source>Echo Delay Test Is Invalid. Check microphone and speaker. Try turning up the volume or placing microphone closer to speaker</source>
-            <translation>Der Echoverzögerungstest ist ungültig. Überprüfen Sie Mikrofon und Lautsprecher. Erhöhen Sie die Lautstärke oder platzieren Sie das Mikrofon näher am Lautsprecher</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="440" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="363" />
             <source>Play Test File</source>
             <translation>Testdatei abspielen</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="440" />
-            <source>No test file is selected or test file index is invalid</source>
-            <translation>Es ist keine Testdatei ausgewählt oder der Index der Testdatei ist ungültig</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletTestAndDebug.cpp" line="461" />
@@ -7176,24 +7231,19 @@ Delay Test Is Invalid
             <translation>Löschen Sie das letzte Konto nicht</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AudioMgrDelayTest.cpp" line="155" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="579" />
             <source>Sound Delay Not Detected. Check speaker volume and that microphone is on </source>
             <translation>Tonverzögerung nicht erkannt. Überprüfen Sie die Lautsprecherlautstärke und ob das Mikrofon eingeschaltet ist </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AudioMgrDelayTest.cpp" line="159" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="583" />
             <source>Sound Delay too short.. probably noise </source>
             <translation>Tonverzögerung zu kurz. Wahrscheinlich Rauschen </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AudioMgrDelayTest.cpp" line="163" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="587" />
             <source>Sound Delay too long.. probably mic level low </source>
             <translation>Tonverzögerung zu lang. Wahrscheinlich ist der Mikrofonpegel zu niedrig </translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AudioMgrDelayTest.cpp" line="167" />
-            <source>Sound Delay is </source>
-            <translation>Tonverzögerung ist </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AvatarBar.cpp" line="63" />
@@ -10298,41 +10348,6 @@ Niemand kann sich direkt mit Ihnen verbinden</translation>
             <location filename="../nolimitgui/src/InviteUrlWidget.cpp" line="746" />
             <source> has permission level of disabled</source>
             <translation> hat die Berechtigungsstufe „Deaktiviert“.</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioIn.cpp" line="63" />
-            <source>No Sound Input Devices Avalable</source>
-            <translation>Keine Toneingabegeräte verfügbar</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioIn.cpp" line="69" />
-            <source>Sound Input Device Index Out Of Range. Will Use Default Device</source>
-            <translation>Index des Toneingabegeräts außerhalb des zulässigen Bereichs. Wird das Standardgerät verwenden</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioIn.cpp" line="101" />
-            <source>Could not initialize sound in device </source>
-            <translation>Der Ton im Gerät konnte nicht initialisiert werden </translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioOut.cpp" line="60" />
-            <source>No Sound Output Devices Avalable</source>
-            <translation>Keine Tonausgabegeräte verfügbar</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioOut.cpp" line="66" />
-            <source>Sound Output Device Index Out Of Range. Will Use Default Device</source>
-            <translation>Index des Tonausgabegeräts außerhalb des zulässigen Bereichs. Wird das Standardgerät verwenden</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioOut.cpp" line="73" />
-            <source>Sound Output Device Invalid Format</source>
-            <translation>Ungültiges Format des Tonausgabegeräts</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioOut.cpp" line="104" />
-            <source>Could not initialize sound out device </source>
-            <translation>Das Tonausgabegerät konnte nicht initialisiert werden </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/MultiSessionState.cpp" line="378" />

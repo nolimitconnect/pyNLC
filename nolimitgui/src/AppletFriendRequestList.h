@@ -11,7 +11,7 @@
 
 #include "AppletBase.h"
 
-#include <CoreLib/VxTimer.h>
+#include <CoreLib/VxElapseTimer.h>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {

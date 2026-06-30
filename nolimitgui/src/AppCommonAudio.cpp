@@ -59,6 +59,7 @@ void AppCommon::replayHardwareCtrlState( void )
 	const bool micMuted = m_AudioMgr.getIsMicrophoneMuted();
 	const bool wantSpeakerOutput = m_AudioMgr.getIsSpeakerRunning();
 	const bool speakerMuted = m_AudioMgr.getIsSpeakerMuted();
+
 	const bool wantVideoCapture = m_CamLogic.isCamCaptureRequested();
 	const bool camEnabled = m_CamLogic.getCameraEnable();
 	const bool camCaptureRunning = m_CamLogic.isCamCaptureRunning();
@@ -86,7 +87,7 @@ bool AppCommon::toGuiIsMicrophoneDeviceAvailable( void )
 		return false;
 	}
 
-	return m_AudioMgr.isMicrophoneDeviceAvailable();
+	return m_AudioMgr.getIsMicrophoneAvailable();
 }
 
 //============================================================================
@@ -222,6 +223,28 @@ float AppCommon::toGuiGetAudioCacheMaxSeconds( EMediaModule mediaModule )
 	}
 
 	return m_AudioMgr.toGuiGetAudioCacheMaxSeconds( mediaModule );
+}
+
+//============================================================================
+void AppCommon::toGuiUpdateWantMicrophoneCount( int wantMicCnt )
+{
+	if( VxIsAppShuttingDown() )
+	{
+		return;
+	}
+
+    m_AudioMgr.toGuiUpdateWantMicrophoneCount( wantMicCnt );
+}
+
+//============================================================================
+void AppCommon::toGuiUpdateWantSpeakerCount( int wantSpeakerCnt )
+{
+	if( VxIsAppShuttingDown() )
+	{
+		return;
+	}
+    
+    m_AudioMgr.toGuiUpdateWantSpeakerCount( wantSpeakerCnt );
 }
 
 //============================================================================

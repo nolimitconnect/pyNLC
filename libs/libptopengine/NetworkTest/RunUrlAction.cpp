@@ -267,7 +267,7 @@ ERunTestStatus RunUrlAction::doUrlAction( UrlActionInfo& urlAction )
 	std::string strHost;
 	std::string strFile;
 	uint16_t u16Port = 0;
-	VxTimer testTimer;
+	VxElapseTimer testTimer;
 	double connectTime = 0;
 	double sendTime= 0;
 	double reponseTime= 0;

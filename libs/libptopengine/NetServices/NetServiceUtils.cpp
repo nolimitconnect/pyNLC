@@ -881,7 +881,7 @@ bool NetServiceUtils::rxNetServiceCmd( ENetCmdType expectedRxNetCmd, ///< which 
 
 	int iRxed{ 0 };
 
-	VxTimer rxCmdTimer;
+	VxElapseTimer rxCmdTimer;
 	netServConn->recieveData( rxPktBuf.data(),			// data buffer to read into
 							  pktHdrLen,				// length of data	
 							  &iRxed,					// number of bytes actually received

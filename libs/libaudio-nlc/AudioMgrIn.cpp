@@ -10,10 +10,10 @@
 
 #include "AudioMgr.h"
 
-#include "AppCommon.h"
 #include "AudioDefs.h"
 #include "AudioUtils.h"
-#include "GuiAudioLevelCallback.h"
+
+#include <GuiInterface/IToGui.h>
 
 #include <P2PEngine/P2PEngine.h>
 #include <MediaProcessor/AudioPcmData.h>
@@ -21,7 +21,7 @@
 
 #include <CoreLib/VxDebug.h>
 #include <CoreLib/VxTime.h>
-#include <CoreLib/VxTimer.h>
+#include <CoreLib/VxElapseTimer.h>
 
 #include <NlcTargetOsConfig.h>
 #ifdef TARGET_POSIX
@@ -240,7 +240,7 @@ void AudioMgr::processQueuedAudioInput( int16_t* pcmData, int sampleCnt )
             // 1. Run through WebRTC AudioProcessing (AEC3, AGC2, VAD)
             if( m_AudioInPerfStatsEnable )
             {
-                VxTimer aecTimer;
+                VxElapseTimer aecTimer;
                 m_Aec.processCapture(framePtr, ECHO_FRAME_SIZE_10MS);
                 m_AecCaptureTotalMs += aecTimer.elapsedMs();
             }
@@ -293,7 +293,7 @@ void AudioMgr::callbackAecProcessedAudio( int16_t* pcmData, int sampleCnt )
     {
         if( m_AudioInPerfStatsEnable )
         {
-            VxTimer rnTimer;
+            VxElapseTimer rnTimer;
             m_RNNoise.reduceNoise( pcmData, sampleCnt );
             m_RNNoiseTotalMs += rnTimer.elapsedMs();
         }
@@ -364,20 +364,25 @@ void AudioMgr::callbackAecProcessedAudio( int16_t* pcmData, int sampleCnt )
         }
     }
 
-    if( !m_AudioLevelClientList.empty() )
+    if( m_EnableAudioInPeakAmplitude )
     {
-        if( getIsMicrophoneMuted() )
+        m_CollectPeekAudioInAmplitude = !m_CollectPeekAudioInAmplitude; // every other sample toggle collection
+        if( m_CollectPeekAudioInAmplitude )
         {
-            m_AudioInPeakAmplitude = 0;
-        }
-        else
-        {
-            int thisPeak = AudioUtils::peakPcmAmplitude0to100( pcmData, sampleCnt );
-            if( thisPeak > m_AudioInPeakAmplitude )
+            if( getIsMicrophoneMuted() )
             {
-                m_AudioInPeakAmplitude = thisPeak;
+                m_AccumPeekAudioInAmplitude = 0;
+            }
+            else
+            {
+                int thisPeak = AudioUtils::peakPcmAmplitude0to100( pcmData, sampleCnt );
+                if( thisPeak > m_AccumPeekAudioInAmplitude )
+                {
+                    m_AccumPeekAudioInAmplitude = thisPeak;
+                }
             }
         }
+
     }
 
     m_OpusFrameBuffer.insert( m_OpusFrameBuffer.end(), pcmData, pcmData + ECHO_FRAME_SIZE_10MS );
@@ -392,6 +397,9 @@ void AudioMgr::callbackAecProcessedAudio( int16_t* pcmData, int sampleCnt )
         callbackAudioIn60msFrameAvail( m_OpusFrameBuffer.data(), static_cast<int>(m_OpusFrameBuffer.size()) );
         m_OpusFrameBuffer.clear();
         m_AudioInAecFramesProcessed = 0;
+
+        m_AudioInPeakAmplitude = m_AccumPeekAudioInAmplitude; 
+        m_AccumPeekAudioInAmplitude = 0; 
     }
 }
 
@@ -405,55 +413,4 @@ void AudioMgr::callbackAudioIn60msFrameAvail( const int16_t* pcmData, int sample
 
     AudioPcmData audioPcmData( pcmData, sampleCnt, eMediaModuleMicrophone );
     GetPtoPEngine().getMediaProcessor().fromGuiEchoCanceledSamplesThreaded( audioPcmData );
-}
-
-//============================================================================
-void AudioMgr::wantMicrophoneLevelCallbacks( GuiAudioLevelCallback* client, bool enable )
-{
-	for( auto iter = m_AudioLevelClientList.begin(); iter != m_AudioLevelClientList.end(); ++iter )
-	{
-        if( client == *iter )
-		{
-			if( enable )
-			{
-				return;
-			}
-			else
-			{
-				m_AudioLevelClientList.erase( iter );
-				if( 0 == m_AudioLevelClientList.size() )
-				{
-					m_AudioLevelPeekTimer->stop();
-				}
-
-				return;
-			}
-		}
-	}
-
-	if( enable )
-	{
-		m_AudioLevelClientList.emplace_back( client );
-		if( 1 == m_AudioLevelClientList.size() )
-		{
-			m_AudioLevelPeekTimer->start();
-		}
-	}
-}
-
-//============================================================================
-void AudioMgr::slotAudioPeekTimeout( void )
-{
-	if( m_AudioLevelClientList.empty() )
-	{
-		return;
-	}
-
-	int micLevel = getIsMicrophoneRunning() && !getIsMicrophoneMuted() ? getAudioInPeakAmplitude() : 0;
-	setAudioInPeakAmplitude( 0 ); // reset for next peek interval	
-
-	for( auto& client : m_AudioLevelClientList )
-	{
-		client->callbackGuiMicrophoneLevel( micLevel );
-	}
 }

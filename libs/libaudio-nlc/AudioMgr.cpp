@@ -10,42 +10,29 @@
 
 #include "AudioMgr.h"
 
-#include "AppCommon.h"
-#include "AppSettings.h"
 #include "AudioDefs.h"
 #include "AudioUtils.h"
-#include "GuiAudioLevelCallback.h"
+#include "TestFileWavMgr.h"
+
+#include <GuiInterface/IToGui.h>
 
 #include <CoreLib/VxDebug.h>
 #include <CoreLib/VxTime.h>
-#include <CoreLib/VxTimer.h>
+#include <CoreLib/VxElapseTimer.h>
 
 #include <algorithm>
 
 //============================================================================
-AudioMgr::AudioMgr( AppCommon& app )
-    : m_MyApp( app )
-    , MiniAudioDevices()
+AudioMgr::AudioMgr()
+    : MiniAudioDevices()
     , AudioMixerMgr()
-    , ToGuiHardwareControlInterface()
     , m_TestFile("")
     , m_AudioInIo( *this )
     , m_AudioOutIo( *this )
-	, m_AudioTestTimer( new QTimer( this ) )
-    , m_AudioLevelPeekTimer( new QTimer( this ) )
-    , m_AudioOutDisableTimer( new QTimer( this ) )
+    , m_TestFileWavMgr(TestFileWavMgr::getInstance())
 {
-	m_AudioLevelPeekTimer->setInterval( 500 );
-	connect( m_AudioLevelPeekTimer, SIGNAL(timeout()), this, SLOT(slotAudioPeekTimeout()) );
-
-    m_AudioTestTimer->setInterval( 1200 );
-    connect( m_AudioTestTimer, SIGNAL(timeout()), this, SLOT(slotAudioTestTimer()) );
-    m_AudioOutDisableTimer->setInterval( 10 );
-    connect( m_AudioOutDisableTimer, SIGNAL(timeout()), this, SLOT(slotAudioOutDisablePoll()) );
-    connect( this, &AudioMgr::signalEnableAudioIn, this, &AudioMgr::slotEnableAudioIn, Qt::QueuedConnection );
-    connect( this, &AudioMgr::signalEnableAudioOut, this, &AudioMgr::slotEnableAudioOut, Qt::QueuedConnection );
-    connect( this, &AudioMgr::signalUpdateWantMicrophoneCount, this, &AudioMgr::slotUpdateWantMicrophoneCount, Qt::QueuedConnection );
-    connect( this, &AudioMgr::signalUpdateSpeakerOutputCount, this, &AudioMgr::slotUpdateWantSpeakerCount, Qt::QueuedConnection );
+    m_AudioTestTimer.setCallback( [this]() { this->callbackAudioTestTimer(); } );
+    m_AudioOutDisableTimer.setCallback( [this]() { this->callbackAudioOutDisablePoll(); } );
 }
 
 //============================================================================
@@ -59,7 +46,7 @@ void AudioMgr::audioIoSystemStartup()
         startupMiniAudio();
         setAgcEnabled( false );
 
-        if( isSpeakerDeviceAvailable() )
+        if( getIsSpeakerAvailable() )
         {
             int deviceIndex = 0;
             getSoundOutDeviceIndex( deviceIndex );
@@ -68,7 +55,7 @@ void AudioMgr::audioIoSystemStartup()
             m_ToneGenerator.setAudioFormat( m_AudioOutFormat );
         }
 
-        if( isMicrophoneDeviceAvailable() )
+        if( getIsMicrophoneAvailable() )
         {
             int deviceIndex = 0;
             getSoundInDeviceIndex( deviceIndex );
@@ -80,17 +67,6 @@ void AudioMgr::audioIoSystemStartup()
         LogMsg( LOG_DEBUG, "%s calculated hardware total latency is %d ms", __func__, m_EchoHardwareTotalLatencyMs );
 
         m_AudioIoInitialized = true;
-        //m_ProcessAudioThread.startThread( (VX_THREAD_FUNCTION_T)AudioMiniAudioMgrProcessThreadFunc, this, "ProcessAudioThread" );
-        int endTime = GetApplicationAliveMs();
-        LogMsg( LOG_DEBUG, "%s took %d ms at %d", __func__, endTime - startTime, endTime );
-
-        m_MyApp.wantToGuiHardwareCtrlCallbacks( this, true );
-
-        bool mutedMic = m_MyApp.getAppSettings().getIsMicrophoneMuted();
-        m_MyApp.fromGuiMuteMicrophone( mutedMic );
-
-        bool mutedSpeaker = m_MyApp.getAppSettings().getIsSpeakerMuted();
-        m_MyApp.fromGuiMuteSpeaker( mutedSpeaker );
     }
 }
 
@@ -99,11 +75,9 @@ void AudioMgr::audioIoSystemShutdown()
 {
     if( m_AudioIoInitialized )
     {
-        slotEnableAudioIn( false );
-        slotEnableAudioOut( false );
+        enableAudioIn( false );
+        enableAudioOut( false );
         m_AudioIoInitialized = false;
-        m_MyApp.wantToGuiHardwareCtrlCallbacks( this, false );
-	    audioIoSystemShutdown();
 
         m_AudioInIo.audioInShutdown();
         m_AudioOutIo.audioOutShutdown();
@@ -112,7 +86,7 @@ void AudioMgr::audioIoSystemShutdown()
 }
 
 //============================================================================
-void AudioMgr::slotEnableAudioIn( bool enable )
+void AudioMgr::enableAudioIn( bool enable )
 {
     if( enable )
     {
@@ -134,6 +108,7 @@ void AudioMgr::slotEnableAudioIn( bool enable )
         {
             m_AudioInIo.stopAudioInHardware();
             stopAudioInWorker();
+            m_AudioInPeakAmplitude = 0;
         }
     }
 }
@@ -143,10 +118,7 @@ void AudioMgr::requestDeferredAudioOutDisable( void )
 {
     m_AudioOutDisablePending = true;
 
-    if( !m_AudioOutDisableTimer->isActive() )
-    {
-        m_AudioOutDisableTimer->start();
-    }
+    m_AudioOutDisableTimer.start(10);
 }
 
 //============================================================================
@@ -159,10 +131,7 @@ void AudioMgr::cancelDeferredAudioOutDisable( void )
 
     m_AudioOutDisablePending = false;
 
-    if( m_AudioOutDisableTimer->isActive() )
-    {
-        m_AudioOutDisableTimer->stop();
-    }
+    m_AudioOutDisableTimer.stop();
 }
 
 //============================================================================
@@ -211,10 +180,7 @@ void AudioMgr::completeAudioOutDisable( void )
 {
     m_AudioOutDisablePending = false;
 
-    if( m_AudioOutDisableTimer->isActive() )
-    {
-        m_AudioOutDisableTimer->stop();
-    }
+    m_AudioOutDisableTimer.stop();
 
     if( !m_EnableAudioOut )
     {
@@ -227,7 +193,7 @@ void AudioMgr::completeAudioOutDisable( void )
 }
 
 //============================================================================
-void AudioMgr::slotAudioOutDisablePoll( void )
+void AudioMgr::callbackAudioOutDisablePoll( void )
 {
     if( m_PlayerNlcSpeakerDisablePending )
     {
@@ -241,11 +207,7 @@ void AudioMgr::slotAudioOutDisablePoll( void )
 
     if( !m_AudioOutDisablePending )
     {
-        if( m_AudioOutDisableTimer->isActive() )
-        {
-            m_AudioOutDisableTimer->stop();
-        }
-
+        m_AudioOutDisableTimer.stop();
         return;
     }
 
@@ -258,7 +220,7 @@ void AudioMgr::slotAudioOutDisablePoll( void )
 }
 
 //============================================================================
-void AudioMgr::slotEnableAudioOut( bool enable )
+void AudioMgr::enableAudioOut( bool enable )
 {
     if( enable )
     {
@@ -364,26 +326,6 @@ int AudioMgr::getWantSpeakerCount( void )
 }
 
 //============================================================================
-void AudioMgr::slotUpdateWantMicrophoneCount( int wantMicCnt )
-{
-	m_WantMicCnt = wantMicCnt;
-	for( auto& client : m_AudioLevelClientList )
-	{
-		client->callbackWantMicrophoneCount( wantMicCnt );
-	}
-}
-
-//============================================================================
-void AudioMgr::slotUpdateWantSpeakerCount( int wantSpeakerCnt )
-{
-	m_WantSpeakerCnt = wantSpeakerCnt;
-	for( auto& client : m_AudioLevelClientList )
-	{
-		client->callbackWantSpeakerCount( wantSpeakerCnt );
-	}
-}
-
-//============================================================================
 void AudioMgr::writeMixerAudioToSpeakerHardware( int16_t* pcmData, int sampleCount )
 {
     sendToSpeakerOutput( pcmData, sampleCount );
@@ -426,4 +368,79 @@ bool AudioMgr::isModuleOutputWanted( EMediaModule mediaModule )
     bool wanted = std::find( m_WantSpeakerList.begin(), m_WantSpeakerList.end(), mediaModule ) != m_WantSpeakerList.end();
     m_WantSpeakerMutex.unlock();
     return wanted;
+}
+
+//============================================================================
+void AudioMgr::playTestFile( std::string testFile )
+{
+    for( auto& testFileWav : m_TestFileWavMgr.getTestFileWavList() ) {
+        if( testFileWav.getFilePath() == testFile ) {
+            playTestFile( const_cast<TestFileWav&>(testFileWav) );
+            return;
+        }
+    } 
+
+    TestFileWav resWav( testFile );
+    if( !resWav.isValid() ) {
+        return;
+    }
+
+    playTestFile( resWav );
+}
+
+//============================================================================
+bool AudioMgr::setAudioInDevice( std::string deviceDescription )
+{
+    int deviceIndex = MiniAudioDevices::findAudioInDeviceIndexByDescription( deviceDescription );
+    bool result = (deviceIndex != -1);
+    if( result ) {
+        if(deviceIndex == m_SndInDeviceIndex) {
+            LogModule( eLogAudioIo, LOG_INFO, "Audio In Device unchanged, index: %d %s", deviceIndex, deviceDescription.c_str() );
+            return true;
+        }
+
+        LogModule( eLogAudioIo, LOG_INFO, "Audio In Device changed, index: %d %s", deviceIndex, deviceDescription.c_str() );
+        m_AudioInPeakAmplitude = 0;
+        result = m_AudioInIo.soundInDeviceChanged( deviceIndex );
+        if( result ) {
+            m_SndInDeviceIndex = deviceIndex;
+            updateHardwareTotalLatencyMs();
+        }
+    }
+
+    return result;
+}
+
+//============================================================================
+bool AudioMgr::setAudioOutDevice( std::string deviceDescription )
+{
+    int deviceIndex = MiniAudioDevices::findAudioOutDeviceIndexByDescription( deviceDescription );
+    bool result = (deviceIndex != -1);
+    if( result ) {
+        if(deviceIndex == m_SndOutDeviceIndex) {
+            LogModule( eLogAudioIo, LOG_INFO, "Audio Out Device unchanged, index: %d %s", deviceIndex, deviceDescription.c_str() );
+            return true;
+        }
+
+        LogModule( eLogAudioIo, LOG_INFO, "Audio Out Device changed, index: %d %s", deviceIndex, deviceDescription.c_str() );
+        result = m_AudioOutIo.soundOutDeviceChanged( deviceIndex );
+        if( result ) {
+            m_SndOutDeviceIndex = deviceIndex;
+            updateHardwareTotalLatencyMs();
+        }
+    }
+
+    return result;
+}
+
+//============================================================================
+void AudioMgr::wantAudioDelayTestCallbacks( AudioDelayTestCallback* client, bool enable )
+{
+    if( enable ) {
+        m_AudioDelayTestCallback = client;
+    } else {
+        if( m_AudioDelayTestCallback == client ) {
+            m_AudioDelayTestCallback = nullptr;
+        }
+    }
 }

@@ -14,7 +14,7 @@
 #include <GuiInterface/IFromGui.h>
 #include <PktLib/VxCommon.h>
 
-#include <CoreLib/VxTimer.h>
+#include <CoreLib/VxElapseTimer.h>
 #include <CoreLib/VxMutex.h>
 #include <CoreLib/MediaCallbackInterface.h>
 
@@ -70,7 +70,7 @@ protected:
 	std::string					m_FileName;
 	FILE *						m_FileHandle;
 	int							m_MicroSecBetweenFrames;
-	VxTimer						m_RecordElapseTimer;
+	VxElapseTimer						m_RecordElapseTimer;
 	double						m_TotalElapsedMs;
 	bool						m_IsFirstFrameAfterResumeRecording;
 

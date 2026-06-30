@@ -37,6 +37,7 @@ if(BUILD_LIB_GLU)
 endif()
 
 add_subdirectory(libplayer-nlc)
+add_subdirectory(libaudio-nlc)
 
 add_subdirectory(libvpx)
 

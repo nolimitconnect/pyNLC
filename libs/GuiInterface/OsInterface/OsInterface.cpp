@@ -14,7 +14,7 @@
 #include <CoreLib/VxGlobals.h>
 #include <CoreLib/VxFileUtil.h>
 #include <CoreLib/VxDebug.h>
-#include <CoreLib/VxTimer.h>
+#include <CoreLib/VxElapseTimer.h>
 
 #include "CompileInfo.h"
 #include "threads/Thread.h"

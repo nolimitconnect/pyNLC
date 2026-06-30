@@ -14,7 +14,7 @@
 #include "FileItemInfo.h"
 #include "ToGuiFileXferInterface.h"
 
-#include <CoreLib/VxTimer.h>
+#include <CoreLib/VxElapseTimer.h>
 #include <CoreLib/VxFileTypeMasks.h>
 
 QT_BEGIN_NAMESPACE
@@ -98,7 +98,7 @@ protected:
 	std::string					m_LastBrowseDir;
 
 	QTimer *					m_WidgetClickEventFixTimer;
-	VxTimer						m_ClickToFastTimer;
+	VxElapseTimer						m_ClickToFastTimer;
 
 	bool						m_bFetchInProgress{ false };
 	bool						m_IsSelectAFileMode{ false };

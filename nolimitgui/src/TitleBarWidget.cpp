@@ -14,7 +14,7 @@
 #include "AppletMgr.h"
 #include "AppSettings.h"
 #include "AppletPopupMenu.h"
-#include "AudioMgr.h"
+#include "GuiAudioMgr.h"
 #include "GuiOfferMgr.h"
 #include "GuiHelpers.h"
 #include "GuiParams.h"
@@ -160,7 +160,7 @@ void TitleBarWidget::wantCallbacks( bool enable )
 //============================================================================
 void TitleBarWidget::updateTitleBar( void )
 {
-    AudioMgr& audioMgr = m_MyApp.getAudioMgr();
+    GuiAudioMgr& audioMgr = m_MyApp.getAudioMgr();
     bool isMicEnabled = audioMgr.getIsMicrophoneRunning();
     callbackToGuiWantMicrophoneRecording( isMicEnabled );
 

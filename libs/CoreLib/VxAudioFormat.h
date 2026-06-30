@@ -12,6 +12,7 @@
 #include <GuiInterface/IAudioDefs.h>
 
 #include <stdint.h>
+#include <string>
 
 class VxAudioFormat
 {
@@ -47,6 +48,8 @@ public:
 	int64_t						bytesForDuration( int64_t durationUs ) const;
 
 	bool						isValid( void ) const;
+
+    std::string					describeFormat( void ) const;
 
 protected:
 	int							m_Rate{ AUDIO_DEVICE_SAMPLE_RATE };

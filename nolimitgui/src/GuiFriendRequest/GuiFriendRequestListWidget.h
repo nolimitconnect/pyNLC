@@ -55,6 +55,6 @@ protected:
     GuiFriendRequest*           widgetToFriendRequest( GuiFriendRequestListItem* hostItem );
 
 	//=== vars ===//
-    VxTimer						m_ClickEventTimer; // avoid duplicate clicks
+    VxElapseTimer						m_ClickEventTimer; // avoid duplicate clicks
 };
 

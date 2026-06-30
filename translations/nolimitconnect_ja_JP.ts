@@ -3995,17 +3995,83 @@ File Type: </source>
             <translation>オーディオの再生に失敗しました</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="1244" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="773" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="777" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="781" />
+            <source>Sound In Device Error</source>
+            <translation>サウンドインデバイスエラー</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="774" />
+            <source>No Microphone Devices Available</source>
+            <translation>使用可能なマイクデバイスがありません</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="778" />
+            <source>Microphone Device Out Of Range</source>
+            <translation>マイクデバイスが範囲外です</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="782" />
+            <source>Failed to Initialize Microphone Device</source>
+            <translation>マイクデバイスの初期化に失敗しました</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="785" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="789" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="793" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="797" />
+            <source>Sound Out Device Error</source>
+            <translation>サウンドアウトデバイスエラー</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="786" />
+            <source>No Speaker Devices Available</source>
+            <translation>使用可能なスピーカー デバイスがありません</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="790" />
+            <source>Speaker Device Out Of Range</source>
+            <translation>スピーカーデバイスが範囲外です</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="794" />
+            <source>Failed to Initialize Speaker Device</source>
+            <translation>スピーカーデバイスの初期化に失敗しました</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="798" />
+            <source>Speaker Device Invalid Format</source>
+            <translation>スピーカーデバイスのフォーマットが無効です</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="802" />
+            <source>Echo Delay Test Error</source>
+            <translation>エコー遅延テストエラー</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="803" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="809" />
+            <source>Echo Delay Results (ms) </source>
+            <translation>エコー遅延の結果 (ミリ秒) </translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="808" />
+            <source>Echo Delay Test Success</source>
+            <translation>エコー遅延テストの成功</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="1285" />
             <source>Close Application</source>
             <translation>アプリケーションを閉じる</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="1245" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="1286" />
             <source>Are you sure you want to exit?</source>
             <translation>終了してもよろしいですか?</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="1351" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="1392" />
             <location filename="../nolimitgui/src/ChatEntryWidget.cpp" line="363" />
             <source>Application Error</source>
             <translation>アプリケーションエラー</translation>
@@ -4842,8 +4908,8 @@ File Type: </source>
         <message>
             <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="217" />
             <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="265" />
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="264" />
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="289" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="271" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="296" />
             <source> failed to initialize</source>
             <translation>初期化に失敗しました</translation>
         </message>
@@ -6875,150 +6941,139 @@ If the Network Key is incorrect, you will probably be banned as a hacker.</sourc
             <translation>温度？</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="111" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="115" />
             <source>Speaker Device Unavailable</source>
             <translation>スピーカーデバイスが使用できません</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="111" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="115" />
             <source>No speaker device is available to enable</source>
             <translation>有効にできるスピーカー デバイスがありません</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="117" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="121" />
             <source>Microphone Device Unavailable</source>
             <translation>マイクデバイスが使用できません</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="117" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="121" />
             <source>No microphone device is available to enable</source>
             <translation>有効にできるマイク デバイスがありません</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="259" />
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="264" />
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="270" />
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioIn.cpp" line="63" />
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioIn.cpp" line="69" />
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioIn.cpp" line="101" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="137" />
+            <source>Microphone Permission Denied</source>
+            <translation>マイクの許可が拒否されました</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="137" />
+            <source>The application does not have permission to access the microphone</source>
+            <translation>アプリケーションにはマイクにアクセスする権限がありません</translation>
+        </message>
+        <message>
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="266" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="271" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="277" />
             <source>Sound In Device</source>
             <translation>サウンドインデバイス</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="259" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="266" />
             <source> device is saved as preferred Sound In Device</source>
             <translation> デバイスは優先サウンド入力デバイスとして保存されます</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="270" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="277" />
             <source>No Sound In Device Is Available</source>
             <translation>デバイスにサウンドがありません</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="284" />
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="289" />
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="295" />
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioOut.cpp" line="60" />
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioOut.cpp" line="66" />
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioOut.cpp" line="73" />
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioOut.cpp" line="104" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="291" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="296" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="302" />
             <source>Sound Out Device</source>
             <translation>サウンドアウトデバイス</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="284" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="291" />
             <source> device is saved as preferred Sound Out Device</source>
             <translation> デバイスは優先サウンドアウトデバイスとして保存されます</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="295" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="302" />
             <source>No Sound Out Device Is Available</source>
             <translation>使用可能なサウンド出力デバイスがありません</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="310" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="318" />
             <source>Echo delay test is running</source>
             <translation>エコー遅延テストが実行中です</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="310" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="318" />
             <source>Echo delay test can not be run until the previous test finishes</source>
             <translation>エコー遅延テストは、前のテストが終了するまで実行できません</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="321" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="329" />
             <source>Echo Delay Value Invalid</source>
             <translation>エコー遅延値が無効です</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="321" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="329" />
             <source>Echo Delay value must be between 40 and 500 milliseconds</source>
             <translation>エコー遅延値は 40 ～ 500 ミリ秒でなければなりません</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="327" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="335" />
             <source>Echo Delay Value Save</source>
             <translation>エコー遅延値の保存</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="327" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="335" />
             <source>Echo Delay value has been saved for use by Echo Cancelation</source>
             <translation>エコー遅延値は、エコー キャンセルで使用するために保存されました</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="372" />
-            <source>Echo Delays </source>
-            <translation>エコー遅延 </translation>
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="363" />
+            <source>No test file is selected or test file is invalid</source>
+            <translation>テスト ファイルが選択されていないか、テスト ファイルが無効です</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="385" />
-            <source>, </source>
-            <translation>、 </translation>
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="590" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="596" />
+            <source>Delay: %1</source>
+            <translation>遅延: %1</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="399" />
-            <source>
-Delay Test Is Valid
-</source>
-            <translation>遅延テストは有効です</translation>
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="595" />
+            <source>Sound Delay Test Value Valid </source>
+            <translation>音声遅延テスト値有効 </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="399" />
-            <source>
-Delay Test Is Invalid
-</source>
-            <translation>遅延テストは無効です</translation>
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="606" />
+            <source>You can enter the measured delay. Average Delay: %1 ms</source>
+            <translation>測定された遅延を入力できます。平均遅延: %1 ミリ秒</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="403" />
-            <source>If you are having echo issues you may want to enter value </source>
-            <translation>エコーの問題が発生している場合は、値を入力するとよいでしょう。 </translation>
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="607" />
+            <source>Audio Delay Test Success</source>
+            <translation>音声遅延テストの成功</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="405" />
-            <source> into  Echo delay ms field and click Save Echo Delay To Echo Canceller button
-</source>
-            <translation> エコー遅延ミリ秒フィールドに入力し、エコー遅延をエコー キャンセラーに保存ボタンをクリックします。</translation>
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="611" />
+            <source>Try turning up the volume or placing microphone closer to speaker</source>
+            <translation>音量を上げるか、マイクをスピーカーの近くに置いてみてください</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="407" />
-            <source>Echo Delay Test Is Valid</source>
-            <translation>エコー遅延テストは有効です</translation>
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="612" />
+            <source>Audio Delay Test Failed</source>
+            <translation>音声遅延テストに失敗しました</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="411" />
-            <source>Echo Delay Test Is Invalid. Check microphone and speaker. Try turning up the volume or placing microphone closer to speaker</source>
-            <translation>エコー遅延テストは無効です。マイクとスピーカーを確認してください。音量を上げるか、マイクをスピーカーの近くに置いてみてください</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="440" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="363" />
             <source>Play Test File</source>
             <translation>テストファイルの再生</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="440" />
-            <source>No test file is selected or test file index is invalid</source>
-            <translation>テスト ファイルが選択されていないか、テスト ファイルのインデックスが無効です</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletTestAndDebug.cpp" line="461" />
@@ -7176,24 +7231,19 @@ Delay Test Is Invalid
             <translation>最後のアカウントは削除しないでください</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AudioMgrDelayTest.cpp" line="155" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="579" />
             <source>Sound Delay Not Detected. Check speaker volume and that microphone is on </source>
             <translation>音の遅延は検出されませんでした。スピーカーの音量とマイクがオンになっていることを確認してください </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AudioMgrDelayTest.cpp" line="159" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="583" />
             <source>Sound Delay too short.. probably noise </source>
             <translation>音声遅延が短すぎます。おそらくノイズです。 </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AudioMgrDelayTest.cpp" line="163" />
+            <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="587" />
             <source>Sound Delay too long.. probably mic level low </source>
             <translation>サウンド遅延が長すぎます。おそらくマイクレベルが低いです。 </translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/AudioMgrDelayTest.cpp" line="167" />
-            <source>Sound Delay is </source>
-            <translation>音の遅延は </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AvatarBar.cpp" line="63" />
@@ -10298,41 +10348,6 @@ No one can connect to you directly</source>
             <location filename="../nolimitgui/src/InviteUrlWidget.cpp" line="746" />
             <source> has permission level of disabled</source>
             <translation> 許可レベルが無効になっています</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioIn.cpp" line="63" />
-            <source>No Sound Input Devices Avalable</source>
-            <translation>利用可能なサウンド入力デバイスがありません</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioIn.cpp" line="69" />
-            <source>Sound Input Device Index Out Of Range. Will Use Default Device</source>
-            <translation>サウンド入力デバイスのインデックスが範囲外です。デフォルトのデバイスを使用します</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioIn.cpp" line="101" />
-            <source>Could not initialize sound in device </source>
-            <translation>デバイスのサウンドを初期化できませんでした </translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioOut.cpp" line="60" />
-            <source>No Sound Output Devices Avalable</source>
-            <translation>利用可能なサウンド出力デバイスがありません</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioOut.cpp" line="66" />
-            <source>Sound Output Device Index Out Of Range. Will Use Default Device</source>
-            <translation>サウンド出力デバイスのインデックスが範囲外です。デフォルトのデバイスを使用します</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioOut.cpp" line="73" />
-            <source>Sound Output Device Invalid Format</source>
-            <translation>サウンド出力デバイスのフォーマットが無効です</translation>
-        </message>
-        <message>
-            <location filename="../nolimitgui/src/miniaudio/MiniAudioOut.cpp" line="104" />
-            <source>Could not initialize sound out device </source>
-            <translation>サウンドアウトデバイスを初期化できませんでした </translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/MultiSessionState.cpp" line="378" />

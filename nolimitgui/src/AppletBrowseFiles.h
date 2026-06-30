@@ -14,7 +14,7 @@
 #include "FileItemInfo.h"
 #include "ToGuiFileXferInterface.h"
 
-#include <CoreLib/VxTimer.h>
+#include <CoreLib/VxElapseTimer.h>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -103,7 +103,7 @@ protected:
 	bool						m_SelectedFileIsInLibrary{ false };
 
 	EFileFilterType				m_eFileFilterType{ eFileFilterAll };
-	VxTimer						m_ClickToFastTimer;
+	VxElapseTimer						m_ClickToFastTimer;
 };
 
 

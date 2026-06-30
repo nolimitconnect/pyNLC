@@ -18,10 +18,10 @@
 #include <algorithm>
 
 //============================================================================
-TestFileWav::TestFileWav( const QString& filePath )
+TestFileWav::TestFileWav( const std::string& filePath )
     : m_FilePath( filePath )
 {
-    if( filePath.isEmpty() )
+    if( filePath.empty() )
     {
         return;
     }
@@ -32,21 +32,21 @@ TestFileWav::TestFileWav( const QString& filePath )
     {
         if( bitsPerSample != 16 )
         {
-            LogMsg( LOG_ERROR, "%s Unsupported bits per sample %d in file %s. Only 16-bit PCM is supported.", __func__, bitsPerSample, filePath.toStdString().c_str() );
+            LogMsg( LOG_ERROR, "%s Unsupported bits per sample %d in file %s. Only 16-bit PCM is supported.", __func__, bitsPerSample, filePath.c_str() );
             m_Valid = false;
             return;
         }
 
         if( m_NumChannels != 1 )
         {
-            LogMsg( LOG_ERROR, "%s Invalid number of channels %d in file %s.", __func__, m_NumChannels, filePath.toStdString().c_str() );
+            LogMsg( LOG_ERROR, "%s Invalid number of channels %d in file %s.", __func__, m_NumChannels, filePath.c_str() );
             m_Valid = false;
             return;
         }
 
         if( m_SampleRate != AUDIO_DEVICE_SAMPLE_RATE )
         {
-            LogMsg( LOG_ERROR, "%s Invalid sample rate %d in file %s. Only %d Hz is supported.", __func__, m_SampleRate, filePath.toStdString().c_str(), AUDIO_DEVICE_SAMPLE_RATE );
+            LogMsg( LOG_ERROR, "%s Invalid sample rate %d in file %s. Only %d Hz is supported.", __func__, m_SampleRate, filePath.c_str(), AUDIO_DEVICE_SAMPLE_RATE );
             m_Valid = false;
             return;
         }
@@ -54,24 +54,23 @@ TestFileWav::TestFileWav( const QString& filePath )
         m_NumFrames = static_cast<int>( (m_PcmData.size() ) / m_NumChannels) / (m_SampleRate / 100); // number of 10ms frames
         if( m_NumFrames <= 0 )
         {
-            LogMsg( LOG_ERROR, "%s No audio frames found in file %s.", __func__, filePath.toStdString().c_str() );
+            LogMsg( LOG_ERROR, "%s No audio frames found in file %s.", __func__, filePath.c_str() );
             m_Valid = false;
             return;
         }
 
-        LogMsg( LOG_DEBUG, "%s Loaded WAV file %s: SampleRate=%d, Channels=%d, BitsPerSample=%d, NumFrames=%d", __func__, filePath.toStdString().c_str(), m_SampleRate, m_NumChannels, bitsPerSample, m_NumFrames );
+        LogMsg( LOG_DEBUG, "%s Loaded WAV file %s: SampleRate=%d, Channels=%d, BitsPerSample=%d, NumFrames=%d", __func__, filePath.c_str(), m_SampleRate, m_NumChannels, bitsPerSample, m_NumFrames );
     }
     else
     {
-        LogMsg( LOG_ERROR, "%s Failed to load WAV file %s", __func__, filePath.toStdString().c_str() );
+        LogMsg( LOG_ERROR, "%s Failed to load WAV file %s", __func__, filePath.c_str() );
     }
 }
 
 //============================================================================
-bool TestFileWav::loadWavFile( const QString& filePath, int& sampleRate, int& numChannels, int& bitsPerSample, std::vector<int16_t>& pcmData )
+bool TestFileWav::loadWavFile( std::string filePath, int& sampleRate, int& numChannels, int& bitsPerSample, std::vector<int16_t>& pcmData )
 {
-    std::string filePathStr = filePath.toStdString();
-    return WavMgr::readWavFile( filePathStr, pcmData, sampleRate, numChannels, bitsPerSample );
+    return WavMgr::readWavFile( filePath, pcmData, sampleRate, numChannels, bitsPerSample );
 }
 
 //============================================================================

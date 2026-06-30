@@ -9,7 +9,7 @@
 // https://nolimitconnect.com
 //============================================================================
 
-#include <CoreLib/VxTimer.h>
+#include <CoreLib/VxElapseTimer.h>
 
 #define VxSKT_INFO_SAMPLE_CNT 10
 class VxSktSampleInfo
@@ -80,8 +80,8 @@ public:
 protected:
 	//=== vars == //
 	bool			            m_bEnableThrottle;
-	VxTimer			            m_TxTimer;
-	VxTimer			            m_RxTimer;
+	VxElapseTimer			            m_TxTimer;
+	VxElapseTimer			            m_RxTimer;
 
 	//statistics
 	float				        m_f32TxCurrentSpeed;		// current tx speed in bytes per second

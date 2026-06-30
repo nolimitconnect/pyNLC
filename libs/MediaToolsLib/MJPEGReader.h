@@ -14,7 +14,7 @@
 #include <GuiInterface/IFromGui.h>
 #include <PktLib/VxCommon.h>
 
-#include <CoreLib/VxTimer.h>
+#include <CoreLib/VxElapseTimer.h>
 #include <CoreLib/VxMutex.h>
 #include <CoreLib/VxThread.h>
 #include <CoreLib/VxSemaphore.h>
@@ -121,7 +121,7 @@ protected:
 	uint32_t					m_TotalJpgDataLen;
 	uint32_t					m_TotalFrameCnt;
 
-	VxTimer						m_PlayElapseTimer;
+	VxElapseTimer						m_PlayElapseTimer;
 	double						m_TotalElapsedMs;
 	bool						m_IsFirstFrameAfterResumePlaying;
 
@@ -148,6 +148,6 @@ protected:
 	bool						m_Initialized;
 	bool						m_IsStartThreadCommanded;
 	bool						m_IsVidThreadRunning;
-	VxTimer						m_TempTimer;
+	VxElapseTimer						m_TempTimer;
 	VxGUID						m_MediaSessionId;
 };

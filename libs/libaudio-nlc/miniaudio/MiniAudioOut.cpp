@@ -8,19 +8,14 @@
 // https://nolimitconnect.com
 //============================================================================
 
-#include <QWidget> // must be declared first or Qt 6.2.4 will error in qmetatype.h 2167:23: array subscript value 53 is outside the bounds
-
 #include "MiniAudioOut.h"
 #include "AudioMgr.h"
 
+#include <GuiInterface/IToGui.h>
+
 #include <CoreLib/VxDebug.h>
 #include <CoreLib/VxGlobals.h>
-#include <CoreLib/VxTimer.h>
-
-#include <QDebug>
-#include <QtEndian>
-#include <QTimer>
-#include <QMessageBox>
+#include <CoreLib/VxElapseTimer.h>
 
 #include <math.h>
 
@@ -57,20 +52,20 @@ bool MiniAudioOut::soundOutDeviceChanged( int deviceIndex )
     int deviceCount = m_AudioIoMgr.getAudioOutDeviceCount();
     if( !deviceCount )
     {
-        emit signalShowErrorFromThread( QObject::tr( "Sound Out Device" ), QObject::tr( "No Sound Output Devices Avalable" ) );
+       IToGui::getIToGui().toGuiAppPopupErr( eAppPopupErrNoMicDevices, "" );
         return false;
     }
 
     if( deviceIndex >= deviceCount )
     {
-        emit signalShowErrorFromThread( QObject::tr( "Sound Out Device" ), QObject::tr( "Sound Output Device Index Out Of Range. Will Use Default Device" ) );
+        IToGui::getIToGui().toGuiAppPopupErr( eAppPopupErrSpeakerDeviceOutOfRange, "" );
         deviceIndex = 0;
     }
 
     stopAudioOutHardware();
     if( !m_AudioFormat.sampleRate() )
     {
-        emit signalShowErrorFromThread( QObject::tr( "Sound Out Device" ), QObject::tr( "Sound Output Device Invalid Format" ) );
+        IToGui::getIToGui().toGuiAppPopupErr( eAppPopupErrSpeakerDeviceInvaidFormat, "" );
         deviceIndex = 0;
         m_AudioFormat.setSampleRate( AUDIO_DEVICE_SAMPLE_RATE );
         m_AudioFormat.setChannelCount( AUDIO_CHANNELS );
@@ -101,7 +96,7 @@ bool MiniAudioOut::soundOutDeviceChanged( int deviceIndex )
     }
     else
     {
-       emit signalShowErrorFromThread( QObject::tr( "Sound Out Device" ), QObject::tr( "Could not initialize sound out device " ) + m_AudioIoMgr.getAudioOutDeviceDesc( deviceIndex ).c_str() );
+       IToGui::getIToGui().toGuiAppPopupErr( eAppPopupErrSpeakerDeviceFailedToInitialize, "" );
     }
 
     return m_initialized;

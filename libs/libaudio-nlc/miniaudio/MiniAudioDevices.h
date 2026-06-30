@@ -13,11 +13,9 @@
 #include <string>
 
 #include "miniaudio.h"
-#include <QObject>
 
-class MiniAudioDevices : public QObject
+class MiniAudioDevices
 {
-    Q_OBJECT
 public:
 	MiniAudioDevices() = default;
 	~MiniAudioDevices() = default;
@@ -25,8 +23,8 @@ public:
 	bool						startupMiniAudio( void );
 	void						shutdownMiniAudio( void );
 
-	bool                        isMicrophoneDeviceAvailable( void )	{ return m_MaMicDeviceCount != 0; }
-	bool                        isSpeakerDeviceAvailable( void )	{ return m_MaSpeakerDeviceCount != 0; }
+	bool                        getIsMicrophoneAvailable( void )	{ return m_MaMicDeviceCount != 0; }
+	bool                        getIsSpeakerAvailable( void )	    { return m_MaSpeakerDeviceCount != 0; }
 
 	std::vector<std::string>&	getAudioInDevices( void )			{ return m_MicDeviceDescriptions; }
 	std::vector<std::string>&   getAudioOutDevices( void )			{ return m_SpeakerDeviceDescriptions; }
@@ -41,6 +39,9 @@ public:
 	ma_device_id*				getAudioOutDeviceId( int deviceIdx );
 
     virtual void                onAudioDevicesInitialized( bool hasDevices ) {};
+
+    int                         findAudioInDeviceIndexByDescription( const std::string& deviceDescription );
+    int                         findAudioOutDeviceIndexByDescription( const std::string& deviceDescription );
 
 protected:
 	ma_context					m_MaContext;

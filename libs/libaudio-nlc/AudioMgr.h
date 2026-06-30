@@ -1,5 +1,4 @@
 #pragma once
-
 //============================================================================
 // Copyright (C) 2026 Brett R. Jones
 //
@@ -18,6 +17,7 @@
 
 #include <librnnoise/RNNoise.h>
 
+#include "AudioDelayTestCallback.h"
 #include "AudioMixerMgr.h"
 
 #include "miniaudio/AudioFrameAecBuffer.h"
@@ -30,13 +30,12 @@
 #include "miniaudio/MiniAudioIn.h"
 #include "miniaudio/MiniAudioOut.h"
 
-#include "miniaudio/TestFileWav.h"
-
-#include "ToGuiHardwareControlInterface.h"
+#include "TestFileWav.h"
 
 #include <CoreLib/AudioCallbackSpaceAvailable.h>
 #include <CoreLib/VxMutex.h>
 #include <CoreLib/VxSemaphore.h>
+#include <CoreLib/VxTimedCallback.h>
 
 #include <deque>
 #include <vector>
@@ -44,22 +43,18 @@
 #include <thread>
 #include <atomic>
 
-#include <QObject>
-#include <QTimer>
+class TestFileWavMgr;
 
-class AppCommon;
-class GuiAudioLevelCallback;
-class GuiEchoCancelEnableCallback;
-
-class AudioMgr : public MiniAudioDevices, public AudioMixerMgr, public ToGuiHardwareControlInterface
+class AudioMgr : public MiniAudioDevices, public AudioMixerMgr
 {
-    Q_OBJECT
 public:
     static const int AEC_FRAME_COUNT_PER_OPUS_FRAME = 6; // opus consumes 60 ms frames
     static const int MAX_SPEAKER_OUT_BUFFER_SAMPLES = ECHO_FRAME_SIZE_10MS * 50;
 
-    AudioMgr( AppCommon& app );
+    AudioMgr();
     ~AudioMgr() = default;
+
+    static AudioMgr&            getInstance( void )                         { static AudioMgr instance; return instance; }
 
     void                        audioIoSystemStartup( void );
     void                        audioIoSystemShutdown( void );
@@ -84,6 +79,9 @@ public:
 
     void                        setWithAecLoopbackEnable( bool enable )       { m_WithAecLoopbackEnabled = enable; }
     bool                        getWithAecLoopbackEnable( void )              { return m_WithAecLoopbackEnabled; };
+
+    bool                        setAudioInDevice( std::string deviceDescription ); // finds device by description and sets it as the audio input device
+    bool                        setAudioOutDevice( std::string deviceDescription ); // finds device by description and sets it as the audio output device
 
     bool                        setSoundInDeviceIndex( int sndInDeviceIndex ) { m_SndInDeviceIndex = sndInDeviceIndex; updateHardwareTotalLatencyMs(); return true; };
     bool                        getSoundInDeviceIndex( int& retDeviceIndex ){ retDeviceIndex = m_SndInDeviceIndex; return true; };
@@ -119,9 +117,6 @@ public:
 
     void                        sendToSpeakerOutput( int16_t* pcmData, int sampleCnt );
 
-	virtual void 				callbackToGuiWantMicrophoneRecording( bool wantMicInput ) override {};
-	virtual void 				callbackToGuiWantSpeakerOutput( bool wantSpeakerOutput ) override {};
-
     // for title bar
 	int							getWantMicrophoneCount( void );
 	int							getWantSpeakerCount( void );
@@ -153,9 +148,9 @@ public:
     EAudioTestState             getAudioTestState( void ) { return m_AudioTestState; }
 
     // peak microphone input level for visualization
-    void                        setAudioInPeakAmplitude( int peakValue ) { m_AudioInPeakAmplitude = peakValue; }
-    int                         getAudioInPeakAmplitude( void ) { return m_AudioInPeakAmplitude; }  // get peak value 0 - 100
-    void						wantMicrophoneLevelCallbacks( GuiAudioLevelCallback *client, bool enable );
+    void                        setEnablePeekMicAmplitude( bool enable )    { m_EnableAudioInPeakAmplitude = enable; }
+    void                        setAudioInPeakAmplitude( int peakValue )    { m_AudioInPeakAmplitude = peakValue; }
+    int                         getAudioInPeakAmplitude( void )             { return m_AudioInPeakAmplitude; }  // get peak value 0 - 100
 
 	// Audio waveform visualization
     void                        wantAudioInVisualization( bool wanted ) { if(wanted)m_VisualizeInWanted++; else if(m_VisualizeInWanted > 0) m_VisualizeInWanted--; };
@@ -165,6 +160,7 @@ public:
     bool                        getIsAudioOutVisualizationWanted( void ) { return m_VisualizeOutWanted > 0; }
 
 	// test file playback
+    void                        playTestFile( std::string testFile );  
     void                        playTestFile( TestFileWav& testFile );  
 
 	// Echo Cancel options
@@ -173,24 +169,9 @@ public:
 
     void                        setNoiseSuppressionEnabled( bool enabled ) { m_EnableNoiseSuppression = enabled; }
     bool                        getNoiseSuppressionEnabled( void )         { return m_EnableNoiseSuppression; }
-    
-signals:
-    void                        signalAudioTestState( EAudioTestState audioTestState );
-    void                        signalTestedSoundDelay( int echoDelayMs );
-    void                        signalAudioTestMsg( QString audioTestMsg );
-    void                        signalEnableAudioIn( bool enable );
-    void                        signalEnableAudioOut( bool enable );
-    void                        signalUpdateWantMicrophoneCount( int wantMicCnt );
-    void                        signalUpdateSpeakerOutputCount( int wantSpeakerCnt );
-    
-protected slots:
-    void                        slotAudioTestTimer( void );
-    void                        slotAudioPeekTimeout( void );
-    void                        slotEnableAudioIn( bool enable );
-    void                        slotEnableAudioOut( bool enable );
-    void                        slotAudioOutDisablePoll( void );
-    void                        slotUpdateWantMicrophoneCount( int wantMicCnt );
-    void                        slotUpdateWantSpeakerCount( int wantSpeakerCnt );
+
+    void                        wantAudioDelayTestCallbacks( AudioDelayTestCallback* client, bool enable ); // optional
+
 
 protected:
 	bool                        playFromTestFile( void );
@@ -234,9 +215,15 @@ protected:
     void                        callbackAudioOut60msSpaceAvail( int freeSpaceLenBytes ) override;
     bool                        isModuleOutputWanted( EMediaModule mediaModule ) override;
 
-	//=== variables ===//	
-    AppCommon&                  m_MyApp;
+    void                        callbackAudioTestTimer( void );
+    void                        callbackAudioOutDisablePoll( void );
 
+    void                        enableAudioIn( bool enable );   
+    void                        enableAudioOut( bool enable );
+
+    void                        sendAudioDelayTestFinished( void );
+
+	//=== variables ===//	
     bool                        m_AudioIoInitialized{false};
 
     bool                        m_MicrophoneMuted{false};
@@ -273,6 +260,11 @@ protected:
     std::atomic<bool>           m_AudioInWorkerRunning{false};
     std::atomic<bool>           m_AudioInWorkerStopping{false};
 
+    bool                        m_EnableAudioInPeakAmplitude{false};
+    std::atomic<int>            m_AudioInPeakAmplitude{0};
+    int                         m_AccumPeekAudioInAmplitude{0};
+    bool                        m_CollectPeekAudioInAmplitude{false};
+
     // keep track of how many frames we've processed and call callbackAudioIn60msFrameAvail when enough audio for an opus frame is available
     int                         m_AudioInAecFramesProcessed{0};
     std::vector<int16_t>        m_OpusFrameBuffer;
@@ -283,11 +275,6 @@ protected:
     float                       m_CurrentErl{0};
     // Input Level: Calculate the RMS (Root Mean Square) of the 10ms buffer.
     float                       m_CurrentRms{0};
-
-    // microphone input peak amplitude for visualization
-    QTimer*                     m_AudioLevelPeekTimer{ nullptr };
-    std::atomic<int>            m_AudioInPeakAmplitude{0};
-    std::vector<GuiAudioLevelCallback*> m_AudioLevelClientList;
 
     // audio callback list
     std::vector<AudioCallbackSpaceAvailable*> m_AudioOutSpaceAvailableClientList;
@@ -346,16 +333,18 @@ protected:
     AudioFrameAecBuffer         m_SpeakerOutWaveformBuffer;
 
     // Audio delay test state and data
-    QTimer*                     m_AudioTestTimer{ nullptr };
+    VxTimedCallback             m_AudioTestTimer;
     EAudioTestState             m_AudioTestState{ eAudioTestStateNone };
     std::vector<std::pair<int64_t, int>> m_DelayTestDetectList; // pairs of time and peak value detected
+    bool                        m_DelayTestValid{ false };
+    std::vector<int>            m_EchoDelayResultList;
+    int                         m_EchoDelayMs{ 0 };
+
     int64_t                     m_AudioTestSentTimeMs{0};
     bool                        m_AudioTestMicEnable{ false };
     bool                        m_AudioTestSpeakerEnable{ false };
     int                         m_EchoDelayTestMaxInterations{ 3 };
-    int                         m_EchoDelayCurrentInteration{ 0 };
-    std::vector<int>            m_EchoDelayResultList;
-    int                         m_EchoDelayMs{ 0 }; 
+    int                         m_EchoDelayCurrentInteration{ 0 }; 
     
     int                         m_EchoHardwareTotalLatencyMs{ 20 };
     int                         m_SpeakerHardwareLatencyMs{ 10 };
@@ -377,13 +366,17 @@ protected:
     std::atomic<bool>           m_EnableAudioOut{0};
 
     // Delay stopping audio-out until queued data has drained to hardware.
-    QTimer*                     m_AudioOutDisableTimer{ nullptr };
+    VxTimedCallback             m_AudioOutDisableTimer;
     std::atomic<bool>           m_AudioOutDisablePending{false};
     std::atomic<bool>           m_PlayerNlcSpeakerDisablePending{false};
 
     RNNoise                     m_RNNoise;
     std::atomic<bool>           m_EnableNoiseSuppression{0};
 
-    LowPassFilter                m_MicInLowPassFilter;
+    LowPassFilter               m_MicInLowPassFilter;
+
+    TestFileWavMgr&             m_TestFileWavMgr;
+
+    AudioDelayTestCallback*     m_AudioDelayTestCallback{ nullptr };
 };
 

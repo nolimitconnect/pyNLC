@@ -14,7 +14,7 @@
 #include "AppDefs.h"
 #include "AppGlobals.h"
 
-#include "AudioMgr.h"
+#include "GuiAudioMgr.h"
 
 #include "CamLogic.h"
 
@@ -161,7 +161,7 @@ public:
     QString&                    getAppTitle( void ) { return m_AppTitle; }
     VxAppTheme&                 getAppTheme( void ) { return m_AppTheme; }
 
-    AudioMgr&                   getAudioMgr( void ) { return m_AudioMgr; }
+    GuiAudioMgr&                   getAudioMgr( void ) { return m_AudioMgr; }
 
     CamLogic&                   getCamLogic( void ) { return m_CamLogic; }
     P2PEngine&                  getEngine( void );
@@ -501,97 +501,100 @@ public:
     void				        toGuiRandomConnectStatus( ERandomConnectStatus eRandomConnectStatus, const char* msg = "" ) override;
 
     // return true if any microphone device is available to be enabled
-    virtual bool				toGuiIsMicrophoneDeviceAvailable( void ) override;
+    bool				        toGuiIsMicrophoneDeviceAvailable( void ) override;
 
-    virtual void				toGuiWantMicrophoneRecording( EMediaModule mediaModule, bool wantMicInput ) override;
+    void				        toGuiWantMicrophoneRecording( EMediaModule mediaModule, bool wantMicInput ) override;
 
-    virtual void				toGuiWantSpeakerOutput( EMediaModule mediaModule, bool wantSpeakerOutput ) override;
+    void				        toGuiWantSpeakerOutput( EMediaModule mediaModule, bool wantSpeakerOutput ) override;
 
-    virtual int				    toGuiModuleAudioFrame( EMediaModule mediaModule, int16_t* pu16PcmData, int pcmDataLenInBytes ) override;
+    int				            toGuiModuleAudioFrame( EMediaModule mediaModule, int16_t* pu16PcmData, int pcmDataLenInBytes ) override;
 
-    virtual int				    toGuiPlayerNlcAudio( EMediaModule mediaModule, float* audioDataFload, int audioDataLenInBytes ) override;
+    int				            toGuiPlayerNlcAudio( EMediaModule mediaModule, float* audioDataFload, int audioDataLenInBytes ) override;
 
-    virtual float               toGuiGetAudioDelaySeconds( EMediaModule mediaModule ) override;
+    float                       toGuiGetAudioDelaySeconds( EMediaModule mediaModule ) override;
 
-    virtual float               toGuiGetAudioCacheFreeSpaceBytes( EMediaModule mediaModule ) override;
+    float                       toGuiGetAudioCacheFreeSpaceBytes( EMediaModule mediaModule ) override;
 
-    virtual float               toGuiGetAudioCacheMaxSeconds( EMediaModule mediaModule ) override;
+    float                       toGuiGetAudioCacheMaxSeconds( EMediaModule mediaModule ) override;
+   
+    void				        toGuiUpdateWantMicrophoneCount( int wantMicCnt ) override;
+    void				        toGuiUpdateWantSpeakerCount( int wantSpeakerCnt ) override;
 
-    virtual void				toGuiWantVideoCapture( EMediaModule mediaModule, bool wantVidCapture ) override;
-    virtual void				toGuiPlayJpgVideo( VxGUID& onlineId, std::shared_ptr<CamJpgVideo>& jpgVideo ) override;
+    void				        toGuiWantVideoCapture( EMediaModule mediaModule, bool wantVidCapture ) override;
+    void				        toGuiPlayJpgVideo( VxGUID& onlineId, std::shared_ptr<CamJpgVideo>& jpgVideo ) override;
 
     // user update interface
-    virtual void				toGuiIndentListUpdate( EUserViewType listType, VxGUID& onlineId, uint64_t timestamp ) override;
-    virtual void				toGuiIndentListRemove( EUserViewType listType, VxGUID& onlineId ) override;
+    void				        toGuiIndentListUpdate( EUserViewType listType, VxGUID& onlineId, uint64_t timestamp ) override;
+    void				        toGuiIndentListRemove( EUserViewType listType, VxGUID& onlineId ) override;
 
-    virtual void				toGuiContactAdded( VxNetIdent* netIdent ) override;
-    virtual void				toGuiContactRemoved( VxGUID& onlineId ) override;
+    void				        toGuiContactAdded( VxNetIdent* netIdent ) override;
+    void				        toGuiContactRemoved( VxGUID& onlineId ) override;
 
-    virtual void				toGuiContactOnline( VxNetIdent* netIdent ) override;
+    void				        toGuiContactOnline( VxNetIdent* netIdent ) override;
 
-    virtual void				toGuiContactAnythingChange( VxNetIdent* netIdent ) override;
-    virtual void				toGuiContactLastSessionTimeChange( VxNetIdent* netIdent ) override;
+    void				        toGuiContactAnythingChange( VxNetIdent* netIdent ) override;
+    void				        toGuiContactLastSessionTimeChange( VxNetIdent* netIdent ) override;
 
-    virtual void				toGuiUpdateMyIdent( VxNetIdent* netIdent ) override;
-    virtual void				toGuiSaveMyIdent( VxNetIdent* netIdent ) override;
+    void				        toGuiUpdateMyIdent( VxNetIdent* netIdent ) override;
+    void				        toGuiSaveMyIdent( VxNetIdent* netIdent ) override;
 
-    virtual void				toGuiPluginStatus( EPluginType		pluginType,
+    void				        toGuiPluginStatus( EPluginType		pluginType,
                                                    int				statusType,
                                                    int				statusValue ) override;
 
     //=== to gui session ===//
-    virtual void				toGuiRxedPluginOffer( VxGUID onlineId, OfferBaseInfo& offerInfo ) override;
-    virtual void				toGuiRxedOfferReply( VxGUID onlineId, OfferBaseInfo& offerInfo ) override;
+    void				        toGuiRxedPluginOffer( VxGUID onlineId, OfferBaseInfo& offerInfo ) override;
+    void				        toGuiRxedOfferReply( VxGUID onlineId, OfferBaseInfo& offerInfo ) override;
 
-    virtual void				toGuiPluginSessionStarted( VxGUID& onlineId, EPluginType pluginType, VxGUID& lclSessionId ) override;
-    virtual void				toGuiPluginSessionEnded( VxGUID& onlineId, EPluginType pluginType, VxGUID& lclSessionId ) override;
+    void				        toGuiPluginSessionStarted( VxGUID& onlineId, EPluginType pluginType, VxGUID& lclSessionId ) override;
+    void				        toGuiPluginSessionEnded( VxGUID& onlineId, EPluginType pluginType, VxGUID& lclSessionId ) override;
 
-    virtual void				toGuiInstMsg( VxGUID& onlineId, EPluginType	pluginType, const char* pMsg ) override;
+    void				        toGuiInstMsg( VxGUID& onlineId, EPluginType	pluginType, const char* pMsg ) override;
 
     void				        toGuiTodGameAction( EPluginType	pluginType, VxGUID& onlineId, ETodGameAction todGameAction ) override;
 
     //=== to gui file ===//
-    virtual void				toGuiFileListReply( VxGUID& onlineId, EPluginType pluginType, FileInfo& fileInfo ) override;
+    void				        toGuiFileListReply( VxGUID& onlineId, EPluginType pluginType, FileInfo& fileInfo ) override;
 
-    virtual void				toGuiFileUploadStart( VxGUID& onlineId, EPluginType pluginType, VxGUID& lclSessionId, FileInfo& fileInfo ) override;
+    void				        toGuiFileUploadStart( VxGUID& onlineId, EPluginType pluginType, VxGUID& lclSessionId, FileInfo& fileInfo ) override;
 
-    virtual void				toGuiFileDownloadStart( VxGUID& onlineId, EPluginType pluginType, VxGUID& lclSessionId, FileInfo& fileInfo ) override;
+    void				        toGuiFileDownloadStart( VxGUID& onlineId, EPluginType pluginType, VxGUID& lclSessionId, FileInfo& fileInfo ) override;
 
-    virtual void				toGuiFileXferState( EPluginType pluginType, VxGUID& lclSessionId, EXferDirection xferDir, EXferState xferState, EXferError xferErr, int param1 ) override;
+    void				        toGuiFileXferState( EPluginType pluginType, VxGUID& lclSessionId, EXferDirection xferDir, EXferState xferState, EXferError xferErr, int param1 ) override;
     void				        toGuiFileDeleted( std::string& fileName ) override;
 
-    virtual void				toGuiFileDownloadComplete( EPluginType pluginType, VxGUID& lclSessionId, std::string& fileName, EXferError xferError ) override;
-    virtual void				toGuiFileUploadComplete( EPluginType pluginType, VxGUID& lclSessionId, std::string& fileName, EXferError xferError ) override;
+    void				        toGuiFileDownloadComplete( EPluginType pluginType, VxGUID& lclSessionId, std::string& fileName, EXferError xferError ) override;
+    void				        toGuiFileUploadComplete( EPluginType pluginType, VxGUID& lclSessionId, std::string& fileName, EXferError xferError ) override;
 
-    virtual void				toGuiFileList( VxGUID& appInstId, FileInfo& fileInfo ) override;
-    virtual void				toGuiFileListCompleted( VxGUID& appInstId ) override;
+    void				        toGuiFileList( VxGUID& appInstId, FileInfo& fileInfo ) override;
+    void				        toGuiFileListCompleted( VxGUID& appInstId ) override;
 
-    virtual void				toGuiFolderScan( VxGUID& appInstId, FileInfo& fileInfo ) override;
-    virtual void				toGuiFolderScanCompleted( VxGUID& appInstId, bool wasCanceled ) override;
+    void				        toGuiFolderScan( VxGUID& appInstId, FileInfo& fileInfo ) override;
+    void				        toGuiFolderScanCompleted( VxGUID& appInstId, bool wasCanceled ) override;
     
     //=== to gui search ===//
-    virtual void				toGuiSearchResultFileSearch( VxGUID& onlineId, EPluginType pluginType, VxGUID& lclSessionId, FileInfo& fileInfo ) override;
+    void				        toGuiSearchResultFileSearch( VxGUID& onlineId, EPluginType pluginType, VxGUID& lclSessionId, FileInfo& fileInfo ) override;
 
     //=== to gui asset ===//
-    virtual void				toGuiAssetAdded( AssetBaseInfo* assetInfo ) override;
-    virtual void				toGuiAssetUpdated( AssetBaseInfo* assetInfo ) override;
-    virtual void				toGuiAssetRemoved( AssetBaseInfo* assetInfo ) override;
+    void				        toGuiAssetAdded( AssetBaseInfo* assetInfo ) override;
+    void				        toGuiAssetUpdated( AssetBaseInfo* assetInfo ) override;
+    void				        toGuiAssetRemoved( AssetBaseInfo* assetInfo ) override;
 
-    virtual void				toGuiAssetXferState( VxGUID& assetUniqueId, EAssetSendState assetSendState, int param ) override;
+    void				        toGuiAssetXferState( VxGUID& assetUniqueId, EAssetSendState assetSendState, int param ) override;
 
-    virtual void				toGuiAssetSessionHistory( AssetBaseInfo* assetInfo ) override;
-    virtual void				toGuiAssetAction( EAssetAction assetAction, VxGUID& assetId, int pos0to100000 ) override;
-    virtual void				toGuiMultiSessionAction( EMSessionAction mSessionAction, VxGUID onlineId, int pos0to100000 ) override;
+    void				        toGuiAssetSessionHistory( AssetBaseInfo* assetInfo ) override;
+    void				        toGuiAssetAction( EAssetAction assetAction, VxGUID& assetId, int pos0to100000 ) override;
+    void				        toGuiMultiSessionAction( EMSessionAction mSessionAction, VxGUID onlineId, int pos0to100000 ) override;
 
     //=== to gui host list ===//
-    virtual void				toGuiBlobAdded( BlobInfo* assetInfo ) override;
-    virtual void				toGuiBlobSessionHistory( BlobInfo* assetInfo ) override;
-    virtual void				toGuiBlobAction( EAssetAction assetAction, VxGUID& assetId, int pos0to100000 ) override;
+    void				        toGuiBlobAdded( BlobInfo* assetInfo ) override;
+    void				        toGuiBlobSessionHistory( BlobInfo* assetInfo ) override;
+    void				        toGuiBlobAction( EAssetAction assetAction, VxGUID& assetId, int pos0to100000 ) override;
 
     /// a module has changed state
-    virtual void				toGuiModuleState( EMediaModule moduleNum, EModuleState moduleState )  override;
+    void				        toGuiModuleState( EMediaModule moduleNum, EModuleState moduleState )  override;
 
-    virtual void				toGuiNetworkIsTested( bool requiresRelay, std::string& ipAddr, uint16_t ipPort )  override;
+    void				        toGuiNetworkIsTested( bool requiresRelay, std::string& ipAddr, uint16_t ipPort )  override;
 
     //============================================================================
     //=== implementation ===//
@@ -927,7 +930,7 @@ protected:
 
     CamLogic                    m_CamLogic;
 
-    AudioMgr                    m_AudioMgr;
+    GuiAudioMgr                    m_AudioMgr;
     SoundFxMgr&                 m_SoundFxMgr;
 
     HomeWindow*					m_HomeWindow{ nullptr };

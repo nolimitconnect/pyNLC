@@ -17,7 +17,7 @@
 #include "GuiUserUpdateCallback.h"
 #include <GuiInterface/IDefs.h>
 
-#include <CoreLib/VxTimer.h>
+#include <CoreLib/VxElapseTimer.h>
 #include <CoreLib/GroupieId.h>
 
 #include <QListWidget>
@@ -107,7 +107,7 @@ protected:
     P2PEngine&					m_Engine;
     GuiUserJoinMgr&				m_UserJoinMgr;
     GuiThumbMgr&				m_ThumbMgr;
-	VxTimer						m_ClickEventTimer; // avoid duplicate clicks
+	VxElapseTimer						m_ClickEventTimer; // avoid duplicate clicks
     std::map<GroupieId, GuiUserJoinSession*> m_UserJoinCache;
 
     EUserJoinViewType           m_UserJoinViewType{ eUserJoinViewTypeNone };

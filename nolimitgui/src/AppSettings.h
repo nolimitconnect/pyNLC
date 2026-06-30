@@ -188,12 +188,11 @@ public:
 	void						setDisableSndMsgRx( bool disable );
 	bool						getDisableSndMsgRx( void );
 
+	void						setSoundInDevice( std::string deviceDescription );
+	std::string					getSoundInDevice( void );
 
-	void						setSoundInDeviceIndex( int32_t deviceIndex );
-	int32_t						getSoundInDeviceIndex( void );
-
-	void						setSoundOutDeviceIndex( int32_t deviceIndex );
-	int32_t						getSoundOutDeviceIndex( void );
+	void						setSoundOutDevice( std::string deviceDescription );
+	std::string					getSoundOutDevice( void );
 
 	void						setWantMicrophone( bool enable );
 	bool						getWantMicrophone( void );

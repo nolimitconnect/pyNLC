@@ -19,7 +19,7 @@
 #include <CoreLib/VxMutex.h>
 #include <CoreLib/VxSemaphore.h>
 #include <CoreLib/AppErr.h>
-#include <CoreLib/VxTimer.h>
+#include <CoreLib/VxElapseTimer.h>
 
 #ifdef TARGET_OS_WINDOWS
 # include <Network/Firewall.h>
@@ -114,19 +114,19 @@ public:
 
 	ENetCmdError				doIsMyPortOpen( std::string& retMyExternalIp, bool isUserTest = false );
 	bool						testLoobackPing( std::string localIP, uint16_t tcpListenPort );
-	ENetCmdError				sendAndRecieveIsMyPortOpen( VxTimer&				portTestTimer,
+	ENetCmdError				sendAndRecieveIsMyPortOpen( VxElapseTimer&				portTestTimer,
 															VxSktConnectSimple *	sktSimple, 
 															int						tcpListenPort,
 															std::string&			retMyExternalIp,
 															bool					sendMsgToUser,
 															int						sendRecieveTimeout = IS_PORT_OPEN_RX_DATA_TIMEOUT );
 
-	ENetCmdError                sendAndRecieveQueryHostId( VxTimer&				portTestTimer,
+	ENetCmdError                sendAndRecieveQueryHostId( VxElapseTimer&				portTestTimer,
                                                            VxSktConnectSimple *	netServConn,
                                                            VxGUID&			    retHostId,
                                                            bool					sendMsgToUser );
 
-	bool						sendAndRecievePing( VxTimer& pingTimer, VxSktConnectSimple& toClientConn, std::string& retPong, bool isClientPing, int receiveTimeout = 6000 );
+	bool						sendAndRecievePing( VxElapseTimer& pingTimer, VxSktConnectSimple& toClientConn, std::string& retPong, bool isClientPing, int receiveTimeout = 6000 );
 
 	bool						fetchExternalIpAddress( VxSktConnectSimple* sktSimple, std::string& retExternIpAddr, int receiveTimeout = 6000 );
 

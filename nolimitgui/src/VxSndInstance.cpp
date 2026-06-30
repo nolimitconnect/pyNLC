@@ -11,7 +11,7 @@
 #include "VxSndInstance.h"
 
 #include "AppCommon.h"
-#include "AudioMgr.h"
+#include "GuiAudioMgr.h"
 #include "SoundFxMgr.h"
 #include "VxResourceToRealFile.h"
 

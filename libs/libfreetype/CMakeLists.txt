@@ -25,14 +25,6 @@ list(APPEND freetype_SOURCES
 
     src/bdf/bdf_freetype.c
     src/cache/ftcache_freetype.c
-    src/cache/ftcbasic_freetype.c
-    src/cache/ftccache_freetype.c
-    src/cache/ftccmap_freetype.c
-    src/cache/ftcglyph_freetype.c
-    src/cache/ftcimage_freetype.c
-    src/cache/ftcmanag_freetype.c
-    src/cache/ftcmru_freetype.c
-    src/cache/ftcsbits_freetype.c
     src/ftlinux_freetype.c
     src/winfonts/winfnt_freetype.c
     src/type42/type42_freetype.c

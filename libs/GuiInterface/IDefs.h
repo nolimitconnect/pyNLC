@@ -74,6 +74,17 @@ enum EAgeType
     eMaxAgeType
 };
 
+enum EAudioTestState
+{
+	eAudioTestStateNone,
+	eAudioTestStateInit,
+	eAudioTestStateRun,
+	eAudioTestStateResult,
+	eAudioTestStateDone,
+
+	eMaxAudioTestState
+};
+
 enum ECacheType
 {
     eCacheTypeNone = 0,

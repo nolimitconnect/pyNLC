@@ -94,3 +94,33 @@ ma_device_id* MiniAudioDevices::getAudioOutDeviceId( int deviceIdx )
 {
     return &m_MaSpeakerDeviceInfos[ deviceIdx ].id;
 }
+
+//============================================================================
+int MiniAudioDevices::findAudioInDeviceIndexByDescription( const std::string& deviceDescription )
+{
+    for( int i = 0; i < m_MicDeviceDescriptions.size(); ++i )
+    {
+        if( m_MicDeviceDescriptions[i] == deviceDescription )
+        {
+            return i;
+        }
+    }
+
+    LogMsg( LOG_VERBOSE, "MiniAudioDevices::%s could not find device with description: %s", __func__, deviceDescription.c_str() );
+    return -1;
+}
+
+//============================================================================
+int MiniAudioDevices::findAudioOutDeviceIndexByDescription( const std::string& deviceDescription )
+{
+    for( int i = 0; i < m_SpeakerDeviceDescriptions.size(); ++i )
+    {
+        if( m_SpeakerDeviceDescriptions[i] == deviceDescription )
+        {
+            return i;
+        }
+    }
+
+    LogMsg( LOG_VERBOSE, "MiniAudioDevices::%s could not find device with description: %s", __func__, deviceDescription.c_str() );
+    return -1;
+}

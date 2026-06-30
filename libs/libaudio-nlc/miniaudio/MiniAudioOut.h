@@ -52,7 +52,7 @@ protected:
 
     VxAudioFormat                m_AudioFormat;
     
-    qint64                      m_ProccessedMs = 0;
+    int64_t                      m_ProccessedMs = 0;
 
     int                         m_UpsampleMutiplier{ 0 };
 

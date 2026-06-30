@@ -14,7 +14,7 @@
 #include <GuiInterface/IFromGui.h>
 #include <PktLib/VxCommon.h>
 
-#include <CoreLib/VxTimer.h>
+#include <CoreLib/VxElapseTimer.h>
 #include <CoreLib/VxMutex.h>
 #include <CoreLib/MediaCallbackInterface.h>
 
@@ -77,7 +77,7 @@ protected:
 	VxGUID						m_AssetId;
 
 	VFile*						m_FileHandle{ nullptr };
-	VxTimer						m_PlayElapseTimer;
+	VxElapseTimer						m_PlayElapseTimer;
 	double						m_TotalElapsedMs{ 0 };
 	bool						m_IsFirstFrameAfterResumePlaying{ false };
 

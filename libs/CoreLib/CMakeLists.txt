@@ -78,9 +78,10 @@ list(APPEND CoreLib_HEADERS
     VxStringUtils.h
     VxTextStreamReader.h
     VxThread.h
+    VxTimedCallback.h
     VxTimeUtil.h
     VxTime.h
-    VxTimer.h
+    VxElapseTimer.h
     VxValuePair.h
     VxXferDefs.h
     VxXml.h
@@ -129,6 +130,8 @@ list(APPEND CoreLib_SOURCES
     VxColorUtil.cpp
     VxCrypto.cpp
     VxDebug.cpp
+    VxElapseTimer.cpp
+
     VxFileCopier.cpp
     VxFileCrc32.cpp
     VxFileInfo.cpp
@@ -167,7 +170,8 @@ list(APPEND CoreLib_SOURCES
     VxThread.cpp
     VxTimeUtil.cpp
     VxTime.cpp
-    VxTimer.cpp
+    VxTimedCallback.cpp
+
     VxValuePair.cpp
     VxXferDefs.cpp
     VxXml.cpp

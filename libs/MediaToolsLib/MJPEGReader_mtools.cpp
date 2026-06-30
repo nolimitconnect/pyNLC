@@ -926,7 +926,7 @@ void MJPEGReader::cleanupReadChunks( void )
 void MJPEGReader::readerThread( void )
 {
 	// LogMsg( LOG_DEBUG, "MJPEGReader:readerThread start" );
-	VxTimer	vidTimer;
+	VxElapseTimer	vidTimer;
 	m_MilliSecPerFrame = 80.0;
 	bool allChunksSent = false;
 	if( 0 != m_ChunkReadIdx )

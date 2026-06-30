@@ -5,7 +5,7 @@
 #include "VxDebug.h"
 #include "VxGlobals.h"
 #include "VxTime.h"
-#include "VxTimer.h"
+#include "VxElapseTimer.h"
 #include "VxTimeUtil.h"
 
 #include <sysheaders/sys/time.h>

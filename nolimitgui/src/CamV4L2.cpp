@@ -15,7 +15,7 @@
 #include "CamProcessor.h"
 
 #include <CoreLib/VxDebug.h>
-#include <CoreLib/VxTimer.h>
+#include <CoreLib/VxElapseTimer.h>
 
 #include <QByteArray>
 #include <QImage>

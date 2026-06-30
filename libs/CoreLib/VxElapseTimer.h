@@ -11,7 +11,7 @@
 
 #include "VxDefs.h"
 
-//=== VxTimer Class object ===//
+//=== VxElapseTimer Class object ===//
 //there are a couple of ways to use the timer
 //		any call to StartTime with any value sets the start time
 //		so that calls to ElapsedTime return the Time since last called startTimer or timer was constructed,
@@ -22,15 +22,15 @@
 //
 //		NOTE: even after the timerDone has expired, calls to ElapsedTimer are still valid
 
-class VxTimer
+class VxElapseTimer
 {
 public:
-	VxTimer();
-    virtual ~VxTimer() = default;
+	VxElapseTimer();
+    virtual ~VxElapseTimer() = default;
 
     double						elapsedMs( void );       // return the elapsed time in milliseconds since timer was started or created 
     double						elapsedSec( void )  { return ( elapsedMs() / 1000 ); }      // return the elapsed time in seconds since
-									                                                        // startTimer was called or VxTimer was constructed...it doesn't mater if the time
+									                                                        // startTimer was called or VxElapseTimer was constructed...it doesn't mater if the time
 									                                                        // specified in the startTimer parameter has elapsed or not
     // same as start timer.. start at 0 then read elapsed time since reset or start timer
     void                        resetTimer( void )                          { startTimerMs( 0 ); }

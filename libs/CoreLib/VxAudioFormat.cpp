@@ -9,7 +9,7 @@
 //============================================================================
 
 #include "VxAudioFormat.h"
-
+#include "IsBigEndianCpu.h"
 
 //============================================================================
 VxAudioFormat::VxAudioFormat( VxAudioFormat& rhs )
@@ -76,4 +76,49 @@ int64_t VxAudioFormat::bytesForDuration( int64_t durationUs ) const
 		* durationUs / 1000000;
 	result -= result % ( channelCount() * bytesPerSample() * 8 );
 	return result;
+}
+
+//=============================================================================
+std::string VxAudioFormat::describeFormat( void ) const
+{
+    std::string formatDesc;
+
+    const std::string formatEndian = !IsBigEndianCpu()
+        ? "LE" : "BE";
+    std::string formatType;
+
+    switch (m_SampleFormat) {
+    case Int16:
+    case Int32:
+        formatType = "signed";
+        break;
+    case UInt8:
+        formatType = "unsigned";
+        break;
+    case Float:
+        formatType = "float";
+        break;
+    case Unknown:
+    default:
+        formatType = "unknown";
+        break;
+    }
+
+    std::string formatChannels = std::to_string(m_ChannelCount) + " channels";
+    switch (m_ChannelCount) {
+    case 1:
+        formatChannels = "mono";
+        break;
+    case 2:
+        formatChannels = "stereo";
+        break;
+    }
+
+    formatDesc = std::to_string(m_Rate) + " Hz " +
+        std::to_string(m_ChannelBytes) + " bytes " +
+        formatType + " " +
+        formatEndian + " " +
+        formatChannels;
+
+    return formatDesc;
 }

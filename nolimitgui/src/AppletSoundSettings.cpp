@@ -14,10 +14,12 @@
 #include "AppCommon.h"
 #include "AppGlobals.h"
 #include "AppSettings.h"
+#include "GuiParams.h"
 
 #include "GuiHelpers.h"
-#include "AudioMgr.h"
+#include "GuiAudioMgr.h"
 #include "SoundFxMgr.h"
+#include "VxResourceToRealFile.h"
 
 #include <P2PEngine/P2PEngine.h>
 #include <MediaProcessor/MediaProcessor.h>
@@ -52,17 +54,19 @@ AppletSoundSettings::AppletSoundSettings( AppCommon& app, QWidget*	parent )
     setAppletType( eAppletSoundSettings );
     ui.setupUi( getContentItemsFrame() );
     setTitleBarText( DescribeApplet( m_EAppletType ) );
+    ui.m_StatusMsgLabel->setVisible( true );
 
     ui.m_AudioInPeakProgressBar->setValue( 0 );
 
     connectBarWidgets();
 
     // before we connect signals we load the test files into the combo box so that signal handlers don't get called when we set the current index of the combo box
-    getTestFileMgr().testFileMgrStartup();
-    QStringList testFileList = getTestFileMgr().getTestFileList();
-    for( const QString& testFile : testFileList )
+    const QString resourcePath = ":/AppRes/Resources/NlcTestAudio.wav";
+    VxResourceToRealFile realFile( resourcePath );
+    if( !realFile.getRealFilePathAndName().empty() )
     {
-        ui.m_TestFileComboBox->addItem( QFileInfo( testFile ).fileName() );
+        const QString testFile = QString::fromStdString( realFile.getRealFilePathAndName() );
+        ui.m_TestFileComboBox->addItem( testFile );
     }
 
     int echoDelayMs = getAppSettings().getEchoDelayParam();
@@ -73,10 +77,6 @@ AppletSoundSettings::AppletSoundSettings( AppCommon& app, QWidget*	parent )
 
     connect( ui.m_TestSoundDelayButton, SIGNAL(clicked()), this, SLOT(slotStartTestSoundDelay()) );
     connect( ui.m_EchoDelaySaveButton, SIGNAL(clicked()), this, SLOT(slotEchoDelaySaveButtonClicked()) );
-
-    connect( &m_MyApp.getAudioMgr(), SIGNAL(signalTestedSoundDelay(int)), this, SLOT(slotTestedSoundDelayResult(int)), Qt::QueuedConnection );
-    connect( &m_MyApp.getAudioMgr(), SIGNAL(signalAudioTestState(EAudioTestState)), this, SLOT(slotAudioTestState(EAudioTestState)), Qt::QueuedConnection );
-    connect( &m_MyApp.getAudioMgr(), SIGNAL(signalAudioTestMsg(QString)), this, SLOT(slotAudioTestMsg(QString)), Qt::QueuedConnection );
 
     updateInAudioDevices();
 
@@ -104,14 +104,18 @@ AppletSoundSettings::AppletSoundSettings( AppCommon& app, QWidget*	parent )
     connect( ui.m_AgcCheckBox, SIGNAL(stateChanged(int)), this, SLOT(slotAgcEnable(int)) );
     connect( ui.m_NoiseSuppressionCheckBox, SIGNAL(stateChanged(int)), this, SLOT(slotNoiseSuppressionEnable(int)) );
 
+    connect( this, SIGNAL(signalAudioDelayTestStarted()), this, SLOT(slotAudioDelayTestStarted()), Qt::QueuedConnection );
+    connect( this, SIGNAL(signalAudioDelayTestProgress(int,bool)), this, SLOT(slotAudioDelayTestProgress(int,bool)), Qt::QueuedConnection );
+    connect( this, SIGNAL(signalAudioDelayTestFinished(int,bool)), this, SLOT(slotAudioDelayTestFinished(int,bool)), Qt::QueuedConnection );
+
     m_MyApp.activityStateChange( this, true );
 
-    if( !m_MyApp.getAudioMgr().isSpeakerDeviceAvailable() )
+    if( !m_MyApp.getAudioMgr().getIsSpeakerAvailable() )
     {
         ActivityMsgBoxOk msgBox( m_MyApp, this, QObject::tr( "Speaker Device Unavailable" ), QObject::tr( "No speaker device is available to enable" ) );
         msgBox.exec();
     }
-    else if( !m_MyApp.getAudioMgr().isMicrophoneDeviceAvailable() )
+    else if( !m_MyApp.getAudioMgr().getIsMicrophoneAvailable() )
     {
         m_MyApp.getSoundFxMgr().playSnd( eSndDefBusy );
         ActivityMsgBoxOk msgBox( m_MyApp, this, QObject::tr( "Microphone Device Unavailable" ), QObject::tr( "No microphone device is available to enable" ) );
@@ -125,11 +129,26 @@ AppletSoundSettings::AppletSoundSettings( AppCommon& app, QWidget*	parent )
     m_MyApp.getAudioMgr().toGuiWantSpeakerOutput( eMediaModuleSoundSettings, true );
     m_MyApp.getAudioMgr().toGuiWantMicrophoneRecording( eMediaModuleSoundSettings, true );
     m_MyApp.getAudioMgr().wantMicrophoneLevelCallbacks( this, true );
+
+    m_MyApp.getAudioMgr().wantAudioDelayTestCallbacks( this, true );
+
+    if( !checkMicrophonePermission() )
+    {
+        ActivityMsgBoxOk msgBox( m_MyApp, this, QObject::tr( "Microphone Permission Denied" ), QObject::tr( "The application does not have permission to access the microphone" ) );
+        msgBox.exec();
+        onBackButtonClicked();
+    }
 }
 
 //============================================================================
 AppletSoundSettings::~AppletSoundSettings()
 {
+    // Do not leave in testing loopback state
+    getAudioMgr().setNoAecLoopbackEnable( false ); 
+    getAudioMgr().setWithAecLoopbackEnable( false ); 
+
+    m_MyApp.getAudioMgr().wantAudioDelayTestCallbacks( this, false );
+
     m_MyApp.getAudioMgr().wantMicrophoneLevelCallbacks( this, false );
     m_MyApp.getAudioMgr().toGuiWantMicrophoneRecording( eMediaModuleSoundSettings, false );
     m_MyApp.getAudioMgr().toGuiWantSpeakerOutput( eMediaModuleSoundSettings, false );
@@ -138,7 +157,7 @@ AppletSoundSettings::~AppletSoundSettings()
 }
 
 //============================================================================
-AudioMgr& AppletSoundSettings::getAudioMgr( void )
+GuiAudioMgr& AppletSoundSettings::getAudioMgr( void )
 {
     return m_MyApp.getAudioMgr();
 }
@@ -207,12 +226,6 @@ void AppletSoundSettings::statusMsg( const char* errMsg, ... )
 }
 
 //============================================================================
-void AppletSoundSettings::inDeviceChanged( int index )
-{
-    m_MyApp.getAudioMgr().soundInDeviceChanged( index );
-}
-
-//============================================================================
 void AppletSoundSettings::updateInAudioDevices( void )
 {
     ui.m_InDeviceComboBox->clear();
@@ -222,15 +235,9 @@ void AppletSoundSettings::updateInAudioDevices( void )
     int devIndex = 0;
     for( auto& deviceDesc : inDeviceList )
     {
-        ui.m_InDeviceComboBox->addItem( deviceDesc.c_str(), QVariant::fromValue( devIndex ) );
+        ui.m_InDeviceComboBox->addItem( deviceDesc.c_str() );
         devIndex++;
     }
-}
-
-//============================================================================
-void AppletSoundSettings::outDeviceChanged( int index )
-{
-    m_MyApp.getAudioMgr().soundOutDeviceChanged( index );
 }
 
 //============================================================================
@@ -243,7 +250,7 @@ void AppletSoundSettings::updateOutAudioDevices( void )
     int devIndex = 0;
     for( auto& deviceDesc : outDeviceList )
     {
-        ui.m_OutDeviceComboBox->addItem( deviceDesc.c_str(), QVariant::fromValue( devIndex ) );
+        ui.m_OutDeviceComboBox->addItem( deviceDesc.c_str() );
         devIndex++;
     }
 }
@@ -254,7 +261,7 @@ void AppletSoundSettings::slotApplyInDeviceChange( void )
     QString sndInDevDescription = ui.m_InDeviceComboBox->currentText();
     if( !sndInDevDescription.isEmpty() )
     {
-        if( m_MyApp.getAudioMgr().setSoundInDeviceIndex( ui.m_InDeviceComboBox->currentIndex() ) )
+        if( m_MyApp.getAudioMgr().setAudioInDevice( sndInDevDescription.toStdString() ) )
         {            
             ActivityMsgBoxOk msgBox( m_MyApp, this, QObject::tr( "Sound In Device" ), sndInDevDescription + QObject::tr( " device is saved as preferred Sound In Device" ) );
             msgBox.exec();
@@ -278,9 +285,9 @@ void AppletSoundSettings::slotApplyOutDeviceChange( void )
     QString sndOutDevDescription = ui.m_OutDeviceComboBox->currentText();
     if( !sndOutDevDescription.isEmpty() )
     {
-        if( m_MyApp.getAudioMgr().setSoundOutDeviceIndex( ui.m_OutDeviceComboBox->currentIndex() ) )
+        if( m_MyApp.getAudioMgr().setAudioOutDevice( sndOutDevDescription.toStdString() ) )
         {
-            m_MyApp.getAppSettings().setSoundOutDeviceIndex( ui.m_OutDeviceComboBox->currentIndex() );
+            m_MyApp.getAppSettings().setSoundOutDevice( sndOutDevDescription.toStdString() );
             ActivityMsgBoxOk msgBox( m_MyApp, this, QObject::tr( "Sound Out Device" ), sndOutDevDescription + QObject::tr( " device is saved as preferred Sound Out Device" ) );
             msgBox.exec();
         }
@@ -300,6 +307,7 @@ void AppletSoundSettings::slotApplyOutDeviceChange( void )
 //============================================================================
 void AppletSoundSettings::slotStartTestSoundDelay( void )
 {
+    ui.m_StatusMsgLabel->setText( "" );
     if( eAudioTestStateNone == m_AudioTestState )
     {
         m_EchoDelayResultList.clear();
@@ -329,91 +337,6 @@ void AppletSoundSettings::slotEchoDelaySaveButtonClicked( void )
 }
 
 //============================================================================
-void AppletSoundSettings::slotAudioTestState( EAudioTestState audioTestState )
-{
-    switch( audioTestState )
-    {
-    case eAudioTestStateInit:
-        break;
-
-    case eAudioTestStateRun:
-        break;
-
-    case eAudioTestStateDone:
-        getAudioMgr().setAudioTestState( eAudioTestStateNone );
-        showEchoDelayTestResults();
-        break;
-
-    case eAudioTestStateNone:
-    default:
-        break;
-    }
-}
-
-//============================================================================
-void AppletSoundSettings::slotTestedSoundDelayResult( int echoDelayMs )
-{
-    m_EchoDelayResultList.emplace_back( echoDelayMs );
-}
-
-//============================================================================
-void AppletSoundSettings::slotAudioTestMsg( QString audioTestMsg )
-{
-    setStatusLabel( audioTestMsg );
-}
-
-//============================================================================
-void AppletSoundSettings::showEchoDelayTestResults( void )
-{
-    if( !m_EchoDelayResultList.empty() )
-    {
-        bool resultsValid{ true };
-
-        QString resultMsg( QObject::tr( "Echo Delays " ) );
-        bool firstResult{ true };
-        int averageDelay = 0;
-        for( auto delayMs : m_EchoDelayResultList )
-        {
-            if( delayMs < 40 || delayMs > 500 )
-            {
-                resultsValid = false;
-            }
-
-            averageDelay += delayMs;
-            if( !firstResult )
-            {
-                resultMsg += QObject::tr( ", ");
-            }
-            else
-            {
-                firstResult = false;
-            }
-
-            resultMsg += QString::number( delayMs );
-        }
-
-        averageDelay = averageDelay / m_EchoDelayResultList.size();
-        setStatusLabel( resultMsg );
-
-        ui.m_TestDelayResultLineEdit->setText( QString::number( averageDelay - 5 ) );
-        resultMsg += resultsValid ? QObject::tr( "\nDelay Test Is Valid\n" ) : QObject::tr( "\nDelay Test Is Invalid\n" );
-
-        if( resultsValid )
-        {
-            QString msg( QObject::tr( "If you are having echo issues you may want to enter value " ) );
-            msg += QString::number( averageDelay - 5 );
-            msg += QObject::tr( " into  Echo delay ms field and click Save Echo Delay To Echo Canceller button\n" );
-            msg += resultMsg;
-            QMessageBox::information( this, QObject::tr( "Echo Delay Test Is Valid" ), msg );
-        }
-        else
-        {
-            QMessageBox::information( this, QObject::tr( "Echo Delay Test Is Invalid. Check microphone and speaker. Try turning up the volume or placing microphone closer to speaker" ), resultMsg );
-        }
-    }
-}
-
-//============================================================================
 void AppletSoundSettings::slotGenerateToneCheckBox( int checkedState )
 {
     bool genTone = ui.m_GenerateToneCheckBox->isChecked();
@@ -430,14 +353,14 @@ void AppletSoundSettings::callbackGuiMicrophoneLevel( int micLevel )
 //============================================================================
 void AppletSoundSettings::slotPlayTestFileButtonClicked( void )
 {
-    int index = ui.m_TestFileComboBox->currentIndex();
-    if( getTestFileMgr().indexIsValid( index ) )
+    QString testFile = ui.m_TestFileComboBox->currentText();
+    if( !testFile.isEmpty() )
     {
-        getAudioMgr().playTestFile( getTestFileMgr().getTestFileWav( index ) );
+        getAudioMgr().playTestFile( testFile.toStdString() );
     }
     else
     {
-        QMessageBox::information( this, QObject::tr( "Play Test File" ), QObject::tr( "No test file is selected or test file index is invalid" ) );
+        QMessageBox::information( this, QObject::tr( "Play Test File" ), QObject::tr( "No test file is selected or test file is invalid" ) );
     }
 }
 
@@ -449,11 +372,7 @@ void AppletSoundSettings::slotInDeviceComboBoxChanged( int index )
         return;
     }
 
-    if( getAudioMgr().getAudioInIo().soundInDeviceChanged( index ) )
-    {
-        getAudioMgr().setSoundInDeviceIndex( index );
-        getAppSettings().setSoundInDeviceIndex( index );
-    }
+    slotApplyInDeviceChange();
 }
 
 //============================================================================
@@ -464,11 +383,7 @@ void AppletSoundSettings::slotOutDeviceComboBoxChanged( int index )
         return;
     }
 
-    if( getAudioMgr().getAudioOutIo().soundOutDeviceChanged( index ) )
-    {
-        getAudioMgr().setSoundOutDeviceIndex( index );
-        getAppSettings().setSoundOutDeviceIndex( index );
-    }
+    slotApplyOutDeviceChange();
 }
 
 //============================================================================
@@ -579,34 +494,26 @@ void AppletSoundSettings::loadUiFromAppSettings( void )
 
     if( ui.m_InDeviceComboBox->count() > 0 )
     {
-        int savedInDeviceIndex = getAppSettings().getSoundInDeviceIndex();
+        std::string savedInDevice = getAppSettings().getSoundInDevice();
+        int savedInDeviceIndex = ui.m_InDeviceComboBox->findText( QString::fromStdString( savedInDevice ) );
         if( savedInDeviceIndex < 0 || savedInDeviceIndex >= ui.m_InDeviceComboBox->count() )
         {
             savedInDeviceIndex = 0;
         }
 
         ui.m_InDeviceComboBox->setCurrentIndex( savedInDeviceIndex );
-        if( getAudioMgr().getAudioInIo().soundInDeviceChanged( savedInDeviceIndex ) )
-        {
-            getAudioMgr().setSoundInDeviceIndex( savedInDeviceIndex );
-            getAppSettings().setSoundInDeviceIndex( savedInDeviceIndex );
-        }
     }
 
     if( ui.m_OutDeviceComboBox->count() > 0 )
     {
-        int savedOutDeviceIndex = getAppSettings().getSoundOutDeviceIndex();
+        std::string savedOutDevice = getAppSettings().getSoundOutDevice();
+        int savedOutDeviceIndex = ui.m_OutDeviceComboBox->findText( QString::fromStdString( savedOutDevice ) );
         if( savedOutDeviceIndex < 0 || savedOutDeviceIndex >= ui.m_OutDeviceComboBox->count() )
         {
             savedOutDeviceIndex = 0;
         }
 
         ui.m_OutDeviceComboBox->setCurrentIndex( savedOutDeviceIndex );
-        if( getAudioMgr().getAudioOutIo().soundOutDeviceChanged( savedOutDeviceIndex ) )
-        {
-            getAudioMgr().setSoundOutDeviceIndex( savedOutDeviceIndex );
-            getAppSettings().setSoundOutDeviceIndex( savedOutDeviceIndex );
-        }
     }
 
     ui.m_AgcCheckBox->setChecked( getAppSettings().getAgcEnabled() );
@@ -634,4 +541,84 @@ void AppletSoundSettings::slotNoiseSuppressionEnable( int checkedState )
     bool noiseSuppressionEnabled = ( checkedState != 0 );
     getAudioMgr().setNoiseSuppressionEnabled( noiseSuppressionEnabled );
     getAppSettings().setNoiseSuppressionEnabled( noiseSuppressionEnabled );
+}
+
+
+
+//============================================================================
+void AppletSoundSettings::onAudioDelayTestStarted( void )
+{
+    emit signalAudioDelayTestStarted();
+}
+
+//============================================================================
+void AppletSoundSettings::onAudioDelayTestProgress( int delayMs, bool delayValueValid )
+{
+    emit signalAudioDelayTestProgress( delayMs, delayValueValid );
+}
+
+//============================================================================
+void AppletSoundSettings::onAudioDelayTestFinished( int delayAverageMs, bool delayValueValid )
+{
+    emit signalAudioDelayTestFinished( delayAverageMs, delayValueValid );
+}
+
+//============================================================================
+void AppletSoundSettings::slotAudioDelayTestStarted( void )
+{
+}
+
+//============================================================================
+void AppletSoundSettings::slotAudioDelayTestProgress( int delayMs, bool delayValueValid )
+{
+    if(!delayValueValid)
+    {
+        QString resultMsg;
+        if( delayMs == 0 )
+        {
+            resultMsg = QObject::tr("Sound Delay Not Detected. Check speaker volume and that microphone is on ");
+        }
+        else if( delayMs < 50 )
+        {
+            resultMsg = QObject::tr("Sound Delay too short.. probably noise ");
+        }
+        else
+        {
+            resultMsg = QObject::tr("Sound Delay too long.. probably mic level low ");
+        }
+
+        resultMsg += QObject::tr("Delay: %1").arg(delayMs);
+        ui.m_StatusMsgLabel->setText( resultMsg );
+    } 
+    else
+    {
+        QString resultMsg = QObject::tr("Sound Delay Test Value Valid ");
+        resultMsg += QObject::tr("Delay: %1").arg(delayMs);
+        ui.m_StatusMsgLabel->setText( resultMsg );
+    }
+}
+
+//============================================================================
+void AppletSoundSettings::slotAudioDelayTestFinished( int delayAverageMs, bool delayValueValid )
+{
+    if(delayValueValid)
+    {
+        QString resultMsg = QObject::tr("You can enter the measured delay. Average Delay: %1 ms").arg(delayAverageMs);
+        QMessageBox::information(nullptr, QObject::tr("Audio Delay Test Success"), resultMsg);
+    }
+    else
+    {
+        QString resultMsg = QObject::tr("Try turning up the volume or placing microphone closer to speaker");
+        QMessageBox::warning(nullptr, QObject::tr("Audio Delay Test Failed"), resultMsg);
+    }
+
+}
+
+//============================================================================
+bool AppletSoundSettings::checkMicrophonePermission( void )
+{
+#if !defined(TARGET_OS_ANDROID)
+    return true;
+#endif
+    return GuiParams::requestPermission( "android.permission.RECORD_AUDIO" );
 }

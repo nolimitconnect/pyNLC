@@ -102,7 +102,7 @@ bool VirtStreamMgr::waitForStream( int64_t fileOffset, int64_t readLen )
 	//const double maxTimeoutMs = 20000;
 	const double maxTimeoutMs = 60000;
 	//const double maxTimeoutMs = 800000; // temp for debug
-	VxTimer timer;
+	VxElapseTimer timer;
 	while( timer.elapsedMs() < maxTimeoutMs && !m_LiveStream.m_Error )
 	{
 		if( !getIsPlaying() )

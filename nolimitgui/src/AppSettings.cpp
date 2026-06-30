@@ -612,31 +612,31 @@ void AppSettings::getFavoriteHostGroupUrl( std::string& hostUrl )
 }
 
 //============================================================================
-void AppSettings::setSoundInDeviceIndex( int32_t deviceIndex )
+void AppSettings::setSoundInDevice( std::string deviceDescription )
 {
-	setIniValue( "SoundInDeviceIndex", deviceIndex );
+	setIniValue( "SoundInDevice", deviceDescription );
 }
 
 //============================================================================
-int32_t AppSettings::getSoundInDeviceIndex( void )
+std::string AppSettings::getSoundInDevice( void )
 {
-	int32_t deviceIndex = 0;
-	getIniValue( "SoundInDeviceIndex", deviceIndex );
-	return deviceIndex;
+	std::string deviceDescription;
+	getIniValue( "SoundInDevice", deviceDescription, "" );
+	return deviceDescription;
 }
 
 //============================================================================
-void AppSettings::setSoundOutDeviceIndex( int32_t deviceIndex )
+void AppSettings::setSoundOutDevice( std::string deviceDescription )
 {
-	setIniValue( "SoundOutDeviceIndex", deviceIndex );
+	setIniValue( "SoundOutDevice", deviceDescription );
 }
 
 //============================================================================
-int32_t AppSettings::getSoundOutDeviceIndex( void )
+std::string AppSettings::getSoundOutDevice( void )
 {
-	int32_t deviceIndex = 0;
-	getIniValue( "SoundOutDeviceIndex", deviceIndex, 0 );
-	return deviceIndex;
+	std::string deviceDescription;
+	getIniValue( "SoundOutDevice", deviceDescription, "" );
+	return deviceDescription;
 }
 
 //============================================================================

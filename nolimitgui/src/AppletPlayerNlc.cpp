@@ -18,7 +18,7 @@
 #include "GuiHelpers.h"
 #include "GuiPlayerMgr.h"
 #include "MyIcons.h"
-#include "AudioMgr.h"
+#include "GuiAudioMgr.h"
 #include "VxMenuButton.h"
 
 #include <P2PEngine/P2PEngine.h>

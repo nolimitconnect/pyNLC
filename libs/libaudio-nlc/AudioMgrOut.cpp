@@ -12,12 +12,12 @@
 
 #include "AudioDefs.h"
 #include "AudioUtils.h"
-#include "GuiAudioLevelCallback.h"
+
+#include <GuiInterface/IToGui.h>
 
 #include <CoreLib/VxDebug.h>
 #include <CoreLib/VxTime.h>
-#include <CoreLib/VxTimer.h>
-
+#include <CoreLib/VxElapseTimer.h>
 
 //============================================================================
 void AudioMgr::callbackReadSpeakerData( int16_t* pcmData, int sampleCnt )

@@ -8,7 +8,7 @@
 // https://nolimitconnect.com
 //============================================================================
 
-#include "VxTimer.h"
+#include "VxElapseTimer.h"
 #include "VxDebug.h"
 
 //#define TEST_TIMER 1 //define this to use the test program
@@ -145,20 +145,20 @@ int64_t GetHighResolutionTimeSeconds( void )
 }
 
 //============================================================================
-VxTimer::VxTimer()
+VxElapseTimer::VxElapseTimer()
 {
     m_StartTickMs = GetHighResolutionTimeMs();
 }
 
 //============================================================================
-void VxTimer::startTimerMs( int milliSec )
+void VxElapseTimer::startTimerMs( int milliSec )
 {
     m_StartTickMs = GetHighResolutionTimeMs();
 	m_TimeTillDoneMs = m_StartTickMs + milliSec;
 }
 
 //============================================================================
-void VxTimer::waitTimeMs( int milliSec )
+void VxElapseTimer::waitTimeMs( int milliSec )
 {
 	//===for all other modes just loop and wait for time to run out ===//
    startTimerMs( milliSec  );
@@ -185,7 +185,7 @@ void VxTimer::waitTimeMs( int milliSec )
 }
 
 //============================================================================
-double VxTimer::elapsedMs( void )
+double VxElapseTimer::elapsedMs( void )
 {
      return (double)(GetHighResolutionTimeMs() - m_StartTickMs);
 }
@@ -195,7 +195,7 @@ double VxTimer::elapsedMs( void )
 int main(int argc, char *argv[])
 {
 
-	VxTimer gTimer;
+	VxElapseTimer gTimer;
 	double dDelay;
 	long lLoopCnt;
 	long i;

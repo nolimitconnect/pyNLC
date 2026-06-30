@@ -9,17 +9,19 @@
 // https://nolimitconnect.com
 //============================================================================
 
-#include <QString>
+#include <string>
 #include <vector>   
 #include <cstdint>
 
 class TestFileWav
 {
 public:
-    TestFileWav( const QString& filePath );
+    TestFileWav( const std::string& filePath );
     ~TestFileWav() = default;
 
     bool                        isValid( void ) const { return m_Valid; }
+    const std::string&          getFilePath( void ) const { return m_FilePath; }
+    
     int                         getSampleRate( void ) const { return m_SampleRate; }
     int                         getNumChannels( void ) const { return m_NumChannels; }
     int                         getNumFrames( void ) const { return m_NumFrames; }
@@ -29,14 +31,14 @@ public:
     bool                        getNextAudioFrame( int16_t* frameBuffer, int frameSize ); // frameSize is number of samples (not bytes)
 
 protected:
-    bool                        loadWavFile( const QString& filePath, int& sampleRate, int& numChannels, int& bitsPerSample, std::vector<int16_t>& pcmData );
+    bool                        loadWavFile( std::string filePath, int& sampleRate, int& numChannels, int& bitsPerSample, std::vector<int16_t>& pcmData );
     
     bool                        m_Valid{ false };
     int                         m_SampleRate{ 0 };
     int                         m_NumChannels{ 0 };
     int                         m_NumFrames{ 0 };
     std::vector<int16_t>        m_PcmData;
-    QString                     m_FilePath;
+    std::string                 m_FilePath;
 
     int                         m_CurrentFrameIndex{ 0 };
 };

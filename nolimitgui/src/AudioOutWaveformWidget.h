@@ -16,8 +16,8 @@
 #include <vector>
 
 #include "AppCommon.h"
-#include "AudioMgr.h"
-#include "AudioFrameAecBuffer.h"
+#include "GuiAudioMgr.h"
+#include <libaudio-nlc/miniaudio/AudioFrameAecBuffer.h>
 
 class AudioOutWaveformWidget : public QFrame {
     Q_OBJECT

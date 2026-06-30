@@ -14,7 +14,7 @@
 
 #include <CoreLib/VxDebug.h>
 #include <CoreLib/VxTime.h>
-#include <CoreLib/VxTimer.h>
+#include <CoreLib/VxElapseTimer.h>
 
 //============================================================================
 void AudioMgr::readTestToneSamples( int16_t* pcmData, int sampleCnt )
@@ -59,13 +59,13 @@ bool AudioMgr::runEchoDelayTest( void )
     toGuiWantSpeakerOutput( eMediaModuleSoundDelayTest, true );
 
     setAudioTestState( eAudioTestStateInit );
-
-    m_AudioTestTimer->start();
+ 
+    m_AudioTestTimer.start(1200);
     return true;
 }
 
 //============================================================================
-void AudioMgr::slotAudioTestTimer( void )
+void AudioMgr::callbackAudioTestTimer( void )
 {
     int audioPeakValue{ 0 };
     int64_t audioDetectTimeMs{ 0 };
@@ -74,7 +74,11 @@ void AudioMgr::slotAudioTestTimer( void )
     case eAudioTestStateInit:
         // waited for sound to be quiet
         LogMsg( LOG_VERBOSE, "Echo Delay Test Init" );
+        m_DelayTestValid = true;
         setAudioTestState( eAudioTestStateRun );
+        if(m_AudioDelayTestCallback){
+            m_AudioDelayTestCallback->onAudioDelayTestStarted();
+        }
         break;
 
     case eAudioTestStateRun:
@@ -89,7 +93,7 @@ void AudioMgr::slotAudioTestTimer( void )
         audioDetectTimeMs = getAudioTestDetectTime( audioPeakValue );
         if( !handleAudioTestResult( getAudioTestSentTime(), audioDetectTimeMs, audioPeakValue ) )
         {
-            LogMsg( LOG_WARNING, "Echo Delay Test Faled" );
+            LogMsg( LOG_WARNING, "Echo Delay Test Failed" );
             toGuiWantMicrophoneRecording( eMediaModuleSoundDelayTest, false );
             toGuiWantSpeakerOutput( eMediaModuleSoundDelayTest, false );
             setAudioTestState( eAudioTestStateDone );
@@ -106,20 +110,24 @@ void AudioMgr::slotAudioTestTimer( void )
         else
         {
             LogMsg( LOG_VERBOSE, "Echo Delay Test Done" );
-            setAudioTestState( eAudioTestStateDone ); // emits signalAudioTestState which can be used by UI to know when test is done and show results
+            setAudioTestState( eAudioTestStateDone ); 
         }
 
         break;
 
     case eAudioTestStateDone:
+    {
         LogMsg( LOG_VERBOSE, "Echo Delay Test Restore Mic/Speaker states and finish" );
-        m_AudioTestTimer->stop();
+        m_AudioTestTimer.stop();
         setAudioTestState( eAudioTestStateNone );
 
         toGuiWantMicrophoneRecording( eMediaModuleSoundDelayTest, false );
         toGuiWantSpeakerOutput( eMediaModuleSoundDelayTest, false );
 
+        sendAudioDelayTestFinished();
+
         break;
+    }
 
     case eAudioTestStateNone:
     default:
@@ -139,44 +147,39 @@ void AudioMgr::setAudioTestState( EAudioTestState audioTestState )
         resetMicrophoneBuffers();
         resetSpeakerBuffers();
     }
-
-    emit signalAudioTestState( audioTestState );
 }
 
 //============================================================================
 bool AudioMgr::handleAudioTestResult( int64_t soundOutTimeMs, int64_t soundDetectTimeMs, int peakVal0to100 )
 {
-    bool isValid{ false };
-    QString resultMsg;
+    m_DelayTestValid = false;
     int64_t timeDif = soundDetectTimeMs - soundOutTimeMs;
     if(!soundOutTimeMs || !soundDetectTimeMs)
     {
         timeDif = 0;
-        resultMsg = QObject::tr("Sound Delay Not Detected. Check speaker volume and that microphone is on ");
+        LogMsg( LOG_WARNING, "Sound Delay Not Detected. Check speaker volume and that microphone is on ");
     }
     else if( timeDif < 50 )
     {
-        resultMsg = QObject::tr("Sound Delay too short.. probably noise ");
+       LogMsg( LOG_WARNING, "Sound Delay too short.. probably noise ");
     }
     else if( timeDif > 900 )
     {
-        resultMsg = QObject::tr("Sound Delay too long.. probably mic level low ");
+        LogMsg( LOG_WARNING, "Sound Delay too long.. probably mic level low ");
     }
     else
     {
-        resultMsg = QObject::tr("Sound Delay is ");
-        isValid = true;
+        LogMsg( LOG_WARNING, "Sound Delay is %lld ms", timeDif );
+        m_DelayTestValid = true;
     }
 
-    resultMsg += QString::number((int)timeDif);
-
-    LogMsg( LOG_VERBOSE, "AudioMgr::handleAudioTestResult %s", resultMsg.toUtf8().constData() );
-
     m_EchoDelayResultList.emplace_back( (int)timeDif );
-    // to avoid to much sound thread cpu time used Qt::QueuedConnection when connecting to these signals
-    emit signalAudioTestMsg( resultMsg );
-    emit signalTestedSoundDelay( (int)timeDif );
-    return isValid;
+
+    if(m_AudioDelayTestCallback){
+        m_AudioDelayTestCallback->onAudioDelayTestProgress( (int)timeDif, m_DelayTestValid );
+    } 
+
+    return m_DelayTestValid;
 }
 
 
@@ -227,4 +230,34 @@ int64_t AudioMgr::getAudioTestDetectTime( int& peakValue )
     }
 
     return detectTime;
+}
+
+//============================================================================
+void AudioMgr::sendAudioDelayTestFinished( void )
+{
+    bool resultsValid = true;
+    int averageDelay = 0;
+    for( auto delayMs : m_EchoDelayResultList )
+    {
+        if( delayMs < 40 || delayMs > 500 )
+        {
+            resultsValid = false;
+            break;
+        }
+
+        averageDelay += delayMs;
+    }
+
+    if(m_EchoDelayResultList.size())
+    {
+        averageDelay = averageDelay / m_EchoDelayResultList.size();
+    } 
+    else 
+    {
+        resultsValid = false;
+    }
+    
+    if(m_AudioDelayTestCallback){
+        m_AudioDelayTestCallback->onAudioDelayTestFinished( averageDelay, resultsValid );
+    } 
 }

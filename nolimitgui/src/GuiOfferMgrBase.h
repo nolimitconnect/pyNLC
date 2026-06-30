@@ -18,7 +18,7 @@
 #include <OfferBase/OfferCallback.h>
 
 #include <CoreLib/VxMutex.h>
-#include <CoreLib/VxTimer.h>
+#include <CoreLib/VxElapseTimer.h>
 
 class GuiOfferCallback;
 class GuiOfferSession;

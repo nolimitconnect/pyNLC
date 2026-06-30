@@ -54,6 +54,6 @@ public:
 	unsigned long m_u32txPacketCnt;
 	unsigned long m_u32RxPacketCnt;
 
-	VxTimer m_Timer;
+	VxElapseTimer m_Timer;
 };
 

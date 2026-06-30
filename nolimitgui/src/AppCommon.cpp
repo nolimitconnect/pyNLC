@@ -91,7 +91,7 @@
 
 #include "MediaPlayerNlc.h"
 #include "RenderGlLogic.h"
-#include "AudioMgr.h"
+#include "GuiAudioMgr.h"
 #include "SoundFxMgr.h"
 
 namespace
@@ -769,6 +769,47 @@ void AppCommon::slotInternalAppPopupErr( EAppErr appErr, QString errMsg )
 	case eAppPopupErrAudioPlayFail:
 		title = QObject::tr("Audio Play Failed");
 		break;
+    case eAppPopupErrNoMicDevices:
+        title = QObject::tr( "Sound In Device Error" );
+		msg = QObject::tr("No Microphone Devices Available");
+		break;
+    case eAppPopupErrMicDeviceOutOfRange:
+        title = QObject::tr( "Sound In Device Error" );
+		msg = QObject::tr("Microphone Device Out Of Range");
+		break;
+    case eAppPopupErrMicDeviceFailedToInitialize:
+        title = QObject::tr( "Sound In Device Error" );
+		msg = QObject::tr("Failed to Initialize Microphone Device");
+		break;
+    case eAppPopupErrNoSpeakerDevices:
+        title = QObject::tr( "Sound Out Device Error" );
+		msg = QObject::tr("No Speaker Devices Available");
+		break;
+    case eAppPopupErrSpeakerDeviceOutOfRange:
+        title = QObject::tr( "Sound Out Device Error" );
+		msg = QObject::tr("Speaker Device Out Of Range");
+		break;
+    case eAppPopupErrSpeakerDeviceFailedToInitialize:
+        title = QObject::tr( "Sound Out Device Error" );
+		msg = QObject::tr("Failed to Initialize Speaker Device");
+		break;
+    case eAppPopupErrSpeakerDeviceInvaidFormat:
+        title = QObject::tr( "Sound Out Device Error" );
+		msg = QObject::tr("Speaker Device Invalid Format");
+		break;
+        
+    case eAppPopupErrEchoDelayTestFail:
+        title = QObject::tr( "Echo Delay Test Error" );
+		msg = QObject::tr("Echo Delay Results (ms) ");
+        msg += errMsg;
+		break;
+
+    case eAppPopupErrEchoDelayTestPass:
+        title = QObject::tr( "Echo Delay Test Success" );
+		msg = QObject::tr("Echo Delay Results (ms) ");
+        msg += errMsg;
+		break;
+        
 	default:
 		break;
 	}

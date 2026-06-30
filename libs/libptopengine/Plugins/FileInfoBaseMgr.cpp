@@ -28,7 +28,7 @@
 #include <CoreLib/VxGlobals.h>
 #include <CoreLib/VxSha1Hash.h>
 #include <CoreLib/VxFileShredder.h>
-#include <CoreLib/VxTimer.h>
+#include <CoreLib/VxElapseTimer.h>
 
 #include <PktLib/PktAnnounce.h>
 #include <PktLib/PktsFileList.h>

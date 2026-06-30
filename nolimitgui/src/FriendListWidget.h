@@ -12,7 +12,7 @@
 #include "FriendList.h"
 
 #include <CoreLib/AssetDefs.h>
-#include <CoreLib/VxTimer.h>
+#include <CoreLib/VxElapseTimer.h>
 
 #include <QListWidget>
 
@@ -76,7 +76,7 @@ protected:
 	P2PEngine&					m_Engine;
 	EFriendViewType				m_eFriendViewType;
 	GuiUser*					m_SelectedFriend{ nullptr };
-	VxTimer						m_ClickEventTimer; // avoid duplicate clicks
+	VxElapseTimer						m_ClickEventTimer; // avoid duplicate clicks
 	VxGUID						m_ViewingOnlineId;
 	bool						m_IsCurrentlyViewing;
 };

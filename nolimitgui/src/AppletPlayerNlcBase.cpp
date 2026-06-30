@@ -17,7 +17,7 @@
 #include "PlayControlWidget.h"
 #include "MediaPlayerNlc.h"
 #include "RenderGlWidget.h"
-#include "AudioMgr.h"
+#include "GuiAudioMgr.h"
 #include "VxPushButton.h"
 
 #include <P2PEngine/P2PEngine.h>

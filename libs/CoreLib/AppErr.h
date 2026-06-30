@@ -40,6 +40,18 @@ enum EAppErr
 	eAppPopupErrVideoPlayFail  				= 1100102,
 	eAppPopupErrAudioPlayFail  				= 1100103,
 
+    eAppPopupErrNoMicDevices  				= 1100104,
+	eAppPopupErrMicDeviceOutOfRange  		= 1100105,
+    eAppPopupErrMicDeviceFailedToInitialize  		= 1100106,
+
+    eAppPopupErrNoSpeakerDevices  			= 1100107,
+	eAppPopupErrSpeakerDeviceOutOfRange  	= 1100108,
+    eAppPopupErrSpeakerDeviceFailedToInitialize  	= 1100109,
+    eAppPopupErrSpeakerDeviceInvaidFormat  	= 1100110,
+
+    eAppPopupErrEchoDelayTestFail  	        = 1100111,
+    eAppPopupErrEchoDelayTestPass  	        = 1100112,
+
 	eMaxAppErr
 };
 

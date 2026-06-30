@@ -23,7 +23,7 @@
 #include "VxDefs.h"
 #include "VxDebug.h"
 #include "VxThread.h"
-#include "VxTimer.h"
+#include "VxElapseTimer.h"
 #include "VxTime.h"
 #include "VxLinuxOnly.h"
 
@@ -1325,7 +1325,7 @@ SOCKET VxConnectTo(		InetAddrAndPort&	lclIp,
 		return INVALID_SOCKET;
 	}
 
-	VxTimer connectToTimer;
+	VxElapseTimer connectToTimer;
 	SOCKET sktHandle = VxConnectTo( lclIp, rmtIp, u16Port, iTimeoutMilliSeconds, retSktError );
 	if( INVALID_SOCKET == sktHandle )
 	{
