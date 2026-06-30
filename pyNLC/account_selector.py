@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from pathlib import Path
+from typing import TYPE_CHECKING
 
 from PySide6.QtCore import Qt, Signal
 from PySide6.QtWidgets import (
@@ -17,6 +18,9 @@ from PySide6.QtWidgets import (
     QListWidgetItem,
     QMessageBox,
 )
+
+if TYPE_CHECKING:
+    from py_wrapper import AppSettingsStub
 
 
 @dataclass
@@ -34,9 +38,10 @@ class AccountSelector(QWidget):
     account_selected = Signal(str)  # Emits account name
     login_completed = Signal()
 
-    def __init__(self, app_data_dir: Path, parent: QWidget | None = None) -> None:
+    def __init__(self, app_data_dir: Path, settings: AppSettingsStub | None = None, parent: QWidget | None = None) -> None:
         super().__init__(parent)
         self.app_data_dir = app_data_dir
+        self.settings = settings
         self.accounts: list[AccountInfo] = []
         self._load_accounts()
 
@@ -81,6 +86,19 @@ class AccountSelector(QWidget):
 
     def _load_accounts(self) -> None:
         """Load accounts from app data directory."""
+        if self.settings is not None:
+            db_accounts = self.settings.getAllAccounts()
+            self.accounts = [
+                AccountInfo(
+                    name=str(item.get("name", "")),
+                    user_id=str(item.get("online_id", "")),
+                    last_login=str(item.get("last_login", "")),
+                )
+                for item in db_accounts
+                if str(item.get("name", "")).strip()
+            ]
+            return
+
         accounts_dir = self.app_data_dir / "accounts"
         if accounts_dir.exists():
             for account_dir in accounts_dir.iterdir():
@@ -99,13 +117,19 @@ class AccountSelector(QWidget):
     def _refresh_account_list(self) -> None:
         """Refresh the account list widget."""
         self.account_list.clear()
+        last_login = self.settings.getLastLogin() if self.settings is not None else ""
+        selected_row = -1
         for account in self.accounts:
             item = QListWidgetItem(account.name)
             item.setData(Qt.UserRole, account.user_id)
             self.account_list.addItem(item)
+            if last_login and account.name == last_login:
+                selected_row = self.account_list.count() - 1
 
         if not self.accounts:
             self.account_list.addItem("(No accounts yet)")
+        elif selected_row >= 0:
+            self.account_list.setCurrentRow(selected_row)
 
     def _on_account_selected(self, item: QListWidgetItem) -> None:
         """Handle account selection."""
@@ -130,22 +154,37 @@ class AccountSelector(QWidget):
 
         name, ok = QInputDialog.getText(self, "Create Account", "Enter account name:", QLineEdit.Normal, "")
         if ok and name.strip():
+            account_name = name.strip()
+
+            if any(acct.name.lower() == account_name.lower() for acct in self.accounts):
+                QMessageBox.warning(self, "Duplicate Account", f"Account '{account_name}' already exists.")
+                return
+
+            if self.settings is not None:
+                self.settings.insertAccount(account_name, account_name)
+                self.settings.updateLastLogin(account_name)
+                self.accounts = []
+                self._load_accounts()
+                self._refresh_account_list()
+                QMessageBox.information(self, "Account Created", f"Account '{account_name}' created successfully.")
+                return
+
             # Create account directory
             accounts_dir = self.app_data_dir / "accounts"
             accounts_dir.mkdir(parents=True, exist_ok=True)
 
-            account_dir = accounts_dir / name
+            account_dir = accounts_dir / account_name
             account_dir.mkdir(exist_ok=True)
 
             # Write stub info file
             info_file = account_dir / "info.txt"
-            info_file.write_text(f"Account: {name}\nCreated: new\n")
+            info_file.write_text(f"Account: {account_name}\nCreated: new\n")
 
             # Add to list
-            self.accounts.append(AccountInfo(name=name, user_id=name, last_login="just now"))
+            self.accounts.append(AccountInfo(name=account_name, user_id=account_name, last_login="just now"))
             self._refresh_account_list()
 
-            QMessageBox.information(self, "Account Created", f"Account '{name}' created successfully.")
+            QMessageBox.information(self, "Account Created", f"Account '{account_name}' created successfully.")
 
     def get_selected_account(self) -> str | None:
         """Get currently selected account name."""

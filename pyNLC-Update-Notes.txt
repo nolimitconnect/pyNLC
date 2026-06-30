@@ -1,0 +1,47 @@
+pyNLC repo at https://github.com/nolimitconnect/pyNLC
+is a Python-based fork of the C++ upstream repository: 
+https://github.com/nolimitconnect/NoLimitConnect
+
+*** CAUTION if you git push instead of git push origin main at the end of this you are pushing to NoLimitConnect instead of pyNLC ***
+
+how do I merge updates from NoLimitConnect into pyNLC
+
+1. Link Upstream Repository
+git remote add upstream https://github.com/nolimitconnect/NoLimitConnect
+
+2. Fetch Latest Changes
+Pull all the branches and tags from the original repository without altering your local files yet:
+git fetch upstream
+
+3. Switch to Main Branch
+Ensure you are on the primary branch where you want to bring in the updates (usually main or master):
+git checkout main
+
+4. Merge Upstream UpdatesBring the upstream changes into your current local branch:
+git merge upstream/main
+
+5. Resolve Code ConflictsBecause pyNLC is a Python fork of a C++ project, structural differences will likely trigger conflicts.Open conflicting files.Look for <<<<<<<, =======, and >>>>>>> markers.
+Manually keep the Python adaptations while integrating the new C++ logic.
+Commit the resolved changes.
+
+6. Push to GitHubUpdate your personal remote repository on GitHub:
+git push origin main
+
+To resolve conflict using pyNLC file ..
+git checkout --ours path/to/conflicting_file.py
+git add path/to/conflicting_file.py
+
+If you want to complete a merge but automatically ignore all incoming upstream changes without manually checking out files, you can use this flag during the initial merge command instead:
+git merge -s ours upstream/main
+
+To resolve conflict using NoLimitConnect file ..
+git checkout --theirs path/to/conflicting_file.cpp
+
+If you want to overwrite all conflicting files with their upstream versions in one command, run:
+git checkout --theirs .
+
+
+Push changes to correct repo
+git add .
+git commit -m "Update pyNLC from NoLimitConnect"
+git push origin main
