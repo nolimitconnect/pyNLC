@@ -33,6 +33,7 @@ class HomeWindow(QMainWindow):
 
         # Check if an account is currently logged in
         self._check_logged_in_account()
+        self._load_pane_state()
 
         # If not logged in, show account selector
         if not self._logged_in_account:
@@ -44,12 +45,85 @@ class HomeWindow(QMainWindow):
         if self._logged_in_account:
             self._apply_pane_state()
             self._connect_bridge_signals()
+            self._restore_last_applet()
+
+    def _settings_value(self, key: str, default):
+        if self.settings is None:
+            return default
+
+        value_fn = getattr(self.settings, "value", None)
+        if callable(value_fn):
+            try:
+                value = value_fn(key, default)
+                return default if value is None else value
+            except Exception:
+                return default
+
+        store = getattr(self.settings, "_settings_store", None)
+        if isinstance(store, dict):
+            return store.get(key, default)
+        return default
+
+    def _settings_set_value(self, key: str, value) -> None:
+        if self.settings is None:
+            return
+
+        set_value_fn = getattr(self.settings, "setValue", None)
+        if callable(set_value_fn):
+            try:
+                set_value_fn(key, value)
+                return
+            except Exception:
+                pass
+
+        store = getattr(self.settings, "_settings_store", None)
+        if isinstance(store, dict):
+            store[key] = value
+            save_fn = getattr(self.settings, "_save_settings", None)
+            if callable(save_fn):
+                try:
+                    save_fn()
+                except Exception:
+                    pass
+
+    def _load_pane_state(self) -> None:
+        launch_visible = bool(self._settings_value("ui.launchPaneVisible", True))
+        messenger_visible = bool(self._settings_value("ui.messengerPaneVisible", True))
+        if not launch_visible and not messenger_visible:
+            launch_visible = True
+        self._pane_state = ShellPaneState(
+            launch_visible=launch_visible,
+            messenger_visible=messenger_visible,
+        )
+
+    def _save_pane_state(self) -> None:
+        self._settings_set_value("ui.launchPaneVisible", bool(self._pane_state.launch_visible))
+        self._settings_set_value("ui.messengerPaneVisible", bool(self._pane_state.messenger_visible))
+
+    def _restore_last_applet(self) -> None:
+        if not hasattr(self, "messenger_frame"):
+            return
+
+        applet_id = 0
+        if self.settings is not None and hasattr(self.settings, "getLastAppletLaunched"):
+            try:
+                applet_id = int(self.settings.getLastAppletLaunched(0))
+            except Exception:
+                applet_id = 0
+        if not applet_id:
+            applet_id = int(self._settings_value("ui.lastAppletLaunched", 0) or 0)
+
+        if applet_id > 0 and AppletRegistry.get_applet_metadata(applet_id) is not None:
+            self._on_applet_launch(applet_id)
 
     def _check_logged_in_account(self) -> None:
         """Check if an account is currently logged in from settings."""
         if self.settings is None:
             return
-        last_login = self.settings.getLastLogin()
+        if hasattr(self.settings, "getLastLogin"):
+            last_login = self.settings.getLastLogin()
+        else:
+            last_login = self._settings_value("lastLogin", "")
         if last_login:
             self._logged_in_account = last_login
 
@@ -84,15 +158,20 @@ class HomeWindow(QMainWindow):
         """Handle account selection."""
         self._logged_in_account = account_name
         if self.settings is not None:
-            self.settings.updateLastLogin(account_name)
+            if hasattr(self.settings, "updateLastLogin"):
+                self.settings.updateLastLogin(account_name)
+            else:
+                self._settings_set_value("lastLogin", account_name)
 
     def _on_login_completed(self) -> None:
         """Handle login completion - switch to launcher UI."""
         if self._logged_in_account:
             self.account_selector.deleteLater()
             self._setup_launcher_ui()
+            self._load_pane_state()
             self._apply_pane_state()
             self._connect_bridge_signals()
+            self._restore_last_applet()
 
     def _create_frame(self) -> QFrame:
         frame = QFrame(self)
@@ -198,6 +277,16 @@ class HomeWindow(QMainWindow):
 
         layout.addLayout(settings_buttons_layout)
 
+        recent_title = QLabel("Recent Applets", page)
+        recent_title.setStyleSheet("font-weight: 600; margin-top: 12px;")
+        layout.addWidget(recent_title)
+        self._recent_applets_container = QWidget(page)
+        self._recent_applets_layout = QVBoxLayout(self._recent_applets_container)
+        self._recent_applets_layout.setContentsMargins(0, 0, 0, 0)
+        self._recent_applets_layout.setSpacing(4)
+        layout.addWidget(self._recent_applets_container)
+        self._refresh_recent_applets_ui()
+
         paths = QLabel(
             "\n".join(
                 [
@@ -214,6 +303,34 @@ class HomeWindow(QMainWindow):
         layout.addWidget(paths)
         layout.addStretch(1)
         return page
+
+    def _refresh_recent_applets_ui(self) -> None:
+        if not hasattr(self, "_recent_applets_layout"):
+            return
+
+        while self._recent_applets_layout.count():
+            item = self._recent_applets_layout.takeAt(0)
+            widget = item.widget()
+            if widget is not None:
+                widget.deleteLater()
+
+        recent_raw = self._settings_value("ui.recentAppletIds", [])
+        recent_ids = [int(v) for v in recent_raw if isinstance(v, (int, str)) and str(v).isdigit()]
+        rendered = 0
+        for applet_id in recent_ids:
+            meta = AppletRegistry.get_applet_metadata(applet_id)
+            if meta is None:
+                continue
+            btn = QPushButton(meta.name, self._recent_applets_container)
+            btn.clicked.connect(lambda checked=False, aid=applet_id: self._on_applet_launch(aid))
+            self._recent_applets_layout.addWidget(btn)
+            rendered += 1
+            if rendered >= 5:
+                break
+
+        if rendered == 0:
+            placeholder = QLabel("No recent applets yet.", self._recent_applets_container)
+            self._recent_applets_layout.addWidget(placeholder)
 
     def _on_applet_launch(self, applet_id: int) -> None:
         meta = AppletRegistry.get_applet_metadata(applet_id)
@@ -282,6 +399,20 @@ class HomeWindow(QMainWindow):
 
             self.bridge.replay_events_to_applet(applet_widget)
 
+            if self.settings is not None and hasattr(self.settings, "setLastAppletLaunched"):
+                try:
+                    self.settings.setLastAppletLaunched(0, int(applet_id))
+                except Exception:
+                    self._settings_set_value("ui.lastAppletLaunched", int(applet_id))
+            else:
+                self._settings_set_value("ui.lastAppletLaunched", int(applet_id))
+
+            recent_raw = self._settings_value("ui.recentAppletIds", [])
+            recent_ids = [int(v) for v in recent_raw if isinstance(v, (int, str)) and str(v).isdigit()]
+            recent_ids = [int(applet_id)] + [v for v in recent_ids if v != int(applet_id)]
+            self._settings_set_value("ui.recentAppletIds", recent_ids[:8])
+            self._refresh_recent_applets_ui()
+
             # Update status
             self.messenger_status_label.setText(f"Applet '{meta.name}' launched")
 
@@ -319,6 +450,7 @@ class HomeWindow(QMainWindow):
             self.splitter.setSizes([0, 1])
 
         self.main_window_resized.emit()
+        self._save_pane_state()
 
     def toggle_messenger_pane(self) -> None:
         self._pane_state = ShellPaneState(
@@ -336,7 +468,7 @@ class HomeWindow(QMainWindow):
         self._apply_pane_state()
 
     def restore_home_window_geometry(self) -> None:
-        restore_geom = self.settings.value("mainWindowGeometry", b"")
+        restore_geom = self._settings_value("mainWindowGeometry", b"")
         if restore_geom:
             self.restoreGeometry(restore_geom)
             return
@@ -350,7 +482,7 @@ class HomeWindow(QMainWindow):
 
     def save_home_window_geometry(self) -> None:
         if not self.isMaximized() and not self.isMinimized():
-            self.settings.setValue("mainWindowGeometry", self.saveGeometry())
+            self._settings_set_value("mainWindowGeometry", self.saveGeometry())
 
     @Slot(str, str)
     def on_startup_requested(self, assets_dir: str, root_data_dir: str) -> None:
@@ -466,5 +598,6 @@ class HomeWindow(QMainWindow):
         super().moveEvent(event)
 
     def closeEvent(self, event) -> None:  # type: ignore[override]
+        self._save_pane_state()
         self.save_home_window_geometry()
         super().closeEvent(event)

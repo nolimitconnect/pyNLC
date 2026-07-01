@@ -449,6 +449,38 @@ class AppletRegistry:
             except ImportError:
                 pass
 
+        if applet_id == EApplet.eAppletUnknown:
+            try:
+                from core_shell_applets import UnknownApplet
+
+                return UnknownApplet(settings, parent)
+            except ImportError:
+                pass
+
+        if applet_id == EApplet.eAppletActivityDialog:
+            try:
+                from core_shell_applets import ActivityDialogApplet
+
+                return ActivityDialogApplet(settings, parent)
+            except ImportError:
+                pass
+
+        if applet_id == EApplet.eAppletEditAvatarImage:
+            try:
+                from core_shell_applets import EditAvatarImageApplet
+
+                return EditAvatarImageApplet(settings, parent)
+            except ImportError:
+                pass
+
+        if applet_id == EApplet.eAppletHomePage:
+            try:
+                from core_shell_applets import HomePageApplet
+
+                return HomePageApplet(settings, parent)
+            except ImportError:
+                pass
+
         if applet_id == EApplet.eAppletUserPreferences:
             try:
                 from user_preferences_applet import UserPreferencesApplet
@@ -702,12 +734,84 @@ class AppletRegistry:
             try:
                 from user_identity_applet import UserIdentityApplet
 
+                    if applet_id == EApplet.eAppletSearchPage:
+                        try:
+                            from search_scan_applets import SearchPageApplet
+
+                            return SearchPageApplet(settings, parent)
+                        except ImportError:
+                            pass
+
+                    if applet_id == EApplet.eAppletSearchPersons:
+                        try:
+                            from search_scan_applets import SearchPersonsApplet
+
+                            return SearchPersonsApplet(settings, parent)
+                        except ImportError:
+                            pass
+
+                    if applet_id == EApplet.eAppletSearchMood:
+                        try:
+                            from search_scan_applets import SearchMoodApplet
+
+                            return SearchMoodApplet(settings, parent)
+                        except ImportError:
+                            pass
+
+                    if applet_id == EApplet.eAppletScanAboutMe:
+                        try:
+                            from search_scan_applets import ScanAboutMeApplet
+
+                            return ScanAboutMeApplet(settings, parent)
+                        except ImportError:
+                            pass
+
+                    if applet_id == EApplet.eAppletScanStoryboard:
+                        try:
+                            from search_scan_applets import ScanStoryboardApplet
+
+                            return ScanStoryboardApplet(settings, parent)
+                        except ImportError:
+                            pass
+
+                    if applet_id == EApplet.eAppletScanSharedFiles:
+                        try:
+                            from search_scan_applets import ScanSharedFilesApplet
+
+                            return ScanSharedFilesApplet(settings, parent)
+                        except ImportError:
+                            pass
+
+                    if applet_id == EApplet.eAppletScanWebCam:
+                        try:
+                            from search_scan_applets import ScanWebCamApplet
+
+                            return ScanWebCamApplet(settings, parent)
+                        except ImportError:
+                            pass
+
                 return UserIdentityApplet(settings, parent)
             except ImportError:
                 pass
 
         if applet_id == EApplet.eAppletShareServicesPage:
             try:
+
+                    if applet_id == EApplet.eAppletHomeFrame:
+                        try:
+                            from frame_shell_applets import HomeFrameApplet
+
+                            return HomeFrameApplet(settings, parent)
+                        except ImportError:
+                            pass
+
+                    if applet_id == EApplet.eAppletMessengerFrame:
+                        try:
+                            from frame_shell_applets import MessengerFrameApplet
+
+                            return MessengerFrameApplet(settings, parent)
+                        except ImportError:
+                            pass
                 from share_services_applet import ShareServicesApplet
 
                 return ShareServicesApplet(settings, parent)
@@ -943,6 +1047,134 @@ class AppletRegistry:
                 from service_family_applets import HostSettingsBaseApplet
 
                 return HostSettingsBaseApplet("Host Settings: Network", "ui.host.settings_network", settings, parent)
+            except ImportError:
+                pass
+
+        if applet_id == EApplet.eAppletHostGroupStatus:
+            try:
+                from host_server_client_applets import HostGroupStatusApplet
+
+                return HostGroupStatusApplet(settings, parent)
+            except ImportError:
+                pass
+
+        if applet_id == EApplet.eAppletHostChatRoomStatus:
+            try:
+                from host_server_client_applets import HostChatRoomStatusApplet
+
+                return HostChatRoomStatusApplet(settings, parent)
+            except ImportError:
+                pass
+
+        if applet_id == EApplet.eAppletHostRandomConnectStatus:
+            try:
+                from host_server_client_applets import HostRandomConnectStatusApplet
+
+                return HostRandomConnectStatusApplet(settings, parent)
+            except ImportError:
+                pass
+
+        if applet_id == EApplet.eAppletEditAboutMe:
+            try:
+                from host_server_client_applets import EditAboutMeApplet
+
+                return EditAboutMeApplet(settings, parent)
+            except ImportError:
+                pass
+
+        if applet_id == EApplet.eAppletAboutMeServerViewMine:
+            try:
+                from host_server_client_applets import AboutMeServerViewMineApplet
+
+                return AboutMeServerViewMineApplet(settings, parent)
+            except ImportError:
+                pass
+
+        if applet_id == EApplet.eAppletEditStoryboard:
+            try:
+                from host_server_client_applets import EditStoryboardApplet
+
+                return EditStoryboardApplet(settings, parent)
+            except ImportError:
+                pass
+
+        if applet_id == EApplet.eAppletStoryboardServerViewMine:
+            try:
+                from host_server_client_applets import StoryboardServerViewMineApplet
+
+                return StoryboardServerViewMineApplet(settings, parent)
+            except ImportError:
+                pass
+
+        if applet_id == EApplet.eAppletCamServerViewMine:
+            try:
+                from host_server_client_applets import CamServerViewMineApplet
+
+                return CamServerViewMineApplet(settings, parent)
+            except ImportError:
+                pass
+
+        if applet_id == EApplet.eAppletFileShareServerViewMine:
+            try:
+                from host_server_client_applets import FileShareServerViewMineApplet
+
+                return FileShareServerViewMineApplet(settings, parent)
+            except ImportError:
+                pass
+
+        if applet_id == EApplet.eAppletAvatarImageClient:
+            try:
+                from host_server_client_applets import AvatarImageClientApplet
+
+                return AvatarImageClientApplet(settings, parent)
+            except ImportError:
+                pass
+
+        if applet_id == EApplet.eAppletConnectionTestClient:
+            try:
+                from host_server_client_applets import ConnectionTestClientApplet
+
+                return ConnectionTestClientApplet(settings, parent)
+            except ImportError:
+                pass
+
+        if applet_id == EApplet.eAppletClientRelay:
+            try:
+                from host_server_client_applets import ClientRelayApplet
+
+                return ClientRelayApplet(settings, parent)
+            except ImportError:
+                pass
+
+        if applet_id == EApplet.eAppletClientShareFiles:
+            try:
+                from host_server_client_applets import ClientShareFilesApplet
+
+                return ClientShareFilesApplet(settings, parent)
+            except ImportError:
+                pass
+
+        if applet_id == EApplet.eAppletTestHostService:
+            try:
+                from host_server_client_applets import TestHostServiceApplet
+
+                return TestHostServiceApplet(settings, parent)
+            except ImportError:
+                pass
+
+        if applet_id == EApplet.eAppletCreateAccount:
+            try:
+                from host_server_client_applets import CreateAccountApplet
+
+                return CreateAccountApplet(settings, parent)
+            except ImportError:
+                pass
+
+        if applet_id == EApplet.eAppletInformation:
+            try:
+                from host_server_client_applets import InformationApplet
+
+                return InformationApplet(settings, parent)
             except ImportError:
                 pass
 

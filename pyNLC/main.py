@@ -316,32 +316,30 @@ class GuiToEngineBridge(BaseGuiToEngine):
         del fromThread
         self.asset_dir = Path(assetsDir)
         self.root_data_dir = Path(rootDataDir)
+        self.interface_stub.fromGuiAppStartup(assetsDir, rootDataDir)
         self.signals.startup_requested.emit(str(self.asset_dir), str(self.root_data_dir))
 
     def fromGuiSetUserSpecificDir(self, userSpecificDir: str, fromThread: bool = False) -> None:
         del fromThread
         self.user_specific_dir = Path(userSpecificDir)
+        self.interface_stub.fromGuiSetUserSpecificDir(userSpecificDir)
         self.signals.user_specific_dir_requested.emit(str(self.user_specific_dir))
 
     def fromGuiSetUserXferDir(self, userDownloadDir: str, fromThread: bool = False) -> None:
         del fromThread
         self.user_xfer_dir = Path(userDownloadDir)
+        self.interface_stub.fromGuiSetUserXferDir(userDownloadDir)
         self.signals.user_xfer_dir_requested.emit(str(self.user_xfer_dir))
 
     def fromGuiAppShutdown(self) -> None:
+        self.interface_stub.fromGuiAppShutdown()
         self.signals.shutdown_requested.emit()
 
     def fromGuiDeleteUser(self, onlineId) -> bool:
-        del onlineId
-        return False
+        return bool(self.interface_stub.fromGuiDeleteUser(onlineId))
 
     def fromGuiGetDiskFreeSpace(self, dir: str) -> int:
-        path = Path(dir) if dir else Path.cwd()
-        try:
-            return shutil.disk_usage(path).free
-        except OSError:
-            fallback = path.anchor or Path.cwd()
-            return shutil.disk_usage(fallback).free
+        return int(self.interface_stub.fromGuiGetDiskFreeSpace(dir))
 
     def __getattr__(self, name: str):
         if self.interface_stub.supports(name):
@@ -477,7 +475,7 @@ def main() -> int:
 
     bridge = GuiToEngineBridge()
     bridge.install_native_callbacks()
-    window = HomeWindow(APP_TITLE, QSettings(APP_DOMAIN, APP_NAME), bridge, app_paths)
+    window = HomeWindow(APP_TITLE, settings, bridge, app_paths)
     window.apply_theme(settings.getLastSelectedTheme())
     bridge.fromGuiAppStartup(str(app_paths.assets_dir), str(app_paths.root_app_data_dir))
     bridge.fromGuiSetUserSpecificDir(str(app_paths.root_app_data_dir))

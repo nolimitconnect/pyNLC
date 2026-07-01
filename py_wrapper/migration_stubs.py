@@ -2,7 +2,10 @@ from __future__ import annotations
 
 import json
 import logging
+import shutil
+import socket
 import sqlite3
+from datetime import datetime
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
@@ -574,6 +577,849 @@ class IFromGuiContractStub(GuiInterfaceContractBase):
         "fromGuiSendFriendRequest": GuiInterfaceMethodSpec("fromGuiSendFriendRequest", False, "IFromGui::fromGuiSendFriendRequest", "Friend-request submission path."),
     }
 
+    def __init__(self) -> None:
+        super().__init__()
+        self._startup_assets_dir = ""
+        self._startup_root_dir = ""
+        self._user_specific_dir = ""
+        self._user_xfer_dir = ""
+        self._default_url = ""
+        self._shared_files: set[str] = set()
+        self._library_files: set[str] = set()
+        self._download_states: dict[str, int] = {}
+        self._users: set[str] = set()
+        self._announced_hosts: dict[str, dict[str, Any]] = {}
+        self._joined_hosts: set[str] = set()
+        self._blocked_users: set[str] = set()
+        self._plugin_permissions: dict[str, int] = {}
+        self._plugin_sessions: set[str] = set()
+        self._relay_settings: Any = None
+        self._scan_active = False
+        self._last_search: dict[str, Any] = {}
+        self._last_port_open_test: dict[str, Any] = {}
+        self._default_urls: dict[str, str] = {}
+        self._automated_host = False
+        self._push_to_talk = False
+        self._admin_view_host = False
+        self._net_settings: dict[str, Any] = {}
+        self._net_host_settings: dict[str, Any] = {}
+        self._file_share_settings: dict[str, Any] = {}
+        self._identity: dict[str, Any] = {}
+        self._contact_list: list[Any] = []
+        self._friendships: dict[str, int] = {}
+        self._text_offer_flags: dict[str, bool] = {}
+        self._plugin_offers: list[dict[str, Any]] = []
+        self._plugin_offer_replies: list[dict[str, Any]] = []
+        self._instant_messages: list[dict[str, Any]] = []
+        self._session_history: dict[str, list[Any]] = {}
+        self._asset_actions: list[dict[str, Any]] = []
+        self._queued_asset_actions: list[dict[str, Any]] = []
+        self._sent_assets: list[dict[str, Any]] = []
+        self._multi_session_actions: list[dict[str, Any]] = []
+        self._web_page_downloads: dict[str, dict[str, Any]] = {}
+        self._file_list_downloads: dict[str, dict[str, Any]] = {}
+        self._last_list_action: dict[str, Any] = {}
+        self._last_url_action: dict[str, Any] = {}
+        self._folder_scan_results: dict[str, list[str]] = {}
+        self._folder_scan_acks: dict[str, int] = {}
+        self._media_recording_audio = False
+        self._media_recording_video = False
+        self._want_media_input = False
+        self._gl_initialized = False
+        self._gl_size = (0, 0)
+        self._gl_paused = False
+        self._gl_frame_count = 0
+        self._last_input_event: dict[str, Any] = {}
+        self._port_open_state = 0
+        self._friend_requests: list[dict[str, Any]] = []
+        self._web_profile: dict[str, Any] = {}
+
+    def _record_call(self, method_name: str, args: tuple[Any, ...], kwargs: dict[str, Any]) -> None:
+        self.call_log.append((method_name, args, kwargs))
+
+    @staticmethod
+    def _key_from_obj(obj: Any) -> str:
+        if obj is None:
+            return ""
+        if isinstance(obj, Path):
+            return str(obj)
+        if isinstance(obj, (str, int)):
+            return str(obj)
+        for attr in ("file_name", "fileName", "name", "id"):
+            if hasattr(obj, attr):
+                try:
+                    attr_value = getattr(obj, attr)
+                    return str(attr_value() if callable(attr_value) else attr_value)
+                except Exception:
+                    continue
+        return str(obj)
+
+    @staticmethod
+    def _normalize_pathish(value: str) -> str:
+        if not value:
+            return ""
+        return str(Path(value))
+
+    @staticmethod
+    def _arg(args: tuple[Any, ...], index: int, default: Any = None) -> Any:
+        if index < 0:
+            return default
+        return args[index] if len(args) > index else default
+
+    @staticmethod
+    def _safe_int(value: Any, default: int = 0) -> int:
+        try:
+            return int(value)
+        except (TypeError, ValueError):
+            return default
+
+    def fromGuiAppStartup(self, assets_dir: str, root_data_dir: str) -> None:
+        self._record_call("fromGuiAppStartup", (assets_dir, root_data_dir), {})
+        self._startup_assets_dir = self._normalize_pathish(str(assets_dir))
+        self._startup_root_dir = self._normalize_pathish(str(root_data_dir))
+
+    def fromGuiSetUserSpecificDir(self, user_specific_dir: str) -> None:
+        self._record_call("fromGuiSetUserSpecificDir", (user_specific_dir,), {})
+        self._user_specific_dir = self._normalize_pathish(str(user_specific_dir))
+
+    def fromGuiSetUserXferDir(self, user_xfer_dir: str) -> None:
+        self._record_call("fromGuiSetUserXferDir", (user_xfer_dir,), {})
+        self._user_xfer_dir = self._normalize_pathish(str(user_xfer_dir))
+
+    def fromGuiAppShutdown(self) -> None:
+        self._record_call("fromGuiAppShutdown", (), {})
+
+    def fromGuiDeleteUser(self, *args: Any) -> bool:
+        self._record_call("fromGuiDeleteUser", args, {})
+        user = str(self._arg(args, 0, "")).strip()
+        if not user:
+            return False
+        if user in self._users:
+            self._users.remove(user)
+        return True
+
+    def fromGuiGetDiskFreeSpace(self, *args: Any) -> int:
+        self._record_call("fromGuiGetDiskFreeSpace", args, {})
+        path = str(self._arg(args, 0, "")) or None
+        probe = str(path or self._user_xfer_dir or self._user_specific_dir or self._startup_root_dir or ".")
+        try:
+            return int(shutil.disk_usage(probe).free)
+        except (FileNotFoundError, OSError, ValueError):
+            return 0
+
+    def fromGuiGetMyIpAddress(self) -> str:
+        self._record_call("fromGuiGetMyIpAddress", (), {})
+        try:
+            return socket.gethostbyname(socket.gethostname())
+        except OSError:
+            return ""
+
+    def fromGuiGetMyIPv4Address(self) -> str:
+        self._record_call("fromGuiGetMyIPv4Address", (), {})
+        try:
+            infos = socket.getaddrinfo(socket.gethostname(), None, family=socket.AF_INET)
+            if infos:
+                return str(infos[0][4][0])
+        except OSError:
+            pass
+        return ""
+
+    def fromGuiGetMyIPv6Address(self) -> str:
+        self._record_call("fromGuiGetMyIPv6Address", (), {})
+        try:
+            infos = socket.getaddrinfo(socket.gethostname(), None, family=socket.AF_INET6)
+            if infos:
+                return str(infos[0][4][0])
+        except OSError:
+            pass
+        return ""
+
+    def fromGuiCancelDownload(self, *args: Any) -> None:
+        self._record_call("fromGuiCancelDownload", args, {})
+        key = self._key_from_obj(self._arg(args, 0, None))
+        if key:
+            self._download_states[key] = 0
+
+    def fromGuiCancelUpload(self, *args: Any) -> None:
+        self._record_call("fromGuiCancelUpload", args, {})
+        key = self._key_from_obj(self._arg(args, 0, None))
+        if key:
+            self._download_states[key] = 0
+
+    def fromGuiGetFileDownloadState(self, *args: Any) -> int:
+        self._record_call("fromGuiGetFileDownloadState", args, {})
+        key = self._key_from_obj(self._arg(args, 0, None))
+        if not key:
+            return -1
+        return int(self._download_states.get(key, -1))
+
+    def fromGuiSetFileIsShared(self, *args: Any) -> bool:
+        self._record_call("fromGuiSetFileIsShared", args, {})
+        file_info = self._arg(args, 0, None)
+        is_shared = bool(self._arg(args, 1, True))
+        key = self._key_from_obj(file_info)
+        if not key:
+            return False
+        if bool(is_shared):
+            self._shared_files.add(key)
+        else:
+            self._shared_files.discard(key)
+        return True
+
+    def fromGuiGetIsFileShared(self, *args: Any) -> bool:
+        self._record_call("fromGuiGetIsFileShared", args, {})
+        key = self._key_from_obj(self._arg(args, 0, None))
+        return key in self._shared_files if key else False
+
+    def fromGuiSetFileIsInLibrary(self, *args: Any) -> bool:
+        self._record_call("fromGuiSetFileIsInLibrary", args, {})
+        file_info = self._arg(args, 0, None)
+        is_in_library = bool(self._arg(args, 1, True))
+        key = self._key_from_obj(file_info)
+        if not key:
+            return False
+        if bool(is_in_library):
+            self._library_files.add(key)
+        else:
+            self._library_files.discard(key)
+        return True
+
+    def fromGuiGetFileIsInLibrary(self, *args: Any) -> bool:
+        self._record_call("fromGuiGetFileIsInLibrary", args, {})
+        key = self._key_from_obj(self._arg(args, 0, None))
+        return key in self._library_files if key else False
+
+    def fromGuiGetRandomTcpPort(self) -> int:
+        self._record_call("fromGuiGetRandomTcpPort", (), {})
+        try:
+            sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            sock.bind(("", 0))
+            port = int(sock.getsockname()[1])
+            sock.close()
+            return port
+        except OSError:
+            return 0
+
+    def fromGuiQueryDefaultUrl(self) -> str:
+        self._record_call("fromGuiQueryDefaultUrl", (), {})
+        return self._default_url
+
+    def fromGuiSetDefaultUrl(self, *args: Any) -> bool:
+        self._record_call("fromGuiSetDefaultUrl", args, {})
+        url_value = str(self._arg(args, 0, "")).strip()
+        if not url_value:
+            return False
+        if len(args) > 1:
+            key = self._key_from_obj(self._arg(args, 1, None))
+            self._default_urls[key] = url_value
+        self._default_url = url_value
+        return True
+
+    def fromGuiGetNodeUrl(self, *args: Any) -> None:
+        self._record_call("fromGuiGetNodeUrl", args, {})
+
+    def fromGuiSetRelaySettings(self, *args: Any) -> None:
+        self._record_call("fromGuiSetRelaySettings", args, {})
+        self._relay_settings = self._arg(args, 0, None)
+
+    def fromGuiGetRelaySettings(self, *args: Any) -> Any:
+        self._record_call("fromGuiGetRelaySettings", args, {})
+        target_dict = self._arg(args, 0, None)
+        if isinstance(target_dict, dict):
+            target_dict["relay_settings"] = self._relay_settings
+        return self._relay_settings
+
+    def fromGuiAnnounceHost(self, *args: Any) -> None:
+        self._record_call("fromGuiAnnounceHost", args, {})
+        host_key = self._key_from_obj(self._arg(args, 0, None))
+        if not host_key:
+            return
+        self._announced_hosts[host_key] = {
+            "session": self._arg(args, 1, None),
+            "url": self._arg(args, 2, None),
+        }
+
+    def fromGuiJoinHost(self, *args: Any) -> None:
+        self._record_call("fromGuiJoinHost", args, {})
+        host_key = self._key_from_obj(self._arg(args, 0, None))
+        if host_key:
+            self._joined_hosts.add(host_key)
+
+    def fromGuiLeaveHost(self, *args: Any) -> None:
+        self._record_call("fromGuiLeaveHost", args, {})
+        host_key = self._key_from_obj(self._arg(args, 0, None))
+        if host_key:
+            self._joined_hosts.discard(host_key)
+
+    def fromGuiUnJoinHost(self, *args: Any) -> None:
+        self._record_call("fromGuiUnJoinHost", args, {})
+        host_key = self._key_from_obj(self._arg(args, 0, None))
+        if host_key:
+            self._joined_hosts.discard(host_key)
+
+    def fromGuiSearchHost(self, *args: Any) -> None:
+        self._record_call("fromGuiSearchHost", args, {})
+        self._last_search = {
+            "host_type": self._arg(args, 0, None),
+            "params": self._arg(args, 1, None),
+            "time": datetime.utcnow().isoformat(timespec="seconds"),
+        }
+
+    def fromGuiBlockUser(self, *args: Any) -> None:
+        self._record_call("fromGuiBlockUser", args, {})
+        user_key = self._key_from_obj(self._arg(args, 0, None))
+        if user_key:
+            self._blocked_users.add(user_key)
+
+    def fromGuiSendAnnouncedList(self, *args: Any) -> None:
+        self._record_call("fromGuiSendAnnouncedList", args, {})
+
+    def fromGuiDisconnectFromUser(self, *args: Any) -> None:
+        self._record_call("fromGuiDisconnectFromUser", args, {})
+        user_key = self._key_from_obj(self._arg(args, 0, None))
+        if user_key:
+            self._joined_hosts.discard(user_key)
+
+    def fromGuiSetPluginPermission(self, *args: Any) -> None:
+        self._record_call("fromGuiSetPluginPermission", args, {})
+        plugin_key = self._key_from_obj(self._arg(args, 0, None))
+        permission = self._safe_int(self._arg(args, 1, 0), 0)
+        if plugin_key:
+            self._plugin_permissions[plugin_key] = permission
+
+    def fromGuiGetPluginPermission(self, *args: Any) -> int:
+        self._record_call("fromGuiGetPluginPermission", args, {})
+        plugin_key = self._key_from_obj(self._arg(args, 0, None))
+        if not plugin_key:
+            return 0
+        return int(self._plugin_permissions.get(plugin_key, 0))
+
+    def fromGuiGetPluginServerState(self, *args: Any) -> int:
+        self._record_call("fromGuiGetPluginServerState", args, {})
+        plugin_key = self._key_from_obj(self._arg(args, 0, None))
+        if not plugin_key:
+            return 0
+        return 1 if any(entry.startswith(f"{plugin_key}:") for entry in self._plugin_sessions) else 0
+
+    def fromGuiStartPluginSession(self, *args: Any) -> bool:
+        self._record_call("fromGuiStartPluginSession", args, {})
+        plugin_key = self._key_from_obj(self._arg(args, 0, None))
+        session_key = self._key_from_obj(self._arg(args, 1, "default"))
+        if not plugin_key:
+            return False
+        self._plugin_sessions.add(f"{plugin_key}:{session_key}")
+        return True
+
+    def fromGuiStopPluginSession(self, *args: Any) -> None:
+        self._record_call("fromGuiStopPluginSession", args, {})
+        plugin_key = self._key_from_obj(self._arg(args, 0, None))
+        session_key = self._key_from_obj(self._arg(args, 1, "default"))
+        if plugin_key:
+            self._plugin_sessions.discard(f"{plugin_key}:{session_key}")
+
+    def fromGuiIsPluginInSession(self, *args: Any) -> bool:
+        self._record_call("fromGuiIsPluginInSession", args, {})
+        plugin_key = self._key_from_obj(self._arg(args, 0, None))
+        session_key = self._key_from_obj(self._arg(args, 1, "default"))
+        if not plugin_key:
+            return False
+        return f"{plugin_key}:{session_key}" in self._plugin_sessions
+
+    def fromGuiPushToTalk(self, *args: Any) -> bool:
+        self._record_call("fromGuiPushToTalk", args, {})
+        self._push_to_talk = bool(self._arg(args, 0, False))
+        return True
+
+    def fromGuiRunIsPortOpenTest(self, *args: Any) -> None:
+        self._record_call("fromGuiRunIsPortOpenTest", args, {})
+        self._last_port_open_test = {
+            "args": args,
+            "time": datetime.utcnow().isoformat(timespec="seconds"),
+        }
+
+    def fromGuiGetInternetStatus(self, *args: Any) -> int:
+        self._record_call("fromGuiGetInternetStatus", args, {})
+        try:
+            socket.getaddrinfo("example.com", 80)
+            return 1
+        except OSError:
+            return 0
+
+    def fromGuiGetNetAvailStatus(self, *args: Any) -> int:
+        self._record_call("fromGuiGetNetAvailStatus", args, {})
+        try:
+            socket.getaddrinfo(socket.gethostname(), None)
+            return 1
+        except OSError:
+            return 0
+
+    def fromGuiGetJoinedListCount(self, *args: Any) -> int:
+        self._record_call("fromGuiGetJoinedListCount", args, {})
+        return len(self._joined_hosts)
+
+    def fromGuiGetAnnouncedHostCount(self, *args: Any) -> int:
+        self._record_call("fromGuiGetAnnouncedHostCount", args, {})
+        return len(self._announced_hosts)
+
+    def fromGuiQueryHosts(self, *args: Any) -> bool:
+        self._record_call("fromGuiQueryHosts", args, {})
+        target_list = self._arg(args, 0, None)
+        if isinstance(target_list, list):
+            target_list.extend(list(self._announced_hosts.values()))
+        return True
+
+    def fromGuiQueryMyHostedInfo(self, *args: Any) -> bool:
+        self._record_call("fromGuiQueryMyHostedInfo", args, {})
+        target_list = self._arg(args, 0, None)
+        if isinstance(target_list, list):
+            target_list.extend(list(self._announced_hosts.values()))
+        return True
+
+    def fromGuiQueryHostListFromNetworkHost(self, *args: Any) -> bool:
+        self._record_call("fromGuiQueryHostListFromNetworkHost", args, {})
+        target_list = self._arg(args, 1, None)
+        if isinstance(target_list, list):
+            target_list.extend(list(self._announced_hosts.values()))
+        return True
+
+    def fromGuiQueryGroupiesFromHosted(self, *args: Any) -> bool:
+        self._record_call("fromGuiQueryGroupiesFromHosted", args, {})
+        target_list = self._arg(args, 1, None)
+        if isinstance(target_list, list):
+            target_list.extend([{"id": groupie_id} for groupie_id in sorted(self._joined_hosts)])
+        return True
+
+    def fromGuiStartScan(self, *args: Any) -> None:
+        self._record_call("fromGuiStartScan", args, {})
+        self._scan_active = True
+
+    def fromGuiNextScan(self, *args: Any) -> None:
+        self._record_call("fromGuiNextScan", args, {})
+
+    def fromGuiStopScan(self, *args: Any) -> None:
+        self._record_call("fromGuiStopScan", args, {})
+        self._scan_active = False
+
+    def fromGuiQueryIdentity(self, *args: Any) -> bool:
+        self._record_call("fromGuiQueryIdentity", args, {})
+        return bool(args)
+
+    def fromGuiSetIsAutomatedHost(self, *args: Any) -> None:
+        self._record_call("fromGuiSetIsAutomatedHost", args, {})
+        self._automated_host = bool(self._arg(args, 0, False))
+
+    def fromGuiSendRandConnectSelected(self, *args: Any) -> bool:
+        self._record_call("fromGuiSendRandConnectSelected", args, {})
+        return bool(args)
+
+    def fromGuiUserLoggedOn(self, *args: Any) -> None:
+        self._record_call("fromGuiUserLoggedOn", args, {})
+        user_key = self._key_from_obj(self._arg(args, 0, None))
+        if user_key:
+            self._users.add(user_key)
+
+    def fromGuiClearCache(self, *args: Any) -> int:
+        self._record_call("fromGuiClearCache", args, {})
+        self._asset_actions.clear()
+        self._queued_asset_actions.clear()
+        self._sent_assets.clear()
+        self._session_history.clear()
+        self._folder_scan_results.clear()
+        return 0
+
+    def fromGuiOrientationEvent(self, *args: Any) -> bool:
+        self._record_call("fromGuiOrientationEvent", args, {})
+        self._last_input_event = {"type": "orientation", "args": args}
+        return True
+
+    def fromGuiMouseEvent(self, *args: Any) -> bool:
+        self._record_call("fromGuiMouseEvent", args, {})
+        self._last_input_event = {"type": "mouse", "args": args}
+        return True
+
+    def fromGuiMouseWheel(self, *args: Any) -> bool:
+        self._record_call("fromGuiMouseWheel", args, {})
+        self._last_input_event = {"type": "wheel", "args": args}
+        return True
+
+    def fromGuiKeyEvent(self, *args: Any) -> bool:
+        self._record_call("fromGuiKeyEvent", args, {})
+        self._last_input_event = {"type": "key", "args": args}
+        return True
+
+    def fromGuiNativeGlInit(self, *args: Any) -> None:
+        self._record_call("fromGuiNativeGlInit", args, {})
+        self._gl_initialized = True
+        self._gl_paused = False
+
+    def fromGuiNativeGlResize(self, *args: Any) -> None:
+        self._record_call("fromGuiNativeGlResize", args, {})
+        if len(args) >= 2:
+            self._gl_size = (
+                self._safe_int(self._arg(args, 0, 0), 0),
+                self._safe_int(self._arg(args, 1, 0), 0),
+            )
+
+    def fromGuiNativeGlRender(self, *args: Any) -> int:
+        self._record_call("fromGuiNativeGlRender", args, {})
+        if not self._gl_initialized or self._gl_paused:
+            return 0
+        self._gl_frame_count += 1
+        return 1
+
+    def fromGuiNativeGlPauseRender(self, *args: Any) -> None:
+        self._record_call("fromGuiNativeGlPauseRender", args, {})
+        self._gl_paused = True
+
+    def fromGuiNativeGlResumeRender(self, *args: Any) -> None:
+        self._record_call("fromGuiNativeGlResumeRender", args, {})
+        self._gl_paused = False
+
+    def fromGuiNativeGlDestroy(self, *args: Any) -> None:
+        self._record_call("fromGuiNativeGlDestroy", args, {})
+        self._gl_initialized = False
+        self._gl_size = (0, 0)
+
+    def fromGuiSndRecord(self, *args: Any) -> bool:
+        self._record_call("fromGuiSndRecord", args, {})
+        self._media_recording_audio = bool(self._arg(args, 0, not self._media_recording_audio))
+        return True
+
+    def fromGuiVideoRecord(self, *args: Any) -> bool:
+        self._record_call("fromGuiVideoRecord", args, {})
+        self._media_recording_video = bool(self._arg(args, 0, not self._media_recording_video))
+        return True
+
+    def fromGuiPlayLocalMedia(self, *args: Any) -> bool:
+        self._record_call("fromGuiPlayLocalMedia", args, {})
+        path = self._key_from_obj(self._arg(args, 0, None))
+        return bool(path and Path(path).exists())
+
+    def fromGuiWantMediaInput(self, *args: Any) -> None:
+        self._record_call("fromGuiWantMediaInput", args, {})
+        self._want_media_input = bool(self._arg(args, 0, False))
+
+    def fromGuiOnlineNameChanged(self, *args: Any) -> None:
+        self._record_call("fromGuiOnlineNameChanged", args, {})
+        online_name = self._key_from_obj(self._arg(args, 0, None))
+        if online_name:
+            self._identity["online_name"] = online_name
+
+    def fromGuiMoodMessageChanged(self, *args: Any) -> None:
+        self._record_call("fromGuiMoodMessageChanged", args, {})
+        mood_message = self._key_from_obj(self._arg(args, 0, None))
+        if mood_message:
+            self._identity["mood_message"] = mood_message
+
+    def fromGuiIdentPersonalInfoChanged(self, *args: Any) -> None:
+        self._record_call("fromGuiIdentPersonalInfoChanged", args, {})
+        personal_info = self._arg(args, 0, None)
+        if personal_info is not None:
+            self._identity["personal_info"] = personal_info
+
+    def fromGuiSetUserHasProfilePicture(self, *args: Any) -> None:
+        self._record_call("fromGuiSetUserHasProfilePicture", args, {})
+        self._identity["has_profile_picture"] = bool(self._arg(args, 0, False))
+
+    def fromGuiUpdateMyIdent(self, *args: Any) -> None:
+        self._record_call("fromGuiUpdateMyIdent", args, {})
+        ident_value = self._arg(args, 0, None)
+        if ident_value is not None:
+            self._identity["ident"] = ident_value
+
+    def fromGuiQueryMyIdent(self, *args: Any) -> None:
+        self._record_call("fromGuiQueryMyIdent", args, {})
+        target_dict = self._arg(args, 0, None)
+        if isinstance(target_dict, dict):
+            target_dict.update(self._identity)
+
+    def fromGuiSetIdentHasTextOffers(self, *args: Any) -> None:
+        self._record_call("fromGuiSetIdentHasTextOffers", args, {})
+        ident_key = self._key_from_obj(self._arg(args, 0, "self"))
+        has_text_offers = bool(self._arg(args, 1, True))
+        self._text_offer_flags[ident_key] = has_text_offers
+
+    def fromGuiChangeMyFriendshipToHim(self, *args: Any) -> bool:
+        self._record_call("fromGuiChangeMyFriendshipToHim", args, {})
+        if not args:
+            return False
+        user_key = self._key_from_obj(self._arg(args, 0, None))
+        level = self._safe_int(self._arg(args, 1, 0), 0)
+        self._friendships[user_key] = level
+        return True
+
+    def fromGuiApplyNetHostSettings(self, *args: Any) -> None:
+        self._record_call("fromGuiApplyNetHostSettings", args, {})
+        setting_value = self._arg(args, 0, None)
+        if setting_value is not None:
+            self._net_host_settings["current"] = setting_value
+
+    def fromGuiSetNetSettings(self, *args: Any) -> None:
+        self._record_call("fromGuiSetNetSettings", args, {})
+        setting_value = self._arg(args, 0, None)
+        if setting_value is not None:
+            self._net_settings["current"] = setting_value
+
+    def fromGuiGetNetSettings(self, *args: Any) -> Any:
+        self._record_call("fromGuiGetNetSettings", args, {})
+        target_dict = self._arg(args, 0, None)
+        if isinstance(target_dict, dict):
+            target_dict.update(self._net_settings)
+        return self._net_settings.get("current")
+
+    def fromGuiRunUrlAction(self, *args: Any) -> None:
+        self._record_call("fromGuiRunUrlAction", args, {})
+        self._last_url_action = {
+            "args": args,
+            "time": datetime.utcnow().isoformat(timespec="seconds"),
+        }
+
+    def fromGuiSetFileShareSettings(self, *args: Any) -> None:
+        self._record_call("fromGuiSetFileShareSettings", args, {})
+        setting_value = self._arg(args, 0, None)
+        if setting_value is not None:
+            self._file_share_settings["current"] = setting_value
+
+    def fromGuiGetFileShareSettings(self, *args: Any) -> Any:
+        self._record_call("fromGuiGetFileShareSettings", args, {})
+        target_dict = self._arg(args, 0, None)
+        if isinstance(target_dict, dict):
+            target_dict.update(self._file_share_settings)
+        return self._file_share_settings.get("current")
+
+    def fromGuiUpdateWebPageProfile(self, *args: Any) -> None:
+        self._record_call("fromGuiUpdateWebPageProfile", args, {})
+        self._web_profile = {
+            "args": args,
+            "time": datetime.utcnow().isoformat(timespec="seconds"),
+        }
+
+    def fromGuiUpdatePluginPermission(self, *args: Any) -> None:
+        self._record_call("fromGuiUpdatePluginPermission", args, {})
+        self.fromGuiSetPluginPermission(*args)
+
+    def fromGuiMakePluginOffer(self, *args: Any) -> bool:
+        self._record_call("fromGuiMakePluginOffer", args, {})
+        self._plugin_offers.append({"args": args, "time": datetime.utcnow().isoformat(timespec="seconds")})
+        return True
+
+    def fromGuiToPluginOfferReply(self, *args: Any) -> bool:
+        self._record_call("fromGuiToPluginOfferReply", args, {})
+        self._plugin_offer_replies.append({"args": args, "time": datetime.utcnow().isoformat(timespec="seconds")})
+        return True
+
+    def fromGuiFileXferControl(self, *args: Any) -> int:
+        self._record_call("fromGuiFileXferControl", args, {})
+        key = self._key_from_obj(self._arg(args, 1, self._arg(args, 0, None)))
+        if key:
+            self._download_states[key] = self._safe_int(self._arg(args, 0, 0), 0)
+        return 0
+
+    def fromGuiInstMsg(self, *args: Any) -> bool:
+        self._record_call("fromGuiInstMsg", args, {})
+        self._instant_messages.append({"args": args, "time": datetime.utcnow().isoformat(timespec="seconds")})
+        return True
+
+    def fromGuiAdminViewHost(self, *args: Any) -> None:
+        self._record_call("fromGuiAdminViewHost", args, {})
+        self._admin_view_host = bool(self._arg(args, 0, False))
+
+    def fromGuiSendContactList(self, *args: Any) -> None:
+        self._record_call("fromGuiSendContactList", args, {})
+        contact_list = self._arg(args, 0, None)
+        if isinstance(contact_list, list):
+            self._contact_list = list(contact_list)
+
+    def fromGuiRefreshContactList(self, *args: Any) -> None:
+        self._record_call("fromGuiRefreshContactList", args, {})
+
+    def fromGuiTodGameActionSend(self, *args: Any) -> bool:
+        self._record_call("fromGuiTodGameActionSend", args, {})
+        self._multi_session_actions.append({"type": "tod", "args": args})
+        return True
+
+    def fromGuiBrowseFiles(self, *args: Any) -> bool:
+        self._record_call("fromGuiBrowseFiles", args, {})
+        start_dir = self._key_from_obj(self._arg(args, 0, None))
+        if not start_dir:
+            start_dir = self._user_specific_dir or self._startup_root_dir
+        path = Path(start_dir)
+        return path.exists() and path.is_dir()
+
+    def fromGuiGetFileLibraryList(self, *args: Any) -> None:
+        self._record_call("fromGuiGetFileLibraryList", args, {})
+        target_list = self._arg(args, 0, None)
+        if isinstance(target_list, list):
+            target_list.extend(sorted(self._library_files))
+
+    def fromGuiScanFolderForMedia(self, *args: Any) -> None:
+        self._record_call("fromGuiScanFolderForMedia", args, {})
+        folder = self._key_from_obj(self._arg(args, 0, None))
+        session_key = self._key_from_obj(self._arg(args, 1, folder))
+        result: list[str] = []
+        if folder:
+            path = Path(folder)
+            if path.exists() and path.is_dir():
+                for file_path in path.iterdir():
+                    if file_path.is_file() and (self.fromGuiIsNoLimitVideoFile(str(file_path)) or self.fromGuiIsNoLimitAudioFile(str(file_path))):
+                        result.append(str(file_path))
+        self._folder_scan_results[session_key] = result
+        self._folder_scan_acks[session_key] = 0
+
+    def fromGuiScanItemReceived(self, *args: Any) -> None:
+        self._record_call("fromGuiScanItemReceived", args, {})
+        session_key = self._key_from_obj(self._arg(args, 0, None))
+        if session_key:
+            self._folder_scan_acks[session_key] = self._folder_scan_acks.get(session_key, 0) + 1
+
+    def fromGuiScanFolderCancel(self, *args: Any) -> None:
+        self._record_call("fromGuiScanFolderCancel", args, {})
+        session_key = self._key_from_obj(self._arg(args, 0, None))
+        if session_key:
+            self._folder_scan_results.pop(session_key, None)
+            self._folder_scan_acks.pop(session_key, None)
+
+    def fromGuiIsNoLimitVideoFile(self, *args: Any) -> bool:
+        self._record_call("fromGuiIsNoLimitVideoFile", args, {})
+        path = self._key_from_obj(self._arg(args, 0, None))
+        return Path(path).suffix.lower() in {".mp4", ".mkv", ".avi", ".mov", ".webm"}
+
+    def fromGuiIsNoLimitAudioFile(self, *args: Any) -> bool:
+        self._record_call("fromGuiIsNoLimitAudioFile", args, {})
+        path = self._key_from_obj(self._arg(args, 0, None))
+        return Path(path).suffix.lower() in {".mp3", ".wav", ".flac", ".ogg", ".m4a"}
+
+    def fromGuiDeleteFile(self, *args: Any) -> int:
+        self._record_call("fromGuiDeleteFile", args, {})
+        path_value = self._key_from_obj(self._arg(args, 0, None))
+        if not path_value:
+            return -1
+        path = Path(path_value)
+        try:
+            if path.exists() and path.is_file():
+                path.unlink()
+                return 0
+        except OSError:
+            return -1
+        return -1
+
+    def fromGuiQuerySessionHistory(self, *args: Any) -> None:
+        self._record_call("fromGuiQuerySessionHistory", args, {})
+        session_key = self._key_from_obj(self._arg(args, 0, None))
+        history = self._session_history.get(session_key, [])
+        target_list = self._arg(args, 1, None)
+        if isinstance(target_list, list):
+            target_list.extend(history)
+
+    def fromGuiAssetAction(self, *args: Any) -> bool:
+        self._record_call("fromGuiAssetAction", args, {})
+        self._asset_actions.append({"args": args, "time": datetime.utcnow().isoformat(timespec="seconds")})
+        return True
+
+    def fromGuiQueueAssetAction(self, *args: Any) -> bool:
+        self._record_call("fromGuiQueueAssetAction", args, {})
+        self._queued_asset_actions.append({"args": args, "time": datetime.utcnow().isoformat(timespec="seconds")})
+        return True
+
+    def fromGuiSendAsset(self, *args: Any) -> bool:
+        self._record_call("fromGuiSendAsset", args, {})
+        self._sent_assets.append({"args": args, "time": datetime.utcnow().isoformat(timespec="seconds")})
+        return True
+
+    def fromGuiMultiSessionAction(self, *args: Any) -> bool:
+        self._record_call("fromGuiMultiSessionAction", args, {})
+        self._multi_session_actions.append({"args": args, "time": datetime.utcnow().isoformat(timespec="seconds")})
+        return True
+
+    def fromGuiTestCmd(self, *args: Any) -> bool:
+        self._record_call("fromGuiTestCmd", args, {})
+        return True
+
+    def fromGuiListAction(self, *args: Any) -> None:
+        self._record_call("fromGuiListAction", args, {})
+        self._last_list_action = {"args": args, "time": datetime.utcnow().isoformat(timespec="seconds")}
+
+    def fromGuiDownloadWebPage(self, *args: Any) -> bool:
+        self._record_call("fromGuiDownloadWebPage", args, {})
+        key = self._key_from_obj(self._arg(args, 0, "default"))
+        self._web_page_downloads[key] = {"args": args, "active": True, "time": datetime.utcnow().isoformat(timespec="seconds")}
+        return True
+
+    def fromGuiCancelWebPage(self, *args: Any) -> bool:
+        self._record_call("fromGuiCancelWebPage", args, {})
+        key = self._key_from_obj(self._arg(args, 0, "default"))
+        if key in self._web_page_downloads:
+            self._web_page_downloads[key]["active"] = False
+        return True
+
+    def fromGuiDownloadFileList(self, *args: Any) -> bool:
+        self._record_call("fromGuiDownloadFileList", args, {})
+        key = self._key_from_obj(self._arg(args, 0, "default"))
+        self._file_list_downloads[key] = {"args": args, "active": True, "time": datetime.utcnow().isoformat(timespec="seconds")}
+        return True
+
+    def fromGuiDownloadFileListCancel(self, *args: Any) -> bool:
+        self._record_call("fromGuiDownloadFileListCancel", args, {})
+        key = self._key_from_obj(self._arg(args, 0, "default"))
+        if key in self._file_list_downloads:
+            self._file_list_downloads[key]["active"] = False
+        return True
+
+    def fromGuiQueryJoinState(self, *args: Any) -> int:
+        self._record_call("fromGuiQueryJoinState", args, {})
+        host_key = self._key_from_obj(self._arg(args, 0, None))
+        return 1 if host_key and host_key in self._joined_hosts else 0
+
+    def fromGuiQueryFileHash(self, *args: Any) -> bool:
+        self._record_call("fromGuiQueryFileHash", args, {})
+        path_value = self._key_from_obj(self._arg(args, 0, None))
+        if not path_value:
+            return False
+        path = Path(path_value)
+        if not path.exists() or not path.is_file():
+            return False
+        import hashlib
+
+        hasher = hashlib.sha256()
+        try:
+            with path.open("rb") as handle:
+                for chunk in iter(lambda: handle.read(65536), b""):
+                    hasher.update(chunk)
+        except OSError:
+            return False
+
+        out = self._arg(args, 1, None)
+        if isinstance(out, dict):
+            out["sha256"] = hasher.hexdigest()
+        return True
+
+    def fromGuiDeleteDatabase(self, *args: Any) -> bool:
+        self._record_call("fromGuiDeleteDatabase", args, {})
+        # Reset in-memory model stores used by this migration stub.
+        self._announced_hosts.clear()
+        self._joined_hosts.clear()
+        self._blocked_users.clear()
+        self._plugin_permissions.clear()
+        self._plugin_sessions.clear()
+        self._download_states.clear()
+        self._shared_files.clear()
+        self._library_files.clear()
+        self._session_history.clear()
+        self._friend_requests.clear()
+        return True
+
+    def fromGuiQueryFriendRequest(self, *args: Any) -> bool:
+        self._record_call("fromGuiQueryFriendRequest", args, {})
+        target_list = self._arg(args, 0, None)
+        if isinstance(target_list, list):
+            target_list.extend(self._friend_requests)
+        return True
+
+    def fromGuiSendFriendRequest(self, *args: Any) -> bool:
+        self._record_call("fromGuiSendFriendRequest", args, {})
+        self._friend_requests.append({"args": args, "time": datetime.utcnow().isoformat(timespec="seconds")})
+        return True
+
 
 class IToGuiContractStub(GuiInterfaceContractBase):
     """Contract mirror of libs/GuiInterface/IToGui.h."""
@@ -651,6 +1497,438 @@ class IToGuiContractStub(GuiInterfaceContractBase):
         "toGuiUpdateWantMicrophoneCount": GuiInterfaceMethodSpec("toGuiUpdateWantMicrophoneCount", None, "IToGui::toGuiUpdateWantMicrophoneCount", "Microphone-demand counter callback."),
         "toGuiUpdateWantSpeakerCount": GuiInterfaceMethodSpec("toGuiUpdateWantSpeakerCount", None, "IToGui::toGuiUpdateWantSpeakerCount", "Speaker-demand counter callback."),
     }
+
+    def __init__(self) -> None:
+        super().__init__()
+        self.module_running: dict[str, bool] = {}
+        self.last_status_message = ""
+        self.last_app_error = ""
+        self.last_popup_error = ""
+        self.logs: list[str] = []
+        self.event_history: list[dict[str, Any]] = []
+        self.last_network_state: tuple[int, str] = (0, "")
+        self.last_net_available_status = 0
+        self.last_plugin_status: tuple[int, int, int] = (0, 0, 0)
+        self.last_plugin_message: tuple[int, Any, int, str] = (0, None, 0, "")
+        self.last_plugin_comm_error: tuple[int, Any, int, int] = (0, None, 0, 0)
+        self.last_host_announce_status: tuple[Any, ...] = ()
+        self.last_host_join_status: tuple[Any, ...] = ()
+        self.last_host_search_status: tuple[Any, ...] = ()
+        self.last_host_search_result: tuple[Any, ...] = ()
+        self.last_host_search_complete: tuple[Any, ...] = ()
+        self.last_groupie_search_status: tuple[Any, ...] = ()
+        self.last_groupie_search_result: tuple[Any, ...] = ()
+        self.last_groupie_search_complete: tuple[Any, ...] = ()
+        self.last_port_open_status: tuple[Any, ...] = ()
+        self.last_run_test_status: tuple[Any, ...] = ()
+        self.last_random_connect_status: tuple[Any, ...] = ()
+        self.last_network_is_tested: tuple[Any, ...] = ()
+        self.last_file_xfer_state: tuple[Any, ...] = ()
+        self.last_folder_scan: tuple[Any, ...] = ()
+        self.last_folder_scan_completed: tuple[Any, ...] = ()
+        self.last_media_error: tuple[Any, ...] = ()
+        self.last_module_state: tuple[Any, ...] = ()
+        self.last_want_video_capture: tuple[Any, ...] = ()
+        self.last_play_jpg_video: tuple[Any, ...] = ()
+        self.last_play_nlc_media: tuple[Any, ...] = ()
+        self.last_indent_list_update: tuple[Any, ...] = ()
+        self.last_indent_list_remove: tuple[Any, ...] = ()
+        self.last_contact_added: tuple[Any, ...] = ()
+        self.last_contact_removed: tuple[Any, ...] = ()
+        self.last_contact_online: tuple[Any, ...] = ()
+        self.last_contact_anything_change: tuple[Any, ...] = ()
+        self.last_contact_last_session_time_change: tuple[Any, ...] = ()
+        self.last_update_my_ident: tuple[Any, ...] = ()
+        self.last_save_my_ident: tuple[Any, ...] = ()
+        self.last_rxed_plugin_offer: tuple[Any, ...] = ()
+        self.last_rxed_offer_reply: tuple[Any, ...] = ()
+        self.last_plugin_session_started: tuple[Any, ...] = ()
+        self.last_plugin_session_ended: tuple[Any, ...] = ()
+        self.last_file_list_reply: tuple[Any, ...] = ()
+        self.last_file_list: tuple[Any, ...] = ()
+        self.last_file_list_completed: tuple[Any, ...] = ()
+        self.last_file_upload_start: tuple[Any, ...] = ()
+        self.last_file_upload_complete: tuple[Any, ...] = ()
+        self.last_file_download_start: tuple[Any, ...] = ()
+        self.last_file_download_complete: tuple[Any, ...] = ()
+        self.last_file_deleted: tuple[Any, ...] = ()
+        self.last_asset_added: tuple[Any, ...] = ()
+        self.last_asset_updated: tuple[Any, ...] = ()
+        self.last_asset_removed: tuple[Any, ...] = ()
+        self.last_asset_xfer_state: tuple[Any, ...] = ()
+        self.last_asset_session_history: tuple[Any, ...] = ()
+        self.last_asset_action: tuple[Any, ...] = ()
+        self.last_multi_session_action: tuple[Any, ...] = ()
+        self.last_blob_added: tuple[Any, ...] = ()
+        self.last_blob_action: tuple[Any, ...] = ()
+        self.last_blob_session_history: tuple[Any, ...] = ()
+        self.last_tod_game_action: tuple[Any, ...] = ()
+        self.last_inst_msg: tuple[Any, ...] = ()
+        self.last_search_result_file_search: tuple[Any, ...] = ()
+        self.last_microphone_want_count = 0
+        self.last_speaker_want_count = 0
+        self.last_admin_available = False
+
+    @staticmethod
+    def _module_key(args: tuple[Any, ...]) -> str:
+        if not args:
+            return "default"
+        return str(args[0])
+
+    @staticmethod
+    def _safe_int(value: Any, default: int = 0) -> int:
+        try:
+            return int(value)
+        except (TypeError, ValueError):
+            return default
+
+    @staticmethod
+    def _arg(args: tuple[Any, ...], index: int, default: Any = None) -> Any:
+        if index < 0:
+            return default
+        return args[index] if len(args) > index else default
+
+    def _record_to_gui(self, method_name: str, args: tuple[Any, ...], kwargs: dict[str, Any]) -> None:
+        self.call_log.append((method_name, args, kwargs))
+        self.event_history.append(
+            {
+                "method": method_name,
+                "args": args,
+                "kwargs": kwargs,
+                "time": datetime.utcnow().isoformat(timespec="seconds"),
+            }
+        )
+        if len(self.event_history) > 512:
+            self.event_history = self.event_history[-512:]
+
+    def _handle_stub_call(self, method_name: str, args: tuple[Any, ...], kwargs: dict[str, Any]) -> Any:
+        self._record_to_gui(method_name, args, kwargs)
+        spec = self._METHODS.get(method_name)
+        if spec is None:
+            raise AttributeError(method_name)
+
+        if method_name == "toGuiSetIsAppModuleRunning":
+            module = self._module_key(args)
+            running = bool(self._arg(args, 1, self._arg(args, 0, False)))
+            self.module_running[module] = running
+            return None
+
+        if method_name == "toGuiGetIsAppModuleRunning":
+            module = self._module_key(args)
+            return bool(self.module_running.get(module, False))
+
+        if method_name == "toGuiRunModule":
+            module = self._module_key(args)
+            self.module_running[module] = True
+            return True
+
+        if method_name == "toGuiStopModule":
+            module = self._module_key(args)
+            self.module_running[module] = False
+            return True
+
+        if method_name == "toGuiStatusMessage":
+            self.last_status_message = str(args[0]) if args else ""
+            self.logger.info("IToGui status: %s", self.last_status_message)
+            return None
+
+        if method_name == "toGuiLog":
+            message = " ".join(str(v) for v in args)
+            self.logs.append(message)
+            if len(self.logs) > 1024:
+                self.logs = self.logs[-1024:]
+            self.logger.info("IToGui log: %s", message)
+            return None
+
+        if method_name == "toGuiAppErr":
+            self.last_app_error = " ".join(str(v) for v in args)
+            self.logger.error("IToGui app error: %s", self.last_app_error)
+            return None
+
+        if method_name == "toGuiAppPopupErr":
+            self.last_popup_error = " ".join(str(v) for v in args)
+            self.logger.error("IToGui popup error: %s", self.last_popup_error)
+            return None
+
+        if method_name == "toGuiNetworkState":
+            state = self._safe_int(self._arg(args, 0, 0), 0)
+            message = str(self._arg(args, 1, ""))
+            self.last_network_state = (state, message)
+            return None
+
+        if method_name == "toGuiNetAvailableStatus":
+            self.last_net_available_status = self._safe_int(self._arg(args, 0, 0), 0)
+            return None
+
+        if method_name == "toGuiPluginStatus":
+            plugin = self._safe_int(self._arg(args, 0, 0), 0)
+            status = self._safe_int(self._arg(args, 1, 0), 0)
+            status_value = self._safe_int(self._arg(args, 2, 0), 0)
+            self.last_plugin_status = (plugin, status, status_value)
+            return None
+
+        if method_name == "toGuiPluginMsg":
+            plugin = self._safe_int(self._arg(args, 0, 0), 0)
+            online_id = self._arg(args, 1, None)
+            msg_type = self._safe_int(self._arg(args, 2, 0), 0)
+
+            # Some call paths include a compact 3-arg form where the trailing value is the message.
+            if len(args) > 3:
+                message = str(self._arg(args, 3, ""))
+            elif len(args) > 2 and not isinstance(self._arg(args, 2, None), (int, float, bool)):
+                message = str(self._arg(args, 2, ""))
+                msg_type = 0
+            else:
+                message = ""
+            self.last_plugin_message = (plugin, online_id, msg_type, message)
+            return None
+
+        if method_name == "toGuiPluginCommError":
+            plugin = self._safe_int(self._arg(args, 0, 0), 0)
+            online_id = self._arg(args, 1, None)
+            msg_type = self._safe_int(self._arg(args, 2, 0), 0)
+            comm_error = self._safe_int(self._arg(args, 3, 0), 0)
+
+            # Compact 3-arg form: plugin, online_id, comm_error
+            if len(args) == 3 and isinstance(self._arg(args, 2, None), (int, float, bool)):
+                msg_type = 0
+                comm_error = self._safe_int(self._arg(args, 2, 0), 0)
+            self.last_plugin_comm_error = (plugin, online_id, msg_type, comm_error)
+            return None
+
+        if method_name == "toGuiHostAnnounceStatus":
+            self.last_host_announce_status = args
+            return None
+
+        if method_name == "toGuiHostJoinStatus":
+            self.last_host_join_status = args
+            return None
+
+        if method_name == "toGuiHostSearchStatus":
+            self.last_host_search_status = args
+            return None
+
+        if method_name == "toGuiHostSearchResult":
+            self.last_host_search_result = args
+            return None
+
+        if method_name == "toGuiHostSearchComplete":
+            self.last_host_search_complete = args
+            return None
+
+        if method_name == "toGuiGroupieSearchStatus":
+            self.last_groupie_search_status = args
+            return None
+
+        if method_name == "toGuiGroupieSearchResult":
+            self.last_groupie_search_result = args
+            return None
+
+        if method_name == "toGuiGroupieSearchComplete":
+            self.last_groupie_search_complete = args
+            return None
+
+        if method_name == "toGuiIsPortOpenStatus":
+            self.last_port_open_status = args
+            return None
+
+        if method_name == "toGuiRunTestStatus":
+            self.last_run_test_status = args
+            return None
+
+        if method_name == "toGuiRandomConnectStatus":
+            self.last_random_connect_status = args
+            return None
+
+        if method_name == "toGuiNetworkIsTested":
+            self.last_network_is_tested = args
+            return None
+
+        if method_name == "toGuiFileXferState":
+            self.last_file_xfer_state = args
+            return None
+
+        if method_name == "toGuiFolderScan":
+            self.last_folder_scan = args
+            return None
+
+        if method_name == "toGuiFolderScanCompleted":
+            self.last_folder_scan_completed = args
+            return None
+
+        if method_name == "toGuiUpdateWantMicrophoneCount":
+            self.last_microphone_want_count = self._safe_int(self._arg(args, 0, 0), 0)
+            return None
+
+        if method_name == "toGuiUpdateWantSpeakerCount":
+            self.last_speaker_want_count = self._safe_int(self._arg(args, 0, 0), 0)
+            return None
+
+        if method_name == "toGuiAdminAvail":
+            self.last_admin_available = bool(args[0]) if args else False
+            return None
+
+        if method_name == "toGuiMediaAction":
+            return bool(args)
+
+        if method_name == "toGuiMediaError":
+            self.last_media_error = args
+            self.logger.warning("IToGui media error: %s", args)
+            return None
+
+        if method_name == "toGuiModuleState":
+            self.last_module_state = args
+            return None
+
+        if method_name == "toGuiWantVideoCapture":
+            self.last_want_video_capture = args
+            return None
+
+        if method_name == "toGuiPlayJpgVideo":
+            self.last_play_jpg_video = args
+            return None
+
+        if method_name == "toGuiPlayNlcMedia":
+            self.last_play_nlc_media = args
+            return None
+
+        if method_name == "toGuiIndentListUpdate":
+            self.last_indent_list_update = args
+            return None
+
+        if method_name == "toGuiIndentListRemove":
+            self.last_indent_list_remove = args
+            return None
+
+        if method_name == "toGuiContactAdded":
+            self.last_contact_added = args
+            return None
+
+        if method_name == "toGuiContactRemoved":
+            self.last_contact_removed = args
+            return None
+
+        if method_name == "toGuiContactOnline":
+            self.last_contact_online = args
+            return None
+
+        if method_name == "toGuiContactAnythingChange":
+            self.last_contact_anything_change = args
+            return None
+
+        if method_name == "toGuiContactLastSessionTimeChange":
+            self.last_contact_last_session_time_change = args
+            return None
+
+        if method_name == "toGuiUpdateMyIdent":
+            self.last_update_my_ident = args
+            return None
+
+        if method_name == "toGuiSaveMyIdent":
+            self.last_save_my_ident = args
+            return None
+
+        if method_name == "toGuiRxedPluginOffer":
+            self.last_rxed_plugin_offer = args
+            return None
+
+        if method_name == "toGuiRxedOfferReply":
+            self.last_rxed_offer_reply = args
+            return None
+
+        if method_name == "toGuiPluginSessionStarted":
+            self.last_plugin_session_started = args
+            return None
+
+        if method_name == "toGuiPluginSessionEnded":
+            self.last_plugin_session_ended = args
+            return None
+
+        if method_name == "toGuiFileListReply":
+            self.last_file_list_reply = args
+            return None
+
+        if method_name == "toGuiFileList":
+            self.last_file_list = args
+            return None
+
+        if method_name == "toGuiFileListCompleted":
+            self.last_file_list_completed = args
+            return None
+
+        if method_name == "toGuiFileUploadStart":
+            self.last_file_upload_start = args
+            return None
+
+        if method_name == "toGuiFileUploadComplete":
+            self.last_file_upload_complete = args
+            return None
+
+        if method_name == "toGuiFileDownloadStart":
+            self.last_file_download_start = args
+            return None
+
+        if method_name == "toGuiFileDownloadComplete":
+            self.last_file_download_complete = args
+            return None
+
+        if method_name == "toGuiFileDeleted":
+            self.last_file_deleted = args
+            return None
+
+        if method_name == "toGuiAssetAdded":
+            self.last_asset_added = args
+            return None
+
+        if method_name == "toGuiAssetUpdated":
+            self.last_asset_updated = args
+            return None
+
+        if method_name == "toGuiAssetRemoved":
+            self.last_asset_removed = args
+            return None
+
+        if method_name == "toGuiAssetXferState":
+            self.last_asset_xfer_state = args
+            return None
+
+        if method_name == "toGuiAssetSessionHistory":
+            self.last_asset_session_history = args
+            return None
+
+        if method_name == "toGuiAssetAction":
+            self.last_asset_action = args
+            return None
+
+        if method_name == "toGuiMultiSessionAction":
+            self.last_multi_session_action = args
+            return None
+
+        if method_name == "toGuiBlobAdded":
+            self.last_blob_added = args
+            return None
+
+        if method_name == "toGuiBlobAction":
+            self.last_blob_action = args
+            return None
+
+        if method_name == "toGuiBlobSessionHistory":
+            self.last_blob_session_history = args
+            return None
+
+        if method_name == "toGuiTodGameAction":
+            self.last_tod_game_action = args
+            return None
+
+        if method_name == "toGuiInstMsg":
+            self.last_inst_msg = args
+            return None
+
+        if method_name == "toGuiSearchResultFileSearch":
+            self.last_search_result_file_search = args
+            return None
+
+        return spec.return_default
 
 
 def _install_contract_methods(contract_cls: type[GuiInterfaceContractBase]) -> None:

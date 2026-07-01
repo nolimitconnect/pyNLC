@@ -2,7 +2,9 @@ from __future__ import annotations
 
 import importlib
 from datetime import datetime
+import re
 
+from PySide6.QtCore import Qt
 from PySide6.QtWidgets import QHBoxLayout, QLabel, QLineEdit, QListWidget, QListWidgetItem, QPushButton, QVBoxLayout, QWidget
 
 
@@ -34,10 +36,86 @@ class _BaseJoinSearchApplet(QWidget):
         self._clear = QPushButton("Clear", self)
         self._clear.clicked.connect(self._clear_rows)
         toolbar.addWidget(self._clear)
+
+        self._favorite = QPushButton("Toggle Favorite", self)
+        self._favorite.clicked.connect(self._toggle_selected_favorite)
+        toolbar.addWidget(self._favorite)
         root.addLayout(toolbar)
 
         self._list = QListWidget(self)
+        self._list.itemDoubleClicked.connect(self._toggle_selected_favorite)
         root.addWidget(self._list)
+
+        self._restore_filter()
+
+    def _account_scope(self) -> str:
+        if self.settings is not None and hasattr(self.settings, "getLastLogin"):
+            try:
+                account = str(self.settings.getLastLogin()).strip()
+                if account:
+                    return account
+            except Exception:
+                pass
+        return "anonymous"
+
+    def _state_key(self, suffix: str) -> str:
+        account_key = re.sub(r"[^a-zA-Z0-9_.-]", "_", self._account_scope())
+        return f"ui.join_search.{self._TITLE.lower().replace(' ', '_')}.{account_key}.{suffix}"
+
+    def _store(self) -> dict[str, object] | None:
+        store = getattr(self.settings, "_settings_store", None)
+        if isinstance(store, dict):
+            return store
+        return None
+
+    def _save_setting(self, key: str, value) -> None:
+        store = self._store()
+        if store is None:
+            return
+        store[key] = value
+        save_fn = getattr(self.settings, "_save_settings", None)
+        if callable(save_fn):
+            try:
+                save_fn()
+            except Exception:
+                pass
+
+    def _restore_filter(self) -> None:
+        store = self._store()
+        if store is None:
+            return
+        value = str(store.get(self._state_key("filter"), ""))
+        if value:
+            self._filter.setText(value)
+
+    def _is_favorite(self, online_id: str) -> bool:
+        if self.settings is not None and hasattr(self.settings, "getIsFavorite"):
+            try:
+                return bool(self.settings.getIsFavorite(online_id))
+            except Exception:
+                return False
+        return False
+
+    def _toggle_selected_favorite(self, *_args) -> None:
+        selected = self._list.currentItem()
+        if selected is None:
+            self._status.setText("No session selected")
+            return
+        session_id = str(selected.data(Qt.UserRole) or "")
+        if not session_id:
+            self._status.setText("Invalid session id")
+            return
+        if self.settings is None or not hasattr(self.settings, "toggleIsFavorite"):
+            self._status.setText("Favorites DB not available")
+            return
+        try:
+            self.settings.toggleIsFavorite(session_id)
+        except Exception:
+            self._status.setText("Failed to toggle favorite")
+            return
+        self._refresh_rows()
+        state = "favorited" if self._is_favorite(session_id) else "unfavorited"
+        self._status.setText(f"{session_id} {state}")
 
     def _matches_host_type(self, host_type: int) -> bool:
         return int(host_type) == self._HOST_TYPE
@@ -76,15 +154,20 @@ class _BaseJoinSearchApplet(QWidget):
             text = f"{session_id} | {status} | {result} | {message} {stamp}".strip()
             if query and query not in text.lower():
                 continue
-            self._list.addItem(QListWidgetItem(text))
+            prefix = "*" if self._is_favorite(session_id) else "-"
+            item = QListWidgetItem(f"{prefix} {text}")
+            item.setData(Qt.UserRole, session_id)
+            self._list.addItem(item)
 
     def _apply_filter(self, _text: str) -> None:
+        self._save_setting(self._state_key("filter"), self._filter.text())
         self._refresh_rows()
 
     def _clear_rows(self) -> None:
         self._sessions.clear()
         self._list.clear()
         self._status.setText("Cleared")
+        self._save_setting(self._state_key("last_cleared"), datetime.now().strftime("%H:%M:%S"))
 
     def add_host_search_status(
         self,
