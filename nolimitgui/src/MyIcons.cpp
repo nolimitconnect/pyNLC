@@ -1019,7 +1019,7 @@ EMyIcons MyIcons::getPluginIcon( enum EPluginType pluginType, EPluginAccess ePlu
         case ePluginAccessRequiresDirectConnect:
         case ePluginAccessRequiresOnline:
         case ePluginAccessNotSet:
-        case eMaxPluginAccessState:
+        case eMaxPluginAccess:
             return eMyIconProfileDisabled;
         case ePluginAccessLocked:
             return eMyIconProfileLocked;
@@ -1042,7 +1042,7 @@ EMyIcons MyIcons::getPluginIcon( enum EPluginType pluginType, EPluginAccess ePlu
 		case ePluginAccessRequiresDirectConnect:
 		case ePluginAccessRequiresOnline:
 		case ePluginAccessNotSet:
-		case eMaxPluginAccessState:
+		case eMaxPluginAccess:
 		case ePluginAccessLocked:
 		case ePluginAccessIgnored:
 		case ePluginAccessBusy:
@@ -1060,7 +1060,7 @@ EMyIcons MyIcons::getPluginIcon( enum EPluginType pluginType, EPluginAccess ePlu
         case ePluginAccessRequiresDirectConnect:
         case ePluginAccessRequiresOnline:
         case ePluginAccessNotSet:
-        case eMaxPluginAccessState:
+        case eMaxPluginAccess:
             return eMyIconServiceChatRoom;
         case ePluginAccessLocked:
             return eMyIconServiceChatRoom;
@@ -1080,7 +1080,7 @@ EMyIcons MyIcons::getPluginIcon( enum EPluginType pluginType, EPluginAccess ePlu
         case ePluginAccessRequiresDirectConnect:
         case ePluginAccessRequiresOnline:
         case ePluginAccessNotSet:
-        case eMaxPluginAccessState:
+        case eMaxPluginAccess:
             return eMyIconAvatarImage;
         case ePluginAccessLocked:
             return eMyIconAvatarImage;
@@ -1100,7 +1100,7 @@ EMyIcons MyIcons::getPluginIcon( enum EPluginType pluginType, EPluginAccess ePlu
         case ePluginAccessRequiresDirectConnect:
         case ePluginAccessRequiresOnline:
         case ePluginAccessNotSet:
-        case eMaxPluginAccessState:
+        case eMaxPluginAccess:
             return eMyIconAvatarImage;
         case ePluginAccessLocked:
             return eMyIconAvatarImage;
@@ -1120,7 +1120,7 @@ EMyIcons MyIcons::getPluginIcon( enum EPluginType pluginType, EPluginAccess ePlu
         case ePluginAccessRequiresDirectConnect:
         case ePluginAccessRequiresOnline:
         case ePluginAccessNotSet:
-        case eMaxPluginAccessState:
+        case eMaxPluginAccess:
             return eMyIconServiceConnectionTest;
         case ePluginAccessLocked:
             return eMyIconServiceConnectionTest;
@@ -1140,7 +1140,7 @@ EMyIcons MyIcons::getPluginIcon( enum EPluginType pluginType, EPluginAccess ePlu
         case ePluginAccessRequiresDirectConnect:
         case ePluginAccessRequiresOnline:
         case ePluginAccessNotSet:
-        case eMaxPluginAccessState:
+        case eMaxPluginAccess:
             return eMyIconServiceConnectionTest;
         case ePluginAccessLocked:
             return eMyIconServiceConnectionTest;
@@ -1160,7 +1160,7 @@ EMyIcons MyIcons::getPluginIcon( enum EPluginType pluginType, EPluginAccess ePlu
         case ePluginAccessRequiresDirectConnect:
         case ePluginAccessRequiresOnline:
         case ePluginAccessNotSet:
-        case eMaxPluginAccessState:
+        case eMaxPluginAccess:
             return eMyIconServiceRandomConnect;
         case ePluginAccessLocked:
             return eMyIconServiceRandomConnect;
@@ -1180,7 +1180,7 @@ EMyIcons MyIcons::getPluginIcon( enum EPluginType pluginType, EPluginAccess ePlu
         case ePluginAccessRequiresDirectConnect:
         case ePluginAccessRequiresOnline:
         case ePluginAccessNotSet:
-        case eMaxPluginAccessState:
+        case eMaxPluginAccess:
             return eMyIconServiceRandomConnect;
         case ePluginAccessLocked:
             return eMyIconServiceRandomConnect;
@@ -1200,7 +1200,7 @@ EMyIcons MyIcons::getPluginIcon( enum EPluginType pluginType, EPluginAccess ePlu
 		case ePluginAccessRequiresDirectConnect:
 		case ePluginAccessRequiresOnline:
         case ePluginAccessNotSet:
-        case eMaxPluginAccessState:
+        case eMaxPluginAccess:
 			return eMyIconStoryBoardDisabled;
 		case ePluginAccessLocked:
 			return eMyIconStoryBoardLocked;
@@ -1224,7 +1224,7 @@ EMyIcons MyIcons::getPluginIcon( enum EPluginType pluginType, EPluginAccess ePlu
 		case ePluginAccessRequiresDirectConnect:
 		case ePluginAccessRequiresOnline:
         case ePluginAccessNotSet:
-        case eMaxPluginAccessState:
+        case eMaxPluginAccess:
 			return eMyIconSendFileDisabled;
 		case ePluginAccessLocked:
 			return eMyIconSendFileLocked;
@@ -1244,7 +1244,7 @@ EMyIcons MyIcons::getPluginIcon( enum EPluginType pluginType, EPluginAccess ePlu
 		case ePluginAccessRequiresDirectConnect:
 		case ePluginAccessRequiresOnline:
         case ePluginAccessNotSet:
-        case eMaxPluginAccessState:
+        case eMaxPluginAccess:
 			return eMyIconShareFilesDisabled;
 		case ePluginAccessLocked:
 			return eMyIconShareFilesCancel;
@@ -1264,7 +1264,7 @@ EMyIcons MyIcons::getPluginIcon( enum EPluginType pluginType, EPluginAccess ePlu
 		case ePluginAccessRequiresDirectConnect:
 		case ePluginAccessRequiresOnline:
         case ePluginAccessNotSet:
-        case eMaxPluginAccessState:
+        case eMaxPluginAccess:
 			return eMyIconWebCamServerDisabled;
 		case ePluginAccessLocked:
 			return eMyIconWebCamServerLocked;
@@ -1284,7 +1284,7 @@ EMyIcons MyIcons::getPluginIcon( enum EPluginType pluginType, EPluginAccess ePlu
 		case ePluginAccessRequiresDirectConnect:
 		case ePluginAccessRequiresOnline:
         case ePluginAccessNotSet:
-        case eMaxPluginAccessState:
+        case eMaxPluginAccess:
 			return eMyIconVoicePhoneDisabled;
 		case ePluginAccessLocked:
 			return eMyIconVoicePhoneLocked;
@@ -1304,7 +1304,7 @@ EMyIcons MyIcons::getPluginIcon( enum EPluginType pluginType, EPluginAccess ePlu
 		case ePluginAccessRequiresDirectConnect:
 		case ePluginAccessRequiresOnline:
 		case ePluginAccessNotSet:
-		case eMaxPluginAccessState:
+		case eMaxPluginAccess:
 			return eMyIconPushToTalkDisabled;
 		case ePluginAccessLocked:
 			return eMyIconPushToTalkLocked;
@@ -1324,7 +1324,7 @@ EMyIcons MyIcons::getPluginIcon( enum EPluginType pluginType, EPluginAccess ePlu
 		case ePluginAccessRequiresDirectConnect:
 		case ePluginAccessRequiresOnline:
         case ePluginAccessNotSet:
-        case eMaxPluginAccessState:
+        case eMaxPluginAccess:
 			return eMyIconVideoPhoneDisabled;
 		case ePluginAccessLocked:
 			return eMyIconVideoPhoneLocked;
@@ -1344,7 +1344,7 @@ EMyIcons MyIcons::getPluginIcon( enum EPluginType pluginType, EPluginAccess ePlu
 		case ePluginAccessRequiresDirectConnect:
 		case ePluginAccessRequiresOnline:
         case ePluginAccessNotSet:
-        case eMaxPluginAccessState:
+        case eMaxPluginAccess:
 			return eMyIconTruthOrDareDisabled;
 		case ePluginAccessLocked:
 			return eMyIconTruthOrDareLocked;
@@ -1365,7 +1365,7 @@ EMyIcons MyIcons::getPluginIcon( enum EPluginType pluginType, EPluginAccess ePlu
 		case ePluginAccessRequiresDirectConnect:
 		case ePluginAccessRequiresOnline:
         case ePluginAccessNotSet:
-        case eMaxPluginAccessState:
+        case eMaxPluginAccess:
 			return eMyIconMultiSessionDisabled;
 		case ePluginAccessLocked:
 			return eMyIconMultiSessionLocked;
@@ -1385,7 +1385,7 @@ EMyIcons MyIcons::getPluginIcon( enum EPluginType pluginType, EPluginAccess ePlu
         case ePluginAccessRequiresDirectConnect:
         case ePluginAccessRequiresOnline:
         case ePluginAccessNotSet:
-        case eMaxPluginAccessState:
+        case eMaxPluginAccess:
             return eMyIconServiceChatRoom;
         case ePluginAccessLocked:
             return eMyIconServiceChatRoom;
@@ -1409,7 +1409,7 @@ EMyIcons MyIcons::getPluginIcon( enum EPluginType pluginType, EPluginAccess ePlu
         case ePluginAccessRequiresDirectConnect:
         case ePluginAccessRequiresOnline:
         case ePluginAccessNotSet:
-        case eMaxPluginAccessState:
+        case eMaxPluginAccess:
             return eMyIconPeople;
         case ePluginAccessLocked:
             return eMyIconIgnored;
@@ -1429,7 +1429,7 @@ EMyIcons MyIcons::getPluginIcon( enum EPluginType pluginType, EPluginAccess ePlu
         case ePluginAccessRequiresDirectConnect:
         case ePluginAccessRequiresOnline:
         case ePluginAccessNotSet:
-        case eMaxPluginAccessState:
+        case eMaxPluginAccess:
             return eMyIconServiceHostNetwork;
         case ePluginAccessLocked:
             return eMyIconServiceHostNetwork;

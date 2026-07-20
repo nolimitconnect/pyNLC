@@ -32,8 +32,6 @@ public:
     bool                        fileIsProviderFile( const char* fileNameAndPath ) override;
 
     bool                        getFileInfo( const char* fileNameAndPath, VxFileInfoBase& fileInfoBase ) override;
-    bool                        qtFileInfoToVxFileInfo( const QFileInfo& fileInfo, VxFileInfoBase& retFileInfo,
-                                                        uint8_t fileFilterMask = VXFILE_TYPE_AUDIO_VIDEO_PHOTO ) override;
 
     bool						seperatePathAndFile( const char* fileNameAndPath,		// path and file name
                                                      std::string& strRetPath,           // return path of file

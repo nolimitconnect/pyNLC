@@ -46,7 +46,7 @@ PlayControlWidget*	AppletPlayerNlc::getPlayControlWidget( void )	{ return ui.m_P
 //============================================================================
 AppletPlayerNlc::AppletPlayerNlc( AppCommon& app, QWidget* parent )
 : AppletPlayerNlcBase( OBJNAME_APPLET_PLAYER_NLC, app, parent )
-, ui(*(new Ui::AppletPlayerNlcUi))
+, ui(*(new Ui::AppletPlayerNlcUi()))
 {
 	setAppletType( eAppletPlayerNlc );
 	setTitleBarText( DescribeApplet( m_EAppletType ) );
@@ -78,36 +78,6 @@ AppletPlayerNlc::AppletPlayerNlc( AppCommon& app, QWidget* parent )
 
     GuiHelpers::requestFilePermission( eMediaFileAny );
 
-#if 0
-	QStringList downloadPathList = QStandardPaths::standardLocations(QStandardPaths::DownloadLocation);
-	for( auto downloadPath : downloadPathList )
-	{
-		auto mediaPath = downloadPath + "/NlcMediaFiles";
-		QDir mediaDir( mediaPath );
-		if( !mediaDir.exists() )
-		{
-			continue;
-		}
-
-		addMediaFilesToRecentList( mediaDir );
-	}
-	
-	std::string lastPlayedMovie;
-	m_MyApp.getAppSettings().getLastPlayedMovie( lastPlayedMovie );
-	if( !lastPlayedMovie.empty() )
-	{
-        VxFileInfoBase fileInfo;
-        if( VxFileUtil::getFileInfo( lastPlayedMovie.c_str(), fileInfo ) )
-        {
-			ui.m_LastPlayedFileText->setText( lastPlayedMovie.c_str() );
-            m_RecentFiles.moveToTopOfList( lastPlayedMovie );
-        }
-	}
-
-	refreshRecentFilesComboBox();
-
-	connect( ui.m_FilesComboBox, SIGNAL(currentIndexChanged(int)), this, SLOT(slotMediaFileComboBoxSelectionChange(int)) );
-#else
 	std::string lastPlayedMovie;
 	m_MyApp.getAppSettings().getLastPlayedMovie( lastPlayedMovie );
 	if( !lastPlayedMovie.empty() )
@@ -116,7 +86,6 @@ AppletPlayerNlc::AppletPlayerNlc( AppCommon& app, QWidget* parent )
 	}
 
 	ui.m_FilesComboBox->setVisible( false );
-#endif
 
 	connect( ui.m_BrowseButton, SIGNAL(clicked()), this, SLOT(slotBrowseButtonClick()) );
 	connect( ui.m_ReplayButton, SIGNAL(clicked()), this, SLOT(slotReplayButtonClick()) );
@@ -137,6 +106,12 @@ AppletPlayerNlc::AppletPlayerNlc( AppCommon& app, QWidget* parent )
 }
 
 //============================================================================
+AppletPlayerNlc::~AppletPlayerNlc()
+{
+
+}
+
+//============================================================================
 void AppletPlayerNlc::setupBottomMenu( VxMenuButton* menuButton )
 {
 	if( menuButton )
@@ -150,14 +125,6 @@ void AppletPlayerNlc::setupBottomMenu( VxMenuButton* menuButton )
 
 	connect( menuButton, SIGNAL(signalMenuItemSelected(int,EMenuItemType)),
 		this, SLOT(slotMenuItemSelected(int,EMenuItemType)) );
-}
-
-//============================================================================
-void AppletPlayerNlc::slotAppletClosing( void )
-{
-    m_MyApp.getAppSettings().setLastAppletLaunched( eLaunchFrameHome, eAppletUnknown );
-    stopMediaIfPlaying();
-    closeApplet();
 }
 
 //============================================================================
@@ -309,7 +276,7 @@ void AppletPlayerNlc::playSelectedMedia( std::string fileNameAndPath )
 
 			ui.m_LastPlayedFileText->setText( fileNameAndPath.c_str() );
 			m_MyApp.getAppSettings().setLastPlayedMovie( fileNameAndPath );
-			if( !m_MyApp.getPlayerMgr().playFile( fileNameAndPath.c_str(), 0, false, false ) )
+			if( !m_MyApp.getPlayerMgr().playFile( fileNameAndPath.c_str(), 0, false, false, getParentPageFrame() ) )
 			{
 				QMessageBox::information( this, QObject::tr( "Media Player could not play file" ), fileNameAndPath.c_str(), QMessageBox::Ok );
 			}
@@ -372,13 +339,10 @@ bool AppletPlayerNlc::isMediaPlayerReady( bool notifyIfNotReady )
 //============================================================================
 void AppletPlayerNlc::updateRecentListVisibility( void )
 {
-	if( m_MediaPlayerReady )
-	{
-		ui.m_BrowseButton->setVisible( true );
-		ui.m_ReplayButton->setVisible( true );
-        ui.m_OpenVideoFileButton->setVisible( true );
-        ui.m_OpenAudioFileButton->setVisible( true );
-	}
+	ui.m_BrowseButton->setVisible( m_MediaPlayerReady );
+	ui.m_ReplayButton->setVisible( m_MediaPlayerReady );
+    ui.m_OpenVideoFileButton->setVisible( m_MediaPlayerReady );
+    ui.m_OpenAudioFileButton->setVisible( m_MediaPlayerReady );
 }
 
 //============================================================================

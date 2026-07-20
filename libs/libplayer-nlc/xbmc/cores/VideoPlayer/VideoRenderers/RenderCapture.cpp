@@ -50,28 +50,28 @@ bool CRenderCaptureBase::UseOcclusionQuery()
     return true;
 }
 
-#if defined(HAVE_QT_GUI)
+#if defined(HAVE_NLC_GUI)
 
-CRenderCaptureQt::CRenderCaptureQt()
+CRenderCaptureNlc::CRenderCaptureNlc()
 {
     m_pixels = nullptr;
 }
 
-CRenderCaptureQt::~CRenderCaptureQt()
+CRenderCaptureNlc::~CRenderCaptureNlc()
 {
     delete[] m_pixels;
 }
 
-int CRenderCaptureQt::GetCaptureFormat()
+int CRenderCaptureNlc::GetCaptureFormat()
 {
     return CAPTUREFORMAT_BGRA;
 }
 
-void CRenderCaptureQt::BeginRender()
+void CRenderCaptureNlc::BeginRender()
 {
 }
 
-void CRenderCaptureQt::EndRender()
+void CRenderCaptureNlc::EndRender()
 {
     delete[] m_pixels;
     //m_pixels = g_RBP.CaptureDisplay( m_width, m_height, NULL, true );
@@ -79,12 +79,12 @@ void CRenderCaptureQt::EndRender()
     SetState( CAPTURESTATE_DONE );
 }
 
-void* CRenderCaptureQt::GetRenderBuffer()
+void* CRenderCaptureNlc::GetRenderBuffer()
 {
     return m_pixels;
 }
 
-void CRenderCaptureQt::ReadOut()
+void CRenderCaptureNlc::ReadOut()
 {
 }
 

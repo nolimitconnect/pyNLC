@@ -14,6 +14,7 @@
 #include "GuiHelpers.h"
 #include "GuiPluginMgr.h"
 #include "GuiPlayerMgr.h"
+#include "HomeWindow.h"
 #include "PlayControlWidget.h"
 #include "MediaPlayerNlc.h"
 #include "RenderGlWidget.h"
@@ -26,8 +27,10 @@
 #include <CoreLib/VxDebug.h>
 #include <CoreLib/VxFileUtil.h>
 
+#include <QApplication>
 #include <QMessageBox>
 #include <QSlider>
+#include <QTimer>
 
 namespace
 {
@@ -501,6 +504,26 @@ void AppletPlayerNlcBase::slotInternalUpdatePlayPosition( VxGUID feedId, int pos
 void AppletPlayerNlcBase::onBackButtonClicked( void )
 {
 	stopMediaIfPlaying();
+
+#if defined(TARGET_OS_ANDROID)
+	// Android player widget teardown can blank the app surface after control returns
+	// to the previous page. Keep the applet alive and reusable instead of deleting it.
+	IMediaPlayerRequests::getNlcPlayer().fromGuiStopModule( eMediaModulePlayerNlc );
+	onMediaPlayerNlcReady( false );
+	setReadyForCallbacks( false );
+	stopBusySpinner();
+	resetPlayerControls();
+	setIsPlaying( false );
+	setIsStreaming( false );
+	m_PlayAssetQue.clear();
+	m_SessionId = VxGUID::nullVxGUID();
+	m_AssetInfo = AssetInfo();
+	getRenderConsumer()->showAppIcon();
+	getPlayControlWidget()->setVisible( false );
+	hide();
+	return;
+#endif // defined(TARGET_OS_ANDROID)
+
 	AppletPlayerBase::onBackButtonClicked();
 }
 
@@ -549,6 +572,8 @@ void AppletPlayerNlcBase::onPlaybackStopped( VxGUID& feedId )
 	setIsPlaying( false );
 	m_MyApp.getAudioMgr().clearPlayerNlcBuffers();
 	m_MyApp.getAudioMgr().setPlayerNlcAcceptInput( false );
+	// Keep the render widget from staying on a blank frame after manual stop.
+	getRenderConsumer()->showAppIcon();
 }
 
 //============================================================================
@@ -703,11 +728,42 @@ void AppletPlayerNlcBase::updateLastPlayedFile( void )
 //============================================================================
 void AppletPlayerNlcBase::onAboutToDestroyApplet( void )
 {
+    if( m_AboutToDestroyHasBeenCalled )
+    {
+        return;
+    }
+	m_AboutToDestroyHasBeenCalled = true;
 	// Ensure stream and playback teardown runs before stopping the player module.
 	// This prevents shutdown from waiting on active virtual-stream reads.
 	stopMediaIfPlaying();
     getRenderConsumer()->aboutToDestroy();
 	IMediaPlayerRequests::getNlcPlayer().fromGuiStopModule( eMediaModulePlayerNlc );
+
+#if defined(TARGET_OS_ANDROID)
+	// Android may leave a stale black surface after external player GL teardown.
+	// Force the main window surface to rebind on the next event-loop turn.
+	HomeWindow* homeWindow = &m_MyApp.getHomeWindow();
+	QTimer::singleShot( 0, [homeWindow]()
+	{
+		if( homeWindow )
+		{
+			homeWindow->hide();
+			homeWindow->show();
+			homeWindow->activateWindow();
+			homeWindow->raise();
+			homeWindow->update();
+		}
+
+		const auto topLevelWidgets = QApplication::topLevelWidgets();
+		for( QWidget* widget : topLevelWidgets )
+		{
+			if( widget )
+			{
+				widget->update();
+			}
+		}
+	} );
+#endif // defined(TARGET_OS_ANDROID)
 }
 
 //============================================================================

@@ -54,11 +54,11 @@ using namespace winrt::Windows::System::Profile;
 #include "utils/StringUtils.h"
 #include "utils/XMLUtils.h"
 #if defined(TARGET_ANDROID)
-# if defined(HAVE_QT_GUI)
-#  include <platform/qt/qtandroid/jni/Build.h>
+# if defined(HAVE_NLC_GUI)
+#  include <platform/nlc/android/jni/Build.h>
 # else
 #  include <android/jni/Build.h>
-# endif // defined(HAVE_QT_GUI)
+# endif // defined(HAVE_NLC_GUI)
 #endif // defined(TARGET_ANDROID)
 
 #if defined(HAS_LIBAMCODEC)

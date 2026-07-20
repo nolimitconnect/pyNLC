@@ -8,9 +8,9 @@
 
 #pragma once
 
-#include <platform/qt/qtandroid/jni/JNIBase.h>
+#include <platform/android/jni/JNIBase.h>
 
-#include <platform/qt/qtandroid/jni/AudioManager.h>
+#include <platform/android/jni/AudioManager.h>
 
 class CJNIXBMCAudioManagerOnAudioFocusChangeListener : public CJNIAudioManagerAudioFocusChangeListener, public CJNIInterfaceImplem<CJNIXBMCAudioManagerOnAudioFocusChangeListener>
 {
@@ -27,3 +27,4 @@ public:
 protected:
   static void _onAudioFocusChange(JNIEnv* env, jobject thiz, jint focusChange);
 };
+

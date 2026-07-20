@@ -50,13 +50,6 @@ int64_t GetHighResolutionTimeUs( void ) /* O  time in usec*/
 # else
 	int64_t timeNow = ((int64_t)tspec.tv_sec * 1000000) + ((int64_t)tspec.tv_usec);
 # endif // defined(TARGET_OS_ANDROID)
-	static int64_t lastTime = 0;
-	if( timeNow < lastTime )
-	{
-		LogMsg( LOG_ERROR, "ERROR MONOTONIC GetHighResolutionTimeMs() Went backwards from %" PRId64 " to %" PRId64 "", lastTime, timeNow );
-	}
-
-	lastTime = timeNow;
 	return timeNow;
 #else
 	struct timeval tv;
@@ -109,13 +102,6 @@ int64_t GetHighResolutionTimeMs( void ) /* O  time in usec*/
 # else
 	int64_t timeNow = ((int64_t)tspec.tv_sec * 1000LL) + ((int64_t)tspec.tv_usec / 1000L);
 # endif // defined(TARGET_OS_ANDROID)
-	static int64_t lastTime = 0;
-	if( timeNow < lastTime )
-	{
-		LogMsg( LOG_ERROR, "ERROR MONOTONIC GetHighResolutionTimeMs() Went backwards from %" PRId64 " to %" PRId64 "", lastTime, timeNow );
-	}
-
-	lastTime = timeNow;
 	return timeNow;
 #else
 	struct timeval tv;

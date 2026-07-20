@@ -113,7 +113,7 @@ bool MiniAudioIn::startAudioInHardware( void )
         }
         else
         {
-            LogMsg( LOG_DEBUG, "MiniAudioIn::startAudioInHardware failed " );
+            LogMsg( LOG_ERROR, "MiniAudioIn::startAudioInHardware failed " );
         }
     }
 

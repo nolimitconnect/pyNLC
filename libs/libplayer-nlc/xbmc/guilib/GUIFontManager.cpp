@@ -406,7 +406,7 @@ void GUIFontManager::Clear()
   CGUIFontTTFGL::DestroyStaticVertexBuffers();
 #endif
 
-#if defined(HAS_GLES) && !defined(HAVE_QT_GUI)
+#if defined(HAS_GLES) && !defined(HAVE_NLC_GUI)
   CGUIFontTTFGLES::DestroyStaticVertexBuffers();
 #endif
 }

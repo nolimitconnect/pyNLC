@@ -1267,7 +1267,18 @@ void VxFileUtil::getFileExtension(	std::string&	strFileName,	// file name with e
 //! flip back slashes into forward slashes
 void VxFileUtil::makeForwardSlashPath( std::string & csFilePath )
 {
-	makeForwardSlashPath( (char *)csFilePath.c_str() );
+	if( csFilePath.empty() )
+	{
+		return;
+	}
+
+	for( size_t i = 0; i < csFilePath.size(); i++ )
+	{
+		if( '\\' == csFilePath[i] )
+		{
+			csFilePath[i] = '/';
+		}
+	}
 }
 
 //============================================================================
@@ -1286,7 +1297,18 @@ void VxFileUtil::makeForwardSlashPath( char * pFilePath )
 //! flip back slashes into forward slashes
 void VxFileUtil::makeBackwardSlashPath( std::string & csFilePath )
 {
-	makeBackwardSlashPath( (char *)csFilePath.c_str() );
+	if( csFilePath.empty() )
+	{
+		return;
+	}
+
+	for( size_t i = 0; i < csFilePath.size(); i++ )
+	{
+		if( '/' == csFilePath[i] )
+		{
+			csFilePath[i] = '\\';
+		}
+	}
 }
 
 //============================================================================

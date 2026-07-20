@@ -9,7 +9,7 @@
 # define CMAKE_INTDIR            "Release"
 #endif
 
-# define HAVE_QT_GUI            1 // define if have qt application interface and rendering
+# define HAVE_NLC_GUI            1 // define if have qt application interface and rendering
 // define USE_STATIC_LIBS if want to create/link static libraries where possible
 #define USE_STATIC_LIBS 1
 

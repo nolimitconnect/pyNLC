@@ -16,12 +16,12 @@
 
 #include <stdexcept>
 
-#if !defined(HAVE_QT_GUI)
+#if !defined(HAVE_NLC_GUI)
 CreateGUITextureFunc CGUITextureBase::m_createGUITextureFunc;
 DrawQuadFunc CGUITextureBase::m_drawQuadFunc;
 #else
-#include "GUITextureQt.h"
-#endif // !defined(HAVE_QT_GUI)
+#include "GUITextureNlc.h"
+#endif // !defined(HAVE_NLC_GUI)
 
 CTextureInfo::CTextureInfo()
 {
@@ -39,24 +39,24 @@ CTextureInfo::CTextureInfo(const std::string &file):
 void CGUITextureBase::Register(const CreateGUITextureFunc& createFunction,
                            const DrawQuadFunc& drawQuadFunction)
 {
-#if !defined(HAVE_QT_GUI)
+#if !defined(HAVE_NLC_GUI)
   m_createGUITextureFunc = createFunction;
   m_drawQuadFunc = drawQuadFunction;
-#endif // !defined(HAVE_QT_GUI)
+#endif // !defined(HAVE_NLC_GUI)
 }
 
 CGUITextureBase* CGUITextureBase::CreateTexture(
     float posX, float posY, float width, float height, const CTextureInfo& texture)
 {
-#if !defined(HAVE_QT_GUI)
+#if !defined(HAVE_NLC_GUI)
   if (!m_createGUITextureFunc)
     throw std::runtime_error(
         "No GUITexture Create function available. Did you forget to register?");
 
   return m_createGUITextureFunc(posX, posY, width, height, texture);
 #else
-    return new CGUITextureQt(posX, posY, width, height, texture);
-#endif // !defined(HAVE_QT_GUI)
+    return new CGUITextureNlc(posX, posY, width, height, texture);
+#endif // !defined(HAVE_NLC_GUI)
 }
 
 void CGUITextureBase::DrawQuad(const CRect& coords,
@@ -64,13 +64,13 @@ void CGUITextureBase::DrawQuad(const CRect& coords,
                            CTextureBase* texture,
                            const CRect* texCoords)
 {
-#if !defined(HAVE_QT_GUI)
+#if !defined(HAVE_NLC_GUI)
   if (!m_drawQuadFunc)
     throw std::runtime_error(
         "No GUITexture DrawQuad function available. Did you forget to register?");
 
   m_drawQuadFunc(coords, color, texture, texCoords);
-#endif // !defined(HAVE_QT_GUI)
+#endif // !defined(HAVE_NLC_GUI)
 }
 
 CGUITextureBase::CGUITextureBase(

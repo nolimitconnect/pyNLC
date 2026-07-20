@@ -1,6 +1,11 @@
 package org.nolimitconnect.nolimitconnect;
 
+import android.app.Activity;
+import android.app.Fragment;
+import android.app.FragmentManager;
 import android.app.Service;
+import android.os.Build;
+import android.os.Bundle;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.ImageFormat;
@@ -24,11 +29,14 @@ import java.util.Arrays;
 
 public class Camera2Service extends Service {
     private static final String TAG = "NLC Camera2Service";
+    private static final String PERMISSION_FRAGMENT_TAG = "nlc.permission.fragment";
     private static boolean sNativeLoaded = false;
 
     private Handler m_MainThreadHandler = null;
 
     // native methods
+    public static native void camPermissionResult(boolean granted);
+    public static native void micPermissionResult(boolean granted);
     public native void camServiceStarted();
     public native void camServiceStopped();
     public native boolean canProcessCamCapture();
@@ -86,6 +94,128 @@ public class Camera2Service extends Service {
 
         context.startService( new Intent( context, Camera2Service.class ) );
         Log.d(TAG, "startCamServiceStatic Done");
+    }
+
+    public static void stopCamServiceStatic(Context context) {
+        Log.d(TAG, "stopCamServiceStatic Called");
+        try {
+            context.stopService(new Intent(context, Camera2Service.class));
+        } catch (Exception e) {
+            Log.e(TAG, "stopCamServiceStatic failed", e);
+        }
+        Log.d(TAG, "stopCamServiceStatic Done");
+    }
+
+    public static void requestPermissionStatic(Activity activity, String permission, int requestCode, String callbackType) {
+        if (activity == null || permission == null || permission.isEmpty()) {
+            Log.e(TAG, "requestPermissionStatic invalid activity or permission");
+            return;
+        }
+
+        String callback = (callbackType == null || callbackType.isEmpty()) ? "camera" : callbackType;
+
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M) {
+            dispatchPermissionResult(callback, true);
+            return;
+        }
+
+        FragmentManager fragmentManager = activity.getFragmentManager();
+        Fragment existing = fragmentManager.findFragmentByTag(PERMISSION_FRAGMENT_TAG);
+        if (existing != null) {
+            Log.d(TAG, "requestPermissionStatic request already pending");
+            return;
+        }
+
+        PermissionRequestFragment fragment = PermissionRequestFragment.newInstance(permission, requestCode, callback);
+        fragmentManager
+                .beginTransaction()
+                .add(fragment, PERMISSION_FRAGMENT_TAG)
+                .commitAllowingStateLoss();
+    }
+
+    private static void dispatchPermissionResult(String callbackType, boolean granted) {
+        if (!ensureNativeLoaded()) {
+            return;
+        }
+
+        try {
+            if ("microphone".equals(callbackType)) {
+                micPermissionResult(granted);
+            } else {
+                camPermissionResult(granted);
+            }
+        } catch (UnsatisfiedLinkError e) {
+            Log.e(TAG, "Permission result JNI call failed", e);
+        }
+    }
+
+    public static class PermissionRequestFragment extends Fragment {
+        private static final String ARG_PERMISSION = "arg_permission";
+        private static final String ARG_REQUEST_CODE = "arg_request_code";
+        private static final String ARG_CALLBACK_TYPE = "arg_callback_type";
+
+        static PermissionRequestFragment newInstance(String permission, int requestCode, String callbackType) {
+            PermissionRequestFragment fragment = new PermissionRequestFragment();
+            Bundle args = new Bundle();
+            args.putString(ARG_PERMISSION, permission);
+            args.putInt(ARG_REQUEST_CODE, requestCode);
+            args.putString(ARG_CALLBACK_TYPE, callbackType);
+            fragment.setArguments(args);
+            return fragment;
+        }
+
+        @Override
+        public void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+
+            Bundle args = getArguments();
+            if (args == null) {
+                notifyPermissionResult("camera", false);
+                removeSelf();
+                return;
+            }
+
+            String permission = args.getString(ARG_PERMISSION, "");
+            int requestCode = args.getInt(ARG_REQUEST_CODE, 0);
+            String callbackType = args.getString(ARG_CALLBACK_TYPE, "camera");
+            if (permission.isEmpty()) {
+                notifyPermissionResult(callbackType, false);
+                removeSelf();
+                return;
+            }
+
+            requestPermissions(new String[]{ permission }, requestCode);
+        }
+
+        @Override
+        public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+            super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+
+            boolean granted = grantResults != null
+                    && grantResults.length > 0
+                    && grantResults[0] == android.content.pm.PackageManager.PERMISSION_GRANTED;
+
+            Bundle args = getArguments();
+            String callbackType = args != null ? args.getString(ARG_CALLBACK_TYPE, "camera") : "camera";
+            notifyPermissionResult(callbackType, granted);
+            removeSelf();
+        }
+
+        private void notifyPermissionResult(String callbackType, boolean granted) {
+            dispatchPermissionResult(callbackType, granted);
+        }
+
+        private void removeSelf() {
+            Activity activity = getActivity();
+            if (activity == null || !isAdded()) {
+                return;
+            }
+
+            activity.getFragmentManager()
+                    .beginTransaction()
+                    .remove(this)
+                    .commitAllowingStateLoss();
+        }
     }
 
     // Binder class to allow clients to bind to the service
@@ -281,7 +411,13 @@ public class Camera2Service extends Service {
         public void onReady(CameraCaptureSession session) {
             Log.d(TAG, "capture session onReady");
             try {
-                session.setRepeatingRequest(createCameraCaptureRequest(), null, null);
+                CaptureRequest request = createCameraCaptureRequest();
+                if (request == null) {
+                    Log.w(TAG, "Skipping repeating request because capture request is null");
+                    return;
+                }
+
+                session.setRepeatingRequest(request, null, null);
             } catch (CameraAccessException e) {
                 Log.e(TAG, e.getMessage());
             }
@@ -310,6 +446,11 @@ public class Camera2Service extends Service {
     }
     protected CaptureRequest createCameraCaptureRequest() {
         try {
+            if (m_CameraDevice == null) {
+                Log.w(TAG, "createCameraCaptureRequest called with null m_CameraDevice");
+                return null;
+            }
+
             CaptureRequest.Builder builder = m_CameraDevice.createCaptureRequest(CameraDevice.TEMPLATE_RECORD);
             CameraCharacteristics characteristics = m_CameraManager.getCameraCharacteristics(m_CameraId);
 
@@ -414,10 +555,15 @@ public class Camera2Service extends Service {
         Image.Plane uPlane = planes[1];
         Image.Plane vPlane = planes[2];
 
+        // Use sliced buffers so JNI sees the plane data starting at the current plane position.
+        ByteBuffer yBuffer = yPlane.getBuffer().slice();
+        ByteBuffer uBuffer = uPlane.getBuffer().slice();
+        ByteBuffer vBuffer = vPlane.getBuffer().slice();
+
         processCamCapture( width, height,
-                        yPlane.getBuffer(),
-                        uPlane.getBuffer(),
-                        vPlane.getBuffer(),
+                        yBuffer,
+                        uBuffer,
+                        vBuffer,
                         yPlane.getPixelStride(),
                         yPlane.getRowStride(),
                         uPlane.getPixelStride(),

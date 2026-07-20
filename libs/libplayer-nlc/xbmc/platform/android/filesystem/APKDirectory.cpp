@@ -6,7 +6,7 @@
  *  See LICENSES/README.md for more information.
  */
 #include "config_components_kodi.h"
-#if !defined(HAVE_QT_GUI)
+#if !defined(HAVE_NLC_GUI)
 
 #include "APKDirectory.h"
 #include "APKFile.h"
@@ -101,4 +101,4 @@ bool CAPKDirectory::Exists(const NlcUrl& url)
   CAPKFile apk;
   return apk.Exists(url);
 }
-#endif // !defined(HAVE_QT_GUI)
+#endif // !defined(HAVE_NLC_GUI)

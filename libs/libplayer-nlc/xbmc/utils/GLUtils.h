@@ -21,7 +21,7 @@
 
 #include "config_components_kodi.h"
 #include "system_gl.h"
-#if defined(HAS_GL) || defined(HAS_GLES) || defined(HAVE_QT_GUI) 
+#if defined(HAS_GL) || defined(HAS_GLES) || defined(HAVE_NLC_GUI) 
 
 namespace KODI
 {

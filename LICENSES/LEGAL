@@ -13,7 +13,7 @@ Here is a listing of LICENSE locations for your convenience.
 This might not be a complete list.
 
  NoLimitConnect/LICENSE
- NoLimitConnect/nolimitgui/src/Resources/CreditsArt.txt
+ NoLimitConnect/resources/Resources/CreditsArt.txt
 
  
  NoLimitConnect/libs/bzlib/LICENSE
@@ -56,7 +56,6 @@ This might not be a complete list.
  NoLimitConnect/libs/liblame/LICENSE
  NoLimitConnect/libs/liblcms2/utils/jpgicc/LICENSE_iccjpeg
  NoLimitConnect/libs/libmdnsresponder/LICENSE
- NoLimitConnect/libs/libminiaudio/LICENSE
  NoLimitConnect/libs/libminiupnpc/LICENSE
  NoLimitConnect/libs/libopencore-amr/LICENSE
  NoLimitConnect/libs/libopenh264/LICENSE

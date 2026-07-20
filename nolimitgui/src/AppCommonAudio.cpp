@@ -14,6 +14,8 @@
 #include <P2PEngine/P2PEngine.h>
 #include <MediaProcessor/MediaProcessor.h>
 
+#include <GuiInterface/ICamCapture.h>
+
 #include <CoreLib/VxDebug.h>
 #include <CoreLib/VxGlobals.h>
 
@@ -60,9 +62,9 @@ void AppCommon::replayHardwareCtrlState( void )
 	const bool wantSpeakerOutput = m_AudioMgr.getIsSpeakerRunning();
 	const bool speakerMuted = m_AudioMgr.getIsSpeakerMuted();
 
-	const bool wantVideoCapture = m_CamLogic.isCamCaptureRequested();
-	const bool camEnabled = m_CamLogic.getCameraEnable();
-	const bool camCaptureRunning = m_CamLogic.isCamCaptureRunning();
+	const bool wantVideoCapture = ICamCapture::getICamCapture().isCamCaptureRequested();
+	const bool camEnabled = ICamCapture::getICamCapture().getCamCaptureEnable();
+	const bool camCaptureRunning = ICamCapture::getICamCapture().isCamCaptureRunning();
 
 	m_ToGuiHardwareCtrlBusy = true;
 	for( auto toGuiClient : m_ToGuiHardwareCtrlList )
@@ -295,46 +297,6 @@ void AppCommon::fromGuiMuteSpeaker( bool muteSpeaker )
 	for( auto& toGuiClient : m_ToGuiHardwareCtrlList )
 	{
 		toGuiClient->callbackToGuiSpeakerMuted( muteSpeaker );
-	}
-
-	m_ToGuiHardwareCtrlBusy = false;
-}
-
-//============================================================================
-void AppCommon::fromGuiCameraEnable( bool enableCamera )
-{
-    m_CamLogic.setCameraEnable( enableCamera );
-
-	if( m_ToGuiHardwareCtrlBusy )
-	{
-		LogMsg( LOG_WARN, "AppCommon::%s ToGuiHardware busy; skipping nested callback", __func__ );
-		scheduleHardwareCtrlStateReplay();
-		return;
-	}
-
-	m_ToGuiHardwareCtrlBusy = true;
-	for( auto& toGuiClient : m_ToGuiHardwareCtrlList )
-	{
-		toGuiClient->callbackToGuiCameraEnable( enableCamera );
-	}
-
-	m_ToGuiHardwareCtrlBusy = false;
-}
-
-//============================================================================
-void AppCommon::fromGuiCaptureRunning( bool camCaptureRunning )
-{
-	if( m_ToGuiHardwareCtrlBusy )
-	{
-		LogMsg( LOG_WARN, "AppCommon::%s ToGuiHardware busy; skipping nested callback", __func__ );
-		scheduleHardwareCtrlStateReplay();
-		return;
-	}
-
-	m_ToGuiHardwareCtrlBusy = true;
-	for( auto& toGuiClient : m_ToGuiHardwareCtrlList )
-	{
-		toGuiClient->callbackToGuiCaptureRunning( camCaptureRunning );
 	}
 
 	m_ToGuiHardwareCtrlBusy = false;

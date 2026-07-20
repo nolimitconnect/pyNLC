@@ -6,12 +6,12 @@
  *  See LICENSES/README.md for more information.
  */
 #include "config_components_kodi.h"
-#if !defined(HAVE_QT_GUI)
+#if !defined(HAVE_NLC_GUI)
 
 #include "JNIXBMCAudioManagerOnAudioFocusChangeListener.h"
-#include <platform/qt/qtandroid/jni/jutils-details.hpp>
+#include <platform/android/jni/jutils/jutils-details.hpp>
 
-#include <platform/qt/qtandroid/jni/Context.h>
+#include <platform/android/jni/Context.h>
 #include "CompileInfo.h"
 #include "XBMCApp.h"
 
@@ -67,4 +67,5 @@ void CJNIXBMCAudioManagerOnAudioFocusChangeListener::onAudioFocusChange(int focu
   if(CXBMCApp::get())
     CXBMCApp::get()->onAudioFocusChange(focusChange);
 }
-#endif // !defined(HAVE_QT_GUI)
+#endif // !defined(HAVE_NLC_GUI)
+

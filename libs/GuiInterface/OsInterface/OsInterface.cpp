@@ -36,10 +36,10 @@
 #endif //defined(TARGET_OS_WINDOWS)
 
 #if defined(TARGET_OS_ANDROID)
-# include "platform/qt/qtandroid/jni/Context.h"
-# include "platform/qt/qtandroid/jni/System.h"
-# include "platform/qt/qtandroid/jni/ApplicationInfo.h"
-# include "platform/qt/qtandroid/jni/JNIFile.h"
+# include "platform/nlc/android/jni/Context.h"
+# include "platform/nlc/android/jni/System.h"
+# include "platform/nlc/android/jni/ApplicationInfo.h"
+# include "platform/nlc/android/jni/JNIFile.h"
 # include <android/asset_manager.h>
 # include <android/asset_manager_jni.h>
 # include "AssetDirectoryList.hh"

@@ -30,7 +30,7 @@ list(APPEND player-nlc_SOURCES
     xbmc/commons/Exception.cpp
     xbmc/commons/ilog.cpp
 
-    xbmc/cores/AudioEngine/Sinks/AESinkQt.cpp
+    xbmc/cores/AudioEngine/Sinks/AESinkNlc.cpp
 
     xbmc/cores/playercorefactory/PlayerCoreConfig.cpp
     xbmc/cores/playercorefactory/PlayerCoreFactory.cpp
@@ -40,10 +40,10 @@ list(APPEND player-nlc_SOURCES
     xbmc/cores/VideoPlayer/DVDInputStreams/InputStreamPVRChannel.cpp
     xbmc/cores/VideoPlayer/DVDInputStreams/InputStreamPVRRecording.cpp
     xbmc/cores/VideoPlayer/VideoRenderers/FrameBufferObject.cpp
-    xbmc/cores/VideoPlayer/VideoRenderers/OverlayRendererQt.cpp
-    xbmc/cores/VideoPlayer/VideoRenderers/RendererQt.cpp
-    xbmc/cores/VideoPlayer/VideoRenderers/VideoShaders/VideoFilterShaderQt.cpp
-    xbmc/cores/VideoPlayer/VideoRenderers/VideoShaders/YUV2RGBShaderQt.cpp
+    xbmc/cores/VideoPlayer/VideoRenderers/OverlayRendererNlc.cpp
+    xbmc/cores/VideoPlayer/VideoRenderers/RendererNlc.cpp
+    xbmc/cores/VideoPlayer/VideoRenderers/VideoShaders/VideoFilterShaderNlc.cpp
+    xbmc/cores/VideoPlayer/VideoRenderers/VideoShaders/YUV2RGBShaderNlc.cpp
     xbmc/cores/VideoPlayer/VideoRenderers/VideoShaders/YUVMatrix.cpp
     xbmc/cores/AudioEngine/AEResampleFactory.cpp
     xbmc/cores/AudioEngine/AESinkFactory.cpp
@@ -229,18 +229,18 @@ list(APPEND player-nlc_SOURCES
     xbmc/guilib/GUIFontCache.cpp
     xbmc/guilib/GUIFontManager.cpp
     xbmc/guilib/GUIFontTTF.cpp
-    xbmc/guilib/GUIFontTTFQt.cpp
+    xbmc/guilib/GUIFontTTFNlc.cpp
     xbmc/guilib/GUIListItem.cpp
     xbmc/guilib/GUIMessage.cpp
     xbmc/guilib/GUIRangesControl.cpp
     xbmc/guilib/GUITexture.cpp
-    xbmc/guilib/GUITextureQt.cpp
+    xbmc/guilib/GUITextureNlc.cpp
     xbmc/guilib/IWindowManagerCallback.cpp
     xbmc/guilib/LocalizeStrings.h
     xbmc/guilib/LocalizeStrings.cpp
     xbmc/guilib/StereoscopicsManager.h
     xbmc/guilib/StereoscopicsManager.cpp
-    xbmc/guilib/TextureQt.cpp
+    xbmc/guilib/TextureNlc.cpp
     xbmc/guilib/Texture.cpp
     xbmc/guilib/TextureBundle.cpp
     xbmc/guilib/TextureBundleXBT.cpp
@@ -285,7 +285,7 @@ list(APPEND player-nlc_SOURCES
     # xbmc/platform/posix/XTimeUtils.cpp
     # xbmc/platform/win32/XTimeUtils.cpp
 
-    xbmc/platform/qt/KodiQtApp.cpp
+    xbmc/platform/nlc/KodiNlcApp.cpp
     xbmc/platform/Environment.cpp
     xbmc/platform/Platform.cpp
 
@@ -309,7 +309,7 @@ list(APPEND player-nlc_SOURCES
     xbmc/rendering/dx/RenderSystemDX.cpp
     xbmc/rendering/gles/GLESShader.cpp
     xbmc/rendering/gles/RenderSystemGLES.cpp
-    xbmc/rendering/qt/RenderSystemQt.cpp
+    xbmc/rendering/qt/RenderSystemNlc.cpp
 
     xbmc/settings/lib/ISetting.cpp
     xbmc/settings/lib/ISettingControl.cpp
@@ -452,12 +452,12 @@ list(APPEND player-nlc_SOURCES
  
     xbmc/windowing/windows/WinEventsWin32.cpp
 
-    xbmc/windowing/qt/OSScreenSaverQt.cpp
-    xbmc/windowing/qt/QtUtils.cpp
-    xbmc/windowing/qt/VideoSyncQt.cpp
-    xbmc/windowing/qt/WinEventsQt.cpp
-    xbmc/windowing/qt/WinSystemQt.cpp
-    xbmc/windowing/qt/WinSystemQtContext.cpp
+    xbmc/windowing/nlc/OSScreenSaverNlc.cpp
+    xbmc/windowing/nlc/NlcUtils.cpp
+    xbmc/windowing/nlc/VideoSyncNlc.cpp
+    xbmc/windowing/nlc/WinEventsNlc.cpp
+    xbmc/windowing/nlc/WinSystemNlc.cpp
+    xbmc/windowing/nlc/WinSystemNlcContext.cpp
     xbmc/windowing/GraphicContext.cpp
     xbmc/windowing/Resolution.cpp
     xbmc/windowing/WindowSystemFactory.cpp
@@ -498,8 +498,8 @@ list(APPEND player-nlc_SOURCES
 if(DEFINED TARGET_OS_WINDOWS)
     list(APPEND player-nlc_SOURCES
 
-        xbmc/platform/qt/KodiQtApp.h
-        xbmc/platform/qt/KodiQtApp.cpp
+        xbmc/platform/nlc/KodiNlcApp.h
+        xbmc/platform/nlc/KodiNlcApp.cpp
 
         xbmc/platform/win32/CharsetConverterWin32.cpp
         xbmc/platform/win32/EnvironmentWin32.cpp
@@ -586,27 +586,27 @@ if (DEFINED TARGET_OS_ANDROID)
         xbmc/filesystem/APKFile.cpp
         xbmc/filesystem/APKDirectory.cpp
         #xbmc/interfaces/builtins/AndroidBuiltins.cpp
-        xbmc/platform/qt/qtandroid/jni/BitmapDrawable.cpp
-        xbmc/platform/qt/qtandroid/jni/Build.cpp
-        xbmc/platform/qt/qtandroid/jni/Context.cpp
-        xbmc/platform/qt/qtandroid/jni/DisplayMetrics.cpp
-        xbmc/platform/qt/qtandroid/jni/PackageManager.cpp
-        xbmc/platform/qt/qtandroid/jni/Resources.cpp
-        xbmc/platform/qt/qtandroid/jni/JNIBase.cpp
-        xbmc/platform/qt/qtandroid/jni/JNIEnvironment.cpp
-        xbmc/platform/qt/qtandroid/jni/JNIFile.cpp
-        xbmc/platform/qt/qtandroid/jni/JNIThreading.cpp
-        xbmc/platform/qt/qtandroid/jni/jutils.cpp
+        xbmc/platform/nlc/android/jni/BitmapDrawable.cpp
+        xbmc/platform/nlc/android/jni/Build.cpp
+        xbmc/platform/nlc/android/jni/Context.cpp
+        xbmc/platform/nlc/android/jni/DisplayMetrics.cpp
+        xbmc/platform/nlc/android/jni/PackageManager.cpp
+        xbmc/platform/nlc/android/jni/Resources.cpp
+        xbmc/platform/nlc/android/jni/JNIBase.cpp
+        xbmc/platform/nlc/android/jni/JNIEnvironment.cpp
+        xbmc/platform/nlc/android/jni/JNIFile.cpp
+        xbmc/platform/nlc/android/jni/JNIThreading.cpp
+        xbmc/platform/nlc/android/jni/jutils.cpp
         xbmc/platform/android/MemUtils_android.cpp
         xbmc/platform/android/peripherals/AndroidJoystickState.cpp
         xbmc/platform/android/peripherals/PeripheralBusAndroid.cpp
-        xbmc/platform/qt/qtandroid/activity/AndroidFeatures.cpp
-        xbmc/platform/qt/qtandroid/jni/ApplicationInfo.cpp
-        xbmc/platform/qt/qtandroid/jni/Environment.cpp
-        xbmc/platform/qt/qtandroid/jni/File.cpp
-        xbmc/platform/qt/qtandroid/jni/PackageItemInfo.cpp
-        xbmc/platform/qt/qtandroid/jni/StatFs.cpp
-        xbmc/platform/qt/qtandroid/jni/System.cpp
+        xbmc/platform/nlc/android/activity/AndroidFeatures.cpp
+        xbmc/platform/nlc/android/jni/ApplicationInfo.cpp
+        xbmc/platform/nlc/android/jni/Environment.cpp
+        xbmc/platform/nlc/android/jni/File.cpp
+        xbmc/platform/nlc/android/jni/PackageItemInfo.cpp
+        xbmc/platform/nlc/android/jni/StatFs.cpp
+        xbmc/platform/nlc/android/jni/System.cpp
     )
 endif()
 
@@ -620,7 +620,7 @@ add_library(player-nlc
 target_compile_definitions(player-nlc
   PRIVATE
     ENABLE_NLC_PLAYER
-    HAVE_QT_GUI
+    HAVE_NLC_GUI
 )
 
 if(DEFINED BUILD_SYSTEM_FLATPAK)
@@ -651,7 +651,7 @@ endif()
 if(DEFINED TARGET_OS_ANDROID)
     target_include_directories(player-nlc
       PRIVATE
-        xbmc/platform/android
+        xbmc/platform/nlc/android
         xbmc/platform/linux
         xbmc/platform/posix
         ${CMAKE_PREFIX_PATH}/../
@@ -661,7 +661,7 @@ endif()
 target_include_directories(player-nlc
   PRIVATE
     xbmc
-    xbmc/platform/qt
+    xbmc/platform/nlc
     ../libptopengine
     ../ffmpeg
     ../libpcre

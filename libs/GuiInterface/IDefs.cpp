@@ -8,7 +8,7 @@
 // https://nolimitconnect.com
 //============================================================================
 
-#include <QWidget>
+
 
 #include "IDefs.h"
 #include <CoreLib/VxDebug.h>
@@ -17,7 +17,7 @@
 #include "IMediaPlayerCallback.h"
 #include "IMediaPlayerRequests.h"
 
-#include "AppCommon.h"
+#include "IAppImplementation.h"
 #include "MediaPlayerNlc.h"
 
 #include "OsInterface/OsInterface.h"
@@ -33,28 +33,42 @@
 # include "OsAndroid/IAndroid.h"
 # include "OsAndroid/IAndroid.cpp"
 # include <CoreLib/VxJava.h>
-
-
 #else 
 echo traget os is not defined
 #endif 
 
+#include "IFromGui.h"
+#include <P2PEngine/P2PEngine.h>
+#include <CamCapture/CamCapture.h>
+
+//============================================================================
+ICamCapture& ICamCapture::getICamCapture( void )
+{
+    return CamCapture::getInstance();
+}
+
 //============================================================================
 INlcRender& INlcRender::getINlcRender( void )
 {
-    return GetAppInstance().getINlcRender();
+    return GetAppImplementation().getINlcRender();
 }
 
 //============================================================================
 IToGui& IToGui::getIToGui( void )
 {
-    return GetAppInstance().getIToGui();
+    return GetAppImplementation().getIToGui();
+}
+
+//============================================================================
+IFromGui& IFromGui::getIFromGui( void )
+{
+    return GetPtoPEngine().getFromGuiInterface();
 }
 
 //============================================================================
 IAudioRequests& IAudioRequests::getIAudioRequests( void )
 {
-    return GetAppInstance().getIAudioRequests();
+    return GetAppImplementation().getIAudioRequests();
 }
 
 //============================================================================
@@ -1648,7 +1662,7 @@ const char* DescribeOfferType( enum EOfferType offerType )
 //============================================================================
 const char* DescribePluginAccess( enum EPluginAccess pluginAccess )
 {
-    if(  pluginAccess < 0 || eMaxPluginAccessState <= pluginAccess )
+    if(  pluginAccess < 0 || eMaxPluginAccess <= pluginAccess )
     {
         return ENUM_BAD_PARM;
     }

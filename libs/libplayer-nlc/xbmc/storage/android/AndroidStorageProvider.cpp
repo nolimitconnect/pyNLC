@@ -28,18 +28,18 @@
 #include <cstring>
 #include <map>
 
-#include <platform/qt/qtandroid/jni/Context.h>
-#include <platform/qt/qtandroid/jni/StorageManager.h>
-#include <platform/qt/qtandroid/jni/Environment.h>
+#include <platform/android/jni/Context.h>
+#include <platform/android/jni/StorageManager.h>
+#include <platform/android/jni/Environment.h>
 
 #include "filesystem/Directory.h"
 #include "filesystem/File.h"
 #include "guilib/LocalizeStrings.h"
-#if defined(TARGET_OS_ANDROID) && !defined(HAVE_QT_GUI)
+#if defined(TARGET_OS_ANDROID) && !defined(HAVE_NLC_GUI)
 # include "platform/android/activity/XBMCApp.h"
-#elif defined(TARGET_OS_ANDROID) && defined(HAVE_QT_GUI)
-# include "platform/qt/KodiQtApp.h"
-#endif // defined(TARGET_OS_ANDROID) && !defined(HAVE_QT_GUI)
+#elif defined(TARGET_OS_ANDROID) && defined(HAVE_NLC_GUI)
+# include "platform/nlc/KodiNlcApp.h"
+#endif // defined(TARGET_OS_ANDROID) && !defined(HAVE_NLC_GUI)
 
 
 #include "NlcCoreUtil.h"

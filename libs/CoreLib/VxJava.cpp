@@ -4,6 +4,7 @@
 
 #include <CoreLib/VxDebug.h>
 #include <CoreLib/VxGlobals.h>
+#include <CoreLib/VxJni.h>
 #include <CoreLib/VxThread.h>
 
 #define FROM_NATIVE_LOG_TAG "NativeFromJava:"
@@ -140,6 +141,11 @@ jint JNI_OnLoad( JavaVM * vm, void * reserved )
     //GetNativeToJavaClass(); // force register for this thread
     //LogMsg( LOG_WARN, "JJ JNI_OnLoad called JAVA VM 0x%x Load Count %d\n", g_poJavaVM, g_JniLoadCalledCnt );
 
+    if( !VxJni::initJavaBindings( env ) )
+    {
+        LogModule( eLogThread, LOG_ERROR, "JNI_OnLoad failed to initialize VxJni bindings" );
+    }
+
     g_FromJavaAccessMutex.unlock();
 
     return JNI_VERSION_1_6;
@@ -148,6 +154,12 @@ jint JNI_OnLoad( JavaVM * vm, void * reserved )
 //============================================================================
 void JNI_OnUnload(JavaVM *vm, void *reserved)
 {
+    JNIEnv* env = nullptr;
+    if( nullptr != vm && JNI_OK == vm->GetEnv( (void**)&env, JNI_VERSION_1_6 ) )
+    {
+        VxJni::shutdownJavaBindings( env );
+    }
+
     VxSetAppIsShuttingDown( true );
     //GetEngineImp().getEngine().getPeerMgr().stopListening();
     LogModule( eLogThread, LOG_DEBUG, "JNI_OnUnload" );

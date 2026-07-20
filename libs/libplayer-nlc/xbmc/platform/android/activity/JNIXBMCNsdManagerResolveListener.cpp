@@ -6,13 +6,13 @@
  *  See LICENSES/README.md for more information.
  */
 #include "config_components_kodi.h"
-#if !defined(HAVE_QT_GUI)
+#if !defined(HAVE_NLC_GUI)
 
 #include "JNIXBMCNsdManagerResolveListener.h"
 
-#include <platform/qt/qtandroid/jni/jutils-details.hpp>
-#include <platform/qt/qtandroid/jni/Context.h>
-#include <platform/qt/qtandroid/jni/NsdServiceInfo.h>
+#include <platform/android/jni/jutils/jutils-details.hpp>
+#include <platform/android/jni/Context.h>
+#include <platform/android/jni/NsdServiceInfo.h>
 
 #include "CompileInfo.h"
 
@@ -69,4 +69,5 @@ void CJNIXBMCNsdManagerResolveListener::_onServiceResolved(JNIEnv* env, jobject 
   if (inst)
     inst->onServiceResolved(CJNINsdServiceInfo(jhobject::fromJNI(serviceInfo)));
 }
-#endif // !defined(HAVE_QT_GUI)
+#endif // !defined(HAVE_NLC_GUI)
+

@@ -16,9 +16,9 @@
 #include "rendering/RenderSystem.h"
 #include "utils/GLUtils.h"
 #include "utils/log.h"
-#ifdef HAVE_QT_GUI
+#ifdef HAVE_NLC_GUI
 #include <GuiInterface/INlcRender.h>
-#endif // HAVE_QT_GUI
+#endif // HAVE_NLC_GUI
 
  //////////////////////////////////////////////////////////////////////
  // CFrameBufferObject
@@ -48,11 +48,11 @@ bool CFrameBufferObject::Initialize()
         return false;
 
     Cleanup();
-#ifdef HAVE_QT_GUI
+#ifdef HAVE_NLC_GUI
     INlcRender::getINlcRender().frameBufferGen( 1, &m_fbo );
 #else
     glGenFramebuffers( 1, &m_fbo );
-#endif // HAVE_QT_GUI
+#endif // HAVE_NLC_GUI
 
     VerifyGLState();
 
@@ -70,11 +70,11 @@ void CFrameBufferObject::Cleanup()
 
     if( m_fbo )
     {
-#ifdef HAVE_QT_GUI
+#ifdef HAVE_NLC_GUI
         INlcRender::getINlcRender().frameBufferDelete( 1, &m_fbo );
 #else
         glDeleteFramebuffers( 1, &m_fbo );
-#endif // HAVE_QT_GUI
+#endif // HAVE_NLC_GUI
     }
 
     if( m_texid )
@@ -108,7 +108,7 @@ bool CFrameBufferObject::CreateAndBindToTexture( GLenum target, int width, int h
     nlcRender.glFuncTexParameteri( target, GL_TEXTURE_MIN_FILTER, filter );
     VerifyGLState();
 
-#ifdef HAVE_QT_GUI
+#ifdef HAVE_NLC_GUI
     m_bound = false;
 
     nlcRender.glFuncGenTextures( 1, &m_texid );
@@ -152,7 +152,7 @@ bool CFrameBufferObject::CreateAndBindToTexture( GLenum target, int width, int h
         VerifyGLState();
         return false;
     }
-#endif // HAVE_QT_GUI
+#endif // HAVE_NLC_GUI
 
     m_bound = true;
     return true;
@@ -171,11 +171,11 @@ bool CFrameBufferObject::BeginRender()
 {
     if( IsValid() && IsBound() )
     {
-#ifdef HAVE_QT_GUI
+#ifdef HAVE_NLC_GUI
         INlcRender::getINlcRender().frameBufferBind( m_fbo );
 #else
        glBindFramebuffer( GL_FRAMEBUFFER, m_fbo );
-#endif // HAVE_QT_GUI
+#endif // HAVE_NLC_GUI
         return true;
     }
     return false;
@@ -186,10 +186,10 @@ void CFrameBufferObject::EndRender() const
 {
     if( IsValid() )
     {
-#ifdef HAVE_QT_GUI
+#ifdef HAVE_NLC_GUI
         INlcRender::getINlcRender().frameBufferBind( 0 );
 #else
         glBindFramebuffer( GL_FRAMEBUFFER, 0 );
-#endif // HAVE_QT_GUI
+#endif // HAVE_NLC_GUI
     }
 }

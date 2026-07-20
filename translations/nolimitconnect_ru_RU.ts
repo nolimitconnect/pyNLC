@@ -3960,129 +3960,129 @@ File Type: </source>
             <translation>Безлимитное подключение</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="756" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2379" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="765" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2344" />
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1388" />
             <source>Unknown Error</source>
             <translation>Неизвестная ошибка</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="757" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="766" />
             <source>ERROR:
 </source>
             <translation>ОШИБКА:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="761" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="770" />
             <source>Failed to connect to Network host</source>
             <translation>Не удалось подключиться к сетевому хосту</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="764" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="773" />
             <source>Failed to connect to Connection Test host</source>
             <translation>Не удалось подключиться к хосту проверки соединения.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="767" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="776" />
             <location filename="../nolimitgui/src/AssetVideoWidget.cpp" line="250" />
             <source>Video Play Failed</source>
             <translation>Ошибка воспроизведения видео</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="770" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="779" />
             <location filename="../nolimitgui/src/AssetVoiceWidget.cpp" line="223" />
             <source>Audio Play Failed</source>
             <translation>Ошибка воспроизведения аудио</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="773" />
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="777" />
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="781" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="782" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="786" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="790" />
             <source>Sound In Device Error</source>
             <translation>Ошибка звука в устройстве</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="774" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="783" />
             <source>No Microphone Devices Available</source>
             <translation>Нет доступных микрофонных устройств</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="778" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="787" />
             <source>Microphone Device Out Of Range</source>
             <translation>Микрофонное устройство вне зоны действия</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="782" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="791" />
             <source>Failed to Initialize Microphone Device</source>
             <translation>Не удалось инициализировать устройство микрофона</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="785" />
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="789" />
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="793" />
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="797" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="794" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="798" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="802" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="806" />
             <source>Sound Out Device Error</source>
             <translation>Ошибка устройства вывода звука</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="786" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="795" />
             <source>No Speaker Devices Available</source>
             <translation>Нет доступных динамиков</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="790" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="799" />
             <source>Speaker Device Out Of Range</source>
             <translation>Громкоговоритель вне зоны действия</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="794" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="803" />
             <source>Failed to Initialize Speaker Device</source>
             <translation>Не удалось инициализировать устройство динамика</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="798" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="807" />
             <source>Speaker Device Invalid Format</source>
             <translation>Неверный формат устройства динамика</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="802" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="811" />
             <source>Echo Delay Test Error</source>
             <translation>Ошибка теста задержки эха</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="803" />
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="809" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="812" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="818" />
             <source>Echo Delay Results (ms) </source>
             <translation>Результаты задержки эха (мс) </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="808" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="817" />
             <source>Echo Delay Test Success</source>
             <translation>Успешный тест задержки эха</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="1285" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="1294" />
             <source>Close Application</source>
             <translation>Закрыть приложение</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="1286" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="1295" />
             <source>Are you sure you want to exit?</source>
             <translation>Вы уверены, что хотите выйти?</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="1392" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="1401" />
             <location filename="../nolimitgui/src/ChatEntryWidget.cpp" line="363" />
             <source>Application Error</source>
             <translation>Ошибка приложения</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommonMedia.cpp" line="123" />
+            <location filename="../nolimitgui/src/AppCommonCamCapture.cpp" line="93" />
             <source>Web Cam Video</source>
             <translation>Видео с веб-камеры</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommonMedia.cpp" line="123" />
+            <location filename="../nolimitgui/src/AppCommonCamCapture.cpp" line="93" />
             <source>No Video Capture Devices Found</source>
             <translation>Устройства видеозахвата не найдены</translation>
         </message>
@@ -4882,44 +4882,42 @@ File Type: </source>
             <translation>=== Отключенные плагины ===</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="40" />
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="158" />
-            <location filename="../nolimitgui/src/AppletSnapshot.cpp" line="86" />
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="176" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="160" />
+            <location filename="../nolimitgui/src/AppletSnapshot.cpp" line="87" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="179" />
             <source>Camera Capture</source>
             <translation>Захват камеры</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="40" />
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="158" />
-            <location filename="../nolimitgui/src/AppletSnapshot.cpp" line="86" />
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="176" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="160" />
+            <location filename="../nolimitgui/src/AppletSnapshot.cpp" line="87" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="179" />
             <source>No Camera Source Available.</source>
             <translation>Источник камеры недоступен.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="217" />
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="260" />
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="265" />
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="271" />
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="258" />
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="341" />
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="346" />
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="352" />
             <source>Video In Device</source>
             <translation>Видео на устройстве</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="217" />
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="265" />
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="258" />
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="346" />
             <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="271" />
             <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="296" />
             <source> failed to initialize</source>
             <translation>не удалось инициализировать</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="260" />
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="341" />
             <source> device is saved as preferred Video In Device</source>
             <translation> устройство сохраняется как предпочтительное устройство Video In</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="271" />
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="352" />
             <source>No Video In Device Is Available</source>
             <translation>Видео на устройстве недоступно</translation>
         </message>
@@ -5015,7 +5013,7 @@ File Type: </source>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletCreateAccount.cpp" line="96" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1444" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1409" />
             <source>Application</source>
             <translation>Приложение</translation>
         </message>
@@ -5037,69 +5035,69 @@ Do you want to exit the application?</source>
 Вы хотите выйти из приложения?</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="67" />
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="81" />
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="125" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="69" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="83" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="127" />
             <location filename="../nolimitgui/src/ChatEntryWidget.cpp" line="198" />
             <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="208" />
             <source>Failed To Read Image File </source>
             <translation>Не удалось прочитать файл изображения </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="68" />
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="82" />
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="126" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="70" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="84" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="128" />
             <location filename="../nolimitgui/src/ChatEntryWidget.cpp" line="199" />
             <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="209" />
             <source>Error Reading Image</source>
             <translation>Ошибка чтения изображения</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="117" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="119" />
             <location filename="../nolimitgui/src/ChatEntryWidget.cpp" line="189" />
             <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="200" />
             <source>Open Image</source>
             <translation>Открыть изображение</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="175" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="177" />
             <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="113" />
             <source>Failed to read snapshot </source>
             <translation>Не удалось прочитать снимок. </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="176" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="178" />
             <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="114" />
             <source>Error Reading snapshot</source>
             <translation>Ошибка чтения снимка</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="202" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="204" />
             <source>Failed to write into </source>
             <translation>Не удалось записать в </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="203" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="205" />
             <source>Error Writing</source>
             <translation>Ошибка записи</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="227" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="229" />
             <source>About Me Change</source>
             <translation>Обо мне Изменить</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="228" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="230" />
             <source>Applied About Me Changes </source>
             <translation>Примененные изменения обо мне </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="229" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="231" />
             <source>Failed</source>
             <translation>Не удалось</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="229" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="231" />
             <source>Success</source>
             <translation>Успех</translation>
         </message>
@@ -5155,7 +5153,7 @@ Do you want to exit the application?</source>
             <location filename="../nolimitgui/src/AppletFileOfferSelect.cpp" line="289" />
             <location filename="../nolimitgui/src/AppletFileOfferSelect.cpp" line="323" />
             <location filename="../nolimitgui/src/AppletLibrary.cpp" line="359" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2390" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2355" />
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1358" />
             <source>File Not Found</source>
             <translation>Файл не найден</translation>
@@ -6157,8 +6155,8 @@ Remove this item from My Library and asset database?</source>
             <location filename="../nolimitgui/src/AppletLibrary.cpp" line="694" />
             <location filename="../nolimitgui/src/AppletLibrary.cpp" line="771" />
             <location filename="../nolimitgui/src/AppletLibrary.cpp" line="807" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2266" />
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="104" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2231" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="107" />
             <source>Could not get thumbnail file info</source>
             <translation>Не удалось получить информацию о файле миниатюр.</translation>
         </message>
@@ -6166,9 +6164,9 @@ Remove this item from My Library and asset database?</source>
             <location filename="../nolimitgui/src/AppletLibrary.cpp" line="695" />
             <location filename="../nolimitgui/src/AppletLibrary.cpp" line="772" />
             <location filename="../nolimitgui/src/AppletLibrary.cpp" line="808" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2261" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2267" />
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="105" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2226" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2232" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="108" />
             <source>Error occured creating thumbnail asset </source>
             <translation>Произошла ошибка при создании миниатюры объекта. </translation>
         </message>
@@ -6665,25 +6663,25 @@ If the Network Key is incorrect, you will probably be banned as a hacker.</sourc
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletPeerViewSharedFiles.cpp" line="466" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2601" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2566" />
             <source>Confirm Shred File</source>
             <translation>Подтвердить уничтожение файла</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletPeerViewSharedFiles.cpp" line="466" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2601" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2566" />
             <source>Confirm Delete File</source>
             <translation>Подтвердить удаление файла</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletPeerViewSharedFiles.cpp" line="470" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2605" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2570" />
             <source>Are You Sure You Want To Write Random Data Into The File Then Delete From The Device?</source>
             <translation>Вы уверены, что хотите записать случайные данные в файл, а затем удалить их с устройства?</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletPeerViewSharedFiles.cpp" line="474" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2609" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2574" />
             <source>Are You Sure To Delete The File From The Device?</source>
             <translation>Вы уверены, что хотите удалить файл с устройства?</translation>
         </message>
@@ -6703,51 +6701,51 @@ If the Network Key is incorrect, you will probably be banned as a hacker.</sourc
             <translation>Видеофайл не удалось воспроизвести</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="240" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="207" />
             <source>Unknown Media File Type</source>
             <translation>Неизвестный тип медиа-файла</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="292" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="259" />
             <source>Media Player empty file list</source>
             <translation>Пустой список файлов в медиаплеере</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="314" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="281" />
             <source>Media Player could not play file</source>
             <translation>Медиаплеер не смог воспроизвести файл</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="319" />
-            <location filename="../nolimitgui/src/AppletPlayerNlcBase.cpp" line="204" />
-            <location filename="../nolimitgui/src/AppletPlayerNlcBase.cpp" line="360" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="286" />
+            <location filename="../nolimitgui/src/AppletPlayerNlcBase.cpp" line="207" />
+            <location filename="../nolimitgui/src/AppletPlayerNlcBase.cpp" line="363" />
             <source>File does not exist</source>
             <translation>Файл не существует</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="326" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="293" />
             <source>Exception playing</source>
             <translation>Исключение при воспроизведении</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="366" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="333" />
             <source>Media Player not read</source>
             <translation>Медиаплеер не читается</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="366" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="333" />
             <source>Try again when Media Player is ready</source>
             <translation>Повторите попытку, когда медиаплеер будет готов.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="422" />
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="459" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="386" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="423" />
             <source>Could not read file</source>
             <translation>Не удалось прочитать файл</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="422" />
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="459" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="386" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="423" />
             <source>Failed to get file info</source>
             <translation>Не удалось получить информацию о файле</translation>
         </message>
@@ -7372,170 +7370,170 @@ If the Network Key is incorrect, you will probably be banned as a hacker.</sourc
             <translation>Выберите файл изображения</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="410" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="387" />
             <source>Cannot Read File</source>
             <translation>Невозможно прочитать файл</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1389" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1395" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1401" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1407" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1413" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1419" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1425" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1354" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1360" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1366" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1372" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1378" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1384" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1390" />
             <source>Invalid User Name</source>
             <translation>Неверное имя пользователя</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1389" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1354" />
             <source>User Name cannot have NoLimitConnect in name.</source>
             <translation>Имя пользователя не может содержать NoLimitConnect в имени.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1395" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1360" />
             <source>User Name cannot have special character quote.</source>
             <translation>Имя пользователя не может содержать специальные кавычки.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1401" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1366" />
             <source>User Name cannot have comma.</source>
             <translation>Имя пользователя не может содержать запятую.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1407" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1372" />
             <source>User Name cannot have special character parentheses.</source>
             <translation>Имя пользователя не может содержать скобки со специальными символами.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1413" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1378" />
             <source>User Name cannot have special character slashes.</source>
             <translation>Имя пользователя не может содержать косую черту из специальных символов.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1419" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1384" />
             <source>User Name is too long (maximum 31 chars).</source>
             <translation>Имя пользователя слишком длинное (максимум 31 символ).</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1425" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1390" />
             <source>User Name is too short (minimum 4 chars).</source>
             <translation>Имя пользователя слишком короткое (минимум 4 символа).</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1444" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1409" />
             <source>Mood Message is too long (maximum 31 chars)</source>
             <translation>Сообщение о настроении слишком длинное (максимум 31 символ).</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1456" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1462" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1421" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1427" />
             <source>Age Verify</source>
             <translation>Возраст проверить</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1456" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1421" />
             <source>Invalid Age</source>
             <translation>Неверный возраст</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1462" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1427" />
             <source>Age Connot be greater than 120 years old</source>
             <translation>Возраст не может быть больше 120 лет.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2260" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2225" />
             <source>Could not create thumbnail asset</source>
             <translation>Не удалось создать миниатюру объекта.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2319" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2284" />
             <source>User Unavailable</source>
             <translation>Пользователь недоступен</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2320" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2285" />
             <source>User </source>
             <translation>Пользователь </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2320" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2285" />
             <source> Is Unavailable</source>
             <translation> недоступен</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2324" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2289" />
             <source>User is offline</source>
             <translation>Пользователь не в сети</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2325" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2290" />
             <source>User is no longer connected</source>
             <translation>Пользователь больше не подключен</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2329" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2294" />
             <source>Already In A Session</source>
             <translation>Уже на сеансе</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2330" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2295" />
             <source>Already in session. Please close existing session and try again</source>
             <translation>Уже на сессии. Пожалуйста, закройте существующий сеанс и повторите попытку.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2334" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2335" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2299" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2300" />
             <source>Session not found</source>
             <translation>Сессия не найдена</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2339" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2304" />
             <source>Sent User An Offer</source>
             <translation>Отправлено пользователю предложение</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2340" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2305" />
             <source>Offer Was Sent To  </source>
             <translation>Предложение было отправлено на  </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2344" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2309" />
             <source>Send Offer Failed</source>
             <translation>Отправить предложение не удалось</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2345" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2310" />
             <source>Offer Send Failed  </source>
             <translation>Не удалось отправить предложение  </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2349" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2314" />
             <source>Not Connected</source>
             <translation>Не подключен</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2350" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2315" />
             <source>You are not connected to host </source>
             <translation>Вы не подключены к хосту </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2354" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2319" />
             <source>No User Selected</source>
             <translation>Пользователь не выбран</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2355" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2320" />
             <source>You must select a user to send to </source>
             <translation>Вы должны выбрать пользователя для отправки </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2359" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2324" />
             <source>Purge Everthing Warning</source>
             <translation>Предупреждение об очистке всего</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2360" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2325" />
             <source>This action will delete everything not locked including Identity, Downloaded Files, Storyboard, Message History Etc.
 The action cannot be undone
 Are you very sure you want to proceed?</source>
@@ -7544,221 +7542,221 @@ Are you very sure you want to proceed?</source>
 Вы уверены, что хотите продолжить?</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2364" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2329" />
             <source>Voice Message Too Short</source>
             <translation>Голосовое сообщение слишком короткое</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2365" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2330" />
             <source>The Voice Message was too short and will not be sent.</source>
             <translation>Голосовое сообщение слишком короткое и не будет отправлено.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2369" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2334" />
             <source>Video clip Too Short</source>
             <translation>Видеоклип Слишком короткий</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2370" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2335" />
             <source>The Video Clip was too short and will not be sent.</source>
             <translation>Видеоклип слишком короткий и не будет отправлен.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2374" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2339" />
             <source>Video record failed to start</source>
             <translation>Запись видео не началась</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2375" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2340" />
             <source>Video record failed to start.</source>
             <translation>Запись видео не началась.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2380" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2345" />
             <source>Unknown Error </source>
             <translation>Неизвестная ошибка </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2380" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2345" />
             <source> for user </source>
             <translation> для пользователя </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2391" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2356" />
             <source>File Name Is Empty</source>
             <translation>Имя файла пусто</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2399" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2400" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2364" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2365" />
             <source>Access File Permissions Denied By User</source>
             <translation>Разрешения на доступ к файлу запрещены пользователем</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2408" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2373" />
             <source>Application Not Ready</source>
             <translation>Приложение не готово</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2409" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2374" />
             <source>Cannot launch applet until network is available</source>
             <translation>Невозможно запустить апплет, пока сеть не будет доступна.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2409" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2374" />
             <source>Cannot Launch Applet Until Application Has Initialized</source>
             <translation>Невозможно запустить апплет до инициализации приложения</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2417" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2382" />
             <source>Requires Open Port</source>
             <translation>Требуется открытый порт</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2418" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2383" />
             <source>Action requires a open port</source>
             <translation>Для действия требуется открытый порт</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2426" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2435" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2391" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2400" />
             <source>Invalid Invite</source>
             <translation>Недействительное приглашение</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2427" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2392" />
             <source>The invite is invalid</source>
             <translation>Приглашение недействительно</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2436" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2401" />
             <source>Cannot accept invite from myself</source>
             <translation>Не могу принять приглашение от себя</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2444" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2409" />
             <source>Invalid User</source>
             <translation>Неверный пользователь</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2445" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2410" />
             <source>Could not find the user</source>
             <translation>Не удалось найти пользователя</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2453" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2418" />
             <source>User Not Online</source>
             <translation>Пользователь не в сети</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2454" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2419" />
             <source>The user is not currently online</source>
             <translation>Пользователь в данный момент не онлайн</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2462" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2427" />
             <source>Friendship Level To Low</source>
             <translation>Уровень дружбы низкий</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2463" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2428" />
             <source>Requires friendship of friend or higher</source>
             <translation>Требуется дружба друга или выше</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2471" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2436" />
             <source>Invalid Host Id</source>
             <translation>Неверный идентификатор хоста</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2472" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2437" />
             <source>Host Id has not been set</source>
             <translation>Идентификатор хоста не установлен</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2480" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2445" />
             <source>Invalid URL</source>
             <translation>Неверный URL-адрес</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2481" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2446" />
             <source>The host url is not valid</source>
             <translation>URL-адрес хоста недействителен.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2489" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2454" />
             <source>Invalid Host Type</source>
             <translation>Неверный тип хоста</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2490" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2455" />
             <source>The host url does not have a vailid host type</source>
             <translation>URL-адрес хоста не имеет допустимого типа хоста.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2498" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2463" />
             <source>No Members Online</source>
             <translation>Нет участников онлайн</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2499" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2464" />
             <source>There are no members online to send to</source>
             <translation>Нет участников онлайн, которым можно было бы отправить сообщение</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2507" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2561" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2472" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2526" />
             <source>Failed to add asset</source>
             <translation>Не удалось добавить объект.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2508" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2562" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2473" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2527" />
             <source>Failed to add asset. Please check disk space</source>
             <translation>Не удалось добавить актив. Пожалуйста, проверьте место на диске</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2517" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2482" />
             <source>Failed to send </source>
             <translation>Не удалось отправить </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2518" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2483" />
             <source>Failed to send to </source>
             <translation>Не удалось отправить </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2528" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2493" />
             <source>No members to send to</source>
             <translation>Нет участников, которым можно отправить</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2532" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2497" />
             <source>Admin is offline</source>
             <translation>Админ не в сети</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2536" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2501" />
             <source>Cannot send to self</source>
             <translation>Не могу отправить себе</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2540" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2505" />
             <source>Invalid host or state</source>
             <translation>Неверный хост или состояние</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2544" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2509" />
             <source>Unknown reason</source>
             <translation>Неизвестная причина</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2552" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2517" />
             <source>Cannot send </source>
             <translation>Невозможно отправить </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2553" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2518" />
             <source>Cannot send reason: </source>
             <translation>Невозможно отправить причину: </translation>
         </message>
@@ -10165,12 +10163,12 @@ Are you very sure you want to proceed?</source>
             <translation> находится в автономном режиме</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiPlayerMgr.cpp" line="231" />
+            <location filename="../nolimitgui/src/GuiPlayerMgr.cpp" line="229" />
             <source>Attempted to play an executable which is not allowed</source>
             <translation>Попытка воспроизвести исполняемый файл, который запрещен.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiPlayerMgr.cpp" line="237" />
+            <location filename="../nolimitgui/src/GuiPlayerMgr.cpp" line="235" />
             <source>Attempted to open an archive file which is not allowed</source>
             <translation>Попытка открыть архивный файл запрещена.</translation>
         </message>
@@ -10275,28 +10273,28 @@ Are you very sure you want to proceed?</source>
             <translation> Риск: </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="69" />
-            <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="91" />
+            <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="71" />
+            <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="93" />
             <source>Photo Snapshot Error</source>
             <translation>Ошибка снимка фотографии</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="69" />
+            <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="71" />
             <source>Photo Unavailable</source>
             <translation>Фото недоступно</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="81" />
+            <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="83" />
             <source>Failed to write photo to file </source>
             <translation>Не удалось записать фотографию в файл. </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="82" />
+            <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="84" />
             <source>Error Writing Photo To File</source>
             <translation>Ошибка записи фотографии в файл</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="91" />
+            <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="93" />
             <source>Photo File Not Found</source>
             <translation>Файл фотографии не найден</translation>
         </message>
@@ -10415,38 +10413,38 @@ No one can connect to you directly</source>
             <translation>Неизвестный апплет </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="110" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="113" />
             <source>Could not save thumbnail image</source>
             <translation>Не удалось сохранить уменьшенное изображение.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="111" />
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="150" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="114" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="153" />
             <source>Error occured saving thumbnail to file </source>
             <translation>Произошла ошибка при сохранении миниатюры в файл. </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="143" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="146" />
             <source>Could not update thumbnail asset</source>
             <translation>Не удалось обновить объект миниатюры.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="144" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="147" />
             <source>Error occured update thumbnail asset </source>
             <translation>Произошла ошибка обновления миниатюры объекта. </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="149" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="152" />
             <source>Could not save updated thumbnail image</source>
             <translation>Не удалось сохранить обновленное уменьшенное изображение.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="155" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="158" />
             <source>thumbnail id was invalid</source>
             <translation>идентификатор миниатюры недействителен</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="156" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="159" />
             <source>Error occured updatin thumbnail </source>
             <translation>Произошла ошибка при обновлении миниатюры </translation>
         </message>

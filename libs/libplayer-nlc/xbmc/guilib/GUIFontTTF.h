@@ -251,9 +251,9 @@ private:
   int m_referenceCount{0};
 };
 
-#if defined(HAVE_QT_GUI)
-# include "GUIFontTTFQt.h"
-# define CGUIFontTTF CGUIFontTTFQt
+#if defined(HAVE_NLC_GUI)
+# include "GUIFontTTFNlc.h"
+# define CGUIFontTTF CGUIFontTTFNlc
 #elif defined(HAS_GL) || defined(HAS_GLES)
 # include "GUIFontTTFGL.h"
 # define CGUIFontTTF CGUIFontTTFGL

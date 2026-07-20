@@ -16,11 +16,11 @@
 #include "utils/TimeUtils.h"
 #include "utils/log.h"
 
-#if defined(TARGET_OS_ANDROID) && !defined(HAVE_QT_GUI)
+#if defined(TARGET_OS_ANDROID) && !defined(HAVE_NLC_GUI)
 # include "platform/android/activity/XBMCApp.h"
-#elif defined(TARGET_OS_ANDROID) && defined(HAVE_QT_GUI)
-# include "platform/qt/KodiQtApp.h"
-#endif // defined(TARGET_OS_ANDROID) && !defined(HAVE_QT_GUI)
+#elif defined(TARGET_OS_ANDROID) && defined(HAVE_NLC_GUI)
+# include "platform/nlc/KodiNlcApp.h"
+#endif // defined(TARGET_OS_ANDROID) && !defined(HAVE_NLC_GUI)
 
 #include <androidjni/AudioFormat.h>
 #include <androidjni/AudioManager.h>

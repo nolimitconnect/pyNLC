@@ -6,11 +6,11 @@
  *  See LICENSES/README.md for more information.
  */
 #include "config_components_kodi.h"
-#if !defined(HAVE_QT_GUI)
+#if !defined(HAVE_NLC_GUI)
 
 #include "AndroidKey.h"
 
-#include <platform/qt/qtandroid/jni/KeyCharacterMap.h>
+#include <platform/android/jni/KeyCharacterMap.h>
 
 #include "AndroidExtra.h"
 #include "XBMCApp.h"
@@ -327,4 +327,4 @@ void CAndroidKey::XBMC_Key(uint8_t code, uint16_t key, uint16_t modifiers, uint1
   //CXBMCApp::android_printf("XBMC_Key(%u, %u, 0x%04X, %d)", code, key, modifiers, up);
   dynamic_cast<CWinSystemAndroid*>(CServiceBroker::GetWinSystem())->MessagePush(&newEvent);
 }
-#endif // !defined(HAVE_QT_GUI)
+#endif // !defined(HAVE_NLC_GUI)

@@ -8,7 +8,7 @@
 
 #pragma once
 
-#include <platform/qt/qtandroid/jni/JNIBase.h>
+#include <platform/android/jni/JNIBase.h>
 
 #include "interfaces/json-rpc/IClient.h"
 #include "interfaces/json-rpc/ITransportLayer.h"
@@ -52,3 +52,4 @@ namespace jni
   };
 
 }
+

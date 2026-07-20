@@ -7,7 +7,7 @@
  */
 
 #include "config_components_kodi.h"
-#if defined( TARGET_OS_WINDOWS ) && !defined( HAVE_QT_GUI )
+#if defined( TARGET_OS_WINDOWS ) && !defined( HAVE_NLC_GUI )
 
 #include "AESinkFactoryWin.h"
 #include "utils/log.h"
@@ -176,4 +176,4 @@ const char *WASAPIErrToStr(HRESULT err)
     wfxex.Format.nAvgBytesPerSec = wfxex.Format.nSamplesPerSec * wfxex.Format.nBlockAlign;
   };
 
-  #endif // defined( TARGET_OS_WINDOWS ) && !defined( HAVE_QT_GUI )
+  #endif // defined( TARGET_OS_WINDOWS ) && !defined( HAVE_NLC_GUI )

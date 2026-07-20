@@ -74,10 +74,12 @@ void RenderPlayerNlcThread::run()
 
 #endif // RENDER_LOGO_INSTEAD_OF_KODI
         isKodiRunning = false;
+        m_IsThreadStarted = false;
     }
     else
     {
         LogModule( eLogVideoRender, LOG_ERROR, "Tried to run kodi twice" );
+        m_IsThreadStarted = false;
     }
 }
 
@@ -86,6 +88,7 @@ void RenderPlayerNlcThread::startRenderThread()
 {
     if( !isRenderThreadStarted() )
     {
+        m_ShouldRun = true;
         m_IsThreadStarted = true;
         start();
     }

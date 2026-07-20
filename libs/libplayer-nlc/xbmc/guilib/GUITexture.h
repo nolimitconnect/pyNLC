@@ -203,15 +203,15 @@ public:
   CTextureArray m_texture;
 
 private:
-#if !defined(HAVE_QT_GUI)
+#if !defined(HAVE_NLC_GUI)
   static CreateGUITextureFunc m_createGUITextureFunc;
   static DrawQuadFunc m_drawQuadFunc;
-#endif // defined(HAVE_QT_GUI)
+#endif // defined(HAVE_NLC_GUI)
 };
 
-#if defined(HAVE_QT_GUI)
-# include "GUITextureQt.h"
-# define CGUITexture CGUITextureQt
+#if defined(HAVE_NLC_GUI)
+# include "GUITextureNlc.h"
+# define CGUITexture CGUITextureNlc
 #elif defined(HAS_GL)
 # include "GUITextureGL.h"
 # define CGUITexture CGUITextureGL
@@ -221,5 +221,5 @@ private:
 #elif  HAS_DX
 # include "GUITextureD3D.h"
 # define CGUITexture CGUITextureD3D
-#endif // defined(HAVE_QT_GUI)
+#endif // defined(HAVE_NLC_GUI)
 

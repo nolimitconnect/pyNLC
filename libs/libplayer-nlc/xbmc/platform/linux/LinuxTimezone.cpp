@@ -9,11 +9,11 @@
 #include <time.h>
 #ifdef TARGET_ANDROID
 # include <unistd.h> // for readlink
-# if defined(HAVE_QT_GUI)
-#  include "platform/qt/qtandroid/bionic_supplement/bionic_supplement.h"
+# if defined(HAVE_NLC_GUI)
+#  include "platform/nlc/android/bionic_supplement/bionic_supplement.h"
 # else
 #  include "platform/android/bionic_supplement/bionic_supplement.h"
-# endif // defined(HAVE_QT_GUI)
+# endif // defined(HAVE_NLC_GUI)
 #endif // TARGET_ANDROID
 
 #include "PlatformDefs.h"

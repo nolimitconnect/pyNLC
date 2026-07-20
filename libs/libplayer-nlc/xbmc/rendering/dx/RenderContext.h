@@ -8,8 +8,8 @@
 
 #pragma once
 
-#if defined(HAVE_QT_GUI)
-# include "windowing/qt/WinSystemQt.h"
+#if defined(HAVE_NLC_GUI)
+# include "windowing/nlc/WinSystemNlc.h"
 
 #elif defined(TARGET_WINDOWS_DESKTOP)
 # include "windowing/windows/WinSystemWin32DX.h"

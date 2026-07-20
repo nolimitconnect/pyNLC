@@ -6,14 +6,14 @@
  *  See LICENSES/README.md for more information.
  */
 #include "config_components_kodi.h"
-#if !defined(HAVE_QT_GUI)
+#if !defined(HAVE_NLC_GUI)
 
 #include "AndroidTouch.h"
-#if defined(TARGET_OS_ANDROID) && !defined(HAVE_QT_GUI)
+#if defined(TARGET_OS_ANDROID) && !defined(HAVE_NLC_GUI)
 # include "platform/android/activity/XBMCApp.h"
-#elif defined(TARGET_OS_ANDROID) && defined(HAVE_QT_GUI)
-# include "platform/qt/KodiQtApp.h"
-#endif // defined(TARGET_OS_ANDROID) && !defined(HAVE_QT_GUI)
+#elif defined(TARGET_OS_ANDROID) && defined(HAVE_NLC_GUI)
+# include "platform/nlc/KodiNlcApp.h"
+#endif // defined(TARGET_OS_ANDROID) && !defined(HAVE_NLC_GUI)
 #include "input/touch/generic/GenericTouchActionHandler.h"
 #include "input/touch/generic/GenericTouchInputHandler.h"
 
@@ -91,4 +91,4 @@ void CAndroidTouch::setDPI(uint32_t dpi)
     CGenericTouchInputHandler::GetInstance().SetScreenDPI(m_dpi);
   }
 }
-#endif // !defined(HAVE_QT_GUI)
+#endif // !defined(HAVE_NLC_GUI)

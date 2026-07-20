@@ -32,8 +32,8 @@
 #include "utils/ColorUtils.h"
 #include "OverlayRendererUtil.h"
 
-#if defined(HAVE_QT_GUI)
-# include "OverlayRendererQt.h"
+#if defined(HAVE_NLC_GUI)
+# include "OverlayRendererNlc.h"
 #endif
 
 #include <algorithm>

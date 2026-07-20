@@ -6,12 +6,12 @@
  *  See LICENSES/README.md for more information.
  */
 #include "config_components_kodi.h"
-#if !defined(HAVE_QT_GUI)
+#if !defined(HAVE_NLC_GUI)
 
 #include "JNIXBMCSurfaceTextureOnFrameAvailableListener.h"
-#include <platform/qt/qtandroid/jni/jutils-details.hpp>
+#include <platform/android/jni/jutils/jutils-details.hpp>
 
-#include <platform/qt/qtandroid/jni/Context.h>
+#include <platform/android/jni/Context.h>
 #include "CompileInfo.h"
 
 using namespace jni;
@@ -60,4 +60,5 @@ void CJNIXBMCSurfaceTextureOnFrameAvailableListener::_onFrameAvailable(JNIEnv* e
   if (inst)
     inst->onFrameAvailable(CJNISurfaceTexture(jhobject::fromJNI(surface)));
 }
-#endif // !defined(HAVE_QT_GUI)
+#endif // !defined(HAVE_NLC_GUI)
+

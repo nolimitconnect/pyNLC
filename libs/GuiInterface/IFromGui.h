@@ -39,6 +39,7 @@ class VxPtopUrl;
 class IFromGui
 {
 public:
+    static IFromGui&			getIFromGui( void );
 
 	/// First call to engine should send path to assets ( game and app resources ) and path to root of where to write application data
 	virtual void				fromGuiAppStartup( std::string assetsDir, std::string rootDataDir, bool fromThread = false ) = 0;
@@ -326,5 +327,6 @@ public:
 
 	virtual bool                fromGuiQueryFriendRequest( std::vector<std::shared_ptr<FriendRequestInfo>>& friendRequestList, VxGUID& onlineIdIfNullThenAll ) = 0;
 	virtual bool                fromGuiSendFriendRequest( VxGUID& onlineId, std::string& requestText, EFriendState myFriendshipToHim ) = 0;
+
 };
 

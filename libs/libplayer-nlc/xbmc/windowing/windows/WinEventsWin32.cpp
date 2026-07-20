@@ -7,7 +7,7 @@
  */
 
 #include "config_kodi.h"
-#ifndef HAVE_QT_GUI
+#ifndef HAVE_NLC_GUI
 
 
 #ifndef _USE_MATH_DEFINES

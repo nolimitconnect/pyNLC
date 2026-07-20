@@ -27,6 +27,9 @@
 #include <CoreLib/VxDebug.h>
 #include <CoreLib/VxGlobals.h>
 #include <CoreLib/VxTime.h>
+
+#include <GuiInterface/ICamCapture.h>
+
 #include <QFrame>
 
 #include "ui_TitleBarWidget.h"
@@ -170,16 +173,16 @@ void TitleBarWidget::updateTitleBar( void )
     m_MutedSpeaker = audioMgr.getIsSpeakerMuted();
     callbackToGuiSpeakerMuted( m_MutedSpeaker );
 
-    bool isCamRequested = m_MyApp.getCamLogic().isCamCaptureRequested();
+    bool isCamRequested = ICamCapture::getICamCapture().isCamCaptureRequested();
     callbackToGuiWantVideoCapture( isCamRequested );
 
     checkTitleBarIconsFit();
 
-    ui.m_CamPreviewScreen->setImageFromFile( m_MyApp.getCamLogic().getCameraBackgroundFile() );
+    ui.m_CamPreviewScreen->setImageFromFile( m_MyApp.getCameraBackgroundFile() );
 
     updateWebServerClientCount();
 
-    bool isCamEnabled = m_MyApp.getCamLogic().getCameraEnable();
+    bool isCamEnabled = ICamCapture::getICamCapture().getCamCaptureEnable();
     callbackToGuiCameraEnable( isCamEnabled && isVisible() );
 
     update();
@@ -238,7 +241,7 @@ void TitleBarWidget::slotCamTimeout()
     if( GetApplicationAliveMs() - m_LastCamFrameTimeMs > 3000 )
     {
         m_CamTimer->stop();
-        ui.m_CamPreviewScreen->setImageFromFile( m_MyApp.getCamLogic().getCameraBackgroundFile() );
+        ui.m_CamPreviewScreen->setImageFromFile( m_MyApp.getCameraBackgroundFile() );
     }
 }
 
@@ -500,7 +503,7 @@ void TitleBarWidget::setBackButtonColor( QColor iconColor )
 void TitleBarWidget::slotToGuiNetAvailStatus( ENetAvailStatus eNetAvailStatus )
 {
     ui.m_NetAvailStatusWidget->toGuiNetAvailStatus( eNetAvailStatus );
-    bool isCamEnabled = m_MyApp.getCamLogic().isCamCaptureRequested();
+    bool isCamEnabled = ICamCapture::getICamCapture().isCamCaptureRequested();
     callbackToGuiWantVideoCapture( isCamEnabled );
 }
 
@@ -637,7 +640,7 @@ void TitleBarWidget::callbackToGuiWantVideoCapture( bool wantVideoCapture )
     else
     {
         m_CamTimer->stop();
-        ui.m_CamPreviewScreen->setImageFromFile( m_MyApp.getCamLogic().getCameraBackgroundFile() );
+        ui.m_CamPreviewScreen->setImageFromFile( m_MyApp.getCameraBackgroundFile() );
     }
 
     checkTitleBarIconsFit();
@@ -668,7 +671,7 @@ void TitleBarWidget::callbackToGuiCameraEnable( bool enableCamera )
     m_CamEnabled = enableCamera;
     if( !m_CamEnabled )
     {
-        ui.m_CamPreviewScreen->setImageFromFile( m_MyApp.getCamLogic().getCameraBackgroundFile() );
+        ui.m_CamPreviewScreen->setImageFromFile( m_MyApp.getCameraBackgroundFile() );
     }
 }
 
@@ -684,7 +687,7 @@ void TitleBarWidget::callbackToGuiCaptureRunning( bool camCaptureRunning )
     }
     else
     {
-        ui.m_CamPreviewScreen->setImageFromFile( m_MyApp.getCamLogic().getCameraBackgroundFile() );
+        ui.m_CamPreviewScreen->setImageFromFile( m_MyApp.getCameraBackgroundFile() );
         // sometimes a few frame are shown after call .. reset to background after a while
         m_CamTimer->start( 300 );
     }

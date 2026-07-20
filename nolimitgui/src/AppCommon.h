@@ -16,8 +16,6 @@
 
 #include "GuiAudioMgr.h"
 
-#include "CamLogic.h"
-
 #include "FriendList.h"
 #include "GuiConnectIdListMgr.h"
 
@@ -157,13 +155,12 @@ public:
     AssetSendMgr&               getAssetSendMgr( void ) { return m_AssetSendMgr; }
     AppSettings&                getAppSettings( void ) { return m_AppSettings; }
     QString&                    getAppShortName( void ) { return m_AppShortName; }
-    VxAppStyle&                 getAppStyle( void ) { return m_AppStyle; }
+    VxAppStyle&                 getAppStyle( void ) { return *m_AppStyle; }
     QString&                    getAppTitle( void ) { return m_AppTitle; }
     VxAppTheme&                 getAppTheme( void ) { return m_AppTheme; }
 
-    GuiAudioMgr&                   getAudioMgr( void ) { return m_AudioMgr; }
+    GuiAudioMgr&                getAudioMgr( void ) { return m_AudioMgr; }
 
-    CamLogic&                   getCamLogic( void ) { return m_CamLogic; }
     P2PEngine&                  getEngine( void );
     IFromGui&                   getFromGuiInterface( void );
     TodGameMgr&                 getTodGameMgr( void ) { return m_TodGameMgr; }
@@ -207,8 +204,8 @@ public:
     void                        setGuiThreadId( unsigned int threadId ) { m_GuiThreadId = threadId; }
     unsigned int                getGuiThreadId( void ) { return m_GuiThreadId; }
 
-    void						setCamCaptureRotation( uint32_t rot )  { m_CamCaptureRotation = rot; }
-    int							getCamCaptureRotation( void ) { return m_CamCaptureRotation; }
+    void						setCamCaptureReady( bool ready )  { m_CamCaptureReady = ready; }
+    bool						getCamCaptureReady( void ) { return m_CamCaptureReady; }
 
     void 						setAccountUserName( const char* name ) { m_strAccountUserName = name; }
     std::string					getAccountUserName( void ) { return m_strAccountUserName; }
@@ -285,16 +282,13 @@ public:
     //============================================================================
 
     /// Mute/Unmute microphone
-    virtual void				fromGuiMuteMicrophone( bool muteMic ) override;
+    void				        fromGuiMuteMicrophone( bool muteMic ) override;
     /// Returns true if microphone is muted
-    virtual bool				fromGuiIsMicrophoneMuted( void ) override;
+    bool				        fromGuiIsMicrophoneMuted( void ) override;
     /// Mute/Unmute speaker
-    virtual void				fromGuiMuteSpeaker( bool muteSpeaker ) override;
+    void				        fromGuiMuteSpeaker( bool muteSpeaker ) override;
     /// Returns true if speaker is muted
-    virtual bool				fromGuiIsSpeakerMuted( void ) override;
-
-    virtual void				fromGuiCameraEnable( bool enableCamera );
-    virtual void				fromGuiCaptureRunning( bool camCaptureRunning );
+    bool				        fromGuiIsSpeakerMuted( void ) override;
 
     //============================================================================
     //=== to gui media/render ===//
@@ -308,26 +302,26 @@ public:
     //=== textures ===//
     void                        setActiveGlTexture( unsigned int activeTextureNum = 0 /* 0 == GL_TEXTURE0 , 1 == GL_TEXTURE1 etc*/ ) override;
 
-    void                        createTextureObject( CTextureQt* texture ) override;
-    void                        destroyTextureObject( CTextureQt* texture ) override;
-    bool                        loadToGPU( CTextureQt* texture ) override;
-    void                        bindToUnit( CTextureQt* texture, unsigned int unit ) override;
+    void                        createTextureObject( CTextureNlc* texture ) override;
+    void                        destroyTextureObject( CTextureNlc* texture ) override;
+    bool                        loadToGPU( CTextureNlc* texture ) override;
+    void                        bindToUnit( CTextureNlc* texture, unsigned int unit ) override;
 
-    void                        beginGuiTexture( CGUITextureQt* guiTexture, NlcColor color ) override;
-    void                        drawGuiTexture( CGUITextureQt* guiTexture, float* x, float* y, float* z, const NlcRect& texture, const NlcRect& diffuse, int orientation ) override;
-    void                        endGuiTexture( CGUITextureQt* guiTexture ) override;
+    void                        beginGuiTexture( CGUITextureNlc* guiTexture, NlcColor color ) override;
+    void                        drawGuiTexture( CGUITextureNlc* guiTexture, float* x, float* y, float* z, const NlcRect& texture, const NlcRect& diffuse, int orientation ) override;
+    void                        endGuiTexture( CGUITextureNlc* guiTexture ) override;
     void                        drawQuad( const NlcRect& rect, NlcColor color, CTextureBase* texture, const NlcRect* texCoords ) override;
 
-    bool                        firstBegin( CGUIFontTTFQt* font )  override;
-    void                        lastEnd( CGUIFontTTFQt* font ) override;
+    bool                        firstBegin( CGUIFontTTFNlc* font )  override;
+    void                        lastEnd( CGUIFontTTFNlc* font ) override;
 
-    CVertexBuffer               createVertexBuffer( CGUIFontTTFQt* font, const std::vector<SVertex>& vertices )  override;
+    CVertexBuffer               createVertexBuffer( CGUIFontTTFNlc* font, const std::vector<SVertex>& vertices )  override;
 
-    void                        destroyVertexBuffer( CGUIFontTTFQt* font, CVertexBuffer& buffer )  override;
+    void                        destroyVertexBuffer( CGUIFontTTFNlc* font, CVertexBuffer& buffer )  override;
 
-    virtual void                deleteHardwareTexture( CGUIFontTTFQt* font )  override;
-    virtual void                createStaticVertexBuffers( CGUIFontTTFQt* font )  override;
-    virtual void                destroyStaticVertexBuffers( CGUIFontTTFQt* font )  override;
+    virtual void                deleteHardwareTexture( CGUIFontTTFNlc* font )  override;
+    virtual void                createStaticVertexBuffers( CGUIFontTTFNlc* font )  override;
+    virtual void                destroyStaticVertexBuffers( CGUIFontTTFNlc* font )  override;
 
     //=== render ===//
     void                        captureScreen( CScreenshotSurface* screenCaptrue, NlcRect& captureArea ) override;
@@ -520,7 +514,10 @@ public:
     void				        toGuiUpdateWantMicrophoneCount( int wantMicCnt ) override;
     void				        toGuiUpdateWantSpeakerCount( int wantSpeakerCnt ) override;
 
-    void				        toGuiWantVideoCapture( EMediaModule mediaModule, bool wantVidCapture ) override;
+    void				        toGuiWantCamCapture( EMediaModule mediaModule, bool wantVidCapture ) override;
+    void				        toGuiCamCaptureEnable( bool camCaptureEnabled ) override;
+    void				        toGuiCamCaptureRunning( bool camCaptureRunning ) override;
+
     void				        toGuiPlayJpgVideo( VxGUID& onlineId, std::shared_ptr<CamJpgVideo>& jpgVideo ) override;
 
     // user update interface
@@ -640,6 +637,8 @@ public:
 
     bool                        getThumbImage( VxGUID& thumbId, QImage& image );
 
+    QString                     getCameraBackgroundFile( void );
+
 signals:
     void						signalMessengerReady( bool isReady );    // emitted when messenger ready state changes
     void						signalMainWindowResized( void );    // emitted if main window is resized
@@ -676,7 +675,9 @@ signals:
 
     void						signalInternalWantSpeakerOutput( EMediaModule mediaModule, bool wantSpeakerOutput );
 
-    void						signalInternalWantVideoCapture( EMediaModule mediaModule, bool enableCapture );
+    void						signalInternalWantCamCapture( EMediaModule mediaModule, bool enableCapture );
+    void						signalInternalCamCaptureEnable( bool camCaptureEnabled );
+    void						signalInternalCamCaptureRunning( bool isRunning );
 
     void						signalSetRelayHelpButtonVisibility( bool isVisible );
 
@@ -809,7 +810,9 @@ private slots:
 
     void						slotInternalWantSpeakerOutput( EMediaModule mediaModule, bool wantSpeakerOutput );
 
-    void						slotInternalWantVideoCapture( EMediaModule mediaModule, bool enableCapture );
+    void						slotInternalWantCamCapture( EMediaModule mediaModule, bool enableCapture );
+    void						slotInternalCamCaptureRunning( bool isRunning );
+    void						slotInternalCamCaptureEnable( bool camCaptureEnabled );
 
     void                        slotInternalNetworkIsTested( bool requiresRelay, QString ipAddr, uint16_t ipPort );
 
@@ -925,12 +928,10 @@ protected:
 
     MyIcons&					m_MyIcons;
     VxAppTheme					m_AppTheme;
-    VxAppStyle					m_AppStyle;
+    VxAppStyle*                 m_AppStyle{ nullptr };
     VxAppDisplay				m_AppDisplay;
 
-    CamLogic                    m_CamLogic;
-
-    GuiAudioMgr                    m_AudioMgr;
+    GuiAudioMgr                 m_AudioMgr;
     SoundFxMgr&                 m_SoundFxMgr;
 
     HomeWindow*					m_HomeWindow{ nullptr };
@@ -951,9 +952,6 @@ protected:
     std::vector<QString>		m_DebugLogQue;
     std::vector<QString>		m_AppErrLogQue;
     ENetworkStateType			m_LastNetworkState;
-
-    std::string					m_CamSourceId;
-    uint32_t					m_CamCaptureRotation;
 
     bool	                    m_ToGuiActivityInterfaceBusy{ false };
     bool	                    m_ToGuiFileXferInterfaceBusy{ false };
@@ -994,6 +992,8 @@ protected:
     bool                        m_GuiStartupAudioWaitBypassed{ false };
 
     unsigned int                m_GuiThreadId{ 0 };
+
+    bool                        m_CamCaptureReady{ false };
 };
 
 AppCommon& CreateAppInstance( QApplication* myApp, AppSettings& appSettings );

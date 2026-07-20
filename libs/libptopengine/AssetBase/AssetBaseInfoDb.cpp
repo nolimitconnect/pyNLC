@@ -273,8 +273,10 @@ void AssetBaseInfoDb::getAllAssets( std::vector<AssetBaseInfo*>& AssetAssetList 
 			assetLen =  (uint64_t)cursor->getS64( COLUMN_ASSET_LEN );
 			assetType = (EAssetType)cursor->getS32( COLUMN_ASSET_TYPE );
 
-			AssetBaseInfo* assetInfo = createAssetInfo( assetType, assetName.c_str(), fileNameAndPath.c_str(), assetLen );
-			assetInfo->setAssetUniqueId( cursor->getString( COLUMN_ASSET_UNIQUE_ID ) );
+            VxGUID assetGUID(cursor->getString( COLUMN_ASSET_UNIQUE_ID ));
+            vx_assert(assetGUID.isValid());
+            AssetBaseInfo* assetInfo = createAssetInfo( assetType, assetName.c_str(), fileNameAndPath.c_str(), assetLen, assetGUID );
+
 			assetInfo->setCreatorId( cursor->getString( COLUMN_ASSET_CREATOR_ID ) );
 			assetInfo->setHistoryId( cursor->getString( COLUMN_ASSET_HISTORY_ID ) );
 			assetInfo->setAdminId( cursor->getString( COLUMN_ASSET_ADMIN_ID ) );

@@ -20,6 +20,8 @@
 
 #include <CoreLib/VxGlobals.h>
 
+#include <GuiInterface/ICamCapture.h>
+
 #include "ui_InputVideoWidget.h"
 
 //============================================================================
@@ -93,16 +95,8 @@ void InputVideoWidget::hideEvent(QHideEvent* hideEvent)
 //============================================================================
 void InputVideoWidget::slotRotateCamButtonClicked( void )
 {
-    std::string camId = m_MyApp.getAppSettings().getCamSourceId();
-	int camRotation = m_MyApp.getAppSettings().getCamRotation( camId );
-	camRotation += 90;
-	if( camRotation >= 360 )
-	{
-		camRotation = 0;
-	}
+    ICamCapture::getICamCapture().rotateCurrentCamCapture();
 
-	m_MyApp.getAppSettings().setCamRotation( camId, camRotation );
-	m_MyApp.setCamCaptureRotation( camRotation );
     // always keep the video on screen at zero rotation. capture system should rotate it
     ui.m_VidWidget->setVidImageRotation( 0 );
 }

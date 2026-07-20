@@ -6,10 +6,10 @@
  *  See LICENSES/README.md for more information.
  */
 #include "config_components_kodi.h"
-#if !defined(HAVE_QT_GUI)
+#if !defined(HAVE_NLC_GUI)
 
 #include "JNIXBMCFile.h"
-#include <platform/qt/qtandroid/jni/jutils-details.hpp>
+#include <platform/android/jni/jutils/jutils-details.hpp>
 
 #include "CompileInfo.h"
 
@@ -119,6 +119,6 @@ jboolean CJNIXBMCFile::_eof(JNIEnv *env, jobject thiz)
   return true;
 }
 
-#endif // !defined(HAVE_QT_GUI)
+#endif // !defined(HAVE_NLC_GUI)
 
 

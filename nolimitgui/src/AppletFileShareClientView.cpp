@@ -480,7 +480,7 @@ void AppletFileShareClientView::slotStreamButtonClicked( QListWidgetItem* item )
 	streamSessionId.initializeWithNewVxGUID();
 	xferSession->setLclSessionId( streamSessionId );
 
-	if( m_MyApp.getPlayerMgr().playStream( assetInfo, streamSessionId, 0) )
+	if( m_MyApp.getPlayerMgr().playStream( assetInfo, streamSessionId, 0, getParentPageFrame() ) )
 	{
 		((FileXferWidget*)item)->setXferState( eXferStateStreaming, eXferErrorNone, 0 );
 	}

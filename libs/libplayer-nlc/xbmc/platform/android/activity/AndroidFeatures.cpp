@@ -11,11 +11,11 @@
 #include "AndroidFeatures.h"
 
 #include <cpu-features.h>
-#if defined(HAVE_QT_GUI)
-# include <platform/qt/qtandroid/jni/JNIThreading.h>
+#if defined(HAVE_NLC_GUI)
+# include <platform/android/jni/JNIThreading.h>
 #else
 # include <platform/android/jni/JNIThreading.h>
-#endif // defined(HAVE_QT_GUI)
+#endif // defined(HAVE_NLC_GUI)
 
 #include "utils/log.h"
 
@@ -70,3 +70,4 @@ int CAndroidFeatures::GetCPUCount()
   return count;
 }
 #endif // defined(TARGET_OS_ANDROID)
+

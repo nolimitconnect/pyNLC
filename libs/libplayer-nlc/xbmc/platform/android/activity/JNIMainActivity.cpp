@@ -6,13 +6,13 @@
  *  See LICENSES/README.md for more information.
  */
 #include "config_components_kodi.h"
-#if !defined(HAVE_QT_GUI)
+#if !defined(HAVE_NLC_GUI)
 
 #include "JNIMainActivity.h"
 
-#include <platform/qt/qtandroid/jni/Activity.h>
-#include <platform/qt/qtandroid/jni/Intent.h>
-#include <platform/qt/qtandroid/jni/jutils-details.hpp>
+#include <platform/android/jni/Activity.h>
+#include <platform/android/jni/Intent.h>
+#include <platform/android/jni/jutils/jutils-details.hpp>
 
 using namespace jni;
 
@@ -126,4 +126,5 @@ void CJNIMainActivity::unregisterMediaButtonEventReceiver()
   call_method<void>(m_context,
                     "unregisterMediaButtonEventReceiver", "()V");
 }
-#endif // !defined(HAVE_QT_GUI)
+#endif // !defined(HAVE_NLC_GUI)
+

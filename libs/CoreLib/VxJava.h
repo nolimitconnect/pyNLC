@@ -1,5 +1,4 @@
-#ifndef VXJAVA_H
-#define VXJAVA_H
+#pragma once
 //============================================================================
 // Copyright (C) 2018 Brett R. Jones
 //
@@ -33,4 +32,3 @@ JavaVM* GetJavaVM();
 
 #endif // TARGET_OS_ANDROID
 
-#endif // VXJAVA_H

@@ -6,14 +6,14 @@
  *  See LICENSES/README.md for more information.
  */
 #include "config_components_kodi.h"
-#if !defined(HAVE_QT_GUI)
+#if !defined(HAVE_NLC_GUI)
 
 #include <stdlib.h>
 #include <errno.h>
 
 #include <android_native_app_glue.h>
 
-#include <platform/qt/qtandroid/jni/SurfaceTexture.h>
+#include <platform/android/jni/SurfaceTexture.h>
 
 #include "CompileInfo.h"
 #include "EventLoop.h"
@@ -201,4 +201,4 @@ extern "C" JNIEXPORT jint JNI_OnLoad(JavaVM *vm, void *reserved)
 
   return version;
 }
-#endif // !defined(HAVE_QT_GUI)
+#endif // !defined(HAVE_NLC_GUI)

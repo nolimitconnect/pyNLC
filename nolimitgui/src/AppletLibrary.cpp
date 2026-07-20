@@ -408,7 +408,7 @@ void AppletLibrary::slotListPlayIconClicked( QListWidgetItem* item )
                 }
 
                 AssetPlaySession playSession( assetInfo );
-                m_MyApp.getPlayerMgr().playMedia( playSession, false );
+                m_MyApp.getPlayerMgr().playMedia( playSession, false, 0, getParentPageFrame() );
             }
             else
             {
@@ -440,7 +440,7 @@ void AppletLibrary::slotListPlayExternIconClicked( QListWidgetItem* item )
                 }
 
                 AssetPlaySession playSession( assetInfo );
-                m_MyApp.getPlayerMgr().playMedia( playSession, true );
+                m_MyApp.getPlayerMgr().playMedia( playSession, true, 0, getParentPageFrame() );
             }
             else
             {

@@ -8,7 +8,7 @@
 
 #pragma once
 
-#include <platform/qt/qtandroid/jni/JNIBase.h>
+#include <platform/android/jni/JNIBase.h>
 
 #include "filesystem/File.h"
 
@@ -37,3 +37,4 @@ namespace jni
   };
 
 }
+

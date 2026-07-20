@@ -90,6 +90,12 @@ SoundFxMgr& GetSndFxMgrInstance( void )
 	return GetAppInstance().getSoundFxMgr();
 }
 
+//============================================================================
+SoundFxMgr::~SoundFxMgr()
+{
+	sndFxMgrShutdown();
+}
+
 //============================================================================ 
 void SoundFxMgr::slotStartPhoneRinging( void )
 {
@@ -138,6 +144,11 @@ void SoundFxMgr::muteNotifySound( bool bMute )
 //============================================================================
 bool SoundFxMgr::sndFxMgrStartup( void )
 {
+	if( m_Initialized )
+	{
+		return true;
+	}
+
     for( int i = 0; i < eMaxSndDef; i++ )
     {
         VxSndInstance* sndInstance = new VxSndInstance( (ESndDef)i, this );
@@ -151,6 +162,21 @@ bool SoundFxMgr::sndFxMgrStartup( void )
 //============================================================================
 bool SoundFxMgr::sndFxMgrShutdown( void )
 {
+	if( !m_SndList.isEmpty() )
+	{
+		for( auto sndInstance : m_SndList )
+		{
+			if( sndInstance )
+			{
+				sndInstance->stopPlay();
+				delete sndInstance;
+			}
+		}
+
+		m_SndList.clear();
+	}
+
+	m_CurSndPlaying = nullptr;
     m_Initialized = false;
 	return true;
 }

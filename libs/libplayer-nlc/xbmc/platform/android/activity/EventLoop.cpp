@@ -6,7 +6,7 @@
  *  See LICENSES/README.md for more information.
  */
 #include "config_components_kodi.h"
-#if !defined(HAVE_QT_GUI)
+#if !defined(HAVE_NLC_GUI)
 
 #include "EventLoop.h"
 #include "XBMCApp.h"
@@ -173,4 +173,4 @@ int32_t CEventLoop::inputCallback(android_app* application, AInputEvent* event)
 
   return eventLoop.processInput(event);
 }
-#endif // !defined(HAVE_QT_GUI)
+#endif // !defined(HAVE_NLC_GUI)

@@ -25,7 +25,7 @@
 #include "utils/log.h"
 
 
-#include "windowing/qt/WinSystemQtContext.h"
+#include "windowing/nlc/WinSystemNlcContext.h"
 
 using namespace KODI;
 
@@ -64,7 +64,7 @@ void CServiceManager::DeinitTesting()
 
 bool CServiceManager::InitStageOne()
 {
-    CWinSystemQtContext::Register();
+    CWinSystemNlcContext::Register();
     //m_playlistPlayer.reset( new PLAYLIST::CPlayListPlayer() );
 
     init_level = 1;

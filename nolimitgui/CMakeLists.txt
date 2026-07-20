@@ -246,12 +246,6 @@ list(APPEND nlc_HEADERS
     src/BottomBarWidget.h
     src/CamTitleBarPreview.h
 
-    src/CamFrameProcessor.h
-    src/CamJavaClient.h
-    src/CamLogic.h
-    src/CamProcessor.h
-    src/CamV4L2.h
-
     src/ChatEntryWidget.h
     src/ClipboardCopyWidget.h
     src/ClipboardPasteWidget.h
@@ -456,11 +450,7 @@ list(APPEND nlc_HEADERS
     src/VxPlainTextEdit.h
     src/WaitingSpinnerWidget.h
     src/WebsiteWidget.h
-    src/VirtStream/VirtProviderFile.h
-    src/VirtStream/VirtStorageProvider.h
-    src/VirtStream/VirtStreamCache.h
-    src/VirtStream/VirtStreamFile.h
-    src/VirtStream/VirtStreamMgr.h
+
    )
 
 set(nlc_SOURCES)
@@ -487,6 +477,7 @@ list(APPEND nlc_SOURCES
     src/AdminAvailMgr.cpp
     src/AppCommon.cpp
     src/AppCommonAudio.cpp
+    src/AppCommonCamCapture.cpp
     src/AppCommonEvents.cpp
     src/AppCommonFileMenu.cpp
     src/AppCommonFileShare.cpp
@@ -496,10 +487,11 @@ list(APPEND nlc_SOURCES
     src/AppCommonNotify.cpp
     src/AppCommonOfferToFriend.cpp
     src/AppCommonRender.cpp
-
     src/AppCommonSignalsAndSlots.cpp
     src/AppDefs.cpp
     src/AppGlobals.cpp
+    src/AppImplementation.cpp
+    src/AppImplementation.h
     src/AppModuleState.cpp
     src/AppSettings.cpp
     src/AppletAboutApp.cpp
@@ -669,12 +661,6 @@ list(APPEND nlc_SOURCES
 
     src/AudioInWaveformWidget.cpp
     src/AudioOutWaveformWidget.cpp
-
-    src/CamFrameProcessor.cpp
-    src/CamJavaClient.cpp
-    src/CamLogic.cpp
-    src/CamProcessor.cpp
-    src/CamV4L2.cpp
 
     src/CamTitleBarPreview.cpp
     src/ChatEntryWidget.cpp
@@ -866,15 +852,7 @@ list(APPEND nlc_SOURCES
     src/VxPlainTextEdit.cpp
     src/WaitingSpinnerWidget.cpp
     src/WebsiteWidget.cpp
-    src/VirtStream/VirtProviderFile.cpp
-    src/VirtStream/VirtStorageProvider.cpp
-    src/VirtStream/VirtStreamCache.cpp
-    src/VirtStream/VirtStreamFile.cpp
-    src/VirtStream/VirtStreamMgr.cpp
-    src/VirtStream/VirtStreamMgrFileIo.cpp
-    src/VirtStream/VirtStreamMgrProvider.cpp
-    ../libs/GuiInterface/ILog.cpp
-    ../libs/GuiInterface/IDefs.cpp
+
    )
 
 set(nlc_FORMS)
@@ -1165,7 +1143,7 @@ endif()
 if(DEFINED TARGET_OS_LINUX)
     target_compile_definitions(nolimitconnect PRIVATE
         # use v4l2 camera capture on linux instead of qt camera which scrables images when linux is running in a vm
-        ENABLE_V4L2_CAM
+        TARGET_OS_LINUX
     )
 
 endif()
@@ -1225,6 +1203,7 @@ target_include_directories(nolimitconnect PUBLIC
     ../libs/ffmpeg
     ../libs/libechocancel
     ../libs/GuiInterface
+    ../libs/VirtStream
     ../libs/libptopengine
     ${CMAKE_CURRENT_SOURCE_DIR}
     ${CMAKE_CURRENT_BINARY_DIR}
@@ -1244,8 +1223,10 @@ target_link_libraries(nolimitconnect
     Qt::Widgets
 
     # static libraries
+    GuiInterface
     audio-nlc
     player-nlc
+    VirtStream
     avdevice
     avfilter
     avformat
@@ -1264,7 +1245,8 @@ target_link_libraries(nolimitconnect
     pktlib
 
     wav-decoder
-    rnnoise
+    rnnoise   
+    CamCapture
 )
 
 if(USE_AEC2)
@@ -1334,7 +1316,7 @@ if (DEFINED TARGET_OS_WINDOWS)
         dwmapi      # Fixes DwmIsCompositionEnabled from player-nlc
         cfgmgr32    # Fixes CM_Get_DevNode_Status from player-nlc
         Setupapi    # Fixes SetupDiGetClassDevsA and related functions from player-nlc
-        glew        # Fixes glew32s static linking on Windows used by OverlayRendererQt.cpp from player-nlc
+        glew        # Fixes glew32s static linking on Windows used by OverlayRendererNlc.cpp from player-nlc
     )
 
 endif()
@@ -1694,7 +1676,7 @@ else()
 
         elseif(DEFINED TARGET_OS_WINDOWS)
             set(CPACK_GENERATOR "NSIS")
-            set(CPACK_NSIS_MUI_ICON "${PROJECT_SRC_ROOT_DIR}/nolimitgui/src/Resources/NlcP2P.ico")
+            set(CPACK_NSIS_MUI_ICON "${PROJECT_SRC_ROOT_DIR}/resources/Resources/NlcP2P.ico")
 
         endif()
 

@@ -8,9 +8,9 @@
 
 #pragma once
 
-#include <platform/qt/qtandroid/jni/Activity.h>
-#include <platform/qt/qtandroid/jni/InputManager.h>
-#include <platform/qt/qtandroid/jni/Rect.h>
+#include <platform/android/jni/Activity.h>
+#include <platform/android/jni/InputManager.h>
+#include <platform/android/jni/Rect.h>
 
 class CJNIMainActivity : public CJNIActivity, public CJNIInputManagerInputDeviceListener
 {
@@ -50,3 +50,4 @@ protected:
   virtual void onDisplayChanged(int displayId)=0;
   virtual void onDisplayRemoved(int displayId)=0;
 };
+

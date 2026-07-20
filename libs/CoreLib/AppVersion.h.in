@@ -8,14 +8,14 @@
 
 // NOTE: if you change the version then change it in 
 // cmake/version.cmake and android/AndroidManifest.xml also
-#define APP_VERSION				"1.1.3"
+#define APP_VERSION				"1.1.4"
 #define APP_MAJOR_VERSION		1
 #define APP_MINOR_VERSION		1
-#define APP_PATCH_VERSION		3
+#define APP_PATCH_VERSION		4
 /* Version number: (major<<16) + (minor<<8) + patch */
 #define APP_VERSION_BINARY		((APP_MAJOR_VERSION<<16) + (APP_MINOR_VERSION<<8) + APP_PATCH_VERSION)
 
-#define PACKAGE_STRING			"NoLimitConnect 1.1.3"
+#define PACKAGE_STRING			"NoLimitConnect 1.1.4"
 
 /* redefine for different library needs */
 #define PACKAGE_BUGREPORT		APP_URL

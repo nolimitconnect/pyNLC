@@ -56,10 +56,9 @@
 #include <NetworkMonitor/NetworkMonitor.h>
 #include <ThumbMgr/ThumbInfo.h>
 
-#include <PktLib/VxCommon.h>
-
 #include <CoreLib/AppVersion.h>
 #include <CoreLib/ConnectId.h>
+#include <CoreLib/InetAddressParse.h>
 #include <CoreLib/IsBigEndianCpu.h>
 #include <CoreLib/VxFileUtil.h>
 #include <CoreLib/VxMemoryUsage.h>
@@ -69,9 +68,10 @@
 #include <CoreLib/VxSktUtil.h>
 #include <CoreLib/VxTime.h>
 
-#include <CoreLib/InetAddressParse.h>
-
 #include <NetLib/VxPeerMgr.h>
+#include <PktLib/VxCommon.h>
+
+#include <GuiInterface/ICamCapture.h>
 
 #include <QApplication>
 #include <QMainWindow>
@@ -251,10 +251,7 @@ AppCommon::AppCommon(	QApplication&	myQApp,
 
 , m_MyIcons( myIcons )
 , m_AppTheme( *this )
-, m_AppStyle( *this, m_AppTheme )
 , m_AppDisplay( *this )
-
-, m_CamLogic( *this )
 
 , m_SoundFxMgr( soundFxMgr )
 
@@ -262,12 +259,14 @@ AppCommon::AppCommon(	QApplication&	myQApp,
 , m_eLastSelectedWhichContactsToView( eFriendViewEverybody )
 , m_bUserCanceledCreateProfile( false )
 , m_LastNetworkState( eNetworkStateTypeUnknown )
-, m_CamCaptureRotation( 0 )
 , m_AppletMgr( *( new AppletMgr( *this, this) ) )
 , m_GuiStartupTimer( new QTimer( this ) )
 {
     g_AppCommon = this; // need a global instance that can accessed immediately with GetAppInstance() for objects created in ui files
 	setGuiThreadId( VxGetCurrentThreadId() );
+
+	// QApplication::setStyle takes ownership and deletes the style.
+	m_AppStyle = new VxAppStyle( *this, m_AppTheme );
 
 #if !defined(TARGET_OS_WINDOWS)
 	// make your application ignore SIGPIPE. that sometimes happens when socket connection is broken
@@ -306,11 +305,11 @@ bool AppCommon::loadWithThread( void )
     // after user has logged into account
 
 	GuiParams::requestPermission("android.permission.RECORD_AUDIO");
-	// once settings has been loaded the audo can be started
+	// once settings has been loaded then the audio can be started
     m_AudioDevicesThread.startThread( (VX_THREAD_FUNCTION_T)AudioDevicesStartupThreadFunc, this, "AudioDevicesStartupThreadFunc" );
 	LogModule( eLogStartup, LOG_VERBOSE, "AppCommon::loadWithThread audio startup thread started at %d ms", GetApplicationAliveMs() );
 
-	getQApplication().setStyle( &m_AppStyle );
+	getQApplication().setStyle( m_AppStyle );
 	LogModule( eLogStartup, LOG_VERBOSE, "AppCommon::loadWithThread style applied at %d ms", GetApplicationAliveMs() );
 
 	int waitAccountMgrStartMs = GetApplicationAliveMs();
@@ -510,6 +509,14 @@ void AppCommon::shutdownAppCommon( void )
 			hasBeenShutdown = true;
 			VxSetAppIsShuttingDown( true );
 
+#if defined(TARGET_OS_ANDROID)
+			// On Android the activity/app context can be torn down before the queued
+			// shutdown slot runs, so stop camera service while the context is still valid.
+			ICamCapture::getICamCapture().shutdownCamCapture();
+#endif // defined(TARGET_OS_ANDROID)
+
+            m_AudioMgr.audioIoSystemShutdown();
+
 			// queued so does not shutdown while dialog is still open
 			emit signalShutdownApp();
 		}
@@ -520,9 +527,11 @@ void AppCommon::shutdownAppCommon( void )
 void AppCommon::slotShutdownApp( void )
 {
 	VxSetAppIsShuttingDown( true );
-	m_CamLogic.shutdownCamLogic();
+
+#if !defined(TARGET_OS_ANDROID)
+	ICamCapture::getICamCapture().shutdownCamCapture();
+#endif // !defined(TARGET_OS_ANDROID)
 	m_SoundFxMgr.sndFxMgrShutdown();
-	m_AudioMgr.audioIoSystemShutdown();
 
 	fromGuiCloseEvent( eMediaModuleAll );
 	ActivityBase* appPlayer = m_AppletMgr.findAppletDialog( eAppletPlayerNlc );
@@ -2114,7 +2123,7 @@ bool AppCommon::checkSystemReady( void )
 		checkReadyToLaunchAfterLogonApplets();
 
 		// qt camera for android is very processor sensitive so start as late as possible
-		//m_CamLogic.camLogicStartup();
+		//m_CamCapture.camLogicStartup();
 	}
 
 	return m_IsGuiSystemReady;

@@ -22,11 +22,11 @@
 #include "guilib/DispResource.h"
 #include "utils/log.h"
 #include "threads/SingleLock.h"
-#if defined(TARGET_OS_ANDROID) && !defined(HAVE_QT_GUI)
+#if defined(TARGET_OS_ANDROID) && !defined(HAVE_NLC_GUI)
 # include "platform/android/activity/XBMCApp.h"
-#elif defined(TARGET_OS_ANDROID) && defined(HAVE_QT_GUI)
-# include "platform/qt/KodiQtApp.h"
-#endif // defined(TARGET_OS_ANDROID) && !defined(HAVE_QT_GUI)
+#elif defined(TARGET_OS_ANDROID) && defined(HAVE_NLC_GUI)
+# include "platform/nlc/KodiNlcApp.h"
+#endif // defined(TARGET_OS_ANDROID) && !defined(HAVE_NLC_GUI)
 
 
 #include "cores/RetroPlayer/process/android/RPProcessInfoAndroid.h"
@@ -39,7 +39,7 @@
 #include "platform/android/powermanagement/AndroidPowerSyscall.h"
 #include "addons/interfaces/platform/android/System.h"
 #include "platform/android/drm/MediaDrmCryptoSession.h"
-#include <platform/qt/qtandroid/jni/MediaCodecList.h>
+#include <platform/android/jni/MediaCodecList.h>
 
 #include <EGL/egl.h>
 #include <EGL/eglplatform.h>

@@ -15,12 +15,15 @@
 #include "ActivityMsgBoxOk.h"
 
 #include <GuiInterface/IFromGui.h>
+#include <GuiInterface/ICamCapture.h>
 
 #include <CoreLib/ObjectCommonDefs.h>
 #include <CoreLib/VxDebug.h>
 #include <CoreLib/VxGlobals.h>
+#include <CoreLib/IGlobalDb.h>
 
 #include <QTimer>
+#include <QSignalBlocker>
 
 #include "ui_AppletCamSettings.h"
 
@@ -35,11 +38,28 @@ AppletCamSettings::AppletCamSettings( AppCommon& app, QWidget* parent )
     ui.m_CamVidWidget->setMediaModule( eMediaModuleCamSettings );
     setTitleBarText( DescribeApplet( m_EAppletType ) );
 
-    if( !m_MyApp.getCamLogic().isCamAvailable() )
+    ICamCapture& camCapture = ICamCapture::getICamCapture();
+    if( !m_MyApp.getCamCaptureReady() )
     {
-        ActivityMsgBoxOk msgBox( m_MyApp, this, QObject::tr( "Camera Capture" ), QObject::tr( "No Camera Source Available." ) );
-        msgBox.exec();
-        return;
+#if defined(TARGET_OS_ANDROID)
+    // Start camera service once login/network is ready so camera devices are enumerated before Cam Settings is opened.
+    ICamCapture::getICamCapture().startupCamCapture();
+#endif // defined(TARGET_OS_ANDROID)
+
+        if( ICamCapture::getICamCapture().isCamCaptureRequested() && !ICamCapture::getICamCapture().isCamCaptureRunning() )
+        {
+            ICamCapture::getICamCapture().setCamCaptureEnable( true );
+        }
+
+        m_MyApp.setCamCaptureReady( true );
+    }
+
+
+
+    if( !camCapture.isCamCaptureAvailable() )
+    {
+        // Android camera enumeration is async and can be empty until permission/service startup completes.
+        LogMsg( LOG_WARN, "%s camera list initially empty", __func__ );
     }
 
     if( m_HisIdent )
@@ -54,9 +74,14 @@ AppletCamSettings::AppletCamSettings( AppCommon& app, QWidget* parent )
     startCamFeed();
     if( m_IsMyself )
     {
+        m_DevicePollTimer = new QTimer( this );
+        m_DevicePollTimer->setInterval( 500 );
+        connect( m_DevicePollTimer, &QTimer::timeout, this, &AppletCamSettings::slotPollVideoDevices );
         updateInVideoDevices();
-        connect( ui.m_InDeviceComboBox, QOverload<int>::of(&QComboBox::activated), this, &AppletCamSettings::inDeviceChanged );
-        connect( ui.m_ApplyVideoInDeviceButton, SIGNAL(clicked()), this, SLOT(slotApplyInDeviceChange()) );
+        connect( ui.m_InDeviceComboBox, &QComboBox::activated, this, &AppletCamSettings::inDeviceChanged );
+        connect( ui.m_ApplyVideoInDeviceButton, &QPushButton::clicked, this, &AppletCamSettings::slotApplyInDeviceChange );
+        m_DevicePollAttempts = 0;
+        m_DevicePollTimer->start();
     }
     else
     {
@@ -72,6 +97,11 @@ AppletCamSettings::AppletCamSettings( AppCommon& app, QWidget* parent )
 //============================================================================
 AppletCamSettings::~AppletCamSettings()
 {
+    if( m_DevicePollTimer )
+    {
+        m_DevicePollTimer->stop();
+    }
+
     m_MyApp.getUserMgr().wantGuiUserUpdateCallbacks( this, false );
     m_MyApp.activityStateChange( this, false );
 }
@@ -96,20 +126,20 @@ void AppletCamSettings::setupCamFeed( VxNetIdent* feedNetIdent )
     ui.m_CamVidWidget->setRecordFriendName( m_CamFeedIdent->getOnlineName() );
     ui.m_CamVidWidget->setVideoFeedId( m_CamFeedId, eMediaModuleCamClient );
 
-    QString bkgFile = m_MyApp.getCamLogic().getCameraBackgroundFile();
+    QString bkgFile = m_MyApp.getCameraBackgroundFile();
     ui.m_CamVidWidget->setImageFromFile( bkgFile );
 }
 
 //============================================================================
 void AppletCamSettings::startCamFeed( void )
 {
-    m_MyApp.getCamLogic().toGuiWantVideoCapture( eMediaModuleCamClient, true );
+    ICamCapture::getICamCapture().wantCamCapture( eMediaModuleCamClient, true );
 }
 
 //============================================================================
 void AppletCamSettings::stopCamFeed( void )
 {
-    m_MyApp.getCamLogic().toGuiWantVideoCapture( eMediaModuleCamClient, false );
+    ICamCapture::getICamCapture().wantCamCapture( eMediaModuleCamClient, false );
 }
 
 //============================================================================
@@ -211,10 +241,21 @@ void AppletCamSettings::callbackOnlineStatusChange( GuiUser* guiUser, bool isOnl
 //============================================================================
 void AppletCamSettings::inDeviceChanged( int index )
 {
-    QString vidInDevDescription = ui.m_InDeviceComboBox->currentText();
-    if( !m_MyApp.getCamLogic().startCamCapture( vidInDevDescription.toUtf8().constData() ) )
+    if( index < 0 )
     {
-        ActivityMsgBoxOk msgBox( m_MyApp, this, QObject::tr( "Video In Device" ), vidInDevDescription + QObject::tr( " failed to initialize" ) );
+        return;
+    }
+
+    QString camId = ui.m_InDeviceComboBox->currentText();
+
+    if( camId.isEmpty() )
+    {
+        return;
+    }
+
+    if( !ICamCapture::getICamCapture().startCamCapture( camId.toUtf8().constData() ) )
+    {
+        ActivityMsgBoxOk msgBox( m_MyApp, this, QObject::tr( "Video In Device" ), camId + QObject::tr( " failed to initialize" ) );
         msgBox.exec();
     }
 }
@@ -222,12 +263,23 @@ void AppletCamSettings::inDeviceChanged( int index )
 //============================================================================
 void AppletCamSettings::updateInVideoDevices( void )
 {
+    QSignalBlocker blocker( ui.m_InDeviceComboBox );
+
+    QString currentSelection = ui.m_InDeviceComboBox->currentText();
     ui.m_InDeviceComboBox->clear();
 
-    std::vector<QString> camList;
-    m_MyApp.getCamLogic().getAvailableCameras( camList );
+    std::vector<std::string> camList;
+    ICamCapture::getICamCapture().getCamCaptureDevices( camList );
 
-    QString defaultCamId = m_MyApp.getAppSettings().getCamSourceId().c_str();
+    bool hasDevices = !camList.empty();
+    ui.m_InDeviceComboBox->setEnabled( hasDevices );
+    ui.m_ApplyVideoInDeviceButton->setEnabled( hasDevices );
+    if( !hasDevices )
+    {
+        return;
+    }
+
+    std::string defaultCamId = IGlobalDb::getIGlobalDb().getCamSourceId();
 
     int defaultIndex = -1;
     int devIndex = 0;
@@ -237,8 +289,13 @@ void AppletCamSettings::updateInVideoDevices( void )
         {
             defaultIndex = devIndex;
         }
+        else if( currentSelection == deviceDesc.c_str() )
+        {
+            defaultIndex = devIndex;
+        }
 
-        ui.m_InDeviceComboBox->addItem( deviceDesc, QVariant::fromValue( devIndex ) );
+        QString cameraId = QString::fromStdString( deviceDesc );
+        ui.m_InDeviceComboBox->addItem( cameraId );
         devIndex++;
     }
 
@@ -249,20 +306,44 @@ void AppletCamSettings::updateInVideoDevices( void )
 }
 
 //============================================================================
+void AppletCamSettings::slotPollVideoDevices( void )
+{
+    updateInVideoDevices();
+
+    if( ui.m_InDeviceComboBox->count() > 0 )
+    {
+        m_DevicePollTimer->stop();
+        return;
+    }
+
+    // Android camera enumeration is async after permission grant; stop polling after a reasonable timeout.
+    m_DevicePollAttempts++;
+    if( m_DevicePollAttempts >= 30 )
+    {
+        m_DevicePollTimer->stop();
+    }
+}
+
+//============================================================================
 void AppletCamSettings::slotApplyInDeviceChange( void )
 {
-    QString vidInDevDescription = ui.m_InDeviceComboBox->currentText();
-    if( !vidInDevDescription.isEmpty() )
+    QString camId = ui.m_InDeviceComboBox->currentData().toString();
+    if( camId.isEmpty() )
     {
-        if( m_MyApp.getCamLogic().startCamCapture( vidInDevDescription.toUtf8().constData() ) )
+        camId = ui.m_InDeviceComboBox->currentText();
+    }
+
+    if( !camId.isEmpty() )
+    {
+        if( ICamCapture::getICamCapture().startCamCapture( camId.toUtf8().constData() ) )
         {
-            m_MyApp.getAppSettings().setCamSourceId( vidInDevDescription.toUtf8().constData() );
-            ActivityMsgBoxOk msgBox( m_MyApp, this, QObject::tr( "Video In Device" ), vidInDevDescription + QObject::tr( " device is saved as preferred Video In Device" ) );
+            IGlobalDb::getIGlobalDb().setCamSourceId( camId.toUtf8().constData() );
+            ActivityMsgBoxOk msgBox( m_MyApp, this, QObject::tr( "Video In Device" ), camId + QObject::tr( " device is saved as preferred Video In Device" ) );
             msgBox.exec();
         }
         else
         {
-            ActivityMsgBoxOk msgBox( m_MyApp, this, QObject::tr( "Video In Device" ), vidInDevDescription + QObject::tr( " failed to initialize" ) );
+            ActivityMsgBoxOk msgBox( m_MyApp, this, QObject::tr( "Video In Device" ), camId + QObject::tr( " failed to initialize" ) );
             msgBox.exec();
         }
     }

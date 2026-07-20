@@ -17,6 +17,7 @@
 #include <CoreLib/IsBigEndianCpu.h>
 
 #include <cmath>
+#include <memory.h>
 
 //============================================================================
 AudioTestToneGenerator::AudioTestToneGenerator( const VxAudioFormat& format, int64_t durationUs, int toneHz )

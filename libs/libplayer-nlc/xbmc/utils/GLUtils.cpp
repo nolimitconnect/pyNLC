@@ -7,7 +7,7 @@
  */
 
 #include "config_components_kodi.h"
-#if defined(HAS_GL) || defined(HAS_GLES)  || defined(HAVE_QT_GUI)
+#if defined(HAS_GL) || defined(HAS_GLES)  || defined(HAVE_NLC_GUI)
 #if defined(TARGET_OS_WINDOWS)
 # include <libglew/include/GL/glew.h>
 #endif // defined(TARGET_OS_WINDOWS)
@@ -310,5 +310,5 @@ uint8_t KODI::UTILS::GL::GetChannelFromARGB(const KODI::UTILS::GL::ColorChannel 
   };
 }
 
-#endif // defined(HAS_GL) || defined(HAS_GLES)  || defined(HAVE_QT_GUI)
+#endif // defined(HAS_GL) || defined(HAS_GLES)  || defined(HAVE_NLC_GUI)
 

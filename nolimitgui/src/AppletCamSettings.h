@@ -46,6 +46,7 @@ signals:
 protected slots:
     void                        inDeviceChanged( int index );
     void                        updateInVideoDevices( void );
+    void                        slotPollVideoDevices( void );
 
     void                        slotApplyInDeviceChange( void );
 
@@ -71,4 +72,6 @@ protected:
     VxNetIdent*                 m_CamFeedIdent{ nullptr };
     VxGUID                      m_CamFeedId;
     bool                        m_CamFeedStarted{ false };
+    QTimer*                     m_DevicePollTimer{ nullptr };
+    int                         m_DevicePollAttempts{ 0 };
 };

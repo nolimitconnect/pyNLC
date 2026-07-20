@@ -16,7 +16,6 @@
 
 class VxFile;
 class VxFileInfoBase;
-class QFileInfo;
 
 class VirtFileMgr
 {
@@ -26,8 +25,6 @@ public:
     virtual bool				fileIsProviderFile( const char* fileNameAndPath ) = 0;
 
     virtual bool                getFileInfo( const char* fileNameAndPath, VxFileInfoBase& retFileInfo ) = 0;
-    virtual bool                qtFileInfoToVxFileInfo( const QFileInfo& fileInfo, VxFileInfoBase& retFileInfo,
-                                                        uint8_t fileFilterMask = VXFILE_TYPE_AUDIO_VIDEO_PHOTO ) = 0;
 
     virtual bool				seperatePathAndFile( const char* fileNameAndPath,		// path and file name
 													 std::string& strRetPath,	// return path to file

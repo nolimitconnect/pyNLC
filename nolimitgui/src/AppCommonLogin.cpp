@@ -28,8 +28,11 @@
 #include <CoreLib/VxParse.h>
 #include <CoreLib/VxPtopUrl.h>
 
+#include <GuiInterface/ICamCapture.h>
+
 #include <QTimer>
 #include <QUuid>
+#include <QCoreApplication>
 
 //============================================================================
 static uint64_t getQuuidLoPart( QUuid& uuid )
@@ -254,9 +257,6 @@ void AppCommon::loadAccountSpecificSettings( const char* userName )
 
     copyAssetsToFoldersIfRequired();
 
-    m_CamSourceId = m_AppSettings.getCamSourceId();
-    m_CamCaptureRotation = m_AppSettings.getCamRotation( m_CamSourceId );
-
     setIsAppInitialized( true );
 
     m_HomeWindow->getLaunchPage()->stopSpinner();
@@ -382,29 +382,19 @@ void AppCommon::checkReadyToLaunchAfterLogonApplets( void )
         m_LauchedAfterLogonApplets = true;
 
 #if defined(TARGET_OS_ANDROID)
-        // Defer Android camera service startup until login/network readiness to avoid heavy JNI/surface work during first window show.
-        if( m_CamLogic.isCamCaptureRequested() )
+        if( !getCamCaptureReady() )
         {
-            m_CamLogic.startupCamLogic();
+            // Start camera service once login/network is ready so camera devices are enumerated before Cam Settings is opened.
+            ICamCapture::getICamCapture().startupCamCapture();
         }
 #endif // defined(TARGET_OS_ANDROID)
 
-        if( m_CamLogic.isCamCaptureRequested() && !m_CamLogic.isCamCaptureRunning() )
+        if( ICamCapture::getICamCapture().isCamCaptureRequested() && !ICamCapture::getICamCapture().isCamCaptureRunning() )
         {
-            m_CamLogic.enableCamCapture( true );
+            ICamCapture::getICamCapture().setCamCaptureEnable( true );
         }
 
-        //EApplet lastLaunchedHomeFrameApplet = getAppSettings().getLastAppletLaunched( eLaunchFrameHome );
-        //if( lastLaunchedHomeFrameApplet != eAppletUnknown )
-        //{
-        //    m_AppletMgr.launchApplet( lastLaunchedHomeFrameApplet, m_AppletMgr.getLaunchParentFrame( eLaunchFrameHome ) );
-        //}
-
-        //EApplet lastLaunchedMessengerFrameApplet = getAppSettings().getLastAppletLaunched( eLaunchFrameMessenger );
-        //if( lastLaunchedMessengerFrameApplet != eAppletUnknown )
-        //{
-        //    m_AppletMgr.launchApplet( lastLaunchedMessengerFrameApplet, m_AppletMgr.getLaunchParentFrame( eLaunchFrameMessenger ) );
-        //}
+        setCamCaptureReady( true );
 
         checkReadyToConnectToLastConnectedHost();
     }

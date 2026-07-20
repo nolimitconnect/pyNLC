@@ -18,6 +18,7 @@
 #include "libwav-decoder/WavMgr.h"
 
 #include <CoreLib/VxDebug.h>
+#include <CoreLib/VxGlobals.h>
 
 namespace
 {
@@ -236,6 +237,12 @@ void VxSndInstance::callbackAudioOutSpaceAvail( int freeSpaceLenBytes )
 //============================================================================
 void VxSndInstance::wantAudioCallbacks( bool wantCallbacks )
 {
+	if( VxIsAppShuttingDown() )
+	{
+		m_EffectsAudioCallbacksRequested = false;
+		return;
+	}
+
 	if( m_EffectsAudioCallbacksRequested != wantCallbacks )
 	{
 		m_EffectsAudioCallbacksRequested = wantCallbacks;

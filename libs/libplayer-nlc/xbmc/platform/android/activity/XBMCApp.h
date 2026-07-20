@@ -19,11 +19,11 @@
 
 #include <android/native_activity.h>
 
-#include <platform/qt/qtandroid/jni/Activity.h>
-#include <platform/qt/qtandroid/jni/AudioManager.h>
-#include <platform/qt/qtandroid/jni/BroadcastReceiver.h>
-//BRJ #include <platform/qt/qtandroid/jni/SurfaceHolder.h>
-#include <platform/qt/qtandroid/jni/View.h>
+#include <platform/android/jni/Activity.h>
+#include <platform/android/jni/AudioManager.h>
+#include <platform/android/jni/BroadcastReceiver.h>
+//BRJ #include <platform/android/jni/SurfaceHolder.h>
+#include <platform/android/jni/View.h>
 
 #include "threads/Event.h"
 #include "interfaces/IAnnouncer.h"
@@ -262,3 +262,4 @@ public:
   void surfaceCreated(CJNISurfaceHolder holder) override;
   void surfaceDestroyed(CJNISurfaceHolder holder) override;
 };
+

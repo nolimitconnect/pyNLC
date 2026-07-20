@@ -83,35 +83,54 @@ bool VxPortForward::m_IsIpv6 = false;
 bool VxPortForward::m_UseIpv6 = false;
 std::string VxPortForward::m_IpAddr("");
 uint16_t VxPortForward::m_Port = 0;
+std::mutex VxPortForward::runCmdMutex;
 std::thread VxPortForward::runUpnpThread;
 bool VxPortForward::m_IsShutdown = false;
+
+namespace
+{
+	// Ensure background UPnP worker is joined before static thread destruction.
+	struct PortForwardShutdownFinalizer
+	{
+		~PortForwardShutdownFinalizer()
+		{
+			VxPortForward::shutdownPortForward();
+		}
+	} g_PortForwardShutdownFinalizer;
+}
 
 //============================================================================
 void VxPortForward::shutdownPortForward( void )
 {
+	std::unique_lock<std::mutex> lock( runCmdMutex );
 	if( !m_IsShutdown )
 	{
 		m_IsShutdown = true;
-		killThread();
+		if( runUpnpThread.joinable() )
+		{
+			std::thread localThread = std::move( runUpnpThread );
+			lock.unlock();
+			localThread.join();
+		}
 	}
 }
 
 //============================================================================
 void VxPortForward::waitForThreadToFinish( void )
 {
+    std::unique_lock<std::mutex> lock( runCmdMutex );
 	if( runUpnpThread.joinable() )
 	{
-		runUpnpThread.join();
+		std::thread localThread = std::move( runUpnpThread );
+		lock.unlock();
+		localThread.join();
 	}
 }
 
 //============================================================================
 void VxPortForward::killThread( void )
 {
-	if( runUpnpThread.joinable() )
-	{
-		runUpnpThread.join();
-	}
+    waitForThreadToFinish();
 }
 
 //============================================================================
@@ -156,24 +175,30 @@ bool VxPortForward::addPortForward( bool ipv6, std::string ipAddr, uint16_t port
 
 	if( port < 80 )
 	{
-		LogModule( eLogPortForward, LOG_DEBUG, "VxPortForward::addPortForward invalid port %s", port );
+		LogModule( eLogPortForward, LOG_DEBUG, "VxPortForward::addPortForward invalid port %d", (int)port );
 		return false;
 	}
 
-	waitForThreadToFinish();
-	bool result = false;
+    std::unique_lock<std::mutex> lock( runCmdMutex );
+	if( runUpnpThread.joinable() )
+	{
+		std::thread localThread = std::move( runUpnpThread );
+		lock.unlock();
+		localThread.join();
+		lock.lock();
+	}
 
 	m_IsIpv6 = ipv6;
+	m_IpAddr = ipAddr;
 	m_Port = port;
 	if( runInThread )
 	{
 		runUpnpThread = std::thread( &doAddPortForward );
 		return true;
 	}
-	else
-	{
-		return doAddPortForward();
-	}
+
+    lock.unlock();
+	return doAddPortForward();
 }
 
 //============================================================================
@@ -213,7 +238,14 @@ bool VxPortForward::removePortForward( bool ipv6, uint16_t port, bool runInThrea
 		return false;
 	}
 
-	waitForThreadToFinish();
+    std::unique_lock<std::mutex> lock( runCmdMutex );
+	if( runUpnpThread.joinable() )
+	{
+		std::thread localThread = std::move( runUpnpThread );
+		lock.unlock();
+		localThread.join();
+		lock.lock();
+	}
 	m_IsIpv6 = ipv6;
 	m_Port = port;
 	if( runInThread )
@@ -221,10 +253,9 @@ bool VxPortForward::removePortForward( bool ipv6, uint16_t port, bool runInThrea
 		runUpnpThread = std::thread( &doRemovePortForward );
 		return true;
 	}
-	else
-	{
-		return doRemovePortForward();
-	}
+
+    lock.unlock();
+	return doRemovePortForward();
 }
 
 //============================================================================
@@ -252,7 +283,14 @@ bool VxPortForward::listPortForward( std::string ipAddr, bool ipv6, bool runInTh
 		LogModule( eLogPortForward, LOG_DEBUG, "VxPortForward::listPortForward not enabled " );
 	}
 
-	waitForThreadToFinish();
+    std::unique_lock<std::mutex> lock( runCmdMutex );
+	if( runUpnpThread.joinable() )
+	{
+		std::thread localThread = std::move( runUpnpThread );
+		lock.unlock();
+		localThread.join();
+		lock.lock();
+	}
 	m_IsIpv6 = ipv6;
 	m_IpAddr = ipAddr;
 	if( runInThread )
@@ -260,10 +298,9 @@ bool VxPortForward::listPortForward( std::string ipAddr, bool ipv6, bool runInTh
 		runUpnpThread = std::thread( &doListPortForward );
 		return true;
 	}
-	else
-	{
-		return doListPortForward();
-	}
+
+    lock.unlock();
+	return doListPortForward();
 }
 
 //============================================================================

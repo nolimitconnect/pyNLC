@@ -28,6 +28,146 @@ function Resolve-LldbServerHostPath {
 
 $ErrorActionPreference = 'Stop'
 
+function Write-LldbModuleLoadCommands {
+    param(
+        [string]$Workspace,
+        [string]$BuildSubdir,
+        [string]$ModuleFileName,
+        [string]$ModuleLoadAddress,
+        [string]$ModulePreferredBase
+    )
+
+    if (-not $Workspace) {
+        return
+    }
+
+    $commandDir = Join-Path $Workspace $BuildSubdir
+    if (-not (Test-Path $commandDir -PathType Container)) {
+        New-Item -ItemType Directory -Path $commandDir -Force | Out-Null
+    }
+
+    $commandFile = Join-Path $commandDir 'android-lldb-module-load.lldb'
+    if ($ModuleLoadAddress -and $ModulePreferredBase) {
+        $modulePath = (Join-Path $commandDir $ModuleFileName).Replace('\', '/')
+        $runtimeBase = [System.Numerics.BigInteger]::Parse($ModuleLoadAddress, [System.Globalization.NumberStyles]::AllowHexSpecifier)
+        $preferredBase = [System.Numerics.BigInteger]::Parse($ModulePreferredBase, [System.Globalization.NumberStyles]::AllowHexSpecifier)
+        $slide = $runtimeBase - $preferredBase
+        $slideHex = $slide.ToString('x')
+        $commands = @(
+            ('target modules load --file "{0}" --slide 0x{1}' -f $modulePath, $slideHex),
+            ('settings append target.exec-search-paths {0}' -f $commandDir.Replace('\', '/'))
+        )
+        Set-Content -Path $commandFile -Value $commands -Encoding Ascii
+        Write-Host ("Wrote LLDB module load commands to: {0} (runtime 0x{1}, preferred 0x{2}, slide 0x{3})" -f $commandFile, $ModuleLoadAddress, $ModulePreferredBase, $slideHex)
+    } else {
+        Set-Content -Path $commandFile -Value '# runtime module load address unavailable' -Encoding Ascii
+        Write-Host ("Wrote empty LLDB module load commands to: {0}" -f $commandFile)
+    }
+}
+
+function Get-ModuleLoadAddress {
+    param(
+        [string]$Adb,
+        [string]$DeviceSerial,
+        [string]$Pkg,
+        [string]$AppPid,
+        [string]$ModuleFileName
+    )
+
+    if (-not $AppPid) {
+        return $null
+    }
+
+    $mapsOutput = & $Adb -s $DeviceSerial shell "run-as $Pkg sh -c 'cat /proc/$AppPid/maps | grep $ModuleFileName'" 2>$null
+    if ($LASTEXITCODE -ne 0 -or -not $mapsOutput) {
+        return $null
+    }
+
+    foreach ($line in $mapsOutput) {
+        if ($line -notmatch [regex]::Escape($ModuleFileName)) {
+            continue
+        }
+
+        if ($line -match '^([0-9a-fA-F]+)-[0-9a-fA-F]+') {
+            return $Matches[1].ToLowerInvariant()
+        }
+    }
+
+    return $null
+}
+
+function Get-ModulePreferredBase {
+    param(
+        [string]$Workspace,
+        [string]$BuildSubdir,
+        [string]$ModuleFileName
+    )
+
+    if (-not $Workspace) {
+        return $null
+    }
+
+    $modulePath = Join-Path (Join-Path $Workspace $BuildSubdir) $ModuleFileName
+    if (-not (Test-Path $modulePath -PathType Leaf)) {
+        return $null
+    }
+
+    $readobjCandidates = @(
+        'F:/Android/Sdk/ndk/27.2.12479018/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-readobj.exe',
+        'F:/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-readobj.exe'
+    )
+
+    $readobj = $readobjCandidates | Where-Object { Test-Path $_ } | Select-Object -First 1
+    if (-not $readobj) {
+        return $null
+    }
+
+    $headers = & $readobj --program-headers $modulePath 2>$null
+    if ($LASTEXITCODE -ne 0 -or -not $headers) {
+        return $null
+    }
+
+    $collectLoad = $false
+    foreach ($line in $headers) {
+        if ($line -match '^\s*Type:\s*PT_LOAD\b') {
+            $collectLoad = $true
+            continue
+        }
+
+        if ($collectLoad -and $line -match '^\s*VirtualAddress:\s*0x([0-9A-Fa-f]+)\s*$') {
+            return $Matches[1].ToLowerInvariant()
+        }
+
+        if ($collectLoad -and $line -match '^\s*Type:\s*') {
+            $collectLoad = $false
+        }
+    }
+
+    return '0'
+}
+
+function Test-LldbServerForwardReady {
+    param(
+        [int]$Port,
+        [int]$TimeoutMs = 2000
+    )
+
+    $client = New-Object System.Net.Sockets.TcpClient
+    try {
+        $asyncResult = $client.BeginConnect('127.0.0.1', $Port, $null, $null)
+        if (-not $asyncResult.AsyncWaitHandle.WaitOne($TimeoutMs, $false)) {
+            return $false
+        }
+
+        $client.EndConnect($asyncResult)
+        return $client.Connected
+    } catch {
+        return $false
+    } finally {
+        $client.Close()
+    }
+}
+
 if ($WorkspaceFolder) {
     $resolvedWorkspace = [System.IO.Path]::GetFullPath($WorkspaceFolder)
     Write-Host ("Workspace folder (resolved): {0}" -f $resolvedWorkspace)
@@ -84,6 +224,24 @@ function Get-ConnectedDeviceSerials {
     return $serials
 }
 
+function Get-FirstConnectedDeviceSerial {
+    param(
+        [string]$Adb
+    )
+
+    $lines = (& $Adb devices) |
+        Select-Object -Skip 1 |
+        Where-Object { $_ -match '\S' }
+
+    foreach ($line in $lines) {
+        if ($line -match '^(\S+)\s+device$') {
+            return $Matches[1]
+        }
+    }
+
+    return $null
+}
+
 function Wait-ForDeviceState {
     param(
         [string]$Adb,
@@ -110,34 +268,24 @@ function Wait-ForDeviceState {
     return $false
 }
 
-$devices = Get-ConnectedDeviceSerials -Adb $AdbPath
-
-if ($devices.Count -eq 0) {
-    if ($env:ANDROID_SERIAL) {
-        $serial = $env:ANDROID_SERIAL
-        Write-Host ("No device currently in 'device' state; waiting up to {0}s for configured serial: {1}" -f $DeviceWaitSeconds, $serial)
-        if (-not (Wait-ForDeviceState -Adb $AdbPath -Serial $serial -TimeoutSeconds $DeviceWaitSeconds)) {
-            $devices = Get-ConnectedDeviceSerials -Adb $AdbPath
-            if ($devices.Count -gt 0) {
-                $serial = $devices[0]
-                Write-Host ("Configured serial {0} unavailable; falling back to connected device: {1}" -f $env:ANDROID_SERIAL, $serial)
-            } else {
-                throw ("Android device '{0}' did not reach state 'device' within {1} seconds." -f $serial, $DeviceWaitSeconds)
-            }
-        }
+$serial = $null
+if ($env:ANDROID_SERIAL) {
+    $configuredSerial = $env:ANDROID_SERIAL.Trim()
+    if ((Get-DeviceState -Adb $AdbPath -Serial $configuredSerial) -eq 'device') {
+        $serial = $configuredSerial
+        Write-Host ("Using configured ANDROID_SERIAL: {0}" -f $serial)
     } else {
-        throw 'No Android device in state device.'
+        $serial = Get-FirstConnectedDeviceSerial -Adb $AdbPath
+        if ($serial) {
+        Write-Host ("Configured serial {0} unavailable; falling back to connected device: {1}" -f $env:ANDROID_SERIAL, $serial)
+        }
     }
 }
 
-if ($env:ANDROID_SERIAL) {
+if (-not $serial) {
+    $serial = Get-FirstConnectedDeviceSerial -Adb $AdbPath
     if (-not $serial) {
-        $serial = $env:ANDROID_SERIAL
-    }
-} else {
-    $serial = $devices[0]
-    if ($devices.Count -gt 1) {
-        Write-Host ("Multiple devices detected: {0}. Using first device: {1}" -f ($devices -join ', '), $serial)
+        throw 'No Android device in state device.'
     }
 }
 
@@ -158,7 +306,60 @@ if ($removeForwardExitCode -ne 0) {
 
 $packageName = $PackageActivity.Split('/')[0]
 
+function Cleanup-StaleDebugProcesses {
+    param(
+        [string]$Adb,
+        [string]$DeviceSerial,
+        [string]$Pkg
+    )
+
+    # Best-effort cleanup: stale lldb-server can keep app process traced/stopped.
+    $previousErrorActionPreference = $ErrorActionPreference
+    $ErrorActionPreference = 'Continue'
+
+    & $Adb -s $DeviceSerial shell "run-as $Pkg sh -c 'pidof lldb-server | xargs -r kill -9'" 2>$null | Out-Null
+    & $Adb -s $DeviceSerial shell "pidof lldb-server | xargs -r kill -9" 2>$null | Out-Null
+
+    $appPidOutput = & $Adb -s $DeviceSerial shell "pidof $Pkg" 2>$null
+    if ($appPidOutput) {
+        $appPids = $appPidOutput.Trim() -split '\s+'
+        foreach ($appPid in $appPids) {
+            if ($appPid) {
+                & $Adb -s $DeviceSerial shell "run-as $Pkg sh -c 'kill -9 $appPid'" 2>$null | Out-Null
+                & $Adb -s $DeviceSerial shell "kill -9 $appPid" 2>$null | Out-Null
+            }
+        }
+    }
+
+    $ErrorActionPreference = $previousErrorActionPreference
+}
+
+function Kill-AppProcess {
+    param(
+        [string]$Adb,
+        [string]$DeviceSerial,
+        [string]$Pkg,
+        [string]$AppPid
+    )
+
+    if (-not $AppPid) {
+        return
+    }
+
+    $previousErrorActionPreference = $ErrorActionPreference
+    $ErrorActionPreference = 'Continue'
+
+    & $Adb -s $DeviceSerial shell "run-as $Pkg sh -c 'kill -9 $AppPid'" 2>$null | Out-Null
+    if ($LASTEXITCODE -ne 0) {
+        & $Adb -s $DeviceSerial shell "kill -9 $AppPid" 2>$null | Out-Null
+    }
+
+    $ErrorActionPreference = $previousErrorActionPreference
+}
+
 if (-not $AttachOnly) {
+    Cleanup-StaleDebugProcesses -Adb $AdbPath -DeviceSerial $serial -Pkg $packageName
+
     Write-Host ("Force-stopping existing app instance for package: {0}" -f $packageName)
     & $AdbPath -s $serial shell am force-stop $packageName
     if ($LASTEXITCODE -ne 0) {
@@ -285,7 +486,10 @@ function Ensure-LldbServerInAppSandbox {
         throw "Could not locate host lldb-server binary in expected Android NDK paths."
     }
 
-    $tmpPath = "/data/local/tmp/nlc-lldb-server"
+    $sandboxName = ('nlc-lldb-server-{0}' -f ([System.Guid]::NewGuid().ToString('N')))
+    $sandboxPath = "./files/$sandboxName"
+
+    $tmpPath = "/data/local/tmp/$sandboxName"
     & $Adb -s $DeviceSerial push $hostLldbServer $tmpPath | Out-Null
     if ($LASTEXITCODE -ne 0) {
         throw "Failed to push lldb-server to device temp path."
@@ -296,19 +500,19 @@ function Ensure-LldbServerInAppSandbox {
         throw "Failed to chmod pushed lldb-server in /data/local/tmp."
     }
 
-    & $Adb -s $DeviceSerial shell "run-as $Pkg sh -c 'cp $tmpPath files/lldb-server && chmod 700 files/lldb-server'" | Out-Null
+    & $Adb -s $DeviceSerial shell "run-as $Pkg sh -c 'mkdir -p files && cp $tmpPath $sandboxPath && chmod 700 $sandboxPath'" | Out-Null
     if ($LASTEXITCODE -eq 0) {
-        return "./files/lldb-server"
+        return $sandboxPath
     }
 
-    Write-Host "run-as copy to app sandbox failed; falling back to /data/local/tmp/nlc-lldb-server"
-    return $tmpPath
+    throw "run-as copy to app sandbox failed for lldb-server executable path: $sandboxPath"
 }
 
 $lldbServerRunPath = Ensure-LldbServerInAppSandbox -Adb $AdbPath -DeviceSerial $serial -Pkg $packageName
 
 $forwarded = $false
 $lastPidTried = $null
+$moduleLoadAddress = $null
 for ($attempt = 1; $attempt -le $DebugSocketWaitSeconds; $attempt++) {
     $appPid = Get-AppPid -Adb $AdbPath -DeviceSerial $serial -Pkg $packageName
 
@@ -319,9 +523,20 @@ for ($attempt = 1; $attempt -le $DebugSocketWaitSeconds; $attempt++) {
 
     $lastPidTried = $appPid
 
-    # Start lldb-server inside app context and attach to the running process.
-    & $AdbPath -s $serial shell "run-as $packageName sh -c '$lldbServerRunPath gdbserver --attach $appPid localhost:$LldbPort >/dev/null 2>&1 &'" | Out-Null
+    if (-not $moduleLoadAddress) {
+        $moduleLoadAddress = Get-ModuleLoadAddress -Adb $AdbPath -DeviceSerial $serial -Pkg $packageName -AppPid $appPid -ModuleFileName 'libnolimitconnect_arm64-v8a.so'
+        if (-not $moduleLoadAddress) {
+            Start-Sleep -Milliseconds 250
+            continue
+        }
+    }
+
+    # Start lldb-server inside app context and detach it so it survives the adb shell session.
+    $attachServerOutput = & $AdbPath -s $serial shell "run-as $packageName sh -c 'nohup $lldbServerRunPath gdbserver --attach $appPid localhost:$LldbPort >/dev/null 2>&1 </dev/null &'" 2>&1
     if ($LASTEXITCODE -ne 0) {
+        if ($attachServerOutput) {
+            Write-Host ($attachServerOutput | Out-String)
+        }
         Start-Sleep -Seconds 1
         continue
     }
@@ -329,15 +544,24 @@ for ($attempt = 1; $attempt -le $DebugSocketWaitSeconds; $attempt++) {
     & $AdbPath -s $serial forward tcp:$LldbPort tcp:$LldbPort | Out-Null
     $forwardExitCode = $LASTEXITCODE
     if ($forwardExitCode -eq 0) {
+        # IMPORTANT: do not open a probe socket to tcp:$LldbPort here.
+        # A probe connection can consume/terminate a one-shot gdbserver session
+        # before CodeLLDB performs the real handshake.
         if (Test-LldbServerRunning -Adb $AdbPath -DeviceSerial $serial -Pkg $packageName) {
             $forwarded = $true
             break
         }
 
-        # Health checks can be inconclusive on some Android builds.
-        # Continue with forwarded socket if attach-only mode is requested.
+        # Give lldb-server a short grace period to appear in process listings.
+        Start-Sleep -Milliseconds 500
+        if (Test-LldbServerRunning -Adb $AdbPath -DeviceSerial $serial -Pkg $packageName) {
+            $forwarded = $true
+            break
+        }
+
+        # Some devices block process listing under run-as; trust forward in attach-only mode.
         if ($AttachOnly) {
-            Write-Host "Attach-only mode: lldb-server health check inconclusive, proceeding with forwarded socket."
+            Write-Host "Attach-only mode: lldb-server visibility inconclusive; proceeding with forwarded socket."
             $forwarded = $true
             break
         }
@@ -348,7 +572,27 @@ for ($attempt = 1; $attempt -le $DebugSocketWaitSeconds; $attempt++) {
 }
 
 if (-not $forwarded) {
+    if ($StopAfterLaunch -and -not $AttachOnly -and $lastPidTried) {
+        Write-Host ("Attach failed; killing app pid {0} so it does not remain running between launches." -f $lastPidTried)
+        Kill-AppProcess -Adb $AdbPath -DeviceSerial $serial -Pkg $packageName -AppPid $lastPidTried
+    }
     throw "Failed to start/attach lldb-server for package $packageName (last pid tried: $lastPidTried)"
+}
+
+$modulePreferredBase = $null
+if ($resolvedWorkspace) {
+    $modulePreferredBase = Get-ModulePreferredBase -Workspace $resolvedWorkspace -BuildSubdir 'build/android-arm64-debug/nolimitgui' -ModuleFileName 'libnolimitconnect_arm64-v8a.so'
+}
+if (-not $moduleLoadAddress) {
+    Write-Host 'Could not determine runtime load address for libnolimitconnect_arm64-v8a.so.'
+}
+
+if (-not $modulePreferredBase) {
+    Write-Host 'Could not determine preferred load address for libnolimitconnect_arm64-v8a.so.'
+}
+
+if ($resolvedWorkspace) {
+    Write-LldbModuleLoadCommands -Workspace $resolvedWorkspace -BuildSubdir 'build/android-arm64-debug/nolimitgui' -ModuleFileName 'libnolimitconnect_arm64-v8a.so' -ModuleLoadAddress $moduleLoadAddress -ModulePreferredBase $modulePreferredBase
 }
 
 Write-Host ("Forwarded tcp:{0} to device tcp:{0} (attached pid: {1})" -f $LldbPort, $lastPidTried)

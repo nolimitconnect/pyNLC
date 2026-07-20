@@ -6,7 +6,7 @@
  *  See LICENSES/README.md for more information.
  */
 #include "config_components_kodi.h"
-#if !defined(HAVE_QT_GUI)
+#if !defined(HAVE_NLC_GUI)
 
 #include "JNIXBMCJsonHandler.h"
 
@@ -15,8 +15,8 @@
 #include "interfaces/json-rpc/JSONServiceDescription.h"
 #include "interfaces/json-rpc/JSONUtils.h"
 
-#include <platform/qt/qtandroid/jni/jutils-details.hpp>
-#include <platform/qt/qtandroid/jni/Context.h>
+#include <platform/android/jni/jutils/jutils-details.hpp>
+#include <platform/android/jni/Context.h>
 
 using namespace jni;
 
@@ -80,4 +80,5 @@ bool CJNIXBMCJsonHandler::CJNIClient::SetAnnouncementFlags(int flags)
 {
   return false;
 }
-#endif // !defined(HAVE_QT_GUI)
+#endif // !defined(HAVE_NLC_GUI)
+

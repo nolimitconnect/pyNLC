@@ -80,10 +80,10 @@ typedef uint32_t NlcColor;
 template <typename T> class NlcRectGen;
 typedef NlcRectGen<float>  NlcRect;
 
-class CTextureQt;
-class CGUITextureQt;
+class CTextureNlc;
+class CGUITextureNlc;
 class CTextureBase;
-class CGUIFontTTFQt;
+class CGUIFontTTFNlc;
 class CScreenshotSurface;
 
 class INlcRender
@@ -96,26 +96,26 @@ public:
     //=== textures ===//
     virtual void                setActiveGlTexture( unsigned int activeTextureNum /* 0 == GL_TEXTURE0 , 1 == GL_TEXTURE1 etc*/ )  = 0;
 
-    virtual void                createTextureObject( CTextureQt * texture ) = 0;
-    virtual void                destroyTextureObject( CTextureQt * texture ) = 0;
-    virtual bool                loadToGPU( CTextureQt * texture ) = 0;
-    virtual void                bindToUnit( CTextureQt * texture, unsigned int unit ) = 0;
+    virtual void                createTextureObject( CTextureNlc * texture ) = 0;
+    virtual void                destroyTextureObject( CTextureNlc * texture ) = 0;
+    virtual bool                loadToGPU( CTextureNlc * texture ) = 0;
+    virtual void                bindToUnit( CTextureNlc * texture, unsigned int unit ) = 0;
 
-    virtual void                beginGuiTexture( CGUITextureQt * guiTexture, NlcColor color ) = 0;
-    virtual void                drawGuiTexture( CGUITextureQt * textrue, float * x, float * y, float * z, const NlcRect& texture, const NlcRect& diffuse, int orientation ) = 0;
-    virtual void                endGuiTexture( CGUITextureQt * guiTexture ) = 0;
+    virtual void                beginGuiTexture( CGUITextureNlc * guiTexture, NlcColor color ) = 0;
+    virtual void                drawGuiTexture( CGUITextureNlc * textrue, float * x, float * y, float * z, const NlcRect& texture, const NlcRect& diffuse, int orientation ) = 0;
+    virtual void                endGuiTexture( CGUITextureNlc * guiTexture ) = 0;
 
     virtual void                drawQuad( const NlcRect &rect, NlcColor color, CTextureBase * texture, const NlcRect * texCoords ) = 0;
 
-    virtual bool                firstBegin( CGUIFontTTFQt * font ) = 0;
-    virtual void                lastEnd( CGUIFontTTFQt * font ) = 0;
+    virtual bool                firstBegin( CGUIFontTTFNlc * font ) = 0;
+    virtual void                lastEnd( CGUIFontTTFNlc * font ) = 0;
 
-    virtual CVertexBuffer       createVertexBuffer( CGUIFontTTFQt * font, const std::vector<SVertex>& vertices) = 0;
-    virtual void                destroyVertexBuffer( CGUIFontTTFQt * font, CVertexBuffer& vertBuffer ) = 0;
+    virtual CVertexBuffer       createVertexBuffer( CGUIFontTTFNlc * font, const std::vector<SVertex>& vertices) = 0;
+    virtual void                destroyVertexBuffer( CGUIFontTTFNlc * font, CVertexBuffer& vertBuffer ) = 0;
 
-    virtual void                deleteHardwareTexture( CGUIFontTTFQt * font ) = 0;
-    virtual void                createStaticVertexBuffers( CGUIFontTTFQt * font ) = 0;
-    virtual void                destroyStaticVertexBuffers( CGUIFontTTFQt * font ) = 0;
+    virtual void                deleteHardwareTexture( CGUIFontTTFNlc * font ) = 0;
+    virtual void                createStaticVertexBuffers( CGUIFontTTFNlc * font ) = 0;
+    virtual void                destroyStaticVertexBuffers( CGUIFontTTFNlc * font ) = 0;
 
     //=== remder ===//
     virtual void                captureScreen( CScreenshotSurface * screenCaptrue, NlcRect& captureArea ) = 0;

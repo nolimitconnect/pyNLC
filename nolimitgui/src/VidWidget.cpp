@@ -21,10 +21,13 @@
 
 #include <P2PEngine/P2PEngine.h>
 
+#include <CoreLib/IGlobalDb.h>
 #include <CoreLib/VxDebug.h>
 #include <CoreLib/VxFileUtil.h>
 #include <CoreLib/VxTime.h>
 #include <CoreLib/VxTimeUtil.h>
+
+#include <GuiInterface/ICamCapture.h>
 
 #include <QDebug>
 #include <QTimer>
@@ -73,7 +76,7 @@ VidWidget::VidWidget(QWidget* parent)
     m_ThumbnailPreview->setImageFromFile( ":/AppRes/Resources/web_cam_buffering.png" );
 
 	ui.m_CamSourceButton->setIcon( eMyIconCamSelectNormal );
-	ui.m_CamSourceButton->setEnabled( m_MyApp.getCamLogic().getCameraCount() > 1 );
+	ui.m_CamSourceButton->setEnabled( ICamCapture::getICamCapture().getCameraCount() > 1 );
 	ui.m_CamRotateButton->setIcon( eMyIconCamRotateNormal );
 	ui.m_ImageRotateButton->setIcon( eMyIconImageRotateNormal );
 
@@ -109,7 +112,7 @@ VidWidget::VidWidget(QWidget* parent)
 	connect( ui.m_CamSourceButton,		SIGNAL(clicked()),			this, SLOT(slotCamSourceButtonClicked()) );
 	connect( ui.m_CamEnableButton,		SIGNAL(clicked()),			this, SLOT(slotCamEnableButtonClicked()) );
 
-	ui.m_CamSourceButton->setEnabled( m_MyApp.getCamLogic().getCameraCount() > 1 );
+	ui.m_CamSourceButton->setEnabled( ICamCapture::getICamCapture().getCameraCount() > 1 );
 
     showUserMsgLabel( false );
 	showOfflineImage();
@@ -287,7 +290,7 @@ void VidWidget::applyVideoUiMode( void )
 //============================================================================
 void VidWidget::showOfflineImage( void )
 {
-	QString bkgFile = m_MyApp.getCamLogic().getCameraBackgroundFile();
+	QString bkgFile = m_MyApp.getCameraBackgroundFile();
 	ui.m_VideoScreen->setImageFromFile( bkgFile );
 }
 
@@ -469,14 +472,14 @@ void VidWidget::slotFeedRotateButtonClicked( void )
 		return;
 	}
 
-	int feedRotation = m_AppSettings.getVidFeedRotation();
+	int feedRotation = IGlobalDb::getIGlobalDb().getVidFeedRotation();
 	feedRotation += 90;
 	if( feedRotation >= 360 )
 	{
 		feedRotation = 0;
 	}
 
-	m_AppSettings.setVidFeedRotation( feedRotation );
+	IGlobalDb::getIGlobalDb().setVidFeedRotation( feedRotation );
 	updateVidFeedImageRotation();
 	m_MyApp.toGuiUserMessage( "Contact Feed Rotation %d", feedRotation );
 	emit signalFeedRotationChanged( feedRotation );
@@ -485,23 +488,15 @@ void VidWidget::slotFeedRotateButtonClicked( void )
 //============================================================================
 void VidWidget::updateVidFeedImageRotation( void )
 {
-	int feedRotation = m_AppSettings.getVidFeedRotation();
+	int feedRotation = IGlobalDb::getIGlobalDb().getVidFeedRotation();
 	setVidImageRotation( feedRotation );
 }
 
 //============================================================================
 void VidWidget::slotCamRotateButtonClicked( void )
 {
-    std::string camId = m_AppSettings.getCamSourceId();
-	int camRotation = m_AppSettings.getCamRotation( camId );
-	camRotation += 90;
-	if( camRotation >= 360 )
-	{
-		camRotation = 0;
-	}
-
-	m_AppSettings.setCamRotation( camId, camRotation );
-	m_MyApp.setCamCaptureRotation( camRotation );
+	int camRotation = ICamCapture::getICamCapture().rotateCurrentCamCapture();
+    
 	m_MyApp.toGuiUserMessage( "My Cam Rotation %d", camRotation );
 	emit signalCamRotationChanged( camRotation );
 }
@@ -853,20 +848,20 @@ void VidWidget::slotRecNormalButtonClicked( void )
 //============================================================================
 void VidWidget::slotCamSourceButtonClicked( void )
 {
-	m_MyApp.getCamLogic().nextCamera();
+	ICamCapture::getICamCapture().nextCamera();
 }
 
 //============================================================================
 void VidWidget::slotCamEnableButtonClicked( void )
 {
-	m_MyApp.getCamLogic().setCameraEnable(!m_MyApp.getCamLogic().getCameraEnable());
+	ICamCapture::getICamCapture().setCamCaptureEnable(!ICamCapture::getICamCapture().getCamCaptureEnable());
 	updateCamEnable();
 }
 
 //============================================================================
 void VidWidget::updateCamEnable( void )
 {
-	if( m_MyApp.getCamLogic().getCameraEnable() )
+	if( ICamCapture::getICamCapture().getCamCaptureEnable() )
 	{
 		ui.m_CamEnableButton->setIcon( eMyIconCamcorderCancel );
 	}

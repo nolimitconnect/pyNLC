@@ -31,8 +31,8 @@
 #include <math.h>
 
 
-#if defined(HAVE_QT_GUI)
-# include "rendering/qt/RenderSystemQt.h"
+#if defined(HAVE_NLC_GUI)
+# include "rendering/qt/RenderSystemNlc.h"
 #elif defined(HAS_GL)
 #include "rendering/gl/RenderSystemGL.h"
 #elif defined(HAS_GLES)

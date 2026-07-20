@@ -17,6 +17,7 @@
 #include <CoreLib/VxDebug.h>
 
 #include <cmath>
+#include <memory.h>
 
 //=============================================================================
 int64_t AudioUtils::audioDurationUs( const VxAudioFormat& format, int64_t bytes )

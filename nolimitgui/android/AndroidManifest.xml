@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="org.nolimitconnect.nolimitconnect" android:installLocation="auto" android:versionCode="10103" android:versionName="1.01.03">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="org.nolimitconnect.nolimitconnect" android:installLocation="auto" android:versionCode="10104" android:versionName="1.01.04">
     <!-- %%INSERT_PERMISSIONS -->
     <!-- %%INSERT_FEATURES -->
     <uses-feature android:name="android.hardware.camera"/>

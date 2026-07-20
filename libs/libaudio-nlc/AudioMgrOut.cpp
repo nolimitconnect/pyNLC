@@ -13,6 +13,8 @@
 #include "AudioDefs.h"
 #include "AudioUtils.h"
 
+#include <algorithm>
+
 #include <GuiInterface/IToGui.h>
 
 #include <CoreLib/VxDebug.h>
@@ -128,8 +130,9 @@ void AudioMgr::callbackReadSpeakerData( int16_t* pcmData, int sampleCnt )
 
         const uint64_t queueHighWater = m_SpeakerQueueHighWatermark.exchange( 0 );
         const uint64_t missing = ( requested > copied ) ? ( requested - copied ) : 0;
+        const bool issuesDetected = ( underflows > 0 || overflows > 0 || missing > 0 );
 
-        if( underflows > 0 || overflows > 0 || missing > 0 )
+        if( issuesDetected && !m_SpeakerIssueReported )
         {
             LogMsg( LOG_WARNING, "%s: Detected speaker issues! underflows=%llu overflows=%llu requested=%llu copied=%llu missing=%llu pendingQ_highwater=%llu",
                 __func__,
@@ -139,6 +142,12 @@ void AudioMgr::callbackReadSpeakerData( int16_t* pcmData, int sampleCnt )
                 static_cast<unsigned long long>( copied ),
                 static_cast<unsigned long long>( missing ),
                 static_cast<unsigned long long>( queueHighWater ) );
+
+            m_SpeakerIssueReported = true;
+        }
+        else if( !issuesDetected )
+        {
+            m_SpeakerIssueReported = false;
         }
 
         if( m_SpeakerJitterStatsEnable )
@@ -200,6 +209,7 @@ void AudioMgr::stopAudioOutWorker( void )
     m_SpeakerCopiedSamples = 0;
     m_SpeakerQueueHighWatermark = 0;
     m_LastSpeakerStatsLogMs = 0;
+    m_SpeakerIssueReported = false;
 }
 
 //============================================================================

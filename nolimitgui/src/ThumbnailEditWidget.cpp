@@ -26,6 +26,9 @@
 #include <CoreLib/VxDebug.h>
 #include <CoreLib/VxGlobals.h>
 #include <CoreLib/VxTime.h>
+
+#include <GuiInterface/ICamCapture.h>
+
 #include <VxVideoLib/VxVideoLib.h>
 
 #include <QMessageBox>
@@ -58,7 +61,7 @@ ThumbnailEditWidget::ThumbnailEditWidget( QWidget* parent )
     connect( ui.m_TakeSnapshotButton, SIGNAL(clicked()), this, SLOT(slotSnapShotButClick() ) );
     connect( ui.m_BrowsePictureButton, SIGNAL(clicked()), this, SLOT(slotBrowseButClick() ) );
 
-    m_CameraSourceAvail = m_MyApp.getCamLogic().isCamAvailable();
+    m_CameraSourceAvail = ICamCapture::getICamCapture().isCamCaptureAvailable();
 }
 
 //============================================================================

@@ -1329,7 +1329,7 @@ AEAudioFormat CActiveAE::GetInputFormat( AEAudioFormat *desiredFmt )
 
 //    if( m_streams.empty() )
 //    {
-//#ifdef HAVE_QT_GUI
+//#ifdef HAVE_NLC_GUI
 //        // BRJ
 //        inputFormat.m_sampleRate = 48000;
 //		inputFormat.m_dataFormat = AE_FMT_FLOAT;
@@ -2882,8 +2882,8 @@ void CActiveAE::LoadSettings()
 {
     const std::shared_ptr<CSettings> settings = CServiceBroker::GetSettingsComponent()->GetSettings();
 
-    m_settings.device = "AESinkQt:AESinkQt";
-    m_settings.passthroughdevice = "AESinkQt";
+    m_settings.device = "AESinkNlc:AESinkNlc";
+    m_settings.passthroughdevice = "AESinkNlc";
     m_settings.config = 2; // 1 == AE_CONFIG_FIXED ( hard coded sample rate ), 2 == AE_CONFIG_AUTO
     m_settings.channels = 2; // although we want 2 channels we need to set to 1 .. will get changed to 2
     m_settings.samplerate = 48000;

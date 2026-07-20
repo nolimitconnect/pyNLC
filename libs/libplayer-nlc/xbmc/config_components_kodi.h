@@ -17,7 +17,7 @@
 # define XBMC_FORCE_INLINE // donot use NLC_FORCE_INLINE.. __forceinline causes errors if not declared in correct place
 #endif
 
-# define HAVE_QT_GUI            1 // define if have qt application interface and rendering
+# define HAVE_NLC_GUI            1 // define if have qt application interface and rendering
 
 # define BUILD_KODI_MAIN        1
 
@@ -96,11 +96,11 @@
 #define HAS_VISUALISATION       1
 
 //#define HAS_SDL_JOYSTICK  // define for joystick control
-# ifndef HAVE_QT_GUI
+# ifndef HAVE_NLC_GUI
 #  ifndef HAS_DX
 #   define HAS_DX 1
 #  endif // HAS_DX
-# endif // HAVE_QT_GUI
+# endif // HAVE_NLC_GUI
 
 
 #ifdef HAS_OPTICAL_DRIVE
@@ -191,11 +191,11 @@
 
 
 // #define HAS_SDL_JOYSTICK  // define for joystick control
-# ifndef HAVE_QT_GUI
+# ifndef HAVE_NLC_GUI
 #  ifndef HAS_DX
 #   define HAS_DX 1
 #  endif // HAS_DX
-# endif // HAVE_QT_GUI
+# endif // HAVE_NLC_GUI
 
 #if defined(TARGET_OS_WINDOWS)
     #define THREADFUNC unsigned __stdcall
@@ -246,9 +246,9 @@
 # ifdef HAVE_DBUS
 #  define HAS_DBUS
 # endif
-# ifndef HAVE_QT_GUI
+# ifndef HAVE_NLC_GUI
 #  define HAS_GL
-# endif // HAVE_QT_GUI
+# endif // HAVE_NLC_GUI
 # ifdef HAVE_X11
 #  define HAS_GLX
 #  define HAS_X11_WIN_EVENTS
@@ -279,9 +279,9 @@
 #undef HAS_LINUX_EVENTS
 #undef HAS_LIRC
 //#define HAS_ZEROCONF // Defined in NlcCompilerConfig.h
-//# if defined(HAVE_QT_GUI)
+//# if defined(HAVE_NLC_GUI)
 //#  define HAS_AVAHI
-//# endif // defined(HAVE_QT_GUI)
+//# endif // defined(HAVE_NLC_GUI)
 #endif
 
 //============================================================================

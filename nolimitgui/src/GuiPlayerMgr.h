@@ -39,9 +39,9 @@ public:
 
 	void						playerMgrStartup( void );
 
-	bool						playFile( QString fileNameAndPath, int pos0to100000, bool isStream, bool useExternPlayer );
-	bool						playMedia( AssetBaseInfo& assetInfo, bool useExternPlayer, int pos0to100000 = 0 );
-	bool						playStream( AssetBaseInfo& assetInfo, VxGUID lclSessionId, int pos0to100000 = 0 );
+	bool						playFile( QString fileNameAndPath, int pos0to100000, bool isStream, bool useExternPlayer, QWidget* launchParent = nullptr );
+	bool						playMedia( AssetBaseInfo& assetInfo, bool useExternPlayer, int pos0to100000 = 0, QWidget* launchParent = nullptr );
+	bool						playStream( AssetBaseInfo& assetInfo, VxGUID lclSessionId, int pos0to100000 = 0, QWidget* launchParent = nullptr );
 
 	// if feedOnlineId is empty then want all callbacks
 	void                        wantPlayVideoCallbacks( VxGUID& feedOnlineId, GuiPlayerCallback* client, bool enable );

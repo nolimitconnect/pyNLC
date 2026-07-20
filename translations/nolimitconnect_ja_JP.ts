@@ -3960,129 +3960,129 @@ File Type: </source>
             <translation>ノーリミット接続</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="756" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2379" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="765" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2344" />
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1388" />
             <source>Unknown Error</source>
             <translation>不明なエラー</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="757" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="766" />
             <source>ERROR:
 </source>
             <translation>エラー:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="761" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="770" />
             <source>Failed to connect to Network host</source>
             <translation>ネットワークホストへの接続に失敗しました</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="764" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="773" />
             <source>Failed to connect to Connection Test host</source>
             <translation>接続テストホストへの接続に失敗しました</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="767" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="776" />
             <location filename="../nolimitgui/src/AssetVideoWidget.cpp" line="250" />
             <source>Video Play Failed</source>
             <translation>ビデオの再生に失敗しました</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="770" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="779" />
             <location filename="../nolimitgui/src/AssetVoiceWidget.cpp" line="223" />
             <source>Audio Play Failed</source>
             <translation>オーディオの再生に失敗しました</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="773" />
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="777" />
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="781" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="782" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="786" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="790" />
             <source>Sound In Device Error</source>
             <translation>サウンドインデバイスエラー</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="774" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="783" />
             <source>No Microphone Devices Available</source>
             <translation>使用可能なマイクデバイスがありません</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="778" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="787" />
             <source>Microphone Device Out Of Range</source>
             <translation>マイクデバイスが範囲外です</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="782" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="791" />
             <source>Failed to Initialize Microphone Device</source>
             <translation>マイクデバイスの初期化に失敗しました</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="785" />
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="789" />
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="793" />
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="797" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="794" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="798" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="802" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="806" />
             <source>Sound Out Device Error</source>
             <translation>サウンドアウトデバイスエラー</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="786" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="795" />
             <source>No Speaker Devices Available</source>
             <translation>使用可能なスピーカー デバイスがありません</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="790" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="799" />
             <source>Speaker Device Out Of Range</source>
             <translation>スピーカーデバイスが範囲外です</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="794" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="803" />
             <source>Failed to Initialize Speaker Device</source>
             <translation>スピーカーデバイスの初期化に失敗しました</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="798" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="807" />
             <source>Speaker Device Invalid Format</source>
             <translation>スピーカーデバイスのフォーマットが無効です</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="802" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="811" />
             <source>Echo Delay Test Error</source>
             <translation>エコー遅延テストエラー</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="803" />
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="809" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="812" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="818" />
             <source>Echo Delay Results (ms) </source>
             <translation>エコー遅延の結果 (ミリ秒) </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="808" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="817" />
             <source>Echo Delay Test Success</source>
             <translation>エコー遅延テストの成功</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="1285" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="1294" />
             <source>Close Application</source>
             <translation>アプリケーションを閉じる</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="1286" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="1295" />
             <source>Are you sure you want to exit?</source>
             <translation>終了してもよろしいですか?</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="1392" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="1401" />
             <location filename="../nolimitgui/src/ChatEntryWidget.cpp" line="363" />
             <source>Application Error</source>
             <translation>アプリケーションエラー</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommonMedia.cpp" line="123" />
+            <location filename="../nolimitgui/src/AppCommonCamCapture.cpp" line="93" />
             <source>Web Cam Video</source>
             <translation>ウェブカメラビデオ</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommonMedia.cpp" line="123" />
+            <location filename="../nolimitgui/src/AppCommonCamCapture.cpp" line="93" />
             <source>No Video Capture Devices Found</source>
             <translation>ビデオ キャプチャ デバイスが見つかりません</translation>
         </message>
@@ -4882,44 +4882,42 @@ File Type: </source>
             <translation>=== 無効化されたプラグイン ===</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="40" />
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="158" />
-            <location filename="../nolimitgui/src/AppletSnapshot.cpp" line="86" />
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="176" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="160" />
+            <location filename="../nolimitgui/src/AppletSnapshot.cpp" line="87" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="179" />
             <source>Camera Capture</source>
             <translation>カメラキャプチャ</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="40" />
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="158" />
-            <location filename="../nolimitgui/src/AppletSnapshot.cpp" line="86" />
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="176" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="160" />
+            <location filename="../nolimitgui/src/AppletSnapshot.cpp" line="87" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="179" />
             <source>No Camera Source Available.</source>
             <translation>利用可能なカメラ ソースがありません。</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="217" />
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="260" />
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="265" />
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="271" />
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="258" />
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="341" />
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="346" />
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="352" />
             <source>Video In Device</source>
             <translation>ビデオ入力デバイス</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="217" />
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="265" />
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="258" />
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="346" />
             <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="271" />
             <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="296" />
             <source> failed to initialize</source>
             <translation>初期化に失敗しました</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="260" />
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="341" />
             <source> device is saved as preferred Video In Device</source>
             <translation> デバイスは優先ビデオ入力デバイスとして保存されます</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="271" />
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="352" />
             <source>No Video In Device Is Available</source>
             <translation>利用可能なビデオ入力デバイスがありません</translation>
         </message>
@@ -5015,7 +5013,7 @@ File Type: </source>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletCreateAccount.cpp" line="96" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1444" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1409" />
             <source>Application</source>
             <translation>アプリケーション</translation>
         </message>
@@ -5037,69 +5035,69 @@ Do you want to exit the application?</source>
 アプリケーションを終了しますか?</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="67" />
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="81" />
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="125" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="69" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="83" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="127" />
             <location filename="../nolimitgui/src/ChatEntryWidget.cpp" line="198" />
             <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="208" />
             <source>Failed To Read Image File </source>
             <translation>画像ファイルの読み込みに失敗しました </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="68" />
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="82" />
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="126" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="70" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="84" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="128" />
             <location filename="../nolimitgui/src/ChatEntryWidget.cpp" line="199" />
             <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="209" />
             <source>Error Reading Image</source>
             <translation>画像読み取りエラー</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="117" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="119" />
             <location filename="../nolimitgui/src/ChatEntryWidget.cpp" line="189" />
             <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="200" />
             <source>Open Image</source>
             <translation>画像を開く</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="175" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="177" />
             <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="113" />
             <source>Failed to read snapshot </source>
             <translation>スナップショットの読み取りに失敗しました </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="176" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="178" />
             <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="114" />
             <source>Error Reading snapshot</source>
             <translation>スナップショットの読み取りエラー</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="202" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="204" />
             <source>Failed to write into </source>
             <translation>への書き込みに失敗しました </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="203" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="205" />
             <source>Error Writing</source>
             <translation>書き込みエラー</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="227" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="229" />
             <source>About Me Change</source>
             <translation>私についての変更</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="228" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="230" />
             <source>Applied About Me Changes </source>
             <translation>自己紹介の変更を適用しました </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="229" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="231" />
             <source>Failed</source>
             <translation>失敗しました</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="229" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="231" />
             <source>Success</source>
             <translation>成功</translation>
         </message>
@@ -5155,7 +5153,7 @@ Do you want to exit the application?</source>
             <location filename="../nolimitgui/src/AppletFileOfferSelect.cpp" line="289" />
             <location filename="../nolimitgui/src/AppletFileOfferSelect.cpp" line="323" />
             <location filename="../nolimitgui/src/AppletLibrary.cpp" line="359" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2390" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2355" />
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1358" />
             <source>File Not Found</source>
             <translation>ファイルが見つかりません</translation>
@@ -6157,8 +6155,8 @@ Remove this item from My Library and asset database?</source>
             <location filename="../nolimitgui/src/AppletLibrary.cpp" line="694" />
             <location filename="../nolimitgui/src/AppletLibrary.cpp" line="771" />
             <location filename="../nolimitgui/src/AppletLibrary.cpp" line="807" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2266" />
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="104" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2231" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="107" />
             <source>Could not get thumbnail file info</source>
             <translation>サムネイルファイル情報を取得できませんでした</translation>
         </message>
@@ -6166,9 +6164,9 @@ Remove this item from My Library and asset database?</source>
             <location filename="../nolimitgui/src/AppletLibrary.cpp" line="695" />
             <location filename="../nolimitgui/src/AppletLibrary.cpp" line="772" />
             <location filename="../nolimitgui/src/AppletLibrary.cpp" line="808" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2261" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2267" />
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="105" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2226" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2232" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="108" />
             <source>Error occured creating thumbnail asset </source>
             <translation>サムネイル アセットの作成中にエラーが発生しました </translation>
         </message>
@@ -6665,25 +6663,25 @@ If the Network Key is incorrect, you will probably be banned as a hacker.</sourc
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletPeerViewSharedFiles.cpp" line="466" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2601" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2566" />
             <source>Confirm Shred File</source>
             <translation>細断ファイルの確認</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletPeerViewSharedFiles.cpp" line="466" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2601" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2566" />
             <source>Confirm Delete File</source>
             <translation>ファイル削除の確認</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletPeerViewSharedFiles.cpp" line="470" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2605" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2570" />
             <source>Are You Sure You Want To Write Random Data Into The File Then Delete From The Device?</source>
             <translation>ランダムなデータをファイルに書き込んでからデバイスから削除してもよろしいですか?</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletPeerViewSharedFiles.cpp" line="474" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2609" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2574" />
             <source>Are You Sure To Delete The File From The Device?</source>
             <translation>ファイルをデバイスから削除してもよろしいですか?</translation>
         </message>
@@ -6703,51 +6701,51 @@ If the Network Key is incorrect, you will probably be banned as a hacker.</sourc
             <translation>ビデオファイルを再生できませんでした</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="240" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="207" />
             <source>Unknown Media File Type</source>
             <translation>不明なメディア ファイル タイプ</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="292" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="259" />
             <source>Media Player empty file list</source>
             <translation>メディアプレーヤーの空のファイルリスト</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="314" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="281" />
             <source>Media Player could not play file</source>
             <translation>メディアプレーヤーがファイルを再生できませんでした</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="319" />
-            <location filename="../nolimitgui/src/AppletPlayerNlcBase.cpp" line="204" />
-            <location filename="../nolimitgui/src/AppletPlayerNlcBase.cpp" line="360" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="286" />
+            <location filename="../nolimitgui/src/AppletPlayerNlcBase.cpp" line="207" />
+            <location filename="../nolimitgui/src/AppletPlayerNlcBase.cpp" line="363" />
             <source>File does not exist</source>
             <translation>ファイルが存在しません</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="326" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="293" />
             <source>Exception playing</source>
             <translation>例外再生中</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="366" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="333" />
             <source>Media Player not read</source>
             <translation>メディアプレーヤーが読み込まれていません</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="366" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="333" />
             <source>Try again when Media Player is ready</source>
             <translation>メディアプレーヤーの準備ができたらもう一度お試しください</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="422" />
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="459" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="386" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="423" />
             <source>Could not read file</source>
             <translation>ファイルを読み取れませんでした</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="422" />
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="459" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="386" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="423" />
             <source>Failed to get file info</source>
             <translation>ファイル情報の取得に失敗しました</translation>
         </message>
@@ -7372,170 +7370,170 @@ If the Network Key is incorrect, you will probably be banned as a hacker.</sourc
             <translation>画像ファイルの選択</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="410" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="387" />
             <source>Cannot Read File</source>
             <translation>ファイルを読み取れません</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1389" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1395" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1401" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1407" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1413" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1419" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1425" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1354" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1360" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1366" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1372" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1378" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1384" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1390" />
             <source>Invalid User Name</source>
             <translation>無効なユーザー名</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1389" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1354" />
             <source>User Name cannot have NoLimitConnect in name.</source>
             <translation>ユーザー名に NoLimitConnect を含めることはできません。</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1395" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1360" />
             <source>User Name cannot have special character quote.</source>
             <translation>ユーザー名に特殊文字の引用符を含めることはできません。</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1401" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1366" />
             <source>User Name cannot have comma.</source>
             <translation>ユーザー名にカンマを含めることはできません。</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1407" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1372" />
             <source>User Name cannot have special character parentheses.</source>
             <translation>ユーザー名には特殊文字の括弧を含めることはできません。</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1413" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1378" />
             <source>User Name cannot have special character slashes.</source>
             <translation>ユーザー名には特殊文字のスラッシュを含めることはできません。</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1419" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1384" />
             <source>User Name is too long (maximum 31 chars).</source>
             <translation>ユーザー名が長すぎます (最大 31 文字)。</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1425" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1390" />
             <source>User Name is too short (minimum 4 chars).</source>
             <translation>ユーザー名が短すぎます (最低 4 文字)。</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1444" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1409" />
             <source>Mood Message is too long (maximum 31 chars)</source>
             <translation>ムードメッセージが長すぎます (最大 31 文字)</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1456" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1462" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1421" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1427" />
             <source>Age Verify</source>
             <translation>年齢確認</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1456" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1421" />
             <source>Invalid Age</source>
             <translation>無効な年齢です</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1462" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1427" />
             <source>Age Connot be greater than 120 years old</source>
             <translation>年齢 120 歳を超えないこと</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2260" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2225" />
             <source>Could not create thumbnail asset</source>
             <translation>サムネイル アセットを作成できませんでした</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2319" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2284" />
             <source>User Unavailable</source>
             <translation>ユーザーが利用できません</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2320" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2285" />
             <source>User </source>
             <translation>ユーザー </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2320" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2285" />
             <source> Is Unavailable</source>
             <translation> 利用できません</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2324" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2289" />
             <source>User is offline</source>
             <translation>ユーザーはオフラインです</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2325" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2290" />
             <source>User is no longer connected</source>
             <translation>ユーザーはもう接続されていません</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2329" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2294" />
             <source>Already In A Session</source>
             <translation>すでにセッション中です</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2330" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2295" />
             <source>Already in session. Please close existing session and try again</source>
             <translation>すでにセッション中です。既存のセッションを閉じて再試行してください</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2334" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2335" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2299" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2300" />
             <source>Session not found</source>
             <translation>セッションが見つかりません</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2339" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2304" />
             <source>Sent User An Offer</source>
             <translation>ユーザーにオファーを送信しました</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2340" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2305" />
             <source>Offer Was Sent To  </source>
             <translation>オファーの送信先  </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2344" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2309" />
             <source>Send Offer Failed</source>
             <translation>オファーの送信に失敗しました</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2345" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2310" />
             <source>Offer Send Failed  </source>
             <translation>オファーの送信に失敗しました  </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2349" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2314" />
             <source>Not Connected</source>
             <translation>接続されていません</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2350" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2315" />
             <source>You are not connected to host </source>
             <translation>ホストに接続されていません </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2354" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2319" />
             <source>No User Selected</source>
             <translation>ユーザーが選択されていません</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2355" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2320" />
             <source>You must select a user to send to </source>
             <translation>送信先のユーザーを選択する必要があります </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2359" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2324" />
             <source>Purge Everthing Warning</source>
             <translation>すべてをパージする警告</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2360" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2325" />
             <source>This action will delete everything not locked including Identity, Downloaded Files, Storyboard, Message History Etc.
 The action cannot be undone
 Are you very sure you want to proceed?</source>
@@ -7544,221 +7542,221 @@ Are you very sure you want to proceed?</source>
 続行してもよろしいですか?</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2364" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2329" />
             <source>Voice Message Too Short</source>
             <translation>音声メッセージが短すぎます</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2365" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2330" />
             <source>The Voice Message was too short and will not be sent.</source>
             <translation>ボイスメッセージが短すぎるため、送信されません。</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2369" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2334" />
             <source>Video clip Too Short</source>
             <translation>ビデオクリップが短すぎます</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2370" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2335" />
             <source>The Video Clip was too short and will not be sent.</source>
             <translation>ビデオクリップは短すぎるため、送信されません。</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2374" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2339" />
             <source>Video record failed to start</source>
             <translation>ビデオ録画を開始できませんでした</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2375" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2340" />
             <source>Video record failed to start.</source>
             <translation>ビデオ録画を開始できませんでした。</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2380" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2345" />
             <source>Unknown Error </source>
             <translation>不明なエラー </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2380" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2345" />
             <source> for user </source>
             <translation> ユーザーにとって </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2391" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2356" />
             <source>File Name Is Empty</source>
             <translation>ファイル名が空です</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2399" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2400" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2364" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2365" />
             <source>Access File Permissions Denied By User</source>
             <translation>ファイルへのアクセス許可がユーザーによって拒否されました</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2408" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2373" />
             <source>Application Not Ready</source>
             <translation>アプリケーションの準備ができていません</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2409" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2374" />
             <source>Cannot launch applet until network is available</source>
             <translation>ネットワークが利用可能になるまでアプレットを起動できません</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2409" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2374" />
             <source>Cannot Launch Applet Until Application Has Initialized</source>
             <translation>アプリケーションが初期化されるまでアプレットを起動できません</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2417" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2382" />
             <source>Requires Open Port</source>
             <translation>オープンポートが必要です</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2418" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2383" />
             <source>Action requires a open port</source>
             <translation>アクションには開いているポートが必要です</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2426" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2435" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2391" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2400" />
             <source>Invalid Invite</source>
             <translation>無効な招待です</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2427" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2392" />
             <source>The invite is invalid</source>
             <translation>招待は無効です</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2436" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2401" />
             <source>Cannot accept invite from myself</source>
             <translation>自分からの招待を受け入れることができません</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2444" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2409" />
             <source>Invalid User</source>
             <translation>無効なユーザー</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2445" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2410" />
             <source>Could not find the user</source>
             <translation>ユーザーが見つかりませんでした</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2453" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2418" />
             <source>User Not Online</source>
             <translation>ユーザーがオンラインではありません</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2454" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2419" />
             <source>The user is not currently online</source>
             <translation>ユーザーは現在オンラインではありません</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2462" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2427" />
             <source>Friendship Level To Low</source>
             <translation>友好度が低い</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2463" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2428" />
             <source>Requires friendship of friend or higher</source>
             <translation>フレンド以上の友情が必要です</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2471" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2436" />
             <source>Invalid Host Id</source>
             <translation>無効なホストID</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2472" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2437" />
             <source>Host Id has not been set</source>
             <translation>ホストIDが設定されていません</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2480" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2445" />
             <source>Invalid URL</source>
             <translation>無効な URL</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2481" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2446" />
             <source>The host url is not valid</source>
             <translation>ホスト URL が無効です</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2489" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2454" />
             <source>Invalid Host Type</source>
             <translation>無効なホストタイプ</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2490" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2455" />
             <source>The host url does not have a vailid host type</source>
             <translation>ホスト URL には有効なホスト タイプがありません</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2498" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2463" />
             <source>No Members Online</source>
             <translation>オンラインのメンバーはいません</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2499" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2464" />
             <source>There are no members online to send to</source>
             <translation>オンラインに送信できるメンバーがいません</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2507" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2561" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2472" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2526" />
             <source>Failed to add asset</source>
             <translation>アセットの追加に失敗しました</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2508" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2562" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2473" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2527" />
             <source>Failed to add asset. Please check disk space</source>
             <translation>アセットの追加に失敗しました。ディスク容量を確認してください</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2517" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2482" />
             <source>Failed to send </source>
             <translation>送信に失敗しました </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2518" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2483" />
             <source>Failed to send to </source>
             <translation>に送信できませんでした </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2528" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2493" />
             <source>No members to send to</source>
             <translation>送信するメンバーがいません</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2532" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2497" />
             <source>Admin is offline</source>
             <translation>管理者はオフラインです</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2536" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2501" />
             <source>Cannot send to self</source>
             <translation>自分自身に送信できません</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2540" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2505" />
             <source>Invalid host or state</source>
             <translation>無効なホストまたは状態</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2544" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2509" />
             <source>Unknown reason</source>
             <translation>不明な理由</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2552" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2517" />
             <source>Cannot send </source>
             <translation>送信できません </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2553" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2518" />
             <source>Cannot send reason: </source>
             <translation>送信できない理由: </translation>
         </message>
@@ -10165,12 +10163,12 @@ Are you very sure you want to proceed?</source>
             <translation> オフラインです</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiPlayerMgr.cpp" line="231" />
+            <location filename="../nolimitgui/src/GuiPlayerMgr.cpp" line="229" />
             <source>Attempted to play an executable which is not allowed</source>
             <translation>許可されていない実行可能ファイルを再生しようとしました</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiPlayerMgr.cpp" line="237" />
+            <location filename="../nolimitgui/src/GuiPlayerMgr.cpp" line="235" />
             <source>Attempted to open an archive file which is not allowed</source>
             <translation>許可されていないアーカイブ ファイルを開こうとしました</translation>
         </message>
@@ -10275,28 +10273,28 @@ Are you very sure you want to proceed?</source>
             <translation> 敢えて: </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="69" />
-            <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="91" />
+            <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="71" />
+            <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="93" />
             <source>Photo Snapshot Error</source>
             <translation>写真スナップショットエラー</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="69" />
+            <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="71" />
             <source>Photo Unavailable</source>
             <translation>写真が利用できません</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="81" />
+            <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="83" />
             <source>Failed to write photo to file </source>
             <translation>写真をファイルに書き込めませんでした </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="82" />
+            <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="84" />
             <source>Error Writing Photo To File</source>
             <translation>写真をファイルに書き込むときにエラーが発生しました</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="91" />
+            <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="93" />
             <source>Photo File Not Found</source>
             <translation>写真ファイルが見つかりません</translation>
         </message>
@@ -10415,38 +10413,38 @@ No one can connect to you directly</source>
             <translation>不明なアプレット </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="110" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="113" />
             <source>Could not save thumbnail image</source>
             <translation>サムネイル画像を保存できませんでした</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="111" />
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="150" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="114" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="153" />
             <source>Error occured saving thumbnail to file </source>
             <translation>サムネイルをファイルに保存中にエラーが発生しました </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="143" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="146" />
             <source>Could not update thumbnail asset</source>
             <translation>サムネイル アセットを更新できませんでした</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="144" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="147" />
             <source>Error occured update thumbnail asset </source>
             <translation>サムネイル アセットの更新中にエラーが発生しました </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="149" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="152" />
             <source>Could not save updated thumbnail image</source>
             <translation>更新されたサムネイル画像を保存できませんでした</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="155" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="158" />
             <source>thumbnail id was invalid</source>
             <translation>サムネイルIDが無効でした</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="156" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="159" />
             <source>Error occured updatin thumbnail </source>
             <translation>サムネイルの更新中にエラーが発生しました </translation>
         </message>

@@ -62,6 +62,7 @@ public:
 
 protected:
     virtual AssetBaseInfo*     createAssetInfo( EAssetType assetType, const char* assetName, const char* fileNameAndPath, uint64_t assetLen ) = 0;
+    virtual AssetBaseInfo*     createAssetInfo( EAssetType assetType, const char* assetName, const char* fileNameAndPath, uint64_t assetLen, VxGUID& assetGUID ) = 0;
     virtual AssetBaseInfo*     createAssetInfo( AssetBaseInfo& assetInfo ) = 0;
 
 	virtual int32_t				onCreateTables( int iDbVersion );

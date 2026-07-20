@@ -29,9 +29,9 @@
 #include "rendering/RenderSystem.h"
 #include "utils/MemUtils.h"
 
-#if defined(HAVE_QT_GUI)
-#include "TextureQt.h"
-#endif // !defined(HAVE_QT_GUI)
+#if defined(HAVE_NLC_GUI)
+#include "TextureNlc.h"
+#endif // !defined(HAVE_NLC_GUI)
 
 #include <CoreLib/VxMemUtils.h>
 
@@ -524,5 +524,5 @@ std::unique_ptr<CTextureBase>  CTextureBase::CreateTexture( unsigned int width,
                                                             unsigned int height,
                                                             XB_FMT format )
 {
-    return std::make_unique<CTextureQt>(CTextureQt(width, height, format));
+    return std::make_unique<CTextureNlc>(CTextureNlc(width, height, format));
 }

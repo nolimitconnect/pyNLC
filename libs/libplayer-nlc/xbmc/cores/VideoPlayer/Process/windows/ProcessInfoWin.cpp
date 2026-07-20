@@ -32,13 +32,13 @@ EINTERLACEMETHOD CProcessInfoWin::GetFallbackDeintMethod()
 
 std::vector<AVPixelFormat> CProcessInfoWin::GetRenderFormats()
 {
-#ifdef HAVE_QT_GUI
+#ifdef HAVE_NLC_GUI
     auto processor = Windowing()->m_processorFormats;
     auto shaders = Windowing()->m_shaderFormats;
 #else
     auto processor = DX::Windowing()->m_processorFormats;
     auto shaders = DX::Windowing()->m_shaderFormats;
-#endif// HAVE_QT_GUI
+#endif// HAVE_NLC_GUI
 
 
     std::set<AVPixelFormat> formats;

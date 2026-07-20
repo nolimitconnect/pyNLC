@@ -101,20 +101,8 @@ public:
     void						setLastHostSearchContentRating( ESearchType searchType, EContentRating contentRating );
     void						getLastHostSearchContentRating( ESearchType searchType, EContentRating& contentRating );
 
-	void						setCamEnable( bool camEnable );
-	bool						getCamEnable( void );
-
-	void						setCamSourceId( std::string camId );
-	std::string					getCamSourceId( void );
-
 	void						setCamShowPreview( bool showPreview );
 	bool						getCamShowPreview( void );
-
-	void						setCamRotation( std::string camId, uint32_t camRotation );
-	uint32_t					getCamRotation( std::string camId );
-
-	void						setVidFeedRotation( uint32_t feedRotation );
-	uint32_t					getVidFeedRotation( void );
 
     void						setLastAppletLaunched( ELaunchFrame launchPage, EApplet applet );
     EApplet						getLastAppletLaunched( ELaunchFrame launchPage );

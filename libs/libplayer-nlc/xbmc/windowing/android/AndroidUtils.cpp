@@ -7,13 +7,13 @@
  */
 #include <stdlib.h>
 
-#include <platform/qt/qtandroid/jni/SystemProperties.h>
-#include <platform/qt/qtandroid/jni/Display.h>
-#include <platform/qt/qtandroid/jni/View.h>
-#include <platform/qt/qtandroid/jni/Window.h>
-#include <platform/qt/qtandroid/jni/WindowManager.h>
-#include <platform/qt/qtandroid/jni/Build.h>
-#include <platform/qt/qtandroid/jni/System.h>
+#include <platform/android/jni/SystemProperties.h>
+#include <platform/android/jni/Display.h>
+#include <platform/android/jni/View.h>
+#include <platform/android/jni/Window.h>
+#include <platform/android/jni/WindowManager.h>
+#include <platform/android/jni/Build.h>
+#include <platform/android/jni/System.h>
 
 #include <EGL/egl.h>
 
@@ -32,11 +32,11 @@
 #include "ServiceBroker.h"
 #include "utils/StringUtils.h"
 #include "utils/SysfsUtils.h"
-#if defined(TARGET_OS_ANDROID) && !defined(HAVE_QT_GUI)
+#if defined(TARGET_OS_ANDROID) && !defined(HAVE_NLC_GUI)
 # include "platform/android/activity/XBMCApp.h"
-#elif defined(TARGET_OS_ANDROID) && defined(HAVE_QT_GUI)
-# include "platform/qt/KodiQtApp.h"
-#endif // defined(TARGET_OS_ANDROID) && !defined(HAVE_QT_GUI)
+#elif defined(TARGET_OS_ANDROID) && defined(HAVE_NLC_GUI)
+# include "platform/nlc/KodiNlcApp.h"
+#endif // defined(TARGET_OS_ANDROID) && !defined(HAVE_NLC_GUI)
 
 
 static bool s_hasModeApi = false;

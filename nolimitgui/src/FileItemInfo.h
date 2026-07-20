@@ -44,7 +44,7 @@ public:
 
 	bool						getIsMediaFile( void )					{ return m_FileInfo.getIsMediaFile(); }
 	bool						getIsVideoFile( void )					{ return m_FileInfo.getIsVideoFile(); }
-	bool						getIsAudoFile( void )					{ return m_FileInfo.getIsAudioFile(); }
+	bool						getIsAudioFile( void )					{ return m_FileInfo.getIsAudioFile(); }
 	bool						getIsImageFile( void )					{ return m_FileInfo.getIsImageFile(); }
 
 	void 						setAssetId( VxGUID& assetId )			{ m_FileInfo.setAssetId( assetId ); }

@@ -8,9 +8,9 @@
 
 #pragma once
 
-#include <platform/qt/qtandroid/jni/JNIBase.h>
+#include <platform/android/jni/JNIBase.h>
 
-#include <platform/qt/qtandroid/jni/NsdManager.h>
+#include <platform/android/jni/NsdManager.h>
 
 namespace jni
 {
@@ -40,4 +40,5 @@ protected:
 };
 
 }
+
 

@@ -17,8 +17,8 @@
 
 #include <GuiInterface/NlcRenderFrame.h>
 
-#include "guilib/TextureQt.h"
-#include "guilib/GUITextureQt.h"
+#include "guilib/TextureNlc.h"
+#include "guilib/GUITextureNlc.h"
 
 #include "ServiceBroker.h"
 #include "rendering/RenderSystem.h"
@@ -139,7 +139,7 @@ void RenderGlWidget::setActiveGlTexture( unsigned int activeTextureNum )
 }
  
  //============================================================================
-void RenderGlWidget::createTextureObject( CTextureQt * texture )
+void RenderGlWidget::createTextureObject( CTextureNlc * texture )
 {
     getGlFunctions()->glGenTextures( 1, ( GLuint* )&texture->m_texture );
 
@@ -147,12 +147,12 @@ void RenderGlWidget::createTextureObject( CTextureQt * texture )
 }
 
 //============================================================================
-void RenderGlWidget::destroyTextureObject( CTextureQt * texture )
+void RenderGlWidget::destroyTextureObject( CTextureNlc * texture )
 {
 }
 
 //============================================================================
-bool RenderGlWidget::loadToGPU( CTextureQt * texture )
+bool RenderGlWidget::loadToGPU( CTextureNlc * texture )
 {
     if( !texture || !texture->m_pixels )
     {
@@ -324,14 +324,14 @@ bool RenderGlWidget::loadToGPU( CTextureQt * texture )
 }
 
 //============================================================================
-void RenderGlWidget::bindToUnit( CTextureQt * texture, unsigned int unit )
+void RenderGlWidget::bindToUnit( CTextureNlc * texture, unsigned int unit )
 {
       getGlFunctions()->glActiveTexture( GL_TEXTURE0 + unit );
       getGlFunctions()->glBindTexture( GL_TEXTURE_2D, texture->m_texture );
 }
 
 //============================================================================
-void RenderGlWidget::beginGuiTexture( CGUITextureQt * guiTexture, NlcColor color )
+void RenderGlWidget::beginGuiTexture( CGUITextureNlc * guiTexture, NlcColor color )
 {
     VerifyGLStateQt();
 
@@ -401,7 +401,7 @@ void RenderGlWidget::beginGuiTexture( CGUITextureQt * guiTexture, NlcColor color
 }
 
 //============================================================================
-void RenderGlWidget::drawGuiTexture( CGUITextureQt * guiTexture, float * x, float * y, float * z, const NlcRect& textureRect, const NlcRect& diffuse, int orientation )
+void RenderGlWidget::drawGuiTexture( CGUITextureNlc * guiTexture, float * x, float * y, float * z, const NlcRect& textureRect, const NlcRect& diffuse, int orientation )
 {
     VerifyGLStateQt();
 
@@ -492,7 +492,7 @@ void RenderGlWidget::drawGuiTexture( CGUITextureQt * guiTexture, float * x, floa
 }
 
 //============================================================================
-void RenderGlWidget::endGuiTexture( CGUITextureQt * guiTexture )
+void RenderGlWidget::endGuiTexture( CGUITextureNlc * guiTexture )
 {
     VerifyGLStateQt();
 

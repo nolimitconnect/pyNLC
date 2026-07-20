@@ -6,7 +6,7 @@
  *  See LICENSES/README.md for more information.
  */
 #include "config_kodi.h"
-#if !defined(HAVE_QT_GUI)
+#if !defined(HAVE_NLC_GUI)
 
 #include <algorithm>
 #include <utility>
@@ -369,4 +369,4 @@ bool CAndroidJoystickState::GetAxesIndex(const std::vector<int>& axisIds, const 
   axesIndex = std::distance(axes.begin(), axesIt);
   return true;
 }
-#endif // !defined(HAVE_QT_GUI)
+#endif // !defined(HAVE_NLC_GUI)

@@ -379,53 +379,6 @@ void AppSettings::getLastHostSearchContentRating( ESearchType searchType, EConte
 }
 
 //============================================================================
-void AppSettings::setCamRotation( std::string camId, uint32_t camRotation )
-{
-	std::string camKey;
-	StdStringFormat( camKey, "CamRotation%s", camId.c_str() );
-	setIniValue( camKey.c_str(), camRotation );
-}
-
-//============================================================================
-uint32_t AppSettings::getCamRotation( std::string camId )
-{
-	uint32_t camRotation = 0;
-	std::string camKey;
-	StdStringFormat( camKey, "CamRotation%s", camId.c_str() );
-	getIniValue( camKey.c_str(), camRotation, 0 );
-	return camRotation;
-}
-
-//============================================================================
-void AppSettings::setCamEnable( bool camEnableIn )
-{
-	uint32_t camEnable = camEnableIn ? 1 : 0;
-	setIniValue( "CamEnable", camEnable );
-}
-
-//============================================================================
-bool AppSettings::getCamEnable( void )
-{
-	uint32_t camEnable = 0;
-	getIniValue( "CamEnable", camEnable, 1 );
-	return camEnable ? true : false;
-}
-
-//============================================================================
-void AppSettings::setCamSourceId( std::string camId )
-{
-	setIniValue( "CamSourceId", camId );
-}
-
-//============================================================================
-std::string AppSettings::getCamSourceId( void )
-{
-	std::string camSourceId;
-	getIniValue( "CamSourceId", camSourceId, "" );
-	return camSourceId;
-}
-
-//============================================================================
 void AppSettings::setCamShowPreview( bool showPreview )
 {
 	uint32_t showPreviewVal = showPreview ? 1 : 0;
@@ -438,20 +391,6 @@ bool AppSettings::getCamShowPreview( void )
 	uint32_t showPreview = 0;
 	getIniValue( "CamShowPreview", showPreview, 0 );
 	return showPreview ? true : false;
-}
-
-//============================================================================
-void AppSettings::setVidFeedRotation( uint32_t feedRotation )
-{
-	setIniValue( "VidFeedRotation", feedRotation );
-}
-
-//============================================================================
-uint32_t AppSettings::getVidFeedRotation( void )
-{
-	uint32_t feedRotation = 0;
-	getIniValue( "VidFeedRotation", feedRotation, 0 );
-	return feedRotation;
 }
 
 //============================================================================

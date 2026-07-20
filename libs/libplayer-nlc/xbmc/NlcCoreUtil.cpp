@@ -39,15 +39,15 @@
 #include <unistd.h>
 #include <sys/wait.h>
 #endif
-#if defined(TARGET_OS_ANDROID) && !defined(HAVE_QT_GUI)
+#if defined(TARGET_OS_ANDROID) && !defined(HAVE_NLC_GUI)
 # include <android/bionic_supplement/bionic_supplement.h>
 # include <android/activity/XBMCApp.h>
 # include <android/jni/ApplicationInfo.h>
 # include "CompileInfo.h"
-#elif defined(TARGET_OS_ANDROID) && defined(HAVE_QT_GUI)
-# include <platform/qt/qtandroid/bionic_supplement/bionic_supplement.h>
-# include <platform/qt/qtandroid/activity/XBMCApp.h>
-# include <platform/qt/qtandroid/jni/ApplicationInfo.h>
+#elif defined(TARGET_OS_ANDROID) && defined(HAVE_NLC_GUI)
+# include <platform/nlc/android/bionic_supplement/bionic_supplement.h>
+# include <platform/nlc/android/activity/XBMCApp.h>
+# include <platform/nlc/android/jni/ApplicationInfo.h>
 # include "CompileInfo.h"
 #endif
 

@@ -25,6 +25,12 @@ AssetBaseInfo* ThumbInfoDb::createAssetInfo( EAssetType assetType, const char* a
 }
 
 //============================================================================
+AssetBaseInfo* ThumbInfoDb::createAssetInfo( EAssetType assetType, const char* assetName, const char* fileNameAndPath, uint64_t assetLen, VxGUID& assetId )
+{
+    return new ThumbInfo( assetName, fileNameAndPath, assetLen, assetId );
+}
+
+//============================================================================
 AssetBaseInfo* ThumbInfoDb::createAssetInfo( AssetBaseInfo& assetInfo )
 {
     return new ThumbInfo( assetInfo );

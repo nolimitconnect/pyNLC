@@ -36,6 +36,12 @@ AudioMgr::AudioMgr()
 }
 
 //============================================================================
+AudioMgr::~AudioMgr()
+{
+    audioIoSystemShutdown();
+}
+
+//============================================================================
 void AudioMgr::audioIoSystemStartup()
 {
     if( !m_AudioIoInitialized )
@@ -73,12 +79,34 @@ void AudioMgr::audioIoSystemStartup()
 //============================================================================
 void AudioMgr::audioIoSystemShutdown()
 {
+    // Cancel timers first so no deferred callbacks race shutdown.
+    m_AudioTestTimer.stop();
+    cancelDeferredAudioOutDisable();
+    m_PlayerNlcSpeakerDisablePending = false;
+
+    // Stop input immediately and join worker if needed.
+    enableAudioIn( false );
+    if( m_AudioInWorkerThread.joinable() )
+    {
+        stopAudioInWorker();
+    }
+
+    // Force immediate output stop for process shutdown; do not defer for drain.
+    setIsSpeakerWanted( false );
+    if( m_EnableAudioOut )
+    {
+        m_EnableAudioOut = false;
+        m_AudioOutIo.stopAudioOutHardware();
+        stopAudioOutWorker();
+    }
+    else if( m_AudioOutWorkerThread.joinable() )
+    {
+        stopAudioOutWorker();
+    }
+
     if( m_AudioIoInitialized )
     {
-        enableAudioIn( false );
-        enableAudioOut( false );
         m_AudioIoInitialized = false;
-
         m_AudioInIo.audioInShutdown();
         m_AudioOutIo.audioOutShutdown();
         shutdownMiniAudio();

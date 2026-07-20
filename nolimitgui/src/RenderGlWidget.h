@@ -114,26 +114,26 @@ public:
     //=== textures ===//
     void                        setActiveGlTexture( unsigned int activeTextureNum = 0 /* 0 == GL_TEXTURE0 , 1 == GL_TEXTURE1 etc*/ ) override;
 
-    void                        createTextureObject( CTextureQt * texture ) override;
-    void                        destroyTextureObject( CTextureQt * texture ) override;
-    bool                        loadToGPU( CTextureQt * texture ) override;
-    void                        bindToUnit( CTextureQt * texture, unsigned int unit ) override;
+    void                        createTextureObject( CTextureNlc * texture ) override;
+    void                        destroyTextureObject( CTextureNlc * texture ) override;
+    bool                        loadToGPU( CTextureNlc * texture ) override;
+    void                        bindToUnit( CTextureNlc * texture, unsigned int unit ) override;
 
-    void                        beginGuiTexture( CGUITextureQt * guiTexture, NlcColor color ) override;
-    void                        drawGuiTexture( CGUITextureQt * textrue, float * x, float * y, float * z, const NlcRect& texture, const NlcRect& diffuse, int orientation ) override;
-    void                        endGuiTexture( CGUITextureQt * guiTexture ) override;
+    void                        beginGuiTexture( CGUITextureNlc * guiTexture, NlcColor color ) override;
+    void                        drawGuiTexture( CGUITextureNlc * textrue, float * x, float * y, float * z, const NlcRect& texture, const NlcRect& diffuse, int orientation ) override;
+    void                        endGuiTexture( CGUITextureNlc * guiTexture ) override;
     void                        drawQuad( const NlcRect &rect, NlcColor color, CTextureBase * texture, const NlcRect * texCoords ) override;
 
-    bool                        firstBegin( CGUIFontTTFQt * font )  override;
-    void                        lastEnd( CGUIFontTTFQt * font ) override;
+    bool                        firstBegin( CGUIFontTTFNlc * font )  override;
+    void                        lastEnd( CGUIFontTTFNlc * font ) override;
 
-    CVertexBuffer               createVertexBuffer( CGUIFontTTFQt * font, const std::vector<SVertex>& vertices )  override;
+    CVertexBuffer               createVertexBuffer( CGUIFontTTFNlc * font, const std::vector<SVertex>& vertices )  override;
 
-    void                        destroyVertexBuffer( CGUIFontTTFQt * font, CVertexBuffer& vertBuffer )  override;
+    void                        destroyVertexBuffer( CGUIFontTTFNlc * font, CVertexBuffer& vertBuffer )  override;
 
-    virtual void                deleteHardwareTexture( CGUIFontTTFQt * font )  override;
-    virtual void                createStaticVertexBuffers( CGUIFontTTFQt * font )   override;
-    virtual void                destroyStaticVertexBuffers( CGUIFontTTFQt * font )  override;
+    virtual void                deleteHardwareTexture( CGUIFontTTFNlc * font )  override;
+    virtual void                createStaticVertexBuffers( CGUIFontTTFNlc * font )   override;
+    virtual void                destroyStaticVertexBuffers( CGUIFontTTFNlc * font )  override;
 
     //=== remder ===//
     void                        captureScreen( CScreenshotSurface * screenCaptrue, NlcRect& captureArea ) override;

@@ -6,12 +6,12 @@
  *  See LICENSES/README.md for more information.
  */
 #include "config_components_kodi.h"
-#if !defined(HAVE_QT_GUI)
+#if !defined(HAVE_NLC_GUI)
 
 #include "MediaDrmCryptoSession.h"
 
-#include <platform/qt/qtandroid/jni/MediaDrm.h>
-#include <platform/qt/qtandroid/jni/UUID.h>
+#include <platform/android/jni/MediaDrm.h>
+#include <platform/android/jni/UUID.h>
 #include <stdexcept>
 
 #include "utils/StringUtils.h"
@@ -234,4 +234,4 @@ void CMediaDrmCryptoSession::CloseSession()
     m_keySetId.clear();
   }
 }
-#endif // !defined(HAVE_QT_GUI)
+#endif // !defined(HAVE_NLC_GUI)

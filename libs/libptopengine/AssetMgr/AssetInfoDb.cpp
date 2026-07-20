@@ -27,6 +27,12 @@ AssetBaseInfo* AssetInfoDb::createAssetInfo( EAssetType assetType, const char* a
 }
 
 //============================================================================
+AssetBaseInfo* AssetInfoDb::createAssetInfo( EAssetType assetType, const char* assetName, const char* fileNameAndPath, uint64_t assetLen, VxGUID& assetId )
+{
+    return new AssetInfo( assetType, assetName, fileNameAndPath, assetLen, assetId );
+}
+
+//============================================================================
 AssetBaseInfo* AssetInfoDb::createAssetInfo( AssetBaseInfo& assetInfo )
 {
     return new AssetInfo( assetInfo );

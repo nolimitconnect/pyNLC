@@ -47,7 +47,7 @@
 using namespace Microsoft::WRL;
 #endif
 
-#if defined(HAVE_QT_GUI)
+#if defined(HAVE_NLC_GUI)
 #include <GuiInterface/INlcRender.h>
 #endif
 
@@ -68,7 +68,7 @@ CScreenshotSurface::~CScreenshotSurface()
 
 bool CScreenshotSurface::capture()
 {
-#if defined(HAVE_QT_GUI)
+#if defined(HAVE_NLC_GUI)
     CSingleLock lock( CServiceBroker::GetWinSystem()->GetGfxContext() );
     //CServiceBroker::GetGUI()->GetWindowManager().Render();
 

@@ -110,6 +110,18 @@ void RenderGlLogic::startRenderPlayerNlcThread()
 {
     if( m_RenderPlayerNlcThread && !m_RenderPlayerNlcThread->isRenderThreadStarted() )
     {
+        // QOpenGLContext::makeCurrent is thread-affinity checked on Android.
+        // Ensure GL objects belong to the render thread before it starts.
+        if( m_ThreadGlContext && ( m_ThreadGlContext->thread() != m_RenderPlayerNlcThread ) )
+        {
+            m_ThreadGlContext->moveToThread( m_RenderPlayerNlcThread );
+        }
+
+        if( m_RenderThreadSurface && ( m_RenderThreadSurface->thread() != m_RenderPlayerNlcThread ) )
+        {
+            m_RenderThreadSurface->moveToThread( m_RenderPlayerNlcThread );
+        }
+
         m_RenderPlayerNlcThread->startRenderThread();
     }
 }
@@ -127,7 +139,8 @@ void RenderGlLogic::stopRenderPlayerNlcThread()
 //! must be called from render thread
 void RenderGlLogic::initRenderGlContext()
 {
-    m_ThreadGlContext = new QOpenGLContext( this );
+    // Do not parent to QWidget; parented QObject cannot be moved across threads.
+    m_ThreadGlContext = new QOpenGLContext();
     QSurfaceFormat surfaceFormat = m_ThreadGlContext->format();
 
     // deprecated surfaceFormat.setColorSpace( QSurfaceFormat::ColorSpace::sRGBColorSpace );

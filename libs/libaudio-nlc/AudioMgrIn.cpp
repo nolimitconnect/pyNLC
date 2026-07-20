@@ -13,6 +13,8 @@
 #include "AudioDefs.h"
 #include "AudioUtils.h"
 
+#include <algorithm>
+
 #include <GuiInterface/IToGui.h>
 
 #include <P2PEngine/P2PEngine.h>

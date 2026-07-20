@@ -8,11 +8,11 @@
 
 #pragma once
 
-#include <platform/qt/qtandroid/jni/JNIBase.h>
+#include <platform/android/jni/JNIBase.h>
 
-#include <platform/qt/qtandroid/jni/Context.h>
-#include <platform/qt/qtandroid/jni/Surface.h>
-#include <platform/qt/qtandroid/jni/SurfaceHolder.h>
+#include <platform/android/jni/Context.h>
+#include <platform/android/jni/Surface.h>
+#include <platform/android/jni/SurfaceHolder.h>
 
 #include "threads/Event.h"
 #include "utils/Geometry.h"
@@ -46,3 +46,4 @@ protected:
   static void _surfaceCreated(JNIEnv* env, jobject thiz, jobject holder);
   static void _surfaceDestroyed(JNIEnv* env, jobject thiz, jobject holder);
 };
+

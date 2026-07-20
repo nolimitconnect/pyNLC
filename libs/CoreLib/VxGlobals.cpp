@@ -11,6 +11,7 @@
 #include "VxGlobals.h"
 
 #include "AppVersion.h"
+#include "IGlobalDb.h"
 #include "VxDebug.h"
 #include "VxFileShredder.h"
 #include "VxFileUtil.h"
@@ -376,16 +377,16 @@ void VxSetRootDataStorageDirectory(const char* rootDataDir)
 	VxFileUtil::makeDirectory( rootDataDir );
 
 	g_strAppTempDir = g_strRootDataStorageDir + "temp/";
-	VxFileUtil::makeDirectory(g_strAppTempDir.c_str());
+	VxFileUtil::makeDirectory( g_strAppTempDir.c_str() );
 
 	g_strAppLogsDir = g_strRootDataStorageDir + "logs/";
-	VxFileUtil::makeDirectory(g_strAppTempDir.c_str());
+	VxFileUtil::makeDirectory( g_strAppLogsDir.c_str() );
 
 	g_strAppNoLimitDataDir = g_strRootDataStorageDir + "nolimit/";
 	VxFileUtil::makeDirectory(g_strAppNoLimitDataDir.c_str());
 
     g_strPlayerNlcDataDir = g_strRootDataStorageDir + "playernlc/";
-    VxFileUtil::makeDirectory(g_strPlayerNlcDataDir.c_str());
+    VxFileUtil::makeDirectory( g_strPlayerNlcDataDir.c_str() );
 
 	g_strFontsDir = g_strRootDataStorageDir + "fonts/";
 	VxFileUtil::makeDirectory( g_strFontsDir.c_str());
@@ -394,6 +395,8 @@ void VxSetRootDataStorageDirectory(const char* rootDataDir)
 	VxFileUtil::makeDirectory( g_strTranslationsDir.c_str() );
 
 	GetVxFileShredder().initShredder( g_strAppNoLimitDataDir );
+
+    IGlobalDb::getIGlobalDb().initGlobalDb( g_strAppNoLimitDataDir );
 }
 
 //============================================================================

@@ -7,7 +7,7 @@
  */
 
 #include "config_components_kodi.h"
-#if defined( TARGET_OS_WINDOWS ) && !defined( HAVE_QT_GUI )
+#if defined( TARGET_OS_WINDOWS ) && !defined( HAVE_NLC_GUI )
 
 #include "AESinkFactoryWin.h"
 #include "platform/win32/CharsetConverter.h"
@@ -309,4 +309,4 @@ failed:
   return hr;
 }
 
-#endif // defined( TARGET_OS_WINDOWS ) && !defined( HAVE_QT_GUI )
+#endif // defined( TARGET_OS_WINDOWS ) && !defined( HAVE_NLC_GUI )

@@ -15,7 +15,7 @@
   #define GL_GLEXT_PROTOTYPES
 #endif
 
-#if (defined(TARGET_OS_WINDOWS) && ! HAS_DX) || defined(HAVE_QT_GUI)
+#if (defined(TARGET_OS_WINDOWS) && ! HAS_DX) || defined(HAVE_NLC_GUI)
 # if defined(TARGET_OS_APPLE)
 #  include <OpenGLES/ES2/gl.h>
 # elif defined(TARGET_OS_WINDOWS)
@@ -31,7 +31,7 @@
 #  include <GL/glext.h>
 # endif // defined(TARGET_OS_ANDROID)
 
-# ifdef HAVE_QT_GUI
+# ifdef HAVE_NLC_GUI
 
 // assume gles only 
 // GLES2.0 cant do CLAMP, but can do CLAMP_TO_EDGE.
@@ -43,12 +43,12 @@
 #  define GL_CLAMP_TO_EDGE GL_CLAMP
 # endif // GL_CLAMP
 
-# endif // HAVE_QT_GUI
+# endif // HAVE_NLC_GUI
 
 #endif
 
 
-#if defined(HAS_GL)  || defined(HAVE_QT_GUI)
+#if defined(HAS_GL)  || defined(HAVE_NLC_GUI)
   #if defined(TARGET_FREEBSD)
     #include <GL/gl.h>
     #include <GL/glu.h>

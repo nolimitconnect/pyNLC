@@ -3960,129 +3960,129 @@ File Type: </source>
             <translation>무제한 연결</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="756" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2379" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="765" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2344" />
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1388" />
             <source>Unknown Error</source>
             <translation>알 수 없는 오류</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="757" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="766" />
             <source>ERROR:
 </source>
             <translation>오류:</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="761" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="770" />
             <source>Failed to connect to Network host</source>
             <translation>네트워크 호스트에 연결하지 못했습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="764" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="773" />
             <source>Failed to connect to Connection Test host</source>
             <translation>연결 테스트 호스트에 연결하지 못했습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="767" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="776" />
             <location filename="../nolimitgui/src/AssetVideoWidget.cpp" line="250" />
             <source>Video Play Failed</source>
             <translation>비디오 재생 실패</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="770" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="779" />
             <location filename="../nolimitgui/src/AssetVoiceWidget.cpp" line="223" />
             <source>Audio Play Failed</source>
             <translation>오디오 재생 실패</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="773" />
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="777" />
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="781" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="782" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="786" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="790" />
             <source>Sound In Device Error</source>
             <translation>사운드 인 장치 오류</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="774" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="783" />
             <source>No Microphone Devices Available</source>
             <translation>사용 가능한 마이크 장치가 없습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="778" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="787" />
             <source>Microphone Device Out Of Range</source>
             <translation>마이크 장치가 범위를 벗어났습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="782" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="791" />
             <source>Failed to Initialize Microphone Device</source>
             <translation>마이크 장치를 초기화하지 못했습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="785" />
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="789" />
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="793" />
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="797" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="794" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="798" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="802" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="806" />
             <source>Sound Out Device Error</source>
             <translation>사운드아웃 장치 오류</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="786" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="795" />
             <source>No Speaker Devices Available</source>
             <translation>사용 가능한 스피커 장치가 없습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="790" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="799" />
             <source>Speaker Device Out Of Range</source>
             <translation>스피커 장치가 범위를 벗어났습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="794" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="803" />
             <source>Failed to Initialize Speaker Device</source>
             <translation>스피커 장치를 초기화하지 못했습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="798" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="807" />
             <source>Speaker Device Invalid Format</source>
             <translation>스피커 장치 형식이 잘못되었습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="802" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="811" />
             <source>Echo Delay Test Error</source>
             <translation>에코 지연 테스트 오류</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="803" />
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="809" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="812" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="818" />
             <source>Echo Delay Results (ms) </source>
             <translation>에코 지연 결과(ms) </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="808" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="817" />
             <source>Echo Delay Test Success</source>
             <translation>에코 지연 테스트 성공</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="1285" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="1294" />
             <source>Close Application</source>
             <translation>지원서 마감</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="1286" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="1295" />
             <source>Are you sure you want to exit?</source>
             <translation>종료하시겠습니까?</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommon.cpp" line="1392" />
+            <location filename="../nolimitgui/src/AppCommon.cpp" line="1401" />
             <location filename="../nolimitgui/src/ChatEntryWidget.cpp" line="363" />
             <source>Application Error</source>
             <translation>애플리케이션 오류</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommonMedia.cpp" line="123" />
+            <location filename="../nolimitgui/src/AppCommonCamCapture.cpp" line="93" />
             <source>Web Cam Video</source>
             <translation>웹캠 비디오</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppCommonMedia.cpp" line="123" />
+            <location filename="../nolimitgui/src/AppCommonCamCapture.cpp" line="93" />
             <source>No Video Capture Devices Found</source>
             <translation>비디오 캡처 장치를 찾을 수 없습니다</translation>
         </message>
@@ -4882,44 +4882,42 @@ File Type: </source>
             <translation>=== 비활성화된 플러그인 ===</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="40" />
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="158" />
-            <location filename="../nolimitgui/src/AppletSnapshot.cpp" line="86" />
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="176" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="160" />
+            <location filename="../nolimitgui/src/AppletSnapshot.cpp" line="87" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="179" />
             <source>Camera Capture</source>
             <translation>카메라 캡처</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="40" />
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="158" />
-            <location filename="../nolimitgui/src/AppletSnapshot.cpp" line="86" />
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="176" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="160" />
+            <location filename="../nolimitgui/src/AppletSnapshot.cpp" line="87" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="179" />
             <source>No Camera Source Available.</source>
             <translation>사용할 수 있는 카메라 소스가 없습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="217" />
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="260" />
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="265" />
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="271" />
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="258" />
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="341" />
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="346" />
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="352" />
             <source>Video In Device</source>
             <translation>비디오 인 장치</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="217" />
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="265" />
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="258" />
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="346" />
             <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="271" />
             <location filename="../nolimitgui/src/AppletSoundSettings.cpp" line="296" />
             <source> failed to initialize</source>
             <translation>초기화하지 못했습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="260" />
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="341" />
             <source> device is saved as preferred Video In Device</source>
             <translation> 장치는 기본 비디오 입력 장치로 저장됩니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="271" />
+            <location filename="../nolimitgui/src/AppletCamSettings.cpp" line="352" />
             <source>No Video In Device Is Available</source>
             <translation>장치에 비디오를 사용할 수 없음</translation>
         </message>
@@ -5015,7 +5013,7 @@ File Type: </source>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletCreateAccount.cpp" line="96" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1444" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1409" />
             <source>Application</source>
             <translation>신청</translation>
         </message>
@@ -5037,69 +5035,69 @@ Do you want to exit the application?</source>
 응용프로그램을 종료하시겠습니까?</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="67" />
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="81" />
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="125" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="69" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="83" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="127" />
             <location filename="../nolimitgui/src/ChatEntryWidget.cpp" line="198" />
             <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="208" />
             <source>Failed To Read Image File </source>
             <translation>이미지 파일을 읽지 못했습니다. </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="68" />
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="82" />
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="126" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="70" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="84" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="128" />
             <location filename="../nolimitgui/src/ChatEntryWidget.cpp" line="199" />
             <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="209" />
             <source>Error Reading Image</source>
             <translation>이미지를 읽는 중 오류가 발생했습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="117" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="119" />
             <location filename="../nolimitgui/src/ChatEntryWidget.cpp" line="189" />
             <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="200" />
             <source>Open Image</source>
             <translation>이미지 열기</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="175" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="177" />
             <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="113" />
             <source>Failed to read snapshot </source>
             <translation>스냅샷을 읽지 못했습니다. </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="176" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="178" />
             <location filename="../nolimitgui/src/ThumbnailViewWidget.cpp" line="114" />
             <source>Error Reading snapshot</source>
             <translation>스냅샷을 읽는 중 오류가 발생했습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="202" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="204" />
             <source>Failed to write into </source>
             <translation>에 쓰지 못했습니다. </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="203" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="205" />
             <source>Error Writing</source>
             <translation>쓰기 오류</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="227" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="229" />
             <source>About Me Change</source>
             <translation>내 소개 변경</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="228" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="230" />
             <source>Applied About Me Changes </source>
             <translation>내 정보 변경 사항이 적용되었습니다. </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="229" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="231" />
             <source>Failed</source>
             <translation>실패</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="229" />
+            <location filename="../nolimitgui/src/AppletEditAboutMe.cpp" line="231" />
             <source>Success</source>
             <translation>성공</translation>
         </message>
@@ -5155,7 +5153,7 @@ Do you want to exit the application?</source>
             <location filename="../nolimitgui/src/AppletFileOfferSelect.cpp" line="289" />
             <location filename="../nolimitgui/src/AppletFileOfferSelect.cpp" line="323" />
             <location filename="../nolimitgui/src/AppletLibrary.cpp" line="359" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2390" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2355" />
             <location filename="../nolimitgui/src/GuiParams.cpp" line="1358" />
             <source>File Not Found</source>
             <translation>파일을 찾을 수 없음</translation>
@@ -6157,8 +6155,8 @@ __NLC_토큰_0__
             <location filename="../nolimitgui/src/AppletLibrary.cpp" line="694" />
             <location filename="../nolimitgui/src/AppletLibrary.cpp" line="771" />
             <location filename="../nolimitgui/src/AppletLibrary.cpp" line="807" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2266" />
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="104" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2231" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="107" />
             <source>Could not get thumbnail file info</source>
             <translation>썸네일 파일 정보를 가져올 수 없습니다.</translation>
         </message>
@@ -6166,9 +6164,9 @@ __NLC_토큰_0__
             <location filename="../nolimitgui/src/AppletLibrary.cpp" line="695" />
             <location filename="../nolimitgui/src/AppletLibrary.cpp" line="772" />
             <location filename="../nolimitgui/src/AppletLibrary.cpp" line="808" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2261" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2267" />
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="105" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2226" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2232" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="108" />
             <source>Error occured creating thumbnail asset </source>
             <translation>썸네일 자산을 생성하는 중 오류가 발생했습니다. </translation>
         </message>
@@ -6665,25 +6663,25 @@ If the Network Key is incorrect, you will probably be banned as a hacker.</sourc
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletPeerViewSharedFiles.cpp" line="466" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2601" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2566" />
             <source>Confirm Shred File</source>
             <translation>파쇄된 파일 확인</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletPeerViewSharedFiles.cpp" line="466" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2601" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2566" />
             <source>Confirm Delete File</source>
             <translation>파일 삭제 확인</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletPeerViewSharedFiles.cpp" line="470" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2605" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2570" />
             <source>Are You Sure You Want To Write Random Data Into The File Then Delete From The Device?</source>
             <translation>파일에 임의의 데이터를 쓴 다음 장치에서 삭제하시겠습니까?</translation>
         </message>
         <message>
             <location filename="../nolimitgui/src/AppletPeerViewSharedFiles.cpp" line="474" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2609" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2574" />
             <source>Are You Sure To Delete The File From The Device?</source>
             <translation>장치에서 파일을 삭제하시겠습니까?</translation>
         </message>
@@ -6703,51 +6701,51 @@ If the Network Key is incorrect, you will probably be banned as a hacker.</sourc
             <translation>비디오 파일을 재생할 수 없습니다</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="240" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="207" />
             <source>Unknown Media File Type</source>
             <translation>알 수 없는 미디어 파일 유형</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="292" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="259" />
             <source>Media Player empty file list</source>
             <translation>미디어 플레이어 빈 파일 목록</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="314" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="281" />
             <source>Media Player could not play file</source>
             <translation>미디어 플레이어가 파일을 재생할 수 없습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="319" />
-            <location filename="../nolimitgui/src/AppletPlayerNlcBase.cpp" line="204" />
-            <location filename="../nolimitgui/src/AppletPlayerNlcBase.cpp" line="360" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="286" />
+            <location filename="../nolimitgui/src/AppletPlayerNlcBase.cpp" line="207" />
+            <location filename="../nolimitgui/src/AppletPlayerNlcBase.cpp" line="363" />
             <source>File does not exist</source>
             <translation>파일이 존재하지 않습니다</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="326" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="293" />
             <source>Exception playing</source>
             <translation>예외 재생</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="366" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="333" />
             <source>Media Player not read</source>
             <translation>미디어 플레이어를 읽을 수 없습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="366" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="333" />
             <source>Try again when Media Player is ready</source>
             <translation>미디어 플레이어가 준비되면 다시 시도하세요.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="422" />
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="459" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="386" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="423" />
             <source>Could not read file</source>
             <translation>파일을 읽을 수 없습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="422" />
-            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="459" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="386" />
+            <location filename="../nolimitgui/src/AppletPlayerNlc.cpp" line="423" />
             <source>Failed to get file info</source>
             <translation>파일 정보를 가져오지 못했습니다.</translation>
         </message>
@@ -7372,170 +7370,170 @@ If the Network Key is incorrect, you will probably be banned as a hacker.</sourc
             <translation>이미지 파일 선택</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="410" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="387" />
             <source>Cannot Read File</source>
             <translation>파일을 읽을 수 없습니다</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1389" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1395" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1401" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1407" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1413" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1419" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1425" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1354" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1360" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1366" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1372" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1378" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1384" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1390" />
             <source>Invalid User Name</source>
             <translation>잘못된 사용자 이름</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1389" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1354" />
             <source>User Name cannot have NoLimitConnect in name.</source>
             <translation>사용자 이름에는 NoLimitConnect가 포함될 수 없습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1395" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1360" />
             <source>User Name cannot have special character quote.</source>
             <translation>사용자 이름에는 특수 문자를 인용할 수 없습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1401" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1366" />
             <source>User Name cannot have comma.</source>
             <translation>사용자 이름에는 쉼표가 포함될 수 없습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1407" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1372" />
             <source>User Name cannot have special character parentheses.</source>
             <translation>사용자 이름에는 특수 문자 괄호를 사용할 수 없습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1413" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1378" />
             <source>User Name cannot have special character slashes.</source>
             <translation>사용자 이름에는 특수 문자 슬래시를 사용할 수 없습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1419" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1384" />
             <source>User Name is too long (maximum 31 chars).</source>
             <translation>사용자 이름이 너무 깁니다(최대 31자).</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1425" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1390" />
             <source>User Name is too short (minimum 4 chars).</source>
             <translation>사용자 이름이 너무 짧습니다(최소 4자).</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1444" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1409" />
             <source>Mood Message is too long (maximum 31 chars)</source>
             <translation>기분 메시지가 너무 깁니다(최대 31자).</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1456" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1462" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1421" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1427" />
             <source>Age Verify</source>
             <translation>연령 확인</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1456" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1421" />
             <source>Invalid Age</source>
             <translation>유효하지 않은 연령</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1462" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="1427" />
             <source>Age Connot be greater than 120 years old</source>
             <translation>연령은 120세 이상이어야 합니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2260" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2225" />
             <source>Could not create thumbnail asset</source>
             <translation>썸네일 자산을 생성할 수 없습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2319" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2284" />
             <source>User Unavailable</source>
             <translation>사용자를 사용할 수 없음</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2320" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2285" />
             <source>User </source>
             <translation>사용자 </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2320" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2285" />
             <source> Is Unavailable</source>
             <translation> 사용할 수 없음</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2324" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2289" />
             <source>User is offline</source>
             <translation>사용자가 오프라인 상태입니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2325" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2290" />
             <source>User is no longer connected</source>
             <translation>사용자가 더 이상 연결되어 있지 않습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2329" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2294" />
             <source>Already In A Session</source>
             <translation>이미 세션에 있음</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2330" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2295" />
             <source>Already in session. Please close existing session and try again</source>
             <translation>이미 세션 중입니다. 기존 세션을 닫고 다시 시도하십시오.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2334" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2335" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2299" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2300" />
             <source>Session not found</source>
             <translation>세션을 찾을 수 없습니다</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2339" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2304" />
             <source>Sent User An Offer</source>
             <translation>사용자에게 제안을 보냈습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2340" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2305" />
             <source>Offer Was Sent To  </source>
             <translation>제안을 보낸 사람  </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2344" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2309" />
             <source>Send Offer Failed</source>
             <translation>제안 보내기 실패</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2345" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2310" />
             <source>Offer Send Failed  </source>
             <translation>제안 전송 실패  </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2349" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2314" />
             <source>Not Connected</source>
             <translation>연결되지 않음</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2350" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2315" />
             <source>You are not connected to host </source>
             <translation>호스트에 연결되어 있지 않습니다 </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2354" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2319" />
             <source>No User Selected</source>
             <translation>선택된 사용자 없음</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2355" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2320" />
             <source>You must select a user to send to </source>
             <translation>보낼 사용자를 선택해야 합니다. </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2359" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2324" />
             <source>Purge Everthing Warning</source>
             <translation>모든 경고 제거</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2360" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2325" />
             <source>This action will delete everything not locked including Identity, Downloaded Files, Storyboard, Message History Etc.
 The action cannot be undone
 Are you very sure you want to proceed?</source>
@@ -7544,221 +7542,221 @@ Are you very sure you want to proceed?</source>
 계속하시겠습니까?</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2364" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2329" />
             <source>Voice Message Too Short</source>
             <translation>음성 메시지가 너무 짧음</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2365" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2330" />
             <source>The Voice Message was too short and will not be sent.</source>
             <translation>음성 메시지가 너무 짧아 전송되지 않습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2369" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2334" />
             <source>Video clip Too Short</source>
             <translation>비디오 클립이 너무 짧음</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2370" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2335" />
             <source>The Video Clip was too short and will not be sent.</source>
             <translation>동영상 클립이 너무 짧아 전송되지 않습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2374" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2339" />
             <source>Video record failed to start</source>
             <translation>동영상 녹화를 시작하지 못했습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2375" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2340" />
             <source>Video record failed to start.</source>
             <translation>비디오 녹화를 시작하지 못했습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2380" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2345" />
             <source>Unknown Error </source>
             <translation>알 수 없는 오류 </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2380" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2345" />
             <source> for user </source>
             <translation> 사용자를 위한 </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2391" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2356" />
             <source>File Name Is Empty</source>
             <translation>파일 이름이 비어 있습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2399" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2400" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2364" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2365" />
             <source>Access File Permissions Denied By User</source>
             <translation>사용자가 파일 액세스 권한을 거부했습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2408" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2373" />
             <source>Application Not Ready</source>
             <translation>애플리케이션이 준비되지 않음</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2409" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2374" />
             <source>Cannot launch applet until network is available</source>
             <translation>네트워크를 사용할 수 있을 때까지 애플릿을 시작할 수 없습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2409" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2374" />
             <source>Cannot Launch Applet Until Application Has Initialized</source>
             <translation>애플리케이션이 초기화될 때까지 애플릿을 시작할 수 없습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2417" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2382" />
             <source>Requires Open Port</source>
             <translation>개방형 포트 필요</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2418" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2383" />
             <source>Action requires a open port</source>
             <translation>작업을 수행하려면 열린 포트가 필요합니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2426" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2435" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2391" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2400" />
             <source>Invalid Invite</source>
             <translation>잘못된 초대</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2427" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2392" />
             <source>The invite is invalid</source>
             <translation>초대가 유효하지 않습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2436" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2401" />
             <source>Cannot accept invite from myself</source>
             <translation>내 초대를 수락할 수 없습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2444" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2409" />
             <source>Invalid User</source>
             <translation>잘못된 사용자</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2445" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2410" />
             <source>Could not find the user</source>
             <translation>사용자를 찾을 수 없습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2453" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2418" />
             <source>User Not Online</source>
             <translation>사용자가 온라인이 아님</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2454" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2419" />
             <source>The user is not currently online</source>
             <translation>사용자가 현재 온라인 상태가 아닙니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2462" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2427" />
             <source>Friendship Level To Low</source>
             <translation>우정 수준이 낮음</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2463" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2428" />
             <source>Requires friendship of friend or higher</source>
             <translation>친구 이상의 우정이 필요합니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2471" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2436" />
             <source>Invalid Host Id</source>
             <translation>잘못된 호스트 ID</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2472" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2437" />
             <source>Host Id has not been set</source>
             <translation>호스트 ID가 설정되지 않았습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2480" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2445" />
             <source>Invalid URL</source>
             <translation>잘못된 URL</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2481" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2446" />
             <source>The host url is not valid</source>
             <translation>호스트 URL이 유효하지 않습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2489" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2454" />
             <source>Invalid Host Type</source>
             <translation>잘못된 호스트 유형</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2490" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2455" />
             <source>The host url does not have a vailid host type</source>
             <translation>호스트 URL에 유효한 호스트 유형이 없습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2498" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2463" />
             <source>No Members Online</source>
             <translation>온라인 회원 없음</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2499" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2464" />
             <source>There are no members online to send to</source>
             <translation>온라인에 보낼 회원이 없습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2507" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2561" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2472" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2526" />
             <source>Failed to add asset</source>
             <translation>자산을 추가하지 못했습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2508" />
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2562" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2473" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2527" />
             <source>Failed to add asset. Please check disk space</source>
             <translation>자산을 추가하지 못했습니다. 디스크 공간을 확인하세요</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2517" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2482" />
             <source>Failed to send </source>
             <translation>보내지 못했습니다. </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2518" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2483" />
             <source>Failed to send to </source>
             <translation>다음으로 보내지 못했습니다. </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2528" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2493" />
             <source>No members to send to</source>
             <translation>보낼 회원이 없습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2532" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2497" />
             <source>Admin is offline</source>
             <translation>관리자가 오프라인 상태입니다</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2536" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2501" />
             <source>Cannot send to self</source>
             <translation>자신에게 보낼 수 없습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2540" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2505" />
             <source>Invalid host or state</source>
             <translation>잘못된 호스트 또는 상태</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2544" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2509" />
             <source>Unknown reason</source>
             <translation>알 수 없는 이유</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2552" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2517" />
             <source>Cannot send </source>
             <translation>보낼 수 없습니다 </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2553" />
+            <location filename="../nolimitgui/src/GuiHelpers.cpp" line="2518" />
             <source>Cannot send reason: </source>
             <translation>보낼 수 없는 이유: </translation>
         </message>
@@ -10165,12 +10163,12 @@ Are you very sure you want to proceed?</source>
             <translation> 오프라인입니다</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiPlayerMgr.cpp" line="231" />
+            <location filename="../nolimitgui/src/GuiPlayerMgr.cpp" line="229" />
             <source>Attempted to play an executable which is not allowed</source>
             <translation>허용되지 않는 실행 파일을 재생하려고 시도했습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/GuiPlayerMgr.cpp" line="237" />
+            <location filename="../nolimitgui/src/GuiPlayerMgr.cpp" line="235" />
             <source>Attempted to open an archive file which is not allowed</source>
             <translation>허용되지 않는 아카이브 파일을 열려고 시도했습니다.</translation>
         </message>
@@ -10275,28 +10273,28 @@ Are you very sure you want to proceed?</source>
             <translation> 감히: </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="69" />
-            <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="91" />
+            <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="71" />
+            <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="93" />
             <source>Photo Snapshot Error</source>
             <translation>사진 스냅샷 오류</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="69" />
+            <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="71" />
             <source>Photo Unavailable</source>
             <translation>사진을 사용할 수 없음</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="81" />
+            <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="83" />
             <source>Failed to write photo to file </source>
             <translation>사진을 파일에 쓰지 못했습니다. </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="82" />
+            <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="84" />
             <source>Error Writing Photo To File</source>
             <translation>사진을 파일에 쓰는 중 오류가 발생했습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="91" />
+            <location filename="../nolimitgui/src/InputPhotoWidget.cpp" line="93" />
             <source>Photo File Not Found</source>
             <translation>사진 파일을 찾을 수 없습니다</translation>
         </message>
@@ -10415,38 +10413,38 @@ No one can connect to you directly</source>
             <translation>알 수 없는 애플릿 </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="110" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="113" />
             <source>Could not save thumbnail image</source>
             <translation>미리보기 이미지를 저장할 수 없습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="111" />
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="150" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="114" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="153" />
             <source>Error occured saving thumbnail to file </source>
             <translation>썸네일을 파일에 저장하는 중 오류가 발생했습니다. </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="143" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="146" />
             <source>Could not update thumbnail asset</source>
             <translation>썸네일 자산을 업데이트할 수 없습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="144" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="147" />
             <source>Error occured update thumbnail asset </source>
             <translation>썸네일 자산을 업데이트하는 중 오류가 발생했습니다. </translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="149" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="152" />
             <source>Could not save updated thumbnail image</source>
             <translation>업데이트된 미리보기 이미지를 저장할 수 없습니다.</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="155" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="158" />
             <source>thumbnail id was invalid</source>
             <translation>썸네일 ID가 잘못되었습니다</translation>
         </message>
         <message>
-            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="156" />
+            <location filename="../nolimitgui/src/ThumbnailEditWidget.cpp" line="159" />
             <source>Error occured updatin thumbnail </source>
             <translation>미리보기 이미지를 업데이트하는 중에 오류가 발생했습니다. </translation>
         </message>

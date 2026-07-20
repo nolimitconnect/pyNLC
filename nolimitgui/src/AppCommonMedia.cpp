@@ -93,60 +93,6 @@ void AppCommon::slotInternalPlayNlcMedia( AssetBaseInfo assetInfo )
 }
 
 //============================================================================
-void AppCommon::toGuiWantVideoCapture( EMediaModule mediaModule, bool wantVidCapture )
-{
-	LogModule( eLogWebCam, LOG_INFO, "#### AppCommon::toGuiWantVideoCapture %s wantCapture %d", DescribeMediaModule( mediaModule ), wantVidCapture );
-	if( VxIsAppShuttingDown() )
-	{
-		return;
-	}
-
-	emit signalInternalWantVideoCapture( mediaModule, wantVidCapture );
-}
-
-//============================================================================
-void AppCommon::slotInternalWantVideoCapture( EMediaModule mediaModule, bool wantVidCapture )
-{
-	bool wasCamEnabled = m_CamLogic.isCamCaptureRunning();
-	m_CamLogic.toGuiWantVideoCapture( mediaModule, wantVidCapture );
-	bool isCamEnabled = m_CamLogic.isCamCaptureRunning();
-
-    if( wasCamEnabled != isCamEnabled )
-    {
-        if( isCamEnabled )
-        {
-            static bool bFirstTimeVideoCaptureStarted = true;
-            if( bFirstTimeVideoCaptureStarted )
-            {
-                if( !m_CamLogic.isCamCaptureRunning() )
-                {
-                    QMessageBox::warning( this, QObject::tr( "Web Cam Video" ), QObject::tr( "No Video Capture Devices Found" ) );
-                    return;
-                }
-
-                m_CamSourceId = m_CamLogic.getCamId();
-
-                setCamCaptureRotation( m_AppSettings.getCamRotation( m_CamSourceId ) );
-
-                bFirstTimeVideoCaptureStarted = false;
-            }
-        }
-        else
-        {
-           LogModule( eLogWebCam, LOG_INFO, "AppCommon::slotEnableVideoCapture stopping capture" );
-        }
-
-		m_ToGuiHardwareCtrlBusy = true;
-		for( auto toGuiClient : m_ToGuiHardwareCtrlList )
-		{
-			toGuiClient->callbackToGuiWantVideoCapture( wantVidCapture );
-		}
-
-		m_ToGuiHardwareCtrlBusy = false;
-    }
-}
-
-//============================================================================
 void AppCommon::toGuiPlayJpgVideo( VxGUID& feedOnlineId, std::shared_ptr<CamJpgVideo>& jpgVideo )
 {
 	if( VxIsAppShuttingDown() )

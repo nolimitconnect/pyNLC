@@ -981,7 +981,7 @@ void MediaProcessor::wantVideoMediaInput(	VxGUID&						onlineId,
 		#endif // TEST_JPG_SPEED
 		m_VidCaptureEnabled = true;
 		LogModule( eLogWebCam, LOG_INFO, "starting video capture" );
-		IToGui::getIToGui().toGuiWantVideoCapture( mediaModule, true );
+		IToGui::getIToGui().toGuiWantCamCapture( mediaModule, true );
 	}
 }
 
@@ -1027,7 +1027,7 @@ void MediaProcessor::doVideoClientRemovals( std::vector<ClientToRemove>& clientR
 			{
 				m_VidCaptureEnabled = false;
 				LogMsg( LOG_INFO, "stopping video capture" );
-				IToGui::getIToGui().toGuiWantVideoCapture( mediaModule, false );
+				IToGui::getIToGui().toGuiWantCamCapture( mediaModule, false );
 			}
 		}
 

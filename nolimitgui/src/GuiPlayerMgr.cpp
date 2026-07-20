@@ -104,11 +104,6 @@ void GuiPlayerMgr::slotInternalPlayCamJpg( VxGUID feedOnlineId, std::shared_ptr<
 		if( LogEnabled( eLogWebCam ))LogModule( eLogWebCam, LOG_ERROR, "GuiPlayerMgr::%s now %d in signal/slots", __func__, inSignal );
     }
 
-    if( feedOnlineId == GetAppInstance().getMyOnlineId() )
-    {
-        GetAppInstance().getCamLogic().camImageConsumed();
-    }
-
     QImage vidFrame;
     if( !vidFrame.loadFromData( camJpg->m_VidData.get(), camJpg->m_VidDataLen, "JPG") )
     {
@@ -182,7 +177,7 @@ void GuiPlayerMgr::wantVideoTitleBarCallbacks( GuiVideoTitleBarCallback* client,
 }
 
 //============================================================================
-bool GuiPlayerMgr::playFile( QString fileNameAndPath, int pos0to100000, bool isStream, bool useExternPlayer )
+bool GuiPlayerMgr::playFile( QString fileNameAndPath, int pos0to100000, bool isStream, bool useExternPlayer, QWidget* launchParent )
 {
     if( fileNameAndPath.isEmpty() )
 	{
@@ -202,14 +197,15 @@ bool GuiPlayerMgr::playFile( QString fileNameAndPath, int pos0to100000, bool isS
     AssetInfo newAsset( fileInfo );
 	newAsset.setIsStream( isStream );
 
-	return playMedia( newAsset, useExternPlayer, pos0to100000 );
+	return playMedia( newAsset, useExternPlayer, pos0to100000, launchParent );
 }
 
 //============================================================================
-bool GuiPlayerMgr::playStream( AssetBaseInfo& assetInfo, VxGUID lclSessionId, int pos0to100000 )
+bool GuiPlayerMgr::playStream( AssetBaseInfo& assetInfo, VxGUID lclSessionId, int pos0to100000, QWidget* launchParent )
 {
+	QWidget* parentWidget = launchParent ? launchParent : &GetAppInstance().getHomeWindow();
 	// launch the applet that plays this file
-	ActivityBase* applet = GetAppInstance().launchApplet( eAppletPlayerNlc, &GetAppInstance().getHomeWindow(), "", assetInfo.getAssetUniqueId() );
+	ActivityBase* applet = GetAppInstance().launchApplet( eAppletPlayerNlc, parentWidget, "", assetInfo.getAssetUniqueId() );
 	if( applet )
 	{
 		AppletPlayerNlc* player = dynamic_cast<AppletPlayerNlc*>(applet);
@@ -224,8 +220,10 @@ bool GuiPlayerMgr::playStream( AssetBaseInfo& assetInfo, VxGUID lclSessionId, in
 }
 
 //============================================================================
-bool GuiPlayerMgr::playMedia( AssetBaseInfo& assetInfo, bool useExternPlayer, int pos0to100000 )
+bool GuiPlayerMgr::playMedia( AssetBaseInfo& assetInfo, bool useExternPlayer, int pos0to100000, QWidget* launchParent )
 {
+	QWidget* parentWidget = launchParent ? launchParent : &GetAppInstance().getHomeWindow();
+
 	if( eAssetTypeExe == assetInfo.getAssetType() )
 	{
 		QMessageBox::warning( &GetAppInstance().getHomeWindow(), QObject::tr("Attempted to play an executable which is not allowed"), QString(assetInfo.getAssetName().c_str()));
@@ -246,7 +244,7 @@ bool GuiPlayerMgr::playMedia( AssetBaseInfo& assetInfo, bool useExternPlayer, in
 			if( appletType != eAppletUnknown )
 			{
 				// launch the applet that plays this file
-				ActivityBase* applet = GetAppInstance().launchApplet( appletType, &GetAppInstance().getHomeWindow(), "", assetInfo.getAssetUniqueId() );
+				ActivityBase* applet = GetAppInstance().launchApplet( appletType, parentWidget, "", assetInfo.getAssetUniqueId() );
 				if( applet )
 				{
 					AssetPlaySession assetPlaySession( assetInfo );

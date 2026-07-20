@@ -9,7 +9,7 @@
 #pragma once
 
 #include "config_components_kodi.h"
-#if !defined(HAVE_QT_GUI) || defined(TARGET_OS_ANDROID) || defined(TARGET_OS_APPLE)
+#if !defined(HAVE_NLC_GUI) || defined(TARGET_OS_ANDROID) || defined(TARGET_OS_APPLE)
 #include "guilib/Shader.h"
 #include <string>
 
@@ -65,4 +65,4 @@ protected:
   GLfloat m_clipYOffset;
 };
 
-#endif // HAVE_QT_GUI
+#endif // HAVE_NLC_GUI

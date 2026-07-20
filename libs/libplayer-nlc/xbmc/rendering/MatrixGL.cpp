@@ -7,7 +7,7 @@
  */
 
 #include "config_components_kodi.h"
-#ifndef HAVE_QT_GUI
+#ifndef HAVE_NLC_GUI
 
 
 #include "MatrixGL.h"
@@ -262,5 +262,5 @@ void CMatrixGLStack::Load()
 
 }
 
-#endif // HAVE_QT_GUI
+#endif // HAVE_NLC_GUI
 

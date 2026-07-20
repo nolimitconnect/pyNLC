@@ -19,12 +19,12 @@
 #include <libcrossguid/guid.h>
 
 #if defined(TARGET_ANDROID)
-# ifdef HAVE_QT_GUI
-#  include <platform/qt/qtandroid/jni/JNIThreading.h>
-#  include <platform/qt/qtandroid/jni/Context.h>
+# ifdef HAVE_NLC_GUI
+#  include <platform/nlc/android/jni/JNIThreading.h>
+#  include <platform/nlc/android/jni/Context.h>
 # else
 #  include <android/jni/JNIThreading.h>
-# endif // HAVE_QT_GUI
+# endif // HAVE_NLC_GUI
 # include <CoreLib/VxJava.h>
 #endif
 

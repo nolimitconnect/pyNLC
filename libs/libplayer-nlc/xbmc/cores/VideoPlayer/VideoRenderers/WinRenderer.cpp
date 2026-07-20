@@ -6,7 +6,7 @@
  *  See LICENSES/README.md for more information.
  */
 #include "config_kodi.h"
-#ifndef HAVE_QT_GUI
+#ifndef HAVE_NLC_GUI
 
 #include <ppltasks.h>
 
@@ -31,9 +31,9 @@
 #include "rendering/dx/DeviceResources.h"
 #include "rendering/dx/RenderContext.h"
 #endif // HAS_DX
-#ifdef HAVE_QT_GUI
+#ifdef HAVE_NLC_GUI
 #include "../../../../../nolimitgui/AppInterface/INlc.h"
-#endif // HAVE_QT_GUI
+#endif // HAVE_NLC_GUI
 
 typedef struct
 {
@@ -838,9 +838,9 @@ void CWinRenderer::RenderPS( CD3DTexture* target )
     m_colorShader->SetParams( m_videoSettings.m_Contrast, m_videoSettings.m_Brightness, DX::Windowing()->UseLimitedColor() );
     m_colorShader->SetColParams( buf.color_space, buf.bits, !buf.full_range, buf.texBits );
 
-#ifdef HAVE_QT_GUI
+#ifdef HAVE_NLC_GUI
     INlc::getINlc().toGuiRenderVideoFrame( 0, &buf );
-#endif // HAVE_QT_GUI
+#endif // HAVE_NLC_GUI
 
     // render video frame
     m_colorShader->Render( m_sourceRect, destPoints, &buf, target );
@@ -983,11 +983,11 @@ bool CWinRenderer::RenderCapture( CRenderCapture* capture )
     capture->BeginRender();
     if( capture->GetState() != CAPTURESTATE_FAILED )
     {
-#ifdef HAVE_QT_GUI
+#ifdef HAVE_NLC_GUI
         // what to do here?
 #else
         Render( 0, capture->GetTarget() )
-#endif // HAVE_QT_GUI
+#endif // HAVE_NLC_GUI
 
         capture->EndRender();
         succeeded = true;
@@ -1223,4 +1223,4 @@ AVColorPrimaries CWinRenderer::GetSrcPrimaries( AVColorPrimaries srcPrimaries, u
     return ret;
 }
 
-#endif // HAVE_QT_GUI
+#endif // HAVE_NLC_GUI

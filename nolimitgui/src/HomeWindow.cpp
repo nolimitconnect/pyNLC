@@ -29,6 +29,8 @@
 #include <CoreLib/VxAppInfo.h>
 #include <CoreLib/VxDebug.h>
 
+#include <GuiInterface/ICamCapture.h>
+
 #include <QScreen>
 #include <QtWidgets>
 
@@ -120,7 +122,7 @@ void HomeWindow::showEvent( QShowEvent* ev )
         }
 
 #if !defined(TARGET_OS_ANDROID)
-        m_MyApp.getCamLogic().startupCamLogic();
+        ICamCapture::getICamCapture().startupCamCapture();
 #endif // !defined(TARGET_OS_ANDROID)
     }
 }

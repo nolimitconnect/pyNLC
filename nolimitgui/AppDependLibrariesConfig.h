@@ -178,7 +178,7 @@ extern "C" {
 //============================================================================
 #elif defined(TARGET_OS_LINUX)
 
-# if !defined(HAS_GL) && !defined(HAVE_QT_GUI)
+# if !defined(HAS_GL) && !defined(HAVE_NLC_GUI)
 #  define HAS_GL 1
 #  define HAVE_LIBGL 1
 # endif // HAS_GL

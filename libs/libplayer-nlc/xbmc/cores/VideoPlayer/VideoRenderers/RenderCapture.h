@@ -101,13 +101,13 @@ class CRenderCaptureBase
     bool m_asyncChecked;
 };
 
-#if defined(HAVE_QT_GUI)
+#if defined(HAVE_NLC_GUI)
 
-class CRenderCaptureQt : public CRenderCaptureBase
+class CRenderCaptureNlc : public CRenderCaptureBase
 {
 public:
-    CRenderCaptureQt();
-    ~CRenderCaptureQt();
+    CRenderCaptureNlc();
+    ~CRenderCaptureNlc();
 
     int   GetCaptureFormat();
 
@@ -119,7 +119,7 @@ public:
 };
 //used instead of typedef CRenderCaptureGL CRenderCapture
 //since C++ doesn't allow you to forward declare a typedef
-class CRenderCapture : public CRenderCaptureQt
+class CRenderCapture : public CRenderCaptureNlc
 {
 public:
     CRenderCapture() {};

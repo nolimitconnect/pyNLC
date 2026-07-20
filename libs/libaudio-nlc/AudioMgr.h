@@ -52,7 +52,7 @@ public:
     static const int MAX_SPEAKER_OUT_BUFFER_SAMPLES = ECHO_FRAME_SIZE_10MS * 50;
 
     AudioMgr();
-    ~AudioMgr() = default;
+    ~AudioMgr();
 
     static AudioMgr&            getInstance( void )                         { static AudioMgr instance; return instance; }
 
@@ -126,6 +126,7 @@ public:
     bool				        toGuiIsMicrophoneDeviceAvailable( void ) override;
     // enable disable microphone data callback
     void				        toGuiWantMicrophoneRecording( EMediaModule mediaModule, bool wantMicInput ) override;
+    void                        onMicrophonePermissionResult( bool granted );
     // enable disable sound out
     void				        toGuiWantSpeakerOutput( EMediaModule mediaModule, bool wantSpeakerOutput ) override;
     //=== IAudioRequests end ===//
@@ -314,6 +315,7 @@ protected:
     std::atomic<uint64_t>       m_SpeakerCopiedSamples{0};
     std::atomic<uint64_t>       m_SpeakerQueueHighWatermark{0};
     int                         m_LastSpeakerStatsLogMs{0};
+    bool                        m_SpeakerIssueReported{ false };
 
     bool                        m_SpeakerJitterStatsEnable{ false };
     int64_t                     m_SpeakerOutJitterLowMarkMs{0};

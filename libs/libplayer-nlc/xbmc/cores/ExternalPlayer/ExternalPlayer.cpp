@@ -37,11 +37,11 @@
   #include <Windows.h>
 #endif
 
-#if defined(TARGET_ANDROID) && !defined(HAVE_QT_GUI)
+#if defined(TARGET_ANDROID) && !defined(HAVE_NLC_GUI)
 # include "platform/android/activity/XBMCApp.h"
-#elif defined(TARGET_ANDROID) && defined(HAVE_QT_GUI)
-# include "platform/qt/KodiQtApp.h"
-#endif // defined(TARGET_ANDROID) && !defined(HAVE_QT_GUI)
+#elif defined(TARGET_ANDROID) && defined(HAVE_NLC_GUI)
+# include "platform/nlc/KodiNlcApp.h"
+#endif // defined(TARGET_ANDROID) && !defined(HAVE_NLC_GUI)
 
 // If the process ends in less than this time (ms), we assume it's a launcher
 // and wait for manual intervention before continuing

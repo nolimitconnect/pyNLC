@@ -169,6 +169,8 @@ private:
 	std::vector<AssetPlaySession> m_PlayAssetQue;
 	VxGUID						m_SessionId;
 	bool						m_IsStreaming{ false };
+
+    bool						m_AboutToDestroyHasBeenCalled{ false };
 };
 
 

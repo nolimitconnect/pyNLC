@@ -373,33 +373,10 @@ bool GuiHelpers::browseForFile( QWidget* parent, enum EMediaFileType mediaFileTy
     QFileInfo fileInfo(selectedFile);
     dumpFileInfo(selectedFile);
 
-    // this is the only one that works on android but is the app storage directory
-    // it is not the directory the media file is in
-    //QDir dir1 = fileDialog.directory();
-    //countDirEntries(dir1);
-    //countPathEntries(dir1.path());
+    QDir fileDir = fileInfo.dir();
 
-
-    QUrl url = fileDialog.directoryUrl();
-
-    QDir dir2 = fileInfo.dir();
-    QDir absoluteDir = fileInfo.dir();
-    QString fileDir1 = fileInfo.filePath();
-    QString fileDir2 = fileInfo.absolutePath();
-    QString fileDir3 = fileInfo.canonicalFilePath();
-    QString fileDir4 = fileInfo.canonicalFilePath();
-
-    //countPathEntries(url.toString());
-    //countPathEntries(url.toLocalFile());
-
-    //countDirEntries(dir1);
-    //countPathEntries(dir1.path());
-
-    //QDir dirDoc("content://com.android.providers.media.documents/document");
-    //countDirEntries(dirDoc);
-
-    countDirEntries(dir2);
-    countPathEntries(dir2.path());
+    countDirEntries(fileDir);
+    countPathEntries(fileDir.path());
 
     std::string fullFileName = selectedFile.toUtf8().constData();
 
@@ -412,30 +389,6 @@ bool GuiHelpers::browseForFile( QWidget* parent, enum EMediaFileType mediaFileTy
         return false;
     }
 
-    /*
-    QFileInfo fileInfo(selectedFile);
-    QString absolutePath = fileInfo.absoluteFilePath();
-    QString conicalPath = fileInfo.canonicalFilePath();
-
-    std::filesystem::path absPath = fileInfo.filesystemAbsoluteFilePath();
-    std::filesystem::path conPath = fileInfo.filesystemCanonicalFilePath();
-
-    contentUrlToFileSystemPath( selectedFile );
-
-    LogMsg( LOG_VERBOSE, "sel %s \n absolute %s conical %s \n abs %s \n con %s",
-            selectedFile.toUtf8().constData(),
-           absolutePath.toUtf8().constData(),
-           conicalPath.toUtf8().constData(),
-           absPath.c_str(), conPath.c_str() );
-
-    retFileName = selectedFile.toUtf8().constData();
-
-
-
-    VxFileUtil::decodePercentEncodingOfSlash( retFileName );
-    VxFileUtil::makeForwardSlashPath( retFileName );
-*/
-
     retFileNameAndPath = fullFileName;
     return !retFileNameAndPath.empty();
 }
@@ -443,6 +396,18 @@ bool GuiHelpers::browseForFile( QWidget* parent, enum EMediaFileType mediaFileTy
 //============================================================================
 uint64_t GuiHelpers::testCanReadFile( std::string fullFileName )
 {
+    if( VxFileUtil::fileIsProviderFile( fullFileName.c_str() ) )
+    {
+        VFile* vFile = VxFileUtil::fileOpen( fullFileName.c_str(), "rb" );
+        if( vFile )
+        {
+            VFileClose( vFile );
+            return 1;
+        }
+
+        return 0;
+    }
+
     uint64_t fileLen = VxFileUtil::fileExists(fullFileName.c_str());
     if( fileLen )
     {

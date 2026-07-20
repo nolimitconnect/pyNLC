@@ -6,7 +6,7 @@
  *  See LICENSES/README.md for more information.
  */
 #include "config_components_kodi.h"
-#if !defined(HAVE_QT_GUI)
+#if !defined(HAVE_NLC_GUI)
 
 #include "AndroidStorageProvider.h"
 #include "NlcCoreUtil.h"
@@ -17,18 +17,18 @@
 #include <cstring>
 #include <map>
 
-#include <platform/qt/qtandroid/jni/Context.h>
-#include <platform/qt/qtandroid/jni/StorageManager.h>
-#include <platform/qt/qtandroid/jni/Environment.h>
+#include <platform/android/jni/Context.h>
+#include <platform/android/jni/StorageManager.h>
+#include <platform/android/jni/Environment.h>
 
 #include "filesystem/Directory.h"
 #include "filesystem/File.h"
 #include "guilib/LocalizeStrings.h"
-#if defined(TARGET_OS_ANDROID) && !defined(HAVE_QT_GUI)
+#if defined(TARGET_OS_ANDROID) && !defined(HAVE_NLC_GUI)
 # include "platform/android/activity/XBMCApp.h"
-#elif defined(TARGET_OS_ANDROID) && defined(HAVE_QT_GUI)
-# include "platform/qt/KodiQtApp.h"
-#endif // defined(TARGET_OS_ANDROID) && !defined(HAVE_QT_GUI)
+#elif defined(TARGET_OS_ANDROID) && defined(HAVE_NLC_GUI)
+# include "platform/nlc/KodiNlcApp.h"
+#endif // defined(TARGET_OS_ANDROID) && !defined(HAVE_NLC_GUI)
 
 #include "utils/RegExp.h"
 #include "utils/StringUtils.h"
@@ -433,4 +433,4 @@ bool CAndroidStorageProvider::PumpDriveChangeEvents(IStorageEventsCallback *call
   m_removableDrives = std::move(drives);
   return changed;
 }
-#endif // !defined(HAVE_QT_GUI)
+#endif // !defined(HAVE_NLC_GUI)

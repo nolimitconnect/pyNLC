@@ -22,13 +22,13 @@
 
 #if defined(TARGET_OS_ANDROID)
 
-#if defined(TARGET_OS_ANDROID) && !defined(HAVE_QT_GUI)
+#if defined(TARGET_OS_ANDROID) && !defined(HAVE_NLC_GUI)
 # include "filesystem/AndroidAppDirectory.h"
 # include "platform/android/activity/XBMCApp.h"
-#elif defined(TARGET_ANDROID) && defined(HAVE_QT_GUI)
+#elif defined(TARGET_ANDROID) && defined(HAVE_NLC_GUI)
 # include "filesystem/AndroidAppDirectory.h"
-# include "platform/qt/KodiQtApp.h"
-#endif // defined(TARGET_ANDROID) && !defined(HAVE_QT_GUI)
+# include "platform/nlc/KodiNlcApp.h"
+#endif // defined(TARGET_ANDROID) && !defined(HAVE_NLC_GUI)
 
 #include "FileItem.h"
 #include "File.h"

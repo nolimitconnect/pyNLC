@@ -101,7 +101,7 @@ void AppCommon::setActiveGlTexture( unsigned int activeTextureNum )
 }
 
 //============================================================================
-void AppCommon::createTextureObject( CTextureQt * texture )
+void AppCommon::createTextureObject( CTextureNlc * texture )
 {
     RenderGlWidget * glWidget = getRenderConsumer();
     if( glWidget )
@@ -112,7 +112,7 @@ void AppCommon::createTextureObject( CTextureQt * texture )
 }
 
 //============================================================================
-void AppCommon::destroyTextureObject( CTextureQt * texture )
+void AppCommon::destroyTextureObject( CTextureNlc * texture )
 {
     RenderGlWidget * glWidget = getRenderConsumer();
     if( glWidget )
@@ -123,7 +123,7 @@ void AppCommon::destroyTextureObject( CTextureQt * texture )
 }
 
 //============================================================================
-bool AppCommon::loadToGPU( CTextureQt * texture )
+bool AppCommon::loadToGPU( CTextureNlc * texture )
 {
     bool result = false;
     RenderGlWidget * glWidget = getRenderConsumer();
@@ -145,7 +145,7 @@ bool AppCommon::loadToGPU( CTextureQt * texture )
 }
 
 //============================================================================
-void AppCommon::bindToUnit( CTextureQt * texture, unsigned int unit )
+void AppCommon::bindToUnit( CTextureNlc * texture, unsigned int unit )
 {
     RenderGlWidget * glWidget = getRenderConsumer();
     if( glWidget )
@@ -156,7 +156,7 @@ void AppCommon::bindToUnit( CTextureQt * texture, unsigned int unit )
 }
 
 //============================================================================
-void AppCommon::beginGuiTexture( CGUITextureQt * guiTexture, NlcColor color )
+void AppCommon::beginGuiTexture( CGUITextureNlc * guiTexture, NlcColor color )
 {
     RenderGlWidget * glWidget = getRenderConsumer();
     if( glWidget )
@@ -167,7 +167,7 @@ void AppCommon::beginGuiTexture( CGUITextureQt * guiTexture, NlcColor color )
 }
 
 //============================================================================
-void AppCommon::drawGuiTexture( CGUITextureQt * guiTexture, float * x, float * y, float * z, const NlcRect& textureRect, const NlcRect& diffuse, int orientation )
+void AppCommon::drawGuiTexture( CGUITextureNlc * guiTexture, float * x, float * y, float * z, const NlcRect& textureRect, const NlcRect& diffuse, int orientation )
 {
     RenderGlWidget * glWidget = getRenderConsumer();
     if( glWidget )
@@ -178,7 +178,7 @@ void AppCommon::drawGuiTexture( CGUITextureQt * guiTexture, float * x, float * y
 }
 
 //============================================================================
-void AppCommon::endGuiTexture( CGUITextureQt * guiTexture )
+void AppCommon::endGuiTexture( CGUITextureNlc * guiTexture )
 {
     RenderGlWidget * glWidget = getRenderConsumer();
     if( glWidget )
@@ -200,7 +200,7 @@ void AppCommon::drawQuad( const NlcRect& rect, NlcColor color, CTextureBase * te
 }
 
 //============================================================================
-bool AppCommon::firstBegin( CGUIFontTTFQt * font )
+bool AppCommon::firstBegin( CGUIFontTTFNlc * font )
 {
     bool result = false;
     RenderGlWidget * glWidget = getRenderConsumer();
@@ -214,7 +214,7 @@ bool AppCommon::firstBegin( CGUIFontTTFQt * font )
 }
 
 //============================================================================
-void AppCommon::lastEnd( CGUIFontTTFQt * font )
+void AppCommon::lastEnd( CGUIFontTTFNlc * font )
 {
     RenderGlWidget * glWidget = getRenderConsumer();
     if( glWidget )
@@ -225,7 +225,7 @@ void AppCommon::lastEnd( CGUIFontTTFQt * font )
 }
 
 //============================================================================
-CVertexBuffer AppCommon::createVertexBuffer( CGUIFontTTFQt * font, const std::vector<SVertex>& vertices )
+CVertexBuffer AppCommon::createVertexBuffer( CGUIFontTTFNlc * font, const std::vector<SVertex>& vertices )
 {
     RenderGlWidget * glWidget = getRenderConsumer();
     if( glWidget )
@@ -239,7 +239,7 @@ CVertexBuffer AppCommon::createVertexBuffer( CGUIFontTTFQt * font, const std::ve
 }
 
 //============================================================================
-void AppCommon::destroyVertexBuffer( CGUIFontTTFQt * font, CVertexBuffer & vertBuffer )
+void AppCommon::destroyVertexBuffer( CGUIFontTTFNlc * font, CVertexBuffer & vertBuffer )
 {
     RenderGlWidget * glWidget = getRenderConsumer();
     if( glWidget )
@@ -250,7 +250,7 @@ void AppCommon::destroyVertexBuffer( CGUIFontTTFQt * font, CVertexBuffer & vertB
 }
 
 //============================================================================
-void AppCommon::deleteHardwareTexture( CGUIFontTTFQt * font )
+void AppCommon::deleteHardwareTexture( CGUIFontTTFNlc * font )
 {
     RenderGlWidget * glWidget = getRenderConsumer();
     if( glWidget )
@@ -261,7 +261,7 @@ void AppCommon::deleteHardwareTexture( CGUIFontTTFQt * font )
 }
 
 //============================================================================
-void AppCommon::createStaticVertexBuffers( CGUIFontTTFQt * font )
+void AppCommon::createStaticVertexBuffers( CGUIFontTTFNlc * font )
 {
     RenderGlWidget * glWidget = getRenderConsumer();
     if( glWidget )
@@ -272,7 +272,7 @@ void AppCommon::createStaticVertexBuffers( CGUIFontTTFQt * font )
 }
 
 //============================================================================
-void AppCommon::destroyStaticVertexBuffers( CGUIFontTTFQt * font )
+void AppCommon::destroyStaticVertexBuffers( CGUIFontTTFNlc * font )
 {
     RenderGlWidget * glWidget = getRenderConsumer();
     if( glWidget )

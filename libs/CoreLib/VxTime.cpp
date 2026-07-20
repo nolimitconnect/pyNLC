@@ -82,13 +82,6 @@ int	GetApplicationAliveMs( void )
 {
     InitializeTimeIfNeeded();
     int64_t tickCnt = (int64_t)GetHighResolutionTimeMs() - g_tickCountWhenAppInitialized;
-    static int64_t lastTime = 0;
-    if( tickCnt < lastTime )
-    {
-        LogMsg(LOG_ERROR, "ERROR MONOTONIC GetApplicationAliveMs() Went backwards from %" PRId64 " to %" PRId64 "", lastTime, tickCnt);
-    }
-
-    lastTime = tickCnt;
     return (int)tickCnt;
 }
 
@@ -98,13 +91,6 @@ int64_t	GetGmtTimeMs( void )
 {
     InitializeTimeIfNeeded();
     int64_t tickCnt = (int64_t)GetHighResolutionTimeMs() + g_tickCountOffsetMsFromGmtTime;
-    static int64_t lastTime = 0;
-    if( tickCnt < lastTime )
-    {
-        LogMsg(LOG_ERROR, "ERROR MONOTONIC GetGmtTimeMs() Went backwards from %" PRId64 " to %" PRId64 "", lastTime, tickCnt);
-    }
-
-    lastTime = tickCnt;
     return tickCnt;
 }
 

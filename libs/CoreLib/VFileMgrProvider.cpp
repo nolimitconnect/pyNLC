@@ -13,58 +13,11 @@
 #include <VirtStream/VirtProviderFile.h>
 
 #include <CoreLib/AssetDefs.h>
+#include <CoreLib/VxAndroid.h>
 #include <CoreLib/VxDefs.h>
 #include <CoreLib/VFile.h>
 #include <CoreLib/VxFileUtil.h>
 #include <CoreLib/VxGUID.h>
-
-
-#include <QtQml/QQmlFile>
-#include <QDir>
-#include <QUrl>
-#include <QFile>
-
-# if QT_VERSION < QT_VERSION_CHECK(6,0,0)
-#  include <QtAndroid>
-# else
-//#  include <QtCore/private/qandroidextras_p.h>
-# endif
-
-
-#if defined (Q_OS_ANDROID)
-namespace
-{
-/*
-    public static FileDetail getFileDetailFromUri(final Context context, final Uri uri) {
-        FileDetail fileDetail = null;
-        if (uri != null) {
-            fileDetail = new FileDetail();
-            // File Scheme.
-            if (ContentResolver.SCHEME_FILE.equals(uri.getScheme())) {
-                File file = new File(uri.getPath());
-                fileDetail.fileName = file.getName();
-                fileDetail.fileSize = file.length();
-            }
-            // Content Scheme.
-            else if (ContentResolver.SCHEME_CONTENT.equals(uri.getScheme())) {
-                Cursor returnCursor =
-                        context.getContentResolver().query(uri, null, null, null, null);
-                if (returnCursor != null && returnCursor.moveToFirst()) {
-                    int nameIndex = returnCursor.getColumnIndex(OpenableColumns.DISPLAY_NAME);
-                    int sizeIndex = returnCursor.getColumnIndex(OpenableColumns.SIZE);
-                    fileDetail.fileName = returnCursor.getString(nameIndex);
-                    fileDetail.fileSize = returnCursor.getLong(sizeIndex);
-                    returnCursor.close();
-                }
-            }
-        }
-        return fileDetail;
-    }
-*/
-
-} // namespace
-
-#endif // defined (Q_OS_ANDROID)
 
 //============================================================================
 VirtProviderFile* VFileMgr::findProviderFile( VFile* fp )
@@ -84,12 +37,7 @@ VirtProviderFile* VFileMgr::findProviderFile( VFile* fp )
 //============================================================================
 bool VFileMgr::providerDirectoryExists( std::string dirPath )
 {
-    bool dirExists{ false };
-
-    QDir qDir( dirPath.c_str() );
-    dirExists = qDir.exists();
-
-    return dirExists;
+    return VxAndroid::directoryExists( dirPath.c_str() );
 }
 
 //============================================================================
@@ -97,8 +45,8 @@ uint64_t VFileMgr::providerFileExists( std::string fileName )
 {
     uint64_t fileLen{0};
 
-    VirtProviderFile* providerFile = new VirtProviderFile(fileName.c_str());
-    if( providerFile->open( QIODevice::ReadOnly ) )
+    VirtProviderFile* providerFile = new VirtProviderFile( fileName );
+    if( providerFile->openReadOnly() )
     {
         fileLen = providerFile->size();
         providerFile->closeFile();
@@ -113,31 +61,8 @@ uint64_t VFileMgr::providerFileExists( std::string fileName )
 //============================================================================
 VFile* VFileMgr::providerFileOpen( std::string fileNameIn, std::string fileMode )
 {
-
-    QString contentPath( fileNameIn.c_str() );
-    QFileInfo fileInfo(contentPath);
-    QUrl contentUrl(contentPath);
-
-    qDebug() << "(QUrl::authority)          :" << contentUrl.authority();
-    qDebug() << "(QUrl::query)              :" << contentUrl.query();
-    qDebug() << "(QUrl::path)               :" << contentUrl.path();
-    qDebug() << "(QUrl::toString)           :" << contentUrl.toString();
-    qDebug() << "(QUrl::fileName)           :" << contentUrl.fileName();
-    qDebug() << "(QUrl::url)                :" << contentUrl.url();
-    qDebug() << "(QUrl::scheme)             :" << contentUrl.scheme();
-
-    qDebug() << "(QFileInfo::canonicalPath)      :" << fileInfo.canonicalPath();
-    qDebug() << "(QFileInfo::absolutePath)       :" << fileInfo.absolutePath();
-    qDebug() << "(QFileInfo::path)               :" << fileInfo.path();
-    qDebug() << "(QFileInfo::baseName)           :" << fileInfo.baseName();
-    qDebug() << "(QFileInfo::filePath)           :" << fileInfo.filePath();
-    qDebug() << "(QFileInfo::absoluteFilePath)   :" << fileInfo.absoluteFilePath();
-    qDebug() << "(QFileInfo::canonicalFilePath)  :" << fileInfo.canonicalFilePath();
-
-    QString fileName = contentUrl.toLocalFile();
-
-    VirtProviderFile* providerFile = new VirtProviderFile(fileName);
-    if( providerFile->open( QIODevice::ReadOnly ) )
+    VirtProviderFile* providerFile = new VirtProviderFile( fileNameIn );
+    if( providerFile->openReadOnly() )
     {
 		VFile* vFile = new VFile();
 		memset( vFile, 0, sizeof( VFile ) );
@@ -174,7 +99,7 @@ int VFileMgr::providerFileClose( VFile* fp )
     {
         VirtProviderFile* providerFile = *iter;
         providerFile->closeFile();
-        providerFile->deleteLater();
+        delete providerFile;
 		m_ProviderFiles.erase( iter );
         retVal = 0;
     }
@@ -454,64 +379,58 @@ int VFileMgr::listProviderFilesAndFolders( const char* srcDir, std::vector<VxFil
 {
     fileList.clear();
 
-
     std::string folderName( srcDir );
-    //VxFileUtil::removeTrailingDirectorySlash(folderName);
-    //VxFileUtil::encodePercentEncodingOfSlash(folderName);
 
     if( 0 == fileFilterMask )
     {
         fileFilterMask = VXFILE_TYPE_ALLNOTEXE | VXFILE_TYPE_DIRECTORY;
     }
 
-
-    QDir browseDir( srcDir );
-
-    QFileInfoList fileInfoList = browseDir.entryInfoList();
-    LogMsg( LOG_VERBOSE, "VFileMgr::%s %zu files in dir %s", __func__, fileList.size(), folderName.c_str() );
-    for( auto fileListInfo : fileInfoList )
+    std::vector<VxAndroidPathInfo> pathInfoList;
+    if( 0 != VxAndroid::listDirectory( srcDir, pathInfoList ) )
     {
-        std::string fileName = fileListInfo.filePath().toUtf8().constData();
-        VxFileUtil::decodePercentEncodingOfSlash( fileName );
+        return -1;
+    }
 
+    LogMsg( LOG_VERBOSE, "VFileMgr::%s %zu files in dir %s", __func__, pathInfoList.size(), folderName.c_str() );
+    for( const auto& pathInfo : pathInfoList )
+    {
         VxFileInfo vxFileInfo;
 
-        if( fileListInfo.isDir() )
+        if( pathInfo.m_IsDirectory )
         {
-            LogMsg( LOG_VERBOSE, "Directory %s", fileName.c_str() );
-
             if( fileFilterMask & VXFILE_TYPE_DIRECTORY )
             {
+                std::string fileName = pathInfo.m_FileNameAndPath;
                 VxFileUtil::assureTrailingDirectorySlash( fileName );
-                vxFileInfo.setFileName( fileName.c_str() );
+                vxFileInfo.setFileName( fileName );
+                vxFileInfo.setFileNameAndPath( fileName );
                 vxFileInfo.setFileType( VXFILE_TYPE_DIRECTORY );
                 fileList.push_back( vxFileInfo );
             }
+            continue;
         }
-        else if( fileListInfo.isExecutable() )
-        {
-            LogMsg( LOG_VERBOSE, "Executable ignored File %s", fileName.c_str() );
-        }
-        else if( fileListInfo.isReadable() )
-        {
-            int64_t fileLen = fileListInfo.size();
 
-            if( fileLen )
-            {
-                vxFileInfo.setFileName( fileName.c_str() );
-                vxFileInfo.setFileType( VxFileNameToFileType( fileName ) );
-                vxFileInfo.setFileLength( fileLen );
-                fileList.push_back( vxFileInfo );
-            }
-            else
-            {
-                LogMsg( LOG_VERBOSE, "Could Not Resolve file length of file %s", fileName.c_str() );
-            }
-        }
-        else
+        if( pathInfo.m_IsExecutable )
         {
-            LogMsg( LOG_VERBOSE, "NOT Readable File %s", fileName.c_str() );
+            continue;
         }
+
+        if( !pathInfo.m_IsReadable )
+        {
+            continue;
+        }
+
+        if( pathInfo.m_FileLength <= 0 )
+        {
+            continue;
+        }
+
+        vxFileInfo.setFileName( pathInfo.m_FileNameAndPath );
+        vxFileInfo.setFileNameAndPath( pathInfo.m_FileNameAndPath );
+        vxFileInfo.setFileType( VxFileNameToFileType( pathInfo.m_FileNameAndPath ) );
+        vxFileInfo.setFileLength( pathInfo.m_FileLength );
+        fileList.push_back( vxFileInfo );
     }
 
 	return 0;

@@ -35,6 +35,8 @@
 #include <CoreLib/VxFileInfo.h>
 #include <CoreLib/VxGlobals.h>
 
+#include <GuiInterface/ICamCapture.h>
+
 #include <QResizeEvent>
 #include <QMessageBox>
 #include <QTimer>
@@ -65,19 +67,18 @@ AppletSnapshot::AppletSnapshot(	AppCommon& app, QWidget* parent )
     connect( ui.snapshotButton, SIGNAL(clicked()), this, SLOT( onSnapShotButClick() ) );
     connect( ui.m_DoneButton, SIGNAL(clicked()), this, SLOT( onDoneButClick() ) );
     connect( ui.m_CamFrontBackButton, SIGNAL(clicked()), this, SLOT( onCamFrontBackButClick() ) );
-    connect( &m_MyApp.getCamLogic(), SIGNAL(signalCameraDescription(QString) ), this, SLOT(slotCameraDescription( QString ) ) );
 
-    ui.m_CamFrontBackButton->setEnabled( m_MyApp.getCamLogic().getCameraCount() > 1 );
+    ui.m_CamFrontBackButton->setEnabled( ICamCapture::getICamCapture().getCameraCount() > 1 );
 
-    ui.m_CamNameLabel->setText( m_MyApp.getCamLogic().getCamId().c_str() );
+    ui.m_CamNameLabel->setText( ICamCapture::getICamCapture().getCamId().c_str() );
 
-    if( m_MyApp.getCamLogic().getCameraCount() )
+    if( ICamCapture::getICamCapture().getCameraCount() )
     {
         m_MyApp.getEngine().fromGuiWantMediaInput( m_MyApp.getMyOnlineId(), eMediaInputVideoJpg, this, eMediaModuleSnapshot, m_MediaSessionId, true );
         VxLabel* camScreen = ui.m_ImageScreen;
         if( camScreen )
         {
-            QString bkgFile = m_MyApp.getCamLogic().getCameraBackgroundFile();
+            QString bkgFile = m_MyApp.getCameraBackgroundFile();
             camScreen->setImageFromFile( bkgFile );
         }
     }
@@ -148,7 +149,7 @@ void AppletSnapshot::onDoneButClick( void )
 //============================================================================ 
 void AppletSnapshot::onCamFrontBackButClick( void )
 {
-    m_MyApp.getCamLogic().nextCamera();
+    ICamCapture::getICamCapture().nextCamera();
 }
 
 //============================================================================

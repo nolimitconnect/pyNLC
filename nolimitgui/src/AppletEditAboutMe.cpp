@@ -34,6 +34,8 @@
 #include <CoreLib/VxDebug.h>
 #include <CoreLib/VxGlobals.h>
 
+#include <GuiInterface/ICamCapture.h>
+
 #include "ui_AppletEditAboutMe.h"
 
 //============================================================================
@@ -94,7 +96,7 @@ AppletEditAboutMe::AppletEditAboutMe( AppCommon& app, QWidget* parent )
     connect( ui.m_ApplyAboutMeButton, SIGNAL(clicked()), this, SLOT(onApplyAboutMeButClick()) );
     connect( ui.m_ViewAboutMePageButton, SIGNAL(clicked()), this, SLOT(slotViewAboutMeButClick()) );
 
-    m_CameraSourceAvail = m_MyApp.getCamLogic().isCamAvailable();
+    m_CameraSourceAvail = ICamCapture::getICamCapture().isCamCaptureAvailable();
 
 	m_MyApp.activityStateChange( this, true );
 }

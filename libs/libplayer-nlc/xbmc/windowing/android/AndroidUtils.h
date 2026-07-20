@@ -11,11 +11,11 @@
 #include <string>
 #include <vector>
 
-#if defined(HAVE_QT_GUI)
-# include <qtandroid/jni/Display.h>
+#if defined(HAVE_NLC_GUI)
+# include <android/jni/Display.h>
 #else
 # include <android/jni/Display.h>
-#endif // defined(HAVE_QT_GUI)
+#endif // defined(HAVE_NLC_GUI)
 
 #include "settings/lib/ISettingCallback.h"
 #include "windowing/Resolution.h"

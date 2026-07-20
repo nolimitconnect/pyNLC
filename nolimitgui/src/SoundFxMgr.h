@@ -26,7 +26,7 @@ class SoundFxMgr : public QObject
 	Q_OBJECT
 public:
     SoundFxMgr() = default;
-    virtual ~SoundFxMgr() = default;
+	virtual ~SoundFxMgr() override;
 
 	bool						sndFxMgrStartup( void );
 	bool						sndFxMgrShutdown( void );

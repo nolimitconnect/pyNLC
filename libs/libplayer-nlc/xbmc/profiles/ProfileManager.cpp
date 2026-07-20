@@ -608,12 +608,12 @@ std::string CProfileManager::GetSavestatesFolder() const
 //{
 //  if (m_currentProfile == 0)
 //  {
-//#if defined(HAVE_QT_GUI)
+//#if defined(HAVE_NLC_GUI)
 //    // user cannot change the settings so use the read only settings in assets
 //    return "special://xbmcbin/userdata/guisettings.xml";
 //#else
 //    return "special://masterprofile/guisettings.xml";
-//#endif // defined(HAVE_QT_GUI)
+//#endif // defined(HAVE_NLC_GUI)
 //  }
 //
 //  return "special://profile/guisettings.xml";

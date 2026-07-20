@@ -8,11 +8,11 @@
 
 #pragma once
 
-#include <platform/qt/qtandroid/jni/JNIBase.h>
+#include <platform/android/jni/JNIBase.h>
 
-#include <platform/qt/qtandroid/jni/Intent.h>
-#include <platform/qt/qtandroid/jni/MediaMetadata.h>
-#include <platform/qt/qtandroid/jni/PlaybackState.h>
+#include <platform/android/jni/Intent.h>
+#include <platform/android/jni/MediaMetadata.h>
+#include <platform/android/jni/PlaybackState.h>
 
 namespace jni
 {
@@ -57,3 +57,4 @@ protected:
 };
 
 }
+

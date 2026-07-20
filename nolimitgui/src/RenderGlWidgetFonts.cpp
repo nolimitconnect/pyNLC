@@ -20,12 +20,12 @@
 #include <P2PEngine/P2PEngine.h>
 #include <CoreLib/VxTimeUtil.h>
 
-#include "guilib/TextureQt.h"
-#include "guilib/GUITextureQt.h"
+#include "guilib/TextureNlc.h"
+#include "guilib/GUITextureNlc.h"
 #include "utils/GLUtils.h"
 
 #include "ServiceBroker.h"
-#include "rendering/qt/RenderSystemQt.h"
+#include "rendering/qt/RenderSystemNlc.h"
 #include "rendering/MatrixGL.h"
 
 #include "windowing/WinSystem.h"
@@ -36,20 +36,20 @@
 #define BUFFER_OFFSET(i) ((char *)NULL + (i))
 
 //============================================================================
-bool RenderGlWidget::firstBegin( CGUIFontTTFQt * font )
+bool RenderGlWidget::firstBegin( CGUIFontTTFNlc * font )
 {
     VerifyGLStateQt();
 
     GLenum pixformat = GL_ALPHA; // deprecated
 
-    if( font->m_textureStatus == CGUIFontTTFQt::TEXTURE_REALLOCATED )
+    if( font->m_textureStatus == CGUIFontTTFNlc::TEXTURE_REALLOCATED )
     {
         //if( getGlFunctions()->glIsTexture( font->m_nTexture ) )
         //    CServiceBroker::GetGUI()->GetTextureManager().ReleaseHwTexture( font->m_nTexture );
-        font->m_textureStatus = CGUIFontTTFQt::TEXTURE_VOID;
+        font->m_textureStatus = CGUIFontTTFNlc::TEXTURE_VOID;
     }
 
-    if( font->m_textureStatus == CGUIFontTTFQt::TEXTURE_VOID )
+    if( font->m_textureStatus == CGUIFontTTFNlc::TEXTURE_VOID )
     {
         // Have OpenGL generate a texture object handle for us
         getGlFunctions()->glGenTextures( 1, ( GLuint* )&font->m_nTexture );
@@ -66,17 +66,17 @@ bool RenderGlWidget::firstBegin( CGUIFontTTFQt * font )
                       pixformat, GL_UNSIGNED_BYTE, 0 );
 
         VerifyGLStateQt();
-        font->m_textureStatus = CGUIFontTTFQt::TEXTURE_UPDATED;
+        font->m_textureStatus = CGUIFontTTFNlc::TEXTURE_UPDATED;
     }
 
-    if( font->m_textureStatus == CGUIFontTTFQt::TEXTURE_UPDATED )
+    if( font->m_textureStatus == CGUIFontTTFNlc::TEXTURE_UPDATED )
     {
         getGlFunctions()->glBindTexture( GL_TEXTURE_2D, font->m_nTexture );
         getGlFunctions()->glTexSubImage2D( GL_TEXTURE_2D, 0, 0, font->m_updateY1, font->m_texture->GetWidth(), font->m_updateY2 - font->m_updateY1, pixformat, GL_UNSIGNED_BYTE,
                          font->m_texture->GetPixels() + font->m_updateY1 * font->m_texture->GetPitch() );
 
         font->m_updateY1 = font->m_updateY2 = 0;
-        font->m_textureStatus = CGUIFontTTFQt::TEXTURE_READY;
+        font->m_textureStatus = CGUIFontTTFNlc::TEXTURE_READY;
     }
 
     VerifyGLStateQt();
@@ -93,12 +93,12 @@ bool RenderGlWidget::firstBegin( CGUIFontTTFQt * font )
 }
 
 //============================================================================
-void RenderGlWidget::lastEnd( CGUIFontTTFQt * font )
+void RenderGlWidget::lastEnd( CGUIFontTTFNlc * font )
 {
     VerifyGLStateQt();
 
     // GLES 2.0 version.
-    CRenderSystemQt * renderSystem = dynamic_cast< CRenderSystemQt* >( CServiceBroker::GetRenderSystem() );
+    CRenderSystemNlc * renderSystem = dynamic_cast< CRenderSystemNlc* >( CServiceBroker::GetRenderSystem() );
     renderSystem->EnableGUIShader( SM_FONTS );
 
     GLint posLoc = renderSystem->GUIShaderGetPos();
@@ -210,7 +210,7 @@ void RenderGlWidget::lastEnd( CGUIFontTTFQt * font )
 }
 
 //============================================================================
-CVertexBuffer RenderGlWidget::createVertexBuffer( CGUIFontTTFQt * font, const std::vector<SVertex>& vertices )
+CVertexBuffer RenderGlWidget::createVertexBuffer( CGUIFontTTFNlc * font, const std::vector<SVertex>& vertices )
 {
     VerifyGLStateQt();
 
@@ -232,7 +232,7 @@ CVertexBuffer RenderGlWidget::createVertexBuffer( CGUIFontTTFQt * font, const st
 }
 
 //============================================================================
-void RenderGlWidget::destroyVertexBuffer( CGUIFontTTFQt * font, CVertexBuffer& vertBuffer )
+void RenderGlWidget::destroyVertexBuffer( CGUIFontTTFNlc * font, CVertexBuffer& vertBuffer )
 {
     if( vertBuffer.bufferHandle != 0 )
     {
@@ -243,20 +243,20 @@ void RenderGlWidget::destroyVertexBuffer( CGUIFontTTFQt * font, CVertexBuffer& v
 }
 
 //============================================================================
-void RenderGlWidget::deleteHardwareTexture( CGUIFontTTFQt * font )
+void RenderGlWidget::deleteHardwareTexture( CGUIFontTTFNlc * font )
 {
-    if( font->m_textureStatus != CGUIFontTTFQt::TEXTURE_VOID )
+    if( font->m_textureStatus != CGUIFontTTFNlc::TEXTURE_VOID )
     {
         //if( getGlFunctions()->glIsTexture( font->m_nTexture ) )
         //    CServiceBroker::GetGUI()->GetTextureManager().ReleaseHwTexture( font->m_nTexture );
 
-        font->m_textureStatus = CGUIFontTTFQt::TEXTURE_VOID;
+        font->m_textureStatus = CGUIFontTTFNlc::TEXTURE_VOID;
         font->m_updateY1 = font->m_updateY2 = 0;
     }
 }
 
 //============================================================================
-void RenderGlWidget::createStaticVertexBuffers( CGUIFontTTFQt * font )
+void RenderGlWidget::createStaticVertexBuffers( CGUIFontTTFNlc * font )
 {
     VerifyGLStateQt();
 
@@ -282,7 +282,7 @@ void RenderGlWidget::createStaticVertexBuffers( CGUIFontTTFQt * font )
 }
 
 //============================================================================
-void RenderGlWidget::destroyStaticVertexBuffers( CGUIFontTTFQt * font )
+void RenderGlWidget::destroyStaticVertexBuffers( CGUIFontTTFNlc * font )
 {
     getGlFunctions()->glDeleteBuffers( 1, &font->m_elementArrayHandle );
     font->m_staticVertexBufferCreated = false;

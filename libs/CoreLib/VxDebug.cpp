@@ -681,17 +681,17 @@ void LogMsg2( uint32_t u32MsgType, const char* msg )
 //============================================================================
 void VxHandleLogMsg( uint32_t u32MsgType, const char* logMsg )
 {
-    if( g_iLogNameLen )
-    {
-        log_to_file( g_as8LogFileName, logMsg );
-    }
-
     if( VxIsAppShuttingDown() )
     {
 #ifdef TARGET_OS_ANDROID
         __android_log_write( ANDROID_LOG_INFO, "SHUTDOWN", logMsg );
 #endif // TARGET_OS_ANDROID
         return;
+    }
+
+    if( g_iLogNameLen )
+    {
+        log_to_file( g_as8LogFileName, logMsg );
     }
 
 #if ENABLE_LOG_LIST

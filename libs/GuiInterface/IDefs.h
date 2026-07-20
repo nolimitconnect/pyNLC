@@ -966,7 +966,7 @@ enum EPluginAccess
 	ePluginAccessRequiresDirectConnect = 7,	//!< Plugin access requires contact have direct connection
 	ePluginAccessRequiresOnline		= 8,	//!< Plugin access requires contact to be online
 
-    eMaxPluginAccessState
+    eMaxPluginAccess
 };
 
 // Enumeration of plugin message

@@ -93,6 +93,7 @@ set(HEADERS Activity.h
             BaseColumns.h
             BitmapDrawable.h
             Bitmap.h
+            BitmapFactory.h
             BitSet.h
             BroadcastReceiver.h
             Buffer.h
@@ -106,6 +107,7 @@ set(HEADERS Activity.h
             Cursor.h
             DhcpInfo.h
             Display.h
+            DisplayManager.h
             DisplayMetrics.h
             Drawable.h
             Enum.h
@@ -126,6 +128,7 @@ set(HEADERS Activity.h
             MediaCodecList.h
             MediaCrypto.h
             MediaFormat.h
+            MediaMetadata.h
             MediaStore.h
             NetworkInfo.h
             Os.h
@@ -169,7 +172,11 @@ set(HEADERS Activity.h
             RouteInfo.h
             InetAddress.h
             NetworkInterface.h
+            NsdManager.h
+            NsdServiceInfo.h
             Rect.h
+            PlaybackState.h
+            SurfaceHolder.h
             jutils/jutils.hpp
             jutils/jutils-details.hpp)
 

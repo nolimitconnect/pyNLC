@@ -24,7 +24,7 @@
 #include <CoreLib/VxTime.h>
 
 #ifdef TARGET_OS_ANDROID
-# include "platform/qt/qtandroid/jni/Context.h"
+# include "platform/nlc/android/jni/Context.h"
 #endif // TARGET_OS_ANDROID
 
 #include <QMessageBox>

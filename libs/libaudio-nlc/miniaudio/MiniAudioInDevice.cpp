@@ -83,8 +83,9 @@ bool MiniAudioInDevice::startAudioInDevice( void )
         ma_result result = ma_device_start( &m_MaDevice );
         if( result != MA_SUCCESS )
         {
-            ma_device_uninit( &m_MaDevice );
-            LogMsg( LOG_VERBOSE, "MiniAudioInDevice::startAudioIn Failed to start device." );
+            // android takes a while to initialize the audio device, so failure here might be temporary
+            // ma_device_uninit( &m_MaDevice ); // do not uninit.. it may just not be ready yet
+            LogMsg( LOG_ERROR, "MiniAudioInDevice::startAudioIn Failed to start device." );
             m_DeviceAvailable = false;
         }
         else

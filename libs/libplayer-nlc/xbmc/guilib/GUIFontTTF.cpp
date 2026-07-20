@@ -177,8 +177,8 @@ CGUIFontTTFBase::~CGUIFontTTFBase(void)
 
 CGUIFontTTFBase* CGUIFontTTFBase::CreateGUIFontTTF( const std::string& fontIdent )
 {
-#if defined(HAVE_QT_GUI)
-    return new CGUIFontTTFQt( fontIdent );
+#if defined(HAVE_NLC_GUI)
+    return new CGUIFontTTFNlc( fontIdent );
 #else
     return nullptr;
 #endif

@@ -6,7 +6,7 @@
  *  See LICENSES/README.md for more information.
  */
 #include "config_kodi.h"
-#ifndef HAVE_QT_GUI
+#ifndef HAVE_NLC_GUI
 
 #include "GLESShader.h"
 #include "ServiceBroker.h"
@@ -177,4 +177,4 @@ void CGLESShader::Free()
   CGLSLShaderProgram::Free();
 }
 
-#endif // HAVE_QT_GUI
+#endif // HAVE_NLC_GUI

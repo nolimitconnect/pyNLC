@@ -6,7 +6,7 @@
  *  See LICENSES/README.md for more information.
  */
 #include "config_components_kodi.h"
-#if !defined(HAVE_QT_GUI)
+#if !defined(HAVE_NLC_GUI)
 
 #if defined(TARGET_ANDROID)
 
@@ -14,21 +14,21 @@
 #include <sys/stat.h>
 
 #include <android/bitmap.h>
-#include <platform/qt/qtandroid/jni/Bitmap.h>
-#include <platform/qt/qtandroid/jni/Drawable.h>
-#include <platform/qt/qtandroid/jni/BitmapDrawable.h>
-#include <platform/qt/qtandroid/jni/Build.h>
-#include <platform/qt/qtandroid/jni/Context.h>
-#include <platform/qt/qtandroid/jni/DisplayMetrics.h>
-#include <platform/qt/qtandroid/jni/PackageManager.h>
-#include <platform/qt/qtandroid/jni/Resources.h>
+#include <platform/android/jni/Bitmap.h>
+#include <platform/android/jni/Drawable.h>
+#include <platform/android/jni/BitmapDrawable.h>
+#include <platform/android/jni/Build.h>
+#include <platform/android/jni/Context.h>
+#include <platform/android/jni/DisplayMetrics.h>
+#include <platform/android/jni/PackageManager.h>
+#include <platform/android/jni/Resources.h>
 
 #include "AndroidAppFile.h"
-#if defined(TARGET_OS_ANDROID) && !defined(HAVE_QT_GUI)
+#if defined(TARGET_OS_ANDROID) && !defined(HAVE_NLC_GUI)
 # include "platform/android/activity/XBMCApp.h"
-#elif defined(TARGET_OS_ANDROID) && defined(HAVE_QT_GUI)
-# include "platform/qt/KodiQtApp.h"
-#endif // defined(TARGET_OS_ANDROID) && !defined(HAVE_QT_GUI)
+#elif defined(TARGET_OS_ANDROID) && defined(HAVE_NLC_GUI)
+# include "platform/nlc/KodiNlcApp.h"
+#endif // defined(TARGET_OS_ANDROID) && !defined(HAVE_NLC_GUI)
 #include "NlcCoreUtil.h"
 #include "NlcUrl.h"
 #include "utils/log.h"
@@ -175,4 +175,5 @@ int CFileAndroidApp::IoControl(EIoControl request, void* param)
 }
 #endif
 
-#endif // !defined(HAVE_QT_GUI)
+#endif // !defined(HAVE_NLC_GUI)
+

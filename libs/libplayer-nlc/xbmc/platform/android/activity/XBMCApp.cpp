@@ -6,7 +6,7 @@
  *  See LICENSES/README.md for more information.
  */
 #include "config_components_kodi.h"
-#if !defined(HAVE_QT_GUI)
+#if !defined(HAVE_NLC_GUI)
 
 #include "XBMCApp.h"
 
@@ -23,35 +23,35 @@
 #include <android/native_window.h>
 #include <android/native_window_jni.h>
 
-#include <platform/qt/qtandroid/jni/ApplicationInfo.h>
-#include <platform/qt/qtandroid/jni/BitmapFactory.h>
-#include <platform/qt/qtandroid/jni/BroadcastReceiver.h>
-#include <platform/qt/qtandroid/jni/Build.h>
-#include <platform/qt/qtandroid/jni/CharSequence.h>
-#include <platform/qt/qtandroid/jni/ConnectivityManager.h>
-#include <platform/qt/qtandroid/jni/ContentResolver.h>
-#include <platform/qt/qtandroid/jni/Context.h>
-#include <platform/qt/qtandroid/jni/Cursor.h>
-#include <platform/qt/qtandroid/jni/Display.h>
-#include <platform/qt/qtandroid/jni/DisplayManager.h>
-#include <platform/qt/qtandroid/jni/Environment.h>
-#include <platform/qt/qtandroid/jni/File.h>
-#include <platform/qt/qtandroid/jni/Intent.h>
-#include <platform/qt/qtandroid/jni/IntentFilter.h>
-#include <platform/qt/qtandroid/jni/JNIThreading.h>
-#include <platform/qt/qtandroid/jni/KeyEvent.h>
-#include <platform/qt/qtandroid/jni/MediaStore.h>
-#include <platform/qt/qtandroid/jni/NetworkInfo.h>
-#include <platform/qt/qtandroid/jni/PackageManager.h>
-#include <platform/qt/qtandroid/jni/PowerManager.h>
-#include <platform/qt/qtandroid/jni/StatFs.h>
-#include <platform/qt/qtandroid/jni/System.h>
-#include <platform/qt/qtandroid/jni/SystemClock.h>
-#include <platform/qt/qtandroid/jni/URI.h>
-#include <platform/qt/qtandroid/jni/View.h>
-#include <platform/qt/qtandroid/jni/WakeLock.h>
-#include <platform/qt/qtandroid/jni/Window.h>
-#include <platform/qt/qtandroid/jni/WindowManager.h>
+#include <platform/android/jni/ApplicationInfo.h>
+#include <platform/android/jni/BitmapFactory.h>
+#include <platform/android/jni/BroadcastReceiver.h>
+#include <platform/android/jni/Build.h>
+#include <platform/android/jni/CharSequence.h>
+#include <platform/android/jni/ConnectivityManager.h>
+#include <platform/android/jni/ContentResolver.h>
+#include <platform/android/jni/Context.h>
+#include <platform/android/jni/Cursor.h>
+#include <platform/android/jni/Display.h>
+#include <platform/android/jni/DisplayManager.h>
+#include <platform/android/jni/Environment.h>
+#include <platform/android/jni/File.h>
+#include <platform/android/jni/Intent.h>
+#include <platform/android/jni/IntentFilter.h>
+#include <platform/android/jni/JNIThreading.h>
+#include <platform/android/jni/KeyEvent.h>
+#include <platform/android/jni/MediaStore.h>
+#include <platform/android/jni/NetworkInfo.h>
+#include <platform/android/jni/PackageManager.h>
+#include <platform/android/jni/PowerManager.h>
+#include <platform/android/jni/StatFs.h>
+#include <platform/android/jni/System.h>
+#include <platform/android/jni/SystemClock.h>
+#include <platform/android/jni/URI.h>
+#include <platform/android/jni/View.h>
+#include <platform/android/jni/WakeLock.h>
+#include <platform/android/jni/Window.h>
+#include <platform/android/jni/WindowManager.h>
 
 #include "AndroidKey.h"
 #include "settings/AdvancedSettings.h"
@@ -1404,4 +1404,5 @@ void CXBMCApp::surfaceDestroyed(CJNISurfaceHolder holder)
     m_window = NULL;
   }
 }
-#endif // !defined(HAVE_QT_GUI)
+#endif // !defined(HAVE_NLC_GUI)
+

@@ -6,13 +6,13 @@
  *  See LICENSES/README.md for more information.
  */
 #include "config_components_kodi.h"
-#if !defined(HAVE_QT_GUI)
+#if !defined(HAVE_NLC_GUI)
 
 #include "JNIXBMCNsdManagerDiscoveryListener.h"
 
-#include <platform/qt/qtandroid/jni/jutils-details.hpp>
-#include <platform/qt/qtandroid/jni/Context.h>
-#include <platform/qt/qtandroid/jni/NsdServiceInfo.h>
+#include <platform/android/jni/jutils/jutils-details.hpp>
+#include <platform/android/jni/Context.h>
+#include <platform/android/jni/NsdServiceInfo.h>
 
 #include "CompileInfo.h"
 #include "utils/log.h"
@@ -110,4 +110,5 @@ void CJNIXBMCNsdManagerDiscoveryListener::_onStopDiscoveryFailed(JNIEnv* env, jo
   if (inst)
     inst->onStopDiscoveryFailed(jcast<std::string>(jhstring(serviceType)), errorCode);
 }
-#endif // !defined(HAVE_QT_GUI)
+#endif // !defined(HAVE_NLC_GUI)
+

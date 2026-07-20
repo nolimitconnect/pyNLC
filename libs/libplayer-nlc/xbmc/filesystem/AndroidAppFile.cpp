@@ -26,15 +26,15 @@
 #include <sys/stat.h>
 
 #include <android/bitmap.h>
-#if defined(HAVE_QT_GUI)
-# include <platform/qt/qtandroid/jni/Bitmap.h>
-# include <platform/qt/qtandroid/jni/Drawable.h>
-# include <platform/qt/qtandroid/jni/BitmapDrawable.h>
-# include <platform/qt/qtandroid/jni/Build.h>
-# include <platform/qt/qtandroid/jni/Context.h>
-# include <platform/qt/qtandroid/jni/DisplayMetrics.h>
-# include <platform/qt/qtandroid/jni/PackageManager.h>
-# include <platform/qt/qtandroid/jni/Resources.h>
+#if defined(HAVE_NLC_GUI)
+# include <platform/android/jni/Bitmap.h>
+# include <platform/android/jni/Drawable.h>
+# include <platform/android/jni/BitmapDrawable.h>
+# include <platform/android/jni/Build.h>
+# include <platform/android/jni/Context.h>
+# include <platform/android/jni/DisplayMetrics.h>
+# include <platform/android/jni/PackageManager.h>
+# include <platform/android/jni/Resources.h>
 #else
 # include <android/jni/Bitmap.h>
 # include <android/jni/Drawable.h>
@@ -44,14 +44,14 @@
 # include <android/jni/DisplayMetrics.h>
 # include <android/jni/PackageManager.h>
 # include <android/jni/Resources.h>
-#endif // defined(HAVE_QT_GUI)
+#endif // defined(HAVE_NLC_GUI)
 
 #include "AndroidAppFile.h"
-#if defined(TARGET_OS_ANDROID) && !defined(HAVE_QT_GUI)
+#if defined(TARGET_OS_ANDROID) && !defined(HAVE_NLC_GUI)
 # include "platform/android/activity/XBMCApp.h"
-#elif defined(TARGET_OS_ANDROID) && defined(HAVE_QT_GUI)
-# include "platform/qt/KodiQtApp.h"
-#endif // defined(TARGET_OS_ANDROID) && !defined(HAVE_QT_GUI)
+#elif defined(TARGET_OS_ANDROID) && defined(HAVE_NLC_GUI)
+# include "platform/nlc/KodiNlcApp.h"
+#endif // defined(TARGET_OS_ANDROID) && !defined(HAVE_NLC_GUI)
 
 #include "NlcCoreUtil.h"
 #include "NlcUrl.h"
@@ -198,4 +198,5 @@ int CFileAndroidApp::IoControl(EIoControl request, void* param)
   return 1;
 }
 #endif
+
 

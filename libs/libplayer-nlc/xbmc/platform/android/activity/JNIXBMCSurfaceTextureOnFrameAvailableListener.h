@@ -8,9 +8,9 @@
 
 #pragma once
 
-#include <platform/qt/qtandroid/jni/JNIBase.h>
+#include <platform/android/jni/JNIBase.h>
 
-#include <platform/qt/qtandroid/jni/SurfaceTexture.h>
+#include <platform/android/jni/SurfaceTexture.h>
 
 class CJNIXBMCSurfaceTextureOnFrameAvailableListener : public CJNISurfaceTextureOnFrameAvailableListener, public CJNIInterfaceImplem<CJNIXBMCSurfaceTextureOnFrameAvailableListener>
 {
@@ -27,3 +27,4 @@ public:
 protected:
   static void _onFrameAvailable(JNIEnv* env, jobject thiz, jobject surface);
 };
+

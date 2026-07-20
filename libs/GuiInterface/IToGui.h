@@ -62,7 +62,9 @@ public:
     virtual void				toGuiModuleState( EMediaModule moduleNum, EModuleState moduleState ) = 0;
 
 	/// Start/Stop camera capture
-	virtual void				toGuiWantVideoCapture( EMediaModule mediaModule, bool wantVidCapture ) = 0;
+	virtual void				toGuiWantCamCapture( EMediaModule mediaModule, bool wantVidCapture ) = 0;
+    virtual void				toGuiCamCaptureEnable( bool camCaptureEnabled ) = 0;
+    virtual void				toGuiCamCaptureRunning( bool camCaptureRunning ) = 0;
 	/// Send video feed frame to GUI for playback.. includes amount of motion detected
 	virtual void				toGuiPlayJpgVideo( VxGUID& onlineId, std::shared_ptr<CamJpgVideo>& jpgVideo ) = 0;
 

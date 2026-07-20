@@ -281,7 +281,7 @@ void AppletFileOfferSelect::slotListPlayIconClicked( QListWidgetItem* item )
                 }
 
                 AssetPlaySession playSession( assetInfo );
-                m_MyApp.getPlayerMgr().playMedia( playSession, false );
+                m_MyApp.getPlayerMgr().playMedia( playSession, false, 0, getParentPageFrame() );
                 onFileSelected( poInfo->getFileInfo() );
             }
             else
@@ -315,7 +315,7 @@ void AppletFileOfferSelect::slotListPlayExternIconClicked( QListWidgetItem* item
                 }
 
                 AssetPlaySession playSession( assetInfo );
-                m_MyApp.getPlayerMgr().playMedia( playSession, true );
+                m_MyApp.getPlayerMgr().playMedia( playSession, true, 0, getParentPageFrame() );
                 onFileSelected( poInfo->getFileInfo() );
             }
             else

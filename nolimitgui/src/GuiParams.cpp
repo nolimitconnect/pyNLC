@@ -465,7 +465,7 @@ QString GuiParams::describePluginAction( GuiUser* guiUser, EPluginType pluginTyp
             break;
         case ePluginAccessDisabled:		// plugin disabled or no files shared or no web cam broadcast
         case ePluginAccessNotSet:
-        case eMaxPluginAccessState:
+        case eMaxPluginAccess:
             strAction = QObject::tr("About Me Page is disabled");
             break;
         case ePluginAccessInactive:		// plugin inactive
@@ -499,7 +499,7 @@ QString GuiParams::describePluginAction( GuiUser* guiUser, EPluginType pluginTyp
             break;
         case ePluginAccessDisabled:		// plugin disabled or no files shared or no web cam broadcast
         case ePluginAccessNotSet:
-        case eMaxPluginAccessState:
+        case eMaxPluginAccess:
             strAction = QObject::tr("Story Board is disabled");
             break;
         case ePluginAccessInactive:		// plugin inactive
@@ -536,7 +536,7 @@ QString GuiParams::describePluginAction( GuiUser* guiUser, EPluginType pluginTyp
 
         case ePluginAccessDisabled:		// plugin disabled 
         case ePluginAccessNotSet:
-        case eMaxPluginAccessState:
+        case eMaxPluginAccess:
             strAction = QObject::tr("Shared Files is disabled");
             break;
         case ePluginAccessIgnored:		// access denied because you are being ignored
@@ -573,7 +573,7 @@ QString GuiParams::describePluginAction( GuiUser* guiUser, EPluginType pluginTyp
             break;
         case ePluginAccessDisabled:		// plugin disabled 
         case ePluginAccessNotSet:
-        case eMaxPluginAccessState:
+        case eMaxPluginAccess:
             strAction = QObject::tr("Shared Files is disabled");
             break;
         case ePluginAccessIgnored:		// access denied because you are being ignored
@@ -604,7 +604,7 @@ QString GuiParams::describePluginAction( GuiUser* guiUser, EPluginType pluginTyp
             break;
         case ePluginAccessDisabled:		// plugin disabled or no files shared or no web cam broadcast
         case ePluginAccessNotSet:
-        case eMaxPluginAccessState:
+        case eMaxPluginAccess:
             strAction = QObject::tr("Shared Web Cam is disabled");
             break;
         case ePluginAccessInactive:		// plugin disabled or no files shared or no web cam broadcast
@@ -638,7 +638,7 @@ QString GuiParams::describePluginAction( GuiUser* guiUser, EPluginType pluginTyp
             break;
         case ePluginAccessDisabled:		// plugin disabled or no files shared or no web cam broadcast
         case ePluginAccessNotSet:
-        case eMaxPluginAccessState:
+        case eMaxPluginAccess:
             strAction = QObject::tr("Voice Call is disabled");
             break;
         case ePluginAccessIgnored:		// access denied because you are being ignored
@@ -672,7 +672,7 @@ QString GuiParams::describePluginAction( GuiUser* guiUser, EPluginType pluginTyp
             break;
         case ePluginAccessDisabled:		// plugin disabled or no files shared or no web cam broadcast
         case ePluginAccessNotSet:
-        case eMaxPluginAccessState:
+        case eMaxPluginAccess:
             strAction = QObject::tr("Truth Or Dare is disabled");
             break;
         case ePluginAccessIgnored:		// access denied because you are being ignored
@@ -706,7 +706,7 @@ QString GuiParams::describePluginAction( GuiUser* guiUser, EPluginType pluginTyp
             break;
         case ePluginAccessDisabled:		// plugin disabled or no files shared or no web cam broadcast
         case ePluginAccessNotSet:
-        case eMaxPluginAccessState:
+        case eMaxPluginAccess:
             strAction = QObject::tr("Text Chat is disabled");
             break;
         case ePluginAccessIgnored:		// access denied because you are being ignored
@@ -741,7 +741,7 @@ QString GuiParams::describePluginAction( GuiUser* guiUser, EPluginType pluginTyp
             break;
         case ePluginAccessDisabled:		// plugin disabled or no files shared or no web cam broadcast
         case ePluginAccessNotSet:
-        case eMaxPluginAccessState:
+        case eMaxPluginAccess:
             strAction = QObject::tr("Video Chat is disabled");
             break;
         case ePluginAccessIgnored:		// access denied because you are being ignored

@@ -18,6 +18,18 @@
 
 #include <CoreLib/VxDebug.h>
 #include <CoreLib/VxGlobals.h>
+#include <CoreLib/VxJni.h>
+
+#include <algorithm>
+
+#if defined(TARGET_OS_ANDROID)
+extern "C" {
+JNIEXPORT void JNICALL Java_org_nolimitconnect_nolimitconnect_Camera2Service_micPermissionResult(JNIEnv* env, jclass clazz, jboolean granted)
+{
+    AudioMgr::getInstance().onMicrophonePermissionResult( granted == JNI_TRUE );
+}
+}
+#endif
 
 //============================================================================
 // return true if any microphone device is available to be enabled
@@ -31,13 +43,6 @@ bool AudioMgr::toGuiIsMicrophoneDeviceAvailable( void )
 void AudioMgr::toGuiWantMicrophoneRecording( EMediaModule mediaModule, bool wantMicInput )
 {
     if( LogEnabled( eLogVoice ) ) LogModule( eLogVoice, LOG_DEBUG, "AudioMgr::%s want mic? %d module %s", __func__, wantMicInput, DescribeMediaModule( mediaModule ) );
-#if defined(Q_OS_ANDROID)
-    if( wantMicInput && !GuiParams::requestPermission("android.permission.RECORD_AUDIO") )
-    {
-        LogMsg( LOG_ERROR, "AudioMgr::%s microphone permission denied; module %s", __func__, DescribeMediaModule( mediaModule ) );
-        return;
-    }
-#endif // defined(Q_OS_ANDROID)
 
     bool found{ false };
     m_WantMicMutex.lock();
@@ -68,7 +73,20 @@ void AudioMgr::toGuiWantMicrophoneRecording( EMediaModule mediaModule, bool want
         if( !prevWantMicCnt && wantMicCnt )
         {
             // mic count went from 0 to 1, enable mic
-            enableAudioIn( true );
+#if defined(TARGET_OS_ANDROID)
+            if( !VxJni::hasPermission( "android.permission.RECORD_AUDIO" ) )
+            {
+                LogMsg( LOG_WARN, "AudioMgr::%s requesting microphone permission; module %s", __func__, DescribeMediaModule( mediaModule ) );
+                if( !VxJni::requestPermissionWithCallback( "android.permission.RECORD_AUDIO", 1002, "microphone" ) )
+                {
+                    LogMsg( LOG_ERROR, "AudioMgr::%s failed requesting microphone permission", __func__ );
+                }
+            }
+            else
+#endif // defined(TARGET_OS_ANDROID)
+            {
+                enableAudioIn( true );
+            }
         }
         else if( prevWantMicCnt && !wantMicCnt )
         {
@@ -77,6 +95,23 @@ void AudioMgr::toGuiWantMicrophoneRecording( EMediaModule mediaModule, bool want
         }
 
         IToGui::getIToGui().toGuiUpdateWantMicrophoneCount( static_cast<int>(wantMicCnt) );
+    }
+}
+
+//============================================================================
+void AudioMgr::onMicrophonePermissionResult( bool granted )
+{
+    if( LogEnabled( eLogVoice ) ) LogModule( eLogVoice, LOG_DEBUG, "AudioMgr::%s granted=%d", __func__, granted ? 1 : 0 );
+
+    if( !granted )
+    {
+        LogMsg( LOG_WARN, "AudioMgr::%s microphone permission denied", __func__ );
+        return;
+    }
+
+    if( getWantMicrophoneCount() > 0 )
+    {
+        enableAudioIn( true );
     }
 }
 
