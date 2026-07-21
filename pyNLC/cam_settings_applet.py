@@ -46,6 +46,21 @@ class CamSettingsApplet(QWidget):
     def _on_preview_requested(self, enabled: bool) -> None:
         self.ui.m_StatusMsgLabel.setText("Preview started" if enabled else "Preview stopped")
 
+    def on_cam_capture_requested(self, media_module: int, want_capture: bool, timestamp_ms: int | None = None) -> None:
+        del media_module, timestamp_ms
+        self.ui.m_CamVidWidget.setPreviewEnabled(want_capture)
+        self.ui.m_StatusMsgLabel.setText("Engine requested camera preview" if want_capture else "Engine stopped camera preview")
+
+    def on_cam_capture_enable(self, enabled: bool, timestamp_ms: int | None = None) -> None:
+        del timestamp_ms
+        self.ui.m_CamVidWidget.setCameraEnabled(enabled)
+        self.ui.m_StatusMsgLabel.setText("Engine camera enabled" if enabled else "Engine camera disabled")
+
+    def on_cam_capture_running(self, running: bool, timestamp_ms: int | None = None) -> None:
+        del timestamp_ms
+        self.ui.m_CamVidWidget.setPreviewEnabled(running)
+        self.ui.m_CamVidWidget.setUserMessage("Camera preview active" if running else "Camera preview stopped")
+
     def _open_source_picker(self) -> None:
         self.ui.m_StatusMsgLabel.setText("Source picker requested")
 

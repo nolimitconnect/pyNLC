@@ -1,9 +1,5 @@
 cmake_minimum_required(VERSION 3.22.1)
 
-project(CppModules LANGUAGES C CXX)
-
-set(PROJECT_SRC_ROOT_DIR "${CMAKE_CURRENT_LIST_DIR}")
-
 
 # Qt Creator can inject a per-build hook script through
 # CMAKE_PROJECT_INCLUDE_BEFORE. If that generated file is removed, CMake fails
@@ -15,6 +11,10 @@ if(DEFINED CMAKE_PROJECT_INCLUDE_BEFORE
     unset(CMAKE_PROJECT_INCLUDE_BEFORE CACHE)
     unset(CMAKE_PROJECT_INCLUDE_BEFORE)
 endif()
+
+project(CppModules LANGUAGES C CXX)
+
+set(PROJECT_SRC_ROOT_DIR "${CMAKE_CURRENT_LIST_DIR}")
 
 if(WIN32)
     # CMake 4.2+: MSVC is no longer treated as an ASM compiler.
@@ -68,6 +68,10 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_C_STANDARD 11)
+
+if(NOT WIN32)
+    set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+endif()
 
 # --------------------------
 # Detect CPU architecture (only 64-bit allowed)
@@ -346,6 +350,13 @@ if(NOT TARGET_OS_WINDOWS)
     # set if want to use libturbo-jpeg instead of libjpeg
     set(USE_LIBJPEG_TURBO true)
     add_compile_definitions(USE_LIBJPEG_TURBO=1)
+endif()
+
+# Missing defines
+if(TARGET_CPU_X64)
+    add_compile_definitions(ARCH_X86_64=1)
+elseif(TARGET_CPU_ARM64)
+    add_compile_definitions(ARCH_ARM64=1)
 endif()
 
 

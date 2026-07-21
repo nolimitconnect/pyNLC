@@ -61,6 +61,9 @@ class GuiSignals(QObject):
     user_specific_dir_requested = Signal(str)
     user_xfer_dir_requested = Signal(str)
     shutdown_requested = Signal()
+    cam_capture_requested = Signal(int, bool)
+    cam_capture_enabled = Signal(bool)
+    cam_capture_running = Signal(bool)
     status_message = Signal(str)
     hack_reported = Signal(int, int, str, str)
     plugin_message = Signal(int, object, int, str)
@@ -96,6 +99,9 @@ class GuiToEngineBridge(BaseGuiToEngine):
         self.user_specific_dir: Path | None = None
         self.user_xfer_dir: Path | None = None
         self.to_gui_adapter = None
+        self._cam_capture_requested_events: deque[tuple[int, bool, int]] = deque(maxlen=self._EVENT_BUFFER_SIZE)
+        self._cam_capture_enabled_events: deque[tuple[bool, int]] = deque(maxlen=self._EVENT_BUFFER_SIZE)
+        self._cam_capture_running_events: deque[tuple[bool, int]] = deque(maxlen=self._EVENT_BUFFER_SIZE)
         self._hack_events: deque[tuple[int, int, str, str, int]] = deque(maxlen=self._EVENT_BUFFER_SIZE)
         self._plugin_events: deque[tuple[int, object, int, str, int]] = deque(maxlen=self._EVENT_BUFFER_SIZE)
         self._plugin_comm_error_events: deque[tuple[int, object, int, int, int]] = deque(maxlen=self._EVENT_BUFFER_SIZE)
@@ -114,6 +120,21 @@ class GuiToEngineBridge(BaseGuiToEngine):
         return int(time() * 1000)
 
     def replay_events_to_applet(self, applet_widget: object) -> None:
+        on_cam_capture_requested = getattr(applet_widget, "on_cam_capture_requested", None)
+        if callable(on_cam_capture_requested):
+            for event in self._cam_capture_requested_events:
+                on_cam_capture_requested(*event)
+
+        on_cam_capture_enable = getattr(applet_widget, "on_cam_capture_enable", None)
+        if callable(on_cam_capture_enable):
+            for event in self._cam_capture_enabled_events:
+                on_cam_capture_enable(*event)
+
+        on_cam_capture_running = getattr(applet_widget, "on_cam_capture_running", None)
+        if callable(on_cam_capture_running):
+            for event in self._cam_capture_running_events:
+                on_cam_capture_running(*event)
+
         add_hack_report = getattr(applet_widget, "add_hack_report", None)
         if callable(add_hack_report):
             for event in self._hack_events:
@@ -175,6 +196,25 @@ class GuiToEngineBridge(BaseGuiToEngine):
                 on_network_state(*event)
 
     def _on_native_to_gui_event(self, method_name: str, *args) -> None:
+        if method_name == "toGuiWantCamCapture":
+            media_module = int(args[0]) if len(args) > 0 else 0
+            want_capture = bool(args[1]) if len(args) > 1 else False
+            self._cam_capture_requested_events.append((media_module, want_capture, self._now_ms()))
+            self.signals.cam_capture_requested.emit(media_module, want_capture)
+            return
+
+        if method_name == "toGuiCamCaptureEnable":
+            enabled = bool(args[0]) if args else False
+            self._cam_capture_enabled_events.append((enabled, self._now_ms()))
+            self.signals.cam_capture_enabled.emit(enabled)
+            return
+
+        if method_name == "toGuiCamCaptureRunning":
+            running = bool(args[0]) if args else False
+            self._cam_capture_running_events.append((running, self._now_ms()))
+            self.signals.cam_capture_running.emit(running)
+            return
+
         if method_name == "toGuiStatusMessage":
             message = str(args[0]) if args else ""
             self.signals.status_message.emit(message)

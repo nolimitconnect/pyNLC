@@ -91,6 +91,14 @@ class VidWidget(QWidget):
     def setUserMessage(self, text: str) -> None:
         self.ui.m_UserMsgLabel.setText(text)
 
+    def setCameraEnabled(self, enabled: bool) -> None:
+        self._camera_enabled = bool(enabled)
+        self._refresh_control_text()
+
+    def setPreviewEnabled(self, enabled: bool) -> None:
+        self._preview_enabled = bool(enabled)
+        self._refresh_control_text()
+
     def setVideoPlaceholderText(self, text: str) -> None:
         self.ui.m_VideoScreen.setText(text)
 

@@ -1,5 +1,6 @@
 {
     "extensions.ignoreRecommendations": true,
+    "python.defaultInterpreterPath": "/usr/bin/python3",
     "cmake.environment": {
         "NLC_ENABLE_VSCODE_PRESETS": "1"
     },

@@ -397,6 +397,15 @@ class HomeWindow(QMainWindow):
             if hasattr(applet_widget, "on_network_state"):
                 self.bridge.signals.network_state.connect(applet_widget.on_network_state)
 
+            if hasattr(applet_widget, "on_cam_capture_requested"):
+                self.bridge.signals.cam_capture_requested.connect(applet_widget.on_cam_capture_requested)
+
+            if hasattr(applet_widget, "on_cam_capture_enable"):
+                self.bridge.signals.cam_capture_enabled.connect(applet_widget.on_cam_capture_enable)
+
+            if hasattr(applet_widget, "on_cam_capture_running"):
+                self.bridge.signals.cam_capture_running.connect(applet_widget.on_cam_capture_running)
+
             self.bridge.replay_events_to_applet(applet_widget)
 
             if self.settings is not None and hasattr(self.settings, "setLastAppletLaunched"):

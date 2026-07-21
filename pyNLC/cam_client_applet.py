@@ -26,3 +26,18 @@ class CamClientApplet(QWidget):
 
     def _on_camera_toggled(self, enabled: bool) -> None:
         self.ui.m_StatusMsgLabel.setText("Client camera enabled" if enabled else "Client camera disabled")
+
+    def on_cam_capture_requested(self, media_module: int, want_capture: bool, timestamp_ms: int | None = None) -> None:
+        del media_module, timestamp_ms
+        self.ui.m_CamVidWidget.setPreviewEnabled(want_capture)
+        self.ui.m_StatusMsgLabel.setText("Remote preview requested" if want_capture else "Remote preview stopped")
+
+    def on_cam_capture_enable(self, enabled: bool, timestamp_ms: int | None = None) -> None:
+        del timestamp_ms
+        self.ui.m_CamVidWidget.setCameraEnabled(enabled)
+        self.ui.m_StatusMsgLabel.setText("Client camera enabled" if enabled else "Client camera disabled")
+
+    def on_cam_capture_running(self, running: bool, timestamp_ms: int | None = None) -> None:
+        del timestamp_ms
+        self.ui.m_CamVidWidget.setPreviewEnabled(running)
+        self.ui.m_CamVidWidget.setUserMessage("Remote camera stream active" if running else "Waiting for remote cam stream")

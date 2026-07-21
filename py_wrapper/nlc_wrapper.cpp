@@ -105,7 +105,15 @@ public:
     }
 
     void toGuiModuleState(EMediaModule, EModuleState) override {}
-    void toGuiWantVideoCapture(EMediaModule, bool) override {}
+    void toGuiWantCamCapture(EMediaModule mediaModule, bool wantVidCapture) override {
+        dispatch("toGuiWantCamCapture", static_cast<int>(mediaModule), wantVidCapture);
+    }
+    void toGuiCamCaptureEnable(bool camCaptureEnabled) override {
+        dispatch("toGuiCamCaptureEnable", camCaptureEnabled);
+    }
+    void toGuiCamCaptureRunning(bool camCaptureRunning) override {
+        dispatch("toGuiCamCaptureRunning", camCaptureRunning);
+    }
     void toGuiPlayJpgVideo(VxGUID&, std::shared_ptr<CamJpgVideo>&) override {}
     void toGuiHostAnnounceStatus(EHostType, VxGUID&, EHostAnnounceStatus, const char*) override {}
     void toGuiHostJoinStatus(EHostType, VxGUID&, EHostJoinStatus, const char*) override {}
@@ -683,8 +691,8 @@ PYBIND11_MODULE(nlc_engine, m) {
         .def("set_dare_reject_count", &VxNetIdent::setDareRejectCount, py::arg("count"))
         .def("get_dare_reject_count", &VxNetIdent::getDareRejectCount)
         .def("is_vx_net_ident_match", &VxNetIdent::isVxNetIdentMatch, py::arg("other_ident"))
-        .def("describe_his_friendship_to_me", [](const VxNetIdent& ident) { return std::string(ident.describeHisFriendshipToMe()); })
-        .def("describe_my_friendship_to_him", [](const VxNetIdent& ident) { return std::string(ident.describeMyFriendshipToHim()); })
+        .def("describe_his_friendship_to_me", [](VxNetIdent& ident) { return std::string(ident.describeHisFriendshipToMe()); })
+        .def("describe_my_friendship_to_him", [](VxNetIdent& ident) { return std::string(ident.describeMyFriendshipToHim()); })
         .def("is_online_name_valid", &VxNetIdent::isOnlineNameValid)
         .def("can_request_join", &VxNetIdent::canRequestJoin, py::arg("host_type"))
         .def("can_join_immediate", &VxNetIdent::canJoinImmediate, py::arg("host_type"))
@@ -888,6 +896,16 @@ PYBIND11_MODULE(nlc_engine, m) {
                py::arg("xfer_state"),
                py::arg("xfer_error"),
                py::arg("param1"))
+           .def("emit_cam_capture_requested",
+               &PythonIToGuiAdapter::toGuiWantCamCapture,
+               py::arg("media_module"),
+               py::arg("want_video_capture"))
+           .def("emit_cam_capture_enable",
+               &PythonIToGuiAdapter::toGuiCamCaptureEnable,
+               py::arg("enabled"))
+           .def("emit_cam_capture_running",
+               &PythonIToGuiAdapter::toGuiCamCaptureRunning,
+               py::arg("running"))
            .def("emit_net_available_status", &PythonIToGuiAdapter::toGuiNetAvailableStatus, py::arg("status"));
 
     py::class_<IFromGui, PyIFromGui>(m, "IFromGui")

@@ -734,84 +734,84 @@ class AppletRegistry:
             try:
                 from user_identity_applet import UserIdentityApplet
 
-                    if applet_id == EApplet.eAppletSearchPage:
-                        try:
-                            from search_scan_applets import SearchPageApplet
-
-                            return SearchPageApplet(settings, parent)
-                        except ImportError:
-                            pass
-
-                    if applet_id == EApplet.eAppletSearchPersons:
-                        try:
-                            from search_scan_applets import SearchPersonsApplet
-
-                            return SearchPersonsApplet(settings, parent)
-                        except ImportError:
-                            pass
-
-                    if applet_id == EApplet.eAppletSearchMood:
-                        try:
-                            from search_scan_applets import SearchMoodApplet
-
-                            return SearchMoodApplet(settings, parent)
-                        except ImportError:
-                            pass
-
-                    if applet_id == EApplet.eAppletScanAboutMe:
-                        try:
-                            from search_scan_applets import ScanAboutMeApplet
-
-                            return ScanAboutMeApplet(settings, parent)
-                        except ImportError:
-                            pass
-
-                    if applet_id == EApplet.eAppletScanStoryboard:
-                        try:
-                            from search_scan_applets import ScanStoryboardApplet
-
-                            return ScanStoryboardApplet(settings, parent)
-                        except ImportError:
-                            pass
-
-                    if applet_id == EApplet.eAppletScanSharedFiles:
-                        try:
-                            from search_scan_applets import ScanSharedFilesApplet
-
-                            return ScanSharedFilesApplet(settings, parent)
-                        except ImportError:
-                            pass
-
-                    if applet_id == EApplet.eAppletScanWebCam:
-                        try:
-                            from search_scan_applets import ScanWebCamApplet
-
-                            return ScanWebCamApplet(settings, parent)
-                        except ImportError:
-                            pass
-
                 return UserIdentityApplet(settings, parent)
+            except ImportError:
+                pass
+
+        if applet_id == EApplet.eAppletSearchPage:
+            try:
+                from search_scan_applets import SearchPageApplet
+
+                return SearchPageApplet(settings, parent)
+            except ImportError:
+                pass
+
+        if applet_id == EApplet.eAppletSearchPersons:
+            try:
+                from search_scan_applets import SearchPersonsApplet
+
+                return SearchPersonsApplet(settings, parent)
+            except ImportError:
+                pass
+
+        if applet_id == EApplet.eAppletSearchMood:
+            try:
+                from search_scan_applets import SearchMoodApplet
+
+                return SearchMoodApplet(settings, parent)
+            except ImportError:
+                pass
+
+        if applet_id == EApplet.eAppletScanAboutMe:
+            try:
+                from search_scan_applets import ScanAboutMeApplet
+
+                return ScanAboutMeApplet(settings, parent)
+            except ImportError:
+                pass
+
+        if applet_id == EApplet.eAppletScanStoryboard:
+            try:
+                from search_scan_applets import ScanStoryboardApplet
+
+                return ScanStoryboardApplet(settings, parent)
+            except ImportError:
+                pass
+
+        if applet_id == EApplet.eAppletScanSharedFiles:
+            try:
+                from search_scan_applets import ScanSharedFilesApplet
+
+                return ScanSharedFilesApplet(settings, parent)
+            except ImportError:
+                pass
+
+        if applet_id == EApplet.eAppletScanWebCam:
+            try:
+                from search_scan_applets import ScanWebCamApplet
+
+                return ScanWebCamApplet(settings, parent)
+            except ImportError:
+                pass
+
+        if applet_id == EApplet.eAppletHomeFrame:
+            try:
+                from frame_shell_applets import HomeFrameApplet
+
+                return HomeFrameApplet(settings, parent)
+            except ImportError:
+                pass
+
+        if applet_id == EApplet.eAppletMessengerFrame:
+            try:
+                from frame_shell_applets import MessengerFrameApplet
+
+                return MessengerFrameApplet(settings, parent)
             except ImportError:
                 pass
 
         if applet_id == EApplet.eAppletShareServicesPage:
             try:
-
-                    if applet_id == EApplet.eAppletHomeFrame:
-                        try:
-                            from frame_shell_applets import HomeFrameApplet
-
-                            return HomeFrameApplet(settings, parent)
-                        except ImportError:
-                            pass
-
-                    if applet_id == EApplet.eAppletMessengerFrame:
-                        try:
-                            from frame_shell_applets import MessengerFrameApplet
-
-                            return MessengerFrameApplet(settings, parent)
-                        except ImportError:
-                            pass
                 from share_services_applet import ShareServicesApplet
 
                 return ShareServicesApplet(settings, parent)

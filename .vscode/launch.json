@@ -52,7 +52,7 @@
             "type": "cppdbg",
             "request": "launch",
             "preLaunchTask": "Build Linux Debug",
-            "program": "python3",
+            "program": "/usr/bin/python3",
             "args": [
                 "${workspaceFolder}/pyNLC/main.py"
             ],
@@ -100,7 +100,7 @@
             "type": "cppdbg",
             "request": "launch",
             "preLaunchTask": "Build Linux Release",
-            "program": "python3",
+            "program": "/usr/bin/python3",
             "args": [
                 "${workspaceFolder}/pyNLC/main.py"
             ],

@@ -15,7 +15,8 @@ This project is forked from v1.1.3 of:
 
 The goal is to replace Qt Widgets and related libraries with PySide6.
 
-pyNLC is intended to be the functional equivalent of NoLimitConnect, but with a Python main application and GUI.
+pyNLC is intended to be the functional equivalent of NoLimitConnect, but with a Python main application and GUI. pyNLC will not be published and supported as a standalone app like its C++ 
+parent app NLC is.
 
-It is an intermediate step toward the goal of an NLC plugin for Kodi:
+pyNLC is an intermediate step toward the goal of an NLC plugin for Kodi:
 [https://github.com/nolimitconnect/kodi-addon-nolimitconnect](https://github.com/nolimitconnect/kodi-addon-nolimitconnect)
